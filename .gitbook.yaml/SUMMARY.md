@@ -78,7 +78,7 @@
       * [Test Configurations](releaseowl-user-guide/test-automation/hcl-onetest/test-configurations.md)
       * [Running Automated Tests with Release Pipelines](releaseowl-user-guide/test-automation/hcl-onetest/running-automated-tests-with-release-pipelines.md)
   * [My Tasks](releaseowl-user-guide/my-tasks.md)
-* [Multiverse](multiverse.md)
+  * [Multiverse](releaseowl-user-guide/multiverse.md)
 * [ReleaseOwl Releases](releaseowl-releases/README.md)
   * [Release Calendar](releaseowl-releases/release-calendar.md)
   * [Release Notes](releaseowl-releases/release-notes/README.md)

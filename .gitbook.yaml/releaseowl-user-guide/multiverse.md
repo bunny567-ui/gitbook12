@@ -16,25 +16,25 @@ Before using Multiverse, ensure:
 1. Navigate to **Release Pipelines**.
 2. Click on the **Create New Release Pipeline**.
 
-<figure><img src=".gitbook/assets/image (950).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (950).png" alt=""><figcaption></figcaption></figure>
 
 3. Under **Add Stages**, enter the appropriate deployment stages such as dep, int and prod etc.&#x20;
 
-<figure><img src=".gitbook/assets/image (953).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (953).png" alt=""><figcaption></figcaption></figure>
 
 4. Click **+ Add** under the **Tasks** section to add tasks like approvals, callouts, etc.
 
-<figure><img src=".gitbook/assets/image (954).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (954).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Add Environment Deployment Details
 
 1. In the **Tasks** section, after selecting the necessary task, click the **+ Add** icon to include environment-specific deployment details.
 
-<figure><img src=".gitbook/assets/image (956).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (956).png" alt=""><figcaption></figcaption></figure>
 
 2. This will open a popup where you can fill in the deployment details for each environment.
 
-<figure><img src=".gitbook/assets/image (955).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (955).png" alt=""><figcaption></figcaption></figure>
 
 3. In the popup:
 
@@ -46,7 +46,7 @@ Before using Multiverse, ensure:
   * SAP Datasphere
   * SAP API
 
-<figure><img src=".gitbook/assets/image (957).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (957).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in all required fields as per the selected environment.
 5. Click **Add** to save and include the deployment details.
@@ -59,4 +59,4 @@ Before using Multiverse, ensure:
 
 In the **User Story** section, you can manage, track, and add details for specific deployment stories. Additionally, you can promote all associated artifact combinations in a single action.
 
-<figure><img src=".gitbook/assets/image (958).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (958).png" alt=""><figcaption></figcaption></figure>
