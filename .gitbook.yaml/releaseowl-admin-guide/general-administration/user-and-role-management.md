@@ -1,6 +1,6 @@
 # User & Role Management
 
-ReleaseOwl provides two distinct views for users
+ReleaseOwl provides two distinct views for users:
 
 ### 1. Project View
 
