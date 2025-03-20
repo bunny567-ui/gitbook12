@@ -26,9 +26,6 @@ You can enable the **retrofit** option in the **Transport Domain Controller** sc
 
 1. Navigate to **Transport Retrofit** under the **Build** section.
 2. Select the transport you want to retrofit and click **Retrofit**.
-
-<figure><img src="../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
-
 3. The **Transport Retrofit** process begins, and you can view details such as:
 
 * **Retrofit Request**
@@ -38,7 +35,7 @@ You can enable the **retrofit** option in the **Transport Domain Controller** sc
 * **Retrofit On**
 * **Retrofit Status**
 
-<figure><img src="../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**
@@ -52,7 +49,7 @@ You can enable the **retrofit** option in the **Transport Domain Controller** sc
 1. Click on the transport request with the **Retrofit Conflict** status.
 2. View the object that has a conflict.
 
-<figure><img src="../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the **error icon** against the **Retrofit Conflict Status** to view error details.
 
