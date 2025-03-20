@@ -15,9 +15,9 @@ To create a release package:
 
 The following screen is displayed for an on-premise project:
 
-{% hint style="info" %}
-**Note**: Transports option can be seen only for On-Premise Projects.
-{% endhint %}
+**Note:** Transports option can be seen only for On-Premise Projects.\
+\
+
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-4.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -27,8 +27,9 @@ The following screen is displayed for an on-premise project:
 
 6\. By default, the Promote from (Stage) will be Dev. The stages that are added to a Release Pipeline that which is associated with the Release Package appears in the dropdown.
 
-* If you add QA, UAT and Prod stages in the release pipeline, then QA and UAT are shown along with the option Dev in the Promote from (Stage) dropdown.
-* Prod will **not** be shown as there is no further stage to which the user stories can be promoted as it is the final stage.
+If you add QA, UAT and Prod stages in the release pipeline, then QA and UAT are shown along with the option Dev in the Promote from (Stage) dropdown.
+
+Prod will **not** be shown as there is no further stage to which the user stories can be promoted as it is the final stage.
 
 7\. Clicking **Add Transports for Promotion,** will add transports that are not part of any other release package and are ready to be promoted from the selected Promote from (Stage).
 

@@ -2,37 +2,33 @@
 
 The backlog here is the list of all the user stories that need to get done.
 
-<figure><img src="../../.gitbook/assets/image (804).png" alt=""><figcaption></figcaption></figure>
+![](https://www.docs.releaseowl.com/assets/img/create-backlog-1.jpg)\
+\
 
-{% hint style="info" %}
-#### **Note:**
 
-* If the project that you are working with is associated with any external system like JIRA, and if it has any backlogs, the backlog items appear in the **Backlog** screen upon syncing the user stories in the **User Stories** screen.
-* Always remember to:
-  1. Sync the **Sprints** first.
-  2. Sync the **User Stories**, followed by the **Backlog**.
-{% endhint %}
+**Note:**
 
-### **Syncing User Stories**
+1. If the **project** that you are working with is **associated** with any **external system** like **JIRA**, and if it has any **backlogs**, the backlog items appear in the **Backlog** screen upon sync’ing the **user stories** in the User Stories screen.
+2. Always remember to sync the **Sprints** first and then the **User Stories** followed by **Backlog**.
 
-1. Navigate to the **User Stories** screen under the **Change Management** section.
-2. Click **Sync User Stories**. The user stories from the external system get synced to the **User Stories** screen.
+Click **Sync User Stories** option from the User **Stories** screen under **Change Management** section. The user stories from the external system gets **synced** to the **User Stories** screen.\
 
-<figure><img src="../../.gitbook/assets/image (805).png" alt=""><figcaption></figcaption></figure>
 
-3. Click **OK**. The user stories created in the external system get synced to ReleaseOwl and appear in the **User Stories** screen.
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-backlog-2.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (806).png" alt=""><figcaption></figcaption></figure>
+Click OK. The user stories created in the external system gets **synced** to **ReleaseOwl** and appear in the **User Stories** screen.\
+\
 
-### **Viewing Synced Backlog Items**
 
-1. Navigate to the **Backlog** screen.
-2. The synced user stories which do not belong to any sprint appear in the **Backlog** screen upon syncing the user stories.
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-backlog-3.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+Navigate to the **Backlog** screen. The synced user stories which do **not** belong to any **sprint** appear in the **Backlog** screen upon **syncing** the user stories.\
 
-{% hint style="info" %}
-**Note :** Once the user stories of the external system are moved to any sprint, they disappear from the **Backlog** screen upon syncing the user stories in ReleaseOwl.
-{% endhint %}
+
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-backlog-4.jpg" alt=""><figcaption></figcaption></figure>
+
+**Note:** Once the user stories of the external system are moved to any sprint, they disappear in the Backlog screen upon syncing the user stories in ReleaseOwl.
+
+We can **create user stories** in the **backlog** by clicking **Create New User Story**.
 
 Please refer to **Create User Stories** section for further information on how to create user stories in ReleaseOwl.

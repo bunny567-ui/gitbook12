@@ -17,49 +17,46 @@ Go to the ‘Test Generator’ tab, input all the required details. The required
 
 
 
+<figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-unit-test-1.jpg" alt=""><figcaption></figcaption></figure>
+
 You can obtain the Start and End Sequence ID from your SAP landscape by selecting the point and copying the start and end sequence IDs.\
+\
 
-
-<figure><img src="../../../.gitbook/assets/image (940).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-unit-test-2.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (941).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
 Once the test case is created, select **‘Run’.**
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-unit-test-4.jpg" alt=""><figcaption></figcaption></figure>
 
 You can click on **‘View Latest Result’** to see the latest test case report.\
 
 
-<figure><img src="../../../.gitbook/assets/image (942).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-unit-test-5.jpg" alt=""><figcaption></figcaption></figure>
 
 Here, the **Run ID** is the unique test run ID; the **Artifact Name** is the one you specify while creating the test run. The **Expected Output** is the same as specified while creating the test run, and the **Actual Output** is the output received after running the test, in which case, the Property Differences between the two are given at the bottom.\
 \
 Alternatively, you can view the ‘**Test Results**’ tab to view a history of all the test results. Here you will view a list of Run IDs that pertain to specific user stories or release packages that have been validated. A user may run group of tests together. In the case of User Stories or Release Packages, all the validation tests associated with artifacts from the selected User Story will be executed as a single suite. The below screen displays all such test execution groups.\
 
 
-<figure><img src="../../../.gitbook/assets/image (943).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-unit-test-6.jpg" alt=""><figcaption></figcaption></figure>
 
 You can click on a **‘Run ID’** to view all the test cases that fall under that run ID. Selecting **‘Details’** will further take you back to the ‘Latest Results’ page.\
 
 
-<figure><img src="../../../.gitbook/assets/image (944).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-unit-test-7.jpg" alt=""><figcaption></figcaption></figure>
 
 Apart from this, the **Test Case** can also be run via the **User Stories** tab, by clicking on the **Validate** button. When validated, all the test cases associated with the iFlow artifacts linked to the particular user story or release package you have validated will be executed.\
 
 
-<figure><img src="../../../.gitbook/assets/image (945).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-unit-test-8.jpg" alt=""><figcaption></figcaption></figure>
 
 The Test Results can be viewed in the **Validation Report** generated during User Story and Release Package validation.\
 
 
-<figure><img src="../../../.gitbook/assets/image (946).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-unit-test-9.jpg" alt=""><figcaption></figcaption></figure>
 
 The Validation Report can also be viewed from The Release Packages tab.
 

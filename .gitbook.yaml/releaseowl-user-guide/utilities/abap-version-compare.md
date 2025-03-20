@@ -2,11 +2,11 @@
 
 ABAP Compare is used to compare any differences between objects under different systems which might help the developer to see if there is any missing part in objects of ReleaseOwl Project.
 
-**To compare objects in ReleaseOwl:**
+To compare objects in ReleaseOwl:
 
-1\. Expand Utilities in project view and click on ABAP Compare section.
+1\. Expand Utilities in project view and click on ABAP Compare section
 
-<figure><img src="../../.gitbook/assets/image (936).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
 
 2\. Select the Compare System from which objects needs to be compared.\
 
@@ -39,7 +39,7 @@ ABAP Compare is used to compare any differences between objects under different 
 If Object from Package is selected, provide a package in package input.\
 
 
-<figure><img src="../../.gitbook/assets/image (937).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-6.jpg" alt=""><figcaption></figcaption></figure>
 
 After providing all the required details, the screen will be as shown below:\
 

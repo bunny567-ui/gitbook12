@@ -1,41 +1,26 @@
 # Cloud Environment Registration
 
-### **1. Navigate to SAP Cloud Environment**
+### **Register SAP BTP Environment**
 
-* In the left-hand menu, under the **Environments** section, select **SAP Cloud Environment**.
-* Click on the **Register SAP Cloud Environment** button in the top-right corner.
+You have to register the SAP BTP login credentials first to access the SAP BTP environment with ReleaseOwl.
 
-### **2. Fill in the Registration Form**
+Register a new SAP BTP Environment as follows:
 
-Provide the following details:
+1. In Administration View, go to Environments and select SAP Cloud Environment.
+2. In the page displayed, click Register Cloud Environment.
 
-* **Name**: Enter a unique name for the cloud environment (e.g., `BTP-CLOUD-DEV`).
-* **Region**: Select the region where the environment is hosted (e.g., `US East (VA)`).
-* **API Endpoint**: Enter the API endpoint URL of the cloud environment (e.g., `https://api.cf.us10-001.hana.ondemand.com`).
-* **Credential Name**: Select the credential previously registered from the dropdown list.
-* **Org**: Select the correct organization from the dropdown list.
-* **Space**: Select the space associated with the environment (e.g., `dev`).
-* **Environment Type**: Specify the environment type (e.g., `DEV`, `QA`, or `PROD`).
+The following screen is displayed.
 
-### **3. Save the Environment**
+![](https://www.docs.releaseowl.com/assets/img/cloud-environment-registration-1.jpg)\
+\
 
-* After filling in all the details, click **Save** to register the environment.
-* The newly registered environment will appear in the **List of Environments** section.
 
-### Edit or Delete Environments
+Fill in the required details and save the changes:
 
-#### **Edit an Environment**
-
-* Click the **pencil icon** next to the environment name.
-* Update the necessary details and save the changes.
-
-#### **Delete an Environment**
-
-* Click the **trash icon** next to the environment name.
-* Confirm the deletion to remove the environment.
-
-<figure><img src="../../../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
-
-&#x20;
-
-&#x20;
+| Name            | Enter the name of your choice for the BTP Environment that is being registered.                                                                                                                                                                                                                                                                                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Region          | Select the appropriate region (represents a geographical location - for e.g., Europe, US East etc.,) where applications, data, or services are hosted.                                                                                                                                                                                                                                                                                                       |
+| API Endpoint    | <p>An API endpoint is the point of entry in a communication channel when two systems are interacting.<br>In the Cloud Foundry environment, the region in which a global account was created determines the API endpoint of all subaccounts associated with it.<br>For e.g., subaccounts created in a global account in region eu10 share the API endpoint URL <a href="https://api.cf.eu10.hana.ondemand.com/">https://api.cf.eu10.hana.ondemand.com</a></p> |
+| Credential Name | Select any SAP BTP credential registered with ReleaseOwl which can be used to access the SAP BTP environment that is being registered.                                                                                                                                                                                                                                                                                                                       |
+| Org             | <p>An Org or Organization is a development account that an individual or multiple collaborators can own and use in the respective SAP BTP environment.<br>Select any value from the dropdown. These values are retrieved by ReleaseOwl app from the SAP BTP environment that is being used.</p>                                                                                                                                                              |
+| Space           | <p>A space provides users with access to a shared location for app development, deployment, and maintenance. An org can contain multiple spaces.<br>Select any value from the dropdown. These values are retrieved by ReleaseOwl app from the selected Org from the SAP BTP environment that is being used.</p>                                                                                                                                              |

@@ -2,52 +2,47 @@
 
 Any project created in ReleaseOwl can be associated with an external system like JIRA.
 
-* Once a project in ReleaseOwl is integrated with an external system, you can sync the **Sprints**, **User Stories**, and **Backlogs**.
-* You can also create **Sprints**, **User Stories**, and **Backlogs** directly in ReleaseOwl.
+Once a project in ReleaseOwl is integrated with that in an external system, then you can sync the sprints, user stories and backlogs.
 
-{% hint style="info" %}
-**Note:** The changes made in the external system get synced to ReleaseOwl, but the changes made in ReleaseOwl do not sync back to the external system.
-{% endhint %}
+You can also create sprints, user stories and backlogs in ReleaseOwl.
 
-#### **Sprints**
+The changes done in external system gets synced to ReleaseOwl but not vice-versa.
 
-You can find **Sprints** under the **Change Management** section as shown below:
+**Sprints**
 
-<figure><img src="../../.gitbook/assets/image (808).png" alt=""><figcaption></figcaption></figure>
+You can find Sprints under Change Management section as shown below:\
 
-#### **Syncing Sprints**
 
-1. To sync the sprints from an external system like JIRA, click **Sync Sprints**.
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-sprints-1.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (809).png" alt=""><figcaption></figcaption></figure>
+You can sync the sprints from the external system like JIRA by clicking Sync Sprints.\
+\
 
-2. Once the sync is completed, the sprints created in the external system will appear in the ReleaseOwl app.
 
-<figure><img src="../../.gitbook/assets/image (810).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-sprints-2.jpg" alt=""><figcaption></figcaption></figure>
 
-#### **Creating a Sprint in ReleaseOwl**
+Once the sync is completed, the sprints created in the external system appear in ReleaseOwl app.\
+\
 
-1. Click the **Create Sprint** link.
-2. Enter the **Sprint Name** and click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-sprints-3.jpg" alt=""><figcaption></figcaption></figure>
 
-#### **Sprint Status**
+You can create a new sprint by clicking the Create Sprint link. Enter the Sprint Name and click Save.\
 
-* The **status** of the sprint that is currently active or has already started will appear as **Active**.
-* Sprints that are in the pipeline will appear as **Draft**.
 
-<figure><img src="../../.gitbook/assets/image (812).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-sprints-4.jpg" alt=""><figcaption></figcaption></figure>
 
-#### **Sprint Details**
+The status of the sprint that is currently active or that which has been already started will appear active and the one in the pipeline will appear as draft.\
 
-* The **Start Date** and **End Date** of the active sprint appear under their respective columns in the grid.
 
-#### **Actions on a Sprint**
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-sprints-5.jpg" alt=""><figcaption></figcaption></figure>
 
-The following actions can be performed on a sprint:
+The Start and End Dates of the active sprint appear under the respective columns in the grid.
 
-<figure><img src="../../.gitbook/assets/image (815).png" alt=""><figcaption></figcaption></figure>
+The Actions that can be performed on a sprint are as follows:\
+
+
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-sprints-6.jpg" alt=""><figcaption></figcaption></figure>
 
 | **Edit**            | The Sprint Details can be edited such as Sprint Name, Start Date and End Date. This feature can be used only for the sprints created in ReleaseOwl and not the ones that are synced from the external system.        |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,13 +51,9 @@ The following actions can be performed on a sprint:
 | **User Stories**    | On clicking this option, the user is taken to the User Stories pertaining to the corresponding sprint where we can sync the user stories from the external system or create new user stories.                        |
 | **Cancel Sprint**   | Any time, a sprint can be cancelled if the sprint goal becomes obsolete using this option.                                                                                                                           |
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
+\
 
 
-#### **Note:**
+**Note:** You can always perform a **search** option in the **Sprints** screen by specifying **the** text in the **search** field and the sprints can be **sorted** either in **Ascending** or **Descending Order** based on **Name, Status, Start Date** and **End Date**.
 
-* You can use the **Search** option in the **Sprints** screen by entering text in the search field.
-* The sprints can also be sorted either in **Ascending** or **Descending Order** based on your preference.
-{% endhint %}
+<figure><img src="https://www.docs.releaseowl.com/assets/img/create-sprints-7.jpg" alt=""><figcaption></figcaption></figure>

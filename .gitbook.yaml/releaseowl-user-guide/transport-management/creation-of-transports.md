@@ -11,7 +11,7 @@ To create a new transport request, follow these steps:
 1. **Select Your Project**
    * Choose the project from the dropdown menu.
    * This populates the transport requests associated with the project.
-2. Click **"Create New Transport Request".**
+2. **Click "Create New Transport Request"**
 
 <figure><img src="../../.gitbook/assets/image (486).png" alt=""><figcaption></figcaption></figure>
 
