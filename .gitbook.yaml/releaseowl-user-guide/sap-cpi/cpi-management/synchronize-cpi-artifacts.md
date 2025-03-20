@@ -69,7 +69,7 @@ To configure an artifact:
 
 4\. To make changes in any other environment, click the edit icon on the required name and make changes. Click **Save**.
 
-**Artifact Versions**
+### **Artifact Versions**
 
 All the versions of a chosen artifact can be viewed. To view the versions:
 

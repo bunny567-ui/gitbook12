@@ -6,7 +6,7 @@ In **Build**, go to **SAP CPI Management**. The screen displays a list of CPI ar
 
 Multiple actions can be performed on an artifact, based on the type of artifact. These actions include – Configure, Versions and Download.
 
-**Versions**
+### **Versions**
 
 To view the versions, go to the required artifact, click **Actions** and choose **Versions**. The following screen is displayed showing the user different versions of the artifact.\
 \
@@ -14,11 +14,10 @@ To view the versions, go to the required artifact, click **Actions** and choose 
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-artifact-comparison-2.jpg" alt=""><figcaption></figcaption></figure>
 
-**Integration Suite Artifact Comparison**
+### **Integration Suite Artifact Comparison**
 
-1\. **Compare Environments** option is for comparing the source version **iFlow** in the Source **Environment** with the **active version iFlow** in the **Destination Environment.**
-
-Click **Compare Environments** and select **Source Environment** and **Destination Environment**. Click **Submit**.
+1. &#x20;**Compare Environments** option is for comparing the source version **iFlow** in the Source **Environment** with the **active version iFlow** in the **Destination Environment.**
+2. Click **Compare Environments** and select **Source Environment** and **Destination Environment**. Click **Submit**.
 
 <figure><img src="../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
 
@@ -30,12 +29,12 @@ Click **Compare Environments** and select **Source Environment** and **Destinati
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-artifact-comparison-3.jpg" alt=""><figcaption></figcaption></figure>
 
-2\. **Compare Versions** option is for comparing two different versions of an iFlow. Ensure to select two versions for comparing.\
+3. **Compare Versions** option is for comparing two different versions of an iFlow. Ensure to select two versions for comparing.\
 
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-artifact-comparison-6.jpg" alt=""><figcaption></figcaption></figure>
 
-**Download**
+### **Download**
 
 You can download the required artifact. To download:
 

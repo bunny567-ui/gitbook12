@@ -2,7 +2,7 @@
 
 **SonarQube** is a Code Quality Assurance tool that collects and analyzes source code, and provides reports for the code quality of your project. It provides detailed reports on coding standards, unit tests, code coverage, bugs, and security vulnerabilities.
 
-**SonarQube Report**
+### **SonarQube Report**
 
 If you choose tool integration while creating a build pipeline, SonarQube report is displayed here. To view the report:
 

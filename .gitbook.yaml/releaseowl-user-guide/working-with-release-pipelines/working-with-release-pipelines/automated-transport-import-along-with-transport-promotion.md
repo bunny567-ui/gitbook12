@@ -1,12 +1,12 @@
 # Automated Transport import along with Transport Promotion
 
-**Release Pipelines**
+### **Release Pipelines**
 
-Release Pipelines enables you to orchestrate deployments into SAP environments with right approvals in place.
+Release Pipelines enables you to orchestrate deployments into SAP environments with right approvals in place. Release Pipeline can be created with one or more stages. Each stage will correspond to automated deployment to the required SAP environment with a sequence of activities such as tasks related to approvals, manual changes, deployments, callouts and tests execution.
 
-Release Pipeline can be created with one or more stages. Each stage will correspond to automated deployment to the required SAP environment with a sequence of activities such as tasks related to approvals, manual changes, deployments, callouts and tests execution.
-
-Note: You can create a multi-stage pipeline for continuous deployment across various environments one after the other towards continuous delivery of application all through Dev - QA - Staging - Production.
+{% hint style="info" %}
+**Note:** You can create a multi-stage pipeline for continuous deployment across various environments one after the other towards continuous delivery of application all through Dev - QA - Staging - Production.
+{% endhint %}
 
 **Creating a Release Pipeline**
 
@@ -66,7 +66,7 @@ Enter the stage name say for e.g., UAT or QA where the deployment has to be carr
 Different tasks that can be added are as follows:\
 
 
-<figure><img src="../../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **Note:** All the tasks **except Deployment** Task are similar for any project type.
 
@@ -129,24 +129,24 @@ By default, the user who creates the Release Pipeline is notified and specifying
 Promotion is the process of Moving/Deploying/Importing the transports to the target systems using a Release pipeline associated with the project.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-13.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “Promotion Task”. Promotion can be performed in two ways – via User Story and via Release Package.
+Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “**Promotion Task”**. Promotion can be performed in two ways – via User Story and via Release Package.
 
 **a) Promotion by User story**
 
 1\. From Actions Menu of the User story, promotion can be done.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-14.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 2\. Clicking Promote will Trigger the Release pipeline associated with the project.
 
-3\. The column “Pipeline Stage” shows the current stage in the Release Pipeline execution and status of the Release Pipeline.
+3\. The column “**Pipeline Stage**” shows the current stage in the Release Pipeline execution and status of the Release Pipeline.
 
-4\. The column “Pipeline Status” shows the current task in the stage or overall status of the Release Pipeline.
+4\. The column “**Pipeline Status**” shows the current task in the stage or overall status of the Release Pipeline.
 
-5\. Runtime view of the pipeline can be viewed using “Pipeline Activity” menu option in the Actions Menu.\
+5\. Runtime view of the pipeline can be viewed using “**Pipeline Activity**” menu option in the Actions Menu.\
 
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-15.jpg" alt=""><figcaption></figcaption></figure>
@@ -207,10 +207,9 @@ g) You **cannot** add transports that are at a higher stage than the selected Pr
 h) You can add additional transports other than the ones available from the Promote from Stage by clicking Add Transport and ensure to promote them to the required Promote from Stage before promoting the Release Package.
 
 2\. From the Action Menu of the Release package, click on “Promote”.\
-\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-19.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 3\. Execution of the Release package can be seen using the option “Pipeline Activity”\
 
@@ -233,7 +232,7 @@ This is required when we want the deployments to take place in multiple environm
 For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-22.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 **Editing/ Deleting Pipeline**
 

@@ -4,7 +4,7 @@ Following are the actions that can be performed on every release package:\
 \
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-6.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 | Edit               | To edit the release package                                                                                                                                                                                                                                                                                                                                                                      |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -17,10 +17,7 @@ Following are the actions that can be performed on every release package:\
 | Audit History      | To keep track of the addition and deletion actions performed on a release package by any user.                                                                                                                                                                                                                                                                                                   |
 | Archive            | <p>To archive any release package. Once a release package is archived, you can view them under the Archived Packages.<br>By default, you can view Active Packages.</p>                                                                                                                                                                                                                           |
 
-\
-
-
-**Validation Report**
+### **Validation Report**
 
 Validation report is visible only after the validation process is complete. To view the validation report:
 

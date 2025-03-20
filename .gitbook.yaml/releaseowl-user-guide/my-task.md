@@ -24,7 +24,7 @@ The **My Tasks** screen consists of a structured table displaying task details:
   * _**Approve/Reject**_**:** For approval tasks.
   * _**Complete**_**:** For manual tasks.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 ### **Task Types**
 

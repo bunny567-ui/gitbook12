@@ -62,14 +62,14 @@ Tasks: Click Add to enter any tasks that are to be performed
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-7.jpg" alt=""><figcaption></figcaption></figure>
 
-Note: To remove any stage, click Remove stage button.
+**Note:** To remove any stage, click Remove stage button.
 
 Different tasks that can be added are as follows:\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-8.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-Note: All the tasks except Deployment Task are similar for any project type.
+**Note:** All the tasks except Deployment Task are similar for any project type.
 
 For CPI projects, Wait for Promotion and Validation tasks are the two extra tasks available other than the ones available for every project type.
 
@@ -105,7 +105,7 @@ Tasks waiting for promotion at the same stage of the pipeline can be packaged to
 Promotion is the process of Moving/Deploying CPI Artifacts to various environments using a Release pipeline associated with the project.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-10.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “Promotion Task”. Promotion can be performed in two ways – via User Story and via Release Package.
 
@@ -114,7 +114,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 1\. From Actions Menu of the User story, promotion can be done.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-11.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 2\. Clicking Promote will Trigger the Release pipeline associated with the project.
 
@@ -125,7 +125,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 5\. Runtime view of the pipeline can be viewed using “Pipeline Activity” menu option in the Actions Menu.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-12.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 6\. The pipeline activity screen shows all the stages of the Release Pipeline. Clicking on the stage shows the tasks and it’s execution status.
 
@@ -159,7 +159,7 @@ It uses the Release Pipeline associated with the project for promotion.\
 2\. From the Action Menu of the Release package, click on “Promote”.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-16.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 3\. Execution of the Release package can be seen using the option “Pipeline Activity”\
 

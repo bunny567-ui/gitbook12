@@ -181,9 +181,9 @@ To integrate user stories from Jira, follow these steps:
 2. In **Change Management**, select **User Stories** Menu
 3. Click the **Sync User stories** icon.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Once the sync is completed, you will get a pop up saying, **User Story Sync completed**.
 5. Click **Ok**.
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>

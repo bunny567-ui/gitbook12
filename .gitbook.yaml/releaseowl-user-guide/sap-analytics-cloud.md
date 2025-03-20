@@ -7,7 +7,7 @@ SAP Analytics Cloud (SAC) is a cloud-based business intelligence (BI) and analyt
 1. Admin users can switch to the **Administration View** to access the **Credential Manager**.
 2. Click the **Credential Manager** menu option on the left-hand pane to view the list of registered credentials.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 3. To add a new credential, click **Register Credential** available on the right-hand panel, and then click on the **Register Credential** button.
 
@@ -119,7 +119,7 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 
 
-    <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
     * You can see the **Deployment History** by clicking on the **Actions** button and selecting **Deployment History**.
 
@@ -130,7 +130,7 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
     * Click the **Actions** button and select **Import Settings** to view package details.
 
-    <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -146,7 +146,7 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 
 
-    <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
     * Click on the **+Add** button to add **SAC Packages**.
     * Click on the **Save** button.
@@ -166,13 +166,13 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * Click on the **Deploy Logs** to view the deployment status of the button.
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 
 

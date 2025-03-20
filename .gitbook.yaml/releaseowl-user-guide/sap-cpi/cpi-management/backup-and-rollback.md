@@ -1,28 +1,37 @@
 # Backup & Rollback
 
-The Enable Rollback option is one among the various Deployment Actions that can be performed at the time of deployment. Enable Rollback option will create a backup of the existing deployment version so that whenever any deployment fails or if there is any problem with the deployment, you can rollback the changes.
+The **Enable Rollback** option is one of the key **Deployment Actions** that can be configured during the deployment process. When enabled, this option creates a **backup of the current deployment version**, allowing you to **rollback changes** in case of deployment failures or post-deployment issues.
 
-Rollback is available for CPI artifacts that are deployed to design time in addition to those published to run time. While creating a release pipeline, you must enable the option to rollback as a prerequisite. Click rollback in the deployment screen to rollback while running release pipelines. All the details pertaining to the deployment of the artifact is specified in the deployment task.
+### **Key Points:**
 
-The following screen is displayed on adding a deployment task. Select the checkbox – Enable Rollback and Save the changes.\
+* Rollback is supported for **CPI artifacts** deployed both to **design time** and **runtime**.
+* To use rollback during a release pipeline, you must **enable rollback while creating the pipeline**.
+* During pipeline execution, you can initiate rollback by clicking the **Rollback** option in the deployment screen.
+* Detailed deployment information, including rollback status, is available in the associated **deployment task**.
+
+### **How to Enable Rollback:**
+
+1. While adding a **Deployment Task**, you will see an option for **Enable Rollback**.
+2. **Select the checkbox** next to this option.
+3. Click **Save** to confirm the changes.\
 
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/Backup%20&#x26;%20Roll%20back-1.jpg" alt=""><figcaption></figcaption></figure>
 
-You can view the Release Pipeline execution status from User Stories screen by navigating to the Pipeline Activity as shown below:\
+4. You can view the Release Pipeline execution status from User Stories screen by navigating to the Pipeline Activity as shown below:\
 
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/Backup%20&#x26;%20Roll%20back-2.jpg" alt=""><figcaption></figcaption></figure>
 
-Click on the Pipeline Activity option. You can find the Rollback option under Deployment section. At any point of time i.e., during or after the deployment done by the execution of the Release Pipeline, you can rollback to previous version by clicking the Rollback option available.
+5. Click on the **Pipeline Activity** option. You can find the Rollback option under **Deployment section**.&#x20;
+6. At any point of time i.e., during or after the deployment done by the execution of the Release Pipeline, you can rollback to previous version by clicking the Rollback option available.&#x20;
+7. To rollback to the previous version, click on **Rollback** and in the confirmation pop-up that appears, click **Yes**. Rollback process starts.
 
-To rollback to the previous version, click on Rollback and in the confirmation pop-up that appears, click Yes. Rollback process starts.
+### **Rollback Logs**
 
-**Rollback Logs**
-
-Rollback Logs are available for CPI artifacts that are deployed to design time in addition to those published to run time. To rollback a build, click Rollback in the status page.
-
-Once rollback is enabled, you can see the rollback status in the deployment logs.
+* **Rollback Logs** are generated for **CPI artifacts** deployed to both **design time** and **runtime**.
+* To rollback a build, click **Rollback** on the **Pipeline Activity status page**.
+* Once rollback is triggered, the **rollback status and details** will be visible in the **deployment logs**, providing transparency into the rollback process and outcomes.
 
 <figure><img src="../../../.gitbook/assets/image (359).png" alt=""><figcaption></figcaption></figure>
 

@@ -22,7 +22,7 @@ To enable integration and secure communication with Jira Cloud or Jira On-Premis
    * **SAP Cloud Credentials**: Select an existing **ServiceUserCredBtp** for proxy communication.
 5. Save the credential.
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Validation:**
 
