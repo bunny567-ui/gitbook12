@@ -1,8 +1,8 @@
 # Version 2024.03
 
-### **New Features & Enhancements**
+### **New Features & Enhancements** <a href="#pdf-page-itv3uqgpx0droghjqrjp-new-features-and-enhancements" id="pdf-page-itv3uqgpx0droghjqrjp-new-features-and-enhancements"></a>
 
-#### **1. UiPath Integration**
+**1. UiPath Integration**
 
 * Introduced integration with **UiPath** to enhance automation capabilities.
 
@@ -22,11 +22,11 @@
 
 * Implemented an option to **define the number of builds** to retain for build pipelines.
 
-#### **6. CPI Test Tool Enhancements**
+**6. CPI Test Tool Enhancements**
 
 * Made **significant enhancements** to the **CPI test tool** to improve functionality.
 
-#### **7. Service User for SAP On-Premise**
+**7. Service User for SAP On-Premise**
 
 * Now displays the **Service User** instead of the promoting user while updating comments in user stories.
 
@@ -42,71 +42,70 @@
 
 * Introduced an option to **continue execution on failure** in release pipelines, specifically for test execution.
 
-### **Performance Improvements**
+### **Performance Improvements** <a href="#pdf-page-itv3uqgpx0droghjqrjp-performance-improvements" id="pdf-page-itv3uqgpx0droghjqrjp-performance-improvements"></a>
 
-#### **1. Build Pipeline Performance**
+**1. Build Pipeline Performance**
 
 * Addressed **backend performance issues**, resulting in **faster and more reliable** build pipeline execution.
 
-### **Bug Fixes**
+### **Bug Fixes** <a href="#pdf-page-itv3uqgpx0droghjqrjp-bug-fixes" id="pdf-page-itv3uqgpx0droghjqrjp-bug-fixes"></a>
 
-#### **1. CPI Environment Issues**
+**1. CPI Environment Issues**
 
 * Fixed an issue where **IFLOW OAuth credentials and IFLOW API URL** were incorrectly marked as mandatory.
 
-#### **2. Activity Log Updates**
+**2. Activity Log Updates**
 
 * Resolved an issue where the **Activity Log** required a manual refresh to update.
 
-#### **3. SAP Cloud Environment Edit Issue**
+**3. SAP Cloud Environment Edit Issue**
 
 * Fixed a **busy indicator issue** occurring when the organization call failed during SAP Cloud environment edits.
 
-#### **4. CPI Scenario Approval Error**
+**4. CPI Scenario Approval Error**
 
 * Addressed an **approval error** that occurred after a rollback in the pipeline.
 
-#### **5. User Email Visibility in Logs**
+**5. User Email Visibility in Logs**
 
 * Fixed an issue where **ReleaseOwl user email IDs** were visible in the build pipeline logs.
 
-#### **6. Pipeline Activity in User Stories**
+**6. Pipeline Activity in User Stories**
 
 * Fixed an issue where **pipeline activity in user stories** was not functioning correctly.
 
-#### **7. Build Pipeline Naming Issue**
+**7. Build Pipeline Naming Issue**
 
 * Resolved an issue where **build pipelines with the same name** appeared in different projects.
 
-#### **8. Validations in Release Pipeline Approvals**
+**8. Validations in Release Pipeline Approvals**
 
 * Corrected an issue where a release pipeline could be saved **without selecting a user/role** in the approval task.
 
-#### **9. CPI Promote Button Visibility**
+**9. CPI Promote Button Visibility**
 
 * Fixed an issue where the **Promote button** was visible even when the release pipeline was not assigned.
 
-#### **10. Project Types Based on Licenses**
+**10. Project Types Based on Licenses**
 
 * Ensured that **project types** in settings and different sections of user stories/release packages are shown **based on licenses** for multiverse projects.
 
-#### **11. Associating Multiple Release Pipelines**
+**11. Associating Multiple Release Pipelines**
 
 * Fixed an issue where associating **multiple release pipelines** with the “On-Successful Build Pipeline” option was **not working**.
 
-#### **12. CPI Artifact Fetching**
+**12. CPI Artifact Fetching**
 
 * Resolved an issue where **artifacts** could not be fetched from the last package.
 
-#### **13. SonarQube Credential Selection**
+**13. SonarQube Credential Selection**
 
 * Fixed an issue where **default SonarQube credentials (e.g., SONAR OnPrem)** were not retained upon editing.
 
-#### **14. Transport Management Description Field**
+**14. Transport Management Description Field**
 
 * Changed the **field name** from **"Name"** to **"Description"** in transport management.
 
-#### **15. Mandatory Stage & Task in Release Pipelines**
+**15. Mandatory Stage & Task in Release Pipelines**
 
 * Ensured that at least **one stage and one task** are mandatory in a release pipeline.
-
