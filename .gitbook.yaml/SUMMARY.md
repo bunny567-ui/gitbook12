@@ -88,5 +88,5 @@
     * [Version 2024.03](releaseowl-releases/release-notes/version-2024.03.md)
     * [Version 2024.04](releaseowl-releases/release-notes/version-2024.04.md)
     * [Version 2024.04.01](releaseowl-releases/release-notes/version-2024.04.01.md)
-    * [Page 4](releaseowl-releases/release-notes/page-4.md)
-    * [Page 5](releaseowl-releases/release-notes/page-5.md)
+    * [Version 2024.05](releaseowl-releases/release-notes/version-2024.05.md)
+    * [Version 2025.02](releaseowl-releases/release-notes/version-2025.02.md)
