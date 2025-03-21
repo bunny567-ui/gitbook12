@@ -11,9 +11,9 @@ This release includes critical fixes and enhancements to improve system stabilit
 
 Before you share the page, review the contents of each Jira issue and remove any sensitive data.
 
-| **Issue** | **Summary**                                                                                         | **Issue Type** |
-| --------- | --------------------------------------------------------------------------------------------------- | -------------- |
-| RP-889    | Default import parameters in environment creation                                                   | Story          |
-| RP-888    | Import parameters at TransportDomain controller level, preference order: TR > Environment > Default | Story          |
-| RP-886    | Closed sprints are not syncing                                                                      | Bug            |
+| **Issue**                                                                                                                  | **Summary**                                                                                                     | **Issue Type** |
+| -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | -------------- |
+| RP-889- Default import parameters in env creation Done                                                                     | Default import parameters in environment creation                                                               | Story          |
+| RP-888-import params at TransportDomain controller level, and order of preference is TR, Environment and then default Done | Import params at TransportDomain controller level, and order of preference is TR, Environment, and then default | Story          |
+| RP-886- closed sprints arfe not syncing Done                                                                               | Closed sprints are not syncing                                                                                  | Bug            |
 
