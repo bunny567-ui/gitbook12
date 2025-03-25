@@ -2,11 +2,12 @@
 
 This release focuses on addressing issues related to CPI deployment, release pipeline creation, and transport sequencing, along with validating custom credentials in the CPI environment.
 
-| **Release Notes** |                                                                                                                                                                                      |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Date**          | 14 Jan 2025                                                                                                                                                                          |
-| **Version**       | 2025.02                                                                                                                                                                              |
-| **Description**   | This release addresses issues in CPI deployment, release pipeline creation, and GCTS transport sequencing. It also includes validation of custom credentials in the CPI environment. |
+### **Release Notes**
+
+| **Date**        | 14 Jan 2025                                                                                                                                                                          |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Version**     | 2025.02                                                                                                                                                                              |
+| **Description** | This release addresses issues in CPI deployment, release pipeline creation, and GCTS transport sequencing. It also includes validation of custom credentials in the CPI environment. |
 
 ### Bug Fixes and Enhancements
 
