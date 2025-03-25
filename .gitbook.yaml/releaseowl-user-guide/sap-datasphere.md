@@ -83,22 +83,17 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
 <figure><img src="../.gitbook/assets/image (970).png" alt=""><figcaption></figcaption></figure>
 
 4. Click on the **Users** tab. This tab lists all existing users associated with the project.
-5. Click on the **+ Add button** in the top-right corner of the Users section.
-6. If applicable, check or uncheck additional permissions or roles to customize the user's access.
+5. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.
+6. This will open the **Permissions** page for the selected user.
 
 <figure><img src="../.gitbook/assets/image (981).png" alt=""><figcaption></figcaption></figure>
 
-7. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.
-8. This will open the **Permissions** page for the selected user.
-
-<figure><img src="../.gitbook/assets/image (971).png" alt=""><figcaption></figcaption></figure>
-
-9. Under the **lock icon** button. The roles assigned to the selected user are displayed.
+7. Under the **lock icon** button. The roles assigned to the selected user are displayed.
 
 <figure><img src="../.gitbook/assets/image (973).png" alt=""><figcaption></figcaption></figure>
 
-10. Scroll down to the Environments section.
-11. Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
+8. Scroll down to the Environments section.
+9. Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
 
 <figure><img src="../.gitbook/assets/image (972).png" alt=""><figcaption></figcaption></figure>
 
