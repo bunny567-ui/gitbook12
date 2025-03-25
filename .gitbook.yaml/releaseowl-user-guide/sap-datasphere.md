@@ -55,3 +55,102 @@
 8. Click the **delete icon** to delete the required environment.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fob4rW5nGU4ydmZF1hzj5%252Fimage.png%3Falt%3Dmedia%26token%3D2e54e681-ef6c-4519-b5d0-ba2a2b18c8e7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=69251e71&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+### **Adding SAP Datasphere to the Project:** <a href="#pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project" id="pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project"></a>
+
+The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
+
+1.  **To register SAP datasphere:**
+
+    * Go to the **Projects** drop-down at the top right corner and click **Project Settings**.
+    * In **Project Settings**, navigate to **Environment**.
+    * The following screen is displayed.
+
+    <figure><img src="../.gitbook/assets/image (968).png" alt=""><figcaption></figcaption></figure>
+2.  **Click Add** to add a new environment in ReleaseOwl.
+
+    * In the subsequent screen, select the required environments from the list displayed.
+    * Select **Source environment** and **Save** the changes.
+
+    <figure><img src="../.gitbook/assets/image (969).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:** Only the artifacts from the source are synced to ReleaseOwl.
+{% endhint %}
+
+3. The environment gets added to the corresponding project in ReleaseOwl.
+
+<figure><img src="../.gitbook/assets/image (970).png" alt=""><figcaption></figcaption></figure>
+
+4. Click on the **Users** tab. This tab lists all existing users associated with the project.
+5. Click on the **+ Add button** in the top-right corner of the Users section.
+6. If applicable, check or uncheck additional permissions or roles to customize the user's access.
+
+<figure><img src="../.gitbook/assets/image (981).png" alt=""><figcaption></figcaption></figure>
+
+7. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.
+8. This will open the **Permissions** page for the selected user.
+
+<figure><img src="../.gitbook/assets/image (971).png" alt=""><figcaption></figcaption></figure>
+
+9. Under the **lock icon** button. The roles assigned to the selected user are displayed.
+
+<figure><img src="../.gitbook/assets/image (973).png" alt=""><figcaption></figcaption></figure>
+
+10. Scroll down to the Environments section.
+11. Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
+
+<figure><img src="../.gitbook/assets/image (972).png" alt=""><figcaption></figcaption></figure>
+
+### **SAP Datasphere  and Deployment**
+
+1.  **Sync Packages:**
+
+    * Go to **SAP Datasphere** in the **Build** section and click on **Sync Packages**.
+
+    <figure><img src="../.gitbook/assets/image (974).png" alt=""><figcaption></figcaption></figure>
+
+    * You can see the **Deployment History** by clicking on the **Actions** button and selecting **Deployment History**.
+
+
+
+    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F5IUuxSGU0CdoBfCQUbZz%252Fimage.png%3Falt%3Dmedia%26token%3D306a29dc-f1db-4726-a7ac-f4cf6ea4eb56&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b0e21ae9&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+2.  **View Package Details:**
+
+    * Click the **Actions** button and select **Import Settings** to view package details.
+
+    <figure><img src="../.gitbook/assets/image (975).png" alt=""><figcaption></figcaption></figure>
+
+
+
+    * Each package has different import settings, and you need to configure the import settings for the required package.
+
+    <figure><img src="../.gitbook/assets/image (976).png" alt=""><figcaption></figcaption></figure>
+3.  **Change Management:**
+
+    * Navigate to the **Change Management** section.
+    * Go to **User Stories**, click on the **Actions** button, and select **Edit**.
+
+    <figure><img src="../.gitbook/assets/image (980).png" alt=""><figcaption></figcaption></figure>
+
+    * Click on the **+Add** button to add **SAP Datasphere**.
+    * Click on the **Save** button.
+
+    <figure><img src="../.gitbook/assets/image (979).png" alt=""><figcaption></figcaption></figure>
+
+
+4.  **Promote User Story:**
+
+    * Click on the **Save** button.
+    * Click on **Promote** to promote the user story.
+
+    <figure><img src="../.gitbook/assets/image (978).png" alt=""><figcaption></figcaption></figure>
+5.  **Check Deployment Status:**
+
+    * Click on the **Pipeline Activity** to view the deployment status.
+
+    <figure><img src="../.gitbook/assets/image (977).png" alt=""><figcaption></figcaption></figure>
+
+
+
+* Click on the **Deploy Logs** to view the deployment status of the button.
