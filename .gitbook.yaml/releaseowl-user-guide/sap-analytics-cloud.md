@@ -84,31 +84,28 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 2.  **Click Add** to add a new environment in ReleaseOwl.
 
     * In the subsequent screen, select the required environments from the list displayed.
+    * Select **Source environment** and **Save** the changes.
 
     <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FggBSC4bnGiLFYutZnE9p%252Fimage.png%3Falt%3Dmedia%26token%3Da9bc4b46-0ef8-40d4-964e-f63ba5ed6fda&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3f536fc1&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-
-
-* Select **Source environment** and **Save** the changes.
 
 {% hint style="info" %}
 **Note:** Only the artifacts from the source are synced to ReleaseOwl.
 {% endhint %}
 
-* The environment gets added to the corresponding project in ReleaseOwl.
+3. The environment gets added to the corresponding project in ReleaseOwl.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F3JTvkizsiQvnUqLSjR2n%252Fimage.png%3Falt%3Dmedia%26token%3D83c326b7-0076-4c1c-847c-3afec3a92d0a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=75fa3f59&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-* **Click Permissions** (under the **Users** tab in Project Settings) to add users that can access (read or deploy to) the registered SAC environment.
+4. Click on the **Users** tab. This tab lists all existing users associated with the project.4
+5. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.
+6. This will open the **Permissions** page for the selected user.
+
+
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FSQLvLRb6lrxlsaTAgRTe%252Fimage.png%3Falt%3Dmedia%26token%3D24afb351-4851-412d-b4f6-a2a762834247&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=96db946b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-* Click **Permissions**. The roles assigned to the selected user are displayed.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FNSHG6qj5PXItA2vl0jxM%252Fimage.png%3Falt%3Dmedia%26token%3Dd22e8885-3394-4754-bfb1-c2d150e03e10&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5f630d96&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-* Scroll down to the Environments section.
-* Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
+7. Scroll down to the Environments section.
+8. Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FWLIelpLn63BESz73KmyW%252Fimage.png%3Falt%3Dmedia%26token%3D6bb1289b-2b17-491e-a701-03b5c5cf1406&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2efbc85e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
