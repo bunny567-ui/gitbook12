@@ -1,8 +1,6 @@
 # Release Package Validation with Transports
 
-Following are the actions that can be performed on every release package:\
-\
-
+Following are the actions that can be performed on every release package:
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
