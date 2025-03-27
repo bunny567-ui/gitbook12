@@ -166,9 +166,7 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 <figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
-
-
-* Click on the **Deploy Logs** to view the deployment status of the button.
+* Click the **"Deploy Log"** button to open a pop-up window displaying deployment details.
 
 <figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 

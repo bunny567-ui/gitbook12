@@ -107,9 +107,7 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
 
     * You can see the **Deployment History** by clicking on the **Actions** button and selecting **Deployment History**.
 
-
-
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F5IUuxSGU0CdoBfCQUbZz%252Fimage.png%3Falt%3Dmedia%26token%3D306a29dc-f1db-4726-a7ac-f4cf6ea4eb56&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b0e21ae9&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 2.  **View Package Details:**
 
     * Click the **Actions** button and select **Import Settings** to view package details.
@@ -131,7 +129,7 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
     * Click on the **+Add** button to add **SAP Datasphere**.
     * Click on the **Save** button.
 
-    <figure><img src="../.gitbook/assets/image (979).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 4.  **Promote User Story:**
@@ -144,8 +142,14 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
 
     * Click on the **Pipeline Activity** to view the deployment status.
 
-    <figure><img src="../.gitbook/assets/image (977).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
-* Click on the **Deploy Logs** to view the deployment status of the button.
+* Click on the **"Deploy Log"** button.
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+* A pop-up window titled **SAP Datasphere Cloud Deploy Log** will appear, displaying deployment details.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

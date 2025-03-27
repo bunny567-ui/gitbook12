@@ -27,7 +27,7 @@ You can enable the **retrofit** option in the **Transport Domain Controller** sc
 1. Navigate to **Transport Retrofit** under the **Build** section.
 2. Select the transport you want to retrofit and click **Retrofit**.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 3. The **Transport Retrofit** process begins, and you can view details such as:
 
