@@ -1,5 +1,7 @@
 # SAP Datasphere
 
+This document outlines the step-by-step process of registering SAP Datasphere within ReleaseOwl, managing environments, configuring user permissions, handling package synchronization, and executing deployment processes efficiently.
+
 ### Credential Registration <a href="#pdf-page-dk8rbzgxugve408ig5ly-credential-registration" id="pdf-page-dk8rbzgxugve408ig5ly-credential-registration"></a>
 
 1. Admin users can switch to the **Administration View** to access the **Credential Manager**.
