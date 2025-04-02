@@ -20,13 +20,15 @@
 
 5. For the Client ID, Secret, Token URL, and Authorization URL:
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F5ZZK8mPH10yYlnhGMIj2%252Fimage.png%3Falt%3Dmedia%26token%3D39458104-2d86-4dae-b3a7-66ef41343ecd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e77b8ff6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+* Go to your **SAP  Datasphere** and navigate to **Administration**
 
-{% hint style="info" %}
-**Note:** Refer to this link for the creating the Client ID, Secret, Token URL , and Authorization URL [**https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/sap-datasphere**](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/sap-datasphere)
-{% endhint %}
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FE9mC3aMVxAzIasJ3Lvug%252Fimage.png%3Falt%3Dmedia%26token%3D3a169cd6-1fcd-46e5-977e-f861720db6f8&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=481a978d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+* Click on **App Integration** for the **OAuth Clients**.
+* Click on **Add a New OAuth Client**.
+* Copy the **Client ID, Secret, Token URL,** and **Authorization URL**.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **To Register SAP Datasphere:** <a href="#pdf-page-dk8rbzgxugve408ig5ly-to-register-sap-datasphere" id="pdf-page-dk8rbzgxugve408ig5ly-to-register-sap-datasphere"></a>
 
@@ -129,7 +131,7 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
     * Click on the **+Add** button to add **SAP Datasphere**.
     * Click on the **Save** button.
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 4.  **Promote User Story:**
@@ -142,7 +144,7 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
 
     * Click on the **Pipeline Activity** to view the deployment status.
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
