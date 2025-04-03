@@ -80,7 +80,10 @@ The credential will now be available to access your **Transport Domain Controlle
 The following fields appear:
 
 * **Application Server (Required)** – Enter the **application server address**.
-* **Port (Required)** – Specify the **port number** as defined in **SAP Logon**.
+* **Port (Required)** – Specify the port number as defined in SAP Logon. To find the port number, go to **SAP Easy Access**, enter **SMICM** in the transaction code field, and navigate to **Services**, where you can find the HTTP port number.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 * **HTTPS** – Check the box if **HTTPS** is required.
 * **Client ID (Required)** – Enter the **Client ID** of the Transport Domain Controller.
 * **Transport Manager Credential (Required)** – Select the **automatically registered** Transport Manager credential.
@@ -107,12 +110,12 @@ The **System Landscape** section allows you to define multiple systems within th
 
 **Columns in the System Landscape Table:**
 
-* **System ID** – Unique identifier for the system (e.g., `DEM`, `DEQ`, `DEP`).
-* **Client ID** – Client ID associated with the system (e.g., `100`).
-* **Description** – Brief description of the system (e.g., `Development System`, `QA`, `Production`).
-* **System Type** – Select from the dropdown: `DEV`, `QA`, `PROD`.
-* **Type** – Defines the type of system (`Customizing`, `Test`, `Production`).
-* **Target Group** – Specify the target group, if applicable.
+* **System ID:** A unique identifier for the system (e.g., system code or name).
+* **Client ID:** The client number associated with the system.
+* **Description:** A brief description of the system (e.g., Development, QA, Production).
+* **System Type:** The category of the system, such as Development, Production, or Test.
+* **Type:** Specifies the system’s role or function (e.g., Customizing, Test, Production).
+* **Target Group:** Defines the associated target group, if applicable.
 
 **Additional Configurations**
 

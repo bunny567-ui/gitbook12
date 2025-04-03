@@ -5,7 +5,7 @@
 * From the Administration menu, go to **Credential Manager**.
 * Click **Register Credential**.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Provide Credential Details**
 
