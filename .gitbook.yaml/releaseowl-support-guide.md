@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # ReleaseOwl Support Guide
 
 ### **User Sign-Up & Access to Support** <a href="#pdf-page-5z8anog0xntnnqk3dtdi-user-sign-up-and-access-to-support" id="pdf-page-5z8anog0xntnnqk3dtdi-user-sign-up-and-access-to-support"></a>
