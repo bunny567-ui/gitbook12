@@ -67,7 +67,7 @@ Tasks: Click Add to enter any tasks that are to be performed
 Different tasks that can be added are as follows:\
 
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Note:** All the tasks except Deployment Task are similar for any project type.
 

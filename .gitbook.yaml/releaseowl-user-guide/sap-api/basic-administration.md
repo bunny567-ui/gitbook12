@@ -5,7 +5,7 @@
 * From the Administration menu, go to **Credential Manager**.
 * Click **Register Credential**.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Provide Credential Details**
 
@@ -14,7 +14,7 @@
 * **c. Authentication Type**: Select **OAuth2**.
 * **d. Client ID, Client Secret, and Token URL**: Follow the steps below to retrieve these details.
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Steps to Retrieve API Management Details from SAP BTP Cockpit
 
@@ -38,7 +38,7 @@ d)     **Space:** Provide the space name
 
 e)      **Instance name:** Provide any name for the instance
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 f) Select the roles as mentioned below and click on create.
 
@@ -65,7 +65,7 @@ f) Select the roles as mentioned below and click on create.
 * Provide a name for the service key under **Service Key Name**.
 * Click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **8. Copy Service Key Details**
 
@@ -76,7 +76,7 @@ f) Select the roles as mentioned below and click on create.
     * **Client Secret**
     * **Token URL**
 
-    <figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Steps to Complete Credential Registration in ReleaseOwl
 
@@ -92,5 +92,5 @@ f) Select the roles as mentioned below and click on create.
 * Click **Save**.
 * The credential will appear in the **List of Credentials**.
 
-<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
