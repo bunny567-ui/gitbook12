@@ -1,4 +1,4 @@
-# Version 2024.04.01
+# Version 2024.4.1
 
 This release includes critical fixes and enhancements to improve system stability and functionality. Key updates include adjustments to import parameters, improved synchronization processes, and bug fixes related to sprint management.
 

@@ -1,4 +1,4 @@
-# Version 2025.02
+# Version 2025.2
 
 This release focuses on addressing issues related to CPI deployment, release pipeline creation, and transport sequencing, along with validating custom credentials in the CPI environment.
 

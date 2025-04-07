@@ -1,4 +1,4 @@
-# Version 2024.05
+# Version 2024.5
 
 The **2024.05** release focuses on a variety of enhancements, bug fixes, and new features designed to improve the release pipeline. This update includes improvements to the import functionality, conflict resolution during deployments, backend optimizations, and updates to the user interface.
 

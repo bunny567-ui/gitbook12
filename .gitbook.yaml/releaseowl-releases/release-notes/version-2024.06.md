@@ -1,4 +1,4 @@
-# Version 2024.06
+# Version 2024.6
 
 This release includes a variety of updates and bug fixes aimed at improving the user experience and expanding functionality.
 
