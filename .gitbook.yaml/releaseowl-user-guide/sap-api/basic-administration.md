@@ -11,7 +11,7 @@
 
 * **a. Credential Name**: Enter any identifiable name for the credential.
 * **b. Credential Type**: Select **API Management**.
-* **c. Authentication Type**: Select **OAuth2**.
+* **c. Authentication Type**: You can upload the credentials file using the **Browse** button.
 * **d. Client ID, Client Secret, and Token URL**: Follow the steps below to retrieve these details.
 
 <figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
