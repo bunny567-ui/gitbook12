@@ -18,76 +18,42 @@
 
 ### Steps to Retrieve API Management Details from SAP BTP Cockpit
 
-**4. Access the SAP BTP Cockpit**
+#### 3. Access the SAP BTP Cockpit
 
-1\.      Go to SAP BTP cockpit.
-
-2\.      Select the subaccount that hosts your SAP Cloud Integration application.
-
-3\.      Choose your subaccount, navigate to Services ->Service Marketplace, and select Process Integration Runtime and Choose Create.
-
-4\.      Provide the details as shown below
-
-a)      **Service**: SAP Process Integration Runtime
-
-b)     **Plan:** API
-
-c)      **Runtime environment:** Cloud Foundry
-
-d)     **Space:** Provide the space name
-
-e)      **Instance name:** Provide any name for the instance
-
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-f) Select the roles as mentioned below and click on create.
-
-| Role                       | Description                                                                                                          |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| MessagePayloadsRead        | Allows users to read and view message payloads within the integration runtime environment.                           |
-| MonitoringDataRead         | Grants permission to access and view monitoring data related to integration flows, messages, and system performance. |
-| TraceConfigurationEdit     | Allows users to update tracing settings for integration flows.                                                       |
-| TraceConfigurationRead     | Allows users to read the current tracing configuration of integration flows.                                         |
-| WorkspaceArtifactsDeploy   | Grants permission to deploy integration artifacts from the design workspace to runtime environments.                 |
-| WorkspacePackagesConfigure | Allows users to configure integration packages in the workspace, including defining parameters and dependencies.     |
-| WorkspacePackagesRead      | Provides read-only access to integration packages in the workspace.                                                  |
-| WorkspacePackagesEdit      | Allows users to modify integration packages, including artifact updates and configuration changes.                   |
-
-&#x20;
-
-### **Steps to Create Service Key**
-
-**7. Add Service Key**
-
-* In the **SAP BTP Cockpit**, go to **Instances and Subscriptions**.
-* Locate the instance **API Management, API portal** with the plan **apiportal-apiaccess**.
-* Under the **Actions** column, choose **Create Service Key**.
-* Provide a name for the service key under **Service Key Name**.
-* Click **Create**.
+1. Go to the **SAP BTP Cockpit** and log in with your credentials.
+2. In the **SAP BTP Cockpit**, navigate to **Instances and Subscriptions**.
+3. Click on the **Create** button.
+4. Fill in the necessary details as follows:
+   * **Service**: API Management, API Portal
+   * **Plan**: `apiportal-apiaccess`
+   * **Runtime Environment**: Cloud Foundry
+   * **Space**: Dev
+   * **Instance Name**: Enter a name of your choice
 
 <figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**8. Copy Service Key Details**
+#### 4. Create a Service Key
 
-* Select the newly created service key to display its details.
-*   Copy the following details:
+1. After the instance is created, click the **three-dot menu (⋮)** next to it.
+2. Select **"Create Service Key"**.
 
-    * **Client ID**
-    * **Client Secret**
-    * **Token URL**
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+3. Enter a **name** for the key (e.g., `api-access-key`) and click **Create**.
+4. Once created, click on the key to view credentials like `clientid`, `clientsecret`, and `url` — used for API authentication.
+
+<figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Steps to Complete Credential Registration in ReleaseOwl
 
-**9. Enter Service Key Details in ReleaseOwl**
+**5. Enter Service Key Details in ReleaseOwl**
 
 * Use the copied details from the service key:
   * **d. Client ID**: Paste the Client ID.
   * **e. Client Secret**: Paste the Client Secret.
   * **f. Token URL**: Paste the Token URL.
 
-**10. Save Credential**
+**6. Save Credential**
 
 * Click **Save**.
 * The credential will appear in the **List of Credentials**.
