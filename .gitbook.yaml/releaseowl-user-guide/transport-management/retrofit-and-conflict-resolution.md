@@ -1,5 +1,34 @@
 # Retrofit & Conflict Resolution
 
+The retrofit process in ReleaseOwl ensures that changes made in the maintenance landscape are synchronized with the implementation landscape while preventing downgrades, overwrites, and conflicts. It supports both automated and manual retrofitting mechanisms to handle various object types and development workflows.
+
+### Retrofit Approaches
+
+Retrofitting in ReleaseOwl can be performed in two ways:
+
+#### &#x20;Automated Retrofit via Pipelines
+
+ReleaseOwl offers an **automated retrofit task** as part of the release pipeline.\
+This ensures that whenever changes are moved to **Quality (QA)** or **Production (PRD)**, they are automatically retrofitted back to the **implementation landscape**.
+
+The retrofit task:
+
+* Checks for conflicts
+* Ensures that only **non-conflicting** changes are moved forward automatically
+
+
+
+anual Retrofit via the Retrofit Screen
+
+In cases where a **transport request (TR)** is modified or delayed, it will appear on the **Retrofit Screen** in ReleaseOwl.
+
+Users can manually trigger the retrofit process from this screen, which will:
+
+* Dynamically create a new transport request
+* Transfer changes from the **maintenance landscape** to the **implementation landscape**
+
+This manual method gives users control over which TRs to retrofit and when, especially useful in cases requiring conflict resolution or selective movement.
+
 ### **Enabling and Performing Transport Retrofit in ReleaseOwl**
 
 You can enable the **retrofit** option in the **Transport Domain Controller** screen.
