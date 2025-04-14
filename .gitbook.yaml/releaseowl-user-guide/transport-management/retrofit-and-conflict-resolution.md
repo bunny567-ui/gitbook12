@@ -16,9 +16,7 @@ The retrofit task:
 * Checks for conflicts
 * Ensures that only **non-conflicting** changes are moved forward automatically
 
-
-
-anual Retrofit via the Retrofit Screen
+#### Manual Retrofit via the Retrofit Screen
 
 In cases where a **transport request (TR)** is modified or delayed, it will appear on the **Retrofit Screen** in ReleaseOwl.
 
