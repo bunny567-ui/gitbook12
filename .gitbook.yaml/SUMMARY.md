@@ -85,6 +85,7 @@
 * [ReleaseOwl Releases](releaseowl-releases/README.md)
   * [Release Calendar](releaseowl-releases/release-calendar.md)
   * [Release Notes](releaseowl-releases/release-notes/README.md)
+    * [Version 2025.3.2](releaseowl-releases/release-notes/version-2025.3.2.md)
     * [Version 2025.3.1](releaseowl-releases/release-notes/version-2025.3.1.md)
     * [Version 2025.3](releaseowl-releases/release-notes/version-2025.03.md)
     * [Version 2025.2](releaseowl-releases/release-notes/version-2025.02.md)
