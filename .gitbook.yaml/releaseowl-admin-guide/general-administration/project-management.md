@@ -116,15 +116,15 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 | Board                  | Provide the board name to sync with.                                      |
 | Webhook URL            | Copy and paste the webhook URL provided for syncing with Jira.            |
 
-#### Note:
+{% hint style="info" %}
+**Note:**&#x20;
 
 Webhook Integration supports the following:
 
 1. Issue: create, update, and delete events
 2. Sprint: create and update events
 3. Further information on registering / configuring webhooks in JIRA can be found @ [https://developer.atlassian.com/server/jira/platform/webhooks/](https://developer.atlassian.com/server/jira/platform/webhooks/)
-
-&#x20;  &#x20;
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 

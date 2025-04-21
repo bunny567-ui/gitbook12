@@ -14,26 +14,30 @@ gCTS is an offering from SAP that allows us to manage ABAP (Advanced Business Ap
 
 The integration of gCTS (Git-enabled Change and Transport System) with ReleaseOwl is a powerful combination for SAP customers. By integrating gCTS with ReleaseOwl, organizations can leverage the functionalities of Git repositories and establish robust Continuous Integration and Continuous Delivery (CI/CD) processes for their ABAP (Advanced Business Application Programming) development. The integration of gCTS with ReleaseOwl offers a streamlined and efficient approach to managing ABAP development, enabling organizations to deliver high-quality SAP applications faster, with reduced risks, and improved collaboration among team members. To enable gCTS we require a Git platform host, an ABAP system in which code will be developed, and a CI server (which is optional) which can be used to automate development cycle.
 
-### **Prerequisites:** <a href="#pdf-page-5oopygj2qtse4j6l4ary-prerequisites" id="pdf-page-5oopygj2qtse4j6l4ary-prerequisites"></a>
+### **Prerequisites**
 
-* An SAP S/4 HANA 1909 or 2022 system
-* An SAP machine (with version 11 or higher) or comparable JRE
-* Import relevant SAP Central note and based on SP level
-* Create gCTS related working directories at OS level.
+Before starting the gCTS configuration, ensure the following prerequisites are met:
 
-Once the prerequisites are met and the ABAP system is ready, you can proceed with the configuration which is of 3 steps:
+* An **SAP S/4 HANA 1909 or 2022 system**
+* An **SAP machine** (with version **11 or higher**) or comparable **JRE**
+* Import the **relevant SAP Central Note** (based on the SP level of your system)
+* Create **gCTS-related working directories** at the OS level
 
-* gCTS configuration on ABAP system
-* Git enablement
-* CI/CD pipeline configuration in ReleaseOwl
+### **Configuration Steps**
 
-### **Steps in the ABAP system to complete the gCTS configuration** <a href="#pdf-page-5oopygj2qtse4j6l4ary-steps-in-the-abap-system-to-complete-the-gcts-configuration" id="pdf-page-5oopygj2qtse4j6l4ary-steps-in-the-abap-system-to-complete-the-gcts-configuration"></a>
+Once the prerequisites are met and the ABAP system is ready, proceed with the configuration which consists of **three major steps**:
 
-* Validate required SAP notes are
-* Authorizations
-* Validate required ports are
-* gCTS Fiori UI enablement
-* Set parameters, Initialize systems.
+1. **gCTS Configuration on ABAP System**
+2. **Git Enablement**
+3. **CI/CD Pipeline Configuration in ReleaseOwl**
+
+### **Steps in the ABAP System to Complete the gCTS Configuration**
+
+1. Validate Required SAP Notes
+2. Authorizations
+3. Validate Required Ports
+4. gCTS Fiori UI Enablement
+5. Set Parameters and Initialize Systems
 
 ### **Systems in use here to guide the user the steps involved** <a href="#pdf-page-5oopygj2qtse4j6l4ary-systems-in-use-here-to-guide-the-user-the-steps-involved" id="pdf-page-5oopygj2qtse4j6l4ary-systems-in-use-here-to-guide-the-user-the-steps-involved"></a>
 
@@ -41,30 +45,29 @@ Once the prerequisites are met and the ABAP system is ready, you can proceed wit
 * Access to the gCTS environment of SAP (S4 2022). Here – S4D (main Dev system), S4Q (QA system) and S4V (virtual system for production).
 * Each package should be linked to one repository.
 
-### **Steps involved:** <a href="#pdf-page-5oopygj2qtse4j6l4ary-steps-involved" id="pdf-page-5oopygj2qtse4j6l4ary-steps-involved"></a>
+### **Steps Involved in gCTS Configuration with GitHub**
 
-* Create a new repository in the GITHub (here- ZKRK\_GCTS\_SALES).
-* Open gCTS environment for the SAP using the Fiori app URL (use SAP gCTS ABAP system credentials to login).
-
-A blank screen is displayed by default.
+1. Create a new repository in GitHub. (Example: `ZKRK_GCTS_SALES.` )
+2. Open the **gCTS environment** for SAP using the **Fiori app URL**.
+3. Log in using your **SAP gCTS ABAP system credentials**.
+4. A **blank screen** is displayed by default upon successful login.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FNePlBYW9sUuWvdkC0Uv3%252Fimage.png%3Falt%3Dmedia%26token%3D52f22468-8a67-44ea-b4f6-d4e8b91bf8bb&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=34b97bf0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-Search for **gcts**. Select the option **Git-enabled CTS – Manage Repositories**.
+5. **Search for:** `gcts` in the Fiori Launchpad.
+6. **Select:** **Git-enabled CTS – Manage Repositories**.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F5cefjEHcNSuM3TZY1P2A%252Fimage.png%3Falt%3Dmedia%26token%3D24dffa52-50fa-4278-8506-0e6ffd63ccf3&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=33b3af29&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-Already **existing** **repositories** that are **linked** to the **gCTS** environment in use are listed.
+7. All **existing repositories** linked to the current gCTS environment are displayed.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F2HpKmHWtsqDRg8Cb2cSy%252Fimage.png%3Falt%3Dmedia%26token%3Dd181b564-b80b-4fc8-9fb1-4f8c4177719c&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6345e74a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-Click **Create** to create a repository.
+8. Click on **Create** to initiate repository creation.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FWRz8fMhMfegE9VOizbrv%252Fimage.png%3Falt%3Dmedia%26token%3D84dc5854-b819-4ec9-94de-87abeb9ea162&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5aea5272&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-Fill the required details as follows:
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fgcts-4.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=db72e7f4&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+9. Fill the required details as follows:
 
 | **Field**       | **Description**                                                                                                                                                                          |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -75,48 +78,64 @@ Fill the required details as follows:
 | **Type**        | Select **GitHub**.                                                                                                                                                                       |
 | **Visibility**  | Select **Private**.                                                                                                                                                                      |
 
+<figure><img src="../../../.gitbook/assets/image (1030).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F71vGi6X1MJHjCAgesP9w%252Fimage.png%3Falt%3Dmedia%26token%3D693b5a8d-4984-4c48-8246-3de608e48dbd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ab5cf830&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-* Click on **Save**. A new repository gets created.
-
-1. When a new repository is created, a new transport layer gets created. This can be found in the parameters that created by default upon creating a repository under the Configuration The Transport Layer name will be Z\<vSID>
-2. This **Transport Layer** will also be seen in the **Transport** **Routes** screen in **SAP gCTS system.**
+10. Click **Save**. A new repository gets created.
+11. Upon repository creation:
+    * A new **transport layer** is automatically created.
+    * This transport layer appears under the **Configuration** tab parameters.
+    * The naming convention used is `Z<vSID>` where `<vSID>` is the system ID.
+    * It is also visible in the **Transport Routes** screen.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FTBAFRySFEn4dPSt7q7ec%252Fimage.png%3Falt%3Dmedia%26token%3D89f1ad87-2381-4623-9ac3-39aa441620fe&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=82c9a32d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-1. To **clone** the **repository, authorisation** is required. Navigate to the **Configuration** tab and **add** **two** **parameters** for the repository created.
+### Repository Authorization and Configuration
+
+12. Authorization is required to clone the repository:
+
+    * Navigate to the **Configuration** tab.
+
+
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F1wB8kI9IuZnM2gAtOWb7%252Fimage.png%3Falt%3Dmedia%26token%3Da06041d9-eaba-49d8-ac3e-a3a04268b3f6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=45f76fca&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-Click **Create**.
+* Click **Create**.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FcsL74sinGv6SmYYXvzh8%252Fimage.png%3Falt%3Dmedia%26token%3D0d59125e-d07f-40d7-b391-c6551d2b8414&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5e86241b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-Select the **configuration** **parameter** **CLIENT\_VCS\_AUTH\_USER** And enter the **GITHub user id** against the field **Value** and **Save** the changes.
+* Add the following two parameters:
+  * `CLIENT_VCS_AUTH_USER`: Enter the GitHub user ID in the **Value** field.
+  * `CLIENT_VCS_AUTH_TOKEN`: Enter the GitHub personal access token.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FBeuuZHWDmdYhYLUv67fL%252Fimage.png%3Falt%3Dmedia%26token%3D105d8622-3198-4a0a-8d3b-58b007846851&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=97ce191d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-**Add** the **second parameter** by name **CLIENT\_VCS\_AUTH\_TOKEN** as follows and **save** the changes:
-
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F8RMulIFIRncRl15xaTyG%252Fimage.png%3Falt%3Dmedia%26token%3D2c7c0348-d36b-4735-bd71-a1bce6e93ae1&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=af7acda8&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-The **two** newly created **configuration** **parameters** are shown as follows:
+13. Both parameters will appear in the configuration list.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FSRNGF61dVZRk7i0NAKmF%252Fimage.png%3Falt%3Dmedia%26token%3D59253385-e2da-4722-858a-1e10be9336d4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3913881d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-4\) Create **branches (dev** from **main** branch and **qa** from **dev** branc&#x68;**)** as required in the **GITHub** for the **repository** created as shown below:
+### GitHub Branch Setup
+
+14. Create required branches in GitHub:
+    * `dev` branch from `main`
+    * `qa` branch from `dev`
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fj81w9AKkxeukuAgcDW0O%252Fimage.png%3Falt%3Dmedia%26token%3D945f3453-9178-485f-a427-83faa5136fef&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e225c853&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-5\) Navigate to the **SAP gCTS** application and **clone** the **ABAP** **system** repository with that in **GITHub** as follows:
+### Repository Cloning and Development in SAP
+
+15. Navigate to the **SAP gCTS** application and **clone** the **ABAP** **system** repository with that in **GITHub.**&#x20;
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FM75USqQltQDdOihNMs6A%252Fimage.png%3Falt%3Dmedia%26token%3D750fae6e-d043-4d1c-87a8-4e1a14ac2278&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a9cb8b1a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-The **local** **copy** of **GITHub** **repository** gets **cloned** to the **local SAP ABAP** system. The **latest** **commits** to the **repository** can be viewed.
+16. The **local** **copy** of **GITHub** **repository** gets **cloned** to the **local SAP ABAP** system. The **latest** **commits** to the **repository** can be viewed.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FkqnMwCty80Wwoxg9CnLn%252Fimage.png%3Falt%3Dmedia%26token%3D4bbaf4be-5202-4dc6-aef7-77e0c348778e&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7d186bb5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-6\) For every repository, there will be **one active branch** and in **SAP gCTS** system, it is the **main** **branch** by **default**. Any changes done in the **SAP**, will be **saved** to the **main** Based on the requirement, the **active** **branch** can be set as follows (here – the **active** **branch** is **set** to **dev** which is otherwise **main** by **default**):
+17.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F2xWMQbroP5cpqfmJYshT%252Fimage.png%3Falt%3Dmedia%26token%3D5790d03a-4312-4e90-b7cc-55a775eb8b6a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5867eff0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -257,7 +276,9 @@ Fill in the required details as follows:
 **Note:** Whenever a **transport request** which is **associated** with **gCTS** is **released**, all the **changes** will be **pushed** to **GIT**.
 {% endhint %}
 
-29\) The **changes** will **not** be **pushed** to **qa** **unless** you **import** the **transport** **request** to **qa**. 30) **Create** a **release** **pipeline** in **ReleaseOwl** and ensure to **add** a **deployment** **task** as follows and **save** the **changes**.
+29\) The **changes** will **not** be **pushed** to **qa** **unless** you **import** the **transport** **request** to **qa**.&#x20;
+
+**30) Create** a **release** **pipeline** in **ReleaseOwl** and ensure to **add** a **deployment** **task** as follows and **save** the **changes**.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FnvfT2uhIFcufCuW207xt%252Fimage.png%3Falt%3Dmedia%26token%3Dbbf60e7d-5f30-4d53-b35a-b47d9943b3e2&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c71c2ac3&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
