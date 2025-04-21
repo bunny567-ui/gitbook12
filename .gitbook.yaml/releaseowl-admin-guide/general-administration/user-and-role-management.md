@@ -111,4 +111,3 @@ To assign the role actions to an existing role:
 
 <figure><img src="../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;**Note :**&#x20;
