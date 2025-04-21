@@ -86,9 +86,13 @@ To create a new role:
 
 <figure><img src="../../.gitbook/assets/image (376).png" alt=""><figcaption></figcaption></figure>
 
-5\.  The newly created role will appear in the list of available roles.
+5. Duplicate role names are not allowed. If the role name already exists, you will be prompted to enter a unique name.
 
-<figure><img src="../../.gitbook/assets/image (377).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1014).png" alt=""><figcaption></figcaption></figure>
+
+6. The newly created role will appear in the list of available roles.
+
+<figure><img src="../../.gitbook/assets/image (1015).png" alt=""><figcaption></figcaption></figure>
 
 #### Assign Role
 
@@ -107,4 +111,4 @@ To assign the role actions to an existing role:
 
 <figure><img src="../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+&#x20;**Note :**&#x20;

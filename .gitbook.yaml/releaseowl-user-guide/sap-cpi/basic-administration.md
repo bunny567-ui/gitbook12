@@ -1,5 +1,7 @@
 # Basic Administration
 
+ReleaseOwl seamlessly integrates with **SAP Cloud Integration (CPI)** to enable continuous integration and delivery of integration artifacts. Through secure credential management and environment registration, ReleaseOwl connects directly with the CPI tenant to manage, deploy, and monitor artifacts across development, quality, and production landscapes.
+
 ### Access the Credential Manager: <a href="#pdf-page-della43ge2ynalx23r7p-id-1.-access-the-credential-manager" id="pdf-page-della43ge2ynalx23r7p-id-1.-access-the-credential-manager"></a>
 
 * Log in to the ReleaseOwl dashboard.
@@ -180,6 +182,10 @@ A pop-up screen will display the sync history. Use the Refresh button to update 
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FIVpiCFhc5IWKJ3lvVNO2%252Fimage.png%3Falt%3Dmedia%26token%3D34ed57b3-47a9-4a47-99b0-0dfd82803bed&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9caf00f0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
+* Editing **timer configuration parameters** (such as start time, recurrence, etc.) is **not supported** directly from ReleaseOwl.
+
+<figure><img src="../../.gitbook/assets/image (1021).png" alt=""><figcaption></figcaption></figure>
+
 ### Creating a Release Pipeline <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
 Release Pipelines in ReleaseOwl manage approvals, validations, deployments, automated tests, task assignments, and user story updates for SAP systems.
@@ -268,8 +274,13 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 
 You can view the Deploy Logs in the ReleaseOwl Dashboard under the SAP CPI Deploy Logs window after promoting the user story.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FdhXdkl0pUKtuJV6Gywm0%252Fimage.png%3Falt%3Dmedia%26token%3D05473dc5-ec4a-4a83-99c4-6211b496ab7e&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b86e793d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1022).png" alt=""><figcaption></figcaption></figure>
 
 * **Upload Status**: Indicates whether the artifact was successfully uploaded.
 * **Config Status**: Confirms if the configuration for new or updated artifacts was successful.
 * **Deploy Status:** Reflects the final deployment status of the artifact.
+* **Already Deployed:**  Indicates that the artifact was **previously deployed**, either during a **retry** operation or through **manual completion**. This status helps avoid duplicate deployments and provides clarity during re-runs.
+* **Manual Completion:** If a deployment **fails** or **times out**, users can use the **Manual Completion** option to continue the pipeline after resolving the issue manually.
+* Refresh button  fetches the CPI runtime artifact deploy status and updates the runtime status in the deployment log.
+
+<figure><img src="../../.gitbook/assets/image (1023).png" alt=""><figcaption></figcaption></figure>

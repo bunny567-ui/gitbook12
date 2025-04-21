@@ -289,11 +289,19 @@ Click **OK**. **Check** for any **approval** **tasks** that are in **waiting** s
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FwKTJ81pHzn7Ebe53Gxsr%252Fimage.png%3Falt%3Dmedia%26token%3D90db97c1-eecf-4469-be73-fd806280ab32&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=11b9e3fc&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-38\) Once the **deployment** is **successful**, check whether the **changes** are **pushed** to the **qa** branch in the **GIT** repository.
+38\) For improved traceability and insight, the **gCTS task details** are visible directly within the executed pipeline activities. This allows you to track which gCTS tasks are linked to the deployment, making it easier to audit and verify changes.
+
+<figure><img src="../../../.gitbook/assets/image (1016).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1017).png" alt=""><figcaption></figcaption></figure>
+
+39\) Once the **deployment** is **successful**, check whether the **changes** are **pushed** to the **qa** branch in the **GIT** repository.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FAnXBENB6QupWyyxJh0AH%252Fimage.png%3Falt%3Dmedia%26token%3D13c3e7e5-6816-4044-bd37-e6bed990d075&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=26f15c3d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 **Login** to the **SAP** **gCTS** and **check** whether the **latest** **commits** are **available** in **QA**. 39) Now **login** to **S4Q (QA) ABAP** For the **very first transport** that is **released** from **ReleaseOwl**; the **package**, **class** and **objects** – **all** of them get **pushed** to **QA ABAP** system. For the **subsequent** **transports** **released**, the **changes** done to the **objects** are **pushed** to **SAP QA gCTS** **Fiori** and **ABAP** systems.
+
+
 
 
 
