@@ -2,11 +2,11 @@
 
 **Release Pipelines**
 
-Release Pipelines enables you to orchestrate deployments into SAP environments with right approvals in place.
+Release Pipelines enables you to orchestrate deployments into SAP environments with right approvals in place. It  can be created with one or more stages. Each stage will correspond to automated deployment to the required SAP environment with a sequence of activities such as tasks related to approvals, manual changes, deployments, callouts and tests execution.
 
-Release Pipeline can be created with one or more stages. Each stage will correspond to automated deployment to the required SAP environment with a sequence of activities such as tasks related to approvals, manual changes, deployments, callouts and tests execution.
-
-Note: You can create a multi-stage pipeline for continuous deployment across various environments one after the other towards continuous delivery of application all through Dev - QA - Staging - Production.
+{% hint style="info" %}
+**Note:** You can create a multi-stage pipeline for continuous deployment across various environments one after the other towards continuous delivery of application all through Dev - QA - Staging - Production.
+{% endhint %}
 
 **Creating a Release Pipeline**
 
@@ -20,94 +20,68 @@ Creating a Release Pipeline is a six-step process.
 | Step5 | Choose to schedule the pipeline execution or run manually                                            |
 | Step6 | Specify the email ids to receive notifications about release pipeline execution status.              |
 
+**For creating release pipeline:**
+
+1. Select the required CPI Project and in Release go to Release Pipelines.\
+
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+2. Click Create New Release Pipeline.
+3. **Release Pipeline Name:** Give a name for the release pipeline.\
+
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+\
 \
 
 
-For creating release pipeline:
+4. Add Stages: Click Add Stage.
 
-Select the required CPI Project and in Release go to Release Pipelines.\
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-1.jpg" alt=""><figcaption></figcaption></figure>
-
-1\. Click Create New Release Pipeline.
-
-2\. Release Pipeline Name: Give a name for the release pipeline.\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-2.jpg" alt=""><figcaption></figcaption></figure>
-
-3\. Pipeline Type: Choose SAP CPI from the dropdown.\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-3.jpg" alt=""><figcaption></figcaption></figure>
-
-4\. Artifact Source: The project that we are currently working on is displayed by default and is non editable\
-\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-4.jpg" alt=""><figcaption></figcaption></figure>
-
-5\. Add Stages: Click Add Stage.\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-5.jpg" alt=""><figcaption></figcaption></figure>
-
-Enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click OK.\
+5. Enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click OK.\
 
 
 <figure><img src="../../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
 
-Tasks: Click Add to enter any tasks that are to be performed
+6. **Tasks:** Click Add to enter any tasks that are to be performed
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-7.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
 **Note:** To remove any stage, click Remove stage button.
+{% endhint %}
 
-Different tasks that can be added are as follows:\
+7. Different tasks that can be added are as follows:\
 
 
 <figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Note:** All the tasks except Deployment Task are similar for any project type.
+**Note:** All the tasks except Deployment Task are similar for any project type. For CPI projects, Wait for Promotion and Validation tasks are the two extra tasks available other than the ones available for every project type.
 
-For CPI projects, Wait for Promotion and Validation tasks are the two extra tasks available other than the ones available for every project type.
+### **Deployment Task**
 
-**Deployment Task**
-
-All the details pertaining to the deployment of the artifact is specified in the deployment task.
-
-The following screen is displayed on adding a deployment task.\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-9.jpg" alt=""><figcaption></figcaption></figure>
-
-The various Deployment Actions that can be performed are as follows:
+All the details pertaining to the deployment of the artifact is specified in the deployment task. The following screen is displayed on adding a deployment task. The various Deployment Actions that can be performed are as follows:
 
 | Upload and Deploy | CPI Artifacts are uploaded to design time of the destination environment and published to runtime. |
 | ----------------- | -------------------------------------------------------------------------------------------------- |
 | Upload Only       | CPI Artifacts are uploaded to design time of the destination environment.                          |
 | Enable Rollback   | This will create a backup version of the destination artifact so that you can rollback later.      |
 
-\
+### **Wait For Promotion Task**
 
+In general, pipeline will execute the configured tasks sequentially one after the other. **Wait For Promotion task** will be used to stop the execution of the task automatically in the next stage and wait for manual promotion once the user is ready to promote it to the next stage. Tasks waiting for promotion at the same stage of the pipeline can be packaged together as a **Release Package** and can be promoted to the next stage in the Release Pipeline.
 
-**Wait For Promotion Task**
-
-In general, pipeline will execute the configured tasks sequentially one after the other.
-
-Wait For Promotion task will be used to stop the execution of the task automatically in the next stage and wait for manual promotion once the user is ready to promote it to the next stage.
-
-Tasks waiting for promotion at the same stage of the pipeline can be packaged together as a Release Package and can be promoted to the next stage in the Release Pipeline.
-
-**Promotion**
+### **Promotion**
 
 Promotion is the process of Moving/Deploying CPI Artifacts to various environments using a Release pipeline associated with the project.\
 
 
 <figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “Promotion Task”. Promotion can be performed in two ways – via User Story and via Release Package.
+Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “**Promotion Task**”. Promotion can be performed in two ways – via User Story and via Release Package.
 
 **a) Promotion by User story**
 
@@ -118,18 +92,18 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 
 2\. Clicking Promote will Trigger the Release pipeline associated with the project.
 
-3\. The column “Pipeline Stage” shows the current stage in the Release Pipeline execution and status of the Release Pipeline.
+3\. The column “**Pipeline Stage**” shows the current stage in the Release Pipeline execution and status of the Release Pipeline.
 
-4\. The column “Pipeline Status” shows the current task in the stage or overall status of the Release Pipeline.
+4\. The column “**Pipeline Status**” shows the current task in the stage or overall status of the Release Pipeline.
 
-5\. Runtime view of the pipeline can be viewed using “Pipeline Activity” menu option in the Actions Menu.\
+5\. Runtime view of the pipeline can be viewed using “**Pipeline Activity**” menu option in the Actions Menu.\
 
 
 <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 6\. The pipeline activity screen shows all the stages of the Release Pipeline. Clicking on the stage shows the tasks and it’s execution status.
 
-7\. Once Pipeline execution reaches the “Promotion Task” Pipeline will continue to wait until further promotion from the User Story or Release Package.\
+7\. Once Pipeline execution reaches the “**Promotion Task**” Pipeline will continue to wait until further promotion from the User Story or Release Package.\
 
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/automated-cpi-deployments-31.jpg" alt=""><figcaption></figcaption></figure>

@@ -111,3 +111,8 @@ To assign the role actions to an existing role:
 
 <figure><img src="../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>
 
+### **Notification Bar in ReleaseOwl**
+
+To keep users informed and up to date, ReleaseOwl includes a **Notification Bar** feature that displays important system messages directly within the application interface.
+
+<figure><img src="../../.gitbook/assets/spaces_gxMFrS3iS93Acg8g9ASO_uploads_vqTukABmP7328zT1QZxY_image.webp" alt=""><figcaption></figcaption></figure>
