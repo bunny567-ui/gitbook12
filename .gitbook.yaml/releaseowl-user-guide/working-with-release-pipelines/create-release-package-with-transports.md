@@ -30,7 +30,7 @@ Release Package is a collection of one or more user stories or transports that a
 
 <figure><img src="../../.gitbook/assets/image (1035).png" alt=""><figcaption></figcaption></figure>
 
-5. You can customize the columns seen in the **Create/Edit Release Package** screen by clicking the Settings Gear icon next to **Add Transport / Add User Story** option.\
+5. You can customize the columns seen in the **Create/Edit Release Package** screen by clicking the Settings Gear icon. \
 
 
 <figure><img src="../../.gitbook/assets/image (1039).png" alt=""><figcaption></figcaption></figure>
