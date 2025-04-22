@@ -2,143 +2,117 @@
 
 ### **Release Pipelines**
 
-Release Pipelines enables you to orchestrate deployments into SAP environments with right approvals in place. Release Pipeline can be created with one or more stages. Each stage will correspond to automated deployment to the required SAP environment with a sequence of activities such as tasks related to approvals, manual changes, deployments, callouts and tests execution.
+Release Pipelines orchestrate automated deployments into SAP environments with the right approvals in place. Each pipeline can contain **one or more stages**, corresponding to SAP environments like Dev, QA, Staging, and Production.
 
 {% hint style="info" %}
 **Note:** You can create a multi-stage pipeline for continuous deployment across various environments one after the other towards continuous delivery of application all through Dev - QA - Staging - Production.
 {% endhint %}
 
-**Creating a Release Pipeline**
+### **Creating a Release Pipeline**
 
-Creating a Release Pipeline is a six-step process.
+Creating a Release Pipeline is a four-step process.
 
 | **Step1** | Enter a name in Release Pipeline Name                                                                |
 | --------- | ---------------------------------------------------------------------------------------------------- |
-| **Step2** | Pipeline Type – SAP On-Premise is displayed by default as the project is of type SAP On-Premise.     |
-| **Step3** | The project that we are currently working on is displayed by default and is non editable.            |
-| **Step4** | Click Add Stages, add the stages. Add various types of pre, post and deployment tasks on need basis. |
-| **Step5** | Pipeline can be executed only manually for On-Prem projects.                                         |
-| **Step6** | Specify the email ids to receive notifications about release pipeline execution status.              |
+| **Step2** | Pipeline Type – Enter the pipeline of your choice.                                                   |
+| **Step3** | Click Add Stages, add the stages. Add various types of pre, post and deployment tasks on need basis. |
+| **Step4** | Specify the email ids to receive notifications about release pipeline execution status.              |
 
-\
+#### For creating release pipeline:
 
-
-For creating release pipeline:
-
-Select the required On-Prem Project and in Release go to Release Pipelines.\
+1.  Select the required On-Prem Project and in Release go to Release Pipelines.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-1.jpg" alt=""><figcaption></figcaption></figure>
-
-1\. Click **Create New Release Pipeline.**
-
-2\. **Release Pipeline Name: Give a name for the release pipeline.**
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-2.jpg" alt=""><figcaption></figcaption></figure>
-
-3\. **Pipeline Type**: SAP **On-Premise** is shown by default.\
-\
+    <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+2. Click **Create New Release Pipeline.**
+3. **Release Pipeline Name:** Give a name for the release pipeline.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-3.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-4\. **Artifact Source**: The project that we are currently working on is displayed by default and is non editable.\
+4.  **Add Stages:**
 
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-4.jpg" alt=""><figcaption></figcaption></figure>
-
-5\. **Stages**: Click Add Stage.\
-\
+    * Click **Add Stage**
+    * Name the stage (e.g., `Dev`, `QA`, `UAT`, `Prod`)
+    * Click **OK**\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-5.jpg" alt=""><figcaption></figcaption></figure>
-
-Enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click OK.\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-6.jpg" alt=""><figcaption></figcaption></figure>
-
-**Tasks:** Click Add to enter any tasks that are to be performed\
+    <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+5. **Add Tasks in Each Stage:** Click **Add** to configure tasks within the stage.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-7.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Different tasks that can be added are as follows:\
-
-
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
-
+{% hint style="info" %}
 **Note:** All the tasks **except Deployment** Task are similar for any project type.
+{% endhint %}
 
-For **On-Premise** projects, **Wait for Promotion** and **Validation** tasks are the two extra tasks available other than the ones available for every project type.
+### Supported Task Types
 
-**Deployment Task**
+| Task Type              | Description                          |
+| ---------------------- | ------------------------------------ |
+| **Deployment Task**    | Define artifact deployment steps     |
+| **Wait for Promotion** | Pauses pipeline for manual promotion |
+| **Validation Task**    | Performs static code analysis        |
 
-All the details pertaining to the deployment of the artifact is specified in the deployment task.
+### **Deployment Task**
 
-The following screen is displayed on adding a deployment task.\
+The **Deployment Task** defines how an artifact is deployed to the specified SAP environment during pipeline execution. When you add a Deployment Task to a pipeline stage, a configuration screen will be displayed where you can enter all the necessary deployment details.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-9.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
-| **Name**              | Deployment task name                                                                                                                       |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Domain Controller** | Select the appropriate Transport Domain Controller which is the system from which one can make changes to SAP Transport Management System. |
-| **Target System**     | Enter the Target System which is to be updated with the changes from the Source System.                                                    |
+| **Name**                   | Deployment task name                                                                                                                                           |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Domain Controller**      | Select the appropriate Transport Domain Controller which is the system from which one can make changes to SAP Transport Management System.                     |
+| **Target System**          | Enter the Target System which is to be updated with the changes from the Source System.                                                                        |
+| **Schedule Time**          | Allows you to specify a future time and date for when the deployment task should be executed automatically.                                                    |
+| **Notify Users**           | Sends deployment status notifications (Success/Failure) to all users associated with the pipeline stage.                                                       |
+| **Notify Transport Users** | Notifies only those users who are linked to the transports being deployed, providing more targeted communication.                                              |
+| **Notify Promotion User**  | Sends notifications to the user who promoted the user story or release package that triggered this deployment.                                                 |
+| **Description**            | A free-text area where you can enter notes or additional information about the deployment task. This is useful for providing context or specific instructions. |
 
-\
+### **Wait For Promotion Task**
 
+By default, a pipeline executes the configured tasks sequentially, one after the other. The **Wait for Promotion** task is used to pause the execution at a specific stage, preventing the pipeline from automatically proceeding to the next stage. It holds the process until a manual promotion is triggered by the user. Multiple tasks waiting at the same stage can be grouped into a **Release Package**, allowing them to be promoted together to the next stage in the Release Pipeline.
 
-**Wait For Promotion Task**
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-In general, pipeline will execute the configured tasks sequentially one after the other.
+### **Validation Task**
 
-Wait For Promotion task will be used to stop the execution of the task automatically in the next stage and wait for manual promotion once the user is ready to promote it to the next stage.
+Validation task is added to perform Static Code Analysis checks and generate the validation report to view the errors encountered.
 
-Tasks waiting for promotion at the same stage of the pipeline can be packaged together as a Release Package and can be promoted to the next stage in the Release Pipeline.
+| **Field / Option**      | **Description**                                                            |
+| ----------------------- | -------------------------------------------------------------------------- |
+| **Domain Controller**\* | Dropdown to select the domain controller for the transport landscape.      |
+| **Source**              | Source system from where transports will be validated.                     |
+| **Target**              | Target system where the transport is expected to move.                     |
+| **Pipeline Execution**  | Section indicating execution preferences for the task.                     |
+| **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails. |
 
-**Validation Task**
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-Validation task is added to perform Static Code Analysis checks and generate the validation report to view the errors encountered.\
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-10.jpg" alt=""><figcaption></figcaption></figure>
-
-The execution of the release pipeline halts if the validation fails at any point.
-
-You can continue the execution of the release pipeline even upon failure by checking the checkbox – **Continue On Failure**. This feature allows the completion of release pipeline by fixing the errors seen in the log and re-running the release pipeline.
-
-The validation report gets generated irrespective of the pipeline execution status - whether success or a failure.
-
-5\. **Schedule:** You can execute a Release Pipeline manually.\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-11.jpg" alt=""><figcaption></figcaption></figure>
-
-6\. **Notification Emails:** You can specify an email distribution list separated by comma who you want to notify the result of the Release Pipeline Execution – either Success or Failure.
-
-By default, the user who creates the Release Pipeline is notified and specifying the distribution list is optional.\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-12.jpg" alt=""><figcaption></figcaption></figure>
-
-**Promotion**
+### **Promotion**
 
 Promotion is the process of Moving/Deploying/Importing the transports to the target systems using a Release pipeline associated with the project.\
 
 
-<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “**Promotion Task”**. Promotion can be performed in two ways – via User Story and via Release Package.
 
-**a) Promotion by User story**
+#### **a) Promotion by User story**
 
 1\. From Actions Menu of the User story, promotion can be done.\
 
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Clicking Promote will Trigger the Release pipeline associated with the project.
 
@@ -146,70 +120,68 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 
 4\. The column “**Pipeline Status**” shows the current task in the stage or overall status of the Release Pipeline.
 
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
 5\. Runtime view of the pipeline can be viewed using “**Pipeline Activity**” menu option in the Actions Menu.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-15.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 6\. The pipeline activity screen shows all the stages of the Release Pipeline. Clicking on the stage shows the tasks and its execution status.
 
-7\. Once Pipeline execution reaches the “Promotion Task”, the pipeline will continue to wait until further promotion from the User Story or Release Package.
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
+7\. Once Pipeline execution reaches the “**Promotion Task**”, the pipeline will continue to wait until further promotion from the User Story or Release Package.
+
+{% hint style="info" %}
 **Note:** The **Wait for Promotion** task is **needed** for a **multistage** Release Pipeline if the user wants to **wait** or **hold** the promotion of the user story to further stages.
+{% endhint %}
 
 8\. User Story can be promoted to the next stage (in this case, Prod) or a new Release Package can be created with all the User Stories waiting in UAT stage (here in this case) for getting promoted to Prod.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-16.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-**b) Promotion by Release Package**
+#### **b) Promotion by Release Package**
 
-Release Package is a logical grouping of user stories or transports that are to be promoted as a single unit instead of promoting each user story separately.
+Release Package is a logical grouping of user stories or transports that are to be promoted as a single unit instead of promoting each user story separately. If Start stage is mentioned in the Release package, then only the user stories or transports with the current stage same as the one specified in the Release Package are eligible for promotion. It uses the Release Pipeline associated with the project for promotion.
 
-If Start stage is mentioned in the Release package, then only the user stories or transports with the current stage same as the one specified in the Release Package are eligible for promotion.
-
-It uses the Release Pipeline associated with the project for promotion.
-
+{% hint style="info" %}
 **Note:** Promotion of Release Package can be done either through user stories or by transports.
+{% endhint %}
 
-**Promotion of Release Package by User Stories**
+### **Promotion of Release Package by User Stories**
 
 1\. Clicking **“Add Stories for Promotion”** will add all the user stories eligible for promotion from the selected **Promoted from (Stage)** as a unit.\
 
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-17.jpg" alt=""><figcaption></figcaption></figure>
 
-The following points are to be **noted:**
+**Key Points to Note:**
 
-a) By default, the Promote from Stage will be Dev. If you want to promote all the user stories that are already pushed/promoted to QA, then you can select QA from Promote from Stage options available and all the user stories in QA can be promoted to the next available stage as a single unit instead of promoting them individually.
+* **(a)** By default, the **Promote from Stage** is set to **Dev**. If you want to promote stories already pushed to **QA**, simply select **QA** as the source stage. This allows you to promote all eligible QA stories to the next stage as a single unit instead of doing it individually.
+* **(b)** If a user story is at a **lower stage** than the selected **Promote from Stage**, you must first promote that story to the required stage before including it in the Release Package.
+* **(c)** User stories that are already at a **higher stage** than the selected **Promote from Stage** **cannot** be added to the Release Package.
+* **(d)** You may add other user stories manually using the **“Add User Stories”** option, but ensure those are also promoted to the selected stage before promoting the entire package.
 
-b) If you add user stories that are at a lower stage than the selected Promote from Stage, then ensure that particular user story is promoted to the required Promote from Stage in order to promote the Release Package.
-
-c) You **cannot** add user stories that are at a higher stage than the selected Promoted from Stage.
-
-d) You can add additional user stories other than the ones available from the Promote from Stage by clicking Add User Stories and ensure to promote them to the required Promote from Stage before promoting the Release Package.
-
-**Promotion of Release Package by Transports**
+### **Promotion of Release Package by Transports**
 
 1\. Clicking **“Add Transports for Promotion”** will add all the transports eligible for promotion from the selected **Promoted from (Stage)** as a unit.\
 
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-18.jpg" alt=""><figcaption></figcaption></figure>
 
-The following points are to be **noted:**
+The following points apply when promoting a Release Package based on transports:
 
-e) By default, the Promote from Stage will be Dev. If you want to promote all the transports that are already pushed/promoted to QA, then you can select QA from Promote from Stage options available and all the transports in QA can be promoted to the next available stage as a single unit instead of promoting them individually.
-
-f) If you add transports that are at a lower stage than the selected Promote from Stage, then ensure that particular transport is promoted to the required Promote from Stage in order to promote the Release Package.
-
-g) You **cannot** add transports that are at a higher stage than the selected Promoted from Stage.
-
-h) You can add additional transports other than the ones available from the Promote from Stage by clicking Add Transport and ensure to promote them to the required Promote from Stage before promoting the Release Package.
+* **(e)** By default, the **Promote from Stage** is set to **Dev**. If you wish to promote all transports already pushed to **QA**, select **QA** from the available options. This allows all transports in QA to be promoted to the next stage as a single unit rather than promoting them individually.
+* **(f)** If you add transports that are currently at a **lower stage** than the selected **Promote from Stage**, ensure those transports are promoted to the appropriate stage before including them in the Release Package.
+* **(g)** You **cannot** add transports that are already at a **higher stage** than the selected **Promote from Stage**.
+* **(h)** You can manually add additional transports using the **“Add Transport”** option. However, make sure these transports are also promoted to the selected stage before attempting to promote the entire Release Package.
 
 2\. From the Action Menu of the Release package, click on “Promote”.\
 
 
-<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\. Execution of the Release package can be seen using the option “Pipeline Activity”\
 
@@ -223,7 +195,7 @@ h) You can add additional transports other than the ones available from the Prom
 
 5\. User has to unlock Release Package to backout any of the user stories or transports after promotion. In role permissions, user should have Unlock Release Package permission.
 
-**Multi-Stage Release Pipeline**
+### **Multi-Stage Release Pipeline**
 
 Any number of stages can be added while creating a release pipeline. An existing release pipeline can also be edited to include various stages.
 
@@ -232,8 +204,8 @@ This is required when we want the deployments to take place in multiple environm
 For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.\
 
 
-<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Editing/ Deleting Pipeline**
+### **Editing/ Deleting Pipeline**
 
 Go to the required pipeline and click **Edit** to edit the pipeline or **Delete** to delete the pipeline.

@@ -82,7 +82,7 @@ The following fields appear:
 * **Application Server (Required)** – Enter the **application server address**.
 * **Port (Required)** – Specify the port number as defined in SAP Logon. To find the port number, go to **SAP Easy Access**, enter **SMICM** in the transaction code field, and navigate to **Services**, where you can find the HTTP port number.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **HTTPS** – Check the box if **HTTPS** is required.
 * **Client ID (Required)** – Enter the **Client ID** of the Transport Domain Controller.

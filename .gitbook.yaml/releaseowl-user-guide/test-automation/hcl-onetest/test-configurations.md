@@ -1,52 +1,52 @@
 # Test Configurations
 
-**HCL OneTest UI - Test Configurations with ReleaseOwl**
+## **HCL OneTest UI - Test Configurations with ReleaseOwl**
 
-**RO Agent**
+### **RO Agent**
 
-RO Agent is a standalone application which executes jobs on behalf of ReleaseOwl. Currently it supports execution of HCL OneTest UI test cases.
+**RO Agent** is a standalone application that executes jobs on behalf of ReleaseOwl. It currently supports the execution of **HCL OneTest UI** test cases.
 
-RO Agent will be given as a zip file, which can be extracted and then the .bat or .sh file can be executed.
+The RO Agent is distributed as a ZIP file. After extraction, it can be launched using the appropriate script:
 
-**RO Agent Configuration**
+* `start.bat` (for Windows)
+* `start.sh` (for Linux/macOS)
 
-Create a new RO Agent.
+### **RO Agent Configuration**
+
+To configure and register a new RO Agent:
 
 1. In Administration, go to RO Agents.
 2. In the page displayed, click Register RO Agent.
-
-Fill in the required details.
+3. Fill in the required details.
 
 | **Name**         | Enter the name of your choice for the RO Agent Configuration that is being created. |
 | ---------------- | ----------------------------------------------------------------------------------- |
 | **Host URL**     | The Host URL is the RO Agent URL that begins with http or https.                    |
 | **Security Key** | Security Key value can be found in the agent.properties file.                       |
 
-\
-![](https://www.docs.releaseowl.com/assets/img/test-configurations-1.jpg)\
-\
-![](https://www.docs.releaseowl.com/assets/img/test-configurations-2.jpg)\
-\
+<figure><img src="https://www.docs.releaseowl.com/assets/img/test-configurations-1.jpg" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="https://www.docs.releaseowl.com/assets/img/test-configurations-2.jpg" alt=""><figcaption></figcaption></figure>
 
-**Pre-requisites**
+### **Pre-requisites**
 
 RO Agent and HCL OneTest UI should be installed on the same machine.
 
-**Test Configuration**
+### **Test Configuration**
 
-Setting up the test configuration allows the ReleaseOwl Application to run the HCL OneTest UI script with the specified parameters from the specified path through the RO Agent.
+Setting up a **Test Configuration** allows the ReleaseOwl application to execute **HCL OneTest UI** scripts with specific parameters from a designated path via the **RO Agent**.
 
-Create a new Test Configuration.
+**Steps to Create a New Test Configuration**
 
-1. In Project View, go to Test Configuration.
-2. In the page displayed, click Create Test Configuration.
+1. **Navigate to the Project View** in ReleaseOwl.
+2. Go to **Test Configuration**.
+3. On the page displayed, click **Create Test Configuration**.
 
+{% hint style="info" %}
 **Note:** Test Configuration for Web UI and Functional Tests are to be created separately.
+{% endhint %}
 
-**Test Configuration for Web UI Test**\
-\
-
+### **Test Configuration for Web UI Test**  
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/test-configurations-3.jpg" alt=""><figcaption></figcaption></figure>
 

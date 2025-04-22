@@ -7,7 +7,7 @@ SAP Analytics Cloud (SAC) is a cloud-based business intelligence (BI) and analyt
 1. Admin users can switch to the **Administration View** to access the **Credential Manager**.
 2. Click the **Credential Manager** menu option on the left-hand pane to view the list of registered credentials.
 
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. To add a new credential, click **Register Credential** available on the right-hand panel, and then click on the **Register Credential** button.
 
@@ -117,7 +117,7 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 
 
-    <figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
     * You can see the **Deployment History** by clicking on the **Actions** button and selecting **Deployment History**.
 

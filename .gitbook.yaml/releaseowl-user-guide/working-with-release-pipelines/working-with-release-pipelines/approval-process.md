@@ -3,7 +3,7 @@
 If the deployment needs any **prior approval**, then the user has to add an **Approval Task** **before** the **Deployment Task** while creating the Release Pipeline. An Approval Task can be added as follows:\
 
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 **Fill in the required details:**
 
