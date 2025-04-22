@@ -2,14 +2,14 @@
 
 Release Package is a collection of one or more user stories or transports that are validated and deployed as a single entity.
 
-To create a release package:
+### To create a release package:
 
 1\. Go to **Release** and click **Release Packages.**
 
 2\. The following screen is displayed\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1032).png" alt=""><figcaption></figcaption></figure>
 
 3\. Click **Create New Release Package.**
 
@@ -18,7 +18,7 @@ The following screen is displayed for an Integration Suite (CPI) project:
 **Note:** You can create a Release Package with only User Stories for an SAP Integration Suite project.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-2.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1031).png" alt=""><figcaption></figcaption></figure>
 
 4\. Enter the name of the new release package in **Name** and give a **Description.**
 
