@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # ReleaseOwl Releases
 
 ReleaseOwl follows a continuous deployment approach to deliver updates to its SaaS platform. New software versions—including feature enhancements, security patches, and bug fixes—are rolled out regularly to ensure seamless improvements. This process is designed to minimize downtime, maintain business continuity, and provide users with an uninterrupted experience.
