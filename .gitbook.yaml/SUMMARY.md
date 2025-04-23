@@ -53,7 +53,7 @@
     * [Basic Administration](releaseowl-user-guide/sap-api/basic-administration.md)
     * [API Environment Registration](releaseowl-user-guide/sap-api/api-environment-registration.md)
   * [SAP CPI](releaseowl-user-guide/sap-cpi/README.md)
-    * [Basic Administration](releaseowl-user-guide/sap-cpi/basic-administration.md)
+    * [SAP CPI Integration with ReleaseOwl](releaseowl-user-guide/sap-cpi/sap-cpi-integration-with-releaseowl.md)
     * [CPI Test Generator](releaseowl-user-guide/sap-cpi/cpi-test-generator.md)
     * [CPI Management](releaseowl-user-guide/sap-cpi/cpi-management/README.md)
       * [Synchronize CPI Artifacts](releaseowl-user-guide/sap-cpi/cpi-management/synchronize-cpi-artifacts.md)

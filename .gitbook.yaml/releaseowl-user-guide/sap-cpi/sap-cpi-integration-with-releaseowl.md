@@ -1,48 +1,159 @@
-# Basic Administration
+# SAP CPI Integration with ReleaseOwl
 
 ReleaseOwl seamlessly integrates with **SAP Cloud Integration (CPI)** to enable continuous integration and delivery of integration artifacts. Through secure credential management and environment registration, ReleaseOwl connects directly with the CPI tenant to manage, deploy, and monitor artifacts across development, quality, and production landscapes.
 
-### Access the Credential Manager: <a href="#pdf-page-della43ge2ynalx23r7p-id-1.-access-the-credential-manager" id="pdf-page-della43ge2ynalx23r7p-id-1.-access-the-credential-manager"></a>
+## Step 1: Create Process Integration Runtime (PIR) Instances in SAP BTP
 
-* Log in to the ReleaseOwl dashboard.
-* Navigate to the Administration view.
-* Select the Credential Manager section.
+A **Process Integration Runtime (PIR)** instance is required in SAP BTP for ReleaseOwl to securely manage and deploy CPI artifacts across environments.
+
+### A. Create a PIR Instance with Plan: `api`
+
+This instance enables **programmatic access via API** for integration tasks.
+
+#### **Steps:**
+
+1. **Log in** to your SAP BTP Cockpit.
+2. Navigate to your **Global Account > Subaccount**.
+3. Go to **Instances and Subscriptions** from the left menu.
+
+<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FUT7hY8QW2SESG2LRE3ER%252Fimage.png%3Falt%3Dmedia%26token%3Da9ab0b09-9b18-4e83-853a-7e64f8c008d6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=95d6209e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+4. Click on **Create**.
+5. In the "**New Instance or Subscription**" wizard:
+
+* **Service**: SAP Process Integration Runtime
+* **Plan**: `api`
+* **Runtime Environment**: Cloud Foundry
+* **Space**: Select your development space (e.g., `dev`)
+* **Instance Name**: Choose a name like `CPI_API_Instance`
+
+6. Click **Next**, then **Create**.
+
+<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FIM8ZwGl8fOcA5jUeFYgC%252Fimage.png%3Falt%3Dmedia%26token%3D07cf3701-6387-4f01-b336-f88b10bdfb99&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=47edfe6a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:** The `api` plan provides programmatic access to the SAP Process Integration Runtime, allowing you to connect via APIs for integration tasks.
+{% endhint %}
+
+### Assign Required Roles
+
+In the **Parameters** step, assign the following roles to allow artifact management:
+
+| **Role**                     | **Description**                                   |
+| ---------------------------- | ------------------------------------------------- |
+| `MessagePayloadsRead`        | Read message payloads in the integration runtime. |
+| `MonitoringDataRead`         | View monitoring data for integration flows.       |
+| `TraceConfigurationEdit`     | Edit tracing configurations.                      |
+| `TraceConfigurationRead`     | View current tracing configuration.               |
+| `WorkspaceArtifactsDeploy`   | Deploy artifacts from workspace to runtime.       |
+| `WorkspacePackagesConfigure` | Configure packages, parameters, and dependencies. |
+| `WorkspacePackagesRead`      | Read-only access to integration packages.         |
+| `WorkspacePackagesEdit`      | Modify and configure integration packages.        |
+
+<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FQeZkcua5pYBQBiksaMC7%252Fimage.png%3Falt%3Dmedia%26token%3D476837b5-932e-4bed-bf70-61c9bbdf6797&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a4526b6f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+### Create Service Key (for `api` plan)
+
+After instance creation:
+
+1. Go to **Instances and Subscriptions**.
+2. Expand your newly created `api` instance.
+3. Click **Create Service Key**.
+4. Enter a name (e.g., `cpi-api-key`) and leave parameters blank.
+5. Click **Create**.
+
+<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FQtdh3ftS2qBadEGGv2VP%252Fimage.png%3Falt%3Dmedia%26token%3Dee6c05f2-0af7-4a7f-bc69-28e6941c6a20&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=30ea3cb7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+6. Click **View Credentials** to retrieve:
+
+* **Client ID**
+* **Client Secret**
+* **Token URL**
+
+<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252F1XSUCq1nxBsbL8WaXGIo%252Fimage.png%3Falt%3Dmedia%26token%3Dd2feabe3-64ba-4ef6-8274-c68fe9b874b7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2b1c4184&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+### &#x20;B. Create a PIR Instance with Plan: `IFLOW`
+
+This is used for managing and deploying **integration artifacts (iFlows)**.
+
+#### **✅ Steps:**
+
+1. Go to your **SAP BTP Cockpit**.
+2. Select your **subaccount** that hosts SAP CPI.
+3. Go to **Services > Service Marketplace**.
+4. Select **SAP Process Integration Runtime** → Click **Create**.
+5. Fill in the following:
+   * **Service**: SAP Process Integration Runtime
+   * **Plan**: `IFLOW`
+   * **Runtime Environment**: Cloud Foundry
+   * **Space**: Provide the appropriate space (e.g., `dev`)
+   * **Instance Name**: (e.g., `CPI_IFLOW_Instance`)
+
+<figure><img src="../../.gitbook/assets/image (1041).png" alt=""><figcaption></figcaption></figure>
+
+6. Click **Next** and then **Create**.
+
+<figure><img src="../../.gitbook/assets/image (1042).png" alt=""><figcaption></figcaption></figure>
+
+### Create Service Key (for `IFLOW` plan)
+
+1. Navigate to **Instances and Subscriptions**.
+2. Locate the `IFLOW` instance.
+3. Click **Actions > Create Service Key**.
+4. Enter a name for the key (e.g., `cpi-iflow-key`) → Click **Create**.
+
+<figure><img src="../../.gitbook/assets/image (1043).png" alt=""><figcaption></figcaption></figure>
+
+5. Click on the service key name to view the key details.
+6. You will need these values when setting up ReleaseOwl credentials.
+
+<figure><img src="../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
+
+### Step 2: Register Credentials in ReleaseOwl
+
+Credential registration enables secure communication between **ReleaseOwl** and **SAP CPI** environments.
+
+#### A. Register SAP CPI Credential (API Access)
+
+**✅ Steps:**
+
+1. Log in to the **ReleaseOwl Platform**.
+2. Go to **Administration > Credential Manager**.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fk800L6JDYJwQBgE8mEJe%252Fimage.png%3Falt%3Dmedia%26token%3D397cdf1f-59cf-4fba-9798-9d771c71fcc1&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4d48d67&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-* Click the Register Credential link to add a new credential.
+3. Click **Register Credential**.
+4. Fill in the details:
+   * **Credential Name:** Any identifiable name for the credential.
+   * **Authentication Type:** Select OAuth2
+   * **Client ID:** Provide the details from the above created API service key.
+   * **Client Secret:** Provide the details from the above created API service key.
+   * **Token URL:** Provide the details from the above created API service key.
+5. Click **Save**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fiw8wzydLO5hixKHCXbq5%252Fimage.png%3Falt%3Dmedia%26token%3D47f804b4-c21a-4044-8f85-6774339cf8b9&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1c5a07e9&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+The credential will now appear in your list and can be used in pipelines and deployments.
 
-**Fill in the Necessary Fields:**
+<figure><img src="../../.gitbook/assets/image (1045).png" alt=""><figcaption></figcaption></figure>
 
-* Credential Name: Enter a name for easy reference.
-* Credential Type: Select SAP Cloud Environment from the dropdown.
-* Authentication Type: Choose OAuth2 as the authentication method.
+#### B. Register SAP CPI Credential (IFLOW Access)
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FoILqxO8vxpW7E2niPaer%252Fimage.png%3Falt%3Dmedia%26token%3D78b2a965-fe12-41b0-a806-464c81516c04&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5bbcb69d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+This step allows ReleaseOwl to securely interact with CPI for **artifact deployment and management** via the IFLOW plan.
 
-**Enter OAuth2 Details:**
+**✅ Steps:**
 
-Retrieve the following details from the service key of your SAP CPI instance:
+1. Navigate to **Credential Manager** from the **Administration** menu in the ReleaseOwl Platform.
+2. Click **Register Credential**.
+3. Set the **Credential Type** to **SAP Cloud Environment**.
+4. Fill in the following details:
+   * **Credential Name**: Enter a meaningful name (e.g., `CPI IFLOW Credential`)
+   * **Authentication Type**: Select **OAuth2**
+   * **Client ID:** Provide the details from the above created IFLOW service key.
+   * **Client Secret:** Provide the details from the above created IFLOW service key.
+   * **Token URL:** Provide the details from the above created IFLOW service key.
+5. Click **Save**.
+6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for IFLOW deployments.
 
-* Client ID: Found under clientid in the service key.
-* Client Secret: Found under clientsecret in the service key.
-* Token URL: Found under url in the service key.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fld3REShXTgri2uFCrKLS%252Fimage.png%3Falt%3Dmedia%26token%3D6a8c489b-80e9-42a1-9eeb-c2754c38b438&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=346c58a5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-Fill in the fields in the Credential dialog:
-
-* Client ID: Paste the clientid from the service key.
-* Client Secret: Paste the clientsecret from the service key.
-* Token URL: Paste the token URL from the service key.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F45whsd3NvhnFX5GErK32%252Fimage.png%3Falt%3Dmedia%26token%3Deafb1204-87b9-4cb0-873f-b2fd8d6c9dfe&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b14cfb92&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-* Click Save to store the credential.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FHK3NGtqd7YihiS3dNyhK%252Fimage.png%3Falt%3Dmedia%26token%3Db5da0244-75db-4857-87c8-4f47eccc3ab7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f780e1a8&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1046).png" alt=""><figcaption></figcaption></figure>
 
 ### CPI Environment Registration <a href="#pdf-page-della43ge2ynalx23r7p-cpi-environment-registration" id="pdf-page-della43ge2ynalx23r7p-cpi-environment-registration"></a>
 
@@ -58,7 +169,7 @@ Fill in the fields in the Credential dialog:
 | **Enable Test Automation** _(Optional)_ | Toggle to enable or disable test automation capabilities.                                                                                                                |
 | **IFLOW OAuth Credential**              | Select the OAuth credentials used for IFLOW authentication.                                                                                                              |
 | **IFLOW URL**                           | Enter the IFLOW URL from the service key.                                                                                                                                |
-| **Use Custom IdP**                      | Enable this option to set up a custom Identity Provider (IdP). _Note_: The setup process is outlined in the section below.                                               |
+| **Use Custom IdP**                      | Enable this option to set up a custom Identity Provider (IdP). _**Note**_**: The setup process is outlined in the section below.**                                       |
 | **SSO URL**                             | Provide the Single Sign-On (SSO) URL for authentication.                                                                                                                 |
 | **Email Address**                       | Enter the service user email address.                                                                                                                                    |
 | **Integration Advisor**                 | Enable Integration Advisor to provide the Host URL.                                                                                                                      |
@@ -81,7 +192,11 @@ Use Case: This is particularly useful for executing test cases, simulation testi
 
 Custom IDP (Identity Provider) is necessary for deploying certain artifact types, such as value mapping, REST, SOAP, and OData APIs. It is also essential for executing test cases associated with the artifacts.
 
-1\. Copy the SAP BTP SSO URL from the downloaded SAML metadata. This value is the URL provided for the "**Location**" attribute in the tag “AssertionConsumerService”. Example: \<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://xyz.authentication.us10.hana.ondemand.com/saml/SSO/alias/xyz.aws-live" index="0" isDefault="true"/>
+To extract the SAP BTP SSO URL from the downloaded SAML metadata, follow these steps:
+
+1. **Open the SAML metadata XML file** in a text editor (like Notepad++, VS Code, or any browser).
+2. **Search for the `AssertionConsumerService` tag**. You can search for the keyword `AssertionConsumerService`.
+3. Within that tag, **look for the `Location` attribute**. The value of this attribute is the **SSO URL** you need.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FFzLeJBWKoXPer2uAYjdp%252Fimage.png%3Falt%3Dmedia%26token%3D20ced9da-c78b-4c84-a7a3-4e1f4a928fc8&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=61da5594&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -102,35 +217,48 @@ Custom IDP (Identity Provider) is necessary for deploying certain artifact types
 
 iadv-content-read ,iadv-content-administrator. With attribute value “emailAddress” to value of the service-user (The same user basic auth credential should be linked to CPI Environment) in whose mail ID the updates should happen.
 
-### **Adding Integration Suite Environments to the Project** <a href="#pdf-page-della43ge2ynalx23r7p-adding-integration-suite-environments-to-the-project" id="pdf-page-della43ge2ynalx23r7p-adding-integration-suite-environments-to-the-project"></a>
+### Create a Project
+
+1. Go to the projects in the adminstation view.
+2. Click on the "**Create New Project**"
+
+<figure><img src="../../.gitbook/assets/image (1047).png" alt=""><figcaption></figcaption></figure>
+
+3. Fill in the necessary details, select the project type as '**SAP CPI'**, and click the Save button
+
+<figure><img src="../../.gitbook/assets/image (1048).png" alt=""><figcaption></figcaption></figure>
+
+### **Adding Environments to the Project** <a href="#pdf-page-della43ge2ynalx23r7p-adding-integration-suite-environments-to-the-project" id="pdf-page-della43ge2ynalx23r7p-adding-integration-suite-environments-to-the-project"></a>
 
 For artifacts to load in SAP CPI Management page, the Integration Suite environments must be registered in Project Settings in ReleaseOwl.
 
-To register SAP Integration Suite environment:
+**To register SAP Integration Suite environment:**
 
-1\. Go to Projects drop down at the top right corner and click Project Settings.
+1\. Go to **Projects** drop down at the top right corner and click **Project Settings**.
 
-2\. In Project Settings, go to Environment.
+2\. In Project Settings, go to **Environment**.
 
 3\. The following screen is displayed.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fsap-cpi-cloud-environment-registration-5.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c8b46193&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-4\. Click Add Environment to add a new environment in ReleaseOwl.
+4\. Click **Add Environment** to add a new environment in ReleaseOwl.
 
 5\. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
 
 6\. The environment is added to the corresponding project in ReleaseOwl.
 
-7\. Click Permissions (under Users tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
+7\. Click **Permissions** (under Users tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fsap-cpi-cloud-environment-registration-6.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=15339cc6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-Click Permissions. The roles that are assigned to the selected user are seen.
+8. Click **Permissions**. The roles that are assigned to the selected user are seen.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fsap-cpi-cloud-environment-registration-7.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b374d431&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-**Note:** On clicking Permissions in the above screen, one can know the actions that the user role can perform each for the available features such as Transport Management, Change Management, Pipelines, Release Management.
+{% hint style="info" %}
+**Note :** On clicking Permissions in the above screen, one can know the actions that the user role can perform each for the available features such as Transport Management, Change Management, Pipelines, Release Management.
+{% endhint %}
 
 ## Managing CPI Packages <a href="#pdf-page-della43ge2ynalx23r7p-managing-cpi-packages" id="pdf-page-della43ge2ynalx23r7p-managing-cpi-packages"></a>
 
@@ -143,9 +271,9 @@ Click Permissions. The roles that are assigned to the selected user are seen.
 
 **2. Add and Sync Packages:**
 
-* Click the Add Packages button in the CPI Packages section.
-* Select Package: Use the search bar to find a package, then check the box next to the desired package(s).
-* Sync Package: Click Sync to add and synchronize the selected package(s).
+* Click the **Add Packages** button in the CPI Packages section.
+* **Select Package:** Use the search bar to find a package, then check the box next to the desired package(s).
+* **Sync Package:** Click Sync to add and synchronize the selected package(s).
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FBNGQqBvJpmRLkGVzkx7M%252Fimage.png%3Falt%3Dmedia%26token%3D081d0983-b4a0-47fd-a432-1d12da109b45&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9e4788de&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -169,7 +297,7 @@ A pop-up screen will display the sync history. Use the Refresh button to update 
 **4. Save Changes:**
 
 * Save: Update the existing artifact directly.
-* Save as Artifact: Create a new version of the artifact with the modified values.
+* **Save as Artifact**: Create a new version of the artifact with the modified values.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FLHWBcEw5gF3LF8PUl8wb%252Fimage.png%3Falt%3Dmedia%26token%3D338402a3-8ef4-4009-bc8d-f36a8ddb0bf5&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=464c2fdd&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -207,7 +335,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 
 **2. Add Deployment Tasks:**
 
-* Click the Add button in a task stage to include deployment tasks.
+* Click the **Add button** in a task stage to include deployment tasks.
 *   Fill in the required details:
 
     * Name: Enter a preferred name for the deployment task.
@@ -281,6 +409,20 @@ You can view the Deploy Logs in the ReleaseOwl Dashboard under the SAP CPI Deplo
 * **Deploy Status:** Reflects the final deployment status of the artifact.
 * **Already Deployed:**  Indicates that the artifact was **previously deployed**, either during a **retry** operation or through **manual completion**. This status helps avoid duplicate deployments and provides clarity during re-runs.
 * **Manual Completion:** If a deployment **fails** or **times out**, users can use the **Manual Completion** option to continue the pipeline after resolving the issue manually.
-* Refresh button  fetches the CPI runtime artifact deploy status and updates the runtime status in the deployment log.
+
+<figure><img src="../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>
+
+* **Refresh Button**\
+  Fetches the CPI runtime artifact deployment status and updates the runtime status in the deployment log.
 
 <figure><img src="../../.gitbook/assets/image (1023).png" alt=""><figcaption></figcaption></figure>
+
+* **Retry Button**\
+  Allows you to reattempt a failed deployment or pipeline stage.
+
+<figure><img src="../../.gitbook/assets/image (1050).png" alt=""><figcaption></figcaption></figure>
+
+* **Status Button**\
+  If the status is shown as **"Suspended"**, it usually indicates that the pipeline or task has been paused or is awaiting a manual action.
+
+<figure><img src="../../.gitbook/assets/image (1051).png" alt=""><figcaption></figcaption></figure>
