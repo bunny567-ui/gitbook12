@@ -10,14 +10,12 @@ Release Pipelines in ReleaseOwl facilitate orchestrated deployments to SAP envir
 
 ### **Creating a Release Pipeline**
 
-Creating a Release Pipeline is a six-step process.
+Creating a Release Pipeline is a three-step process.
 
-| Step1 | Enter a name in Release Pipeline Name                                                                |
-| ----- | ---------------------------------------------------------------------------------------------------- |
-| Step2 | Choose Pipeline Type – SAP CPI from the drop down                                                    |
-| Step3 | Click Add Stages, add the stages. Add various types of pre, post and deployment tasks on need basis. |
-| Step4 | Choose to schedule the pipeline execution or run manually                                            |
-| Step5 | Specify the email ids to receive notifications about release pipeline execution status.              |
+| Step 1 | Enter a name in Release Pipeline Name                                                                                                    |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Step 2 | Click '**Add Stages**' to add the required stages. Add various types of pre-deployment, deployment, and post-deployment tasks as needed. |
+| Step3  | Specify the email ids to receive notifications about release pipeline execution status.                                                  |
 
 #### **For creating release pipeline:**
 

@@ -10,13 +10,12 @@ Release Pipelines orchestrate automated deployments into SAP environments with t
 
 ### **Creating a Release Pipeline**
 
-Creating a Release Pipeline is a four-step process.
+Creating a Release Pipeline is a three-step process.
 
-| **Step1** | Enter a name in Release Pipeline Name                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------- |
-| **Step2** | Pipeline Type – Enter the pipeline of your choice.                                                   |
-| **Step3** | Click Add Stages, add the stages. Add various types of pre, post and deployment tasks on need basis. |
-| **Step4** | Specify the email ids to receive notifications about release pipeline execution status.              |
+| **Step1** | Enter a name in Release Pipeline Name                                                                                                    |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Step2** | Click '**Add Stages**' to add the required stages. Add various types of pre-deployment, deployment, and post-deployment tasks as needed. |
+| **Step3** | Specify the email ids to receive notifications about release pipeline execution status.                                                  |
 
 #### For creating release pipeline:
 
