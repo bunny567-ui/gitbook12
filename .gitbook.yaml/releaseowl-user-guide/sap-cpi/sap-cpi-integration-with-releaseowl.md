@@ -408,6 +408,9 @@ You can view the Deploy Logs in the ReleaseOwl Dashboard under the SAP CPI Deplo
 * **Config Status**: Confirms if the configuration for new or updated artifacts was successful.
 * **Deploy Status:** Reflects the final deployment status of the artifact.
 * **Already Deployed:**  Indicates that the artifact was **previously deployed**, either during a **retry** operation or through **manual completion**. This status helps avoid duplicate deployments and provides clarity during re-runs.
+
+<figure><img src="../../.gitbook/assets/image (1069).png" alt=""><figcaption></figcaption></figure>
+
 * **Manual Completion:** If a deployment **fails** or **times out**, users can use the **Manual Completion** option to continue the pipeline after resolving the issue manually.
 
 <figure><img src="../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>

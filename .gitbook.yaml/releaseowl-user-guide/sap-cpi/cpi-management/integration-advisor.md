@@ -143,10 +143,10 @@ The following integration artifacts are created within the **Integration Advisor
 
 7. In the **Info Section**, you can see **artifact details**:
 
-* **For MAG:** Message type and administrative data.
+* **For MAG:**  You can see the details of Message type and administrative data.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FWWwAmMIsMhIoQQ8WTmbp%252Fimage.png%3Falt%3Dmedia%26token%3D8d155c19-ae3a-48e3-a3b1-fb1c3c809645&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=efb81760&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-* **For MIG:** Source MIG, Target MIG, and administrative data.
+* **For MIG:** You can see the details of Source MIG, Target MIG, and administrative data.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FxBEPO7qRLrbcGHwY8Bx2%252Fimage.png%3Falt%3Dmedia%26token%3Db10c1192-3e78-47e0-963d-b61649da4ba5&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=eaaccd39&#x26;sv=2" alt=""><figcaption></figcaption></figure>

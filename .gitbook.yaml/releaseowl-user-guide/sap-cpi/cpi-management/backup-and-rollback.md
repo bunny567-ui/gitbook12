@@ -16,16 +16,21 @@ The **Enable Rollback** option is one of the key **Deployment Actions** that can
 3. Click **Save** to confirm the changes.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/Backup%20&#x26;%20Roll%20back-1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1068).png" alt=""><figcaption></figcaption></figure>
 
 4. You can view the Release Pipeline execution status from User Stories screen by navigating to the Pipeline Activity as shown below:\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/Backup%20&#x26;%20Roll%20back-2.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1071).png" alt=""><figcaption></figcaption></figure>
 
 5. Click on the **Pipeline Activity** option. You can find the Rollback option under **Deployment section**.&#x20;
 6. At any point of time i.e., during or after the deployment done by the execution of the Release Pipeline, you can rollback to previous version by clicking the Rollback option available.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (1073).png" alt=""><figcaption></figcaption></figure>
+
 7. To rollback to the previous version, click on **Rollback** and in the confirmation pop-up that appears, click **Yes**. Rollback process starts.
+
+<figure><img src="../../../.gitbook/assets/image (1072).png" alt=""><figcaption></figcaption></figure>
 
 ### **Rollback Logs**
 
@@ -33,6 +38,4 @@ The **Enable Rollback** option is one of the key **Deployment Actions** that can
 * To rollback a build, click **Rollback** on the **Pipeline Activity status page**.
 * Once rollback is triggered, the **rollback status and details** will be visible in the **deployment logs**, providing transparency into the rollback process and outcomes.
 
-<figure><img src="../../../.gitbook/assets/image (359).png" alt=""><figcaption></figcaption></figure>
-
-\
+<figure><img src="../../../.gitbook/assets/image (1074).png" alt=""><figcaption></figcaption></figure>
