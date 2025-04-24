@@ -306,9 +306,14 @@ A pop-up screen will display the sync history. Use the Refresh button to update 
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FLY2gyFZQ4zxQSdQYgSBD%252Fimage.png%3Falt%3Dmedia%26token%3D5ad8a9b2-8307-492e-a565-068daefe35b4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a36fc8b8&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-* Click on "**Edit Configuration**" to open the artifact configuration and verify the updated values.
+* Click on **Edit Configuration** to open the artifact configuration.&#x20;
+* Verify or modify the updated values by clicking on the **pencil icon** (Modify Values button), then click the **Save** button to apply the changes.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FIVpiCFhc5IWKJ3lvVNO2%252Fimage.png%3Falt%3Dmedia%26token%3D34ed57b3-47a9-4a47-99b0-0dfd82803bed&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9caf00f0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1078).png" alt=""><figcaption></figcaption></figure>
+
+* A newly created artifact will be displayed with its specified name and the associated configuration settings.
+
+<figure><img src="../../.gitbook/assets/image (1080).png" alt=""><figcaption></figcaption></figure>
 
 * Editing **timer configuration parameters** (such as start time, recurrence, etc.) is **not supported** directly from ReleaseOwl.
 
