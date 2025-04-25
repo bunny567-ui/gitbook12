@@ -59,8 +59,8 @@ Once a condition is met, configure an **action**. The **ReleaseOwl API** should 
 
 <figure><img src="../../.gitbook/assets/image (1082).png" alt=""><figcaption></figcaption></figure>
 
-* **HTTP Method** – Set this to **POST**.
-* **Web Request Body** – Select **Custom Data**.
+4. **HTTP Method** – Set this to **POST**.
+5. **Web Request Body** – Select **Custom Data**.
 
 #### **Custom Data for Synchronization:**
 
