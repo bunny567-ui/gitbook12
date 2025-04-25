@@ -55,14 +55,10 @@ Once a condition is met, configure an **action**. The **ReleaseOwl API** should 
 <figure><img src="../../.gitbook/assets/image (832).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **"Add an Action"** search bar, select **"Send Web Request."**
+3. **Web Request URL** – Copy the **Web Request URL** generated in the **Web Request URL for Automation Rule.**
 
-#### **Fill in the Required Details:**
+<figure><img src="../../.gitbook/assets/image (1082).png" alt=""><figcaption></figcaption></figure>
 
-*   **Web Request URL** – Provide the webhook endpoint for issue synchronization:
-
-    ```
-    https://<releaseowl_host>/ratesaptms/webhook/tenant/<tenantname>/project/<projectId>/key/sync?secretKey=<secretKey>
-    ```
 * **HTTP Method** – Set this to **POST**.
 * **Web Request Body** – Select **Custom Data**.
 
