@@ -103,18 +103,19 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 1. Click the **+ Add** button located in the top-right corner of the ALM Integrations section.
 2. &#x20;Fill in the required details:
 
-| Field Name             | Description                                                               |
-| ---------------------- | ------------------------------------------------------------------------- |
-| Name                   | Provide a unique integration name for Jira.                               |
-| Description            | Add a description for the integration.                                    |
-| External System        | Select the external system from the dropdown.                             |
-| Credential             | Select the pre-configured Jira credential from the dropdown.              |
-| Host URL               | Enter the Jira instance URL.                                              |
-| Hosting Type           | Select the hosting type.                                                  |
-| Boards / Filters / JQL | Choose how you want to interact with Jira data (Boards, Filters, or JQL). |
-| External Project       | Specify the Jira project key.                                             |
-| Board                  | Provide the board name to sync with.                                      |
-| Webhook URL            | Copy and paste the webhook URL provided for syncing with Jira.            |
+| Field Name                  | Description                                                               |
+| --------------------------- | ------------------------------------------------------------------------- |
+| Name                        | Provide a unique integration name for Jira.                               |
+| Description                 | Add a description for the integration.                                    |
+| External System             | Select the external system from the dropdown.                             |
+| Credential                  | Select the pre-configured Jira credential from the dropdown.              |
+| Host URL                    | Enter the Jira instance URL.                                              |
+| Hosting Type                | Select the hosting type.                                                  |
+| Boards / Filters / JQL      | Choose how you want to interact with Jira data (Boards, Filters, or JQL). |
+| External Project            | Specify the Jira project key.                                             |
+| Board                       | Provide the board name to sync with.                                      |
+| Webhook URL                 | Copy and paste the webhook URL provided for syncing with Jira.            |
+| <p><br>Disable Comments</p> | You can turn off comments within ALM Integration.                         |
 
 {% hint style="info" %}
 **Note:**&#x20;
