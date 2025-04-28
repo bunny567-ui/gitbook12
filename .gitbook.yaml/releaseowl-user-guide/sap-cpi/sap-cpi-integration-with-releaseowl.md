@@ -416,7 +416,7 @@ You can view the Deploy Logs in the ReleaseOwl Dashboard under the SAP CPI Deplo
 
 <figure><img src="../../.gitbook/assets/image (1069).png" alt=""><figcaption></figcaption></figure>
 
-* **Manual Completion:** If a deployment **fails** or **times out**, users can use the **Manual Completion** option to continue the pipeline after resolving the issue manually.
+* **Manual Completion:** If a deployment fails or times out, users can use the **Manual Completion** option in ReleaseOwl to resolve the issue manually and continue the pipeline execution.
 
 <figure><img src="../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>
 
