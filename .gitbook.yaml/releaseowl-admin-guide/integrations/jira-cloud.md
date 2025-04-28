@@ -98,6 +98,12 @@ To link a Jira project with a ReleaseOwl project, follow these steps:
 * **Credential**: Select the registered Jira credential from the dropdown list.
 * **Host URL**: The Jira server URL (e.g., `https://saparate.atlassian.net`).
 
+<figure><img src="../../.gitbook/assets/image (1094).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:** You can turn off comments within ALM Integration.
+{% endhint %}
+
 #### **3. Select Hosting Type**
 
 Under **Hosting Type**, choose **On-Premise** if your Jira instance is hosted on a private server rather than Atlassian’s cloud. Choose **Cloud** if your Jira instance is hosted on Atlassian’s cloud platform. You can then choose from the following options:
