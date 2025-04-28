@@ -35,7 +35,7 @@ Fill in the required details:
 
 A _Callout_ task is used to invoke a third-party REST API from within ReleaseOwl. Upon selecting this task type, the following configuration screen is displayed:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -50,7 +50,7 @@ Fill in the required details:
 On clicking the **Config Params** button, the following screen is displayed. Enter the variable parameter names specified in the Payload JSON along with their values that are to be passed run-time during the execution of the Release Pipeline and save the changes.\
 
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **System Defined Parameters for a Callout Task - Generic**
 

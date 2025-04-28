@@ -37,7 +37,7 @@
 1. After the instance is created, click the **three-dot menu (⋮)** next to it.
 2. Select **"Create Service Key"**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a **name** for the key (e.g., `api-access-key`) and click **Create**.
 4. Once created, click on the key to view credentials like `clientid`, `clientsecret`, and `url` — used for API authentication.

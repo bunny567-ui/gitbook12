@@ -1,6 +1,6 @@
 # Project Management
 
-Project Management in ReleaseOwl simplifies the planning, execution, and deployment of SAP artifacts by providing centralized control over environments, user roles, and release pipelines.
+roject Management in ReleaseOwl simplifies the planning, execution, and deployment of SAP artifacts by providing centralized control over environments, user roles, and release pipelines.
 
 ### Steps to Create a Project
 
@@ -117,7 +117,13 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 | Webhook URL                 | Copy and paste the webhook URL provided for syncing with Jira.            |
 | <p><br>Disable Comments</p> | You can turn off comments within ALM Integration.                         |
 
+
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
+
+
 **Note:**&#x20;
 
 Webhook Integration supports the following:
