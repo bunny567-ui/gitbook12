@@ -51,7 +51,7 @@
     * [GIT Ops](releaseowl-user-guide/sap-btp/git-ops.md)
   * [SAP API](releaseowl-user-guide/sap-api/README.md)
     * [Basic Administration](releaseowl-user-guide/sap-api/basic-administration.md)
-    * [API Environment Registration](releaseowl-user-guide/sap-api/api-environment-registration.md)
+    * [SAP API Integration with ReleaseOwl](releaseowl-user-guide/sap-api/sap-api-integration-with-releaseowl.md)
   * [SAP CPI](releaseowl-user-guide/sap-cpi/README.md)
     * [SAP CPI Integration with ReleaseOwl](releaseowl-user-guide/sap-cpi/sap-cpi-integration-with-releaseowl.md)
     * [CPI Test Generator](releaseowl-user-guide/sap-cpi/cpi-test-generator.md)

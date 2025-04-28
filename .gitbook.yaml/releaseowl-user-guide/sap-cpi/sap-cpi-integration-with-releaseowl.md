@@ -288,15 +288,14 @@ A pop-up screen will display the sync history. Use the Refresh button to update 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F4ZoUhbOgzp6AfiRbV5bC%252Fimage.png%3Falt%3Dmedia%26token%3D479e8317-51ac-48b5-8ad6-ade48805d128&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c753ab50&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 * In the "**Artifacts**" list, click the three dots in the "**Actions**" column for the desired artifact.
-* Select "**Configure**" from the dropdown menu.
+* Select "**Configure**" from the list.&#x20;
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FlbZM9a8r4g2vTGwlhBOq%252Fimage.png%3Falt%3Dmedia%26token%3Da9355e5e-b1d2-41d0-8761-ed0577d87228&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=11f2a353&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-* Modify the required values in the configuration screen.
-
 **4. Save Changes:**
 
-* Save: Update the existing artifact directly.
+* Modify the required values in the configuration screen.&#x20;
+* **Save:** Update the existing artifact directly.
 * **Save as Artifact**: Create a new version of the artifact with the modified values.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FLHWBcEw5gF3LF8PUl8wb%252Fimage.png%3Falt%3Dmedia%26token%3D338402a3-8ef4-4009-bc8d-f36a8ddb0bf5&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=464c2fdd&#x26;sv=2" alt=""><figcaption></figcaption></figure>
@@ -343,16 +342,29 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Click the **Add button** in a task stage to include deployment tasks.
 *   Fill in the required details:
 
-    * Name: Enter a preferred name for the deployment task.
-    * Deploy Type: Select the type of deployment.
-    * Select CPI Environment: Select the target CPI environment where the deployment will take place.
-    * Deployment Action: Choose between:
-      * Upload Only: Uploads the deployment package without executing the deployment.
-      * Upload and Deploy: Uploads the deployment package and executes the deployment.
+    * **Name:** Enter a preferred name for the deployment task.
+    * **Deploy Type:** Select the type of deployment.
+    * **Select CPI Environment:** Select the target CPI environment where the deployment will take place.
+    * **Deployment Action:** Choose between:
+      * **Upload Only:** Uploads the deployment package without executing the deployment.
+      * **Upload and Deploy:** Uploads the deployment package and executes the deployment.
 
 
 
     <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F0cCugnYu2HHv1bBf3XwA%252Fimage.png%3Falt%3Dmedia%26token%3D28a6b6e7-163f-457b-8619-c9aa2a260498&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f952c3b7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+
+* **Notify Users:**  Sends a notification to selected users **when the  task is created** or **when pipeline execution reaches this stage**
+* **Notify Promotion User:** Sends a notification to the **user who promoted** the artifact or initiated the deployment to this stage.
+* **Notify  to Button :** It has three options like user, role and custom to&#x20;
+
+| Option     | Definition                                                                                                                                                                       |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **User**   | Sends the notification directly to a specific individual user.                                                                                                                   |
+| **Role**   | Sends the notification to all users who belong to a specific predefined role (such as Developer, Tester, Release Manager). Every user in the role will receive the notification. |
+| **Custom** | Sends the notification based on a custom mapping between components and roles. Different components can notify different roles, depending on your configuration.                 |
+
+<figure><img src="../../.gitbook/assets/image (1085).png" alt=""><figcaption></figcaption></figure>
 
 **3. Save and Configure Notifications:**
 

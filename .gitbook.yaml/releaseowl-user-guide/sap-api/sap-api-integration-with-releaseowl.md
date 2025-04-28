@@ -1,4 +1,4 @@
-# API Environment Registration
+# SAP API Integration with ReleaseOwl
 
 1\.      Navigate to Environments from the Administration menu.
 
@@ -79,6 +79,18 @@ Here’s the information formatted as a table:
 * Click **Synchronize** to sync API proxies created in **SAP API**.
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2486808281-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FntTXS8vTRxGt8qfbPi3l%252Fuploads%252Fr4KtoIO20ImCAGwcK6au%252Fimage.png%3Falt%3Dmedia%26token%3D43630a07-dc32-4c99-a409-0317f552685d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=22d3c421&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+8. **Configure Artifacts**
+
+* In the " **API** **Artifacts**" list, click the three dots in the "**Actions**" column for the desired artifact.
+* Select "**Configure**" from the list.
+
+<figure><img src="../../.gitbook/assets/image (1086).png" alt=""><figcaption></figcaption></figure>
+
+* On the configuration screen, click the **Modify Values** button to update the required fields.
+* Use the **Target Endpoints** view to configure endpoint details across multiple environments.
+
+<figure><img src="../../.gitbook/assets/image (1087).png" alt=""><figcaption></figcaption></figure>
 
 ### Creating a Release Pipeline <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 

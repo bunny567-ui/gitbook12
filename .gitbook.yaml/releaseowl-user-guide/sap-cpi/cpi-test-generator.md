@@ -49,7 +49,11 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FlP5HtpGquPXfLSisaDiz%252Fimage.png%3Falt%3Dmedia%26token%3Dfb894e82-71d8-4bfa-9734-a5c361f79552&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a79faf46&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-4. This will retrieve messages from the latest iFlow execution. The first message will be the input message, and the remaining messages will be treated as output messages.
+4. When you click on the **Test Case** button, ensure that special characters are not used in the CPI test case names.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1083).png" alt=""><figcaption></figcaption></figure>
+
+5. This will retrieve messages from the latest iFlow execution. The first message will be the input message, and the remaining messages will be treated as output messages.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FBEGLA3Wc3saVvJ38slEz%252Fimage.png%3Falt%3Dmedia%26token%3D076e843a-c074-4597-9de0-143ad4b96b2b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d9433af&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -83,8 +87,9 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 * **Expected Output:** The message recorded during test case creation.
 * **Actual Output:** The message from the current test execution.
 * **Differences:** Differences between the **header** and **exchange properties** of the expected and actual messages.
+* **Added Label:** Indicates unmatched paths where the **expected output** is **null**, improving message comparison visibility in the test results.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FUGcr4UTAII60CmgoNbMk%252Fimage.png%3Falt%3Dmedia%26token%3D4c4f390f-69e6-423e-8a86-0ab591f27cdf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e5a6676d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1084).png" alt=""><figcaption></figcaption></figure>
 
 * The **Ignore List** allows you to exclude specific **paths, header properties, and exchange properties** (e.g., timestamps, generated IDs, etc.).
 

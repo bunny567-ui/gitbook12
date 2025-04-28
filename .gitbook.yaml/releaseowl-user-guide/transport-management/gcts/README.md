@@ -333,7 +333,38 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 <figure><img src="../../../.gitbook/assets/image (1017).png" alt=""><figcaption></figcaption></figure>
 
-26. Once deployment is successful:
+26. **Validation Report:**&#x20;
+
+* Click on the **Validation Report** button  for the selected User Story.&#x20;
+  * After Validating,  you will find two tabs:
+    * **TR Report**: Displays the details of the Transport Requests linked to the User Story.
+    * **ATC Report**: Displays the ABAP Test Cockpit (ATC) results, highlighting any code quality or compliance issues.
+  * **Release Status Check**
+    * Under the **TR Report** tab, you will find:
+      * **Release Status Check**:\
+        Shows whether all the linked transports have passed the required checks.
+        * **Status: Success** indicates everything is in order.
+  * **gCTS Sequence Check (Beta)**
+    * Located beside the Release Status Check.
+    * sequence check (Beta) for gCTS transport to validate object-level sequences during the validation process.
+
+<figure><img src="../../../.gitbook/assets/image (1088).png" alt=""><figcaption></figcaption></figure>
+
+27. &#x20;When you click on the **gCTS Sequence Check (Beta)**:
+    * You will see two sections:
+      1.  **Transport Sequence Dependency**
+
+          * This section shows the dependencies between different transport requests.
+
+          <figure><img src="../../../.gitbook/assets/image (1089).png" alt=""><figcaption></figcaption></figure>
+
+          <figure><img src="../../../.gitbook/assets/image (1090).png" alt=""><figcaption></figcaption></figure>
+      2.  **Valid Transport Sequence**
+
+          * This feature is used to validate the order in which SAP transport requests should be imported to avoid inconsistencies or errors in the target system.
+
+          <figure><img src="../../../.gitbook/assets/image (1091).png" alt=""><figcaption></figcaption></figure>
+28. Once deployment is successful:
 
 * Verify that changes are pushed to the **qa branch** in GitHub.
 * Login to **SAP gCTS (QA)** and confirm that the latest **commits** are available.
