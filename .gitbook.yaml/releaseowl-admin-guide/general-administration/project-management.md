@@ -117,9 +117,7 @@ roject Management in ReleaseOwl simplifies the planning, execution, and deployme
 | Webhook URL                 | Copy and paste the webhook URL provided for syncing with Jira.            |
 | <p><br>Disable Comments</p> | You can turn off comments within ALM Integration.                         |
 
-
-
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1097).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 
