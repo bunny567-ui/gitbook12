@@ -1,6 +1,6 @@
 # Project Management
 
-roject Management in ReleaseOwl simplifies the planning, execution, and deployment of SAP artifacts by providing centralized control over environments, user roles, and release pipelines.
+Project Management in ReleaseOwl simplifies the planning, execution, and deployment of SAP artifacts by providing centralized control over environments, user roles, and release pipelines.
 
 ### Steps to Create a Project
 
