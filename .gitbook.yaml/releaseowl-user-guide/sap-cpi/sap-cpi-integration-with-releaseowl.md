@@ -171,7 +171,7 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 | **IFLOW URL**                           | Enter the IFLOW URL from the service key.                                                                                                                                |
 | **Use Custom IdP**                      | Enable this option to set up a custom Identity Provider (IdP). _**Note**_**: The setup process is outlined in the section below.**                                       |
 | **SSO URL**                             | Provide the Single Sign-On (SSO) URL for authentication.                                                                                                                 |
-| **Email Address**                       | Enter the service user email address.                                                                                                                                    |
+| **IDP Auth Email Address / Group Name** | Enter the service user email address or Group Name of your choice.                                                                                                       |
 | **Integration Advisor**                 | Enable Integration Advisor to provide the Host URL.                                                                                                                      |
 | **Host URL**                            | The host URL is the base address of your SAP Integration Suite instance. _(Example: https://\<subdomain>.integrationsuite-\<region>.cfapps.\<domain>.hana.ondemand.com)_ |
 | **Enable Git** _(Optional)_             | Enable this option to integrate Git with the environment.                                                                                                                |
@@ -180,42 +180,94 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 | **Branch**                              | Specify the branch to be used for the integration.                                                                                                                       |
 | **Environment Type**                    | Select the environment type (e.g., **Dev**, **QA**, **Prod**).                                                                                                           |
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FPe2tkiskOjZvpg2MxrA4%252Fimage.png%3Falt%3Dmedia%26token%3Ddf4d7ea5-a2a3-4987-8f64-5da1cde3c138&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3ae47f55&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1098).png" alt=""><figcaption></figcaption></figure>
+
+4. After clicking the **Save** button, a **Test** button will appear. This button is used to verify whether the entered credentials are correct. Click on the **Test** button to validate the connection.\
+
+
+<figure><img src="../../.gitbook/assets/image (1101).png" alt=""><figcaption></figcaption></figure>
+
+5. Upon successful validation, a **Download** option will be available to download the **tenant-specific metadata** and the **SAP CPI environment descriptor file**.
+
+<figure><img src="../../.gitbook/assets/image (1102).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom Identity Provider (IDP) Setup and Configuration <a href="#pdf-page-della43ge2ynalx23r7p-toc190778976" id="pdf-page-della43ge2ynalx23r7p-toc190778976"></a>
 
 A Custom IDP (Identity Provider) must be configured to allow secure authentication and authorization for users who interact with the Integration Suite (CPI) instance through ReleaseOwl.
 
-Use Case: This is particularly useful for executing test cases, simulation testing and updating value mappings as part of the pipeline.
+**Use Case:** This is particularly useful for executing test cases, simulation testing and updating value mappings as part of the pipeline.
 
-### Steps to configure custom IDP <a href="#pdf-page-della43ge2ynalx23r7p-steps-to-configure-custom-idp" id="pdf-page-della43ge2ynalx23r7p-steps-to-configure-custom-idp"></a>
+#### Steps to Configure a Custom Identity Provider (IDP)
 
-Custom IDP (Identity Provider) is necessary for deploying certain artifact types, such as value mapping, REST, SOAP, and OData APIs. It is also essential for executing test cases associated with the artifacts.
+A **Custom Identity Provider (IDP)** is required for deploying certain artifact types—such as **Value Mapping**, **REST**, **SOAP**, and **OData APIs**—as well as for executing test cases associated with these artifacts via ReleaseOwl.
 
-To extract the SAP BTP SSO URL from the downloaded SAML metadata, follow these steps:
+**1. Download SAP BTP SAML Metadata**
 
-1. **Open the SAML metadata XML file** in a text editor (like Notepad++, VS Code, or any browser).
-2. **Search for the `AssertionConsumerService` tag**. You can search for the keyword `AssertionConsumerService`.
-3. Within that tag, **look for the `Location` attribute**. The value of this attribute is the **SSO URL** you need.
+* Navigate to the **Security** section of your SAP BTP trial account.
+* Go to **Trust Configuration**.
+* Click **Download SAML Metadata** to download the BTP metadata file.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FFzLeJBWKoXPer2uAYjdp%252Fimage.png%3Falt%3Dmedia%26token%3D20ced9da-c78b-4c84-a7a3-4e1f4a928fc8&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=61da5594&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1100).png" alt=""><figcaption></figcaption></figure>
 
-2. Click on Download Entity Descriptor to download the tenant-specific and SAP CPI Environment metadata descriptor.
+**2. Extract the SAP BTP SSO URL**
+
+* Open the downloaded SAML metadata XML file in a text editor (e.g., Notepad++, VS Code, or a browser).
+* Search for the `<AssertionConsumerService>` tag.
+* Locate the `Location` attribute inside the tag. The value of this attribute is your **SAP BTP SSO URL**.
+
+<figure><img src="../../.gitbook/assets/image (1099).png" alt=""><figcaption></figcaption></figure>
+
+**3. Download the ReleaseOwl Metadata Descriptor**
+
+* In ReleaseOwl, click **Download Entity Descriptor** to download the tenant-specific metadata and SAP CPI environment descriptor.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FfOf3OW02XFh4aRswCKhN%252Fimage.png%3Falt%3Dmedia%26token%3D6dea107a-1937-46f5-84b8-53e9793f4636&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f59c5afb&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-3. Go to Trust configuration in SAP BTP Cockpit and click on new SAML Trust configuration. Upload ReleaseOwl CPI Environment metadata xml in SAP BTP Trust configuration as below.
+**4. Create Trust Configuration in SAP BTP**
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FW3b54rJxrQXthjWrEcgF%252Fimage.png%3Falt%3Dmedia%26token%3D69e69252-fed6-4ab1-8d20-ac72dd03e8d1&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=88b63aff&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+* Return to **Trust Configuration** in the SAP BTP Cockpit.
+* Click **New Trust Configuration** and select **New** **SAML Trust Configuration**.
 
-4. Uncheck the option "**Available for User Logon**" to ensure that SAP does not list this IDP during the login process.
-5. Add Role collection mappings for the IdP: PI\_Administrator, PI\_Business\_Expert, PI\_Integration\_Developer. With attribute value “emailAddress” to value of the service-user (The same user basic auth credential should be linked to CPI Environment) in whose mail ID the updates should happen.
+<figure><img src="../../.gitbook/assets/image (1103).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FFKY1s3oc7Poh4O3XDTTb%252Fimage.png%3Falt%3Dmedia%26token%3D59dc599f-cf18-4f9f-ac8e-9ed53f88484c&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a1a84392&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+* Upload the **ReleaseOwl CPI Environment metadata XML** file.
+* **Uncheck** the option **"Available for User Logon"** to prevent this IDP from appearing on the SAP login screen.
+* Click **Save**.
 
-6\. Assign role collection mapping for the IDP that is required for Integration Advisor:
+<figure><img src="../../.gitbook/assets/image (1104).png" alt=""><figcaption></figcaption></figure>
 
-iadv-content-read ,iadv-content-administrator. With attribute value “emailAddress” to value of the service-user (The same user basic auth credential should be linked to CPI Environment) in whose mail ID the updates should happen.
+**5. Assign User Groups in the Custom IDP**
+
+* Open the newly created custom IDP.
+* Click **Edit** to configure **Role Collection Mappings**.
+*   Add the following user groups:
+
+    * `PI_Administrator`
+    * `PI_Business_Expert`
+    * `PI_Integration_Developer`
+    * `Integration_Provisioner`&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (1105).png" alt=""><figcaption></figcaption></figure>
+
+**6. Define Attribute Mapping**
+
+* Provide the **expected group value** (e.g., an email or group ID).
+* If a user's group attribute matches this value, the **corresponding role collection** will be assigned automatically.
+
+<figure><img src="../../.gitbook/assets/image (1106).png" alt=""><figcaption></figcaption></figure>
+
+7. **Assign Role Collections for Integration Advisor**
+
+* To enable Integration Advisor capabilities, assign the following role collections to the IDP:
+  * `iadv-content-read`
+  * `iadv-content-administrator`
+*   For these, use:
+
+    * **Attribute**: `emailAddress`
+    * **Operator**: `equals`
+    * **Value**: The email ID of the **service user** (the same user whose **Basic Authentication credentials** are configured in the CPI environment).
+
+    <figure><img src="../../.gitbook/assets/image (1107).png" alt=""><figcaption></figcaption></figure>
 
 ### Create a Project
 
