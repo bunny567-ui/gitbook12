@@ -203,7 +203,7 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 **1. Download SAP BTP SAML Metadata**
 
-* Navigate to the **Security** section of your SAP BTP trial account.
+* Navigate to the **Security** section of your SAP BTP Subaccount.
 * Go to **Trust Configuration**.
 * Click **Download SAML Metadata** to download the BTP metadata file.
 
