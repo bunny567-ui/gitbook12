@@ -161,24 +161,24 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 2. Select CPI environment and click on register CPI environment.
 3. Provide the following details:
 
-| **Field**                               | **Description**                                                                                                                                                          |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Name**                                | Enter a unique name for the SAP CPI Environment.                                                                                                                         |
-| **Auth Type**                           | Select the authentication type: **Basic Auth** or **OAuth2**.                                                                                                            |
-| **API URL**                             | Provide the API URL for connecting to the SAP CPI Environment.                                                                                                           |
-| **Enable Test Automation** _(Optional)_ | Toggle to enable or disable test automation capabilities.                                                                                                                |
-| **IFLOW OAuth Credential**              | Select the OAuth credentials used for IFLOW authentication.                                                                                                              |
-| **IFLOW URL**                           | Enter the IFLOW URL from the service key.                                                                                                                                |
-| **Use Custom IdP**                      | Enable this option to set up a custom Identity Provider (IdP). _**Note**_**: The setup process is outlined in the section below.**                                       |
-| **SSO URL**                             | Provide the Single Sign-On (SSO) URL for authentication.                                                                                                                 |
-| **IDP Auth Email Address / Group Name** | Enter the service user email address or Group Name of your choice.                                                                                                       |
-| **Integration Advisor**                 | Enable Integration Advisor to provide the Host URL.                                                                                                                      |
-| **Host URL**                            | The host URL is the base address of your SAP Integration Suite instance. _(Example: https://\<subdomain>.integrationsuite-\<region>.cfapps.\<domain>.hana.ondemand.com)_ |
-| **Enable Git** _(Optional)_             | Enable this option to integrate Git with the environment.                                                                                                                |
-| **Git Credential**                      | Select the credential for accessing the Git repository.                                                                                                                  |
-| **Repository URL**                      | Provide the Git repository URL.                                                                                                                                          |
-| **Branch**                              | Specify the branch to be used for the integration.                                                                                                                       |
-| **Environment Type**                    | Select the environment type (e.g., **Dev**, **QA**, **Prod**).                                                                                                           |
+| **Field**                               | **Description**                                                                                                                                                                                                                                                                                          |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**                                | Enter a unique name for the SAP CPI Environment.                                                                                                                                                                                                                                                         |
+| **Auth Type**                           | Select the authentication type: **Basic Auth** or **OAuth2**.                                                                                                                                                                                                                                            |
+| **API URL**                             | Provide the API URL for connecting to the SAP CPI Environment.                                                                                                                                                                                                                                           |
+| **Enable Test Automation** _(Optional)_ | Toggle to enable or disable test automation capabilities.                                                                                                                                                                                                                                                |
+| **IFLOW OAuth Credential**              | Select the OAuth credentials used for IFLOW authentication.                                                                                                                                                                                                                                              |
+| **IFLOW URL**                           | Enter the IFLOW URL from the service key.                                                                                                                                                                                                                                                                |
+| **Use Custom IdP**                      | Enable this option to set up a custom Identity Provider (IdP). _**Note**_**: The setup process is outlined in the section below.**                                                                                                                                                                       |
+| **SSO URL**                             | Provide the Single Sign-On (SSO) URL for authentication. _**Note**_**: The setup process is outlined in the section below.**                                                                                                                                                                             |
+| **IDP Auth Email Address / Group Name** | Enter the service user email address or group name of your choice. This must match the group name or email address configured in your Identity Provider under **User Group** or **Attribute Group Mapping**, and should also be present in the corresponding group or email configuration in ReleaseOwl. |
+| **Integration Advisor**                 | Enable Integration Advisor to provide the Host URL.                                                                                                                                                                                                                                                      |
+| **Host URL**                            | The host URL is the base address of your SAP Integration Suite instance. _(Example: https://\<subdomain>.integrationsuite-\<region>.cfapps.\<domain>.hana.ondemand.com)_                                                                                                                                 |
+| **Enable Git** _(Optional)_             | Enable this option to integrate Git with the environment.                                                                                                                                                                                                                                                |
+| **Git Credential**                      | Select the credential for accessing the Git repository.                                                                                                                                                                                                                                                  |
+| **Repository URL**                      | Provide the Git repository URL.                                                                                                                                                                                                                                                                          |
+| **Branch**                              | Specify the branch to be used for the integration.                                                                                                                                                                                                                                                       |
+| **Environment Type**                    | Select the environment type (e.g., **Dev**, **QA**, **Prod**).                                                                                                                                                                                                                                           |
 
 <figure><img src="../../.gitbook/assets/image (1098).png" alt=""><figcaption></figcaption></figure>
 
@@ -269,14 +269,14 @@ To assign role collections, you can choose **either** of the following methods:
 * Click the **"+"** button to add a new mapping.
 * Define mappings like this:
 
-| Role Collection            | Attribute | Operator | Value                                 |
-| -------------------------- | --------- | -------- | ------------------------------------- |
-| Integration\_Provisioner   | email     | equals   | The email ID of the **service user**  |
-| PI\_Administrator          | email     | equals   | The email ID of the **service user**  |
-| PI\_Business\_Expert       | email     | equals   | The email ID of the **service user**  |
-| PI\_Integration\_Developer | email     | equals   | The email ID of the **service user**  |
+| Role Collection            | Attribute    | Operator | Value                                 |
+| -------------------------- | ------------ | -------- | ------------------------------------- |
+| Integration\_Provisioner   | emailAddress | equals   | The email ID of the **service user**  |
+| PI\_Administrator          | emailAddress | equals   | The email ID of the **service user**  |
+| PI\_Business\_Expert       | emailAddress | equals   | The email ID of the **service user**  |
+| PI\_Integration\_Developer | emailAddress | equals   | The email ID of the **service user**  |
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1109).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :**
@@ -286,6 +286,10 @@ _To enable Integration Advisor capabilities, assign the following role collectio
 * _`iadv-content-read`_
 * _`iadv-content-administrator`_
 {% endhint %}
+
+7. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
+
+<figure><img src="../../.gitbook/assets/image (1108).png" alt=""><figcaption></figcaption></figure>
 
 ### Create a Project
 
