@@ -236,38 +236,56 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 <figure><img src="../../.gitbook/assets/image (1104).png" alt=""><figcaption></figcaption></figure>
 
-**5. Assign User Groups in the Custom IDP**
+### Assign Role Collections (Choose One of the Methods Below)
 
-* Open the newly created custom IDP.
-* Click **Edit** to configure **Role Collection Mappings**.
-*   Add the following user groups:
+{% hint style="info" %}
+**Note:**&#x20;
 
-    * `PI_Administrator`
-    * `PI_Business_Expert`
-    * `PI_Integration_Developer`
-    * `Integration_Provisioner`&#x20;
+To assign role collections, you can choose **either** of the following methods:
 
-    <figure><img src="../../.gitbook/assets/image (1105).png" alt=""><figcaption></figcaption></figure>
+* **User Group Mapping**, or
+* **Attribute Mapping (Email-based)**\
+  Choose the one that matches your Identity Provider setup.
+{% endhint %}
 
-**6. Define Attribute Mapping**
+#### **5.** Assign Role Collections using User Groups
 
-* Provide the **expected group value** (e.g., an email or group ID).
-* If a user's group attribute matches this value, the **corresponding role collection** will be assigned automatically.
+* Open the newly created **Custom IDP** and click **Edit**.
+* Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
+* Configure the mappings like the example below:
 
-<figure><img src="../../.gitbook/assets/image (1106).png" alt=""><figcaption></figcaption></figure>
+| Role Collection            | Attribute | Operator | Value                                                                                      |
+| -------------------------- | --------- | -------- | ------------------------------------------------------------------------------------------ |
+| Integration\_Provisioner   | Groups    | equals   | group name ( Replace `<group_name>` with actual group names from your Identity Provider.)  |
+| PI\_Business\_Expert       | Groups    | equals   |  group name                                                                                |
+| PI\_Integration\_Developer | Groups    | equals   | group name                                                                                 |
+| PI\_Administrator          | Groups    | equals   | group name                                                                                 |
 
-7. **Assign Role Collections for Integration Advisor**
+<figure><img src="../../.gitbook/assets/image (1105).png" alt=""><figcaption></figcaption></figure>
 
-* To enable Integration Advisor capabilities, assign the following role collections to the IDP:
-  * `iadv-content-read`
-  * `iadv-content-administrator`
-*   For these, use:
+#### **6.** Assign Role Collections using Attribute Mapping (Email-Based)
 
-    * **Attribute**: `emailAddress`
-    * **Operator**: `equals`
-    * **Value**: The email ID of the **service user** (the same user whose **Basic Authentication credentials** are configured in the CPI environment).
+* In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
+* Click the **"+"** button to add a new mapping.
+* Define mappings like this:
 
-    <figure><img src="../../.gitbook/assets/image (1107).png" alt=""><figcaption></figcaption></figure>
+| Role Collection            | Attribute | Operator | Value                                 |
+| -------------------------- | --------- | -------- | ------------------------------------- |
+| Integration\_Provisioner   | email     | equals   | The email ID of the **service user**  |
+| PI\_Administrator          | email     | equals   | The email ID of the **service user**  |
+| PI\_Business\_Expert       | email     | equals   | The email ID of the **service user**  |
+| PI\_Integration\_Developer | email     | equals   | The email ID of the **service user**  |
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note :**
+
+_To enable Integration Advisor capabilities, assign the following role collections to the IDP:_
+
+* _`iadv-content-read`_
+* _`iadv-content-administrator`_
+{% endhint %}
 
 ### Create a Project
 
