@@ -4,14 +4,11 @@
 
 Transport management is used to model your change management across the landscape.
 
-### **Creating a New Transport**
+#### **Create New Transport Request**
 
 To create a new transport request, follow these steps:
 
-1. **Select Your Project**
-   * Choose the project from the dropdown menu.
-   * This populates the transport requests associated with the project.
-2. **Click "Create New Transport Request"**
+1. Click **"Create New Transport Request".**
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -21,8 +18,7 @@ To create a new transport request, follow these steps:
 
 | Field                   | Description                                                                                                       |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Name**                | Provide a name for the transport request.                                                                         |
-| **Description**         | Optionally add a description.                                                                                     |
+| **Description**         | Provide a description to the transport request.                                                                   |
 | **Type**                | Select the type of transport request from the dropdown.                                                           |
 | **Owner**               | SAP user with permissions to create and import transports.                                                        |
 | **Dev System**          | Select the development system.                                                                                    |
@@ -39,6 +35,12 @@ To create a new transport request, follow these steps:
 
 <figure><img src="../../.gitbook/assets/image (487).png" alt=""><figcaption></figcaption></figure>
 
+#### **Import Settings**
+
+This section allows you to configure how transport requests should be imported into specific environments. To define import settings, click on the **+ Add** button and select the target **environment** (e.g., `DEM.100`). You can then enable or disable specific options such as delayed import, overwrite originals, ignore repairs, and more, based on your project requirements.
+
+<figure><img src="../../.gitbook/assets/image (1121).png" alt=""><figcaption></figcaption></figure>
+
 ### **Sync Transports**
 
 Syncing transports ensures the latest transport requests are fetched from the **source environment of the SAP landscape** to **ReleaseOwl**. If any modifications have been made to existing transports, those changes will also be updated.
@@ -48,20 +50,33 @@ Syncing transports ensures the latest transport requests are fetched from the **
 1. Click the **Sync Transports** icon at the top right of the page.
 2. The latest transport requests will be synchronized.
 
-### **Editing a Transport**
+<figure><img src="../../.gitbook/assets/image (1114).png" alt=""><figcaption></figcaption></figure>
+
+#### Current Project Templates
+
+There may be multiple transports listed in the Transport Management section. To work on a specific transport in your current project, click on the **Action** button next to the transport and select **Add to Project**. &#x20;
+
+<figure><img src="../../.gitbook/assets/image (1115).png" alt=""><figcaption></figcaption></figure>
+
+Then, check the **Current Project Transports** section, where the selected transport will be listed.
+
+<figure><img src="../../.gitbook/assets/image (1116).png" alt=""><figcaption></figcaption></figure>
+
+### Edit Transports
 
 To edit an existing transport request:
 
 1. Select the required transport and click **Actions**.
 2. Choose **Edit**.
-3. In the edit window, make the necessary modifications.
-4. Click **Load Objects** to fetch the list of objects included in the transport.
-5. Add Tasks by clicking +users button to add any tasks for the other users to assign the task. &#x20;
-6. Click **Save** to apply the changes.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1118).png" alt=""><figcaption></figcaption></figure>
 
-### **Managing Critical Objects**
+3. Click **Load Objects** to fetch the list of objects included in the transport.&#x20;
+4. Click **Save** to apply the changes.
+
+<figure><img src="../../.gitbook/assets/image (1117).png" alt=""><figcaption></figcaption></figure>
+
+### **Manage Critical Objects**
 
 Critical objects require **mandatory review** before they can be deployed. These objects can be managed under the **Critical Objects** section with the following options:
 
@@ -87,6 +102,9 @@ Critical objects require **mandatory review** before they can be deployed. These
 
 <figure><img src="../../.gitbook/assets/image (494).png" alt=""><figcaption></figcaption></figure>
 
-\
+### Export Transport Data to Excel
 
+You can download the transport data in Excel format by clicking the **Excel Download button** in the top-right corner of the **Transport Management** section. This action will export the list of transports as an Excel file.
+
+<figure><img src="../../.gitbook/assets/image (1119).png" alt=""><figcaption></figcaption></figure>
 

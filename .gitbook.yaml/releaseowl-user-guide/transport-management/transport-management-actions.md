@@ -75,3 +75,8 @@ To load the object, follow these steps:
 
 <figure><img src="../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
+### Remove from Project&#x20;
+
+The **Remove from Project** option allows you to remove a transport from the **Current Project Transports** list. This is useful for managing and organizing only the relevant transports for your active project work.
+
+<figure><img src="../../.gitbook/assets/image (1120).png" alt=""><figcaption></figcaption></figure>
