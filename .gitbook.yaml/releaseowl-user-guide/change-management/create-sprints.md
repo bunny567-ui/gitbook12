@@ -1,15 +1,19 @@
 # Create Sprints
 
-Any project created in ReleaseOwl can be associated with an external system like JIRA.
+### **Project Integration with External Systems**
 
-* Once a project in ReleaseOwl is integrated with an external system, you can sync the **Sprints**, **User Stories**, and **Backlogs**.
-* You can also create **Sprints**, **User Stories**, and **Backlogs** directly in ReleaseOwl.
+Any project created in **ReleaseOwl** can be associated with an external system such as **JIRA**.
+
+Once integrated, you can:
+
+* Sync **Sprints**, **User Stories**, and **Backlogs** from the external system into ReleaseOwl.
+* Create **Sprints**, **User Stories**, and **Backlogs** directly within **ReleaseOwl**, independent of any external system.
 
 {% hint style="info" %}
 **Note:** The changes made in the external system get synced to ReleaseOwl, but the changes made in ReleaseOwl do not sync back to the external system.
 {% endhint %}
 
-**Syncing Sprints**
+### **Syncing Sprints**
 
 1. To sync the sprints from an external system like JIRA, click **Sync Sprints**.
 

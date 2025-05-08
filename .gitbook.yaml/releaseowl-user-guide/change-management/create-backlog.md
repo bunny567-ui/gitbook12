@@ -1,6 +1,6 @@
 # Create Backlog
 
-The backlog here is the list of all the user stories that need to get done.
+1. The backlog here is the list of all the user stories that need to get done.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FBw8pTPd2SCE0x4AacbAe%252Fimage.png%3Falt%3Dmedia%26token%3D76001665-11eb-4afa-bb46-8de2c545c571&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f790ae93&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -20,7 +20,7 @@ The backlog here is the list of all the user stories that need to get done.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FBWl6H4OeElFl39ruA1vy%252Fimage.png%3Falt%3Dmedia%26token%3D02577516-df28-4b84-81dd-ad89e5422e76&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=700378ae&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-1. Click **OK**. The user stories created in the external system get synced to ReleaseOwl and appear in the **User Stories** screen.
+3. Click **OK**. The user stories created in the external system get synced to ReleaseOwl and appear in the **User Stories** screen.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FHOFHgQXOtwDciUKd5ZcW%252Fimage.png%3Falt%3Dmedia%26token%3De6551db1-7b5f-4ad4-a125-369affa9e402&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f1390ffb&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -35,4 +35,4 @@ The backlog here is the list of all the user stories that need to get done.
 **Note :** Once the user stories of the external system are moved to any sprint, they disappear from the **Backlog** screen upon syncing the user stories in ReleaseOwl.
 {% endhint %}
 
-Please refer to **Create User Stories** section for further information on how to create user stories in ReleaseOwl.
+Please refer to [**Create User Stories**](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/change-management/create-user-stories) section for further information on how to create user stories in ReleaseOwl.
