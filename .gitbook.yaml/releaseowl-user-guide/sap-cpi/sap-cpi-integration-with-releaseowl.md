@@ -430,7 +430,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 
 * **Notify Users:**  Sends a notification to selected users **when the  task is created** or **when pipeline execution reaches this stage**
 * **Notify Promotion User:** Sends a notification to the **user who promoted** the artifact or initiated the deployment to this stage.
-* **Notify  to Button :** It has three options like user, role and custom to&#x20;
+* **Notify  to Button :**  It has three options — **User**, **Role**, and **Custom** — to specify the recipients of the notification based on individual users, assigned roles, or custom groups.
 
 | Option     | Definition                                                                                                                                                                       |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
