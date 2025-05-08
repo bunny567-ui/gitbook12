@@ -52,13 +52,15 @@ Follow these steps to register a new SAP On-Premise Environment:
 2. Select **Credential Type** → **Transport Manager Credential**.
 3. Provide the required details:
    * **Credential Name**: Enter a name of your choice.
-   * **Username**: Enter your username.
-   * **Password**: Enter your password.
+   * **Username**: Enter your SAP Logon username.
+   * **Password**: Enter your SAP Logon password.
 4. Click **Save**.
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/on-prem-environment-registration-1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1112).png" alt=""><figcaption></figcaption></figure>
 
 The credential will now be available to access your **Transport Domain Controller** system.
+
+<figure><img src="../../.gitbook/assets/image (1113).png" alt=""><figcaption></figcaption></figure>
 
 ## **Transport Domain Controller**
 
@@ -80,9 +82,11 @@ The credential will now be available to access your **Transport Domain Controlle
 The following fields appear:
 
 * **Application Server (Required)** – Enter the **application server address**.
-* **Port (Required)** – Specify the port number as defined in SAP Logon. To find the port number, go to **SAP Easy Access**, enter **SMICM** in the transaction code field, and navigate to **Services**, where you can find the HTTP port number.
+* **Port (Required)** – Specify the port number as defined in SAP Logon. To find the port number, go to **SAP Easy Access**, enter transaction code **SMICM**, then navigate to the **Goto** menu and select **Services**. The **HTTP port number** will be listed there.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1111).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1110).png" alt=""><figcaption></figcaption></figure>
 
 * **HTTPS** – Check the box if **HTTPS** is required.
 * **Client ID (Required)** – Enter the **Client ID** of the Transport Domain Controller.
