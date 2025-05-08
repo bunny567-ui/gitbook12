@@ -1,6 +1,8 @@
 # Create User Stories
 
-1\) You can find User Stories under Change Management section as shown below:
+To create or sync user stories using an ALM integration (e.g., JIRA), follow these steps:
+
+1\) Navigate to the **User Stories** section under **Change Management**.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F47k7QpLfWkZMPjns9Tl3%252Fimage.png%3Falt%3Dmedia%26token%3D092c59f5-a252-4109-ba58-caf344f97f0f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=625ffe1e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -12,27 +14,31 @@ a) If the project that you are working with is associated with any external syst
 b) Always remember to sync the Sprints first and then the User Stories.
 {% endhint %}
 
-2\) Click Sync User Stories option from the User Stories screen. The user stories from the external system gets synced to the User Stories screen.&#x20;
+2\) Click the **Sync User Stories** option from the User Stories screen. The user stories from the external system will be synced and displayed in the **User Stories** screen.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** On clicking Sync User Stories, records of all issue types of the external integrated ALM project will be synced to ReleaseOwl.
 {% endhint %}
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fcreate-user-stories-2.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1a0248b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+3\) Click **OK**. The user stories created in the external system will be synced to ReleaseOwl and will appear on the **User Stories** screen.
 
-3\) Click **OK**. The user stories created in the external system gets synced to ReleaseOwl and appear in the User Stories screen.
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fcreate-user-stories-3.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ea714918&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+4\) To view previously performed sync actions, click on **Sync History**.
 
-4\) You can view the sync actions performed earlier by clicking the Sync History.
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fcreate-user-stories-4.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6c66ac65&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+### Creating User Stories Without ALM Integration
 
-5\) You can create a new user story by clicking Create New User Story link.
+To create user stories manually for systems not integrated through ALM (such as SAP CPI), follow these steps:
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fcreate-user-stories-5.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9d4a8b0a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+1\) To create a new user story manually, click the **Create New User Story** link.
 
-6\) Enter the following details and click Save:
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+2\) Enter the following details and click **Save**:
 
 | **Field**           | **Description**                                                                                                                                                               |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -43,15 +49,15 @@ b) Always remember to sync the Sprints first and then the User Stories.
 | **Sprint**          | The sprint in which the user story will be handled.                                                                                                                           |
 | **Release Version** | The version of the release in which the user story will get released.                                                                                                         |
 
-7\) The user story gets created and gets listed in the User Story grid as follows:
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FYpDgj8HIbVtqR7KBnkVv%252Fimage.png%3Falt%3Dmedia%26token%3D447de2b7-eb04-40f0-8d5e-04e066b2e5cc&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=74010008&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+3\) The user story gets created and gets listed in the User Story grid as follows:
 
-8\) You can delete user stories by clicking the **Delete** button.
+4\) You can delete user stories by clicking the **Delete** button.
 
 <figure><img src="../../.gitbook/assets/image (1093).png" alt=""><figcaption></figcaption></figure>
 
-9\) The following columns are seen for a user story:
+5\) The following columns are seen for a user story:
 
 <figure><img src="../../.gitbook/assets/image (1092).png" alt=""><figcaption></figcaption></figure>
 
@@ -69,23 +75,24 @@ b) Always remember to sync the Sprints first and then the User Stories.
 | **Pipeline Status**          | Status of the release pipeline execution.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Actions**                  | <p>Actions available for the user story: <strong>Edit</strong>, <strong>Validate</strong>, <strong>Validation Report</strong>, <strong>Promote</strong>, <strong>Pipeline Activity</strong>. </p><p></p><p><em><strong>Note</strong></em><strong>:</strong> Promote not available for MTAR applications.</p>                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-9\) The user story gets created and gets listed in the User Story grid as follows:
+6\) The user story gets created and gets listed in the User Story grid as follows:
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fcreate-user-stories-8.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b2210b01&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-| **Action**            | **Description**                                                                                        |
-| --------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Edit**              | To edit a user story.                                                                                  |
-| **Validate**          | To validate the user story.                                                                            |
-| **Validation Report** | To view the validation report. _Note_: This option becomes available once the validation is triggered. |
-| **Promote**           | Triggers the release pipeline associated with the project, as configured in **Project Settings**.      |
-| **Pipeline Activity** | View various stages, tasks, and execution status of the triggered release pipeline.                    |
+| **Action**            | **Description**                                                                                                |
+| --------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Edit**              | To edit a user story.                                                                                          |
+| **Validate**          | To validate the user story.                                                                                    |
+| **Validation Report** | To view the validation report. _**Note**_**:** This option becomes available once the validation is triggered. |
+| **Promote**           | Triggers the release pipeline associated with the project, as configured in **Project Settings**.              |
+| **Pipeline Activity** | View various stages, tasks, and execution status of the triggered release pipeline.                            |
+| **Delete**            | You can delete the existing user story.                                                                        |
 
-10\) The Validation Report will look as follows:
+7\) The Validation Report will look as follows:
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fcreate-user-stories-9.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9f44f116&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-11\) On clicking the Pipeline Activity, you can view the release pipeline execution status as follows:
+8\) On clicking the Pipeline Activity, you can view the release pipeline execution status as follows:
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F5k4YbvRzF09Y0AhaKt7g%252Fimage.png%3Falt%3Dmedia%26token%3Ddcb6b708-85a9-4db5-8ebd-2a1892d9033d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=39aae695&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -110,12 +117,16 @@ The exported PDF provides the following comprehensive information:
      * Code changes
      * Deployment stages
    * This ensures end-to-end traceability for audit and review purposes.
-5. **Approval and Audit Summary**
-   * A comprehensive summary of:
-     * Approvals obtained for the user story.
-     * Audit trails detailing all actions taken.
+5.  **Approval and Audit Summary**
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FDaDaJQkO6cPfX2lXwku5%252Fimage.png%3Falt%3Dmedia%26token%3Db4665217-e702-4588-8bd5-35ade2a77d7b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=20100a99&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    *   A comprehensive summary of:
+
+        * Approvals obtained for the user story.
+        * Audit trails detailing all actions taken.
+
+
+
+    <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ## **Deputy Users** <a href="#pdf-page-shdnuqg7ccu0ghnrleue-deputy-users" id="pdf-page-shdnuqg7ccu0ghnrleue-deputy-users"></a>
 
@@ -141,20 +152,24 @@ Deputy users can manage tasks when the primary user is unavailable.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fh2FU3rOpviu3Pup51P6b%252Fimage.png%3Falt%3Dmedia%26token%3D1d39bf9b-4673-456c-a3c6-0351afd6eead&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6b79f391&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-When a user story is promoted, the assigned Deputy User will receive an approval request. The Deputy User can then navigate to the **My Tasks** section and go to the **Tasks** tab. In the **Action** column, they can choose to **Approve** or **Reject** the request.
+6. When a user story is promoted, the assigned Deputy User will receive an approval request. The Deputy User can then navigate to the **My Tasks** section and go to the **Tasks** tab.&#x20;
+7. In the **Action** column, they can choose to **Approve** or **Reject** the request.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FKW21vajbvqYWmHIWwwKU%252Fimage.png%3Falt%3Dmedia%26token%3D5ed024a6-d23a-4217-a1e8-a9992e157243&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=54cd62c7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-When you click on the **Approve/Reject** button, a detailed view will appear, displaying relevant information about the user story. The Deputy User can review this information before making a decision to approve or reject the user story promotion.
+8. When you click on the **Approve/Reject** button, a detailed view will appear, displaying relevant information about the user story.&#x20;
+9. The Deputy User can review this information before making a decision to approve or reject the user story promotion.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FZ3zjGoeTsHBwWFCjGpAU%252Fimage.png%3Falt%3Dmedia%26token%3Dbade8a64-b497-4c0e-a9c4-0f086ac40faa&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=61f71a41&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-When the task is approved, a confirmation message will appear. In the **Pipeline Activity** section, you can see the task marked as **completed**, along with the name of the **Deputy User** who approved it.
+10. When the task is approved, a confirmation message will appear. In the **Pipeline Activity** section, you can see the task marked as **completed**, along with the name of the **Deputy User** who approved it.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fo8BTyNeMrKtsJwQQhZwG%252Fimage.png%3Falt%3Dmedia%26token%3D69a51b6f-ffe2-45dd-b055-d436977e3aa7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ae4505c4&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-In the **Deputy Tasks** section, the **Deputy User** can view the **task status**, including the **task name, reference ID, stage, task type, delivery time, assigned to, and action**.
+11. In the **Deputy Tasks** section, the **Deputy User** can view the **task status**, including the **task name, reference ID, stage, task type, delivery time, assigned to, and action**.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F6bieUIzzV1b8mUVSrVfp%252Fimage.png%3Falt%3Dmedia%26token%3Dc6ddad2e-bf51-4ea9-bc21-950781fe70ad&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b8ca79a5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-When you check the **History** in the **My Tasks** section, you can see a record of all actions taken, including approvals, rejections, and task completions, along with the corresponding timestamps and the user who performed each action.
+12. When you check the **History** in the **My Tasks** section, you can see a record of all actions taken, including approvals, rejections, and task completions, along with the corresponding timestamps and the user who performed each action.
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>

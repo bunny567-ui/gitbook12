@@ -40,7 +40,7 @@ Creating a Release Pipeline is a three-step process.
 5. **Add Tasks in Each Stage:** Click **Add** to configure tasks within the stage.\
 
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** All the tasks **except Deployment** Task are similar for any project type.
