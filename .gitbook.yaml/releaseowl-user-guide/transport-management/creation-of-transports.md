@@ -10,7 +10,7 @@ To create a new transport request, follow these steps:
 
 1. Click **"Create New Transport Request".**
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Fill in the Required Details**
 

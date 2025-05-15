@@ -16,7 +16,7 @@ b) Always remember to sync the Sprints first and then the User Stories.
 
 2\) Click the **Sync User Stories** option from the User Stories screen. The user stories from the external system will be synced and displayed in the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** On clicking Sync User Stories, records of all issue types of the external integrated ALM project will be synced to ReleaseOwl.
@@ -24,7 +24,7 @@ b) Always remember to sync the Sprints first and then the User Stories.
 
 3\) Click **OK**. The user stories created in the external system will be synced to ReleaseOwl and will appear on the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\) To view previously performed sync actions, click on **Sync History**.
 
