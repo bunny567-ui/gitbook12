@@ -16,7 +16,7 @@ b) Always remember to sync the Sprints first and then the User Stories.
 
 2\) Click the **Sync User Stories** option from the User Stories screen. The user stories from the external system will be synced and displayed in the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** On clicking Sync User Stories, records of all issue types of the external integrated ALM project will be synced to ReleaseOwl.
@@ -24,11 +24,11 @@ b) Always remember to sync the Sprints first and then the User Stories.
 
 3\) Click **OK**. The user stories created in the external system will be synced to ReleaseOwl and will appear on the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\) To view previously performed sync actions, click on **Sync History**.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Creating User Stories Without ALM Integration
 
@@ -36,7 +36,7 @@ To create user stories manually for systems not integrated through ALM (such as 
 
 1\) To create a new user story manually, click the **Create New User Story** link.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\) Enter the following details and click **Save**:
 
@@ -49,7 +49,7 @@ To create user stories manually for systems not integrated through ALM (such as 
 | **Sprint**          | The sprint in which the user story will be handled.                                                                                                                           |
 | **Release Version** | The version of the release in which the user story will get released.                                                                                                         |
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\) The user story gets created and gets listed in the User Story grid as follows:
 
@@ -77,7 +77,7 @@ To create user stories manually for systems not integrated through ALM (such as 
 
 6\) The user story gets created and gets listed in the User Story grid as follows:
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Action**            | **Description**                                                                                                |
 | --------------------- | -------------------------------------------------------------------------------------------------------------- |
@@ -126,7 +126,7 @@ The exported PDF provides the following comprehensive information:
 
 
 
-    <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Deputy Users** <a href="#pdf-page-shdnuqg7ccu0ghnrleue-deputy-users" id="pdf-page-shdnuqg7ccu0ghnrleue-deputy-users"></a>
 
@@ -172,4 +172,4 @@ Deputy users can manage tasks when the primary user is unavailable.
 
 12. When you check the **History** in the **My Tasks** section, you can see a record of all actions taken, including approvals, rejections, and task completions, along with the corresponding timestamps and the user who performed each action.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>

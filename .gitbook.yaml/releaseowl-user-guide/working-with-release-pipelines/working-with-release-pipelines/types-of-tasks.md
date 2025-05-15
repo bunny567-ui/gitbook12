@@ -2,7 +2,7 @@
 
 While creating a release pipeline of any type, click on `Add` under the Tasks section to define the tasks to be executed as part of the pipeline. The following task types are available for selection:
 
-<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**
@@ -16,7 +16,7 @@ While creating a release pipeline of any type, click on `Add` under the Tasks se
 
 If the deployment needs any **prior approval**, then the user has to add an **Approval Task** **before** the **Deployment Task** while creating the Release Pipeline. An Approval Task can be added as follows:
 
-<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -35,7 +35,7 @@ Fill in the required details:
 
 A _Callout_ task is used to invoke a third-party REST API from within ReleaseOwl. Upon selecting this task type, the following configuration screen is displayed:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -50,7 +50,7 @@ Fill in the required details:
 On clicking the **Config Params** button, the following screen is displayed. Enter the variable parameter names specified in the Payload JSON along with their values that are to be passed run-time during the execution of the Release Pipeline and save the changes.\
 
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **System Defined Parameters for a Callout Task - Generic**
 
@@ -78,7 +78,7 @@ If after the deployment is done and any post deployment changes such as changing
 \
 
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Fill in the required details:**
 
@@ -98,7 +98,7 @@ If after the deployment is done and any post deployment changes such as changing
 The status of a user story can be set to a specific value once the deployment takes place in an environment. The following screen is displayed on adding a user story status task.\
 
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -114,7 +114,7 @@ Fill in the required details:
 ReleaseOwl can be integrated with HCL OneTest UI using which functional and web tests can be executed in any specific environment once the deployment is complete to check if the functionality is as desired. The following screen is displayed on adding a test execution task.\
 
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -149,7 +149,7 @@ The Message Listener Task is designed to wait for specific message events and ac
 | **Message Template** | Defines the structure or format of the expected message event.                      |
 | **Description**      | Any message that is to be conveyed  to the task performer can be mentioned here.    |
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 7. GCTS Merge Task
 
@@ -223,7 +223,7 @@ Once a transport is released, no further changes can be made to it. If a fix is 
 | **Notify Transport Users** | Sends notifications specifically to transport users involved in the task.                        |
 | **Description**            | Any message that is to be conveyed  to the task performer can be mentioned here.                 |
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 11. Transport Retrofit Task&#x20;
 
@@ -238,7 +238,7 @@ The **Transport Retrofit Task** is used to **apply the same changes** across **p
 | **Notify Transport Users** | Option to notify transport-specific users involved in the retrofit process. |
 | **Description**            | Any message that is to be conveyed  to the task performer can be mentioned  |
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 12. Release Transport Task&#x20;
 
@@ -249,4 +249,4 @@ The **Release Transport Task** is responsible for automating the **manual transp
 |  **Name**       | Specifies the name of the release task, which helps identify it within the pipeline                                                                                                  |
 | **Description** | The description field allows you to provide details about the purpose or function of the task, helping users understand what the task is intended to do within the release pipeline. |
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>

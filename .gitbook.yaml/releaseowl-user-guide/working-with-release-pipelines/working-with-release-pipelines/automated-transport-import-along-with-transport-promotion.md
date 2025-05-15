@@ -22,12 +22,12 @@ Creating a Release Pipeline is a three-step process.
 1.  Select the required On-Prem Project and in Release go to Release Pipelines.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 2. Click **Create New Release Pipeline.**
 3. **Release Pipeline Name:** Give a name for the release pipeline.\
 
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 4.  **Add Stages:**
 
@@ -36,11 +36,11 @@ Creating a Release Pipeline is a three-step process.
     * Click **OK**\
 
 
-    <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 5. **Add Tasks in Each Stage:** Click **Add** to configure tasks within the stage.\
 
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** All the tasks **except Deployment** Task are similar for any project type.
@@ -59,9 +59,9 @@ Creating a Release Pipeline is a three-step process.
 The **Deployment Task** defines how an artifact is deployed to the specified SAP environment during pipeline execution. When you add a Deployment Task to a pipeline stage, a configuration screen will be displayed where you can enter all the necessary deployment details.\
 
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -79,7 +79,7 @@ Fill in the required details:
 
 By default, a pipeline executes the configured tasks sequentially, one after the other. The **Wait for Promotion** task is used to pause the execution at a specific stage, preventing the pipeline from automatically proceeding to the next stage. It holds the process until a manual promotion is triggered by the user. Multiple tasks waiting at the same stage can be grouped into a **Release Package**, allowing them to be promoted together to the next stage in the Release Pipeline.
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Validation Task**
 
@@ -93,16 +93,16 @@ Validation task is added to perform Static Code Analysis checks and generate the
 | **Pipeline Execution**  | Section indicating execution preferences for the task.                     |
 | **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails. |
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Promotion**
 
 Promotion is the process of Moving/Deploying/Importing the transports to the target systems using a Release pipeline associated with the project.\
 
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “**Promotion Task”**. Promotion can be performed in two ways – via User Story and via Release Package.
 
@@ -111,7 +111,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 1\. From Actions Menu of the User story, promotion can be done.\
 
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Clicking Promote will Trigger the Release pipeline associated with the project.
 
@@ -119,16 +119,16 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 
 4\. The column “**Pipeline Status**” shows the current task in the stage or overall status of the Release Pipeline.
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Runtime view of the pipeline can be viewed using “**Pipeline Activity**” menu option in the Actions Menu.\
 
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 6\. The pipeline activity screen shows all the stages of the Release Pipeline. Clicking on the stage shows the tasks and its execution status.
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 7\. Once Pipeline execution reaches the “**Promotion Task**”, the pipeline will continue to wait until further promotion from the User Story or Release Package.
 
@@ -139,7 +139,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 8\. User Story can be promoted to the next stage (in this case, Prod) or a new Release Package can be created with all the User Stories waiting in UAT stage (here in this case) for getting promoted to Prod.\
 
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **b) Promotion by Release Package**
 
@@ -180,7 +180,7 @@ The following points apply when promoting a Release Package based on transports:
 2\. From the Action Menu of the Release package, click on “Promote”.\
 
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\. Execution of the Release package can be seen using the option “Pipeline Activity”\
 
@@ -203,7 +203,7 @@ This is required when we want the deployments to take place in multiple environm
 For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.\
 
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Editing/ Deleting Pipeline**
 
