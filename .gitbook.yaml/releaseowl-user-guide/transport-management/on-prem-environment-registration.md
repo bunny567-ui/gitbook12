@@ -187,7 +187,7 @@ The newly created Transport Domain Controller gets displayed in the Transport Do
 
 <figure><img src="../../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
 
-10. If needed, you can set the selected environment as a **Source System** by clicking the **Source** button.
+10. If needed, you can set the selected environment as a **Source System** by checking the **Source** button.
 
 <figure><img src="../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
 
