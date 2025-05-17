@@ -23,12 +23,13 @@
 
 ### **Creating MIG and MAG in Integration Advisor** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-creating-mig-and-mag-in-integration-advisor" id="pdf-page-gq2jqh5hz5sfguou1udk-creating-mig-and-mag-in-integration-advisor"></a>
 
-The following integration artifacts are created within the **Integration Advisor** service in **SAP Business Technology Platform (SAP BTP)**:
+1. Navigate to **Integration Advisor** and go to the **MIG** section.
+2. Click on the **Create** button to initiate a new Message Implementation Guideline (MIG).
+3. In the **Type Systems** step, switch to the **Custom** tab.
+4. You will see the available **Custom Type Systems** that you previously configured (e.g., Custom Codelists, Custom IDocs, etc.).
+5. Select the appropriate **Custom Type** System to proceed with creating your MIG or MAG.
 
-* **MIG (Message Implementation Guideline)**
-* **MAG (Mapping Guideline)**
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FWh88x04EPBMdYDQxMis8%252Fimage.png%3Falt%3Dmedia%26token%3D5e025e74-426f-4635-9d5e-bca20d788e78&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1b29766b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1122).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating the project** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-creating-the-project" id="pdf-page-gq2jqh5hz5sfguou1udk-creating-the-project"></a>
 
