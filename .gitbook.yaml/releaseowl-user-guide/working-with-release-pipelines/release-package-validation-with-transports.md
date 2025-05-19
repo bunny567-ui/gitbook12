@@ -21,15 +21,14 @@ Validation report is visible only after the validation process is complete. To v
 
 1\. Go to a required package and click **Actions**. Click **Validation Report.**
 
-2\. The validation report for a successful validation is displayed below.\
+2\. The validation report for a successful validation is displayed below.
 
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-7.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1132).png" alt=""><figcaption></figcaption></figure>
 
 3\. The validation report for a failed validation is displayed below:\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-8.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1130).png" alt=""><figcaption></figcaption></figure>
 
 The following details are available in the Validation Report:
 
@@ -39,12 +38,14 @@ The following details are available in the Validation Report:
 
 3\) **Code Coverage %** - Code Coverage Average for all the unit test objects.
 
+<figure><img src="../../.gitbook/assets/image (1135).png" alt=""><figcaption></figcaption></figure>
+
 4\) **TR Report** – By default, the user can view the TR (Transport Request) Report. It has the following checks done:
 
 a) **Release Status Check:** This option shows the user whether the transport requests were released successfully or not. On clicking **Details**, you can view the Transport Requests that are a part of the Release Package and their Release Status.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-9.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1133).png" alt=""><figcaption></figcaption></figure>
 
 b) **Downgrade Protection Check:** This option is for identifying any dependencies between transports containing the same object, sub-object or customizing keys. An error is displayed when two transports with identical objects are imported in a wrong sequence.
 
@@ -52,29 +53,32 @@ c) **Cross Reference Check (Dependencies):** The cross-reference check is done t
 
 d) **Cross Release Check (Package level checks):** For SAP standard objects, an error is displayed when a release package level is different between the source and target system for the corresponding software component.
 
+<figure><img src="../../.gitbook/assets/image (1140).png" alt=""><figcaption></figcaption></figure>
+
 e) **Critical Object Check:** This is to determine if transport requests contain critical transport objects, which require approval before they can be exported from the development system.
 
-5\) **Test Execution Report –** The details of the test executed can be seen as follows:\
+<figure><img src="../../.gitbook/assets/image (1141).png" alt=""><figcaption></figcaption></figure>
 
+5\) **Test Execution Report –** The details of the test executed can be seen as follows:
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-10.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1137).png" alt=""><figcaption></figcaption></figure>
 
-6\) **Code Coverage –** The Code Coverage Summary can be seen as follows:\
+\
+6\) **Code Coverage –** The Code Coverage Summary can be seen as follows:
 
+<figure><img src="../../.gitbook/assets/image (1139).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-11.jpg" alt=""><figcaption></figcaption></figure>
-
+\
 7\) **ATC Report -** ABAP Test Cockpit (ATC) is completely integrated into Object Navigator and Transport Organizer and executes and displays results for various tests on development objects, for example:
 
 * Static performance tests
 * Static usability tests
 * Extended program checks
 * Package checks
-* Security Checks\
+* Security Checks
+
+8\) Click **Details** to see further info on Errors and Warnings.\
 
 
 <figure><img src="../../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
-8\) Click **Details** to see further info on Errors and Warnings.
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/create-release-package-with-user-stories-13.jpg" alt=""><figcaption></figcaption></figure>

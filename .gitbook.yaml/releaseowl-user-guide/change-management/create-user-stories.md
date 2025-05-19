@@ -92,9 +92,30 @@ To create user stories manually for systems not integrated through ALM (such as 
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fcreate-user-stories-9.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9f44f116&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-8\) On clicking the Pipeline Activity, you can view the release pipeline execution status as follows:
+8\) On clicking the **Pipeline Activity**, you can view the release pipeline execution status as follows:
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F5k4YbvRzF09Y0AhaKt7g%252Fimage.png%3Falt%3Dmedia%26token%3Ddcb6b708-85a9-4db5-8ebd-2a1892d9033d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=39aae695&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1123).png" alt=""><figcaption></figcaption></figure>
+
+On the right-hand side of the Pipeline Activity screen, you can see the **Abort**, **History**, and **Refresh** options.\
+**Abort**: This button allows users to stop the currently running pipeline activity task. When you click on the Abort option, a confirmation prompt appears. Once you confirm by clicking "OK," the status of the pipeline is updated to **Aborted** for the respective task.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1124).png" alt=""><figcaption></figcaption></figure>
+
+* The **Pipeline Stage** and **Pipeline Status** of the respective user story are also updated to **Aborted**.
+
+<figure><img src="../../.gitbook/assets/image (1125).png" alt=""><figcaption></figcaption></figure>
+
+**History**: This option displays the execution history of the release pipeline, including details such as the number of times the pipeline was executed, who triggered each execution, and the status of each run.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1126).png" alt=""><figcaption></figcaption></figure>
+
+* When you click on the arrow button (**>**), you are taken to the **Pipeline Activity** screen.
+
+<figure><img src="../../.gitbook/assets/image (1127).png" alt=""><figcaption></figcaption></figure>
+
+**Refresh**: This button allows you to update the Pipeline Activity screen with the latest information. When you click on the Refresh button, it reloads the current status of the release pipeline to reflect any recent changes or updates.
+
+<figure><img src="../../.gitbook/assets/image (1128).png" alt=""><figcaption></figcaption></figure>
 
 ### **Exporting User Story Details as a PDF**
 

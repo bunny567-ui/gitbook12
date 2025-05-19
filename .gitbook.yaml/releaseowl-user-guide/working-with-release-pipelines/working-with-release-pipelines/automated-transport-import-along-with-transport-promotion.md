@@ -154,8 +154,6 @@ Release Package is a logical grouping of user stories or transports that are to 
 1\. Clicking **“Add Stories for Promotion”** will add all the user stories eligible for promotion from the selected **Promoted from (Stage)** as a unit.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-17.jpg" alt=""><figcaption></figcaption></figure>
-
 **Key Points to Note:**
 
 * **(a)** By default, the **Promote from Stage** is set to **Dev**. If you want to promote stories already pushed to **QA**, simply select **QA** as the source stage. This allows you to promote all eligible QA stories to the next stage as a single unit instead of doing it individually.
@@ -165,10 +163,10 @@ Release Package is a logical grouping of user stories or transports that are to 
 
 ### **Promotion of Release Package by Transports**
 
-1\. Clicking **“Add Transports for Promotion”** will add all the transports eligible for promotion from the selected **Promoted from (Stage)** as a unit.\
+1\. Clicking **“Add Transports for Promotion”** will add all the transports eligible for promotion from the selected **Promoted from (Stage)** as a unit.
 
+\
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-18.jpg" alt=""><figcaption></figcaption></figure>
 
 The following points apply when promoting a Release Package based on transports:
 
@@ -177,22 +175,23 @@ The following points apply when promoting a Release Package based on transports:
 * **(g)** You **cannot** add transports that are already at a **higher stage** than the selected **Promote from Stage**.
 * **(h)** You can manually add additional transports using the **“Add Transport”** option. However, make sure these transports are also promoted to the selected stage before attempting to promote the entire Release Package.
 
-2\. From the Action Menu of the Release package, click on “Promote”.\
+2\. From the Action Menu of the Release package, click on “**Promote**”.
+
+<figure><img src="../../../.gitbook/assets/image (1142).png" alt=""><figcaption></figcaption></figure>
+
+3\. Execution of the Release package can be seen using the option “**Pipeline Activity**.”\
 
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-3\. Execution of the Release package can be seen using the option “Pipeline Activity”\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-20.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1143).png" alt=""><figcaption></figcaption></figure>
 
 4\. Once Promotion for Release package starts then the Release Package will be locked and no changes are possible like addition of more user stories or transports.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/automated-transport-import-along-with-transport-promotion-21.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1144).png" alt=""><figcaption></figcaption></figure>
 
 5\. User has to unlock Release Package to backout any of the user stories or transports after promotion. In role permissions, user should have Unlock Release Package permission.
+
+<figure><img src="../../../.gitbook/assets/image (1145).png" alt=""><figcaption></figcaption></figure>
 
 ### **Multi-Stage Release Pipeline**
 

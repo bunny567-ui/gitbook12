@@ -37,6 +37,7 @@ Release Package is a collection of one or more user stories or transports that a
 
 
 
-6. Once created, you can see the newly created release package in the Release Package page.
+6. Once created, you can see the newly created release package in the **Release Package** page.
 
 <figure><img src="../../.gitbook/assets/image (1037).png" alt=""><figcaption></figcaption></figure>
+
