@@ -15,7 +15,7 @@ This section is for registering REST API Callouts for ServiceNow.
 2\. In page displayed, click **Register Callout.**\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/Register-Callout-1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 3\. Fill in the required details.
 
@@ -36,19 +36,18 @@ This section is for registering REST API Callouts for ServiceNow.
 
 5\. Once the connection is verified, you can save the callout.
 
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
 ### **Adding a Callout Task in Release Pipeline**
 
 You can add callout as a Task in the Release Pipeline.
 
-1\. When adding a new task in Pipeline stage, select Callout Task, then the following screen is displayed:\
+1\. When adding a new task in Pipeline stage, select **Callout Task**, then the following screen is displayed:\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/Register-Callout-2.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 2\. Fill in the required details:
-
-\
-
 
 | **Name**               | Enter any name of your choice for the callout task being created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,9 +56,6 @@ You can add callout as a Task in the Release Pipeline.
 | **Pipeline Execution** | <p><strong>Continue on Failure</strong> – If selected, the Release Pipeline Execution will continue even if the callout fails.<br>If the option is left <strong>unchecked</strong>, then the pipeline execution fails if it encounters any error in calling out the external API.<br><strong>Wait on Task</strong> – If selected, then approval task will be created after the callout execution even if callout fails or succeeds. Users can open the task and retry callout execution in case of callout failure.<br>If the option is left <strong>unchecked</strong>, it will act as a normal web service call which calls out external API and continues based on the response of the external API.</p> |
 | **Assign To**          | <p><strong>User</strong> – The approver (user) can be selected from the available list of users for approving the pending task in order to complete the Release Pipeline execution when Wait on Task option is chosen.<br><br><strong>Role</strong> - The pending task can be approved by any user with the user role that is selected in order to complete the Release Pipeline execution when Wait on Task option is chosen.</p>                                                                                                                                                                                                                                                                          |
 | **Message**            | Any message that is to be conveyed to the task approver can be mentioned here.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-
-\
-
 
 3\. On clicking the Config Params button, the following screen is displayed. Enter the variable parameter names specified in the Payload JSON along with their values that are to be passed run-time during the execution of the Release Pipeline and save the changes.\
 

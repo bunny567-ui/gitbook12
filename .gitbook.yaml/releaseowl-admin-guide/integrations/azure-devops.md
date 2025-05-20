@@ -60,12 +60,13 @@ ReleaseOwl supports **bidirectional integration**, allowing synchronization of u
 2. **Sync User Stories**:
    * In ReleaseOwl, go to **Change Management** > **User Stories Menu**.
    * Click the **Sync User Stories** icon.
-3. **Complete the Sync**:
-   * A pop-up will confirm when the sync is complete with the message:\
-     &#xNAN;_"User Story Sync Completed."_
-   * Click **OK** to finish.
+3.  **Complete the Sync**:
 
-<figure><img src="../../.gitbook/assets/image (535).png" alt=""><figcaption></figcaption></figure>
+    * A pop-up will confirm when the sync is complete with the message:\
+      &#xNAN;_"User Story Sync Completed."_
+    * Click **OK** to finish.
+
+    <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### **Webhook Configuration in Azure DevOps**
 

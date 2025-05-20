@@ -8,8 +8,8 @@ This guide outlines how to create an automation rule in Jira that triggers speci
 
 #### **Creating an Automation Rule for Issue or Sprint Synchronization**
 
-1. **Navigate to Project Settings.**
-2. **Click on Automation.**
+1. Navigate to **Project Settings**.
+2. Click on **Automation**.
 3. **Click the "Create Rule" button** to begin configuring a new automation rule.
 
 <figure><img src="../../.gitbook/assets/image (828).png" alt=""><figcaption></figcaption></figure>

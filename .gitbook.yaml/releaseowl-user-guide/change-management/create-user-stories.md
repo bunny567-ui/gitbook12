@@ -1,42 +1,36 @@
 # Create User Stories
 
-To create or sync user stories using an ALM integration (e.g., JIRA), follow these steps:
+To  Sync user stories using an ALM integration (e.g., JIRA), follow these steps:
 
 1\) Navigate to the **User Stories** section under **Change Management**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F47k7QpLfWkZMPjns9Tl3%252Fimage.png%3Falt%3Dmedia%26token%3D092c59f5-a252-4109-ba58-caf344f97f0f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=625ffe1e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-**Note:**
-
-a) If the project that you are working with is associated with any external system say like JIRA, and if it has any user stories, they appear in the User Stories screen upon sync’ing.
-
-b) Always remember to sync the Sprints first and then the User Stories.
-{% endhint %}
-
 2\) Click the **Sync User Stories** option from the User Stories screen. The user stories from the external system will be synced and displayed in the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** On clicking Sync User Stories, records of all issue types of the external integrated ALM project will be synced to ReleaseOwl.
+&#x20;**Note:** Clicking **Sync User Stories** will synchronize records of all issue types from the externally integrated ALM project into ReleaseOwl.
+
+a) If the project you are working on is associated with an external system (e.g., JIRA), any user stories from that system will appear in the **User Stories** screen after syncing.
+
+b) Always ensure to **sync the Sprints first** before syncing the User Stories.
 {% endhint %}
 
 3\) Click **OK**. The user stories created in the external system will be synced to ReleaseOwl and will appear on the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\) To view previously performed sync actions, click on **Sync History**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Creating User Stories Without ALM Integration
 
-To create user stories manually for systems not integrated through ALM (such as SAP CPI), follow these steps:
+To create user stories manually for systems not integrated through ALM , follow these steps:
 
-1\) To create a new user story manually, click the **Create New User Story** link.
+1\) To create a new user story manually, click the **Create New User Story** button.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\) Enter the following details and click **Save**:
 
@@ -49,9 +43,9 @@ To create user stories manually for systems not integrated through ALM (such as 
 | **Sprint**          | The sprint in which the user story will be handled.                                                                                                                           |
 | **Release Version** | The version of the release in which the user story will get released.                                                                                                         |
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3\) The user story gets created and gets listed in the User Story grid as follows:
+3\) The user story gets created and gets listed in the **User Story** grid.
 
 4\) You can delete user stories by clicking the **Delete** button.
 
@@ -75,9 +69,9 @@ To create user stories manually for systems not integrated through ALM (such as 
 | **Pipeline Status**          | Status of the release pipeline execution.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Actions**                  | <p>Actions available for the user story: <strong>Edit</strong>, <strong>Validate</strong>, <strong>Validation Report</strong>, <strong>Promote</strong>, <strong>Pipeline Activity</strong>. </p><p></p><p><em><strong>Note</strong></em><strong>:</strong> Promote not available for MTAR applications.</p>                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-6\) The user story gets created and gets listed in the User Story grid as follows:
+6\) When you click the **Action** button, you will see the list of available actions that can be performed on the user story.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Action**            | **Description**                                                                                                |
 | --------------------- | -------------------------------------------------------------------------------------------------------------- |
@@ -96,16 +90,21 @@ To create user stories manually for systems not integrated through ALM (such as 
 
 <figure><img src="../../.gitbook/assets/image (1123).png" alt=""><figcaption></figcaption></figure>
 
-On the right-hand side of the Pipeline Activity screen, you can see the **Abort**, **History**, and **Refresh** options.\
-**Abort**: This button allows users to stop the currently running pipeline activity task. When you click on the Abort option, a confirmation prompt appears. Once you confirm by clicking "OK," the status of the pipeline is updated to **Aborted** for the respective task.&#x20;
+9\) **Options in Pipeline Activity Screen (Right Panel)**\
+The right side of the **Pipeline Activity** screen contains the following options:
+
+* **Abort:**\
+  This button allows users to stop a currently running pipeline activity. When clicked, a confirmation prompt appears. Upon confirmation, the pipeline status is updated to **Aborted** for the respective task.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1124).png" alt=""><figcaption></figcaption></figure>
 
-* The **Pipeline Stage** and **Pipeline Status** of the respective user story are also updated to **Aborted**.
+* The **Pipeline Stage** and **Pipeline Status** of the related user story are also updated to **Aborted**.
 
 <figure><img src="../../.gitbook/assets/image (1125).png" alt=""><figcaption></figcaption></figure>
 
-**History**: This option displays the execution history of the release pipeline, including details such as the number of times the pipeline was executed, who triggered each execution, and the status of each run.&#x20;
+* **History**:&#x20;
+
+This option displays the execution history of the release pipeline, including details such as the number of times the pipeline was executed, who triggered each execution, and the status of each run.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1126).png" alt=""><figcaption></figcaption></figure>
 
@@ -113,7 +112,9 @@ On the right-hand side of the Pipeline Activity screen, you can see the **Abort*
 
 <figure><img src="../../.gitbook/assets/image (1127).png" alt=""><figcaption></figcaption></figure>
 
-**Refresh**: This button allows you to update the Pipeline Activity screen with the latest information. When you click on the Refresh button, it reloads the current status of the release pipeline to reflect any recent changes or updates.
+**Refresh**:&#x20;
+
+This button allows you to update the Pipeline Activity screen with the latest information. When you click on the Refresh button, it reloads the current status of the release pipeline to reflect any recent changes or updates.
 
 <figure><img src="../../.gitbook/assets/image (1128).png" alt=""><figcaption></figcaption></figure>
 
@@ -147,7 +148,7 @@ The exported PDF provides the following comprehensive information:
 
 
 
-    <figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Deputy Users** <a href="#pdf-page-shdnuqg7ccu0ghnrleue-deputy-users" id="pdf-page-shdnuqg7ccu0ghnrleue-deputy-users"></a>
 
@@ -193,4 +194,4 @@ Deputy users can manage tasks when the primary user is unavailable.
 
 12. When you check the **History** in the **My Tasks** section, you can see a record of all actions taken, including approvals, rejections, and task completions, along with the corresponding timestamps and the user who performed each action.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

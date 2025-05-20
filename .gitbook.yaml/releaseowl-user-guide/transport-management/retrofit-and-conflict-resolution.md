@@ -52,11 +52,11 @@ You can enable the **retrofit** option in the **Transport Domain Controller** sc
 1. Navigate to **Transport Retrofit** under the **Build** section.
 2. Select the transport you want to retrofit and click **Retrofit**.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. After completing the retrofit process, you can view details of the retrofit objects by clicking the arrow button. This will display information such as the program ID, object type, retrofit conflict status, and more.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**
