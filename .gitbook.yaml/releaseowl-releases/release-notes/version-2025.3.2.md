@@ -30,9 +30,9 @@
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2324742889-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F20Vxn9KxdCY20y3qv6p2%252Fuploads%252FaUki9fdmPcCNK9kxYQYm%252Fimage.png%3Falt%3Dmedia%26token%3D26aa3a7d-ab60-4341-a1db-29f910b21f2c&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e229fe54&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Improvements** <a href="#improvements" id="improvements"></a>
 

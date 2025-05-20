@@ -1,33 +1,23 @@
 # Landscape Connectors
 
-In general, SAP ECC and S/4 Hana Landscape systems will be deployed in the Client Network.
+In general, SAP ECC and S/4HANA landscape systems will be deployed in the Client Network. As a SaaS platform, ReleaseOwl must communicate with the SAP system from the ReleaseOwl Network. There are multiple ways you can establish secure communication between ReleaseOwl and SAP systems.
 
-As a SaaS platform, ReleaseOwl must communicate with SAP system from ReleaseOwl Network. There are multiple ways you can establish the secure communication between ReleaseOwl and SAP systems.
-
-### **Whitelisting ReleaseOwl Server IP Address**
-
+**Whitelisting ReleaseOwl Server IP Address**\
 Users must add the ReleaseOwl IP Address as a trusted IP in the client network settings. The IP address will be provided by mail communication during implementation.
 
-### **Setting up SAP Router**
+**Setting up SAP Router**
 
-**Reverse Proxy**
+**Reverse Proxy**\
+A reverse proxy server is a type of proxy server that typically sits behind the firewall in a private network and directs client requests to the appropriate backend server. It provides an additional level of abstraction and control to ensure the smooth flow of network traffic between clients and servers.
 
-A reverse proxy server is a type of proxy server that typically sits behind the firewall in a private network and directs client requests to the appropriate backend server.
+ReleaseOwl will connect to the SAP On-Premise domain controller using Apache2 as Reverse Proxy as follows:
 
-A reverse proxy provides an additional level of abstraction and control to ensure the smooth flow of network traffic between clients and servers.
+**Apache2 Reverse Proxy Configuration**\
+Transport Domain Controller URL: `https://<domain-controller>:8080`\
+Reverse Proxy (Apache2 server) URL: `https://<proxy-host>:443/`
 
-ReleaseOwl will connect to SAP On-Premise domain controller using Apache2 as Reverse Proxy as follows:
-
-### **Apache2 Reverse Proxy Configuration**
-
-Transport Domain Controller URL: https://:8080
-
-Reverse Proxy (Apache2 server) URL: https://:443/
-
-Sample Configuration of reverse Proxy (Apache2) in file /etc/apache2/sites-enabled/rosap-ssl.conf
-
-![](https://www.docs.releaseowl.com/assets/img/landscape-connectors-1.jpg)\
-\
+Sample Configuration of reverse Proxy (Apache2) in file:\
+`/etc/apache2/sites-enabled/rosap-ssl.conf`\
 
 
 **ReleaseOwl Transport Domain Controller Configuration**\
@@ -50,10 +40,8 @@ ReleaseOwl interacts with SAP Systems via HTTP/HTTPS protocol, but SAP Router ru
 
 [https://help.sap.com/viewer/af8bcf35778c4d098ba482cc0b59f339/7.5.22/en-US/46d37ef8e5343c1de10000000a155369.html](https://help.sap.com/viewer/af8bcf35778c4d098ba482cc0b59f339/7.5.22/en-US/46d37ef8e5343c1de10000000a155369.html)
 
-The diagram below shows connection flow between SAP Routers (server and client\
+The diagram below shows connection flow between SAP Routers (server and client)\
 
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/landscape-connectors-3.jpg" alt=""><figcaption></figcaption></figure>
 
 **Note:** One SAP Router should be configured for each domain controller because of HTTPS access using reverse invoke.
 

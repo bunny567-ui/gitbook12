@@ -104,7 +104,7 @@ OAuth 2 provides better security than basic authentication as the initial reques
 3. Click **Save**.
 4. The credential will appear in the **List of Credentials**.
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/global-credential-management-7.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **SonarQube On-Prem**
 
@@ -129,19 +129,19 @@ Further information on getting the user token for SonarQube can be found @[https
 1. **Click on the "Register Credential"** butto&#x6E;**.**
 2. **Fill in the required fields:**
    * **Credential Type**: Select **Transport Manager Credential** from the dropdown.
-   * **Credential Name**: Provide any name of your choice (e.g., "Transport Manager Access").
+   * **Credential Name**: Provide any name of your choice.
    * **Username**: Enter your username for the Transport Domain Controller system.
    * **Password**: Provide the password associated with your username.
 3. **Click Save** to finalize the setup and enable access to your Transport Domain Controller system.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/global-credential-management-9.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **JIRA**
 
 1. Click on the **"Register Credential"** butto&#x6E;**.**
 2. Fill in the required fields:
-   * **Credential Name**: Enter a name of your choice (e.g., "Jira Access").
+   * **Credential Name**: Enter a name of your choice .
    * **Credential Type**: Select **Jira** from the dropdown.
    * **Authentication Type**: Choose either **Basic** or **OAuth2**.
 3.  If **Basic** is selected:
@@ -149,34 +149,39 @@ Further information on getting the user token for SonarQube can be found @[https
     * **Username**: Provide the username associated with the credential (e.g., Jira account username).
     * **Password/API Token**: Enter the password or API token for authentication with the chosen system.
     * **Jira URL**: Provide the Jira instance URL, such as: `https://Saparate.atlassian.net`.
-    * **Proxy Type**: Select the proxy type for communication (e.g., **Direct**, **Proxy**).
+    * **Proxy Type**: Select the proxy type for communication .
 
-    <figure><img src="../../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
 4. If OAuth2 is selected:
-   1. **Client ID**: Provide the client ID from your Jira OAuth2 application.
-   2. **Client Secret**: Enter the client secret associated with your Jira OAuth2 application.
+   1. **Client ID**: Obtain the Client ID from the **Atlassian Developer Console**.
+   2. **Client Secret**: Obtain the Client Secret from the **Atlassian Developer Console**
    3. **Jira URL**: Provide the Jira instance URL, such as: `https://Saparate.atlassian.net`.
-   4. **Proxy Type**: Select the proxy type for communication (e.g., **Direct**, **Proxy**).
-5. **Click Save** to finalize the setup.
+   4. **Proxy Type**: Select the proxy type for communication .
+5. **Click Save** button to save the credentials.
 
 <figure><img src="../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-For information on setting up the tokens in JIRA, please refer to the link - [https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
+For information on setting up the tokens in JIRA, please refer to the link - [https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/integrations/jira-cloud](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/integrations/jira-cloud)
 {% endhint %}
 
 ### **ServiceNow**
 
 1. **Click on the "Register Credential" button.**
-2. **Fill in the following fields:**
-   * **Credential Name**: Enter a name for your reference in ReleaseOwl.
-   * **Credential Type**: Select **ServiceNow**.
-   * **Authentication Type**: Choose either:
-     * **OAuth2**: For token-based authentication.
-     * **Basic Authentication**: For username and password-based access.
-   * **Instance URL**: Enter your ServiceNow hosting URL.
+2.  **Fill in the following fields:**
 
-<figure><img src="../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
+    * **Credential Name**: Enter a name for your reference in ReleaseOwl.
+    * **Credential Type**: Select **ServiceNow**.
+    * **Authentication Type**: Choose either:
+      * **OAuth2**: For token-based authentication.
+      * **Basic Authentication**: For username and password-based access.
+    * **Instance URL**: Enter your ServiceNow hosting URL.
+
+
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### **For  OAuth2 Authentication**
 
@@ -186,25 +191,25 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 <figure><img src="../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
-1. Locate and click on **ReleaseOwl** in the list of OAuth Registries.
-2. View the **Client ID** and **Client Secret** associated with ReleaseOwl.
+4. Locate and click on **ReleaseOwl** in the list of OAuth Registries.
+5. View the **Client ID** and **Client Secret** associated with ReleaseOwl.
 
 <figure><img src="../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
 
-3. Copy the **Client ID** and **Client Secret** and paste them into the corresponding fields in the **Register Credential** form in ReleaseOwl under **OAuth2 Authentication**.
-4. Click the **Save** button.
+6. Copy the **Client ID** and **Client Secret** and paste them into the corresponding fields in the **Register Credential** form in ReleaseOwl under **OAuth2 Authentication**.
+7. Click the **Save** button.
 
 <figure><img src="../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
-3.  Click **Generate Token**.
-
-    * A popup will appear prompting you to enter your ServiceNow **username** and **password**.
-    * Enter your credentials and click the **Generate** button.
-
+8. Click **Generate Token**.
+9. A popup will appear prompting you to enter your ServiceNow **username** and **password**.
+10. Enter your credentials and click the **Generate** button.
 
 
-    <figure><img src="../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
-4. The generated token will be available in the **Manage Tokens** section under **ALL** in the ServiceNow website.
+
+<figure><img src="../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
+
+3. The generated token will be available in the **Manage Tokens** section under **ALL** in the ServiceNow website.
 
 <figure><img src="../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
 
@@ -320,20 +325,19 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 &#x20;
 
-3\.       Use the following URLs:
+3\.  Use the following URLs:
 
 * **Token URL**: The DocuSign URL with /oauth/token.
 * **Authorization URL**: The DocuSign URL with /oauth/auth.
 
-4. &#x20; Copy all the credentials, paste them into the Register Credential, and click the Save button.
+4. Copy all the credentials, paste them into the Register Credential, and click the Save button.
 
 <figure><img src="../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
 **Generate a Token**
 
-1\.       In Credential Manager, select the created credential.
-
-2\.       Click Generate Token to verify if the entered credentials are correct.
+1. In Credential Manager, select the created credential.
+2. Click Generate Token to verify if the entered credentials are correct.
 
 <figure><img src="../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 
@@ -353,11 +357,8 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 Follow these steps to register your 4Me credentials in the system:
 
-#### **1. Open the Credential Registration Page**
-
-* Click on the **"Register Credential"** button.
-
-#### **2. Fill in the Required Fields**
+1. Click on the "Register Credential" button.&#x20;
+2. Fill in the Required Fields
 
 | **Field**           | **Description**                                                |
 | ------------------- | -------------------------------------------------------------- |
@@ -376,7 +377,7 @@ Follow these steps to register your 4Me credentials in the system:
 
 * Click on the **"Register Credential"** button.
 
-#### **2. Fill in the Required Fields**
+**2. Fill in the Required Fields**
 
 | **Field**               | **Description**                                                                      |
 | ----------------------- | ------------------------------------------------------------------------------------ |
@@ -399,15 +400,19 @@ Follow these steps to register your 4Me credentials in the system:
    * **Password**: Enter the password associated with your username.
 3. **Click Save** to finalize the setup and enable access to your required account.
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/global-credential-management-12.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 **Edit**
 
-You can edit the credentials by clicking the credential and the Edit/Create Credential screen pops up. Make the necessary changes and click Save. The changes get saved.
+You can edit the credentials by clicking on the registered credential. This will allow you to make and save any necessary changes.
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 **Delete**
 
 You can delete any credential by clicking the delete icon seen against that credential.
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note: Edit** and **Delete** options are available only for the users with appropriate user roles.

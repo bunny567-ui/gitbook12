@@ -48,7 +48,7 @@ Lists all registered users along with the following details:
 
 o   **User Type**: Specifies whether the user is an Admin or Standard User.
 
-<figure><img src="../../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Create User
 
@@ -131,7 +131,7 @@ To create a new role:
 
 <figure><img src="../../.gitbook/assets/image (1015).png" alt=""><figcaption></figcaption></figure>
 
-#### Assign Role
+#### Assign Role Actions
 
 To assign the role actions to an existing role:
 
