@@ -24,7 +24,7 @@ To access the Administration View, follow these steps:
 
 ### User Management
 
-The User Management functionality within the Administration View comprises two main features:
+The User Management functionality within the **Administration View** comprises two main features:
 
 #### 1. Manage Users
 
@@ -46,7 +46,7 @@ Displays the total, used, and available licenses, facilitating efficient resourc
 
 Lists all registered users along with the following details:
 
-o   **User Type**: Specifies whether the user is an Admin or Standard User.
+o   **User Type**: Specifies whether the user is an **Admin** or **Standard User**.
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 

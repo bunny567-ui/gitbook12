@@ -67,7 +67,7 @@ The **Commits** section provides a record of all changes made to a transport req
 To load the object, follow these steps:
 
 1. Select the required transport request.
-2. Go to **Actions** and click Load Objects.
+2. Go to **Actions** and click **Load Objects**.
 
 <figure><img src="../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
@@ -80,3 +80,4 @@ To load the object, follow these steps:
 The **Remove from Project** option allows you to remove a transport from the **Current Project Transports** list. This is useful for managing and organizing only the relevant transports for your active project work.
 
 <figure><img src="../../.gitbook/assets/image (1120).png" alt=""><figcaption></figcaption></figure>
+

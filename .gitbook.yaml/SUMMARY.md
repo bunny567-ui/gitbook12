@@ -32,6 +32,7 @@
     * [On-Prem Environment Registration](releaseowl-user-guide/transport-management/on-prem-environment-registration.md)
     * [Creation of Transports](releaseowl-user-guide/transport-management/creation-of-transports.md)
     * [Transport Validation and Analysis Reports](releaseowl-user-guide/transport-management/transport-validation-and-analysis-reports.md)
+    * [Transport Promotion and Pipeline Activity](releaseowl-user-guide/transport-management/transport-promotion-and-pipeline-activity.md)
     * [Transport Management Actions](releaseowl-user-guide/transport-management/transport-management-actions.md)
     * [Transport of Copies](releaseowl-user-guide/transport-management/transport-of-copies.md)
     * [Retrofit & Conflict Resolution](releaseowl-user-guide/transport-management/retrofit-and-conflict-resolution.md)

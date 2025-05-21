@@ -2,7 +2,7 @@
 
 In system landscapes, in which several releases are processed at the same time, changes can be made in different development systems. New developments can be made in the development system, and error corrections/improvements can be made in a maintenance system for the production system landscape at the same time. You can register the two landscapes and enable retrofit between the maintenance and development landscapes so that changes made in the maintenance landscape can be ported to the development landscape.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you need to perform a major piece of work in a development system, you should create a parallel landscape in which this piece of work can be done independently of the maintenance changes. This separates the project activities and the maintenance ones. As a result, you can minimize conflicts.\
 Maintenance changes are deployed to Production during project development. If these changes get downgraded or removed when the project is finally deployed, they need to be merged into the project track so that it remains at the same state as that of the Production system. This process of merging is known as **retrofit**.
@@ -20,4 +20,4 @@ By simply using retrofit instead of manually looking for and making changes, the
 
 You can enable the **retrofit option in ReleaseOwl** in the **Transport Domain Controller** screen.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
