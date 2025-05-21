@@ -6,9 +6,9 @@ In **ReleaseOwl**, _transport promotion_ refers to the controlled and automated 
 
 #### **Steps to Promote a Transport**
 
-1. Click on the **action button (⋯)** of the transport ID.
+1. Click on the **action menu (⋯)** next to the transport.
 2. Select the **Promote** option.
-3. Where your transport requested promoted to the next environment (DEV, QA OR PROD).
+3. The transport will then be promoted to the next environment (e.g., from DEV to QA or QA to PROD), depending on its current stage in the pipeline.
 
 {% hint style="info" %}
 **Note:**  Before a transport can be promoted, it **must be assigned to a User Story**.
@@ -21,21 +21,21 @@ In **ReleaseOwl**, _transport promotion_ refers to the controlled and automated 
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Pipeline Activity:
+**Pipeline Activity:**
 
-In the releaseowl, the **Pipeline Activity** section in ReleaseOwl provides a complete view of all actions performed during the deployment lifecycle.
+In ReleaseOwl, the **Pipeline Activity** section provides a real-time, detailed overview of all actions executed during the deployment lifecycle, including validation tasks, approvals, and deployment tasks.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Refresh Button
+**Refresh Button**
 
-The **Refresh** button in the **Transport Management** section allows you to update the **Pipeline Activity** screen with the latest transport-related information.
+The **Refresh** button in the **Transport Management** section updates the **Pipeline Activity** screen with the most recent information.
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-History Button
+**History Button**
 
-The **History** button in the **Transport Management** section provides a detailed log of all past actions performed on a Transport Request within the release pipeline.
+The **History** button in the **Transport Management** section provides a detailed log of all actions performed on a **Transport Request** within the release pipeline.
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
