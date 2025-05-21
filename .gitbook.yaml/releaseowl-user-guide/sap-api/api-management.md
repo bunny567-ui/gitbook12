@@ -6,7 +6,7 @@ The **API Management** module in ReleaseOwl provides a comprehensive set of tool
 
 * To synchronize the API artifacts, navigate to the **Project View** and click on **API Management (Beta)** under the **Build** section.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Synchronize** to fetch various API artifacts such as API Proxies and Key Value Maps from the registered SAP API Management environment into ReleaseOwl.
 
@@ -126,7 +126,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Navigate to **Release Pipelines**.
 * Click **Create New Release Pipeline**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a **Pipeline Name**.
 
