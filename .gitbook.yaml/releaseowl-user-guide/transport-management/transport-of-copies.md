@@ -16,7 +16,7 @@ Instead of releasing the transport, you can create copies of the changes and mov
 
 <figure><img src="../../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
 
-4\. The successful import creates a transport of copy which gets listed in the Transport Management screen as shown below:
+4\. The successful import creates a transport of copy which gets listed in the **Transport Management** screen as shown below:
 
 <figure><img src="../../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 

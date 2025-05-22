@@ -51,9 +51,11 @@ The **My Tasks** screen consists of a structured table displaying task details:
 * Click on **Complete** after performing the required manual actions.
 * Ensure all pre-requisites for task completion are fulfilled.
 
-<figure><img src="../.gitbook/assets/image (1020).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1280).png" alt=""><figcaption></figcaption></figure>
 
-* Attachments larger than **1MB** are now **restricted** in User Stories and Test Evidence tasks to ensure optimal performance and storage usage.
+
+
+* Attachments larger than **1MB** are now **restricted** in **User Stories** and **Test Evidence** tasks to ensure optimal performance and storage usage.
 
 <figure><img src="../.gitbook/assets/image (1019).png" alt=""><figcaption></figcaption></figure>
 

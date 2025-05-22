@@ -1,6 +1,6 @@
 # Labels
 
-Labels are like tags for your ‘Build Pipelines’. When a client has a substantial number of build pipelines, sorting through them can become difficult. Labels can help categorize your pipelines into smaller groups that can be viewed in the drop down on the top right corner of the build pipeline page.\
+Labels are like tags for your ‘**Build Pipelines**’. When a client has a substantial number of build pipelines, sorting through them can become difficult. Labels can help categorize your pipelines into smaller groups that can be viewed in the drop down on the top right corner of the build pipeline page.\
 
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

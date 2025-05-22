@@ -57,7 +57,8 @@ You can add callout as a Task in the Release Pipeline.
 | **Assign To**          | <p><strong>User</strong> – The approver (user) can be selected from the available list of users for approving the pending task in order to complete the Release Pipeline execution when Wait on Task option is chosen.<br><br><strong>Role</strong> - The pending task can be approved by any user with the user role that is selected in order to complete the Release Pipeline execution when Wait on Task option is chosen.</p>                                                                                                                                                                                                                                                                          |
 | **Message**            | Any message that is to be conveyed to the task approver can be mentioned here.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
-3\. On clicking the Config Params button, the following screen is displayed. Enter the variable parameter names specified in the Payload JSON along with their values that are to be passed run-time during the execution of the Release Pipeline and save the changes.\
+3. When you click the **Config Params** button, the configuration screen is displayed. Here, enter the variable parameter names as defined in the **Payload JSON**, along with their corresponding values. These parameters will be passed at runtime during the execution of the **Release Pipeline**.
+4. After entering the required values, click **Save** to apply the changes.\
 
 
 <figure><img src="../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
@@ -66,7 +67,7 @@ You can add callout as a Task in the Release Pipeline.
 
 ### **System Defined Parameters for a Callout Task - Generic**
 
-Below are the variables available for using as values in the configure parameters for a callout Task.
+* Below are the variables available for using as values in the configure parameters for a **Callout Task**.
 
 | **${jobins.jobCycleName}**   | Cycle name given while triggering the Release Pipeline.                                   |
 | ---------------------------- | ----------------------------------------------------------------------------------------- |

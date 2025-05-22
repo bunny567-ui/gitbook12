@@ -24,9 +24,7 @@ To configure and register a new RO Agent:
 | **Host URL**     | The Host URL is the RO Agent URL that begins with http or https.                    |
 | **Security Key** | Security Key value can be found in the agent.properties file.                       |
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/test-configurations-1.jpg" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/test-configurations-2.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1277).png" alt=""><figcaption></figcaption></figure>
 
 ### **Pre-requisites**
 
@@ -48,7 +46,7 @@ Setting up a **Test Configuration** allows the ReleaseOwl application to execute
 
 ### **Test Configuration for Web UI Test**  
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/test-configurations-3.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1276).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -67,7 +65,7 @@ Fill in the required details:
 **Test Configuration for Functional Test**\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/test-configurations-4.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1278).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 

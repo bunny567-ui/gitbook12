@@ -4,8 +4,8 @@ This guide provides a step-by-step walkthrough on accessing your DocuSign accoun
 
 ### 1. Accessing Your DocuSign Account
 
-1. Log in to your DocuSign account.
-2. Navigate to My Apps & Keys from the account dashboard.
+1. Log in to your **DocuSign** account.
+2. Navigate to **My Apps & Keys** from the account dashboard.
 
 <figure><img src="../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
 
@@ -13,7 +13,7 @@ This guide provides a step-by-step walkthrough on accessing your DocuSign accoun
 
 1. Click on the Templates tab.
 2. Select the Start button.
-3. Inside the Start menu, choose "**Envelope Templates**"and then select "**Create a Template**".
+3. Inside the Start menu, choose "**Envelope Templates**" and then select "**Create a Template**".
 
 <figure><img src="../../.gitbook/assets/image (582).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,10 +73,10 @@ This guide provides a step-by-step walkthrough on accessing your DocuSign accoun
 
 <figure><img src="../../.gitbook/assets/image (591).png" alt=""><figcaption></figcaption></figure>
 
-5. Click Assign Users to add members:&#x20;
+5. Click **Assign Users** to add members:&#x20;
 
-* Click Add User Manually and enter the user’s name and email.&#x20;
-* Click Assign to complete the process.&#x20;
+* Click **Add User Manually** and enter the user’s name and email.&#x20;
+* Click **Assign** to complete the process.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (592).png" alt=""><figcaption></figcaption></figure>
 
@@ -96,7 +96,7 @@ This guide provides a step-by-step walkthrough on accessing your DocuSign accoun
 
 <figure><img src="../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
 
-5. In the Name section, click the recipient’s name to open a popup.
+5. In the **Name** section, click the recipient’s name to open a popup.
 6. Assign the group by selecting the group name and clicking **Apply Selected**.
 
 <figure><img src="../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
@@ -105,16 +105,15 @@ This guide provides a step-by-step walkthrough on accessing your DocuSign accoun
 
 <figure><img src="../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
 
-8. Drag and drop the Signature field onto the document.
+8. Drag and drop the **Signature** field onto the document.
 9. Click the **Send** button.
 
 <figure><img src="../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
 
 **Group Recipient's Actions**
 
-1\.        All group members will receive an email containing a link to sign the document.
-
-2\.       Any one member of the group can click the "**Review Document**" button in the email and complete the signature process.
+1. All group members will receive an email containing a link to sign the document.
+2. Any one member of the group can click the "**Review Document**" button in the email and complete the signature process.
 
 <figure><img src="../../.gitbook/assets/image (598).png" alt=""><figcaption></figcaption></figure>
 
@@ -127,26 +126,26 @@ This guide provides a step-by-step walkthrough on accessing your DocuSign accoun
 
 3. Fill in the fields:
 
-* Credential Name: Enter a reference name of your choice.
-* Credential Type: Choose DocuSign.
+* **Credential Name:** Enter a reference name of your choice.
+* **Credential Type:** Choose DocuSign.
 
 <figure><img src="../../.gitbook/assets/image (600).png" alt=""><figcaption></figcaption></figure>
 
 Retrieve Client ID and Secret
 
-1. Log in to DocuSign and click the “**Admin**”button.
+1. Log in to **DocuSign** and click the “**Admin**” button.
 
 <figure><img src="../../.gitbook/assets/image (601).png" alt=""><figcaption></figcaption></figure>
 
-2. Navigate to Integrations and select Apps and Keys.
+2. Navigate to **Integrations** and select **Apps** and **Keys.**
 
 <figure><img src="../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
 
-3. Click **Add App and Integration Key**.
+3. Click **Add App** and **Integration Key**.
 
 <figure><img src="../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 
-4. Copy the Integration Key which is nothing but the client id
+4. Copy the **Integration Key** which is nothing but the client id
 
 <figure><img src="../../.gitbook/assets/image (604).png" alt=""><figcaption></figcaption></figure>
 
@@ -156,7 +155,7 @@ Retrieve Client ID and Secret
 
 6. Set the Redirect URI to:
 
-* https://na3.releaseowl.com/rateloginserver/api/oauth/accesstoken
+* **https://na3.releaseowl.com/rateloginserver/api/oauth/accesstoken**
 
 7. Check all allowed HTTP methods and click Save.
 
@@ -187,17 +186,15 @@ Retrieve Client ID and Secret
 
 **Generate a Token**
 
-1\.       In **Credential Manager**, select the created credential.
-
-2\.       Click **Generate Token** to verify if the entered credentials are correct.
+1. In **Credential Manager**, select the created credential.
+2. &#x20;Click **Generate Token** to verify if the entered credentials are correct.
 
 <figure><img src="../../.gitbook/assets/image (610).png" alt=""><figcaption></figcaption></figure>
 
 **Create a Release Pipeline**
 
-1\.       Navigate to the project view.
-
-2\.       Click **View My Projects** in the top-right corner.
+1. Navigate to the project view.
+2. Click **View My Projects** in the top-right corner.
 
 <figure><img src="../../.gitbook/assets/image (612).png" alt=""><figcaption></figcaption></figure>
 

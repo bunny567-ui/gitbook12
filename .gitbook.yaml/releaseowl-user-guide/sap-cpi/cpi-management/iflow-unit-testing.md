@@ -43,9 +43,11 @@ Apart from this, the **Test Case** can also be run via the **User Stories** tab,
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FXpP3N2E9YGXscFKEkp8k%252Fimage.png%3Falt%3Dmedia%26token%3D1b8baac3-f5f1-4784-96aa-9d28cfcd0ec4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f695f57f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-The Test Results can be viewed in the **Validation Report** generated during User Story and Release Package validation.
+The **Test Results** can be viewed in the **Validation Report** generated during User Story and Release Package validation.
+
+The Validation Report can also be viewed from the **Release Packages** tab.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fe8cdYzakUbZNhrATCUfB%252Fimage.png%3Falt%3Dmedia%26token%3D7c1384de-8aab-456b-805c-053efa690a65&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f3a0f646&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-The Validation Report can also be viewed from The Release Packages tab.
+
 

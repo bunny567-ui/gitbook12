@@ -30,10 +30,16 @@ Release Package is a collection of one or more user stories that are validated a
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-4. You can customize the columns seen in the **Create/Edit Release Package** screen by clicking the Settings **Gear** icon.&#x20;
+5. When you click the **Show** button, a preview of the user story is displayed. This preview includes details such as the **CPI Artifacts**, their **type**, **version**, and information about **who synced** them and **when**.
+
+<figure><img src="../../.gitbook/assets/image (1228).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1227).png" alt=""><figcaption></figcaption></figure>
+
+6. You can customize the columns seen in the **Create/Edit Release Package** screen by clicking the Settings **Gear** icon.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-4. Once created, you can see the newly created release package in the **Release Package** page.
+7. Once created, you can see the newly created release package in the **Release Package** page.
 
 <figure><img src="../../.gitbook/assets/image (1129).png" alt=""><figcaption></figcaption></figure>

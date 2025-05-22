@@ -8,15 +8,14 @@ ABAP Compare is used to compare any differences between objects under different 
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-2\. Select the Compare System from which objects needs to be compared.\
+2\. Select the **Compare System** from which objects needs to be compared.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-2.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1202).png" alt=""><figcaption></figcaption></figure>
 
-3\. Add systems against which the above selected system needs be compared.\
+3\. Add systems against which the above selected system needs be compared.
 
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-3.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1204).png" alt=""><figcaption></figcaption></figure>
 
 4\. There are three options provided on what to be included while comparing the objects
 
@@ -25,7 +24,7 @@ ABAP Compare is used to compare any differences between objects under different 
 * Include Object only in compare system -> Check this option when objects which present in compare system are available.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-4.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1205).png" alt=""><figcaption></figcaption></figure>
 
 5\. In Compare section, select what object needs to be compared. Here three options have been provided
 
@@ -34,51 +33,46 @@ ABAP Compare is used to compare any differences between objects under different 
 * Objects from Package -> Select this if specific package needs to be compared\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-5.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1206).png" alt=""><figcaption></figcaption></figure>
 
-If Object from Package is selected, provide a package in package input.\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-6.jpg" alt=""><figcaption></figcaption></figure>
-
-After providing all the required details, the screen will be as shown below:\
+* If Object from Package is selected, provide a package in package input.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-7.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1207).png" alt=""><figcaption></figcaption></figure>
+
+* After providing all the required details, the screen will be as shown below:\
+
+
+<figure><img src="../../.gitbook/assets/image (1208).png" alt=""><figcaption></figcaption></figure>
 
 6\. Once all the required selections are made, click compare button to get the comparison data.
 
 7\. Once the comparison is done, data can be seen as follows:\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-8.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1209).png" alt=""><figcaption></figcaption></figure>
 
-8\. Expand to the object to view the comparison\
-\
-
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-9.jpg" alt=""><figcaption></figcaption></figure>
-
-9\. The objects with green check icon are identical, means there is no difference in between the objects\
-\
+8\. Expand to the object to view the comparison. \
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-10.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1213).png" alt=""><figcaption></figcaption></figure>
+
+9\. The objects with green check icon are identical, means there is no difference in between the objects.
+
+<figure><img src="../../.gitbook/assets/image (1215).png" alt=""><figcaption></figcaption></figure>
 
 10\. The objects with red cross icons have no version in either of the compared systems\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-11.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1216).png" alt=""><figcaption></figcaption></figure>
 
-11\. The object with yellow exclamation icon is not identical and have differences between the compared systems\
-\
+11\. The object with yellow exclamation icon is not identical and have differences between the compared systems.
 
-
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-12.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1217).png" alt=""><figcaption></figcaption></figure>
 
 12\. To see the difference, click on the icon and the difference between the objects will be shown in a dialog.\
 
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/abap-version-compare-13.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1218).png" alt=""><figcaption></figcaption></figure>
 
 In a similar manner, you can compare different objects and see the difference side by side in the browser itself.

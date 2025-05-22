@@ -14,9 +14,9 @@
 
 4. Once all fields are filled, click the **Save** button to register the credential.
 5. A confirmation message will appear if the registration is successful.
-6. The newly registered credential will appear in the **List of Credentials** section
+6. The newly registered credential will appear in the **List of Credentials** section.
 
-<figure><img src="https://www.docs.releaseowl.com/assets/img/credential-management-1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1221).png" alt=""><figcaption></figcaption></figure>
 
 7. **For Authentication Type OAuth2** – Instead of password, authorization tokens are issued to verify an identity between consumers and service providers. OAuth 2 provides better security than basic authentication as the initial requests for credentials are made under the SSL protocol and its access object is a transitory token.
 
@@ -26,3 +26,5 @@
 
 8. Save the changes to access your BTP user account.
 9. The newly created credential gets listed in the Credential Manager screen.
+
+<figure><img src="../../../.gitbook/assets/image (1222).png" alt=""><figcaption></figcaption></figure>
