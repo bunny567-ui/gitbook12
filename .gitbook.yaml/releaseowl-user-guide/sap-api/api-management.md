@@ -6,7 +6,7 @@ The **API Management** module in ReleaseOwl provides a comprehensive set of tool
 
 * To synchronize the API artifacts, navigate to the **Project View** and click on **API Management (Beta)** under the **Build** section.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Synchronize** to fetch various API artifacts such as API Proxies and Key Value Maps from the registered SAP API Management environment into ReleaseOwl.
 
@@ -16,7 +16,7 @@ The **API Management** module in ReleaseOwl provides a comprehensive set of tool
 
 * With this, you can view the history of all the artifact syncs that have occurred. Click **Sync History**, to view the **API Sync History** of this project.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Actions**
 
@@ -44,13 +44,13 @@ You can maintain configuration parameters for API artifacts separately for each 
 **Note:** For **KeyValueMap** artifacts, the **Target Endpoints** section is not available, as these artifacts do not require endpoint configuration.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** A **Target Endpoint** is the destination backend service that the API Proxy forwards requests to. When a client calls the proxy URL (shown at the top), the request is routed internally to this defined target endpoint.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Revisions <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
@@ -60,7 +60,7 @@ To perform revisions, follow these steps:
 
 * Click on the "**Revisions**"  button.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The following options are available:
 
@@ -126,7 +126,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Navigate to **Release Pipelines**.
 * Click **Create New Release Pipeline**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a **Pipeline Name**.
 

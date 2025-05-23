@@ -66,7 +66,7 @@ ReleaseOwl supports **bidirectional integration**, allowing synchronization of u
       &#xNAN;_"User Story Sync Completed."_
     * Click **OK** to finish.
 
-    <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Webhook Configuration in Azure DevOps**
 

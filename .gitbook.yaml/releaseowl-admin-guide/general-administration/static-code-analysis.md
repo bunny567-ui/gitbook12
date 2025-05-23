@@ -43,4 +43,4 @@ Use the dropdown fields for the following:
 
 * Once all configurations are updated, click on the Save button at the top-right corner.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
