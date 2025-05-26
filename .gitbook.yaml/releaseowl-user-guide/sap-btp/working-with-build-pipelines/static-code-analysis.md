@@ -6,26 +6,26 @@
 
 If you choose tool integration while creating a build pipeline, SonarQube report is displayed here. To view the report:
 
-Click **SonarQube Report** in the build page.
+1. Click **SonarQube Report** in the build page.
 
 <figure><img src="../../../.gitbook/assets/image (1189).png" alt=""><figcaption></figcaption></figure>
 
-A comprehensive report is displayed here.\
+2. A comprehensive report is displayed here.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1190).png" alt=""><figcaption></figcaption></figure>
 
-Click on the numbers corresponding to bugs, vulnerabilities, etc. to be redirected to your SonarQube account for a more detailed report.\
+3. Click on the numbers corresponding to bugs, vulnerabilities, etc. to be redirected to your SonarQube account for a more detailed report.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1192).png" alt=""><figcaption></figcaption></figure>
 
-1\. Click **Quality Gate Status,** to know the test cases status in SonarQube.\
+4. Click **Quality Gate Status,** to know the test cases status in SonarQube.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1194).png" alt=""><figcaption></figcaption></figure>
 
-2\. Click **Lines of Code** to see the code in **SonarQube.**
+5. Click **Lines of Code** to see the code in **SonarQube.**
 
 <figure><img src="../../../.gitbook/assets/image (1195).png" alt=""><figcaption></figcaption></figure>
 

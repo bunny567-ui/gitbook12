@@ -5,7 +5,7 @@ Labels are like tags for your ‘**Build Pipelines**’. When a client has a sub
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-To add a pipeline to a label, you can type a label name while creating the pipeline. While typing, auto completion will kick in and show the list of possible existing labels, either you can select one from the list or provide a new label. When a build pipeline/ release pipeline is saved, if the label is new, it will create a new entry to Labels list. Or you could edit a pipeline after it has been created and add a label in the available dialogue box.
+To add a label to a pipeline, you can type the label name while creating the pipeline. As you type, autocomplete will suggest a list of existing labels. You can either select one from the list or enter a new label. When the build or release pipeline is saved, if the label is new, it will be added to the Labels list automatically. Alternatively, you can also edit the pipeline after it has been created and add a label using the available dialog box.
 
 <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
