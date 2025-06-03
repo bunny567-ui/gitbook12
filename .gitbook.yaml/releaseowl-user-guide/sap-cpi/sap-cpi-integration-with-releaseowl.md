@@ -314,21 +314,25 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 
 3\. The following screen is displayed.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fsap-cpi-cloud-environment-registration-5.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c8b46193&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-4\. Click **Add Environment** to add a new environment in ReleaseOwl.
+4\. Click  +**Add button** to add a new environment in ReleaseOwl.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 5\. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
 
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 6\. The environment is added to the corresponding project in ReleaseOwl.
 
-7\. Click **Permissions** (under Users tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
+7\. Click **Permissions** (under **Users** tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fsap-cpi-cloud-environment-registration-6.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=15339cc6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Permissions**. The roles that are assigned to the selected user are seen.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Fwww.docs.releaseowl.com%2Fassets%2Fimg%2Fsap-cpi-cloud-environment-registration-7.jpg&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b374d431&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** On clicking Permissions in the above screen, one can know the actions that the user role can perform each for the available features such as Transport Management, Change Management, Pipelines, Release Management.
@@ -491,7 +495,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F1EFquacxP4WyuxUXUCZF%252Fimage.png%3Falt%3Dmedia%26token%3D18776298-676d-4d55-b0b0-1ba192953b3b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c4368f77&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-You can view the Deploy Logs in the ReleaseOwl Dashboard under the SAP CPI Deploy Logs window after promoting the user story.
+You can view the **Deploy Logs** under the **SAP CPI Deploy Logs** window after promoting the user story.
 
 <figure><img src="../../.gitbook/assets/image (1022).png" alt=""><figcaption></figcaption></figure>
 

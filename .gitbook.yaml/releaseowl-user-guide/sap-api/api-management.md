@@ -6,7 +6,7 @@ The **API Management** module in ReleaseOwl provides a comprehensive set of tool
 
 * To synchronize the API artifacts, navigate to the **Project View** and click on **API Management (Beta)** under the **Build** section.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Synchronize** to fetch various API artifacts such as API Proxies and Key Value Maps from the registered SAP API Management environment into ReleaseOwl.
 
@@ -16,7 +16,7 @@ The **API Management** module in ReleaseOwl provides a comprehensive set of tool
 
 * With this, you can view the history of all the artifact syncs that have occurred. Click **Sync History**, to view the **API Sync History** of this project.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Actions**
 
@@ -44,13 +44,13 @@ You can maintain configuration parameters for API artifacts separately for each 
 **Note:** For **KeyValueMap** artifacts, the **Target Endpoints** section is not available, as these artifacts do not require endpoint configuration.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** A **Target Endpoint** is the destination backend service that the API Proxy forwards requests to. When a client calls the proxy URL (shown at the top), the request is routed internally to this defined target endpoint.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Revisions <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
@@ -60,7 +60,7 @@ To perform revisions, follow these steps:
 
 * Click on the "**Revisions**"  button.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The following options are available:
 
@@ -74,48 +74,48 @@ The following options are available:
 
 The **Compare Environments** option allows you to compare the source version of an API Proxy or Product in the **Source Environment** with the active version in the **Destination Environment**.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Compare Environments**, select the **Source Environment** and **Destination Environment**, then click **Submit** to initiate the comparison.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Compare Versions:&#x20;
 
 The **Compare Versions** option allows you to compare two different versions of an API Proxy or Product. Ensure that you select **two versions** of the same artifact to perform the comparison.
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Assign User Story:&#x20;
 
 You can assign a user story to yourself or another team member for better ownership and tracking.\
 To assign a user story,  click on the **Assignee** field, and select the desired user from the list.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Unassign User Story**:\
 If a user story needs to be released from an assignee, you can unassign it.\
 To unassign a user story, click on the **Assignee** field, and choose **Unassigned** or clear the current selection.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * Additionally, you can perform configuration actions within the **Revisions** section.
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Download <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
 * You can download the API artifact as a ZIP file. The selected API artifact will be packaged and downloaded to your system.
 
-<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Deployment History
 
 * Displays the recent deployments of API Proxy artifacts, including the artifact name, associated user story, target environment, deployment timestamp, and deployment status.
 
-<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Creating a Release Pipeline <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
@@ -126,7 +126,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Navigate to **Release Pipelines**.
 * Click **Create New Release Pipeline**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a **Pipeline Name**.
 
@@ -197,7 +197,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Select the **Release Pipeline and Component**.
 * Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2486808281-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FntTXS8vTRxGt8qfbPi3l%252Fuploads%252FuFb66wSumGYiUFhTQUgY%252Fimage.png%3Falt%3Dmedia%26token%3D6b5f39c5-6af9-4aed-bf63-159cda51daf6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d69ffe7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -211,7 +211,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 
 * **Activity log:** The activity log helps track the progress of deployment tasks, identify any issues or failures, and maintain a record of who performed each action.
 
-<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **4. Approval Process**
 

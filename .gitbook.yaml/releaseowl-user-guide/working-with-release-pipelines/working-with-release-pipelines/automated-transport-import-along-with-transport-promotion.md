@@ -22,12 +22,12 @@ Creating a Release Pipeline is a three-step process.
 1.  Select the required On-Prem Project and in Release go to Release Pipelines.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Click **Create New Release Pipeline.**
 3. **Release Pipeline Name:** Give a name for the release pipeline.\
 
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4.  **Add Stages:**
 
@@ -36,11 +36,11 @@ Creating a Release Pipeline is a three-step process.
     * Click **OK**\
 
 
-    <figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. **Add Tasks in Each Stage:** Click **Add** to configure tasks within the stage.\
 
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** All the tasks **except Deployment** Task are similar for any project type.
@@ -59,9 +59,9 @@ Creating a Release Pipeline is a three-step process.
 The **Deployment Task** defines how an artifact is deployed to the specified SAP environment during pipeline execution. When you add a Deployment Task to a pipeline stage, a configuration screen will be displayed where you can enter all the necessary deployment details.\
 
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -102,7 +102,7 @@ Validation task is added to perform Static Code Analysis checks and generate the
 Promotion is the process of Moving/Deploying/Importing the transports to the target systems using a Release pipeline associated with the project.\
 
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “**Promotion Task”**. Promotion can be performed in two ways – via User Story and via Release Package.
 
@@ -111,7 +111,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 1\. From Actions Menu of the User story, promotion can be done.\
 
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Clicking Promote will Trigger the Release pipeline associated with the project.
 
@@ -202,7 +202,7 @@ This is required when we want the deployments to take place in multiple environm
 For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.\
 
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Editing/ Deleting Pipeline**
 
