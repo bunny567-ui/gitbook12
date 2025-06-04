@@ -163,10 +163,10 @@ Release Package is a logical grouping of user stories or transports that are to 
 
 ### **Promotion of Release Package by Transports**
 
-1\. Clicking **“Add Transports for Promotion”** will add all the transports eligible for promotion from the selected **Promoted from (Stage)** as a unit.
+1\. Clicking **“Add Stories for Promotion”** will add all the transports eligible for promotion from the selected **Promoted from (Stage)** as a unit.\
 
-\
 
+<figure><img src="../../../.gitbook/assets/image (1282).png" alt=""><figcaption></figcaption></figure>
 
 The following points apply when promoting a Release Package based on transports:
 
@@ -184,12 +184,12 @@ The following points apply when promoting a Release Package based on transports:
 
 <figure><img src="../../../.gitbook/assets/image (1143).png" alt=""><figcaption></figcaption></figure>
 
-4\. Once Promotion for Release package starts then the Release Package will be locked and no changes are possible like addition of more user stories or transports.\
+4\. Once Promotion for **Release package** starts then the **Release Package** will be locked and no changes are possible like addition of more user stories or transports.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1144).png" alt=""><figcaption></figcaption></figure>
 
-5\. User has to unlock Release Package to backout any of the user stories or transports after promotion. In role permissions, user should have Unlock Release Package permission.
+5\. User has to unlock **Release Package** to backout any of the user stories or transports after promotion. In role permissions, user should have **Unlock Release Package permission**.
 
 <figure><img src="../../../.gitbook/assets/image (1145).png" alt=""><figcaption></figcaption></figure>
 
@@ -204,6 +204,8 @@ For each stage, the tasks are to be added separately. This corresponds to the ta
 
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Editing/ Deleting Pipeline**
+### **Editing Pipeline**
 
-Go to the required pipeline and click **Edit** to edit the pipeline or **Delete** to delete the pipeline.
+Go to the required pipeline and click **Edit** to edit the pipeline.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (1283).png" alt=""><figcaption></figcaption></figure>
