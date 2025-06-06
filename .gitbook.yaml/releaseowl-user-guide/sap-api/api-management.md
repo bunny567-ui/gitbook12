@@ -4,27 +4,43 @@ The **API Management** module in ReleaseOwl provides a comprehensive set of tool
 
 ### Synchronize API Artifacts
 
-* To synchronize the API artifacts, navigate to the **Project View** and click on **API Management (Beta)** under the **Build** section.
+To import API artifacts from SAP API Management:
+
+1. Navigate to the **Project View**.
+2. Under the **Build** section, click on **API Management (Beta)**.
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Click **Synchronize** to fetch various API artifacts such as API Proxies and Key Value Maps from the registered SAP API Management environment into ReleaseOwl.
+3. Click the **Synchronize** button to fetch available API artifacts such as:
+
+* **API Proxies**
+* **Key Value Maps**
+
+4. These artifacts are retrieved from the registered SAP API Management environment and reflected within ReleaseOwl.
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2486808281-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FntTXS8vTRxGt8qfbPi3l%252Fuploads%252Fr4KtoIO20ImCAGwcK6au%252Fimage.png%3Falt%3Dmedia%26token%3D43630a07-dc32-4c99-a409-0317f552685d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=22d3c421&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 #### Sync History
 
-* With this, you can view the history of all the artifact syncs that have occurred. Click **Sync History**, to view the **API Sync History** of this project.
+To track previous synchronizations:
+
+* Click on **Sync History** to view a detailed log of all synchronization activities performed within the project.
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Actions**
+### **Artifact Actions**
 
-Multiple actions can be performed on an artifact, based on the type of artifact. These actions include – Sync, Configure, Revisions, Deployment History and Download.
+Based on the type of artifact, the following actions are available:
+
+* **Sync** – Re-fetch the latest version of the artifact.
+* **Configure** – Modify environment-specific configuration parameters.
+* **Revisions** – View available revisions of the artifact.
+* **Deployment History** – Track deployment activity across stages.
+* **Download** –Download the API Proxy as a ZIP file for backup or inspection.
 
 #### **Configure API Artifact Parameters**
 
-You can maintain configuration parameters for API artifacts separately for each environment in ReleaseOwl. These parameters will be applied automatically during deployment.
+You can define configuration parameters separately for each environment, and ReleaseOwl applies these automatically during deployment.
 
 **To configure an API artifact:**
 
@@ -32,25 +48,54 @@ You can maintain configuration parameters for API artifacts separately for each 
 
 <figure><img src="../../.gitbook/assets/image (1086).png" alt=""><figcaption></figcaption></figure>
 
-2. The configuration screen displays various API Proxies for the SAP API Management environments that are part of the deployment landscape.
+2. The configuration screen displays various **API Proxies** for the SAP API Management environments that are part of the deployment landscape.
 3. **Note:** No changes can be made to the **Dev** environment.
 4. To update parameters for other environments:
-   * Click the **Edit** icon next to the desired environment.
+   * Click the **Edit (pencil)** icon next to each field.
    * Make the necessary changes.
    * Click **Save**.
-5. Use the **Target Endpoints** view to configure endpoint details for the API Proxy. The dropdown menu allows you to switch between and manage different named target endpoints.
+
+<figure><img src="../../.gitbook/assets/image (1285).png" alt=""><figcaption></figcaption></figure>
+
+#### Target EndPoints Configuration
+
+Use the **Target EndPoint** tab to define and manage backend endpoint values for each named target endpoint.
+
+1. Select the appropriate **Target Endpoint** from the dropdown.
+2. Modify fields such as:
+   * `url`
+   * `provider_id`
+   * `relativePath`
+   * `targetAPIProxyName`
+3. Click the **Save** button to persist the changes for the selected target endpoint.
+
+This configuration ensures that the correct backend endpoint is used when deploying to a specific environment.
+
+<figure><img src="../../.gitbook/assets/image (1286).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** For **KeyValueMap** artifacts, the **Target Endpoints** section is not available, as these artifacts do not require endpoint configuration.
+**Note : Target EndPoint** configuration is **not applicable** to KeyValueMap artifacts.
+
+**Definition:** A _**Target Endpoint**_ is the backend service to which the API Proxy forwards client requests. The client interacts with the proxy URL, and the request is internally routed to the defined target endpoint.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### Host Alias Configuration <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
-{% hint style="info" %}
-**Note:** A **Target Endpoint** is the destination backend service that the API Proxy forwards requests to. When a client calls the proxy URL (shown at the top), the request is routed internally to this defined target endpoint.
-{% endhint %}
+The **Host Alias** tab allows you to define environment-agnostic logical mappings for backend hostnames, enhancing flexibility during API deployments.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+To configure host aliases:
+
+1. Navigate to the **Host Alias** tab.
+2. Click the **Edit** button.
+
+<figure><img src="../../.gitbook/assets/image (1288).png" alt=""><figcaption></figcaption></figure>
+
+3. For the target environment, define or update the required host alias values.
+4. Save your configuration by clicking the **Save** button.
+
+This configuration allows ReleaseOwl to substitute the defined host alias during deployment, enabling seamless promotion across environments without hardcoding backend URLs.
+
+<figure><img src="../../.gitbook/assets/image (1287).png" alt=""><figcaption></figcaption></figure>
 
 #### Revisions <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
@@ -62,7 +107,7 @@ To perform revisions, follow these steps:
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The following options are available:
+The following actions are available:
 
 * **Compare Environments**
 * **Compare Versions**
@@ -76,7 +121,11 @@ The **Compare Environments** option allows you to compare the source version of 
 
 <figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Click **Compare Environments**, select the **Source Environment** and **Destination Environment**, then click **Submit** to initiate the comparison.
+To initiate:
+
+* Click **Compare Environments**
+* Select the **Source Environment** and **Destination Environment**
+* Click **Submit**
 
 <figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -89,17 +138,14 @@ The **Compare Versions** option allows you to compare two different versions of 
 #### Assign User Story:&#x20;
 
 You can assign a user story to yourself or another team member for better ownership and tracking.\
-To assign a user story,  click on the **Assignee** field, and select the desired user from the list.
+To assign a user story, click on the **Assign User Story** button. Select the required user stories from the list, then click on **Assign User Story** again. In the assignment panel, choose the desired user from the dropdown list to complete the assignment.
 
 <figure><img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Unassign User Story**:\
-If a user story needs to be released from an assignee, you can unassign it.\
-To unassign a user story, click on the **Assignee** field, and choose **Unassigned** or clear the current selection.
+To remove the assignment of a user story, click on the **Unassign User Story** button. Select the required user stories from the list and click on **Unassign** **User Story** again to release them from their current assignees.
 
 <figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 * Additionally, you can perform configuration actions within the **Revisions** section.
 
