@@ -90,7 +90,7 @@ To configure host aliases:
 
 <figure><img src="../../.gitbook/assets/image (1288).png" alt=""><figcaption></figcaption></figure>
 
-3. For the target environment, define or update the required host alias values.
+3. For the target environment, update the required **host alias URL mappings** to ensure proper routing of API requests during deployment.
 4. Save your configuration by clicking the **Save** button.
 
 This configuration allows ReleaseOwl to substitute the defined host alias during deployment, enabling seamless promotion across environments without hardcoding backend URLs.
