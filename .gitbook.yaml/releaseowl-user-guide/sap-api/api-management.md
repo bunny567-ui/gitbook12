@@ -48,7 +48,7 @@ You can define configuration parameters separately for each environment, and Rel
 
 <figure><img src="../../.gitbook/assets/image (1086).png" alt=""><figcaption></figcaption></figure>
 
-2. The configuration screen displays the same API Proxies across different SAP API Management environments (such as QA, Prod, etc.) that are part of the deployment landscape.
+2. The configuration screen displays the same API Proxy across different SAP API Management environments (such as QA, Prod, etc.) that are part of the deployment landscape.
 3. **Note:** No changes can be made to the **Dev** environment.
 4. To update parameters for other environments:
    * Click the **Edit (pencil)** icon next to each field.
@@ -69,7 +69,7 @@ Use the **Target EndPoint** tab to define and manage backend endpoint values for
    * `targetAPIProxyName`
 3. Click the **Save** button to persist the changes for the selected target endpoint.
 
-This configuration ensures that the correct target endpoint is used when deploying to a specific environment.
+This configuration is deployed during the API Proxy deployment.
 
 <figure><img src="../../.gitbook/assets/image (1286).png" alt=""><figcaption></figcaption></figure>
 
@@ -88,9 +88,8 @@ To configure host aliases:
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-3. For the target environment, update the required **host alias URL mappings** to ensure proper routing of API requests during deployment.
-4. In your target environment, multiple host aliases may be configured. If you want to deploy your API proxy to a specific host alias, you can specify the desired host alias in the **Configure** section.
-5. Save your configuration by clicking the **Save** button.
+3. In your target environment, multiple host aliases may be configured. If you want to deploy your API proxy to a specific host alias, you can specify the desired host alias in the **Configure** section.
+4. Save your configuration by clicking the **Save** button.
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
