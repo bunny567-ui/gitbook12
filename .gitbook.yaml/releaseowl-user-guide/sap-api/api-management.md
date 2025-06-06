@@ -4,7 +4,7 @@ The **API Management** module in ReleaseOwl provides a comprehensive set of tool
 
 ### Synchronize API Artifacts
 
-To import API artifacts from SAP API Management:
+To sync API artifacts from SAP API Management:
 
 1. Navigate to the **Project View**.
 2. Under the **Build** section, click on **API Management (Beta)**.
