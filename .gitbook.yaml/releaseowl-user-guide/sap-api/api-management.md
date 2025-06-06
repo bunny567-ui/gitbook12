@@ -48,7 +48,7 @@ You can define configuration parameters separately for each environment, and Rel
 
 <figure><img src="../../.gitbook/assets/image (1086).png" alt=""><figcaption></figcaption></figure>
 
-2. The configuration screen displays various **API Proxies** for the SAP API Management environments that are part of the deployment landscape.
+2. The configuration screen displays the same API Proxies across different SAP API Management environments (such as QA, Prod, etc.) that are part of the deployment landscape.
 3. **Note:** No changes can be made to the **Dev** environment.
 4. To update parameters for other environments:
    * Click the **Edit (pencil)** icon next to each field.
@@ -62,20 +62,18 @@ You can define configuration parameters separately for each environment, and Rel
 Use the **Target EndPoint** tab to define and manage backend endpoint values for each named target endpoint.
 
 1. Select the appropriate **Target Endpoint** from the dropdown.
-2. Modify fields such as:
+2. Modify fields such as the following by using the **Edit (pencil)** icon next to each field:
    * `url`
    * `provider_id`
    * `relativePath`
    * `targetAPIProxyName`
 3. Click the **Save** button to persist the changes for the selected target endpoint.
 
-This configuration ensures that the correct backend endpoint is used when deploying to a specific environment.
+This configuration ensures that the correct target endpoint is used when deploying to a specific environment.
 
 <figure><img src="../../.gitbook/assets/image (1286).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note : Target EndPoint** configuration is **not applicable** to KeyValueMap artifacts.
-
 **Definition:** A _**Target Endpoint**_ is the backend service to which the API Proxy forwards client requests. The client interacts with the proxy URL, and the request is internally routed to the defined target endpoint.
 {% endhint %}
 
@@ -88,14 +86,13 @@ To configure host aliases:
 1. Navigate to the **Host Alias** tab.
 2. Click the **Edit** button.
 
-<figure><img src="../../.gitbook/assets/image (1288).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 3. For the target environment, update the required **host alias URL mappings** to ensure proper routing of API requests during deployment.
-4. Save your configuration by clicking the **Save** button.
+4. In your target environment, multiple host aliases may be configured. If you want to deploy your API proxy to a specific host alias, you can specify the desired host alias in the **Configure** section.
+5. Save your configuration by clicking the **Save** button.
 
-This configuration allows ReleaseOwl to substitute the defined host alias during deployment, enabling seamless promotion across environments without hardcoding backend URLs.
-
-<figure><img src="../../.gitbook/assets/image (1287).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Revisions <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
@@ -172,7 +169,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Navigate to **Release Pipelines**.
 * Click **Create New Release Pipeline**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a **Pipeline Name**.
 
