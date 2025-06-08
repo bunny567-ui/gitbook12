@@ -22,12 +22,12 @@ Creating a Release Pipeline is a three-step process.
 1.  Select the required On-Prem Project and in Release go to Release Pipelines.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Click **Create New Release Pipeline.**
 3. **Release Pipeline Name:** Give a name for the release pipeline.\
 
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4.  **Add Stages:**
 
@@ -36,15 +36,70 @@ Creating a Release Pipeline is a three-step process.
     * Click **OK**\
 
 
-    <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. **Add Tasks in Each Stage:** Click **Add** to configure tasks within the stage.\
 
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** All the tasks **except Deployment** Task are similar for any project type.
 {% endhint %}
+
+6. Once all tasks are added, click the **Save** button to finalize the pipeline configuration.
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+#### **Post-Creation Options**
+
+Once the Release Pipeline is created, you can use the **Actions** button for the following options:
+
+* **Delete**: Permanently removes the pipeline from the project.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+* **Save As**: Opens a popup where you can enter a new name and create a copy of the pipeline.
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+#### **Monitoring Release Pipeline Execution**
+
+* When you **click the navigation button**, you can view the **complete status** of the release pipeline execution. This includes:
+  * **Who triggered** the pipeline
+  * The **trigger time**&#x20;
+  * The **current execution status** of each stage
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+When you **click the Details tab**, you can view:
+
+* **Stage-wise release logs**
+* **Task-level results**
+* &#x20;**Validation reports**
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+#### **Skip and Continue Option in the Validation Task**
+
+In the **Release Pipeline > Details** section, during pipeline execution, you will find **Skip and Continue** button available for the **Validation Task**. This button allow you to bypass the validation step under specific conditions—typically used in exception scenarios where validations are not mandatory or have been reviewed externally.
+
+When you click on the **Skip and Continue** button:
+
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+1. A **popup dialog** will appear prompting you to provide a **justification** or **reason** for skipping the validation task (e.g., "Validation not required for this transport", "Approved via external review", or "Urgent fix deployment").
+2. Enter the **required reason** in the text field.
+3. Click **Skip and Continue** within the popup to proceed.
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+4. The pipeline will then skip the validation step and continue with the next task in the stage .
+
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ### Supported Task Types
 
@@ -56,10 +111,10 @@ Creating a Release Pipeline is a three-step process.
 
 ### **Deployment Task**
 
-The **Deployment Task** defines how an artifact is deployed to the specified SAP environment during pipeline execution. When you add a Deployment Task to a pipeline stage, a configuration screen will be displayed where you can enter all the necessary deployment details.\
+The **Deployment Task** defines how an SAP transport request (TR) is deployed to the specified SAP target system during pipeline execution. When you add a Deployment Task to a pipeline stage, a configuration screen appears where you can provide the necessary transport deployment details.\
 
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -85,24 +140,25 @@ By default, a pipeline executes the configured tasks sequentially, one after the
 
 Validation task is added to perform Static Code Analysis checks and generate the validation report to view the errors encountered.
 
-| **Field / Option**      | **Description**                                                            |
-| ----------------------- | -------------------------------------------------------------------------- |
-| **Domain Controller**\* | Dropdown to select the domain controller for the transport landscape.      |
-| **Source**              | Source system from where transports will be validated.                     |
-| **Target**              | Target system where the transport is expected to move.                     |
-| **Pipeline Execution**  | Section indicating execution preferences for the task.                     |
-| **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails. |
+| **Field / Option**      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Domain Controller**\* | Dropdown to select the domain controller for the transport landscape.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Source**              | Source system from where transports will be validated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Target**              | Target system where the transport is expected to move.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Pipeline Execution**  | Section indicating execution preferences for the task.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Quality Checks**      | <p><strong>ATC Checks:</strong> Executes <strong>ABAP Test Cockpit (ATC)</strong> checks to analyze code quality, syntax errors, performance, and security compliance.                                                                     </p><p></p><p><strong>Impact Analysis:</strong> Checks how the changes in the transport affect other dependent or referencing objects across systems.                                                                      </p><p></p><p><strong>Unit Tests:</strong> Runs <strong>ABAP Unit Tests</strong> to verify the functional correctness of the objects in the transport.                                                                    </p><p></p><p><strong>User  Story Dependencies (Beta):</strong>  Identifies and validates dependent user stories to prevent conflicts or incomplete deployments.                       </p><p></p><p><strong>Note:</strong> You can select <strong>any one or more</strong> of the following <strong>Quality Checks</strong> when configuring the validation task.</p> |
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Promotion**
 
 Promotion is the process of Moving/Deploying/Importing the transports to the target systems using a Release pipeline associated with the project.\
 
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “**Promotion Task”**. Promotion can be performed in two ways – via User Story and via Release Package.
 
@@ -111,7 +167,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 1\. From Actions Menu of the User story, promotion can be done.\
 
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Clicking Promote will Trigger the Release pipeline associated with the project.
 
@@ -202,7 +258,7 @@ This is required when we want the deployments to take place in multiple environm
 For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.\
 
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Editing Pipeline**
 

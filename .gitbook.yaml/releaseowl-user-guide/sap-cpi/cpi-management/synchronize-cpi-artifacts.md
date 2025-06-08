@@ -23,7 +23,7 @@
 7. If there are changes made to the existing artifacts, the changes will also be updated.
 8. Click **Sync Artifacts** to sync the CPI artifacts.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sync History**
 
@@ -45,7 +45,7 @@ You can sort the artifacts as per your convenience. To sort them:
 
 Multiple actions can be performed on an artifact, based on the type of artifact. These actions include – View Test Cases, Comment , Configure, Deployment History, Versions and Download.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Manage Environment Wide IFlow Configurations**
 
