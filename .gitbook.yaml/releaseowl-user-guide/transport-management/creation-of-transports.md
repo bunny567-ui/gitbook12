@@ -118,4 +118,4 @@ External transports are transport requests that are created or imported manually
 
 <figure><img src="../../.gitbook/assets/image (1290).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
