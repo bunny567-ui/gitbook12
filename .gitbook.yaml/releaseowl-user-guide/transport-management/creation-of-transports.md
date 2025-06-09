@@ -27,7 +27,7 @@ To create a new transport request, follow these steps:
 | **Notification Emails** | Enter email addresses of people to be notified about the transport request. Separate multiple emails with commas. |
 | **Tasks**               | A sub-request that is part of the transport request. Tasks can be assigned to different users.                    |
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. **Save and View the Transport**
 
@@ -52,7 +52,7 @@ Syncing transports ensures the latest transport requests are fetched from the **
 
 <figure><img src="../../.gitbook/assets/image (1114).png" alt=""><figcaption></figcaption></figure>
 
-#### Current Project Templates
+#### Current Project Transports
 
 There may be multiple transports listed in the Transport Management section. To work on a specific transport in your current project, click on the **Action** button next to the transport and select **Add to Project**. &#x20;
 
@@ -116,6 +116,10 @@ External transports are transport requests that are created or imported manually
 **Note:** To create an external transport for a user, the **Manage External Transport** role must be assigned.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1290).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

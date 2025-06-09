@@ -41,3 +41,6 @@ Release Package is a collection of one or more user stories or transports that a
 
 <figure><img src="../../.gitbook/assets/image (1037).png" alt=""><figcaption></figcaption></figure>
 
+
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
