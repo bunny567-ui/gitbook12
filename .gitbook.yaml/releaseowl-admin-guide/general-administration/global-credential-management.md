@@ -104,7 +104,7 @@ OAuth 2 provides better security than basic authentication as the initial reques
 3. Click **Save**.
 4. The credential will appear in the **List of Credentials**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **SonarQube On-Prem**
 
@@ -135,7 +135,7 @@ Further information on getting the user token for SonarQube can be found @[https
 3. **Click Save** to finalize the setup and enable access to your Transport Domain Controller system.\
 
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **JIRA**
 
