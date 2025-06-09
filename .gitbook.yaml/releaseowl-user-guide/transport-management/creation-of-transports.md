@@ -108,4 +108,8 @@ You can download the transport data in Excel format by clicking the **Excel Down
 
 <figure><img src="../../.gitbook/assets/image (1119).png" alt=""><figcaption></figcaption></figure>
 
-External Transports
+**External Transports**
+
+External transports are transport requests that are created or imported manually into the SAP system. ReleaseOwl  marks these external transports with a ✓ (check mark) under the '**External**' column.
+
+<figure><img src="../../.gitbook/assets/image (1290).png" alt=""><figcaption></figcaption></figure>
