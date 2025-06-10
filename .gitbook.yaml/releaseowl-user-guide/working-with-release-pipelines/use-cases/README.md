@@ -1,6 +1,6 @@
 # Use Cases
 
-When working with **Release Pipelines**, the deployment lifecycle is streamlined through automation and approvals. The process typically involves the following key components:
+When working with **Release Pipelines**, the deployment lifecycle is streamlined through automation and approvals. The following are the use cases:
 
 **1. Automated Transport Import and Promotion**
 
