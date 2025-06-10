@@ -8,7 +8,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 
 2\.       Log in using your Atlassian account credentials.
 
-<figure><img src="../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Create an OAuth 2.0 Integration
 
@@ -16,7 +16,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 
 2\.       Click on Create and select OAuth 2.0 Integration from the available options.
 
-<figure><img src="../../.gitbook/assets/image (508).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (508).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Create an App
 
@@ -24,7 +24,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 2. Check the box to agree to the terms and conditions.
 3. Click on the Create button to proceed.
 
-<figure><img src="../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Add Permissions
 
@@ -32,20 +32,20 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 
 2\.       Select Jira API and click on the Add button to grant the necessary permissions.
 
-<figure><img src="../../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
 
 ### 5. Authorization Configuration
 
 1. Go to the Authorization section.
 2. Click on the Add button in the action item to set the authorization type.
 
-<figure><img src="../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
 
 3. For the Callback URL, enter:\
    [https://na3.releaseowl.com/ratesaptms/api/accesstoken](https://na3.releaseowl.com/ratesaptms/api/accesstoken)
 4. &#x20;Click on Save Changes.
 
-<figure><img src="../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** In the OAuth framework, there are refresh tokens and access tokens. When the access token expires, a refresh token is used to obtain a new access token. The configuration must be set to send the refresh token when required. Since local URLs are not recognized due to intra-network restrictions, the callback URL uses the ReleaseOwl server (na3.releaseowl.com) to handle token exchange.
@@ -56,7 +56,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 1. Go to Settings in the Developer Console.
 2. Copy the Client ID and Client Secret for later use when registering Jira in the ReleaseOwl Dashboard.
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 ### **7. Registering Jira in ReleaseOwl Dashboard**
 
@@ -68,7 +68,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to Administration, then select Credential Manager.
 3. Click on Register Credential.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill out the credential form with the following details:
 
@@ -81,7 +81,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 
 5. Click **Save** to register the credential.
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 #### **B. Registering Jira using Basic Authentication**
 
@@ -90,19 +90,19 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 1. Log in to your Jira account.
 2. Go to Account Settings, then select Security.
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on **Create and manage API tokens**.
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 4. Click Create API Token, provide a token name, and click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 5. Copy the generated **API** token.
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 **Register API Token in ReleaseOwl**
 
@@ -110,7 +110,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to Administration, then select **Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the form with the following details:
 
@@ -124,7 +124,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 
 5. Click Save to register the credential.
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 ### 8. Jira Project Integration&#x20;
 
@@ -144,7 +144,7 @@ To link a Jira project with a ReleaseOwl project, follow these steps:
 * **Credential**: Select the registered Jira credential from the dropdown list.
 * **Host URL**: The Jira server URL (e.g., `https://saparate.atlassian.net`).
 
-<figure><img src="../../.gitbook/assets/image (1094).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1094).png" alt=""><figcaption></figcaption></figure>
 
 #### **3. Select Hosting Type**
 
@@ -163,11 +163,11 @@ Under **Hosting Type**, choose **On-Premise** if your Jira instance is hosted on
 * **Disable writing of comments/ notes:** You can turn off comments within ALM Integration.
 * After entering all the integration details, click on the **Save** button.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 * Once saved, the integration will appear in the list, and if the **"Default Integration"** checkbox was selected, it will be marked as **Default**. This means the system will automatically use this integration unless another one is specified.
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 **B. Using Filters**
 
@@ -180,7 +180,7 @@ Under **Hosting Type**, choose **On-Premise** if your Jira instance is hosted on
     * Select the desired **saved filter** from Jira.
     * Ensure the selected filter has proper permissions and is shared with the required users.
 
-    <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 **C. Using JQL (Jira Query Language)**
 
@@ -191,38 +191,38 @@ Under **Hosting Type**, choose **On-Premise** if your Jira instance is hosted on
     * Create a JQL query in Jira that retrieves the required issues.
     * Copy and paste the JQL query into ReleaseOwl.
 
-    <figure><img src="../../.gitbook/assets/image (839).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (839).png" alt=""><figcaption></figcaption></figure>
 
 ### 9. How to Configure Webhook URL
 
 1. Log in to your Jira account.
 2. Go to Settings and click on System.
 
-<figure><img src="../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
 
 3. In the System section, navigate to General Configuration and click on Webhooks.
 
-<figure><img src="../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
 
 4. This will take you to the webhook configuration page.
 
-<figure><img src="../../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
 
 5. Copy the **Webhook URL** that was generated in ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (1095).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1095).png" alt=""><figcaption></figcaption></figure>
 
 5. Paste the copied URL in the Webhook configuration page in Jira.
 
-<figure><img src="../../.gitbook/assets/image (515).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (515).png" alt=""><figcaption></figcaption></figure>
 
 7. Select the issue-related events that you want to track for your project (e.g., story creation, updates, etc.).
 
-<figure><img src="../../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
 
 8. After entering all the details, you can enable or disable the webhook in the status section.
 
-<figure><img src="../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** Further information on registering / configuring webhooks in JIRA can be found @ [https://developer.atlassian.com/server/jira/platform/webhooks/](https://developer.atlassian.com/server/jira/platform/webhooks/)
@@ -238,9 +238,9 @@ To integrate user stories from Jira, follow these steps:
 2. In **Change Management**, select **User Stories** Menu
 3. Click the **Sync User stories** icon.
 
-<figure><img src="../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Once the sync is completed, you will get a pop up saying, **User Story Sync completed**.
 5. Click **Ok**.
 
-<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>

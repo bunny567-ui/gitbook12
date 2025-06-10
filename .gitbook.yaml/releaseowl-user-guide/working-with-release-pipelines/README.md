@@ -1,3 +1,4 @@
 # Working with Release Pipelines
 
-The Release Pipelines in ReleaseOwl helps you with approvals, validations, deployments, automated tests, task assignments, and user story updates to be done for a particular SAP system in your landscape.
+When working with **Release Pipelines**, the deployment lifecycle is streamlined using a combination of **automation**, **approvals**, and **task orchestration**. The pipeline is composed of multiple **task types**, each designed to handle a specific stage of the deployment process. These tasks ensure a controlled, repeatable, and auditable workflow from build to production.
+

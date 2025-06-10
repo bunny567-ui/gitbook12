@@ -12,13 +12,13 @@ This guide outlines how to create an automation rule in Jira that triggers speci
 2. Click on **Automation**.
 3. **Click the "Create Rule" button** to begin configuring a new automation rule.
 
-<figure><img src="../../.gitbook/assets/image (828).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (828).png" alt=""><figcaption></figcaption></figure>
 
 ### **1. Define the Rule Trigger**
 
 A **trigger** determines when the rule should execute. To add multiple triggers, select **Multiple Issue Events** in the **"Add a Trigger"** section and choose one or more relevant triggers.
 
-<figure><img src="../../.gitbook/assets/image (829).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (829).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 #### **Possible Triggers:**
@@ -35,14 +35,14 @@ A **trigger** determines when the rule should execute. To add multiple triggers,
 
 * Click **"+ Add Component"** and select **"IF: Add a Condition."**
 
-<figure><img src="../../.gitbook/assets/image (830).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (830).png" alt=""><figcaption></figcaption></figure>
 
 #### **Choose an Appropriate Condition Type:**
 
 * **Issue Fields Condition** – Evaluates a specific field (e.g., status, priority) against predefined criteria.
 * **JQL Condition** – Uses **Jira Query Language (JQL)** for advanced issue filtering.
 
-<figure><img src="../../.gitbook/assets/image (831).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (831).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. Define an Action**
 
@@ -52,12 +52,12 @@ Once a condition is met, configure an **action**. The **ReleaseOwl API** should 
 
 1. Click **"+ Add Component"** and select **"THEN: Add an Action."**
 
-<figure><img src="../../.gitbook/assets/image (832).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (832).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **"Add an Action"** search bar, select **"Send Web Request."**
 3. **Web Request URL** – Copy the **Web Request URL** generated in the **Web Request URL for Automation Rule.**
 
-<figure><img src="../../.gitbook/assets/image (1082).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1082).png" alt=""><figcaption></figcaption></figure>
 
 4. **HTTP Method** – Set this to **POST**.
 5. **Web Request Body** – Select **Custom Data**.
@@ -84,7 +84,7 @@ Once a condition is met, configure an **action**. The **ReleaseOwl API** should 
 }
 ```
 
-<figure><img src="../../.gitbook/assets/image (833).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (833).png" alt=""><figcaption></figcaption></figure>
 
 ### **4. Activate and Test the Rule**
 
@@ -92,6 +92,6 @@ Once a condition is met, configure an **action**. The **ReleaseOwl API** should 
 2. Enter details such as **Rule Name** and who can edit the rule.
 3. Click **"Turn on Rule"** to perform tests and validate the rule execution.
 
-<figure><img src="../../.gitbook/assets/image (834).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (834).png" alt=""><figcaption></figcaption></figure>
 
 For more information, refer to [**Create and edit Jira automation rules | Cloud Automation Cloud | Atlassian Support**.](https://support.atlassian.com/cloud-automation/docs/create-and-edit-jira-automation-rules/)

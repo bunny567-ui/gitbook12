@@ -40,7 +40,7 @@ Creating a Release Pipeline is a three-step process.
 5. **Add Tasks in Each Stage:** Click **Add** to configure tasks within the stage.\
 
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** All the tasks **except Deployment** Task are similar for any project type.
@@ -48,7 +48,7 @@ Creating a Release Pipeline is a three-step process.
 
 6. Once all tasks are added, click the **Save** button to finalize the pipeline configuration.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Post-Creation Options**
 
@@ -56,11 +56,11 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
 
 * **Delete**: Permanently removes the pipeline from the project.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Save As**: Opens a popup where you can enter a new name and create a copy of the pipeline.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Monitoring Release Pipeline Execution**
 
@@ -69,9 +69,9 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
   * The **trigger time**&#x20;
   * The **current execution status** of each stage
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you **click the Details tab**, you can view:
 
@@ -79,9 +79,9 @@ When you **click the Details tab**, you can view:
 * **Task-level results**
 * &#x20;**Validation reports**
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Skip and Continue Option in the Validation Task**
 
@@ -149,9 +149,9 @@ Validation task is added to perform Static Code Analysis checks and generate the
 | **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Quality Checks**      | <p><strong>ATC Checks:</strong> Executes <strong>ABAP Test Cockpit (ATC)</strong> checks to analyze code quality, syntax errors, performance, and security compliance.                                                                     </p><p></p><p><strong>Impact Analysis:</strong> Checks how the changes in the transport affect other dependent or referencing objects across systems.                                                                      </p><p></p><p><strong>Unit Tests:</strong> Runs <strong>ABAP Unit Tests</strong> to verify the functional correctness of the objects in the transport.                                                                    </p><p></p><p><strong>User  Story Dependencies (Beta):</strong>  Identifies and validates dependent user stories to prevent conflicts or incomplete deployments.                       </p><p></p><p><strong>Note:</strong> You can select <strong>any one or more</strong> of the following <strong>Quality Checks</strong> when configuring the validation task.</p> |
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Promotion**
 
@@ -167,7 +167,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 1\. From Actions Menu of the User story, promotion can be done.\
 
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Clicking Promote will Trigger the Release pipeline associated with the project.
 
@@ -260,8 +260,3 @@ For each stage, the tasks are to be added separately. This corresponds to the ta
 
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Editing Pipeline**
-
-Go to the required pipeline and click **Edit** to edit the pipeline.&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (1283).png" alt=""><figcaption></figcaption></figure>
