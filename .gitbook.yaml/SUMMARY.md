@@ -29,7 +29,7 @@
     * [Sprints](releaseowl-user-guide/change-management/sprints.md)
     * [User Stories](releaseowl-user-guide/change-management/user-stories.md)
     * [Release Versions](releaseowl-user-guide/working-with-release-pipelines/release-versions.md)
-    * [User Story Dependency Check](releaseowl-user-guide/change-management/user-story-dependency-check.md)
+    * [User Story Dependency](releaseowl-user-guide/change-management/user-story-dependency.md)
   * [Transport Management](releaseowl-user-guide/transport-management/README.md)
     * [On-Prem Environment Registration](releaseowl-user-guide/transport-management/on-prem-environment-registration.md)
     * [Creation of Transports](releaseowl-user-guide/transport-management/creation-of-transports.md)
