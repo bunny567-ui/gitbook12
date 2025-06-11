@@ -104,7 +104,7 @@ OAuth 2 provides better security than basic authentication as the initial reques
 3. Click **Save**.
 4. The credential will appear in the **List of Credentials**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **SonarQube On-Prem**
 
@@ -135,7 +135,7 @@ Further information on getting the user token for SonarQube can be found @[https
 3. **Click Save** to finalize the setup and enable access to your Transport Domain Controller system.\
 
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **JIRA**
 
@@ -151,7 +151,7 @@ Further information on getting the user token for SonarQube can be found @[https
     * **Jira URL**: Provide the Jira instance URL, such as: `https://Saparate.atlassian.net`.
     * **Proxy Type**: Select the proxy type for communication .
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 4. If OAuth2 is selected:
@@ -181,7 +181,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **For  OAuth2 Authentication**
 
@@ -400,19 +400,19 @@ Follow these steps to register your 4Me credentials in the system:
    * **Password**: Enter the password associated with your username.
 3. **Click Save** to finalize the setup and enable access to your required account.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Edit**
 
 You can edit the credentials by clicking on the registered credential. This will allow you to make and save any necessary changes.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Delete**
 
 You can delete any credential by clicking the delete icon seen against that credential.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note: Edit** and **Delete** options are available only for the users with appropriate user roles.

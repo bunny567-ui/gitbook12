@@ -5,7 +5,7 @@
 ReleaseOwl can be integrated with HCL OneTest UI using which functional and web tests can be executed in any specific environment once the deployment is complete to check if the functionality is as desired. The following screen is displayed on adding a test execution task.\
 
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
