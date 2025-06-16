@@ -6,7 +6,7 @@ To  Sync user stories using an ALM integration (e.g., JIRA), follow these steps:
 
 2\) Click the **Sync User Stories** option from the User Stories screen. The user stories from the external system will be synced and displayed in the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 &#x20;**Note:** Clicking **Sync User Stories** will synchronize records of all issue types from the externally integrated ALM project into ReleaseOwl.
@@ -18,7 +18,7 @@ b) Always ensure to **sync the Sprints first** before syncing the User Stories.
 
 3\) Click **OK**. The user stories created in the external system will be synced to ReleaseOwl and will appear on the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\) To view previously performed sync actions, click on **Sync History**.
 
@@ -84,7 +84,7 @@ To create user stories manually for systems not integrated through ALM , follow 
 
 7\) The Validation Report will look as follows:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8\) On clicking the **Pipeline Activity**, you can view the release pipeline execution status as follows:
 
@@ -112,7 +112,7 @@ This option displays the execution history of the release pipeline, including de
 
 * When you click on the arrow button (**>**), you are taken to the **Pipeline Activity** screen.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1127).png" alt=""><figcaption></figcaption></figure>
 
@@ -122,11 +122,11 @@ This button allows you to update the Pipeline Activity screen with the latest in
 
 <figure><img src="../../.gitbook/assets/image (1128).png" alt=""><figcaption></figcaption></figure>
 
-### **Exporting User Story Details as a PDF**
+### Release Audit Report&#x20;
 
-You have the option to export the details as a **PDF**. The exported document provides comprehensive information to help track and communicate the progress of the user story.
+You have the option to export the details as a **Release Audit Report**. The exported document provides comprehensive information to help track and communicate the progress of the user story.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fa8Hbz2vNnHHD5K7YrWHZ%252Fimage.png%3Falt%3Dmedia%26token%3D1fd7e28b-ad28-48ad-b1c2-ab6ccd0e0b2c&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b1090778&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 The exported PDF provides the following comprehensive information:
 
