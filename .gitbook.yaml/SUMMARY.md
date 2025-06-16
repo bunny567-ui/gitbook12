@@ -102,6 +102,7 @@
   * [Multiverse](releaseowl-user-guide/multiverse.md)
   * [Utilities](releaseowl-user-guide/utilities/README.md)
     * [ABAP Version Compare](releaseowl-user-guide/utilities/abap-version-compare.md)
+    * [gCTS Merge](releaseowl-user-guide/utilities/gcts-merge.md)
 * [ReleaseOwl Releases](releaseowl-releases/README.md)
   * [Release Calendar](releaseowl-releases/release-calendar.md)
   * [Release Notes](releaseowl-releases/release-notes/README.md)

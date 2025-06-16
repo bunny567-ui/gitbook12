@@ -22,16 +22,16 @@ Creating a Release Pipeline is a three-step process.
 1. Select the required CPI Project.
 2. Navigate to **Release and** click on the **Release Pipelines.**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a **Pipeline Name**.
 4. Click **Create New Release Pipeline**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **Add Stage**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click OK.\
 
@@ -40,7 +40,7 @@ Creating a Release Pipeline is a three-step process.
 
 7. **Tasks:** Click Add to enter any tasks that are to be performed
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** To remove any stage, click Remove stage button.
@@ -157,9 +157,9 @@ Validation task is added to perform Static Code Analysis checks and generate the
 | **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **Quality Checks**      | <p>                                                                    </p><p><strong>CPI Lint Analysis:</strong> Validates integration flows, scripts, and configuration for SAP Integration Suite. </p><p></p><p> <strong>Unit Tests:</strong>  Executes CPI unit tests to validate business logic.                                                          </p><p></p><p><strong>User  Story Dependencies (Beta):</strong>  Identifies and validates dependent user stories to prevent conflicts or incomplete deployments.                       </p><p></p><p><strong>Note:</strong> You can select <strong>any one or more</strong> of the following <strong>Quality Checks</strong> when configuring the validation task.</p> |
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The validation report gets generated irrespective of the pipeline execution status - whether success or a failure.
 

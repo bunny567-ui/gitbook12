@@ -4,7 +4,7 @@
 
 1. To view the versions, go to the required artifact, click **Actions** and choose **Versions**.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. The following screen is displayed showing the user different versions of the artifact.
 
@@ -26,7 +26,7 @@ To download a specific version of an artifact:
 2. Click the **Actions** button.
 3. Select **Download** from the dropdown.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Comment
 
