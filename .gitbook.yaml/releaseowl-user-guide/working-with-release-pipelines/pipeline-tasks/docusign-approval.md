@@ -1,4 +1,4 @@
-# DocuSign
+# DocuSign Approval
 
 **DocuSign** is a widely used electronic signature platform that enables individuals and organizations to sign, send, and manage documents digitally in a secure and legally compliant manner. It eliminates the need for physical paperwork by allowing users to electronically sign agreements from any device, anywhere.
 
@@ -21,4 +21,4 @@ Fill in the required details:
 | **Subject**        | Optional subject line that appears in the DocuSign approval email. Helps the recipient quickly understand the approval request.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **Add Recipients** | <p>Add the users who need to act on the DocuSign task. For each recipient, provide the following:</p><p>• <strong>Name</strong>: Full name of the signer or recipient. </p><p>• <strong>Email ID</strong>: Email address where the DocuSign request will be sent. </p><p>• <strong>Order</strong>: The signing order if multiple recipients are involved. </p><p>• <strong>Type</strong>: Defines recipient role, e.g., <strong>Signer</strong>, <strong>Approver</strong>, <strong>CC</strong>. </p><p>• <strong>Group</strong>: (Optional) Group the recipient is associated with, if applicable.</p> |
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>

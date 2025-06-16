@@ -1,6 +1,6 @@
 # gCTS
 
-gCTS is an offering from SAP that allows us to manage ABAP (Advanced Business Application Programming) change and transport management processes using Git as an external version management system. By integrating Git with the traditional SAP transport system, gCTS enables developers to leverage Git's powerful version control capabilities, branching strategies, and collaboration features in the context of SAP ABAP development.
+CTS is an offering from SAP that allows us to manage ABAP (Advanced Business Application Programming) change and transport management processes using Git as an external version management system. By integrating Git with the traditional SAP transport system, gCTS enables developers to leverage Git's powerful version control capabilities, branching strategies, and collaboration features in the context of SAP ABAP development.
 
 ### **Key Features** <a href="#pdf-page-5oopygj2qtse4j6l4ary-key-features" id="pdf-page-5oopygj2qtse4j6l4ary-key-features"></a>
 
@@ -52,35 +52,35 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 3. Log in using your **SAP gCTS ABAP system credentials**.
 4. A **blank screen** is displayed by default upon successful login.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FNePlBYW9sUuWvdkC0Uv3%252Fimage.png%3Falt%3Dmedia%26token%3D52f22468-8a67-44ea-b4f6-d4e8b91bf8bb&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=34b97bf0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 5. **Search for:** `gcts` in the Fiori Launchpad.
 6. **Select:** **Git-enabled CTS – Manage Repositories**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F5cefjEHcNSuM3TZY1P2A%252Fimage.png%3Falt%3Dmedia%26token%3D24dffa52-50fa-4278-8506-0e6ffd63ccf3&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=33b3af29&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 7. All **existing repositories** linked to the current gCTS environment are displayed.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F2HpKmHWtsqDRg8Cb2cSy%252Fimage.png%3Falt%3Dmedia%26token%3Dd181b564-b80b-4fc8-9fb1-4f8c4177719c&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6345e74a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 8. Click on **Create** to initiate repository creation.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FWRz8fMhMfegE9VOizbrv%252Fimage.png%3Falt%3Dmedia%26token%3D84dc5854-b819-4ec9-94de-87abeb9ea162&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5aea5272&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 9. Fill the required details as follows:
 
-| **Field**       | **Description**                                                                                                                                                                          |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **URL**         | Enter the URL of the GIT repository you want to link with the SAP gCTS environment.                                                                                                      |
-| **Description** | Enter a relevant description, or keep the default description text.                                                                                                                      |
-| **vSID**        | Enter any name of your choice. A virtual system with this name will be created in the Transport Route. **Note**: Each unique GIT repository requires its own virtual system in SAP gCTS. |
-| **Role**        | Select **Developer**.                                                                                                                                                                    |
-| **Type**        | Select **GitHub**.                                                                                                                                                                       |
-| **Visibility**  | Select **Private**.                                                                                                                                                                      |
+| **Field**       | **Description**                                                                                                                                                                                                                             |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **URL**         | Enter the URL of the GIT repository you want to link with the SAP gCTS environment.                                                                                                                                                         |
+| **Description** | Enter a relevant description, or keep the default description text.                                                                                                                                                                         |
+| **vSID**        | <p>Enter any name of your choice. A virtual system with this name will be created in the <strong>Transport Route</strong>. </p><p></p><p><strong>Note</strong>: Each unique GIT repository requires its own virtual system in SAP gCTS.</p> |
+| **Role**        | Select **Developer**.                                                                                                                                                                                                                       |
+| **Type**        | Select **GitHub**.                                                                                                                                                                                                                          |
+| **Visibility**  | You can choose either one: **Public** or **Private**.                                                                                                                                                                                       |
 
-<figure><img src="../../../.gitbook/assets/image (1030).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F71vGi6X1MJHjCAgesP9w%252Fimage.png%3Falt%3Dmedia%26token%3D693b5a8d-4984-4c48-8246-3de608e48dbd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ab5cf830&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 10. Click **Save**. A new repository gets created.
 11. Upon repository creation:
@@ -96,54 +96,50 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 12. **Authorization is required to clone the repository:**
 
     * Navigate to the **Configuration** tab.
+    * Click **Create**.
 
+    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
+*   Add the following two parameters:
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F1wB8kI9IuZnM2gAtOWb7%252Fimage.png%3Falt%3Dmedia%26token%3Da06041d9-eaba-49d8-ac3e-a3a04268b3f6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=45f76fca&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    * `CLIENT_VCS_AUTH_USER`: Enter the GitHub user ID in the **Value** field.
+    * `CLIENT_VCS_AUTH_TOKEN`: Enter the GitHub personal access token.
 
-* Click **Create**.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FcsL74sinGv6SmYYXvzh8%252Fimage.png%3Falt%3Dmedia%26token%3D0d59125e-d07f-40d7-b391-c6551d2b8414&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5e86241b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-* Add the following two parameters:
-  * `CLIENT_VCS_AUTH_USER`: Enter the GitHub user ID in the **Value** field.
-  * `CLIENT_VCS_AUTH_TOKEN`: Enter the GitHub personal access token.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FBeuuZHWDmdYhYLUv67fL%252Fimage.png%3Falt%3Dmedia%26token%3D105d8622-3198-4a0a-8d3b-58b007846851&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=97ce191d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F8RMulIFIRncRl15xaTyG%252Fimage.png%3Falt%3Dmedia%26token%3D2c7c0348-d36b-4735-bd71-a1bce6e93ae1&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=af7acda8&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 13. Both parameters will appear in the configuration list.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FSRNGF61dVZRk7i0NAKmF%252Fimage.png%3Falt%3Dmedia%26token%3D59253385-e2da-4722-858a-1e10be9336d4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3913881d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### GitHub Branch Setup
 
 14. Create required branches in GitHub:
 
 * `dev` branch from `main`
-* `qa` branch from `dev`
+* `qa` branch from `dev`&#x20;
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fj81w9AKkxeukuAgcDW0O%252Fimage.png%3Falt%3Dmedia%26token%3D945f3453-9178-485f-a427-83faa5136fef&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e225c853&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ### Repository Cloning and Development in SAP
 
 1. Navigate to the **SAP gCTS** application.&#x20;
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FM75USqQltQDdOihNMs6A%252Fimage.png%3Falt%3Dmedia%26token%3D750fae6e-d043-4d1c-87a8-4e1a14ac2278&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a9cb8b1a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 2. Clone the ABAP system repository with the one created in **GitHub**.
-   * This creates a **local copy** of the GitHub repository in the SAP ABAP system.
-   * The **latest commits** from GitHub become visible in the local repository.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FkqnMwCty80Wwoxg9CnLn%252Fimage.png%3Falt%3Dmedia%26token%3D4bbaf4be-5202-4dc6-aef7-77e0c348778e&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7d186bb5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+* This creates a **local copy** of the GitHub repository in the SAP ABAP system.
+* The **latest commits** from GitHub become visible in the local repository.
 
-3. For every repository:
-   * The **default active branch** in SAP gCTS is `main`.
-   * Any changes made in SAP will be saved to this branch by default.
-   * Based on the requirement, the **active branch** can be changed (e.g., set to `dev` instead of `main`).
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F2xWMQbroP5cpqfmJYshT%252Fimage.png%3Falt%3Dmedia%26token%3D5790d03a-4312-4e90-b7cc-55a775eb8b6a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5867eff0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+2. For every repository:
+
+* The **default active branch** in SAP gCTS is `main`.
+* Any changes made in SAP will be saved to this branch by default.
+* Based on the requirement, the **active branch** can be changed (e.g., set to `dev` instead of `main`).
+
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 4. Create the **same package** in the SAP ABAP system as defined in the gCTS environment.
 
@@ -153,17 +149,18 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
    * Select the **transport layer** created during the repository creation in gCTS.
    * Click **Save**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F0peeJ3Pd038Tp4EFj2XW%252Fimage.png%3Falt%3Dmedia%26token%3D38e69e54-5080-4907-be98-9ed3ce8efe44&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=eadc4f0f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 6. The system prompts the user to **create a transport request**:
-   * Create a new transport request.
-   * Click **Save**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F6FMXTruRpRgoz5nepTny%252Fimage.png%3Falt%3Dmedia%26token%3D18f08248-c217-493a-b362-781722e54b9d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5a62752f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+* Create a new transport request.
+* Click **Save**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FNPeWoFDU8vibYoPRfxBW%252Fimage.png%3Falt%3Dmedia%26token%3Dd556152a-a76a-4b5b-ab4f-51d0e2d528fd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9f728610&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FzPA07j6GHwHhQY7f2jne%252Fimage.png%3Falt%3Dmedia%26token%3Db62f75e5-bc95-4ce2-a5ac-511ac65f9755&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=79b7f3e9&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 7. Now, **create a class** in the same package:
 
@@ -171,25 +168,25 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * Choose the appropriate package.
 * Click **Save**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fto94jXO0TuNtGAMYcP0c%252Fimage.png%3Falt%3Dmedia%26token%3D9d76f428-c8e7-4c17-816c-35f98a6c177b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b5f5a072&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FrnI4yzKuh1UeScqv0Tdh%252Fimage.png%3Falt%3Dmedia%26token%3Dcb0bfb9d-1cf5-4cc0-883a-29903a71d014&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=dfb5c706&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FWZzH3Lm18LXeh6MVDDK2%252Fimage.png%3Falt%3Dmedia%26token%3D6f34cff6-1321-4812-aac7-b080ff0648f8&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b44270ed&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 12. The system prompts to associate the class with a **transport request**:
+
     * Select the newly created transport request.
     * Save the changes.
     * Make required changes to the class.
     * Save and **activate** the objects.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FPuB2MCcaJ2Tulksrewtk%252Fimage.png%3Falt%3Dmedia%26token%3D271b22ab-6644-4548-b3ea-b2a76388bd40&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c62e44d3&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 13. **Release the task** associated with the transport request in use.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FtgxY9BHVl87WJ95MZnGq%252Fimage.png%3Falt%3Dmedia%26token%3D5d1477d4-940b-492b-9730-d19cbe54bea4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=37f2acea&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ### Integration of SAP gCTS with ReleaseOwl and GitHub
 
@@ -202,9 +199,9 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * Click **Get Systems** to fetch all systems available in the system landscape.
 * The newly created SAP system ID (e.g., **RKS**) will be listed.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FG9vjhmsRt9GWc13vO3Wd%252Fimage.png%3Falt%3Dmedia%26token%3D1089ccf4-b9d1-45d9-8988-916e3931a4ae&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=73d2f5c2&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-3. **Register** the **GITHub** credential in the **Credential** **Manager.**
+3. Register the **GITHub** credential in the **Credential** **Manager.**
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FaCbeaaBUpptnGJhwPIA4%252Fimage.png%3Falt%3Dmedia%26token%3Dbaebab00-fe4e-44b8-9994-f938e945c4cd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f97047e7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -212,19 +209,24 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 **Note: GITHub APIs** can be **accessed** only via **Personal Access Tokens** and **not** by **username** and **password.** For further information on the **Personal Access Tokens, please refer to the link -** [**https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token**](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)&#x20;
 {% endhint %}
 
-4. **Register** the **dev** **ABAP** **system** in **ReleaseOwl** as follows:&#x20;
+4. Register the **dev** **ABAP** **system** in **ReleaseOwl** as follows:&#x20;
 
 * Ensure to select the role as **Development**.
 * Choose the appropriate credential for each repository.
 * The SAP system should be the actual **Development system** (e.g., **S4D**) and **not** the gCTS Virtual System (e.g., **RKD**).
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FzqwBvOZ3ZR4d8sMOM47A%252Fimage.png%3Falt%3Dmedia%26token%3D8aed5cd2-c306-4af6-bfde-e3aa2c5c790e&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d825b726&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-5. Set up the **QA gCTS system** for transporting changes from Dev to QA:
-   * Login to **QA SAP gCTS** using SAP ABAP credentials.
+5.  Set up the **QA gCTS system** for transporting changes from Dev to QA:
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FwPsLlwbSx4lJLuud9FX4%252Fimage.png%3Falt%3Dmedia%26token%3Dd6ce15f9-895a-4ba8-be50-3d1675e5801e&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f6778890&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    * Set up the QA gCTS system to enable transport of changes from **Dev** to **QA**.&#x20;
+    * Log in to the QA SAP gCTS system using SAP ABAP credentials and follow the same configuration steps as performed for the Dev gCTS system.
 
+    <figure><img src="../../../.gitbook/assets/image (1317).png" alt=""><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="../../../.gitbook/assets/image (1316).png" alt=""><figcaption></figcaption></figure>
 6. Create a **repository** in QA with the **same name** as in Dev.
 
 * Fill in the required details accordingly.
@@ -236,41 +238,47 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 | **vSID**        | Enter the name of the virtual system that was created in the SAP gCTS **Dev** environment. |
 | **Role**        | Select **Provided**.                                                                       |
 | **Type**        | Select **GitHub**.                                                                         |
-| **Visibility**  | Select **Private**.                                                                        |
+| **Visibility**  | You can choose either one: **Public** or **Private**.                                      |
+
+<figure><img src="../../../.gitbook/assets/image (1315).png" alt=""><figcaption></figcaption></figure>
 
 7. Add two configuration parameters in QA as done in Dev:
-   * `CLIENT_VCS_AUTH_USER`
-   * `CLIENT_VCS_AUTH_TOKEN`
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FA5BrnOc34hS9zA1zb7Du%252Fimage.png%3Falt%3Dmedia%26token%3Dfd1ded6a-800e-41af-920b-78b7c02e5695&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e507c7e7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+* `CLIENT_VCS_AUTH_USER`
+* `CLIENT_VCS_AUTH_TOKEN`&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (1312).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1311).png" alt=""><figcaption></figcaption></figure>
 
 8. Clone the repository in **SAP gCTS (QA)** environment to the ABAP system.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FqjsNkpV0TSbULZcoxLlT%252Fimage.png%3Falt%3Dmedia%26token%3Dad1a306b-f3de-4b8b-b0b0-bd510a75fb99&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=34bfdb5e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1313).png" alt=""><figcaption></figcaption></figure>
 
 9. Switch the **active branch** from `main` to `qa`.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FIP5vqPYb3rCEgjhLQ7sJ%252Fimage.png%3Falt%3Dmedia%26token%3Dd5392215-f0b2-4a91-a3d4-1de59ffabb59&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3015da44&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1314).png" alt=""><figcaption></figcaption></figure>
 
 10. Register the same ABAP system in **ReleaseOwl** for QA:
-    * Login to ReleaseOwl and add a new ABAP system.
-    * Select the role as **Provided**.
-    * Choose the appropriate credential for each repository.
-    * The SAP system should be the actual **QA system** (e.g., **S4Q**) and **not** the gCTS Virtual System (e.g., **RKS**).
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F0p178r6fbo6KtSDDoG1U%252Fimage.png%3Falt%3Dmedia%26token%3Dec699e6e-227e-408b-b1dc-83a45dbd9f72&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e0489b76&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+* Login to ReleaseOwl and add a new ABAP system.
+* Select the role as **Provided**.
+* Choose the appropriate credential for each repository.
+* The SAP system should be the actual **QA system** (e.g., **S4Q**) and **not** the gCTS Virtual System (e.g., **RKS**).
 
-11. &#x20;Add the appropriate **SAP ABAP environment** to the active project in ReleaseOwl.
+<figure><img src="../../../.gitbook/assets/image (1318).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FcjwQmntxmDP5aeBZQWq6%252Fimage.png%3Falt%3Dmedia%26token%3D9ce63a3a-01d9-4839-be94-9664f1787ef7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=cb3b7332&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+11. Add the appropriate **SAP ABAP environment** to the active project in ReleaseOwl.
+
+<figure><img src="../../../.gitbook/assets/image (1319).png" alt=""><figcaption></figcaption></figure>
 
 12. Create a **User Story** in ReleaseOwl.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F4wAbeWqHcYC1iB1ynwZA%252Fimage.png%3Falt%3Dmedia%26token%3D838d4d74-18ac-4af8-978a-2845e54a1598&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3be179f4&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1320).png" alt=""><figcaption></figcaption></figure>
 
-13. **Add the transport request** to the user story and save the changes.
+13. Add the **Transport Request** to the user story and save the changes.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FCpJUBcr4fgIBxw2Mdpgo%252Fimage.png%3Falt%3Dmedia%26token%3D6eae6059-b318-4c27-b311-39e2400f4666&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f33fa082&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1321).png" alt=""><figcaption></figcaption></figure>
 
 14. **Release** the **transport** **request** from **ReleaseOwl**.
 

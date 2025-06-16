@@ -56,7 +56,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 1. Go to Settings in the Developer Console.
 2. Copy the Client ID and Client Secret for later use when registering Jira in the ReleaseOwl Dashboard.
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **7. Registering Jira in ReleaseOwl Dashboard**
 
@@ -68,7 +68,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to Administration, then select Credential Manager.
 3. Click on Register Credential.
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill out the credential form with the following details:
 
@@ -81,7 +81,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 
 5. Click **Save** to register the credential.
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **B. Registering Jira using Basic Authentication**
 
@@ -90,7 +90,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 1. Log in to your Jira account.
 2. Go to Account Settings, then select Security.
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on **Create and manage API tokens**.
 
@@ -238,9 +238,9 @@ To integrate user stories from Jira, follow these steps:
 2. In **Change Management**, select **User Stories** Menu
 3. Click the **Sync User stories** icon.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Once the sync is completed, you will get a pop up saying, **User Story Sync completed**.
 5. Click **Ok**.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>

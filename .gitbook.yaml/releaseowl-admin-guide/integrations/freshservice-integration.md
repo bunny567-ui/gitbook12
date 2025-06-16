@@ -83,7 +83,7 @@ To integrate user stories from Freshservice, follow these steps:
 4. Once the sync is completed, you will get a pop up saying, **User Story Sync completed**.
 5. Click **Ok**.
 
-<figure><img src="../../.gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** At the top right, there is a **"Sync History"** button. This button likely provides a log or history of all previous synchronization activities related to user stories.
