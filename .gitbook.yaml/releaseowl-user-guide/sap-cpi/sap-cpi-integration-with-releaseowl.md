@@ -505,6 +505,10 @@ The **CPI Import Settings** dialog, accessible from the **User Story Edit View**
 
 <figure><img src="../../.gitbook/assets/image (1332).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note :**  These settings empower deployment teams to handle complex CPI deployment scenarios such as partial rollouts, forced redeployments, or selective tenant targeting—without compromising consistency or governance policies.
+{% endhint %}
+
 **Promotion of User Story**
 
 * To promote the user story, click the three dots (Actions) and select Promote.

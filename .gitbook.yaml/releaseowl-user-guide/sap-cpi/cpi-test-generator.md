@@ -38,13 +38,12 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 ### **Generate Test Cases**
 
 1. In **CPI Test Generator**, click **Generate Test Cases**.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F8yLlkR6XHboK46DAqcA7%252Fimage.png%3Falt%3Dmedia%26token%3D61841da4-2042-4b84-89e7-3f7f35e9271f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f1098b09&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
 2. Select the **Artifact Name** for the iFlow.
 3. After the iFlow execution, go to the **ReleaseOwl Dashboard** and click **Fetch Activity Messages**.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FlP5HtpGquPXfLSisaDiz%252Fimage.png%3Falt%3Dmedia%26token%3Dfb894e82-71d8-4bfa-9734-a5c361f79552&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a79faf46&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+
 
 4. When you click on the **Test Case** button, ensure that special characters are not used in the CPI test case names.&#x20;
 

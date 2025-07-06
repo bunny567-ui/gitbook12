@@ -36,11 +36,11 @@ This document outlines the step-by-step process of registering SAP Datasphere wi
 
 1. In Environments, go to **SAP Datasphere**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FWkFs3jmXpWieYvN0tj1S%252Fimage.png%3Falt%3Dmedia%26token%3D9a93900c-197f-4428-8b0c-d2ac7a4122f9&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d42f8345&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1358).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **Register SAP Datasphere Environment**. The following screen is displayed:
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FlNVSBBPnxxhchH9jF9Fj%252Fimage.png%3Falt%3Dmedia%26token%3D38c504ad-185b-4a2d-b181-e976f43184cf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=78065561&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1359).png" alt=""><figcaption></figcaption></figure>
 
 3. **Fill in the required details:**
 
@@ -51,14 +51,14 @@ This document outlines the step-by-step process of registering SAP Datasphere wi
 
 4. Click **Save** to register the environment.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fs4FGREcgPUQ3btRpxTuw%252Fimage.png%3Falt%3Dmedia%26token%3D2a366412-12dd-4039-a64e-68a2cf1f06c8&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7b28694c&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1360).png" alt=""><figcaption></figcaption></figure>
 
 5. The registered environments are displayed.
 6. Click on the required environment to view the details.
 7. Click the **edit icon** to edit the registered SAC Environment.
 8. Click the **delete icon** to delete the required environment.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fob4rW5nGU4ydmZF1hzj5%252Fimage.png%3Falt%3Dmedia%26token%3D2e54e681-ef6c-4519-b5d0-ba2a2b18c8e7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=69251e71&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1361).png" alt=""><figcaption></figcaption></figure>
 
 ### **Adding SAP Datasphere to the Project:** <a href="#pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project" id="pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project"></a>
 
