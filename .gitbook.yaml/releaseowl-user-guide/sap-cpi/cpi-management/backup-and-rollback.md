@@ -8,6 +8,7 @@ The **Enable Rollback** option is one of the key **Deployment Actions** that can
 * To use rollback during a release pipeline, you must **enable rollback while creating the pipeline**.
 * During pipeline execution, you can initiate rollback by clicking the **Rollback** option in the deployment screen.
 * Detailed deployment information, including rollback status, is available in the associated **deployment task**.
+* Rollback logs in the **Pipeline Activity** section appear only when a rollback is triggered, reducing clutter in the pipeline history.
 
 ### **How to Enable Rollback:**
 
@@ -39,3 +40,7 @@ The **Enable Rollback** option is one of the key **Deployment Actions** that can
 * Once rollback is triggered, the **rollback status and details** will be visible in the **deployment logs**, providing transparency into the rollback process and outcomes.
 
 <figure><img src="../../../.gitbook/assets/image (1074).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note :** Rollback logs in the Pipeline Activity section are now dynamically displayed only when a rollback is actually triggered.
+{% endhint %}

@@ -15,3 +15,12 @@ Fill in the required details:
 
 <figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
+
+
+
+
+<figure><img src="../../../.gitbook/assets/image (1337).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note :** During activation status validation, the system reads the **gCTS logs** to identify the **STMS transport request** associated with the activation. If the logs do **not** contain a reference to a gCTS transport request, it is **not possible to conclusively determine** whether the commit changes were imported via STMS.
+{% endhint %}

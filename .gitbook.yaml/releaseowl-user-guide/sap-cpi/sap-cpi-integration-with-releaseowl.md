@@ -355,7 +355,7 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FBNGQqBvJpmRLkGVzkx7M%252Fimage.png%3Falt%3Dmedia%26token%3D081d0983-b4a0-47fd-a432-1d12da109b45&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9e4788de&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-A pop-up screen will display the sync history. Use the Refresh button to update the sync status and view the latest details. Click Close when done.
+* A pop-up screen will display the sync history. Use the Refresh button to update the sync status and view the latest details. Click Close when done.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FxR53HIUnszNwQpGhGb1a%252Fimage.png%3Falt%3Dmedia%26token%3D63951d9a-ab11-4c12-8d36-aecaa4479eeb&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=815929b6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -491,11 +491,27 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FPcITB55xOHIa1iAxWnyl%252Fimage.png%3Falt%3Dmedia%26token%3D9e314683-38d7-43d2-9bc7-4f113664ef35&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4d69f1a7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
+#### Import Settings
+
+The **CPI Import Settings** dialog, accessible from the **User Story Edit View** under the **CPI Artifacts** section, enables users to configure deployment settings for each target CPI environment. It allows selective activation of the **Force Deploy** option, which permits redeployment of artifact versions when necessary.
+
+* Click the **“...”** next to a CPI artifact and select **“CPI Import Settings.”**
+
+<figure><img src="../../.gitbook/assets/image (1333).png" alt=""><figcaption></figcaption></figure>
+
+* In the popup, you’ll see a list of available **target environments**.
+* Check the **Force Deploy** box if you want to allow redeployment of CPI artifacts.
+* Click **Save**.
+
+<figure><img src="../../.gitbook/assets/image (1332).png" alt=""><figcaption></figcaption></figure>
+
+**Promotion of User Story**
+
 * To promote the user story, click the three dots (Actions) and select Promote.
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F1EFquacxP4WyuxUXUCZF%252Fimage.png%3Falt%3Dmedia%26token%3D18776298-676d-4d55-b0b0-1ba192953b3b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c4368f77&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-You can view the **Deploy Logs** under the **SAP CPI Deploy Logs** window after promoting the user story.
+* You can view the **Deploy Logs** under the **SAP CPI Deploy Logs** window after promoting the user story.
 
 <figure><img src="../../.gitbook/assets/image (1022).png" alt=""><figcaption></figcaption></figure>
 
@@ -506,7 +522,7 @@ You can view the **Deploy Logs** under the **SAP CPI Deploy Logs** window after 
 
 <figure><img src="../../.gitbook/assets/image (1069).png" alt=""><figcaption></figcaption></figure>
 
-* **Manual Completion:** If a deployment fails or times out, users can use the **Manual Completion** option in ReleaseOwl to resolve the issue manually and continue the pipeline execution.
+* **Manual Completion:** If a deployment, configuration, or upload fails or times out, users can use the **Manual Completion** option to resolve the issue manually and continue the pipeline execution.
 
 <figure><img src="../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>
 

@@ -20,9 +20,9 @@ Before setting up the UI5 ABAP build pipeline in ReleaseOwl, ensure the followin
 
 1. Log in to **ReleaseOwl**.
 2. In the left-side navigation panel, go to **Build** and then select the **Build Pipelines**.
-3. Click on **Create New Build Pipeline**
+3. Click on **Create New Build Pipeline.**
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FmK0PW2vwN6enjypO58id%252Fimage.png%3Falt%3Dmedia%26token%3D2a8b4e49-9c7d-4261-888b-ddc9a9f12458&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4f5a8962&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
 
 #### **Step 2: Define Pipeline Details**
 

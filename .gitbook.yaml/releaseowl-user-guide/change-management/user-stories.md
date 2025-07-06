@@ -24,6 +24,12 @@ b) Always ensure to **sync the Sprints first** before syncing the User Stories.
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note : Column widths** for **User Story ID, Status, Type, and Assigned To** now auto-adjust based on content.
+
+* **Summary** and **Pipeline Status** columns have a fixed maximum width, capped at **20% of the table**.
+{% endhint %}
+
 ### Creating User Stories Without ALM Integration
 
 To create user stories manually for systems not integrated through ALM , follow these steps:

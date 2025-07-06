@@ -40,7 +40,7 @@
    * Enter the required details in the form.
 4. Click **Save** to create the project.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FiNc7EpUgYqLEXu9klmAH%252Fimage.png%3Falt%3Dmedia%26token%3D7c78e385-e4c7-4b4b-b46f-7dfd90c6fffa&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9e9e4993&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1326).png" alt=""><figcaption></figcaption></figure>
 
 ### **Environment Section** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-environment-section" id="pdf-page-gq2jqh5hz5sfguou1udk-environment-section"></a>
 
@@ -52,27 +52,27 @@
 6. If this environment will serve as the source for deployments or synchronization, check the **Source** checkbox.
 7. The newly added environment will appear in the **Environments** table with its **Name, Type, and Host URL**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FNMVWnATkmG60IB12U59B%252Fimage.png%3Falt%3Dmedia%26token%3D4c10b5ba-111d-4c09-89a3-4ca9d63dfffd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9469559b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1327).png" alt=""><figcaption></figcaption></figure>
 
 ### Managing User Permissions <a href="#pdf-page-gq2jqh5hz5sfguou1udk-managing-user-permissions" id="pdf-page-gq2jqh5hz5sfguou1udk-managing-user-permissions"></a>
 
 1. Click on the **Users** tab.
 2. Click on the **edit (lock) icon** next to the user for whom you want to manage roles and permissions.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FGicwuJGYnjRXVwGhx0iw%252Fimage.png%3Falt%3Dmedia%26token%3Df13b964f-c9d7-4f09-96e2-1f43351a489b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9b867037&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1328).png" alt=""><figcaption></figcaption></figure>
 
 3. The **Permissions** page for the selected user will open.
 4. Scroll down to the **Environments** section.
 5. Check the **Deploy** checkbox for the relevant environment(s) to enable deploy access.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F9Qr27CHz3jVl6fYzalV3%252Fimage.png%3Falt%3Dmedia%26token%3Ddc3a9f97-6966-4819-9e5f-4f4513e04914&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=dc3c4008&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1329).png" alt=""><figcaption></figcaption></figure>
 
 ### Synchronization with ReleaseOwl <a href="#pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl" id="pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl"></a>
 
 1. Go to the **Build** section and click on **Integration Advisor**.
 2. Click on the **Synchronize** button to sync the integration artifacts.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FmFpuaBpGStdno4xQiDy2%252Fimage.png%3Falt%3Dmedia%26token%3Dc59963be-2177-4df3-b493-26783c2ad838&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4f9fa7a2&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1330).png" alt=""><figcaption></figcaption></figure>
 
 3. The **Sync History** provides details of previous synchronizations, including:
 

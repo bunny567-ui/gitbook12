@@ -23,25 +23,38 @@ To add or remove dependent user stories:
 
 <figure><img src="../../.gitbook/assets/image (1303).png" alt=""><figcaption></figcaption></figure>
 
-2. Click the **+ Add** button to add dependencies.
+2. Use the dropdown to select either **Depends On** or **Dependent On**, based on the type of relationship you want to define.
 
-<figure><img src="../../.gitbook/assets/image (1304).png" alt=""><figcaption></figcaption></figure>
+* **Depends On** – if the current user story depends on others.
+* **Depended On** – if other user stories depend on the current one.
 
-3. Select the required **project** and **active sprint**.
+<figure><img src="../../.gitbook/assets/image (1334).png" alt=""><figcaption></figcaption></figure>
+
+3. Click the **+ Add** button.
+
+<figure><img src="../../.gitbook/assets/image (1335).png" alt=""><figcaption></figcaption></figure>
+
+4. Select the required **project** and **active sprint**.
 
 <figure><img src="../../.gitbook/assets/image (1305).png" alt=""><figcaption></figcaption></figure>
 
-4. Check the checkbox next to the user story ID(s) you want to add as dependencies.
+5. Check the checkbox next to the user story ID(s) you want to add as dependencies.
 
 <figure><img src="../../.gitbook/assets/image (1306).png" alt=""><figcaption></figcaption></figure>
 
-5. &#x20;Click **Add** to confirm the selection.
+6. Click **Add** to confirm the selection.
 
 <figure><img src="../../.gitbook/assets/image (1307).png" alt=""><figcaption></figcaption></figure>
 
-6. Click the **Save** button to apply the changes.
+7. Click the **Save** button to apply the changes.
 
 <figure><img src="../../.gitbook/assets/image (1308).png" alt=""><figcaption></figcaption></figure>
+
+8. When you select **Depended On**, the system displays a list of user stories that are directly dependent on the current one.
+
+<figure><img src="../../.gitbook/assets/image (1336).png" alt=""><figcaption></figcaption></figure>
+
+
 
 {% hint style="info" %}
 **Note:** Dependencies cannot be added to user stories that are in _In-Progress_ status.
