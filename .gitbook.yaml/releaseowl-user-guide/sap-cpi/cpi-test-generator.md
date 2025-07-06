@@ -33,9 +33,6 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 
 * In **SAP BTP Cockpit**, go to **Integration and APIs** and select the **iFlow** you want to test.
 * Navigate to **Artifact Details** and change the **Log Level** to **Trace** to track detailed logs during testing.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FIGqzj18WKSM2Z0XgM176%252Fimage.png%3Falt%3Dmedia%26token%3Dcb71fc06-6dec-45c6-95ab-0d1122a2dda8&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8fbcbc53&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
 * Trigger the iFlow with the expected input using **Postman** or another tool.
 
 ### **Generate Test Cases**
