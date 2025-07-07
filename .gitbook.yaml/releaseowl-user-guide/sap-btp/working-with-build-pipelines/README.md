@@ -1,6 +1,6 @@
 # Working with Build Pipelines
 
-### **Build** <a href="#pdf-page-hbalethepy3zsklyalpx-build" id="pdf-page-hbalethepy3zsklyalpx-build"></a>
+**Build**
 
 The Build section in ReleaseOwl enables developers to create MTAR artifacts and validate changes thoroughly for early feedback.
 
@@ -158,36 +158,35 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * Navigate to the **Build Pipelines** section and click on **Create Build Pipeline**.
     * Enter the **Build Pipeline Name** and assign **Labels** for filtering.
 
+    <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+2. **Repository Configuration**
 
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FF5v1mEe1No66rVLiPMOf%252Fimage.png%3Falt%3Dmedia%26token%3De97ad56e-ae3b-48e1-abfc-927225de2a2f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4cef185e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-2.  **Repository Configuration**
+* Enter the **Repository URL** (e.g., Bitbucket or other platforms).
+* Select the **SCM Credentials** from the drop-down menu.
+* Choose the branch (e.g., QA, Master, or Dev).
+* Select the type of version control system (e.g., GitHub, GitLab, Bitbucket).
 
-    * Enter the **Repository URL** (e.g., Bitbucket or other platforms).
-    * Select the **SCM Credentials** from the drop-down menu.
-    * Choose the branch (e.g., QA, Master, or Dev).
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
+3. **Builder Section**
 
+* **Build Type**: Automatically populated.
+* **Build Tool Version**: Select the required version.
+* **Max # of Builds to Keep**: Set to 30 to store the latest versions and avoid storage issues in Jenkins.
 
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FzEKr9QfbG5WHz4zvZSMR%252Fimage.png%3Falt%3Dmedia%26token%3D678ea5b8-a0d6-43b8-b5fa-d3f9c04fc45e&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8cbde49d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-3.  **Builder Section**
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-    * **Build Type**: Automatically populated.
-    * **Build Tool Version**: Select the required version.
-    * **Max # of Builds to Keep**: Set to 30 to store the latest versions and avoid storage issues in Jenkins.
-
-
-
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FiS5tNKbj5qCUXoQ3t5zQ%252Fimage.png%3Falt%3Dmedia%26token%3D7df782b3-554f-4f92-9da8-ae6a316ba235&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5f920f5b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 4. **Scheduler**
-   * Choose from **Manual**, **Schedule**, or **Webhook** options.
-5.  **Notification Emails**
 
-    * Enter email addresses to receive notifications.
+* Choose from **Manual**, **Schedule**, or **Webhook** options.
 
+5. **Notification Emails**
 
+* Enter email addresses to receive notifications.
 
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fzwu6OAkLwVmvX3StsVMt%252Fimage.png%3Falt%3Dmedia%26token%3D9c498313-0708-4e03-af11-5d5e950e24ce&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2a52ac5b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ### **Tool Integrations** <a href="#pdf-page-hbalethepy3zsklyalpx-tool-integrations" id="pdf-page-hbalethepy3zsklyalpx-tool-integrations"></a>
 
@@ -208,9 +207,7 @@ The purpose of a malware scan is to scan business documents for any potential th
     * Open the **Administration** section of the application.
     * Click **Register Credential** to create a new credential entry.
 
-
-
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FYcvgrCOeUJS9h0KRBIe7%252Fimage.png%3Falt%3Dmedia%26token%3Db89a4213-be0d-4674-afcc-72a58bfcdeea&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=469bdfe7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 2.  **Enter the Required Details**
 
     * **Credential Name**: Provide a meaningful name, such as "**Malware Scanner.**"
@@ -218,7 +215,7 @@ The purpose of a malware scan is to scan business documents for any potential th
 
 
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     *   **Obtain Credentials**:
 
@@ -226,7 +223,7 @@ The purpose of a malware scan is to scan business documents for any potential th
         * Navigate to **Services** and open the **Service Marketplace**.
         * Search for "**Malware**" and click **Create** to create an instance.
 
-        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -235,15 +232,15 @@ The purpose of a malware scan is to scan business documents for any potential th
 
 
 
-        <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FR9XmVCIu5Kx9lcATvlAs%252Fimage.png%3Falt%3Dmedia%26token%3Dcd1f7f9e-bbcd-4cf3-ae37-bb05338f8b0a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7198401a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FR9XmVCIu5Kx9lcATvlAs%252Fimage.png%3Falt%3Dmedia%26token%3Dcd1f7f9e-bbcd-4cf3-ae37-bb05338f8b0a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7198401a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 3.  **Save the Credentials**
 
     * Paste the copied details into the **Credential Manager**.
     * Click **Save** to register the credentials successfully.
 
-
-
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FTt9xRZre9iGTFfGKFjXD%252Fimage.png%3Falt%3Dmedia%26token%3D68d6b932-2a4d-4fc6-b9e7-9aabf7be17ca&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3f40916f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Configure the Malware Scan in the Build Pipeline**
 
@@ -251,23 +248,14 @@ The purpose of a malware scan is to scan business documents for any potential th
 
     * Ensure the **Malware Scan** option is available in the **Tool Integration** stage.
     * Check the **Malware** box to enable the scan.
-
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-
     * Select the **Registered Credential** from the dropdown menu.
     * Specify the timeout duration for the malware scan.
 
-
-
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fn9O2gzbqzigxuMOASY49%252Fimage.png%3Falt%3Dmedia%26token%3Da0dbe109-3b25-4831-8f6e-29fc0d4e1eab&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4323e4ac&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Save** to finalize the configuration.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FkSSgCnlu2JjS4UhgLp1E%252Fimage.png%3Falt%3Dmedia%26token%3Dde4a35ce-9fd7-4d9f-8b8f-d079012a9ed0&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=296ecb0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Execute the Malware Scan**
 
@@ -275,9 +263,7 @@ The purpose of a malware scan is to scan business documents for any potential th
 
     * Click on the **Build Now** button in the **Build Pipeline** to start the process.
 
-
-
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FQHV8nViH4JYsx5wqoUI8%252Fimage.png%3Falt%3Dmedia%26token%3Dbdedafd6-6f20-4d67-9c22-6935584548fa&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1a6dd8c1&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 2. **View the Malware Scan Results**
    * Once the pipeline runs, click the arrow button next to the malware scan stage to view the results.
    *   Review the malware scan results, including:
@@ -286,14 +272,13 @@ The purpose of a malware scan is to scan business documents for any potential th
        * **Timestamp**: Shows when the scan was performed.
        * **Duration**: Displays how long the scan took to complete.
 
+       <figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+3.  **Review the Malware Report**
 
+    * Access the **Build Log** section for a detailed malware scan report.
+    * If malware is detected, the log will indicate that the malware status is "**true**."
 
-       <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FfwVz4AK7UOLRK5HuOues%252Fimage.png%3Falt%3Dmedia%26token%3D6a05f223-fe6d-44d8-b59a-6c4cd4e8e388&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c4bfda5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-3. **Review the Malware Report**
-   * Access the **Build Log** section for a detailed malware scan report.
-   * If malware is detected, the log will indicate that the malware status is "**true**."
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FkQlvXj5UKRor9ljZqQK7%252Fimage.png%3Falt%3Dmedia%26token%3Dabb6da3a-9056-4502-977d-d786c73b6591&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a8fa2306&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 **CVE Scan for Vulnerabilities**
 
@@ -303,19 +288,23 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
 
 **Steps to Enable CVE Scan**
 
-1. **Enable the SAP CVE Scan Option**
-   * Go to the **Tool Integration** section.
-   * Enable the option for **SAP CVE Scan**.
-   * Click **Save** to apply the changes.
-2. **Configure CVE Settings**
-   * In the **Project Settings**, go to the **CVE** section.
-   * Enter the necessary details:
-     * **CVE ID**: Enter the CVE ID (e.g., CVE-2023-50422) associated with the vulnerability.
-     * **Library Name**: Specify the name of the affected library.
-     * **Versions**: Provide the version(s) of the library that are vulnerable.
-   * Click **Save** to ensure the scan is correctly set up.
+1.  **Enable the SAP CVE Scan Option**
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FMKDZDVDWK1P4sIBIPyEN%252Fimage.png%3Falt%3Dmedia%26token%3Da20f7990-659c-4278-a048-aa5f991e7ee5&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1a0ee7bc&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    * Go to the **Tool Integration** section.
+    * Enable the option for **SAP CVE Scan**.
+    * Click **Save** to apply the changes.
+
+    <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+2.  **Configure CVE Settings**
+
+    * In the **Project Settings**, go to the **CVE** section.
+    * Enter the necessary details:
+      * **CVE ID**: Enter the CVE ID (e.g., CVE-2023-50422) associated with the vulnerability.
+      * **Library Name**: Specify the name of the affected library.
+      * **Versions**: Provide the version(s) of the library that are vulnerable.
+    * Click **Save** to ensure the scan is correctly set up.
+
+    <figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 #### **Running the Build Pipeline** <a href="#pdf-page-hbalethepy3zsklyalpx-running-the-build-pipeline" id="pdf-page-hbalethepy3zsklyalpx-running-the-build-pipeline"></a>
 
@@ -324,24 +313,22 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
     * Click on the **Save** button to create the build pipeline.
     * Click on the **Build** button to run the pipeline.
 
-
-
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FKre6hfASy7oJXwu3joNV%252Fimage.png%3Falt%3Dmedia%26token%3D765a774a-849d-4995-89e9-b61fcf8ff1e0&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9808fa2c&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 2.  **View the Results**
 
     * Once the pipeline runs, click the arrow button next to it to view the results.
 
+    <figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+3.  **Pipeline Status**
+
+    * The results display the status of various stages such as **Build** and **Prepare**.
+    *   Key details include:
+
+        * **Status**: Indicates whether the result was successful or failed.
+        * **Timestamp**: Shows the date and time the stage was performed.
+        * **Duration**: Displays the time taken to complete the stage.
+
+        <figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FGJ5q5ECNSVpNq6H3zsSb%252Fimage.png%3Falt%3Dmedia%26token%3D716e6bf8-dd78-4aa0-9a52-d3daed52b69a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=bcfdbd6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-3. **Pipeline Status**
-   * The results display the status of various stages such as **Build** and **Prepare**.
-   *   Key details include:
 
-       * **Status**: Indicates whether the result was successful or failed.
-       * **Timestamp**: Shows the date and time the stage was performed.
-       * **Duration**: Displays the time taken to complete the stage.
-
-
-
-       <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FzBTW8fvUlVpabc9lKF48%252Fimage.png%3Falt%3Dmedia%26token%3Db61b890a-02b4-421b-9eff-71ed133ccdbe&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c7bf78ff&#x26;sv=2" alt=""><figcaption></figcaption></figure>

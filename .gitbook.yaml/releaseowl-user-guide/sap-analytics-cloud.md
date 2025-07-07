@@ -7,7 +7,7 @@ SAP Analytics Cloud (SAC) is a cloud-based business intelligence (BI) and analyt
 1. Admin users can switch to the **Administration View** to access the **Credential Manager**.
 2. Click the **Credential Manager** menu option on the left-hand pane to view the list of registered credentials.
 
-<figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. To add a new credential, click **Register Credential** available on the right-hand panel, and then click on the **Register Credential** button.
 
@@ -24,13 +24,20 @@ SAP Analytics Cloud (SAC) is a cloud-based business intelligence (BI) and analyt
 
 * Go to your **SAP Analytics Cloud** and navigate to **Administration**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F2okCpMHUTCsZOGZbwhQO%252Fimage.png%3Falt%3Dmedia%26token%3D5078708e-cf32-4a76-b194-f3367ceb7551&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d188fc4f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-* Click on **App Information** for the **OAuth Clients**.
-* Click on **Add a New OAuth Client**.
+* Click on **App Integration** for the **OAuth Clients**.
+* Click on **Add an OAuth Client**.
+
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+
 * Copy the **Client ID, Secret, Token URL,** and **Authorization URL**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FvLLr3pcVhbXcWFQa2GDY%252Fimage.png%3Falt%3Dmedia%26token%3D9f659b5e-52e5-4c6b-a4ba-2652c27fd886&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2cf3fe80&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 ### **To Register SAC Environment:** <a href="#pdf-page-gxe94pcl07aymb35lkd4-to-register-sac-environment" id="pdf-page-gxe94pcl07aymb35lkd4-to-register-sac-environment"></a>
 
@@ -127,7 +134,7 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 * Click the **Actions** button and select **Import Settings** to view package details.
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Each package has different import settings, and you need to configure the import settings for the required package.
 
@@ -138,7 +145,7 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 * Navigate to the **Change Management** section.
 * Go to **User Stories**, click on the **Actions** button, and select **Edit**.
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the **+Add** button to add **SAC Packages**.
 * Click on the **Save** button.
@@ -156,11 +163,11 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 * Click on the **Pipeline Activity** to view the deployment status.
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **"Deploy Log"** button to open a pop-up window displaying deployment details.
 
-<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

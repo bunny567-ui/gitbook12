@@ -48,7 +48,7 @@ Lists all registered users along with the following details:
 
 o   **User Type**: Specifies whether the user is an **Admin** or **Standard User**.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create User
 

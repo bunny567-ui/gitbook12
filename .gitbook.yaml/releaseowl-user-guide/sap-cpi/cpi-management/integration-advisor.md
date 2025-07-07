@@ -19,7 +19,7 @@
    * **Custom SOA Messages**
 6. Enter the required details and save the configuration.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F4jQm2pQVZonuKCc9mWeb%252Fimage.png%3Falt%3Dmedia%26token%3D6ab8b264-ff50-4da4-85e5-6802faaf7b76&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ac6dc6ca&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating MIG and MAG in Integration Advisor** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-creating-mig-and-mag-in-integration-advisor" id="pdf-page-gq2jqh5hz5sfguou1udk-creating-mig-and-mag-in-integration-advisor"></a>
 
@@ -72,21 +72,21 @@
 1. Go to the **Build** section and click on **Integration Advisor**.
 2. Click on the **Synchronize** button to sync the integration artifacts.
 
-<figure><img src="../../../.gitbook/assets/image (1330).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
 3. The **Sync History** provides details of previous synchronizations, including:
 
 * **Synced On** – Timestamp of synchronization.
 * **Synced By** – User who performed the synchronization.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FFPvPAoAw6OcveTuQ8WQi%252Fimage.png%3Falt%3Dmedia%26token%3D052ffbab-3df3-4b30-bf23-60ffd53adf20&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1331cc1d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
 4. By clicking the **Action** button, you can view:
 
 * **Versions**: Displays previous versions, allowing you to roll back changes if needed.
 * **Details**: Provides additional information about the artifact.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FTD7R4MPSlL5jO1o4hqYD%252Fimage.png%3Falt%3Dmedia%26token%3D4dec8a50-c84d-4032-a537-156bc131bdff&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=10c0f343&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating and Managing a Release Pipeline** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-creating-and-managing-a-release-pipeline" id="pdf-page-gq2jqh5hz5sfguou1udk-creating-and-managing-a-release-pipeline"></a>
 
@@ -112,7 +112,7 @@
 4. Once all required details are entered, **save** the pipeline.
 5. _(Optional)_ Configure **Notification Emails** to notify relevant users.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FaOUCd2mJzY9qdUkCWpih%252Fimage.png%3Falt%3Dmedia%26token%3D064efdb7-b814-4220-9a12-693a3880bda1&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4ce95ce1&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
 **3. Setting Up Approval Tasks**
 
@@ -126,7 +126,7 @@
      * **Story Assignee:** Assign to the person responsible for the user story.
 3. Once configured, **save** the pipeline.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fd5eqDRNGEwNyduLR488w%252Fimage.png%3Falt%3Dmedia%26token%3Dc9991fd5-208d-4f2c-b023-1ed642800725&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=db745875&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 **4. Assigning Artifacts to User Stories**
 
@@ -134,20 +134,26 @@
 2. Click **Create New User Story**, fill in the required details, and save it.
 3. Click on the **Action** button, select **Edit**, and add the **integration artifacts**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FkLlWHDONOgwBpiDtKCnY%252Fimage.png%3Falt%3Dmedia%26token%3D103cb251-78c0-48bd-b818-1e61e7a31343&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3c3f9b36&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 4. Click **Save** to update the user story.
 5. Click **Promote** to check the **deployment status** of the user story.
 6. Click **Deploy Logs** to view deployment details.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FQONwRnh04PDIdvuFhuNt%252Fimage.png%3Falt%3Dmedia%26token%3Df0c4cd0e-098b-4ba5-b639-d092338aaeb7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e364beeb&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 7. In the **Info Section**, you can see **artifact details**:
 
 * **For MAG:**  You can see the details of Message type and administrative data.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FWWwAmMIsMhIoQQ8WTmbp%252Fimage.png%3Falt%3Dmedia%26token%3D8d155c19-ae3a-48e3-a3b1-fb1c3c809645&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=efb81760&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
 * **For MIG:** You can see the details of Source MIG, Target MIG, and administrative data.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FxBEPO7qRLrbcGHwY8Bx2%252Fimage.png%3Falt%3Dmedia%26token%3Db10c1192-3e78-47e0-963d-b61649da4ba5&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=eaaccd39&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>

@@ -18,7 +18,7 @@ Fill in the required details:
 | **Forward Merge**          | Automatically propagates merged changes according to system landscape hierarchy (e.g., dev → QA → preprod → prod).                                         |
 | **Description**            | Any message that is to be conveyed  to the task performer can be mentioned here.                                                                           |
 
-<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** If you are moving from dev to prod directly without going through quality, you don't need to check the forward merge.

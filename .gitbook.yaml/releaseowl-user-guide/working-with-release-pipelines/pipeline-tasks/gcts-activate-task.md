@@ -13,7 +13,7 @@ Fill in the required details:
 | **GCTS Repository**  | Choose the appropriate Git repository that contains the changes to be activated.                             |
 | **Description**      | Any message that is to be conveyed  to the task performer can be mentioned here.                             |
 
-<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
 **gCTS Activation Status Validation**&#x20;
 

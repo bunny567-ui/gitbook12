@@ -68,7 +68,7 @@ The credential will now be available to access your **Transport Domain Controlle
 * Select **Transport Domain Controller**.
 * Click **"Register Transport Domain Controller"** to begin registration.
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Enter Transport Domain Controller Settings:**&#x20;
 
@@ -153,7 +153,7 @@ The **System Landscape** section allows you to define multiple systems within th
 
 The newly created Transport Domain Controller gets displayed in the Transport Domain Controller screen.
 
-<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** Create Transport Domain Controller in ReleaseOwl as per the destination created for all the dev Environment.

@@ -13,4 +13,4 @@ This task is used when a branch associated to the system needs to be changed to 
 | **GCTS Repository**  | Choose the appropriate Git repository for which the switching of branches or configurations is to be done. |
 | **Description**      | Any message that is to be conveyed  to the task performer can be mentioned here.                           |
 
-<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>

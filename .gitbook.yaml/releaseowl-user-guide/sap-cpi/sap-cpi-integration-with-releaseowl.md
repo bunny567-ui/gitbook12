@@ -314,25 +314,25 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 
 3\. The following screen is displayed.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Click  +**Add button** to add a new environment in ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6\. The environment is added to the corresponding project in ReleaseOwl.
 
 7\. Click **Permissions** (under **Users** tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Permissions**. The roles that are assigned to the selected user are seen.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** On clicking Permissions in the above screen, one can know the actions that the user role can perform each for the available features such as Transport Management, Change Management, Pipelines, Release Management.
@@ -345,7 +345,7 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 * Switch to the Project view.
 * Click on SAP CPI Management in the Build section.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FDY8532JKy97FEAWNGPfE%252Fimage.png%3Falt%3Dmedia%26token%3D00cb54fa-b689-44c4-8a5c-b18fcd32a372&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=dfb3b10c&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 **2. Add and Sync Packages:**
 
@@ -353,22 +353,25 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 * **Select Package:** Use the search bar to find a package, then check the box next to the desired package(s).
 * **Sync Package:** Click Sync to add and synchronize the selected package(s).
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FBNGQqBvJpmRLkGVzkx7M%252Fimage.png%3Falt%3Dmedia%26token%3D081d0983-b4a0-47fd-a432-1d12da109b45&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9e4788de&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 * A pop-up screen will display the sync history. Use the Refresh button to update the sync status and view the latest details. Click Close when done.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FxR53HIUnszNwQpGhGb1a%252Fimage.png%3Falt%3Dmedia%26token%3D63951d9a-ab11-4c12-8d36-aecaa4479eeb&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=815929b6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 **3. Configure Artifacts:**
 
 * Click the arrow next to the package name.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F4ZoUhbOgzp6AfiRbV5bC%252Fimage.png%3Falt%3Dmedia%26token%3D479e8317-51ac-48b5-8ad6-ade48805d128&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c753ab50&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 * In the "**Artifacts**" list, click the three dots in the "**Actions**" column for the desired artifact.
+
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+
 * Select "**Configure**" from the list.&#x20;
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FlbZM9a8r4g2vTGwlhBOq%252Fimage.png%3Falt%3Dmedia%26token%3Da9355e5e-b1d2-41d0-8761-ed0577d87228&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=11f2a353&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 **4. Save Changes:**
 
@@ -376,25 +379,28 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 * **Save:** Update the existing artifact directly.
 * **Save as Artifact**: Create a new version of the artifact with the modified values.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FLHWBcEw5gF3LF8PUl8wb%252Fimage.png%3Falt%3Dmedia%26token%3D338402a3-8ef4-4009-bc8d-f36a8ddb0bf5&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=464c2fdd&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 * After selecting "**Save as Artifact**", a new artifact is created with the updated values.
 * To view more details about the new artifact, click the three dots (Actions) next to it.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FLY2gyFZQ4zxQSdQYgSBD%252Fimage.png%3Falt%3Dmedia%26token%3D5ad8a9b2-8307-492e-a565-068daefe35b4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a36fc8b8&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
-* Click on **Edit Configuration** to open the artifact configuration.&#x20;
+* Click on **Edit Configuration** to open the artifact configuration.
+
+<figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+
 * Verify or modify the updated values by clicking on the **pencil icon** (Modify Values button), then click the **Save** button to apply the changes.
 
-<figure><img src="../../.gitbook/assets/image (1078).png" alt=""><figcaption></figcaption></figure>
-
-* A newly created artifact will be displayed with its specified name and the associated configuration settings.
-
-<figure><img src="../../.gitbook/assets/image (1080).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 * Editing **timer configuration parameters** (such as start time, recurrence, etc.) is **not supported** directly from ReleaseOwl.
 
 <figure><img src="../../.gitbook/assets/image (1021).png" alt=""><figcaption></figcaption></figure>
+
+* A newly created artifact will be displayed with its specified name and the associated configuration settings.
+
+<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 ### Creating a Release Pipeline <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
@@ -418,20 +424,16 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 **2. Add Deployment Tasks:**
 
 * Click the **Add button** in a task stage to include deployment tasks.
-*   Fill in the required details:
+* Fill in the required details:
+  * **Name:** Enter a preferred name for the deployment task.
+  * **Deploy Type:** Select the type of deployment.
+  * **Select CPI Environment:** Select the target CPI environment where the deployment will take place.
+  *   **Deployment Action:** Choose between:
 
-    * **Name:** Enter a preferred name for the deployment task.
-    * **Deploy Type:** Select the type of deployment.
-    * **Select CPI Environment:** Select the target CPI environment where the deployment will take place.
-    * **Deployment Action:** Choose between:
       * **Upload Only:** Uploads the deployment package without executing the deployment.
       * **Upload and Deploy:** Uploads the deployment package and executes the deployment.
 
-
-
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F0cCugnYu2HHv1bBf3XwA%252Fimage.png%3Falt%3Dmedia%26token%3D28a6b6e7-163f-457b-8619-c9aa2a260498&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f952c3b7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-
+      <figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 * **Notify Users:**  Sends a notification to selected users **when the  task is created** or **when pipeline execution reaches this stage**
 * **Notify Promotion User:** Sends a notification to the **user who promoted** the artifact or initiated the deployment to this stage.
 * **Notify  to Button :**  It has three options — **User**, **Role**, and **Custom** — to specify the recipients of the notification based on individual users, assigned roles, or custom groups.
@@ -442,54 +444,58 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 | **Role**   | Sends the notification to all users who belong to a specific predefined role (such as Developer, Tester, Release Manager). Every user in the role will receive the notification. |
 | **Custom** | Sends the notification based on a custom mapping between components and roles. Different components can notify different roles, depending on your configuration.                 |
 
-<figure><img src="../../.gitbook/assets/image (1085).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-**3. Save and Configure Notifications:**
+3. &#x20;**Save and Configure Notifications:**
 
 * Add notification emails if needed.
 * Save the pipeline configuration.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FDW5AwYxweav5t3jazGeI%252Fimage.png%3Falt%3Dmedia%26token%3Dd6cf62fb-9b18-43e6-8486-ef397c3ae2e3&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=cca39b71&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
-#### Managing Sprints and User Stories <a href="#pdf-page-della43ge2ynalx23r7p-managing-sprints-and-user-stories" id="pdf-page-della43ge2ynalx23r7p-managing-sprints-and-user-stories"></a>
+**Managing Sprints and User Stories**
 
 **1. Create a Sprint:**
 
 * In the Project View, navigate to Change Management and click Create Sprint.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FmNKU2sdABLSdYD8THBMJ%252Fimage.png%3Falt%3Dmedia%26token%3D148b7df6-3388-4f68-8608-f07fcfca3bc2&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d26feb3a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 * Enter the sprint name and click Save.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fe1LV3pYaq8dIsceMCoXr%252Fimage.png%3Falt%3Dmedia%26token%3D6135bc9b-ee72-40bb-ad18-74d42f8e8c37&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=29d3f868&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 * Click the three dots (Actions) button and select Start Sprint.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FNDMKoPBrp2ayYaDaiwEc%252Fimage.png%3Falt%3Dmedia%26token%3D144fc05a-7c29-4ab4-bfdf-94c157a48d67&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d8926cd9&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 **2. Create a User Story:**
 
-* Go to User Stories and click Create User Story.
+* Go to User Stories and click **Create New User Story**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FYlwvD3NwEiFem8OD9m5Z%252Fimage.png%3Falt%3Dmedia%26token%3Ddfc50a0f-8c73-4d9f-a01f-32cea788ba3a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2c8f8987&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-* Fill in the required details:
-  * Summary: Provide a summary of the user story.
-  * Type: Select the type of story.
+Fill in the required details:
+
+* Summary: Provide a summary of the user story.
+* Type: Select the type of story.
 * Click Save.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fc9TGaPtrkmNBxUzDYVxD%252Fimage.png%3Falt%3Dmedia%26token%3D28da5785-6e65-4173-a54e-3d851a38f0bc&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=90df48aa&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
-**3. Edit and Promote User Story:**
+3. **Edit and Promote User Story:**
 
 * After creating the user story, click the three dots (Actions) and select Edit.
+
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+
 * Select the release pipeline and associated component.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FeD366SyvvQ7ouh2VbX02%252Fimage.png%3Falt%3Dmedia%26token%3D535bf75c-91ba-4574-a5f4-7ae8787b89c0&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=822952da&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 * Add the artifact in CPI Artifacts and click Save.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FPcITB55xOHIa1iAxWnyl%252Fimage.png%3Falt%3Dmedia%26token%3D9e314683-38d7-43d2-9bc7-4f113664ef35&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4d69f1a7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
 #### Import Settings
 
@@ -513,7 +519,7 @@ The **CPI Import Settings** dialog, accessible from the **User Story Edit View**
 
 * To promote the user story, click the three dots (Actions) and select Promote.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F1EFquacxP4WyuxUXUCZF%252Fimage.png%3Falt%3Dmedia%26token%3D18776298-676d-4d55-b0b0-1ba192953b3b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c4368f77&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 * You can view the **Deploy Logs** under the **SAP CPI Deploy Logs** window after promoting the user story.
 
