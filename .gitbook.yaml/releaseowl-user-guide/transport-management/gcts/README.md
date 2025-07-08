@@ -1,6 +1,6 @@
 # gCTS
 
-CTS is an offering from SAP that allows us to manage ABAP (Advanced Business Application Programming) change and transport management processes using Git as an external version management system. By integrating Git with the traditional SAP transport system, gCTS enables developers to leverage Git's powerful version control capabilities, branching strategies, and collaboration features in the context of SAP ABAP development.
+gCTS is an offering from SAP that allows us to manage ABAP (Advanced Business Application Programming) change and transport management processes using Git as an external version management system. By integrating Git with the traditional SAP transport system, gCTS enables developers to leverage Git's powerful version control capabilities, branching strategies, and collaboration features in the context of SAP ABAP development.
 
 ### **Key Features** <a href="#pdf-page-5oopygj2qtse4j6l4ary-key-features" id="pdf-page-5oopygj2qtse4j6l4ary-key-features"></a>
 

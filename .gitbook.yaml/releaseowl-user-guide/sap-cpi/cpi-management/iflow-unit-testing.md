@@ -46,7 +46,9 @@ Apart from this, the **Test Case** can also be run via the **User Stories** tab,
 
 <figure><img src="../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
-The **Test Results** can be viewed in the **Validation Report** generated during User Story and Release Package validation. The Validation Report can also be viewed from the **Release Packages** tab.
+{% hint style="info" %}
+**Note :** The **Test Results** can be viewed in the **Validation Report** generated during User Story and Release Package validation. The Validation Report can also be viewed from the **Release Packages** tab.
+{% endhint %}
 
 
 

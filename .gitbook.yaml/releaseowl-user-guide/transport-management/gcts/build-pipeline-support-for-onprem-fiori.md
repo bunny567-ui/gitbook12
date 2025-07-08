@@ -84,25 +84,35 @@ The **App Details** in the **Build Section** need to be manually entered based o
 
 **Upload Build**
 
-6. After a successful build, click the dropdown button to enter a **Transport ID**.
-7. Select a **Transport ID** from the list before proceeding with the upload.
+6. In the top right, click the **Upload Build** button to start the upload process.
+7. A popup titled **"Upload To SAPUI5 ABAP Repository"** will appear.
+8. Click the **clipboard icon** to **select an existing transport request** from the list.
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1370).png" alt=""><figcaption></figcaption></figure>
 
-8. Click the **Transport** button next to the dropdown field in the "**Upload to SAPUI5 ABAP Repository"** popup.
+9. Alternatively, click the **Create** button next to the dropdown to open the **"Create Workbench Transport"** dialog
 
 <figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
-9. The "**Create WorkBench Transport**" dialog appears.
-
-* Enter the necessary details to create a WorkBench transport.
-* Confirm the settings and complete the transport process.
+10. When the **"Create Workbench Transport"** popup appears:
+    * **Name**: Enter a meaningful name for the transport request.
+    * **Description** (optional): Provide a short description of the transport’s purpose.
+    * **Target System**: Select the appropriate target system from the dropdown.
+11. Click **Create** to generate the transport request. Once created, the transport will be automatically selected in the **Upload To SAPUI5 ABAP Repository** dialog.
 
 <figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
-10. After uploading the build, you can check the **Upload Logs**, which provide real-time updates on the status of the deployment process.
+12. After selecting or creating the transport request, click the **Upload** button.
 
-<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+    * The **SAPUI5 (Fiori) application** will be deployed to the **SAP on-premise ABAP repository** using the selected transport.
+
+
+
+<figure><img src="../../../.gitbook/assets/image (1372).png" alt=""><figcaption></figcaption></figure>
+
+13. You can monitor the deployment status in the **Upload Logs** section, which provides real-time updates and logs for each step of the upload process.
+
+<figure><img src="../../../.gitbook/assets/image (1373).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** The **Upload Log** provides real-time updates on the execution of the upload process.

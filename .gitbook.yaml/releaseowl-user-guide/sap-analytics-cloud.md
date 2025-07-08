@@ -22,22 +22,37 @@ SAP Analytics Cloud (SAC) is a cloud-based business intelligence (BI) and analyt
 
 5. For the Client ID, Secret, Token URL, and Authorization URL:
 
-* Go to your **SAP Analytics Cloud** and navigate to **Administration**.
+* Log in to your SAP Analytics Cloud (SAC) instance.&#x20;
+* In the SAC home screen, go to **System** > **Administration**.
 
 <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-* Click on **App Integration** for the **OAuth Clients**.
-* Click on **Add an OAuth Client**.
+* In the **Administration** panel, select the **App Integration** tab.
+* Click on **Add OAuth Client**.
 
 <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
-* Copy the **Client ID, Secret, Token URL,** and **Authorization URL**.
+* Provide a **Name** for the client.
+* Enter the **Redirect URI** (callback URL) as required.
+* Click **Add** to create the client.
+
+{% hint style="info" %}
+**Note :** Upon creation, the **Client ID** and **Client Secret** will be generated. Save these credentials securely&#x20;
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
+* The **Authorization URL** and **Token URL** can be found outside the OAuth Clients section under the **App Integration** or **OAuth Configuration** area.
+
 <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+
+* Copy and securely store the following details:
+  * **Client ID**
+  * **Client Secret**
+  * **Authorization URL**
+  * **Token URL**
 
 ### **To Register SAC Environment:** <a href="#pdf-page-gxe94pcl07aymb35lkd4-to-register-sac-environment" id="pdf-page-gxe94pcl07aymb35lkd4-to-register-sac-environment"></a>
 
