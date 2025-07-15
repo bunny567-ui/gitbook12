@@ -152,25 +152,100 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
     * Each package has different import settings, and you need to configure the import settings for the required package.
 
     <figure><img src="../.gitbook/assets/image (976).png" alt=""><figcaption></figcaption></figure>
-3.  **Change Management:**
+3. **Release  Pipelines:**
 
-    * Navigate to the **Change Management** section.
-    * Go to **User Stories**, click on the **Actions** button, and select **Edit**.
+* Go to the Release Pipelines and click on the **Create New Release Pipeline.**
 
-    <figure><img src="../.gitbook/assets/image (980).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1376).png" alt=""><figcaption></figcaption></figure>
 
-    * Click on the **+Add** button to add **SAP Datasphere**.
-    * Click on the **Save** button.
+* Enter a **Pipeline Name**.
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Click **Add Stage**.
+
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click OK.
+
+<figure><img src="../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
+
+* **Tasks:** Click **Add** to enter any tasks that are to be performed.
+
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:** To remove any stage, click Remove stage button.
+{% endhint %}
+
+* Different tasks that can be added are as follows:\
 
 
-4.  **Promote User Story:**
+<figure><img src="../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    * Click on the **Save** button.
-    * Click on **Promote** to promote the user story.
+**Add a Deployment Stage**
 
-    <figure><img src="../.gitbook/assets/image (978).png" alt=""><figcaption></figcaption></figure>
+* Click on **Add** under the **Tasks** section.
+* Select **SDS - Deployment** from the available task types.
+
+**Configure Task Details**
+
+In the **Task Details** panel on the right side, fill in the following information:
+
+| **Field**                  | **Description**                                               |
+| -------------------------- | ------------------------------------------------------------- |
+| **Name**                   | Enter a unique name for your task.                            |
+| **Description**            | Optionally, provide a brief description of the task.          |
+| **Select SDS Environment** | Choose the SDS environment for deployment from the dropdown.  |
+
+**Optional Settings**
+
+You may optionally configure the following:
+
+* **Schedule Time**\
+  Enable this checkbox to schedule the deployment at a specific date and time.
+* **Notify Users**\
+  Enable this checkbox to send email notifications to selected users after task execution.
+* **Notify Promotion User**\
+  Enable this checkbox to notify the user who promoted the pipeline.
+
+**Finalize the Task**
+
+* Once all configurations are complete, click **Next** to proceed to **Step 3: Notification Email(s)** or continue adding more tasks as needed.
+
+<figure><img src="../.gitbook/assets/image (1382).png" alt=""><figcaption></figcaption></figure>
+
+4. **Change Management:**
+
+* Navigate to the **Change Management** section.
+* Go to **User Stories**, click on the **Create New User Story**.
+
+<figure><img src="../.gitbook/assets/image (1383).png" alt=""><figcaption></figcaption></figure>
+
+* Fill in the required fields, such as:
+  * **Summary**: A clear and concise name for the user story.
+  * **Description**: Detailed explanation of the requirement or feature.
+  * **Release Version**, **Sprint**, **Assigned To**, and any other custom fields as applicable.
+* After entering the details, click the **Save** button to create the User Story.
+
+<figure><img src="../.gitbook/assets/image (1379).png" alt=""><figcaption></figcaption></figure>
+
+* Once the User Story is created, it will appear in the list/grid view.
+* Click on the **Edit** next to the User Story entry.
+
+<figure><img src="../.gitbook/assets/image (1384).png" alt=""><figcaption></figcaption></figure>
+
+* Click on the **+Add** button to add **SAC Packages**.
+* Click on the **Save** button.
+
+<figure><img src="../.gitbook/assets/image (1357).png" alt=""><figcaption></figcaption></figure>
+
+4. **Promote User Story:**
+
+* Click on **Promote** to promote the user story.
+
+<figure><img src="../.gitbook/assets/image (1356).png" alt=""><figcaption></figcaption></figure>
+
 5.  **Check Deployment Status:**
 
     * Click on the **Pipeline Activity** to view the deployment status.

@@ -9,10 +9,17 @@ There are several third-party sites and applications that can interact with Rele
 
 <figure><img src="../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
 
-* Click the **Credential Manager** menu option on the left-hand pane to view the list of registered credentials.\
+* Click the **Credential Manager** menu option on the left-hand pane to view the list of registered credentials.
 
+<figure><img src="../../.gitbook/assets/image (1381).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
+**Show** : The **Show** dropdown is used to **filter the credential list** based on specific credential types or categories. This helps users quickly view only the relevant credentials among possibly many saved credentials. For example, you might be able to filter by:
+
+* **Jira** – Only show credentials related to Jira integrations.
+* **SAP Cloud Environment** – Show only SAP BTP credentials.
+* **Ui Path** – Show credentials used for automation purposes.
+
+**Search** : The **Search** field allows users to perform a **keyword-based search** to find a specific credential by its name or a part of its name. This is particularly useful when there are many credentials registered, making it difficult to manually scroll and locate a specific one.
 
 2. **Registering a New Credential**:
 
