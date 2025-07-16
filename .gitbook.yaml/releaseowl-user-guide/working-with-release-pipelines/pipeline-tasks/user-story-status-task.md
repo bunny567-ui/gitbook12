@@ -1,7 +1,5 @@
 # User Story Status Task
 
-### User Story Status Task
-
 The status of a user story can be set to a specific value once the deployment takes place in an environment. The following screen is displayed on adding a user story status task.
 
 <figure><img src="../../../.gitbook/assets/image (1281).png" alt=""><figcaption></figcaption></figure>

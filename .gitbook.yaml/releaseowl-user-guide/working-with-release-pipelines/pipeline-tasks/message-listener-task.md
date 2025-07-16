@@ -1,7 +1,5 @@
 # Message Listener Task
 
-### Message Listener Task
-
 The Message Listener Task is designed to wait for specific message events and acts upon receiving them during the pipeline execution.&#x20;
 
 | **Field**            | **Description**                                                                     |

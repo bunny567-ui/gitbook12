@@ -8,7 +8,7 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 
 * Navigate to **Instances and Subscriptions** and click **Create**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FpdqZ5yymXZ0kuxN4NL07%252Fimage.png%3Falt%3Dmedia%26token%3Dfc614c7d-8e85-463b-846d-2bd00b771a05&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=875ec92a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 * Fill in the following details:
   * **Service:** SAP Process Integration Runtime
@@ -18,14 +18,14 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
   * **Instance Name:** Choose a suitable name
 * Click **Next**, then **Create** to set up the instance.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F7ANMyIj6OHaZ4gv1QTqq%252Fimage.png%3Falt%3Dmedia%26token%3D2799de19-4dfe-4800-a3bf-e0844120f715&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=86c97400&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Create Service Key
 3. Enable Custom Idp
 4. Enable Test Automation in ReleaseOwl CPI Environment Configuration
 5. Update the OAuth credentials and Instance URLs in the ReleaseOwl CPI Environment using the details from the Service Key in SAP BTP Cockpit.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FsPsOjdkXAlBUAut4ejYM%252Fimage.png%3Falt%3Dmedia%26token%3Df4efa99d-68f0-4d7a-a13d-bd958031c85f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=aadc6a66&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Generating Test Cases** <a href="#pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases" id="pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases"></a>
 

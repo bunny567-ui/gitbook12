@@ -1,7 +1,5 @@
 # Import via Toc Task
 
-### &#x20;Import via Toc Task
-
 Once a transport is released, no further changes can be made to it. If a fix is required, a new transport must be created. However, a more efficient alternative is **Transport of Copies (TOC)**.
 
 **Fill in the required details:**

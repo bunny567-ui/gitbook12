@@ -1,7 +1,5 @@
 # GCTS Switch Task
 
-### GCTS Switch Task
-
 This task is used when a branch associated to the system needs to be changed to another branch for e.g. if a UAT system is pointing to “**QA**” branch and a hotfix needs to be verified then this task can used to switch to “**Hotfix**” branch.
 
 **Fill in the required details:**

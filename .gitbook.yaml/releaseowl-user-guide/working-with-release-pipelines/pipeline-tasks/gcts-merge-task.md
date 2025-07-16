@@ -1,7 +1,5 @@
 # GCTS Merge Task
 
-### GCTS Merge Task
-
 This Task is used when a hotfix changes need to be merged to other development branches. After a major release of a project, the changes from the master branch can be merged to other development branches.
 
 Fill in the required details:

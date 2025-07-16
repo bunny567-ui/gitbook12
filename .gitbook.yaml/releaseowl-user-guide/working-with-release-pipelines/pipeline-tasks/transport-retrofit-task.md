@@ -1,7 +1,5 @@
 # Transport Retrofit Task
 
-### Transport Retrofit Task&#x20;
-
 The **Transport Retrofit Task** is used to **apply the same changes** across **parallel landscapes.**
 
 **Fill in the required details:**

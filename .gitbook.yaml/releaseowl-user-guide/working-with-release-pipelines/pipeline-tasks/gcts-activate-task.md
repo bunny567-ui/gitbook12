@@ -1,7 +1,5 @@
 # GCTS Activate Task
 
-### GCTS Activate Task
-
 This Task is used when a system needs to be updated to latest commit of the associated branch.
 
 Fill in the required details:

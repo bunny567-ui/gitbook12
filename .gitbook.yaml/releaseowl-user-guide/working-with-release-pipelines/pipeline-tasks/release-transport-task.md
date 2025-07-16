@@ -1,8 +1,6 @@
 # Release Transport Task
 
-### Release Transport Task&#x20;
-
-The **Release Transport Task** is responsible for automating the **manual transport release** process that typically occurs before deployment. Instead of manually releasing transports in the **Transport Management System (TMS)**, this task ensures that transports are released within the pipeline itself before they are imported into the target system.
+&#x20;The **Release Transport Task** is responsible for automating the **manual transport release** process that typically occurs before deployment. Instead of manually releasing transports in the **Transport Management System (TMS)**, this task ensures that transports are released within the pipeline itself before they are imported into the target system.
 
 | **Field**       | **Description**                                                                                                                                                                      |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
