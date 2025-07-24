@@ -20,6 +20,7 @@
     * [ServiceNow](releaseowl-admin-guide/integrations/servicenow.md)
     * [Freshservice Integration](releaseowl-admin-guide/integrations/freshservice-integration.md)
   * [Other Integrations](releaseowl-admin-guide/other-integrations/README.md)
+    * [Tosca Integration](releaseowl-admin-guide/other-integrations/tosca-integration.md)
     * [ReleaseOwl Callout Feature](releaseowl-admin-guide/other-integrations/releaseowl-callout-feature.md)
     * [DocuSign](releaseowl-admin-guide/other-integrations/docusign.md)
   * [Landscape Mapping](releaseowl-admin-guide/landscape-mapping.md)
