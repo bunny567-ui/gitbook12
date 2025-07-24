@@ -328,7 +328,7 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 
 7\. Click **Permissions** (under **Users** tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Permissions**. The roles that are assigned to the selected user are seen.
 

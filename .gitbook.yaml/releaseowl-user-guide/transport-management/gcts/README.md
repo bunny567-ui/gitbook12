@@ -57,7 +57,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 5. **Search for:** `gcts` in the Fiori Launchpad.
 6. **Select:** **Git-enabled CTS – Manage Repositories**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. All **existing repositories** linked to the current gCTS environment are displayed.
 
@@ -192,7 +192,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 1. Register the **Transport Manager Credential** in the Credential Manager section in **ReleaseOwl**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FmAnBWAMz5cSiP8dAcUtk%252Fimage.png%3Falt%3Dmedia%26token%3D5ba017a4-4bfb-4d67-a7d6-fbab451f3ead&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=14d37a55&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 2. Register the **Transport Domain Controller** in ReleaseOwl:
 
