@@ -39,7 +39,6 @@
     * [Transport Management Actions](releaseowl-user-guide/transport-management/transport-management-actions.md)
     * [Transport of Copies](releaseowl-user-guide/transport-management/transport-of-copies.md)
     * [Retrofit & Conflict Resolution](releaseowl-user-guide/transport-management/retrofit-and-conflict-resolution.md)
-    * [Page](releaseowl-user-guide/transport-management/page.md)
     * [gCTS](releaseowl-user-guide/transport-management/gcts/README.md)
       * [Build pipeline support for onPrem Fiori](releaseowl-user-guide/transport-management/gcts/build-pipeline-support-for-onprem-fiori.md)
   * [SAP BTP](releaseowl-user-guide/sap-btp/README.md)

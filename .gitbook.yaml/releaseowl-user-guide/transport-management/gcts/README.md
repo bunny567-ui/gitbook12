@@ -196,14 +196,14 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 2. Register the **Transport Domain Controller** in ReleaseOwl:
 
-* Click **Get Systems** to fetch all systems available in the system landscape.
+* Click **Get Repositories** to fetch all systems available in the system landscape.
 * The newly created SAP system ID (e.g., **RKS**) will be listed.
 
 <figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Register the **GITHub** credential in the **Credential** **Manager.**
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FaCbeaaBUpptnGJhwPIA4%252Fimage.png%3Falt%3Dmedia%26token%3Dbaebab00-fe4e-44b8-9994-f938e945c4cd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f97047e7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1389).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note: GITHub APIs** can be **accessed** only via **Personal Access Tokens** and **not** by **username** and **password.** For further information on the **Personal Access Tokens, please refer to the link -** [**https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token**](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)&#x20;
@@ -297,33 +297,37 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 16. The changes **will not be pushed to QA** until the transport request is imported into QA.
 17. Create a **Release Pipeline** in ReleaseOwl:
+
     * Add a **Deployment Task**.
     * Save the pipeline.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FnvfT2uhIFcufCuW207xt%252Fimage.png%3Falt%3Dmedia%26token%3Dbbf60e7d-5f30-4d53-b35a-b47d9943b3e2&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c71c2ac3&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../../.gitbook/assets/image (1390).png" alt=""><figcaption></figcaption></figure>
 18. Associate the release pipeline with the active **Project Settings** in ReleaseOwl.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FDegAsrJG6dJUlpOTZ5FJ%252Fimage.png%3Falt%3Dmedia%26token%3D234cd382-2984-43bc-907c-64c2b8fc9977&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=85799e1d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1391).png" alt=""><figcaption></figcaption></figure>
 
-19. &#x20;Grant **Deployment Permissions** to the user:
-    * Navigate to: **Project Settings > Users > Security**.
-    * Without this, deployment will not proceed.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FZzGt49QiqIK9Jg7LVU1F%252Fimage.png%3Falt%3Dmedia%26token%3D4477efe5-bc81-4219-ad5a-bbe2831bfa26&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8c0d2872&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+19. Grant **Deployment Permissions** to the user:
+
+* Navigate to: **Project Settings > Users > Security**.
+* Without this, deployment will not proceed.
+
+<figure><img src="../../../.gitbook/assets/image (1392).png" alt=""><figcaption></figcaption></figure>
 
 20. &#x20;Promote the **User Story to QA**:
 
 * Click **OK**.
+
+<figure><img src="../../../.gitbook/assets/image (1393).png" alt=""><figcaption></figcaption></figure>
+
 * Check for any **Approval Tasks** that may be pending for **deployment** to take place.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FNFuBugUWLf6yMews4POZ%252Fimage.png%3Falt%3Dmedia%26token%3D7c4b02d0-b355-4876-a629-f3274239da32&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3363f04b&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F1P7o21IzfrzEiMqWxP31%252Fimage.png%3Falt%3Dmedia%26token%3D2ceff868-8128-4046-8125-d0733123338d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a5a20fa0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1394).png" alt=""><figcaption></figcaption></figure>
 
 21. Once the **approver** **approves** the **task**, the **deployment** **starts**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FaSVWiaJULJnnBoMw0rKS%252Fimage.png%3Falt%3Dmedia%26token%3D4490062e-ee1d-4a82-8e70-12eb23f2befb&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=cce33a5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1395).png" alt=""><figcaption></figcaption></figure>
 
 22. Click on **Go to Pipeline Activity**.
 
@@ -331,9 +335,9 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 23. **Check** the **Deployment Logs.**
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FwKTJ81pHzn7Ebe53Gxsr%252Fimage.png%3Falt%3Dmedia%26token%3D90db97c1-eecf-4469-be73-fd806280ab32&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=11b9e3fc&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1396).png" alt=""><figcaption></figcaption></figure>
 
-24. &#x20;The gCTS task details are visible directly in the pipeline activity logs. This links the deployment to specific **gCTS tasks**, supporting traceability and audits.&#x20;
+24. The gCTS task details are visible directly in the pipeline activity logs. This links the deployment to specific **gCTS tasks**, supporting traceability and audits.&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (1016).png" alt=""><figcaption></figcaption></figure>
 
