@@ -168,10 +168,14 @@ Deputy users can manage tasks when the primary user is unavailable.
 
 1. Click on your **profile icon** in the **top-right corner** and select **Profile**.
 
+<figure><img src="../../.gitbook/assets/image (1385).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FE49EJn3ILQJCINDjrA9T%252Fimage.png%3Falt%3Dmedia%26token%3D89c2479a-7660-4f8e-a98a-ff1a3fb530a7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=62ba9383&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 2. Click on the **Deputy Users** tab next to "**Projects**."
 3. Click the **Add** button, and a **pop-up screen** will appear.
+
+<figure><img src="../../.gitbook/assets/image (1386).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F3NtKufj5jqZs7trYak96%252Fimage.png%3Falt%3Dmedia%26token%3D1cf9fd33-627d-4c1f-9ada-ce103853f831&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=baf7a62c&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -181,6 +185,8 @@ Deputy users can manage tasks when the primary user is unavailable.
 * Search for the **User** in the system and select them.
 
 5. Click the **Create** button to assign deputy permissions to the selected user.
+
+<figure><img src="../../.gitbook/assets/image (1387).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fh2FU3rOpviu3Pup51P6b%252Fimage.png%3Falt%3Dmedia%26token%3D1d39bf9b-4673-456c-a3c6-0351afd6eead&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6b79f391&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
