@@ -282,14 +282,14 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 14. **Release** the **transport** **request** from **ReleaseOwl**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fn24bxnPWmgmEiOoFy5f0%252Fimage.png%3Falt%3Dmedia%26token%3D9b5f611f-3db9-4132-b0f0-4aa5d75b1582&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9bf82765&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1397).png" alt=""><figcaption></figcaption></figure>
 
-15. &#x20;Once the transport request is released:
+15. Once the transport request is released:
 
 * The associated **commits** can be viewed.
 * In GitHub, refresh the repository — the new objects will now be visible in the **dev** branch.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FFjkF7ApVo9bHAlBOHrbg%252Fimage.png%3Falt%3Dmedia%26token%3Dc3cf443d-3384-41e6-9e6e-c388bcf2829e&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2d91728a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1398).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** Whenever a **transport request** which is **associated** with **gCTS** is **released**, all the **changes** will be **pushed** to **GIT**.
@@ -331,7 +331,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 22. Click on **Go to Pipeline Activity**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FxfTKb7u5QsuQFV98iJg7%252Fimage.png%3Falt%3Dmedia%26token%3D072fa0c0-9c73-4560-ab7a-0dc7f0aaf827&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=984ab3b0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1400).png" alt=""><figcaption></figcaption></figure>
 
 23. **Check** the **Deployment Logs.**
 
@@ -339,11 +339,11 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 24. The gCTS task details are visible directly in the pipeline activity logs. This links the deployment to specific **gCTS tasks**, supporting traceability and audits.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1016).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1401).png" alt=""><figcaption></figcaption></figure>
 
 25. When you click **“View gCTS  Switch Details”** in ReleaseOwl (Pipeline Activity > Logs), you can view metadata related to the gCTS operation for the associated deployment.
 
-<figure><img src="../../../.gitbook/assets/image (1017).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1402).png" alt=""><figcaption></figcaption></figure>
 
 26. **Validation Report:**&#x20;
 
