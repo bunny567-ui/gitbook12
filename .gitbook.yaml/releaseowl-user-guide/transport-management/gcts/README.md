@@ -133,7 +133,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 <figure><img src="../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-2. For every repository:
+3. For every repository:
 
 * The **default active branch** in SAP gCTS is `main`.
 * Any changes made in SAP will be saved to this branch by default.
@@ -143,11 +143,12 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 4. Create the **same package** in the SAP ABAP system as defined in the gCTS environment.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fe7JNwnrBFi2ZYQqcnuY9%252Fimage.png%3Falt%3Dmedia%26token%3D5ce3a0ee-6ed2-487f-ae3d-b2d62ff83de2&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=47ca9a39&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 5. Enter all the required details:
-   * Select the **transport layer** created during the repository creation in gCTS.
-   * Click **Save**.
+
+* Select the **transport layer** created during the repository creation in gCTS.
+* Click **Save**.
 
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -176,15 +177,16 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 <figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
-12. The system prompts to associate the class with a **transport request**:
+8. The system prompts to associate the class with a **transport request**:
 
-    * Select the newly created transport request.
-    * Save the changes.
-    * Make required changes to the class.
-    * Save and **activate** the objects.
+* Select the newly created transport request.
+* Save the changes.
+* Make required changes to the class.
+* Save and **activate** the objects.
 
-    <figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
-13. **Release the task** associated with the transport request in use.
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+
+9. **Release the task** associated with the transport request in use.
 
 <figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
