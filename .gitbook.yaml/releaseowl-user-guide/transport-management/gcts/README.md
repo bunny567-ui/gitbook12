@@ -89,7 +89,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
     * The naming convention used is `Z<vSID>` where `<vSID>` is the system ID.
     * It is also visible in the **Transport Routes** screen.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FTBAFRySFEn4dPSt7q7ec%252Fimage.png%3Falt%3Dmedia%26token%3D89f1ad87-2381-4623-9ac3-39aa441620fe&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=82c9a32d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).jpg" alt=""><figcaption></figcaption></figure>
 
 ### Repository Authorization and Configuration
 
