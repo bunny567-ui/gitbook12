@@ -23,6 +23,7 @@
     * [ReleaseOwl Callout Feature](releaseowl-admin-guide/other-integrations/releaseowl-callout-feature.md)
     * [DocuSign](releaseowl-admin-guide/other-integrations/docusign.md)
   * [Landscape Mapping](releaseowl-admin-guide/landscape-mapping.md)
+  * [Reports](releaseowl-admin-guide/reports.md)
 * [ReleaseOwl User Guide](releaseowl-user-guide/README.md)
   * [Change Management](releaseowl-user-guide/change-management/README.md)
     * [Backlog](releaseowl-user-guide/change-management/backlog.md)

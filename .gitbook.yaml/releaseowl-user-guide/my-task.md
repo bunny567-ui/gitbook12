@@ -7,7 +7,7 @@ The **My Tasks** section in ReleaseOwl provides users with a centralized view of
 * Navigate to the **My Tasks** section from the left-hand menu.
 * The screen will display a list of tasks assigned to the logged-in user.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Overview of My Tasks**
 
