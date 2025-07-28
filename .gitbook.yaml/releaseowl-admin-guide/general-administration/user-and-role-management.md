@@ -20,7 +20,7 @@ To access the Administration View, follow these steps:
 2. Click on the **Administration** menu link located at the bottom left corner of the Home page.
 3. Upon clicking **Administration**, a comprehensive list of all projects available to the client will be displayed.
 
-<figure><img src="../../.gitbook/assets/image (1146).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ### User Management
 
@@ -40,7 +40,7 @@ o   Admin Licenses
 
 Displays the total, used, and available licenses, facilitating efficient resource management.
 
-<figure><img src="../../.gitbook/assets/image (1150).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 #### User Details
 
@@ -48,7 +48,7 @@ Lists all registered users along with the following details:
 
 o   **User Type**: Specifies whether the user is an **Admin** or **Standard User**.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create User
 

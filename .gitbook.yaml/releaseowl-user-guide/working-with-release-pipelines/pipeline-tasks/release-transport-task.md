@@ -7,4 +7,4 @@
 |  **Name**       | Specifies the name of the release task, which helps identify it within the pipeline                                                                                                  |
 | **Description** | The description field allows you to provide details about the purpose or function of the task, helping users understand what the task is intended to do within the release pipeline. |
 
-<figure><img src="../../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
