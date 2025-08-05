@@ -16,7 +16,7 @@ The **User Story Deployment Report** offers detailed visibility into the deploym
 1. Navigate to the **Reports** section in the **Project View**.
 2. Click on  **User Story Deployment Report**.&#x20;
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the following parameters:
 
@@ -27,7 +27,7 @@ The **User Story Deployment Report** offers detailed visibility into the deploym
 
 4. Click **GO** to generate the report.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Report Details:**
 
@@ -49,7 +49,7 @@ The **Transport Deployment Report** provides an overview of all transport reques
 1. Go to the **Reports** section in the **Project View**.
 2. Click on **CPI Artifacts Deployment Reports**. &#x20;
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the following parameters:
 
@@ -60,7 +60,7 @@ The **Transport Deployment Report** provides an overview of all transport reques
 
 4. Click **GO** to generate the report.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Report Details:**
 

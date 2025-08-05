@@ -8,27 +8,27 @@ Admin users can switch to the **Administration View** to access the **Credential
 
 1. Click the **Credential Manager** option from the left-hand menu to view the list of registered credentials.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **Credential Type** section, you can see:
 
 * **Credential Types** –Select from the available types to view the corresponding registered credentials. You can also select multiple credentials to view them together.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Scope** – Credentials are categorized based on visibility:
   * **Global**: Visible to all users. Credentials created under this scope cannot be deleted by other users.
   * **Private**: Visible only to the user who created them. These credentials remain hidden from other users.
 * **Search Bar** – Use this to quickly search for credentials by name.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Registering a New Credential**:
 
 * To add a new credential, click **Register Credential**, available on the right-hand panel.
 * The following screen will be displayed:
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Credential Types**
 
@@ -47,7 +47,7 @@ ReleaseOwl supports various credential types for registration. Below, we will ex
    * **Password**: Enter your GitHub/Bitbucket password.
 3. Save the configuration to enable access to your GitHub/Bitbucket account.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For information on setting up the tokens in GITHub, please refer to the link -[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
@@ -71,7 +71,7 @@ For information on setting up the tokens in BitBucket, please refer to the link 
    * **Host URL**: Enter the Azure DevOps organization URL (e.g., `https://dev.azure.com/)`.
 3. Save the configuration to enable access to your Azure DevOps account.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For information on setting up the tokens in Azure DevOps, please refer to the link -[https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=Windows](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=Windows)
@@ -93,7 +93,7 @@ For information on setting up the tokens in Azure DevOps, please refer to the li
 
          * Provide your **Username** and **Password** (SAP BTP credentials).
 
-         <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+         <figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
      * If **OAuth2** is selected:
        * **Client ID**: Provide the details from the created API service key in the SAP BTP cockpit.
        * **Client Secret**: Provide the details from the created API service key in the SAP BTP cockpit.
@@ -101,7 +101,7 @@ For information on setting up the tokens in Azure DevOps, please refer to the li
 3. Click **Save**.
 4. The credential will appear in the List of Credentials.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 OAuth 2 provides better security than basic authentication as the initial requests for credentials are made under the SSL protocol and its access object is a transitory token.
@@ -123,7 +123,7 @@ OAuth 2 provides better security than basic authentication as the initial reques
 3. Click **Save**.
 4. The credential will appear in the **List of Credentials**.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **SonarQube On-Prem**
 
@@ -140,7 +140,7 @@ OAuth 2 provides better security than basic authentication as the initial reques
    * **Hosting Type**: Choose either **On-Premise** or **Cloud**, depending on your SonarQube setup.
 3. Save the changes to configure and enable access to your SonarQube On-Prem account.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Further information on getting the user token for SonarQube can be found @[https://docs.sonarqube.org/6.7/UserToken.html](https://docs.sonarqube.org/6.7/UserToken.html)
