@@ -12,7 +12,7 @@ This instance enables **programmatic access via API** for integration tasks.
 
 #### **Steps:**
 
-1. **Log in** to your SAP BTP Cockpit.
+1. Log in to your SAP BTP Cockpit.
 2. Navigate to your **Global Account > Subaccount**.
 3. Go to **Instances and Subscriptions** from the left menu.
 
