@@ -17,7 +17,7 @@ Through secure credential management and environment registration, ReleaseOwl co
 | OAuth Credential | Select the OAuth credential created in the credential manager. |
 | Environment Type | Select the environment type (e.g., Dev, QA, Prod).             |
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Create the Project <a href="#create-the-project" id="create-the-project"></a>
 

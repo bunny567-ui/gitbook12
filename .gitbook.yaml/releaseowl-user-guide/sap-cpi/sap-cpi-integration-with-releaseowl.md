@@ -120,7 +120,7 @@ Credential registration enables secure communication between **ReleaseOwl** and 
 1. Log in to the **ReleaseOwl Platform**.
 2. Go to **Administration > Credential Manager**.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fk800L6JDYJwQBgE8mEJe%252Fimage.png%3Falt%3Dmedia%26token%3D397cdf1f-59cf-4fba-9798-9d771c71fcc1&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4d48d67&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1404).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Register Credential**.
 4. Fill in the details:
@@ -133,7 +133,7 @@ Credential registration enables secure communication between **ReleaseOwl** and 
 
 The credential will now appear in your list and can be used in pipelines and deployments.
 
-<figure><img src="../../.gitbook/assets/image (1045).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### B. Register SAP CPI Credential (IFLOW Access)
 
@@ -153,7 +153,7 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 5. Click **Save**.
 6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for IFLOW deployments.
 
-<figure><img src="../../.gitbook/assets/image (1046).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### CPI Environment Registration <a href="#pdf-page-della43ge2ynalx23r7p-cpi-environment-registration" id="pdf-page-della43ge2ynalx23r7p-cpi-environment-registration"></a>
 
@@ -314,11 +314,11 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 
 3\. The following screen is displayed.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Click  +**Add button** to add a new environment in ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
 
@@ -328,7 +328,7 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 
 7\. Click **Permissions** (under **Users** tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Permissions**. The roles that are assigned to the selected user are seen.
 
