@@ -175,4 +175,4 @@ Click **Deployment Changes** to know which user story is associated with a Relea
 
 Go to the required pipeline in **Release Pipeline** page and click **Edit** to edit the pipeline.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

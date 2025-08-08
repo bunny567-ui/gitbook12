@@ -99,6 +99,7 @@
       * [Running Automated Tests with Release Pipelines](releaseowl-user-guide/test-automation/hcl-onetest/running-automated-tests-with-release-pipelines.md)
     * [Tosca Integration](releaseowl-user-guide/test-automation/tosca-integration.md)
     * [Integrating UiPath with ReleaseOwl](releaseowl-user-guide/test-automation/integrating-uipath-with-releaseowl.md)
+    * [Tosca Cloud](releaseowl-user-guide/test-automation/tosca-cloud.md)
   * [My Tasks](releaseowl-user-guide/my-task.md)
   * [Multiverse](releaseowl-user-guide/multiverse.md)
   * [Utilities](releaseowl-user-guide/utilities/README.md)
