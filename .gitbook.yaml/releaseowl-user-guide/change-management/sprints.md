@@ -17,7 +17,7 @@ Once integrated, you can:
 
 1. To sync the sprints from an external system like JIRA, click **Sync Sprints**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Once the sync is completed, the sprints created in the external system will appear in the ReleaseOwl app.
 
