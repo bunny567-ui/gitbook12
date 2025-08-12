@@ -69,7 +69,7 @@ jsonCopyEdit{
 
 * In the **Assign Variables** screen, map variables to event message properties using the format:
 
-${resp.\<message-object>.\<property>
+<p align="center"><strong>${resp.&#x3C;message-object>.&#x3C;property></strong></p>
 
 * Save the pipeline.
 
