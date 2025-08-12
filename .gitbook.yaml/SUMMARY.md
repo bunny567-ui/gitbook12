@@ -93,6 +93,7 @@
       * [Automated Transport import along with Transport Promotion](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-transport-import-along-with-transport-promotion.md)
       * [Automated MTAR Deployments](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-mtar-deployments.md)
       * [Automated CPI Deployments](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-cpi-deployments.md)
+      * [Message Listener](releaseowl-user-guide/working-with-release-pipelines/use-cases/message-listener.md)
   * [Test Automation](releaseowl-user-guide/test-automation/README.md)
     * [HCL OneTest](releaseowl-user-guide/test-automation/hcl-onetest/README.md)
       * [Test Configurations](releaseowl-user-guide/test-automation/hcl-onetest/test-configurations.md)

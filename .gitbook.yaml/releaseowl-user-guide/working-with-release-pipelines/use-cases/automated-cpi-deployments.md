@@ -33,12 +33,10 @@ Creating a Release Pipeline is a three-step process.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-6. Enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click OK.\
+\
 
 
-<figure><img src="../../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
-
-7. **Tasks:** Click Add to enter any tasks that are to be performed
+6. **Tasks:** Click Add to enter any tasks that are to be performed
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,7 +44,7 @@ Creating a Release Pipeline is a three-step process.
 **Note:** To remove any stage, click Remove stage button.
 {% endhint %}
 
-8. Different tasks that can be added are as follows:\
+7. Different tasks that can be added are as follows:\
 
 
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
