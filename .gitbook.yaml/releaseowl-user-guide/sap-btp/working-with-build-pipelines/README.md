@@ -44,20 +44,24 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 
 ### **Steps to Register Credentials** <a href="#pdf-page-hbalethepy3zsklyalpx-steps-to-register-credentials" id="pdf-page-hbalethepy3zsklyalpx-steps-to-register-credentials"></a>
 
-1. **Access the Credential Manager**
-   * In the administration view, navigate to the **Credential Manager**.
-   * Click on **Register Credential**.
+1.  **Access the Credential Manager**
+
+    * In the administration view, navigate to the **Credential Manager**.
+    * Click on **Register Credential**.
+
+    <figure><img src="../../../.gitbook/assets/image (1425).png" alt=""><figcaption></figcaption></figure>
 2.  **Fill in the Credential Details**
 
     * **Credential Name**: Enter a name of your choice.
     * **Credential Type**: Choose **SAP Cloud Environment**.
     * **Authentication Type**: Select either **Basic** or **Authentication**.
+    * **Scope** – Select the scope of the credential:
+      * **Global** – Visible to all users.
+      * **Private** – Visible only to the user who created it.
     * **Username**: Enter your SAP BTP Username.
     * **Credentials**: Use your SAP BTP password.
 
-
-
-    <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FdoXkEEdIlP43w27qJWvB%252Fimage.png%3Falt%3Dmedia%26token%3D1c025a6a-a926-4d6c-b474-73da94212de7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=15df08a0&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1426).png" alt=""><figcaption></figcaption></figure>
 
 ### **Steps to Register an SAP Cloud Environment**
 
@@ -66,9 +70,9 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * Go to **Environments** and click on **SAP Cloud Environment**.
     * Select **Register SAP Cloud Environment**.
 
+    <figure><img src="../../../.gitbook/assets/image (1427).png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F3smNg0ewTtULrVH2GEfQ%252Fimage.png%3Falt%3Dmedia%26token%3Ded392743-c212-498b-a059-3d575b920cdf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9526be65&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 2. **Fill in the Required Details**
    * **Name**: Enter a reference name of your choice.
    * **Region**: Select the appropriate region.
@@ -80,7 +84,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 3. **Save the Details**
    * Once all fields are filled, click on the **Save** button.
 
-<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FQa5appKMjpT4uoKOVPaG%252Fimage.png%3Falt%3Dmedia%26token%3De3d3678c-0a37-491d-8166-4ce1d89c042d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=46dc56d6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1428).png" alt=""><figcaption></figcaption></figure>
 
 **Steps to Create a New Project**
 
@@ -93,17 +97,13 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
       * **Project Type**: Select **SAP BTP Project**.
     * Click on the **Save** button.
 
-
-
-    <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F4sm7Z1YpjiHJt7WnRKsN%252Fimage.png%3Falt%3Dmedia%26token%3Db97a271f-1e4d-4470-be0c-6c137445af73&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ac087060&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1429).png" alt=""><figcaption></figcaption></figure>
 2.  **Access Project Settings**
 
     * Locate the newly created project.
     * Click on the three-dot menu (•••) and select **Project Settings**.
 
-
-
-    <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FIIpLT8iJxXkHC5HB34M6%252Fimage.png%3Falt%3Dmedia%26token%3Dfafe2a50-4d70-4cda-8b35-f49ada8259bf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=52347d7c&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1432).png" alt=""><figcaption></figcaption></figure>
 
 **Configure the Environment**
 

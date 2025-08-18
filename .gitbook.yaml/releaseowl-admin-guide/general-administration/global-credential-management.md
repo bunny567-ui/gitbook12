@@ -8,7 +8,7 @@ Admin users can switch to the **Administration View** to access the **Credential
 
 1. Click the **Credential Manager** option from the left-hand menu to view the list of registered credentials.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **Credential Type** section, you can see:
 
