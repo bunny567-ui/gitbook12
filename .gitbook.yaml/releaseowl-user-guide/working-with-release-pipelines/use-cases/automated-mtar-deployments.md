@@ -32,15 +32,12 @@ Creating a Release Pipeline is a guided **five-step process**, designed to help 
 
 <figure><img src="../../../.gitbook/assets/image (1229).png" alt=""><figcaption></figcaption></figure>
 
-\
-
-
-3. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.\
+4. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1231).png" alt=""><figcaption></figcaption></figure>
 
-4. **Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
+5. **Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
 
 <figure><img src="../../../.gitbook/assets/image (1237).png" alt=""><figcaption></figcaption></figure>
 
@@ -83,11 +80,11 @@ Fill in the required details:
 | **Service Key**        | Select the Service Key from the available service keys listed in the dropdown.                                                             |
 | **Node Name**          | Enter a node name added in the Cloud Transport Management System corresponding to the environment to which the artifact is to be uploaded. |
 
-5. **Trigger:** You can trigger a Release Pipeline either **Manually** or on **Successful Build** it to get triggered automatically once its reference build pipeline gets executed successfully.
+6. **Trigger:** You can trigger a Release Pipeline either **Manually** or on **Successful Build** it to get triggered automatically once its reference build pipeline gets executed successfully.
 
 <figure><img src="../../../.gitbook/assets/image (1242).png" alt=""><figcaption></figcaption></figure>
 
-6. **Notification Emails:** You can specify an email distribution list separated by comma who you want to notify the result of the Release Pipeline Execution – either **Success** or **Failure**. \
+7. **Notification Emails:** You can specify an email distribution list separated by comma who you want to notify the result of the Release Pipeline Execution – either **Success** or **Failure**. \
 
 
 {% hint style="info" %}
@@ -133,27 +130,27 @@ To run a release pipeline:
 
 <figure><img src="../../../.gitbook/assets/image (1443).png" alt=""><figcaption></figcaption></figure>
 
-6. Click **Logs¸** to view the logs of this cycle. You can even download the logs by clicking the **Download Dmol Log link.**
+7. Click **Logs¸** to view the logs of this cycle. You can even download the logs by clicking the **Download Dmol Log link.**
 
 <figure><img src="../../../.gitbook/assets/image (1444).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (1446).png" alt=""><figcaption></figcaption></figure>
 
-* Click **Errors**, to view the errors that resulted in the deployment failure.
+8. Click **Errors**, to view the errors that resulted in the deployment failure.
 
 <figure><img src="../../../.gitbook/assets/image (1251).png" alt=""><figcaption></figcaption></figure>
 
-To view more error details, click **View Details**.\
+9. To view more error details, click **View Details**.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1252).png" alt=""><figcaption></figcaption></figure>
 
-For a multi-stage Release Pipeline, the execution details of a test cycle in each environment will be shown one after the other in the order of their addition while creating the release pipeline.\
+10. For a multi-stage Release Pipeline, the execution details of a test cycle in each environment will be shown one after the other in the order of their addition while creating the release pipeline.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1253).png" alt=""><figcaption></figcaption></figure>
 
-Click **Deployment Changes** to know which user story is associated with a Release Pipeline and which artifacts are a part of it.\
+11. Click **Deployment Changes** to know which user story is associated with a Release Pipeline and which artifacts are a part of it.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1254).png" alt=""><figcaption></figcaption></figure>
