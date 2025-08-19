@@ -207,15 +207,15 @@ The purpose of a malware scan is to scan business documents for any potential th
     * Open the **Administration** section of the application.
     * Click **Register Credential** to create a new credential entry.
 
-    <figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1437).png" alt=""><figcaption></figcaption></figure>
 2.  **Enter the Required Details**
 
     * **Credential Name**: Provide a meaningful name, such as "**Malware Scanner.**"
     * **Credential Type**: Select **Malware** from the dropdown options.
 
+    <figure><img src="../../../.gitbook/assets/image (1438).png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     *   **Obtain Credentials**:
 
@@ -240,7 +240,7 @@ The purpose of a malware scan is to scan business documents for any potential th
     * Paste the copied details into the **Credential Manager**.
     * Click **Save** to register the credentials successfully.
 
-    <figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1439).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Configure the Malware Scan in the Build Pipeline**
 

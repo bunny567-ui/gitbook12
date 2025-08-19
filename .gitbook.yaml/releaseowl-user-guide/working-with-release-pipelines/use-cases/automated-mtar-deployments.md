@@ -10,15 +10,14 @@ Release Pipelines enable you to orchestrate deployments into SAP environments wi
 
 ### Creating a Release Pipeline
 
-Creating a Release Pipeline is a guided **six-step process**, designed to help you define and configure all necessary stages and parameters for end-to-end deployment automation.
+Creating a Release Pipeline is a guided **five-step process**, designed to help you define and configure all necessary stages and parameters for end-to-end deployment automation.
 
-| Step1 | Enter a name in Release Pipeline Name                                                                                       |
-| ----- | --------------------------------------------------------------------------------------------------------------------------- |
-| Step2 | Choose Pipeline Type – SAP BTP or SAP HANA XSA (MTAR) from the drop down                                                    |
-| Step3 | The dropdown contains all the build pipelines of type MTAR. Choose the build pipeline whose mtar artifact must be deployed. |
-| Step4 | Click Add Stages, add the stages. Add various types of pre, post and deployment tasks on need basis.                        |
-| Step5 | Choose to schedule the pipeline execution or run manually                                                                   |
-| Step6 | Specify the email ids to receive notifications about release pipeline execution status.                                     |
+| Step1- Release Pipeline Name  | Enter a name in Release Pipeline Name                                                                                                                             |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Step2 - Artifact Source       |  The dropdown contains all the build pipelines of type MTAR. Choose the build pipeline whose mtar artifact must be deployed.                                      |
+| Step3 - Add Stages            | Click on _**Add Stages**_ and add the required stages. Based on your needs, you can add different types of pre-deployment, deployment, and post-deployment tasks. |
+| Step4 - Triggers              | Choose to schedule the pipeline execution or run manually.                                                                                                        |
+| Step5 - Notification Email(s) | Specify the email ids to receive notifications about release pipeline execution status.                                                                           |
 
 **To create a release pipeline:**
 
@@ -33,23 +32,15 @@ Creating a Release Pipeline is a guided **six-step process**, designed to help y
 
 <figure><img src="../../../.gitbook/assets/image (1229).png" alt=""><figcaption></figcaption></figure>
 
-**a) Pipeline Type:** For **SAP Cloud (MTAR)** project, the Pipeline Type appears SAP BTP **(MTAR)** by default and is read-only.\
 \
 
 
-<figure><img src="../../../.gitbook/assets/image (1234).png" alt=""><figcaption></figcaption></figure>
-
-b) For **SAP HANA XSA (MTAR)** project, the Pipeline Type appears **SAP HANA XSA (MTAR)** by default and is read-only.\
-
-
-<figure><img src="../../../.gitbook/assets/image (1235).png" alt=""><figcaption></figcaption></figure>
-
-4. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.\
+3. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1231).png" alt=""><figcaption></figcaption></figure>
 
-5. &#x20;**Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
+4. **Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
 
 <figure><img src="../../../.gitbook/assets/image (1237).png" alt=""><figcaption></figcaption></figure>
 
@@ -92,14 +83,11 @@ Fill in the required details:
 | **Service Key**        | Select the Service Key from the available service keys listed in the dropdown.                                                             |
 | **Node Name**          | Enter a node name added in the Cloud Transport Management System corresponding to the environment to which the artifact is to be uploaded. |
 
-\
-
-
-6. **Trigger:** You can trigger a Release Pipeline either **Manually** or on **Successful Build** it to get triggered automatically once its reference build pipeline gets executed successfully.
+5. **Trigger:** You can trigger a Release Pipeline either **Manually** or on **Successful Build** it to get triggered automatically once its reference build pipeline gets executed successfully.
 
 <figure><img src="../../../.gitbook/assets/image (1242).png" alt=""><figcaption></figcaption></figure>
 
-7. **Notification Emails:** You can specify an email distribution list separated by comma who you want to notify the result of the Release Pipeline Execution – either **Success** or **Failure**. \
+6. **Notification Emails:** You can specify an email distribution list separated by comma who you want to notify the result of the Release Pipeline Execution – either **Success** or **Failure**. \
 
 
 {% hint style="info" %}
@@ -135,24 +123,23 @@ To run a release pipeline:
 
 4\. Click **Trigger Pipeline.** A message is displayed, about successful creation of a release pipeline. Click OK. The following screen is displayed:
 
-<figure><img src="../../../.gitbook/assets/image (1248).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1440).png" alt=""><figcaption></figcaption></figure>
 
 5\. Click **Refresh.** Click on the required build to view a list of the triggered cycle.
 
-<figure><img src="../../../.gitbook/assets/image (1249).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1441).png" alt=""><figcaption></figcaption></figure>
 
-6. Click on the required cycle to view its details.\
+6. Click on the arrow button to expand the required cycle and view its details.
 
+<figure><img src="../../../.gitbook/assets/image (1443).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1250).png" alt=""><figcaption></figcaption></figure>
+6. Click **Logs¸** to view the logs of this cycle. You can even download the logs by clicking the **Download Dmol Log link.**
 
-7. Click **Logs¸** to view the logs of this cycle. You can even download the logs by clicking the **Download Dmol Log link**.\
+<figure><img src="../../../.gitbook/assets/image (1444).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/image (1446).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (366).png" alt=""><figcaption></figcaption></figure>
-
-* Click **Errors**, to view the errors that resulted in the deployment failure.\
-
+* Click **Errors**, to view the errors that resulted in the deployment failure.
 
 <figure><img src="../../../.gitbook/assets/image (1251).png" alt=""><figcaption></figcaption></figure>
 
