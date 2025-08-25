@@ -6,8 +6,8 @@ The changes made from previous build to the current build are displayed here. De
 
 1. Click **Build changes** page in the logs page.
 
-<figure><img src="../../../.gitbook/assets/image (1196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1459).png" alt=""><figcaption></figcaption></figure>
 
 2. The following page is displayed:
 
-<figure><img src="../../../.gitbook/assets/image (1197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1460).png" alt=""><figcaption></figcaption></figure>
