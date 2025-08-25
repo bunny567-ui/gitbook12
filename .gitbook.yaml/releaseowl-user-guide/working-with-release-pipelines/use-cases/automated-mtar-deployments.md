@@ -93,7 +93,9 @@ Fill in the required details:
 
 
 
-On clicking Save, the release pipeline gets created and is shown in the Release Pipelines screen.
+8. On clicking Save, the release pipeline gets created and is shown in the Release Pipelines screen.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **Multi-Stage Release Pipeline**
 
@@ -159,4 +161,4 @@ To run a release pipeline:
 
 Go to the required pipeline in **Release Pipeline** page and click **Edit** to edit the pipeline.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
