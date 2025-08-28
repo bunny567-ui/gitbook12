@@ -4,41 +4,35 @@ This user guide provides step-by-step instructions to integrate **Freshservice**
 
 ### Registering Freshservice in ReleaseOwl Dashboard&#x20;
 
-* In Administration, go to **Credential Manager.**
-* On the page displayed, click on the **Register Credential** button.
+1. Navigate to **Administration** in the ReleaseOwl dashboard.
+2. Click on **Credential Manager**.
+3. On the **Credential Manager** page, click **Register Credential**.
 
-<figure><img src="../../.gitbook/assets/image (879).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1461).png" alt=""><figcaption></figcaption></figure>
 
-3. Fill in the necessary details as follows:&#x20;
+4. Fill in the details as follows:
+   * **Credential Name:** Provide a descriptive name for the credential for easy identification.
+   * **Credential Type:** Select **Freshservice** from the list.
+   * **Authentication Type:** Choose **Basic**.
+   * **API Key:** Enter your Freshservice API key.
+   * **Password:** Enter "**X"** (as required for basic authentication).
+   * **Instance URL:** Enter your Freshservice instance URL, e.g., `https://<yourdomain>.freshservice.com`.
+5. Click **Save** to complete the registration.
 
-* **Credential Name**: Enter a name for the credential for your reference.
-* **Credential Type**: Choose Freshservice as the credential type.&#x20;
-* &#x20;**Authentication Type**: For authentication type, choose Basic.&#x20;
-* &#x20;**API Key**: Enter your Freshservice API key.
-* &#x20;**Password**:  Enter the associated password.
-* **Instance URL**: Enter your Freshservice instance URL (e.g., https://\<yourdomain.freshservice.com>).
+<figure><img src="../../.gitbook/assets/image (1462).png" alt=""><figcaption></figcaption></figure>
 
-5. Click on the **Save** button.
+### How to Retrieve the API Key in Freshservice
 
-<figure><img src="../../.gitbook/assets/image (878).png" alt=""><figcaption></figcaption></figure>
+1. Log in to your **Freshservice** account.
+2. Click on your **profile icon** (top-right corner) and select **Profile Settings**.
 
-**Creating a Credential in Freshservice**&#x20;
+<figure><img src="../../.gitbook/assets/image (1463).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;1\. Navigate to Admin → Automation & Productivity → Credentials.
+3. In the **Profile Settings** page, locate the **API Key** section on the right-hand side.
+4. Click **Show API Key**, then copy the displayed key.
+5. Paste this API key into the **API Key** field in ReleaseOwl Credential Manager.
 
-<figure><img src="../../.gitbook/assets/image (880).png" alt=""><figcaption></figcaption></figure>
-
-2. Click on **New Credential** .
-
-<figure><img src="../../.gitbook/assets/image (881).png" alt=""><figcaption></figcaption></figure>
-
-3. Freshservice API key authentication can be achieved by using **basic auth** with the following values.
-
-Username: **\<API key>**
-
-Password: **x**
-
-<figure><img src="../../.gitbook/assets/image (883).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1464).png" alt=""><figcaption></figcaption></figure>
 
 ### **Freshservice Project Integration**
 
@@ -50,24 +44,28 @@ To link a **Freshservice** project with a **ReleaseOwl** project, follow these s
 * Go to **Project Settings**.
 * In **Project Settings**, navigate to **ALM Integrations** and click on **Add**.
 
+<figure><img src="../../.gitbook/assets/image (1465).png" alt=""><figcaption></figcaption></figure>
+
 **2. Fill in the Required Details**
 
 * **Name:** Enter a unique name for the integration.
 * **Description (Optional):** Provide a description for reference.
 * **External System:** Select **Freshservice** from the dropdown list.
 * **Credential:** Select the registered **Freshservice API credential** from the dropdown list.
-* **Host URL:** Enter the **Freshservice instance URL** (e.g., `https://yourcompany.freshservice.com`)
-* If you select **Service Requests**, ReleaseOwl will **only sync tickets** categorized as **Service Requests** from Freshservice. you can further **refine** what kind of requests should be synced based on specific criteria by using the Filter option.
+* **Host URL:** This will automatically populated.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (884).png" alt=""><figcaption></figcaption></figure>
+3. If you select **Service Requests**, ReleaseOwl will **only sync tickets** categorized as **Service Requests** from Freshservice. you can further **refine** what kind of requests should be synced based on specific criteria by using the Filter option.
 
-If you select **Change Requests**, ReleaseOwl will **only sync Change Requests** from Freshservice. In the **Change Requests** section, you have two options:
+<figure><img src="../../.gitbook/assets/image (1466).png" alt=""><figcaption></figcaption></figure>
 
-1. **Filter:**
-   * This allows you to define specific criteria to limit which change requests should be considered.
-2. **View:**
+4. If you select Change Requests, ReleaseOwl will synchronize only the Change Requests from Freshservice. Within the Change Requests section, you can configure this using either a **Filter** or a **View.**
+5. **Filter:**
+   * To use the **Filter** option, navigate to the **Ticket List** in Freshservice and select the list that displays the created Change Requests. In the URL, locate the **filter ID** (a numeric value) and copy it. Then, paste this ID into the **Filter** field in ReleaseOwl.
+6. **View:**
 
-* This could be an option to **select a pre-defined view** from Freshservice.
+* Similarly, to use the **View** option, navigate to the **Ticket List** in Freshservice, select the saved view that displays your Change Requests, and copy the **view ID** from the URL. Then, paste this ID into the **View** field in ReleaseOwl to complete the configuration.
+
+<figure><img src="../../.gitbook/assets/image (1467).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (885).png" alt=""><figcaption></figcaption></figure>
 
@@ -83,7 +81,7 @@ To integrate user stories from Freshservice, follow these steps:
 4. Once the sync is completed, you will get a pop up saying, **User Story Sync completed**.
 5. Click **Ok**.
 
-<figure><img src="../../.gitbook/assets/image (27) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1468).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** At the top right, there is a **"Sync History"** button. This button likely provides a log or history of all previous synchronization activities related to user stories.
