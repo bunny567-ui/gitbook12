@@ -28,7 +28,7 @@ To create a merge configuration, the following fields are used:
 
 * Once all required fields are filled, click **Save**. A success message will be displayed confirming that the configuration has been created successfully..
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Executing the Merge**
 
