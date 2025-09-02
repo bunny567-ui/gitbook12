@@ -94,8 +94,8 @@ To perform **Basic Authentication**, follow the steps below:
 | **Credential Type**     | Select **ServiceNow**                                                                                                           |
 | **Scope**               | Select the scope of the credential:- **Global** – Visible to all users.- **Private** – Visible only to the user who created it. |
 | **Authentication Type** | Choose **Basic**.                                                                                                               |
-| **Username**            | Enter your **ServiceNow username**.                                                                                             |
-| **Password**            | Enter your **ServiceNow password**.                                                                                             |
+| **Username**            | Enter **ServiceNow username**.                                                                                                  |
+| **Password**            | Enter **ServiceNow password**.                                                                                                  |
 | **Instance URL**        | Enter your ServiceNow hosting URL (e.g., `https://<instance-name>.service-now.com`).                                            |
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
