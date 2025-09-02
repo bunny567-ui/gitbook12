@@ -86,7 +86,7 @@ To perform **Basic Authentication**, follow the steps below:
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Fill in the Credentials details:
+3. Fill in the credential details as shown in the table below:
 
 | **Field**               | **Description**                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
