@@ -18,7 +18,7 @@
       * [Jira Automation Rules](releaseowl-admin-guide/alm-integrations/jira/jira-automation-rules.md)
     * [Azure DevOps](releaseowl-admin-guide/integrations/azure-devops.md)
     * [ServiceNow](releaseowl-admin-guide/integrations/servicenow.md)
-    * [Freshservice Integration](releaseowl-admin-guide/integrations/freshservice-integration.md)
+    * [Freshservice](releaseowl-admin-guide/alm-integrations/freshservice.md)
   * [Other Integrations](releaseowl-admin-guide/other-integrations/README.md)
     * [ReleaseOwl Callout Feature](releaseowl-admin-guide/other-integrations/releaseowl-callout-feature.md)
     * [DocuSign](releaseowl-admin-guide/other-integrations/docusign.md)

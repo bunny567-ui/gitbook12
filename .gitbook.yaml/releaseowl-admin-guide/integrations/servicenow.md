@@ -20,7 +20,7 @@ To successfully integrate ServiceNow with ReleaseOwl, ensure you have the follow
 1. In Administration, go to Credential Manager.
 2. On the displayed page, click Register Credential.
 
-<figure><img src="../../.gitbook/assets/image (637).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Step 2: Fill in Credential Details
 
@@ -30,40 +30,50 @@ To set up your credentials in ReleaseOwl, complete the following fields:
    Enter a descriptive name for the credential, which will help you identify it later in ReleaseOwl.
 2. **Credential Type**:\
    Select **ServiceNow** from the list of available credential types.
-3. **Authentication Type**:\
+3. **Scope** – Select the scope of the credential:
+   * **Global** – Visible to all users.
+   * **Private** – Visible only to the user who created it.
+4. **Authentication Type**:\
    Choose one of the following authentication methods:
    * **OAuth2**: Use this option for token-based authentication.
    * **Basic Authentication**: Use this option for username and password-based access.
-4. **Instance URL**:\
+5. **Instance URL**:\
    Enter your ServiceNow hosting URL (e.g., `https://<instance-name>.service-now.com`).
 
-<figure><img src="../../.gitbook/assets/image (638).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: OAuth2 Authentication (For Client ID and Client Secret):
 
-1. Log in to the ServiceNow website.
-2. Go to ALL and search for Application Registry.
-3. Click on Application Registry.
+1. Log in to the **ServiceNow** website.
+2. Go to **ALL** and search for **Application Registry.**
+3. Click on **Application Registry.**
 
 <figure><img src="../../.gitbook/assets/image (639).png" alt=""><figcaption></figcaption></figure>
 
-3. Locate and click on ReleaseOwl in the list of OAuth Registries.
-4. View the Client ID and Client Secret associated with ReleaseOwl.
+4. Click the **New** button.
 
-<figure><img src="../../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-5. Copy these credentials and paste them into the appropriate fields in the Register Credential form in ReleaseOwl under OAuth2 Authentication.
-6. Click the Save button.
+5. Select **Create an OAuth API endpoint for external clients**.
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+6. ServiceNow will generate a **Client ID** and **Client Secret** automatically.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+7. Copy these credentials and paste them into the appropriate fields in the **Register Credential** form in ReleaseOwl under OAuth2 Authentication.
+8. Click the **Save** button.
 
 <figure><img src="../../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
 
-7. &#x20;Click on Generate Token. A popup screen will appear prompting you to enter a username and password.
-8. Enter your ServiceNow username and password.
-9. Click the Generate button.
+7. &#x20;Click on **Generate Token.** A popup screen will appear prompting you to enter a username and password.
+8. Enter your **ServiceNow** username and password.
+9. Click the **Generate** button.
 
 <figure><img src="../../.gitbook/assets/image (642).png" alt=""><figcaption></figcaption></figure>
 
-10. The generated token will be available in the Manage Tokens section under ALL in the ServiceNow website.
+10. The generated token will be available in the **Manage Tokens** section under **ALL** in the ServiceNow website.
 
 <figure><img src="../../.gitbook/assets/image (643).png" alt=""><figcaption></figcaption></figure>
 
