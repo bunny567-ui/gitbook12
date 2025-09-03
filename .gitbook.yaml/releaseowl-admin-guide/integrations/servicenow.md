@@ -178,3 +178,61 @@ Select the project. Any changes made in ServiceNow will be reflected in the User
 
 <figure><img src="../../.gitbook/assets/image (656).png" alt=""><figcaption></figcaption></figure>
 
+### Configure Webhook URL in ServiceNow
+
+Follow the steps below to configure a webhook in ServiceNow:&#x20;
+
+1. Log in to your **ServiceNow** account.
+2. In the left navigation pane, select **All**.
+3. Type **Business Rules** in the filter box and open it.
+
+<figure><img src="../../.gitbook/assets/image (1471).png" alt=""><figcaption></figcaption></figure>
+
+4. Click the **New** button on the right-hand side.
+
+<figure><img src="../../.gitbook/assets/image (1477).png" alt=""><figcaption></figcaption></figure>
+
+4. Enter a **Name** for your record.
+5. In the **Table** field, select the table you want to trigger the webhook from (for example, **Incident**, **Change Request**, etc.).
+6. In the **When to run** section, check **Insert** and **Update** so the webhook triggers on record creation and updates.
+
+<figure><img src="../../.gitbook/assets/image (1473).png" alt=""><figcaption></figcaption></figure>
+
+
+
+7. In the **Advanced** section, paste the following script:
+
+```javascript
+(function executeRule(current, previous /*null when async*/) {
+    var request = new sn_ws.RESTMessageV2();
+    request.setEndpoint("<copy the Webhook URL from the PMS integration tab in ReleaseOwl Project settings>");
+    request.setHttpMethod('POST');
+    //request.setBasicAuth(user,password);
+    request.setRequestHeader("Accept", "application/json");
+    request.setRequestHeader("Content-Type", "application/json");
+    
+    request.setRequestBody(
+        JSON.stringify({
+            "sys_id": current.sys_id.toString(),
+            "product": current.product.toString()
+        })
+    );
+    
+    var response = request.execute();
+    gs.log(response.getBody());
+})(current, previous);
+```
+
+<figure><img src="../../.gitbook/assets/image (1474).png" alt=""><figcaption></figcaption></figure>
+
+#### Note
+
+* Replace the placeholder `<copy the Webhook URL…>` in the script with the actual **Webhook URL** generated in **ReleaseOwl** under: **Project Settings → PMS Integration tab**.
+*   The webhook URL in ReleaseOwl follows this pattern:
+
+    ```
+    https://na3.releaseowl.com/ratesaptms/webhook/tenant/{tenant}/project/{projectId}/{tableName}/sync?secretKey={secretKey}
+    ```
+* **{tableName}** must match the table selected in the Business Rule Record (e.g., `incident`, `change_request`). This means the table name is not only used to determine which records trigger the webhook—it also appears explicitly in the webhook URL path.
+
+<figure><img src="../../.gitbook/assets/image (1475).png" alt=""><figcaption></figcaption></figure>
