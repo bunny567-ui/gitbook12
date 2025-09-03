@@ -178,7 +178,7 @@ Select the project. Any changes made in ServiceNow will be reflected in the User
 
 <figure><img src="../../.gitbook/assets/image (656).png" alt=""><figcaption></figcaption></figure>
 
-### Configure Webhook URL in ServiceNow
+## Configure Webhook URL in ServiceNow
 
 Follow the steps below to configure a webhook in ServiceNow:&#x20;
 
