@@ -18,14 +18,14 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
   * **Instance Name:** Choose a suitable name
 * Click **Next**, then **Create** to set up the instance.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Create Service Key
 3. Enable Custom Idp
 4. Enable Test Automation in ReleaseOwl CPI Environment Configuration
 5. Update the OAuth credentials and Instance URLs in the ReleaseOwl CPI Environment using the details from the Service Key in SAP BTP Cockpit.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Generating Test Cases** <a href="#pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases" id="pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases"></a>
 
