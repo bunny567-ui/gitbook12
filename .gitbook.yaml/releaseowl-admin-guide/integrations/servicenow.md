@@ -192,15 +192,15 @@ Follow the steps below to configure a webhook in ServiceNow:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1477).png" alt=""><figcaption></figcaption></figure>
 
-4. Enter a **Name** for your record.
-5. In the **Table** field, select the table you want to trigger the webhook from (for example, **Incident**, **Change Request**, etc.).
-6. In the **When to run** section, check **Insert** and **Update** so the webhook triggers on record creation and updates.
+5. Enter a **Name** for your record.
+6. In the **Table** field, select the table you want to trigger the webhook from (for example, **Incident**, **Change Request**, etc.).
+7. In the **When to run** section, check **Insert** and **Update** so the webhook triggers on record creation and updates.
 
 <figure><img src="../../.gitbook/assets/image (1473).png" alt=""><figcaption></figcaption></figure>
 
 
 
-7. In the **Advanced** section, paste the following script:
+8. In the **Advanced** section, paste the following script:
 
 ```javascript
 (function executeRule(current, previous /*null when async*/) {
