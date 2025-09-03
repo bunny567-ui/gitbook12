@@ -105,8 +105,6 @@ This is the most critical part, as the data you send in the body is what Release
 
 **Request Body (JSON format)**
 
-Copy
-
 ```
 {
   "UserStoryId": "<external-user-story-id>",
