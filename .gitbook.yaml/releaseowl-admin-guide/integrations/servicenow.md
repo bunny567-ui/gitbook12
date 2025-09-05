@@ -197,7 +197,7 @@ Follow the steps below to configure a webhook in ServiceNow:&#x20;
 7. Check the **Active** and **Advanced** options.
 8. In the **When to run** section:
 
-* Set **When** to **After**.
+* From the **When** drop-down, select **After**.
 * Select **Insert** and **Update** so the webhook triggers on both record creation and updates.
 
 <figure><img src="../../.gitbook/assets/image (1473).png" alt=""><figcaption></figcaption></figure>
