@@ -9,7 +9,7 @@ To enable secure integration between **ReleaseOwl** and **SAP API Management**, 
 * From the Administration menu, go to **Credential Manager**.
 * Click **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Provide Credential Details**
 
@@ -29,7 +29,7 @@ To enable secure integration between **ReleaseOwl** and **SAP API Management**, 
 
     * If choosing **Manual Entry**, provide the required details from the **API service key** created in **SAP BTP Cockpit**. (The steps to create and extract the API service key are explained below.)
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Steps to Retrieve API Management Details from SAP BTP Cockpit
 
@@ -40,21 +40,37 @@ To retrieve the **Client ID**, **Client Secret**, and **Token URL** for SAP API 
 1. Go to the **SAP BTP Cockpit** and log in with your credentials.
 2. In the **SAP BTP Cockpit**, navigate to **Instances and Subscriptions**.
 3. Click on the **Create** button.
-4. Fill in the necessary details as follows:
-   * **Service**: API Management, API Portal
-   * **Plan**: `apiportal-apiaccess`
-   * **Runtime Environment**: Cloud Foundry
-   * **Space**: Dev
-   * **Instance Name**: Enter a name of your choice
+4.  Fill in the necessary details as follows:
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    * **Service**: API Management, API Portal
+    * **Plan**: `apiportal-apiaccess`
+    * **Runtime Environment**: Cloud Foundry
+    * **Space**: Dev
+    * **Instance Name**: Enter a name of your choice
+    * Click "**Next**".
 
-#### 4. Create a Service Key
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* In the JSON format, enter:
+
+```json
+{ "role": "APIPortal.Administrator" }
+```
+
+* Click **"Next".**
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* Click **"Create"**.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+#### Create a Service Key
 
 1. After the instance is created, click the **three-dot menu (⋮)** next to it.
 2. Select **"Create Service Key"**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a **name** for the key (e.g., `api-access-key`) and click **Create**.
 4. Once created, click on the key to view credentials like `clientid`, `clientsecret`, and `url` — used for API authentication.
@@ -75,4 +91,4 @@ To retrieve the **Client ID**, **Client Secret**, and **Token URL** for SAP API 
 * Click **Save**.
 * The credential will appear in the **List of Credentials**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

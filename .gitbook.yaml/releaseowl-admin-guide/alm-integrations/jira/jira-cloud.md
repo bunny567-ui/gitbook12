@@ -29,15 +29,15 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 1. After the app is created, go to the **Permissions** section.
 2. Under **Jira API**, click **Add** to grant the necessary permissions. Once added, the button changes to **Configure** — click **Configure**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **Edit Scopes** to grant permissions for both **Classic Scopes** and **Granular Scopes**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Classic Scopes**: Select all scope names available under the **Jira Platform REST API**.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. **Granular Scopes**: Enable the following permissions:
 
@@ -65,7 +65,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 | **read:issue-meta:jira**                 | Read issue metadata (e.g., create metadata)                                      |
 | **read:board-scope:jira-software**       | Allows reading board scope details (e.g., filters/JQL that define board issues). |
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 5. Authorization Configuration
 
@@ -101,7 +101,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to **Administration**, then select **Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill out the credential form with the following details:
 
@@ -147,7 +147,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to Administration, then select **Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the form with the following details:
 
@@ -161,7 +161,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 
 5. Click Save to register the credential.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 8. Jira Project Integration&#x20;
 
