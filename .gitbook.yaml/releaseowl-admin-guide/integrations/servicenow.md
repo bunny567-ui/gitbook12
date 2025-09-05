@@ -67,13 +67,13 @@ To set up your credentials in ReleaseOwl, complete the following fields:
 
 <figure><img src="../../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
 
-7. &#x20;Click on **Generate Token.** A popup screen will appear prompting you to enter a username and password.
-8. Enter your **ServiceNow** username and password.
-9. Click the **Generate** button.
+9. Click on **Generate Token.** A popup screen will appear prompting you to enter a username and password.
+10. Enter your **ServiceNow** username and password.
+11. Click the **Generate** button.
 
 <figure><img src="../../.gitbook/assets/image (642).png" alt=""><figcaption></figcaption></figure>
 
-10. The generated token will be available in the **Manage Tokens** section under **ALL** in the ServiceNow website.
+12. The generated token will be available in the **Manage Tokens** section under **ALL** in the ServiceNow website.
 
 <figure><img src="../../.gitbook/assets/image (643).png" alt=""><figcaption></figcaption></figure>
 
@@ -193,8 +193,12 @@ Follow the steps below to configure a webhook in ServiceNow:&#x20;
 <figure><img src="../../.gitbook/assets/image (1477).png" alt=""><figcaption></figcaption></figure>
 
 5. Enter a **Name** for your record.
-6. In the **Table** field, select the table you want to trigger the webhook from (for example, **Incident**, **Change Request**, etc.).
-7. In the **When to run** section, check **Insert** and **Update** so the webhook triggers on record creation and updates.
+6. In the **Table** field, select the table you want to trigger the webhook from (for example, **Incident**, **Change Request , Task** etc.).
+7. Check the **Active** and **Advanced** options.
+8. In the **When to run** section:
+
+* Set **When** to **After**.
+* Select **Insert** and **Update** so the webhook triggers on both record creation and updates.
 
 <figure><img src="../../.gitbook/assets/image (1473).png" alt=""><figcaption></figcaption></figure>
 
@@ -233,6 +237,6 @@ Follow the steps below to configure a webhook in ServiceNow:&#x20;
     ```
     https://na3.releaseowl.com/ratesaptms/webhook/tenant/{tenant}/project/{projectId}/{tableName}/sync?secretKey={secretKey}
     ```
-* **{tableName}** must match the table selected in the Business Rule Record (e.g., `incident`, `change_request`). This means the table name is not only used to determine which records trigger the webhook—it also appears explicitly in the webhook URL path.
+* **{tableName}** must match the table selected in the Business Rule Record (e.g., `incident`, `task`, `change_request,`). This means the table name is not only used to determine which records trigger the webhook—it also appears explicitly in the webhook URL path.
 
 <figure><img src="../../.gitbook/assets/image (1475).png" alt=""><figcaption></figcaption></figure>
