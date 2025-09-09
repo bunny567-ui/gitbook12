@@ -234,7 +234,7 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 <figure><img src="../../.gitbook/assets/image (1104).png" alt=""><figcaption></figcaption></figure>
 
-### Assign Role Collections (Choose One of the Methods Below)
+#### Assign Role Collections (Choose One of the Methods Below)
 
 To assign role collections, you can choose **one** of the following methods:
 
@@ -242,7 +242,7 @@ To assign role collections, you can choose **one** of the following methods:
 * **Attribute Mapping (Email-based)**&#x20;
 * **Configure custom role collection mappings for the IdP**
 
-#### **5.** Assign Role Collections using User Groups
+5. **Assign Role Collections using User Groups**
 
 * Open the newly created **Custom IDP** and click **Edit**.
 * Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
@@ -252,7 +252,7 @@ To assign role collections, you can choose **one** of the following methods:
 | -------------------------- | --------- | -------- | ---------- |
 | PI\_Integration\_Developer | Groups    | equals   | group name |
 
-#### **6.** Assign Role Collections using Attribute Mapping (Email-Based)
+6. **Assign Role Collections using Attribute Mapping (Email-Based)**
 
 * In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
 * Click the **"+"** button to add a new mapping.
