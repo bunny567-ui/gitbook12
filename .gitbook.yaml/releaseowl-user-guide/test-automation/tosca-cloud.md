@@ -109,3 +109,26 @@ Setting up the test configuration allows the ReleaseOwl application to run **Tos
 2. The test runs and their results, along with **Logs** and **Reports**, will be displayed.
 
 <figure><img src="../../.gitbook/assets/image (1478).png" alt=""><figcaption></figcaption></figure>
+
+3. **Reports**:\
+   Click the **Reports** button to open the Reports section. It displays:
+   * The number of playlists that contain the executed test cases.
+   * The user who triggered the execution.
+   * If the test cases are still in progress, they will be shown in the **Queue** stage.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1479).png" alt=""><figcaption></figcaption></figure>
+
+4. Once completed, the test results will appear in the **Results** section, where you can click to view details. This will redirect you to the **Tricentis Cloud Platform (TCP)** for detailed insights.
+
+<figure><img src="../../.gitbook/assets/image (1483).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1484).png" alt=""><figcaption></figcaption></figure>
+
+5. When you expand the side navigation bar, it shows the number of test cases.
+
+<figure><img src="../../.gitbook/assets/image (1480).png" alt=""><figcaption></figcaption></figure>
+
+6. Clicking on **Logs** will display the detailed logs for the selected test run.
+
+<figure><img src="../../.gitbook/assets/image (1481).png" alt=""><figcaption></figcaption></figure>
+

@@ -221,8 +221,6 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 * In ReleaseOwl, click **Download Entity Descriptor** to download the tenant-specific metadata and SAP CPI environment descriptor.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FfOf3OW02XFh4aRswCKhN%252Fimage.png%3Falt%3Dmedia%26token%3D6dea107a-1937-46f5-84b8-53e9793f4636&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f59c5afb&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
 **4. Create Trust Configuration in SAP BTP**
 
 * Return to **Trust Configuration** in the SAP BTP Cockpit.
@@ -238,15 +236,10 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 ### Assign Role Collections (Choose One of the Methods Below)
 
-{% hint style="info" %}
-**Note:**&#x20;
-
 To assign role collections, you can choose **either** of the following methods:
 
 * **User Group Mapping**, or
-* **Attribute Mapping (Email-based)**\
-  Choose the one that matches your Identity Provider setup.
-{% endhint %}
+* **Attribute Mapping (Email-based) :** Choose the one that matches your Identity Provider setup.
 
 #### **5.** Assign Role Collections using User Groups
 
@@ -254,14 +247,9 @@ To assign role collections, you can choose **either** of the following methods:
 * Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
 * Configure the mappings like the example below:
 
-| Role Collection            | Attribute | Operator | Value                                                                                      |
-| -------------------------- | --------- | -------- | ------------------------------------------------------------------------------------------ |
-| Integration\_Provisioner   | Groups    | equals   | group name ( Replace `<group_name>` with actual group names from your Identity Provider.)  |
-| PI\_Business\_Expert       | Groups    | equals   |  group name                                                                                |
-| PI\_Integration\_Developer | Groups    | equals   | group name                                                                                 |
-| PI\_Administrator          | Groups    | equals   | group name                                                                                 |
-
-<figure><img src="../../.gitbook/assets/image (1105).png" alt=""><figcaption></figcaption></figure>
+| Role Collection            | Attribute | Operator | Value      |
+| -------------------------- | --------- | -------- | ---------- |
+| PI\_Integration\_Developer | Groups    | equals   | group name |
 
 #### **6.** Assign Role Collections using Attribute Mapping (Email-Based)
 
@@ -271,12 +259,7 @@ To assign role collections, you can choose **either** of the following methods:
 
 | Role Collection            | Attribute    | Operator | Value                                 |
 | -------------------------- | ------------ | -------- | ------------------------------------- |
-| Integration\_Provisioner   | emailAddress | equals   | The email ID of the **service user**  |
-| PI\_Administrator          | emailAddress | equals   | The email ID of the **service user**  |
-| PI\_Business\_Expert       | emailAddress | equals   | The email ID of the **service user**  |
 | PI\_Integration\_Developer | emailAddress | equals   | The email ID of the **service user**  |
-
-<figure><img src="../../.gitbook/assets/image (1109).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :**
@@ -286,6 +269,32 @@ _To enable Integration Advisor capabilities, assign the following role collectio
 * _`iadv-content-read`_
 * _`iadv-content-administrator`_
 {% endhint %}
+
+## Configure Custom Role Collection Mappings for the IdP
+
+### 1. Non-Production Environments
+
+| **Custom Role Collection**      | **Required Roles**                                                                                                                                                                                                                                                |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Non-Prod Custom Role Collection | <ul><li>MessagePayloadsRead </li><li> MonitoringDataRead </li><li>TraceConfigurationEdit</li><li>TraceConfigurationRead</li><li>WorkspaceArtifactsDeploy</li><li>WorkspacePackagesConfigure</li><li>WorkspacePackagesRead</li><li>WorkspacePackagesEdit</li></ul> |
+
+<figure><img src="../../.gitbook/assets/image (1492).png" alt=""><figcaption></figcaption></figure>
+
+### 2. Production Environments
+
+| **Custom Role Collection**  | **Required Roles**                                                                                                                        |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Prod Custom Role Collection | <ul><li>WorkspaceArtifactsDeploy</li><li>WorkspacePackagesConfigure</li><li>WorkspacePackagesRead</li><li>WorkspacePackagesEdit</li></ul> |
+
+<figure><img src="../../.gitbook/assets/image (1490).png" alt=""><figcaption></figcaption></figure>
+
+### 3. Integration Advisor (Non-Prod & Prod)
+
+| **Custom Role Collection**          | **Required Roles**  |
+| ----------------------------------- | ------------------- |
+| Integration Advisor Role Collection | - Content Developer |
+
+<figure><img src="../../.gitbook/assets/image (1491).png" alt=""><figcaption></figcaption></figure>
 
 7. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
 
