@@ -209,7 +209,7 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 <figure><img src="../../.gitbook/assets/image (1099).png" alt=""><figcaption></figcaption></figure>
 
 * Copy the extracted **SSO URL**.
-* Paste it into the **SSO URL** field in the **ReleaseOwl Environment** settings.
+* Paste it into the **SSO URL** field in the **SAP CPI Environment**.
 
 <figure><img src="../../.gitbook/assets/image (1500).png" alt=""><figcaption></figcaption></figure>
 
