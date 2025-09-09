@@ -236,10 +236,11 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 ### Assign Role Collections (Choose One of the Methods Below)
 
-To assign role collections, you can choose **either** of the following methods:
+To assign role collections, you can choose **one** of the following methods:
 
-* **User Group Mapping**, or
-* **Attribute Mapping (Email-based) :** Choose the one that matches your Identity Provider setup.
+* **User Group Mapping**
+* **Attribute Mapping (Email-based)**&#x20;
+* **Configure custom role collection mappings for the IdP**
 
 #### **5.** Assign Role Collections using User Groups
 
@@ -261,7 +262,7 @@ To assign role collections, you can choose **either** of the following methods:
 | -------------------------- | ------------ | -------- | ------------------------------------- |
 | PI\_Integration\_Developer | emailAddress | equals   | The email ID of the **service user**  |
 
-## Configure Custom Role Collection Mappings for the IdP
+7. **Configure Custom Role Collection Mappings for the IdP**
 
 You can configure granular permissions by creating the custom role collection with the below required roles:
 
@@ -274,7 +275,7 @@ You can configure granular permissions by creating the custom role collection wi
 
 
 
-7. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
+8. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
 
 <figure><img src="../../.gitbook/assets/image (1108).png" alt=""><figcaption></figcaption></figure>
 
