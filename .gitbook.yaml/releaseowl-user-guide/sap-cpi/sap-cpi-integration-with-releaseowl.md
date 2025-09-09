@@ -180,16 +180,7 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 | **Branch**                              | Specify the branch to be used for the integration.                                                                                                                                                                                                                                       |
 | **Environment Type**                    | Select the environment type (e.g., **Dev**, **QA**, **Prod**).                                                                                                                                                                                                                           |
 
-<figure><img src="../../.gitbook/assets/image (1098).png" alt=""><figcaption></figcaption></figure>
-
-4. After clicking the **Save** button, a **Test** button will appear. This button is used to verify whether the entered credentials are correct. Click on the **Test** button to validate the connection.\
-
-
-<figure><img src="../../.gitbook/assets/image (1101).png" alt=""><figcaption></figcaption></figure>
-
-5. Upon successful validation, a **Download** option will be available to download the **tenant-specific metadata** and the **SAP CPI environment descriptor file**.
-
-<figure><img src="../../.gitbook/assets/image (1496).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1499).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom Identity Provider (IDP) Setup and Configuration <a href="#pdf-page-della43ge2ynalx23r7p-toc190778976" id="pdf-page-della43ge2ynalx23r7p-toc190778976"></a>
 
@@ -201,7 +192,7 @@ A Custom IDP (Identity Provider) must be configured to allow secure authenticati
 
 A **Custom Identity Provider (IDP)** is required for deploying certain artifact types—such as **Value Mapping**, **REST**, **SOAP**, and **OData APIs**—as well as for executing test cases associated with these artifacts via ReleaseOwl.
 
-**1. Download SAP BTP SAML Metadata**
+1. **Download SAP BTP SAML Metadata**
 
 * Navigate to the **Security** section of your SAP BTP Subaccount.
 * Go to **Trust Configuration**.
@@ -209,21 +200,29 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 <figure><img src="../../.gitbook/assets/image (1100).png" alt=""><figcaption></figcaption></figure>
 
-**2. Extract the SAP BTP SSO URL**
+2. **Extract the SAP BTP SSO URL**
 
 * Open the downloaded SAML metadata XML file in a text editor (e.g., Notepad++, VS Code, or a browser).
 * Search for the `<AssertionConsumerService>` tag.
-* Locate the `Location` attribute inside the tag. The value of this attribute is your **SAP BTP SSO URL**.
+* In this tag, locate the **Location** attribute. The value of this attribute is your **SAP BTP SSO URL**.
 
 <figure><img src="../../.gitbook/assets/image (1099).png" alt=""><figcaption></figcaption></figure>
 
-**3. Download the ReleaseOwl Metadata Descriptor**
+* Copy the extracted **SSO URL**.
+* Paste it into the **SSO URL** field in the **ReleaseOwl Environment** settings.
 
-* In ReleaseOwl, click **Download Entity Descriptor** to download the tenant-specific metadata and SAP CPI environment descriptor.
+<figure><img src="../../.gitbook/assets/image (1500).png" alt=""><figcaption></figcaption></figure>
+
+* After clicking the **Save** button, a **Test** button will appear. This button is used to verify whether the entered credentials are correct. Click on the **Test** button to validate the connection.\
+
+
+<figure><img src="../../.gitbook/assets/image (1101).png" alt=""><figcaption></figcaption></figure>
+
+* Upon successful validation, a **Download** option will be available to download the **tenant-specific metadata** and the **SAP CPI environment descriptor file**.
 
 <figure><img src="../../.gitbook/assets/image (1494).png" alt=""><figcaption></figcaption></figure>
 
-**4. Create Trust Configuration in SAP BTP**
+3. **Create Trust Configuration in SAP BTP**
 
 * Return to **Trust Configuration** in the SAP BTP Cockpit.
 * Click **New Trust Configuration** and select **New** **SAML Trust Configuration**.
@@ -236,11 +235,11 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 <figure><img src="../../.gitbook/assets/image (1495).png" alt=""><figcaption></figcaption></figure>
 
-#### 5. Assign Role Collections (Choose One of the Methods Below)
+4. **Assign Role Collections (Choose One of the Methods Below)**
 
 To assign role collections, you can choose **one** of the following methods:
 
-**Assign Role Collections using User Groups**
+**Method 1: Assign Role Collections using User Groups**
 
 * Open the newly created **Custom IDP** and click **Edit**.
 * Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
@@ -250,7 +249,7 @@ To assign role collections, you can choose **one** of the following methods:
 | -------------------------- | --------- | -------- | ---------- |
 | PI\_Integration\_Developer | Groups    | equals   | group name |
 
-**Assign Role Collections using Attribute Mapping (Email-Based)**
+**Method 2: Assign Role Collections using Attribute Mapping (Email-Based)**
 
 * In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
 * Click the **"+"** button to add a new mapping.
@@ -260,7 +259,7 @@ To assign role collections, you can choose **one** of the following methods:
 | -------------------------- | ------------ | -------- | ------------------------------------- |
 | PI\_Integration\_Developer | emailAddress | equals   | The email ID of the **service user**  |
 
-**Configure Custom Role Collection Mappings for the IdP**
+**Method 3: Configure Custom Role Collection Mappings for the IdP**
 
 You can configure granular permissions by creating the custom role collection with the below required roles:
 
