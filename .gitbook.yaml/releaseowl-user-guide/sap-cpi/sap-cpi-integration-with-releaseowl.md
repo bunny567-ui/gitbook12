@@ -189,7 +189,7 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 
 5. Upon successful validation, a **Download** option will be available to download the **tenant-specific metadata** and the **SAP CPI environment descriptor file**.
 
-<figure><img src="../../.gitbook/assets/image (1102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1496).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom Identity Provider (IDP) Setup and Configuration <a href="#pdf-page-della43ge2ynalx23r7p-toc190778976" id="pdf-page-della43ge2ynalx23r7p-toc190778976"></a>
 
@@ -221,6 +221,8 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 * In ReleaseOwl, click **Download Entity Descriptor** to download the tenant-specific metadata and SAP CPI environment descriptor.
 
+<figure><img src="../../.gitbook/assets/image (1494).png" alt=""><figcaption></figcaption></figure>
+
 **4. Create Trust Configuration in SAP BTP**
 
 * Return to **Trust Configuration** in the SAP BTP Cockpit.
@@ -232,17 +234,13 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 * **Uncheck** the option **"Available for User Logon"** to prevent this IDP from appearing on the SAP login screen.
 * Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (1104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1495).png" alt=""><figcaption></figcaption></figure>
 
-#### Assign Role Collections (Choose One of the Methods Below)
+#### 5. Assign Role Collections (Choose One of the Methods Below)
 
 To assign role collections, you can choose **one** of the following methods:
 
-* **User Group Mapping**
-* **Attribute Mapping (Email-based)**&#x20;
-* **Configure custom role collection mappings for the IdP**
-
-5. **Assign Role Collections using User Groups**
+**Assign Role Collections using User Groups**
 
 * Open the newly created **Custom IDP** and click **Edit**.
 * Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
@@ -252,7 +250,7 @@ To assign role collections, you can choose **one** of the following methods:
 | -------------------------- | --------- | -------- | ---------- |
 | PI\_Integration\_Developer | Groups    | equals   | group name |
 
-6. **Assign Role Collections using Attribute Mapping (Email-Based)**
+**Assign Role Collections using Attribute Mapping (Email-Based)**
 
 * In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
 * Click the **"+"** button to add a new mapping.
@@ -262,7 +260,7 @@ To assign role collections, you can choose **one** of the following methods:
 | -------------------------- | ------------ | -------- | ------------------------------------- |
 | PI\_Integration\_Developer | emailAddress | equals   | The email ID of the **service user**  |
 
-7. **Configure Custom Role Collection Mappings for the IdP**
+**Configure Custom Role Collection Mappings for the IdP**
 
 You can configure granular permissions by creating the custom role collection with the below required roles:
 
@@ -275,7 +273,7 @@ You can configure granular permissions by creating the custom role collection wi
 
 
 
-8. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
+6. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
 
 <figure><img src="../../.gitbook/assets/image (1108).png" alt=""><figcaption></figcaption></figure>
 
