@@ -1,10 +1,26 @@
 # Integration Advisor
 
+
+
 **Prerequisites** : Before proceeding with Integration Advisor , ensure the following are in place:
 
 1. **Integration Suite Created**: The **Integration Suite** must be set up within SAP Business Technology Platform (SAP BTP).
 2. **API Instance Created**: An **API Instance** must be created to provide the credentials required for configuration in the **CPI Environment**.
 3. SAP CPI Environment Configured in ReleaseOwl
+4. &#x20;_To enable Integration Advisor capabilities, assign the following role collections to the IDP:_
+
+* _`iadv-content-read`_
+* _`iadv-content-administrator`_
+
+### Integration Advisor (Non-Prod & Prod)
+
+| **Custom Role Collection**          | **Required Roles**                  |
+| ----------------------------------- | ----------------------------------- |
+| Integration Advisor Role Collection | <ul><li>Content Developer</li></ul> |
+
+<figure><img src="../../../.gitbook/assets/image (1491).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### **Steps to Create a Custom Type System** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system" id="pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system"></a>
 
