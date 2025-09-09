@@ -107,3 +107,5 @@ Setting up the test configuration allows the ReleaseOwl application to run **Tos
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. The test runs and their results, along with **Logs** and **Reports**, will be displayed.
+
+<figure><img src="../../.gitbook/assets/image (1478).png" alt=""><figcaption></figcaption></figure>
