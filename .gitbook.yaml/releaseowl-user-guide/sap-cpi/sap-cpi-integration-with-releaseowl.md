@@ -272,13 +272,15 @@ _To enable Integration Advisor capabilities, assign the following role collectio
 
 ## Configure Custom Role Collection Mappings for the IdP
 
+Configure Custom Role Collection Mappings for the IdP Create a custom role collection with the following roles for assignment in the environments:&#x20;
+
 ### 1. Non-Production Environments
 
 | **Custom Role Collection**      | **Required Roles**                                                                                                                                                                                                                                                |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Non-Prod Custom Role Collection | <ul><li>MessagePayloadsRead </li><li> MonitoringDataRead </li><li>TraceConfigurationEdit</li><li>TraceConfigurationRead</li><li>WorkspaceArtifactsDeploy</li><li>WorkspacePackagesConfigure</li><li>WorkspacePackagesRead</li><li>WorkspacePackagesEdit</li></ul> |
 
-<figure><img src="../../.gitbook/assets/image (1492).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1493).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Production Environments
 
@@ -290,9 +292,9 @@ _To enable Integration Advisor capabilities, assign the following role collectio
 
 ### 3. Integration Advisor (Non-Prod & Prod)
 
-| **Custom Role Collection**          | **Required Roles**  |
-| ----------------------------------- | ------------------- |
-| Integration Advisor Role Collection | - Content Developer |
+| **Custom Role Collection**          | **Required Roles**                  |
+| ----------------------------------- | ----------------------------------- |
+| Integration Advisor Role Collection | <ul><li>Content Developer</li></ul> |
 
 <figure><img src="../../.gitbook/assets/image (1491).png" alt=""><figcaption></figcaption></figure>
 
