@@ -44,7 +44,7 @@ This report helps teams track user story deployments and confirm successful comp
 
 ### Tasks
 
-The **Task Report** provides an overview of all the tasks of the user story, transports and CPI.&#x20;
+The Task Report provides an overview of all the **tasks related to User Stories, Transports, and CPI artifacts**.&#x20;
 
 **How to Generate the Report:**
 
