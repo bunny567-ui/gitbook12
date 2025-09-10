@@ -6,7 +6,7 @@ To  Sync user stories using an ALM integration (e.g., JIRA), follow these steps:
 
 2\) Click the **Sync User Stories** option from the User Stories screen. The user stories from the external system will be synced and displayed in the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 &#x20;**Note:** Clicking **Sync User Stories** will synchronize records of all issue types from the externally integrated ALM project into ReleaseOwl.
@@ -18,11 +18,11 @@ b) Always ensure to **sync the Sprints first** before syncing the User Stories.
 
 3\) Click **OK**. The user stories created in the external system will be synced to ReleaseOwl and will appear on the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\) To view previously performed sync actions, click on **Sync History**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note : Column widths** for **User Story ID, Status, Type, and Assigned To** now auto-adjust based on content.
@@ -90,7 +90,7 @@ To create user stories manually for systems not integrated through ALM , follow 
 
 7\) The Validation Report will look as follows:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8\) On clicking the **Pipeline Activity**, you can view the release pipeline execution status as follows:
 
@@ -99,8 +99,12 @@ To create user stories manually for systems not integrated through ALM , follow 
 9\) **Options in Pipeline Activity Screen (Right Panel)**\
 The right side of the **Pipeline Activity** screen contains the following options:
 
-* **Abort:**\
-  This button allows users to stop a currently running pipeline activity. When clicked, a confirmation prompt appears. Upon confirmation, the pipeline status is updated to **Aborted** for the respective task.&#x20;
+*   **Abort:**\
+    This button allows users to stop a currently running pipeline activity. When clicked, a confirmation popup appears where the user must provide a reason to proceed. Once confirmed, the pipeline status changes to **Aborted** for the respective task.
+
+    If a deployment is already in progress, selecting **Abort** will **not** stop the ongoing deployment. Therefore, the **Abort** action should be used only when the pipeline is in a **Waiting for Approval** or **Suspended** state.
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1124).png" alt=""><figcaption></figcaption></figure>
 
@@ -118,7 +122,7 @@ This option displays the execution history of the release pipeline, including de
 
 * When you click on the arrow button (**>**), you are taken to the **Pipeline Activity** screen.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1127).png" alt=""><figcaption></figcaption></figure>
 
@@ -193,26 +197,26 @@ Deputy users can manage tasks when the primary user is unavailable.
 6. When a user story is promoted, the assigned Deputy User will receive an approval request. The Deputy User can then navigate to the **My Tasks** section and go to the **Tasks** tab.&#x20;
 7. In the **Action** column, they can choose to **Approve** or **Reject** the request.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FKW21vajbvqYWmHIWwwKU%252Fimage.png%3Falt%3Dmedia%26token%3D5ed024a6-d23a-4217-a1e8-a9992e157243&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=54cd62c7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 8. When you click on the **Approve/Reject** button, a detailed view will appear, displaying relevant information about the user story.&#x20;
 9. The Deputy User can review this information before making a decision to approve or reject the user story promotion.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FZ3zjGoeTsHBwWFCjGpAU%252Fimage.png%3Falt%3Dmedia%26token%3Dbade8a64-b497-4c0e-a9c4-0f086ac40faa&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=61f71a41&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 10. When the task is approved, a confirmation message will appear. In the **Pipeline Activity** section, you can see the task marked as **completed**, along with the name of the **Deputy User** who approved it.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fo8BTyNeMrKtsJwQQhZwG%252Fimage.png%3Falt%3Dmedia%26token%3D69a51b6f-ffe2-45dd-b055-d436977e3aa7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ae4505c4&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 11. In the **Deputy Tasks** section, the **Deputy User** can view the **task status**, including the **task name, reference ID, stage, task type, delivery time, assigned to, and action**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F6bieUIzzV1b8mUVSrVfp%252Fimage.png%3Falt%3Dmedia%26token%3Dc6ddad2e-bf51-4ea9-bc21-950781fe70ad&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b8ca79a5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
