@@ -38,7 +38,7 @@ The generated report displays:
 * Environment and Target System details
 * Deployment status
 
-This report helps teams track user story deployments and confirm successful completion. You can also export the report via PDF or Excel.&#x20;
+This report helps teams track user story deployments and confirm successful completion. You can also **export the report in PDF or Excel format**.
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
