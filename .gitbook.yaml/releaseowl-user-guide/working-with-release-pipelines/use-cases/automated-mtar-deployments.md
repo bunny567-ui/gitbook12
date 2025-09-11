@@ -95,7 +95,7 @@ Fill in the required details:
 
 8. On clicking Save, the release pipeline gets created and is shown in the Release Pipelines screen.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Multi-Stage Release Pipeline**
 

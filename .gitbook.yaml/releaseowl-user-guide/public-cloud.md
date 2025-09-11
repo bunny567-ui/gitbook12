@@ -16,14 +16,14 @@ This user guide explains how to manage and deploy **SAP S/4HANA Public Cloud art
    * **Password**: Enter the **SAP S/4HANA Cloud password**.
 4. Click **Save**.
 
-<figure><img src=".gitbook/assets/image (1502).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1502).png" alt=""><figcaption></figcaption></figure>
 
 ### **Environment Registration**
 
 1. Navigate to the **Environment** section.
 2. Select **S/4HANA Public Cloud Environment** and click **Register**.
 
-<figure><img src=".gitbook/assets/image (1533).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1533).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter the required details:
 
@@ -34,46 +34,49 @@ This user guide explains how to manage and deploy **SAP S/4HANA Public Cloud art
 
     * In SAP S/4HANA Cloud, go to **Profile → About**.
 
-    <figure><img src=".gitbook/assets/image (1535).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1535).png" alt=""><figcaption></figcaption></figure>
 * Navigate to **System Information** and identify the correct system entry containing the system number.
 
-<figure><img src=".gitbook/assets/image (1536).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1536).png" alt=""><figcaption></figcaption></figure>
 
 * **PC System Type** → Select the type of S/4HANA Public Cloud system you are registering, such as **Production**, **Quality**, or **Sandbox/Development**.
 * **Environment Type** → Choose the desired environment type.
 
-<figure><img src=".gitbook/assets/image (1534).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1534).png" alt=""><figcaption></figcaption></figure>
 
 #### **Assign Environment to a Project**
 
 1. Go to the **Projects** section and select your project.
 2. Enter necessary details and choose **Project Type** as **SAP Public Cloud**.
 
-<figure><img src=".gitbook/assets/image (1537).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1537).png" alt=""><figcaption></figcaption></figure>
 
-3. Click **Switch to Project** of the created **Project.**&#x20;
+3. Click **“Switch to Project”** for the project you just created.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 4. From the **Projects** dropdown (top-right corner), select **Project Settings → Environment**.
 
-<figure><img src=".gitbook/assets/image (1538).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1538).png" alt=""><figcaption></figcaption></figure>
 
-3. Click **+Add** to add a new environment.
+5. Click **+Add** to add a new environment.
 
-<figure><img src=".gitbook/assets/image (1539).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1539).png" alt=""><figcaption></figcaption></figure>
 
-4. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
+6. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
 
-<figure><img src=".gitbook/assets/image (1513).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1513).png" alt=""><figcaption></figcaption></figure>
 
-5. The environment is added to the corresponding project in ReleaseOwl.
-6. Click on the **Users** tab. This tab lists all existing users associated with the project.
-7. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.&#x20;
+7. The environment is added to the corresponding project in ReleaseOwl.
+8. Click on the **Users** tab. This tab lists all existing users associated with the project.
+9. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.&#x20;
 
-<figure><img src=".gitbook/assets/image (1516).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1516).png" alt=""><figcaption></figcaption></figure>
 
-8. Scroll down to the Environments section.
-9. Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
+10. Scroll down to the Environments section.
+11. Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
 
-<figure><img src=".gitbook/assets/image (1514).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1514).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -84,7 +87,7 @@ This user guide explains how to manage and deploy **SAP S/4HANA Public Cloud art
 3. Click the **Synchronize** button.
    * This retrieves all artifacts of type **Transport** and **Software Collection** from the S/4HANA Public Cloud into ReleaseOwl.
 
-<figure><img src=".gitbook/assets/image (1517).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1517).png" alt=""><figcaption></figcaption></figure>
 
 ### **Viewing Synchronized Artifacts**
 
@@ -98,29 +101,29 @@ This user guide explains how to manage and deploy **SAP S/4HANA Public Cloud art
   * **Software Collections** → Only shown when the status is **Exported**.
 * For each artifact, metadata such as **ID, Name, Status, Timestamp, and Type** is displayed for audit and traceability.
 
-<figure><img src=".gitbook/assets/image (1515).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1515).png" alt=""><figcaption></figcaption></figure>
 
 14. **Transports:** &#x20;
     * When you click on the **action button** for a transport, you can see the **Objects** button.
-    * Clicking **Objects** displays the **list of technical objects** included in the synchronized transport.
+    * Clicking **Objects** button displays the **list of technical objects** included in the synchronized transport.
 
-<figure><img src=".gitbook/assets/image (1518).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1518).png" alt=""><figcaption></figcaption></figure>
 
 15. **Software\_collections:**&#x20;
 
-* When you click on the action button it will show the sync, versions and items.
+* When you click the Action button for a Software Collection, the available options are: Sync, Versions, and Items.
 
-<figure><img src=".gitbook/assets/image (1523).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1523).png" alt=""><figcaption></figcaption></figure>
 
 **Sync:** Used to synchronize the latest version of the software collection.
 
 **Versions** : Displays the versions of the Software Collection, representing the history of changes made over time (e.g., Version 1, Version 2, etc.). Versions can also be **assigned to a User Story** or **unassigned** as needed for tracking and deployment purposes.
 
-<figure><img src=".gitbook/assets/image (1522).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1522).png" alt=""><figcaption></figcaption></figure>
 
 **Items** : Shows the **individual items** that are part of the software collection and were created in S/4HANA Public Cloud.
 
-<figure><img src=".gitbook/assets/image (1521).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1521).png" alt=""><figcaption></figcaption></figure>
 
 #### Creating a Release Pipeline <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline-3" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline-3"></a>
 
@@ -131,15 +134,15 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Navigate to **Release Pipelines**.
 * Click **Create New Release Pipeline**.
 
-<figure><img src=".gitbook/assets/image (1524).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1524).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a **Pipeline Name**.
 
-<figure><img src=".gitbook/assets/image (1525).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1525).png" alt=""><figcaption></figcaption></figure>
 
 * Add stages (e.g., QA, Prod) and assign tasks to each stage.
 
-<figure><img src=".gitbook/assets/image (1526).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1526).png" alt=""><figcaption></figcaption></figure>
 
 ### **Validation Task**
 
@@ -156,7 +159,7 @@ A **Validation Task** allows you to validate S/4HANA Public Cloud artifacts as p
 * **Pipeline Execution**: Defines execution preferences for the validation task.
   * **Continue on Failure**: If enabled, the pipeline continues execution even if the validation task fails.
 
-<figure><img src=".gitbook/assets/image (1527).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1527).png" alt=""><figcaption></figcaption></figure>
 
 #### **Deployment Tasks**
 
@@ -182,7 +185,7 @@ A **Deployment Task** is used to deploy artifacts into the target **S/4HANA Publ
 
 3. After entering the details, click **Save** to add the deployment task.
 
-<figure><img src=".gitbook/assets/image (1528).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1528).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**Approval Tasks**
 
@@ -202,7 +205,7 @@ An **Approval Task** is used to introduce manual approval checkpoints within a p
 
 3. Click **Save**.
 
-<figure><img src=".gitbook/assets/image (1529).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1529).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating and Promoting a User Story**
 
@@ -223,7 +226,7 @@ A **User Story** in ReleaseOwl is used to track, manage, and promote changes fro
    * Once the artifacts are attached, click on the **Promote** button.
    * Promotion moves the User Story into the defined **pipeline stage**, where it will go through tasks such as **Validation**, **Approval**, and **Deployment** based on the configured pipeline.
 
-<figure><img src=".gitbook/assets/image (1530).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1530).png" alt=""><figcaption></figcaption></figure>
 
 ### **Validation Report and Deployment Logs**
 
@@ -238,16 +241,17 @@ It provides insights into whether the S/4HANA Public Cloud artifacts (Transports
 * User Story Dependencies (Beta) — highlights dependent user stories to prevent conflicts or incomplete deployments.
 * **Versions** — Displays the artifact version history (e.g., Version 3, Version 4), helping track changes over time.
 
-<figure><img src=".gitbook/assets/image (1531).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1531).png" alt=""><figcaption></figcaption></figure>
 
 #### **2. Deployment Logs**
 
 The **Deployment Logs** are generated during execution of a **Deployment Task** and provide full traceability of the deployment process.
 
-* **Contents of Deployment Logs**:
-  * List of deployed artifacts (Transports / Software Collections).
-  * **Deployment Status** → Indicates whether the deployment was _Successful_ or _Failed_.
-  * **Already Deployed** → Identifies artifacts that were previously deployed and skipped during execution.
-  * **Manual Completion** → Indicates deployments that were marked as completed manually instead of through automated execution.
+*   **Contents of Deployment Logs**:
 
-<figure><img src=".gitbook/assets/image (1532).png" alt=""><figcaption></figcaption></figure>
+    * List of deployed artifacts (Transports / Software Collections).
+    * **Deployment Status** → Indicates whether the deployment was _Successful_ or _Failed_.
+    * **Already Deployed** → Identifies artifacts that were previously deployed and skipped during execution.
+    * **Manual Completion** → Indicates deployments that were marked as completed manually instead of through automated execution.
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

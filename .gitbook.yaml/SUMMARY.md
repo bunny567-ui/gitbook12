@@ -107,7 +107,7 @@
   * [Utilities](releaseowl-user-guide/utilities/README.md)
     * [ABAP Version Compare](releaseowl-user-guide/utilities/abap-version-compare.md)
     * [gCTS Merge](releaseowl-user-guide/utilities/gcts-merge.md)
-* [Public Cloud](public-cloud.md)
+  * [Public Cloud](releaseowl-user-guide/public-cloud.md)
 * [ReleaseOwl Releases](releaseowl-releases/README.md)
   * [Release Calendar](releaseowl-releases/release-calendar.md)
   * [Release Notes](releaseowl-releases/release-notes/README.md)

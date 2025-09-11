@@ -94,17 +94,17 @@ Setting up the test configuration allows the ReleaseOwl application to run **Tos
 * **Playlists:** Choose the desired playlist(s) that contain the test cases to be executed.
 * Click the **Submit** button to save the test configuration. Once submitted, a **Tosca Cloud test run** instance is created within ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * To start the execution, click the **Run** button. Upon execution, a confirmation message will appear indicating whether the test run was successfully triggered in Tosca Cloud.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Viewing Test Runs and Reports
 
 1. To view the test runs, click **View Test Runs** against the desired Test Configuration.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. The test runs and their results, along with **Logs** and **Reports**, will be displayed.
 

@@ -8,7 +8,7 @@ Admin users can switch to the **Administration View** to access the **Credential
 
 1. Click the **Credential Manager** option from the left-hand menu to view the list of registered credentials.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **Credential Type** section, you can see:
 
@@ -21,14 +21,14 @@ Admin users can switch to the **Administration View** to access the **Credential
   * **Private**: Visible only to the user who created them. These credentials remain hidden from other users.
 * **Search Bar** – Use this to quickly search for credentials by name.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Registering a New Credential**:
 
 * To add a new credential, click **Register Credential**, available on the right-hand panel.
 * The following screen will be displayed:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Credential Types**
 
