@@ -35,7 +35,7 @@ This user guide explains how to manage and deploy **SAP S/4HANA Public Cloud art
     * In SAP S/4HANA Cloud, go to **Profile → About**.
 
     <figure><img src="../.gitbook/assets/image (1535).png" alt=""><figcaption></figcaption></figure>
-* Navigate to **System Information** and identify the correct system entry containing the system number.
+* Navigate to **System Information** and identify the System Name containing the system number.
 
 <figure><img src="../.gitbook/assets/image (1536).png" alt=""><figcaption></figcaption></figure>
 
