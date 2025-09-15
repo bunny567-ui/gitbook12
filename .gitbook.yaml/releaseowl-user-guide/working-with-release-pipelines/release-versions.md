@@ -7,7 +7,7 @@ Release Versioning is the process of assigning unique version names or version n
 * To navigate to the Release Versions screen, click **Release Versions** under the **Change Management** section.
 * The Release Versions screen looks as follows:
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Sync Release Versions <a href="#pdf-page-0ebflbp2eco5zehbqqzc-sync-release-versions" id="pdf-page-0ebflbp2eco5zehbqqzc-sync-release-versions"></a>
 
@@ -21,22 +21,22 @@ Release Versioning is the process of assigning unique version names or version n
 
 * Click **Actions** and select **User Stories** against any release version:
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The user stories that are a part of the selected **Release Version** are listed as follows:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Create a Release Version** <a href="#pdf-page-0ebflbp2eco5zehbqqzc-create-a-release-version" id="pdf-page-0ebflbp2eco5zehbqqzc-create-a-release-version"></a>
 
 * You can also create release versions in ReleaseOwl by clicking the **Create Release Version** link in the Release Versions page.
 * Enter the required details as follows:
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Following are the actions that can performed on a release version:
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Mark as Released** | <p>The release version status changes to <strong>Released</strong> and <strong>Release Date</strong> appears against the record.<br><strong>Note:</strong> Once the Status changes to <strong>Released, only User Stories</strong> option is available, and the rest of the options appear disabled.</p> |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

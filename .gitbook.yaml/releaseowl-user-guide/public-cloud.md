@@ -53,7 +53,7 @@ This user guide explains how to manage and deploy **SAP S/4HANA Public Cloud art
 
 3. Click **“Switch to Project”** for the project you just created.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. From the **Projects** dropdown (top-right corner), select **Project Settings → Environment**.
 
@@ -232,26 +232,25 @@ A **User Story** in ReleaseOwl is used to track, manage, and promote changes fro
 
 #### **1. Validation Report**
 
-The **Validation Report** is generated when a **Validation Task** is executed in the pipeline.\
-It provides insights into whether the S/4HANA Public Cloud artifacts (Transports or Software Collections) meet the required conditions before deployment.
+The Validation Report is generated when a Validation Task is executed in the pipeline. It provides insights into whether the S/4HANA Public Cloud artifacts (Transports or Software Collections) meet the required conditions before deployment.
 
-**Contents of the Validation Report**:
+**Contents of the Validation Report:**
 
-* List of validated artifacts.
-* User Story Dependencies (Beta) — highlights dependent user stories to prevent conflicts or incomplete deployments.
-* **Versions** — Displays the artifact version history (e.g., Version 3, Version 4), helping track changes over time.
+* **List of Validated Artifacts** → Provides details of the artifacts that were validated during execution.
+* **User Story Dependencies (Beta)** → Provides details of dependent user stories to help prevent conflicts or incomplete deployments.
+* **Versions** → Provides details of the artifact version history (e.g., Version 3, Version 4), helping track and compare changes over time
 
 <figure><img src="../.gitbook/assets/image (1531).png" alt=""><figcaption></figcaption></figure>
 
 #### **2. Deployment Logs**
 
-The **Deployment Logs** are generated during execution of a **Deployment Task** and provide full traceability of the deployment process.
+The Deployment Logs are generated during the execution of a Deployment Task and provide full traceability of the deployment process.
 
-*   **Contents of Deployment Logs**:
+**Contents of Deployment Logs:**
 
-    * List of deployed artifacts (Transports / Software Collections).
-    * **Deployment Status** → Indicates whether the deployment was _Successful_ or _Failed_.
-    * **Already Deployed** → Identifies artifacts that were previously deployed and skipped during execution.
-    * **Manual Completion** → Indicates deployments that were marked as completed manually instead of through automated execution.
+* **List of Deployed Artifacts** → Provides details of the artifacts (Transports / Software Collections) deployed during execution.
+* **Deployment Status** → Provides details of whether the deployment was Successful or Failed.
+* **Already Deployed** → Provides details of the artifacts that were previously deployed and skipped during execution.
+* **Manual Completion** → Provides details of the deployments that were marked as completed manually instead of through automated execution.
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -158,9 +158,9 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * Navigate to the **Build Pipelines** section and click on **Create Build Pipeline**.
     * Enter the **Build Pipeline Name** and assign **Labels** for filtering.
 
-    <figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **Repository Configuration**
 
 * Enter the **Repository URL** (e.g., Bitbucket or other platforms).
@@ -168,7 +168,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 * Choose the branch (e.g., QA, Master, or Dev).
 * Select the type of version control system (e.g., GitHub, GitLab, Bitbucket).
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Builder Section**
 
@@ -176,7 +176,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 * **Build Tool Version**: Select the required version.
 * **Max # of Builds to Keep**: Set to 30 to store the latest versions and avoid storage issues in Jenkins.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Scheduler**
 
@@ -186,7 +186,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 
 * Enter email addresses to receive notifications.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Tool Integrations** <a href="#pdf-page-hbalethepy3zsklyalpx-tool-integrations" id="pdf-page-hbalethepy3zsklyalpx-tool-integrations"></a>
 
@@ -223,7 +223,7 @@ The purpose of a malware scan is to scan business documents for any potential th
         * Navigate to **Services** and open the **Service Marketplace**.
         * Search for "**Malware**" and click **Create** to create an instance.
 
-        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -232,7 +232,7 @@ The purpose of a malware scan is to scan business documents for any potential th
 
 
 
-    <figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FR9XmVCIu5Kx9lcATvlAs%252Fimage.png%3Falt%3Dmedia%26token%3Dcd1f7f9e-bbcd-4cf3-ae37-bb05338f8b0a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7198401a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 3.  **Save the Credentials**
@@ -251,7 +251,7 @@ The purpose of a malware scan is to scan business documents for any potential th
     * Select the **Registered Credential** from the dropdown menu.
     * Specify the timeout duration for the malware scan.
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Save** to finalize the configuration.
 
