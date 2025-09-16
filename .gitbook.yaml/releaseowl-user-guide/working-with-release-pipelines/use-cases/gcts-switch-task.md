@@ -1,6 +1,6 @@
 # GCTS Switch Task
 
-The **GCTS Switch Task** in **ReleaseOwl** is used when a branch associated to the system needs to be changed to another branch for e.g. if a UAT system is pointing to “**QA**” branch and a hotfix needs to be verified then this task can used to switch to “**Hotfix**” branch.
+The **GCTS Switch Task** in **ReleaseOwl** is used to change the branch associated with a system. For example, if a UAT system is currently pointing to the “QA” branch and a hotfix needs to be tested, this task can be used to switch the system to the “Hotfix” branch.
 
 ### Prerequisites
 
