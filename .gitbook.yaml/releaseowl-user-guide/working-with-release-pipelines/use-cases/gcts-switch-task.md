@@ -56,13 +56,10 @@ The **GCTS Switch Task** in **ReleaseOwl** is used to change the branch associat
 ### Additional Option – Manual Completion (Mark as Complete)
 
 * At any point, the user may choose to bypass waiting for the switch to complete by using the **Mark as complete in the Manual completion** option.
-*   Steps:
+* Steps:
+  1. In **Manual Completion**, click **Mark as Complete**.
 
-    1. In **Manual Completion**, click **Mark as Complete**.
-
-    <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (1540).png" alt=""><figcaption></figcaption></figure>
 
 2. Enter the **Manual Complete Reason**.
 3. Click **Mark as Complete** to confirm.
