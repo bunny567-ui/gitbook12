@@ -90,4 +90,4 @@ Setting up the test configuration allows the ReleaseOwl application to run Tosca
 * Failure count.
 * Time taken for test case execution.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

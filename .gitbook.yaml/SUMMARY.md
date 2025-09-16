@@ -94,6 +94,7 @@
       * [Automated MTAR Deployments](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-mtar-deployments.md)
       * [Automated CPI Deployments](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-cpi-deployments.md)
       * [Message Listener](releaseowl-user-guide/working-with-release-pipelines/use-cases/message-listener.md)
+      * [GCTS Switch Task](releaseowl-user-guide/working-with-release-pipelines/use-cases/gcts-switch-task.md)
   * [Test Automation](releaseowl-user-guide/test-automation/README.md)
     * [HCL OneTest](releaseowl-user-guide/test-automation/hcl-onetest/README.md)
       * [Test Configurations](releaseowl-user-guide/test-automation/hcl-onetest/test-configurations.md)
