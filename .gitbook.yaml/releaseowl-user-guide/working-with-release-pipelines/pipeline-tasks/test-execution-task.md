@@ -1,6 +1,6 @@
 # Test Execution Task
 
-&#x20;ReleaseOwl can be integrated with HCL OneTest UI using which functional and web tests can be executed in any specific environment once the deployment is complete to check if the functionality is as desired. The following screen is displayed on adding a test execution task.\
+A **Test Execution Task** in ReleaseOwl is a pipeline task used to automatically run test cases after a deployment. It allows integration with external testing tools (such as **HCL OneTest UI** or **Tosca**) so that functional, regression, or web tests can be executed in the target environment.\
 
 
 <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

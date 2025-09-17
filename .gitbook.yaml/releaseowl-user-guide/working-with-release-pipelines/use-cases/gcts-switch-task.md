@@ -32,17 +32,15 @@ The **GCTS Switch Task** in **ReleaseOwl** is used to change the branch associat
 
 
 
-4. After promotion, the system begins monitoring the **switch\_status**:
-   * **If the switch\_status = TIMEOUT** → The user story moves to **Suspend state** with a **Refresh** icon, which can be clicked to retry the switch.
+4. After promotion, the system begins monitoring the **switch\_status**.
+   * If the switch\_status = **TIMEOUT**, the user story moves to **Suspend** state with a **Refresh** icon. You can click this icon to retry the switch.
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-* **If the switch\_status = SUCCESS** → The **Continue Deployment** option becomes available, and clicking it proceeds with the process and marks the overall status as **Completed**.
+* Upon clicking **Refresh**, the switch\_status may update to **SUCCESS** or **SWITCHED\_WITH\_WARNINGS**.
+  * In this case, the **Continue Deployment** option becomes available. Clicking it resumes the process and marks the overall status as **Completed**.
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
-* **If the switch\_status = SWITCHED\_WITH\_WARNINGS** → Sometimes, after promoting the user story, the status may directly change to **SWITCHED\_WITH\_WARNINGS** (without going through TIMEOUT).
-* In this case, the **Continue Deployment** option is available, and clicking it marks the overall status as **Completed**.
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
