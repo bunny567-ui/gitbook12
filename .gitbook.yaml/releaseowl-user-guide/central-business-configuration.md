@@ -179,7 +179,7 @@ The **Deployment Logs** are generated during execution of a **Deployment Task** 
 * **User Story** → Associated user story that triggered the deployment.
 * **Deployment Status** → Status of the deployment (Successful or Failed).
 * **Tenant URL** → URL of the tenant where the deployment was executed.
-* **Deployment ID** → A unique identifier assigned to the deployment for traceability. Selecting the Deployment ID redirects to the execution details of the deployment.
+* **Deployment ID** → A unique identifier assigned to the deployment for traceability. Selecting the Deployment ID redirects to the execution details of the deployment task.&#x20;
 
 <figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
