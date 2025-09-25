@@ -60,7 +60,7 @@ This user guide explains how to manage and deploy **SAP S/4HANA Public Cloud art
 
 <figure><img src="../.gitbook/assets/image (1513).png" alt=""><figcaption></figcaption></figure>
 
-6. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
+6. On the subsequent screen, select the required environment from the Source list. Only artifacts with a defined source are synced to ReleaseOwl, and you can also add multiple source environments.
 7. The environment is added to the corresponding project in ReleaseOwl.
 8. Click on the **Users** tab. This tab lists all existing users associated with the project.
 9. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.&#x20;
@@ -183,7 +183,7 @@ A **User Story** in ReleaseOwl is used to track, manage, and promote changes fro
    * Click the **+ Add** button to attach **S/4HANA Public Cloud artifacts** (such as Transports or Software Collections).
    * After selecting the required artifacts, click **Save**.
 2. **Promote the User Story**
-   * Once the artifacts are attached, click the _**Promote**_ button. The Promote button triggers the Release Pipeline that contains the tasks you have configured.
+   * Once the artifacts are attached, clicking the Promote button triggers the Release Pipeline.
 
 <figure><img src="../.gitbook/assets/image (1530).png" alt=""><figcaption></figcaption></figure>
 
@@ -213,7 +213,7 @@ The Validation Report is generated when a Validation Task is executed in the pip
 
 **Public Cloud Dependency Report**
 
-* The report displays the Artifact ID along with its dependent user stories, where the artifact is assigned to a user story. This report is only available when the validation status is _**Completed with Errors**_.
+* The report displays the Artifact ID along with its dependent user stories, where the artifact is assigned to a user story.&#x20;
 
 <figure><img src="../.gitbook/assets/image (1559).png" alt=""><figcaption></figcaption></figure>
 

@@ -8,7 +8,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 2. Click on **Register Credential**.
 3. Enter the required details:
    * **Credential Name**: Provide a name of your choice.
-   * **Credential Type**: Select **Public Cloud**.
+   * **Credential Type**: Select **Central Business Configuration**.
    * **Scope**: Choose the visibility of the credential:
      * **Global** – Accessible to all users.
      * **Private** – Accessible only to the user who created it.
@@ -30,7 +30,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 * **Name** → Provide a meaningful name.
 * **Credentials** → Select the credentials created in **Credential Management**.
 * **Host URL** → Enter your tenant URL in the format: `https://<tenantID>.cbc.ap.one.cloud.sap.`
-* **Workspace** → After entering the Host URL, the available workspaces will be **auto-populated** in the dropdown. Select the respective workspace.
+* **Workspace** → After entering the Host URL, the available CBC workspaces will be auto-populated in the dropdown, from which you can select the required workspace.
 * **Environment Type** → Choose the appropriate type of environment (e.g., Development, Test, Production).
 
 4. Click on the **Create** button to register the configuration.
@@ -56,7 +56,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 
 <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-6. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
+6. On the subsequent screen, select the required environment from the Source list. Only artifacts with a defined source are synced to ReleaseOwl, and you can also add multiple source environments.
 
 <figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FiLZgyh0opkwImR2q0yzw%252Fimage.png%3Falt%3Dmedia%26token%3D97bb773c-438d-4a7a-aefd-805cb5853316&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=602ae35e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -67,7 +67,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Scroll down to the Environments section.
-11. Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
+11. Select the _**Deploy**_ checkbox for the relevant environment(s) to grant the user deployment access.
 
 <figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F0cPCCoVERKPduu1KvXau%252Fimage.png%3Falt%3Dmedia%26token%3D01ab2d64-1f49-44a5-87c6-b2880a7956fa&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a378ba3d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -76,10 +76,9 @@ This user guide explains how to integrate and manage SAP Central Business Config
 1. Switch to the **Project View**.
 2. Click on **Central Business Configuration** in the **Build** section.
 3. Within the CBC screen, click the **Synchronize** button.
-4. When synchronization is triggered, the system fetches all activities from CBC that meet the following criteria:
+4. When synchronization is triggered, the system retrieves Deploy Scope and Organizational Structure activities from CBC where the **Action** is set to **Deploy**.
 
-* **Status** = _Open_
-* **Action** = _Deploy_
+<figure><img src="../.gitbook/assets/image (1561).png" alt=""><figcaption></figcaption></figure>
 
 5. These activities are then pulled into the project, ensuring that the latest CBC configurations are available for deployment workflows.
 
@@ -90,13 +89,10 @@ This user guide explains how to integrate and manage SAP Central Business Config
 
 <figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-8. Under the **Versions** tab, you can see a history of all modifications performed on the activity.
-   * Each version entry includes:
-     * **Modified By** – The user who performed the change.
-     * **Modified Date** – The timestamp when the change was applied.
-     * **Status** – Indicates the state of the activity at the time of modification, such as:
-       * _Open_ – The activity is currently open and in progress.
-       * _Closed/Completed_ – The activity has been finalized and no further modifications are expected.
+8. Under the **Versions** tab, you can view the history of all modifications performed on the activity.\
+   **Note:** The **Versions** tab is not available in the CBC (Central Business Configuration).
+   * If the task is in **Open** status and is synchronized with Central Business Configuration, the task will be reopened.
+   * If the task is in **Deploy** status and is reopened on a later date, a new version will be created to capture the changes.
 9. This allows teams to track changes over time and ensure accountability.
 
 <figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
@@ -139,12 +135,12 @@ A **Deployment Task** is used to deploy artifacts into the target **S/4HANA Publ
 
 **Notification Options**
 
-* **Notify Users** → Sends an email notification to all users involved in the pipeline when the pipeline is triggered or when specific events occur.
+* **Notify Users** : Sends an email notification to all users involved in the pipeline when the pipeline is triggered or when specific events occur. By selecting this you will see the following options:&#x20;
+* **Notify To** : Allows you to configure additional recipients for deployment notifications. Options include:
+  * **User:** Notify a specific user.
+  * **Role** : Notify all users assigned to a specific role.
+  * **Custom:** Notify based on a **custom component and role** defined in ReleaseOwl.
 * **Notify Promotion User** → Sends an email notification to the user who initiated the promotion (from a user story or release package), regardless of whether the task succeeds or fails.
-* **Notify To** → Allows you to configure additional recipients for deployment notifications. Options include:
-  * **User** → Notify a specific user.
-  * **Role** → Notify all users assigned to a specific role.
-  * **Custom** → Notify based on a **custom component and role** defined in ReleaseOwl.
 
 3. After entering the details, click **Save** to add the deployment task.
 
@@ -168,7 +164,7 @@ A **User Story** in ReleaseOwl is used to **track, manage, and deploy tasks** fr
 3. **Promote the User Story**
 
 * Once the artifacts are attached, click on the **Promote** button.
-* Promotion moves the User Story into the defined **pipeline stage**, where it will go through tasks such as **Validation**, **Approval**, and **Deployment** based on the configured pipeline.
+* Promotion moves the User Story into the defined pipeline stage, where it proceeds through tasks such as deployment according to the configured pipeline.
 
 <figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -178,11 +174,13 @@ The **Deployment Logs** are generated during execution of a **Deployment Task** 
 
 **Details captured in Deployment Logs:**
 
-* **Deployed Environment** → Provides information about the target environment where the artifacts were deployed.
-* **Version** → Provides details of the version of the artifacts included in the deployment.
-* **User Story** → Provides details of the associated user story that triggered the deployment.
-* **Deployment Status** → Provides details of whether the deployment was _Successful_ or _Failed_.
-* **Tenant URL** → Provides details of the tenant URL where the deployment was executed.
-* **Deployment ID** → Provides a unique identifier for the deployment, ensuring easy traceability.
+* **Deployed Environment** → Target environment where the artifacts were deployed.
+* **Version** → Version of the artifacts included in the deployment.
+* **User Story** → Associated user story that triggered the deployment.
+* **Deployment Status** → Status of the deployment (Successful or Failed).
+* **Tenant URL** → URL of the tenant where the deployment was executed.
+* **Deployment ID** → A unique identifier assigned to the deployment for traceability. Selecting the Deployment ID redirects to the execution details of the deployment.
 
 <figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1560).png" alt=""><figcaption></figcaption></figure>
