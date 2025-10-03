@@ -33,9 +33,17 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 <figure><img src="../../.gitbook/assets/image (1166).png" alt=""><figcaption></figcaption></figure>
 
 8. To the right of each project, click on the action button(three dots).
-9. Click on **Project Settings** and this action will navigate you to the configuration page of the selected project.
+9. To the right of each project, click the **Actions** button (three dots) to access options. The **Archive** option is available, which archives the project instead of deleting it.
 
-<figure><img src="../../.gitbook/assets/image (1167).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+10. To view archived projects, open the **Show** dropdown at the top and select **Archived**.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+11. Click on **Project Settings** and this action will navigate you to the configuration page of the selected project.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### General Settings Configuration
 
@@ -88,8 +96,6 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 3. The changes are saved automatically once the roles are selected—no need to click a separate Save button.
 
 <figure><img src="../../.gitbook/assets/image (1173).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Grant Deploy Permissions
 

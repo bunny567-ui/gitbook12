@@ -23,7 +23,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 1. Navigate to the **Environment** section.
 2. Select **Central Business Configuration** and click **Register**.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter the required details:
 
@@ -35,14 +35,14 @@ This user guide explains how to integrate and manage SAP Central Business Config
 
 4. Click on the **Create** button to register the configuration.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Assign Environment to a Project**
 
 1. Go to the **Projects** section and select your project.
 2. Enter necessary details and choose **Project Type** as **SAP Public Cloud**.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **“Switch to Project”** for the project you just created.
 
@@ -54,7 +54,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 
 5. Click **+Add** to add a new environment.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. On the subsequent screen, select the required environment from the Source list. Only artifacts with a defined source are synced to ReleaseOwl, and you can also add multiple source environments.
 
