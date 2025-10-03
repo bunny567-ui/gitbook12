@@ -41,22 +41,30 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-11. Click on **Project Settings** and this action will navigate you to the configuration page of the selected project.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+11. In the **Archived** section, locate the item you want to reactivate.
+12. Click the **Actions** button (three dots) next to the item.
+13. Select **Activate**. The item will be moved back to the **Active Projects** section .
+
+<figure><img src="../../.gitbook/assets/image (1562).png" alt=""><figcaption></figcaption></figure>
 
 ### General Settings Configuration
 
-1. Navigate to the **Project Settings** page.
-2. Select the **General** tab.
-3. This section contains basic information about the project, including:
+1. Click on **Project Settings** to navigate to the configuration page of the selected project.
+
+<figure><img src="../../.gitbook/assets/image (1563).png" alt=""><figcaption></figcaption></figure>
+
+2. On the **Project Settings** page, select the **General** tab
+3. Select the **General** tab.
+4. This section contains basic information about the project, including:
    * **Name**: The project name.
    * **Description**: A brief description of the project.
    * **Project Prefix**: A short identifier for the project.
    * **Default Pipeline**: The pipeline associated with the project.
-4. In the **Release Pipeline (default)** field:
+5. In the **Release Pipeline (default)** field:
    * Click on the dropdown or the search icon to browse the list of pipelines configured for the project.
-5.  Click the **Save** button located at the top-right corner to save the details.
+6.  Click the **Save** button located at the top-right corner to save the details.
 
 
 
