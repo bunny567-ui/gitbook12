@@ -170,16 +170,14 @@ A **User Story** in ReleaseOwl is used to **track, manage, and deploy tasks** fr
 
 #### **Deployment Logs**
 
-The **Deployment Logs** are generated during execution of a **Deployment Task** and provide full traceability of the deployment process.
+Deployment Logs are generated during the execution of a Deployment Task to provide end-to-end traceability of the deployment process. The logs include the following information:
 
-**Details captured in Deployment Logs:**
-
-* **Deployed Environment** → Target environment where the artifacts were deployed.
-* **Version** → Version of the artifacts included in the deployment.
-* **User Story** → Associated user story that triggered the deployment.
-* **Deployment Status** → Status of the deployment (Successful or Failed).
-* **Tenant URL** → URL of the tenant where the deployment was executed.
-* **Deployment ID** → A unique identifier assigned to the deployment for traceability. Selecting the Deployment ID redirects to the execution details of the deployment task.&#x20;
+* **Deployed Environment**: Specifies the target environment where the artifacts were deployed.
+* **Version**: Indicates the version of the artifacts that were part of the deployment.
+* **User Story**: Identifies the user story that triggered the deployment.
+* **Deployment Status**: Displays the outcome of the deployment, either Successful or Failed.
+* **Tenant URL**: Provides the URL of the tenant where the deployment was executed.
+* **Deployment ID**: A unique identifier assigned to each deployment for traceability. Selecting the Deployment ID opens the execution details of the deployment task.
 
 <figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
