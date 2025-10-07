@@ -16,7 +16,7 @@ Before triggering user story abortion or promotion from external systems, ensure
 
 3. The **user story** is attached to a **valid release pipeline** within ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### User Story Abortion&#x20;
 
@@ -46,7 +46,7 @@ https://<domain>/webhook/tenant/{tenant}/project/{ProjectID}?secretkey=<secretke
 
 This is the most critical part, as the data included in the request body is what ReleaseOwl reads and processes to perform the corresponding user story action.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **Request Body (JSON format)**
 
@@ -70,7 +70,7 @@ This is the most critical part, as the data included in the request body is what
 **System Action:**\
 The user story pipeline stops execution, and the status updates to _Aborted_ in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### User Story Promotion
 
@@ -82,8 +82,7 @@ User Story Promotion can also be triggered from tools such as **ALM Rules**, **A
 
 **Step 1: Set the Request Type to POST**
 
-In Postman, click the dropdown beside the request URL and select **POST**.\
-This allows the system to send the promotion request to ReleaseOwl.
+In Postman, click the dropdown beside the request URL and select **POST**. This allows the system to send the promotion request to ReleaseOwl.
 
 **Step 2: Enter the API Endpoint URL**
 
@@ -91,11 +90,12 @@ This allows the system to send the promotion request to ReleaseOwl.
 https://<domain>/webhook/tenant/{tenant}/project/{ProjectID}?secretkey=<secretkey>
 ```
 
-Use the same endpoint pattern used for abortion, replacing only the required values.
+* <**Domain**> → This will be provided during the ReleaseOwl solution implementation.
+* **{Tenant}** → Replace with your tenant ID.
+* **{ProjectID}** → Replace with your project ID.
+* <**Secret Key**> → This will be provided during ReleaseOwl Solution implementation
 
 **Step 3: Configure the Request Body**
-
-Prepare the JSON payload as shown below:
 
 ```json
 {
@@ -110,6 +110,8 @@ Prepare the JSON payload as shown below:
 * **userStoryId** → External user story identifier (e.g., from Jira).
 * **eventName** → Must be `"usPromotion"` to trigger the promotion event.
 * **initiatedBy** → Email ID of the user initiating the promotion.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **System Action:**\
 The user story pipeline advances to the next stage as defined in the release pipeline, and the user story status is updated accordingly in ReleaseOwl.
