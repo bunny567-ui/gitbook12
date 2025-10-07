@@ -101,9 +101,9 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to **Administration**, then select **Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. Fill out the credential form with the following details:
+
+1. Fill out the credential form with the following details:
 
 * **Credential Name:** Enter your preferred name for the credential.
 * **Credential Type**: Jira
@@ -147,7 +147,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to Administration, then select **Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1583).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the form with the following details:
 
@@ -161,7 +161,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 
 5. Click Save to register the credential.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1589).png" alt=""><figcaption></figcaption></figure>
 
 ### 8. Jira Project Integration&#x20;
 

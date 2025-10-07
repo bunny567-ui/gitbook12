@@ -12,7 +12,7 @@ To integrate Azure DevOps with ReleaseOwl, follow these steps to create a creden
 
     * Click on **Register Credential**.
 
-    <figure><img src="../../.gitbook/assets/image (531).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1590).png" alt=""><figcaption></figcaption></figure>
 3. **Fill in the Required Fields**:
    * **Credential Name**: Provide a descriptive name for the credential (e.g., "Azure DevOps Credential").
    * **Credential Type**: Choose **Azure DevOps** from the dropdown.
@@ -22,9 +22,7 @@ To integrate Azure DevOps with ReleaseOwl, follow these steps to create a creden
 
     * Click **Save** to store the credential.
 
-
-
-<figure><img src="../../.gitbook/assets/image (532).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1591).png" alt=""><figcaption></figcaption></figure>
 
 ### **Azure DevOps Project Integration**
 
@@ -86,10 +84,12 @@ To enable real-time updates for user stories between Azure DevOps and ReleaseOwl
 
 <figure><img src="../../.gitbook/assets/image (536).png" alt=""><figcaption></figcaption></figure>
 
-### **Note**
+{% hint style="info" %}
+**Note :**&#x20;
 
 * The webhook ensures that any updates or status changes to user stories in Azure DevOps are reflected in ReleaseOwl.
 * Likewise, updates in ReleaseOwl are synchronized with Azure DevOps, making the integration fully **bidirectional**.
+{% endhint %}
 
 {% hint style="info" %}
 For more details, refer to the official documentation: [Azure DevOps User Guide](https://docs.microsoft.com/en-us/azure/devops/organizations/?view=azure-devops).
