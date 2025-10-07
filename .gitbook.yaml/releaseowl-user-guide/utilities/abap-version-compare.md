@@ -6,7 +6,7 @@ ABAP Compare is used to compare any differences between objects under different 
 
 1\. Expand Utilities in project view and click on ABAP Compare section
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Select the **Compare System** from which objects needs to be compared.\
 
@@ -70,9 +70,8 @@ ABAP Compare is used to compare any differences between objects under different 
 
 <figure><img src="../../.gitbook/assets/image (1217).png" alt=""><figcaption></figcaption></figure>
 
-12\. To see the difference, click on the icon and the difference between the objects will be shown in a dialog.\
+12\. To see the difference, click on the icon and the difference between the objects will be shown in a dialog. In a similar manner, you can compare different objects and see the difference side by side in the browser itself.\
 
 
 <figure><img src="../../.gitbook/assets/image (1218).png" alt=""><figcaption></figcaption></figure>
 
-In a similar manner, you can compare different objects and see the difference side by side in the browser itself.

@@ -48,9 +48,9 @@ This user guide explains how to manage and deploy **SAP S/4HANA Public Cloud art
 
 3. Click **“Switch to Project”** for the project you just created.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-4. From the **Projects** dropdown (top-right corner), select **Project Settings → Environment**.
+3. From the **Projects** dropdown (top-right corner), select **Project Settings → Environment**.
 
 <figure><img src="../.gitbook/assets/image (1538).png" alt=""><figcaption></figcaption></figure>
 
@@ -229,4 +229,4 @@ The Deployment Logs are generated during the execution of a Deployment Task and 
   * **Already Deployed** → Provides details of the artifacts that were previously deployed and skipped during execution.
   * **Manual Completion** → Provides details of the deployments that were marked as completed manually instead of through automated execution.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

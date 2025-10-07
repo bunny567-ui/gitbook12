@@ -1,4 +1,4 @@
-# User Story Abortion and Promotion via External Tools
+# Abortion and Promotion via External Tools
 
 This section explains how to perform **User Story Abortion** and **User Story Promotion** in ReleaseOwl using external tools such as **Postman or Jira**. These API-based operations enable external systems like **Jira** or other CI/CD tools to trigger user story lifecycle events in ReleaseOwl automatically.
 
@@ -16,13 +16,13 @@ Before triggering user story abortion or promotion from external systems, ensure
 
 3. The **user story** is attached to a **valid release pipeline** within ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### User Story Abortion&#x20;
 
 The **User Story Abortion** event is used to abort a specific user story from an external system. This can be triggered through a webhook or API request.
 
-#### Triggering the Message from an External Tool (e.g., Postman) <a href="#triggering-the-message-from-an-external-tool-e.g.-postman" id="triggering-the-message-from-an-external-tool-e.g.-postman"></a>
+#### Triggering the Message from an External Tool <a href="#triggering-the-message-from-an-external-tool-e.g.-postman" id="triggering-the-message-from-an-external-tool-e.g.-postman"></a>
 
 The User Story Abortion can be triggered from any external application, such as **ALM Rules**, **ALM Webhooks**, or even tools like **Postman**.
 
@@ -46,7 +46,7 @@ https://<domain>/webhook/tenant/{tenant}/project/{ProjectID}?secretkey=<secretke
 
 This is the most critical part, as the data included in the request body is what ReleaseOwl reads and processes to perform the corresponding user story action.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 **Request Body (JSON format)**
 
@@ -70,7 +70,7 @@ This is the most critical part, as the data included in the request body is what
 **System Action:**\
 The user story pipeline stops execution, and the status updates to _Aborted_ in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### User Story Promotion
 
@@ -111,9 +111,9 @@ https://<domain>/webhook/tenant/{tenant}/project/{ProjectID}?secretkey=<secretke
 * **eventName** → Must be `"usPromotion"` to trigger the promotion event.
 * **initiatedBy** → Email ID of the user initiating the promotion.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 **System Action:**\
 The user story pipeline advances to the next stage as defined in the release pipeline, and the user story status is updated accordingly in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>

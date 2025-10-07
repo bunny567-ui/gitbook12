@@ -14,4 +14,4 @@ Once a transport is released, no further changes can be made to it. If a fix is 
 | **Notify Transport Users** | Sends notifications specifically to transport users involved in the task.                        |
 | **Description**            | Any message that is to be conveyed  to the task performer can be mentioned here.                 |
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

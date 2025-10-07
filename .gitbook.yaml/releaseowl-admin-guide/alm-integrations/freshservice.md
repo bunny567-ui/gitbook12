@@ -1,4 +1,4 @@
-# Freshservice Integration
+# Freshservice
 
 This user guide provides step-by-step instructions to integrate **Freshservice** with the **ReleaseOwl Dashboard**, enabling seamless **ticket management, automation, and real-time visibility** of Freshservice updates within ReleaseOwl.
 
@@ -8,15 +8,17 @@ This user guide provides step-by-step instructions to integrate **Freshservice**
 2. Click on **Credential Manager**.
 3. On the **Credential Manager** page, click **Register Credential**.
 
-<figure><img src="../../.gitbook/assets/image (1461).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the details as follows:
-   * **Credential Name:** Provide a descriptive name for the credential for easy identification.
-   * **Credential Type:** Select **Freshservice** from the list.
-   * **Authentication Type:** Choose **Basic**.
-   * **API Key:** Enter your Freshservice API key.
-   * **Password:** Enter "**X"** (as required for basic authentication).
-   * **Instance URL:** Enter your Freshservice instance URL, e.g., `https://<yourdomain>.freshservice.com`.
+
+* **Credential Name:** Provide a descriptive name for the credential for easy identification.
+* **Credential Type:** Select **Freshservice** from the list.
+* **Authentication Type:** Choose **Basic**.
+* **API Key:** Enter your Freshservice API key.
+* **Password:** Enter "**X"** (as required for basic authentication).
+* **Instance URL:** Enter your Freshservice instance URL, e.g., `https://<yourdomain>.freshservice.com`.
+
 5. Click **Save** to complete the registration.
 
 <figure><img src="../../.gitbook/assets/image (1462).png" alt=""><figcaption></figcaption></figure>
@@ -86,3 +88,4 @@ To integrate user stories from Freshservice, follow these steps:
 {% hint style="info" %}
 **Note:** At the top right, there is a **"Sync History"** button. This button likely provides a log or history of all previous synchronization activities related to user stories.
 {% endhint %}
+

@@ -2,24 +2,26 @@
 
 ### **Credential Registration for SAP Cloud Environment**
 
-1. Go to the Credential Manager in the administration view and Click on the **"Register Credential"** button.
+1. Go to the **Credential Manager** in the administration view and Click on the **"Register Credential"** button.
 2. Fill in the required fields:
    * **Credential Name**: Enter a name of your choice.
    * **Credential Type**: Select **SAP Cloud Environment**.
    * **Authentication Type**: Choose either **Basic** or **OAuth2**.
-3.  **If Basic authentication is selected:**
+3.  If Basic authentication is selecte&#x64;**:**
 
     * Provide your **Username** and **Password** (SAP BTP credentials).
 
-    <figure><img src="../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
-4.  **If OAuth2 authentication is selected:**
+    <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+4. **If OAuth2 authentication is selected:**
+   * **Client ID**: Enter the details from the created API service key in the SAP BTP cockpit.
+   * **Client Secret**: Enter the details from the created API service key in the SAP BTP cockpit.
+   * **Token URL**: Enter the details from the created API service key in the SAP BTP cockpit.
 
-    * **Client ID**: Enter the details from the created API service key in the SAP BTP cockpit.
-    * **Client Secret**: Enter the details from the created API service key in the SAP BTP cockpit.
-    * **Token URL**: Enter the details from the created API service key in the SAP BTP cockpit.
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
 5. Click **Save**. The credential will now appear in the **List of Credentials**.
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### **Registering SAP On-Premise Environment**
 
@@ -56,11 +58,11 @@ Follow these steps to register a new SAP On-Premise Environment:
    * **Password**: Enter your SAP Logon password.
 4. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (1112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-The credential will now be available to access your **Transport Domain Controller** system.
+5. The credential will now be available to access your **Transport Domain Controller** system.
 
-<figure><img src="../../.gitbook/assets/image (1113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ## **Transport Domain Controller**
 
@@ -175,7 +177,7 @@ The newly created Transport Domain Controller gets displayed in the Transport Do
 4. After creating the project, click on the **three-dot menu** next to the project.
 5. Select **Switch On Project** to activate it.
 
-<figure><img src="../../.gitbook/assets/image (478).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 6. Click on **Project Settings**, located in the top-right corner, before your account user icon.
 
