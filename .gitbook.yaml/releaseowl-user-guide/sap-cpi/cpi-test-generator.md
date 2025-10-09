@@ -52,17 +52,11 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 <figure><img src="../../.gitbook/assets/image (1083).png" alt=""><figcaption></figcaption></figure>
 
 5. This will retrieve messages from the latest iFlow execution. The first message will be the input message, and the remaining messages will be treated as output messages.
-
-
-
 6. Click the **Model Step Id** to view the messages.
 
 <figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 6. Select the **Message Group ID** and click **Generate Test Case**.
-
-
-
 7. Enter the **Test Case Name** and **Description**, then click **OK**.
 
 ### **Executing Test Cases** <a href="#pdf-page-ahecdlthytd4fxld4qwa-executing-test-cases" id="pdf-page-ahecdlthytd4fxld4qwa-executing-test-cases"></a>
@@ -151,8 +145,6 @@ ReleaseOwl mocks all the receiver channels in the iFlow with https receivers poi
 2. **Run the test case with mock enabled.**
 3. **Mock Package and iFlow:**
    * A **Mock Package** and **Mock iFlow** will be created in the **CPI tenant** with the prefix **ROMOCK**.
-
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fjt6dpB8Ft6TrUofmpzX9%252Fimage.png%3Falt%3Dmedia%26token%3D60341cb7-5638-49e1-a7c1-ca8674b9653c&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f89fa19a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 #### **Test Results after Execution:**
 
