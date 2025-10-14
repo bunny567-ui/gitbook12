@@ -2,7 +2,7 @@
 
 The status of a user story can be set to a specific value once the deployment takes place in an environment. The following screen is displayed on adding a user story status task.
 
-<figure><img src="../../../.gitbook/assets/image (1281).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -12,3 +12,8 @@ Fill in the required details:
 | **Description**         | Any message that is to be conveyed to the task performer can be mentioned here.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Continue on Failure** | Enable this option if you want the pipeline to proceed with the subsequent tasks even if one task fails. This is useful when multiple tasks are configured in a stage and a failure in one task should not block the execution of the remaining tasks.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:**  The **User Story Status Update** task within a pipeline can now be **skipped** if needed. Previously, this task had to be completed before the pipeline could move to the next step, which could delay or halt the execution.
+{% endhint %}

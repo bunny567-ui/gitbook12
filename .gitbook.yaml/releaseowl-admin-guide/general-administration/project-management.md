@@ -35,11 +35,11 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 8. To the right of each project, click on the action button(three dots).
 9. The **Archive** option is available, which archives the project instead of deleting it.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. To view archived projects, open the **Show** dropdown at the top and select **Archived**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

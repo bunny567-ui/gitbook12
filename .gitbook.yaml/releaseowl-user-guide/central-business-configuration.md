@@ -16,14 +16,14 @@ This user guide explains how to integrate and manage SAP Central Business Config
    * **Password**: Enter the **SAP CBC  password**.
 4. Click **Save**.
 
-<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Environment Registration** <a href="#environment-registration" id="environment-registration"></a>
 
 1. Navigate to the **Environment** section.
 2. Select **Central Business Configuration** and click **Register**.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter the required details:
 
@@ -35,18 +35,18 @@ This user guide explains how to integrate and manage SAP Central Business Config
 
 4. Click on the **Create** button to register the configuration.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Assign Environment to a Project**
 
 1. Go to the **Projects** section and select your project.
 2. Enter necessary details and choose **Project Type** as **SAP Public Cloud**.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **“Switch to Project”** for the project you just created.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 4. From the **Projects** dropdown (top-right corner), select **Project Settings → Environment**.
 
@@ -54,7 +54,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 
 5. Click **+Add** to add a new environment.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. On the subsequent screen, select the required environment from the Source list. Only artifacts with a defined source are synced to ReleaseOwl, and you can also add multiple source environments.
 
@@ -64,7 +64,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 8. Click on the **Users** tab. This tab lists all existing users associated with the project.
 9. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Scroll down to the Environments section.
 11. Select the _**Deploy**_ checkbox for the relevant environment(s) to grant the user deployment access.
@@ -82,12 +82,12 @@ This user guide explains how to integrate and manage SAP Central Business Config
 
 5. These activities are then pulled into the project, ensuring that the latest CBC configurations are available for deployment workflows.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. After synchronization, click on the **Action** button for the desired activity.
 7. This will open detailed information about the selected activity.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Under the **Versions** tab, you can view the history of all modifications performed on the activity.\
    **Note:** The **Versions** tab is not available in the CBC (Central Business Configuration).
@@ -95,11 +95,11 @@ This user guide explains how to integrate and manage SAP Central Business Config
    * If the task is in **Deploy** status and is reopened on a later date, a new version will be created to capture the changes.
 9. This allows teams to track changes over time and ensure accountability.
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. **Change Logs**: It shows the details of activity changes, including the **Task Name, Area, Workspace, Changed By,** and **Changed On**. It provides visibility into where the change was made and by whom, helping teams monitor updates across tasks and workspaces.
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating a Release Pipeline**
 
@@ -110,15 +110,15 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Navigate to **Release Pipelines**.
 * Click **Create New Release Pipeline**.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a **Pipeline Name**.
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Add stages (e.g., QA, Prod) and assign tasks to each stage.
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Deployment Tasks**
 
@@ -166,7 +166,7 @@ A **User Story** in ReleaseOwl is used to **track, manage, and deploy tasks** fr
 * Once the artifacts are attached, click on the **Promote** button.
 * Promotion moves the User Story into the defined pipeline stage, where it proceeds through tasks such as deployment according to the configured pipeline.
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Deployment Logs**
 
@@ -179,6 +179,6 @@ Deployment Logs are generated during the execution of a Deployment Task to provi
 * **Tenant URL**: Provides the URL of the tenant where the deployment was executed.
 * **Deployment ID**: A unique identifier assigned to each deployment for traceability. Selecting the Deployment ID opens the execution details of the deployment task.
 
-<figure><img src="../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1560).png" alt=""><figcaption></figcaption></figure>

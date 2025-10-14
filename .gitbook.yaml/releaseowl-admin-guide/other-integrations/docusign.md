@@ -122,7 +122,7 @@ This guide provides a step-by-step walkthrough on accessing your DocuSign accoun
 1. Go to the **Administration View** in ReleaseOwl.
 2. Click on **Credential Manager** and then **Register Credential.**
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Fill in the fields:
 

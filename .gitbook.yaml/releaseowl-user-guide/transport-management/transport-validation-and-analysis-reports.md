@@ -19,7 +19,9 @@ To view the validation report of a transport:
 2. Choose **Validation Report**.
 3. The report is displayed.
 
-<figure><img src="../../.gitbook/assets/image (499).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1596).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1595).png" alt=""><figcaption></figcaption></figure>
 
 | **Release Status check**                       | Checks whether the given transport is released or not.                                                                                                                                                                                                            |
 | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

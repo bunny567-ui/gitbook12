@@ -11,17 +11,17 @@
 
     * Provide your **Username** and **Password** (SAP BTP credentials).
 
-    <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 4. **If OAuth2 authentication is selected:**
    * **Client ID**: Enter the details from the created API service key in the SAP BTP cockpit.
    * **Client Secret**: Enter the details from the created API service key in the SAP BTP cockpit.
    * **Token URL**: Enter the details from the created API service key in the SAP BTP cockpit.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **Save**. The credential will now appear in the **List of Credentials**.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Registering SAP On-Premise Environment**
 
@@ -58,11 +58,11 @@ Follow these steps to register a new SAP On-Premise Environment:
    * **Password**: Enter your SAP Logon password.
 4. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. The credential will now be available to access your **Transport Domain Controller** system.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Transport Domain Controller**
 

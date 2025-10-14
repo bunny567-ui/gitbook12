@@ -89,6 +89,7 @@
       * [Release Transport Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/release-transport-task.md)
       * [DocuSign Approval](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/docusign-approval.md)
       * [Validation Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/validation-task.md)
+      * [Test Evidence Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/test-evidence-task.md)
     * [Use Cases](releaseowl-user-guide/working-with-release-pipelines/use-cases/README.md)
       * [Automated Transport import along with Transport Promotion](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-transport-import-along-with-transport-promotion.md)
       * [Automated MTAR Deployments](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-mtar-deployments.md)
