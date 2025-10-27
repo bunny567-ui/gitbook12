@@ -19,6 +19,7 @@
     * [Azure DevOps](releaseowl-admin-guide/integrations/azure-devops.md)
     * [ServiceNow](releaseowl-admin-guide/integrations/servicenow.md)
     * [Freshservice](releaseowl-admin-guide/alm-integrations/freshservice.md)
+    * [SAP Cloud ALM](releaseowl-admin-guide/alm-integrations/sap-cloud-alm.md)
   * [Other Integrations](releaseowl-admin-guide/other-integrations/README.md)
     * [ReleaseOwl Callout Feature](releaseowl-admin-guide/other-integrations/releaseowl-callout-feature.md)
     * [DocuSign](releaseowl-admin-guide/other-integrations/docusign.md)
