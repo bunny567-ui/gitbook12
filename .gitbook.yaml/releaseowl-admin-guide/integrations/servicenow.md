@@ -52,7 +52,7 @@ To set up your credentials in ReleaseOwl, complete the following fields:
 
 4. Click the **New** button.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Select **Create an OAuth API endpoint for external clients**.
 
@@ -118,7 +118,7 @@ To perform **Basic Authentication**, follow the steps below:
 * Language:  Select the language that enables users to change the language of the user story task.&#x20;
 * Credential: The registered credential will be auto-populated.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Access Filters Option
 
@@ -128,7 +128,7 @@ To perform **Basic Authentication**, follow the steps below:
 
 * The Webhook URL is generated automatically. Click on the **Save** button to confirm the integration settings.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Assignment Group Option
 

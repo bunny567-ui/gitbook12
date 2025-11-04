@@ -23,7 +23,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 1. Navigate to the **Environment** section.
 2. Select **Central Business Configuration** and click **Register**.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter the required details:
 
@@ -35,7 +35,7 @@ This user guide explains how to integrate and manage SAP Central Business Config
 
 4. Click on the **Create** button to register the configuration.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Assign Environment to a Project**
 

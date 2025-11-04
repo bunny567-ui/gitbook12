@@ -62,7 +62,7 @@ Where:
 * Promote the User Story directly in ReleaseOwl.
 * Open the **Pipeline Activity** view.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Locate the **Message Listener** task.
 * Click **Send Message** to open the message form and view the event payload details.
