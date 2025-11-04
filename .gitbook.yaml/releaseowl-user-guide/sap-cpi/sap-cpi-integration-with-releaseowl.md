@@ -266,11 +266,11 @@ To assign role collections, you can choose **one** of the following methods:
 
 You can configure granular permissions by creating the custom role collection with the below required roles:
 
-| **Custom Role Collection**                       | **Required Roles**                                                                                                                                                                                                                                           |
-| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Roles required for ReleaseOwl CPI test generator | <p></p><ul><li>Trail-content-adminstrator</li><li>Trail-content-developer</li><li>PIMAS_Integration Analyst</li><li>PI_Read_only</li><li>PIMAS_Administrator</li><li> PI_Business_Expert</li><li>PI_Integration_Developer</li><li>PI_Administrator</li></ul> |
+| **Custom Role Collection**                       | **Required Roles**                                                                                            |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| Roles required for ReleaseOwl CPI test generator | <p></p><ul><li>Trail-content-adminstrator</li><li>PI_Integration_Developer</li><li>PI_Administrator</li></ul> |
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1607).png" alt=""><figcaption></figcaption></figure>
 
 6. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
 
