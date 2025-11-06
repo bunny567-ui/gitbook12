@@ -1,4 +1,4 @@
-# Integrating UiPath with ReleaseOwl
+# UiPath
 
 Efficient integration of tools like UiPath with ReleaseOwl enhances automation and testing workflows, enabling seamless operations and better management of RPA and DevOps pipelines. This guide provides a detailed step-by-step walkthrough to help you integrate UiPath with the ReleaseOwl dashboard, from setting up UiPath Orchestrator to configuring test cases and connecting UiPath Assistant to the cloud.
 
@@ -191,7 +191,7 @@ Efficient integration of tools like UiPath with ReleaseOwl enhances automation a
 * Paste the **Client ID** and **Client Secret** into the appropriate fields.
 * Click **Save** to register the credential.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **5. Test Configuration in ReleaseOwl**
 

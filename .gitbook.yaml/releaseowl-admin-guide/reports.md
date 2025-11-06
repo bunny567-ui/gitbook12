@@ -40,7 +40,7 @@ The generated report displays:
 
 This report helps teams track user story deployments and confirm successful completion. You can also **export the report in PDF or Excel format**.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Tasks
 
@@ -60,5 +60,5 @@ The Task Report provides an overview of all the **tasks related to User Stories,
 
 4. Click **GO** to generate the report. It provides details of releasepipeline, tasksource, assigne and action.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

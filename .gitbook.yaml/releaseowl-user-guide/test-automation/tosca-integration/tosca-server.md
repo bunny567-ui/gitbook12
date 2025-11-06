@@ -20,7 +20,7 @@ The Credential Manager in ReleaseOwl allows you to securely register Tosca serve
 2. Navigate to **Credential Manager**.
 3. Click on **Register Credential** to create a new credential.
 
-<figure><img src="../../.gitbook/assets/image (1541).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1541).png" alt=""><figcaption></figcaption></figure>
 
 **2: Enter Credential Details**
 
@@ -33,29 +33,29 @@ Fill in the required fields:
   * **Private:** Credential is accessible only to the user who created it.
 * **Token URL:** Enter the URL to your Tosca server token endpoint in the format: http(s)://\<Tosca\_Server\_IP\_or\_Hostname>:/tua/connect/token
 
-<figure><img src="../../.gitbook/assets/image (1542).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1542).png" alt=""><figcaption></figcaption></figure>
 
 #### 3: Generate Client ID and Client Secret
 
 1. Open your **local Tosca server** and go to **User Administration** → **My Account**.
 
-<figure><img src="../../.gitbook/assets/image (1544).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1544).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **Add New** to create a new user token.
 
-<figure><img src="../../.gitbook/assets/image (1543).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1543).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a name of your choice and click **Generate Token**.
 
-<figure><img src="../../.gitbook/assets/image (1545).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1545).png" alt=""><figcaption></figcaption></figure>
 
 4. Copy the generated **Client ID** and **Client Secret**.
 5. Paste these values into the corresponding fields in ReleaseOwl’s Credential Manager.
 6. Click **Save** to register the credential.
 
-<figure><img src="../../.gitbook/assets/image (1546).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1546).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1549).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1549).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Test Configuration with Proxy Type: None
 
@@ -67,7 +67,7 @@ This option is used when ReleaseOwl connects directly to the Tosca server withou
 2. Under **Test Automation**, click **Test Configuration**.
 3. Click **Create Test Configuration** to start.
 
-<figure><img src="../../.gitbook/assets/image (1550).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1550).png" alt=""><figcaption></figcaption></figure>
 
 #### 2: Fill Test Configuration Details
 
@@ -83,7 +83,7 @@ This option is used when ReleaseOwl connects directly to the Tosca server withou
 
 1. Click **Submit** to store the Test Configuration.
 
-<figure><img src="../../.gitbook/assets/image (1548).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1548).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Test Configuration with SAP Cloud Connector
 
@@ -109,7 +109,7 @@ In addition to connecting directly, ReleaseOwl allows you to configure Tosca tes
 
 1. Click **Submit** to save the Test Configuration.
 
-<figure><img src="../../.gitbook/assets/image (1551).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1551).png" alt=""><figcaption></figcaption></figure>
 
 ### Executing Test Runs via Tosca Server
 
@@ -117,11 +117,9 @@ In addition to connecting directly, ReleaseOwl allows you to configure Tosca tes
 2. To view the test runs, click **View Test Runs** against the desired **Test Configuration**.
 3. The executed test runs along with their results, logs, and reports will be displayed.
 
-<figure><img src="../../.gitbook/assets/image (1552).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1552).png" alt=""><figcaption></figcaption></figure>
 
 4. **Reports and Logs**
    * When you click **Reports**, you will see details such as:
      * The executed test cases and their status.
    * When you click **Logs**, you will get the **SAP Test Logs**, which provide detailed execution information useful for troubleshooting and validation.
-
-<figure><img src="../../.gitbook/assets/image (1553).png" alt=""><figcaption></figcaption></figure>

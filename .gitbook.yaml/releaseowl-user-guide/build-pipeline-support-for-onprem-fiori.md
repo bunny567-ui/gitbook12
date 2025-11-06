@@ -20,7 +20,7 @@ Before setting up the UI5 ABAP build pipeline in ReleaseOwl, ensure the followin
 2. In the left-side navigation panel, go to **Build** and then select the **Build Pipelines**.
 3. Click on **Create New Build Pipeline.**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Step 2: Define Pipeline Details**
 
@@ -35,7 +35,7 @@ Before setting up the UI5 ABAP build pipeline in ReleaseOwl, ensure the followin
 4. Choose the **Version Control Platform**.
 5. Click **Next** to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Configure Build Parameters**
 
@@ -48,7 +48,7 @@ Before setting up the UI5 ABAP build pipeline in ReleaseOwl, ensure the followin
 
 The **App Details** in the **Build Section** need to be manually entered based on the information provided in the `ui5-deploy.yaml` file. Attributes such as **App Id, App Name, Description and Package Name** should be extracted from the configuration file and entered into the respective fields to ensure accurate deployment.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5: Scheduler and Notifications**
 
@@ -57,7 +57,7 @@ The **App Details** in the **Build Section** need to be manually entered based o
 3. **Tool Integrations**: Enable **SonarQube** and select credentials if needed.
 4. Click **Save** button.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6: Triggering and Monitoring a Build**
 
@@ -65,7 +65,7 @@ The **App Details** in the **Build Section** need to be manually entered based o
 2. Click the **Build Now** button to trigger a new build process.
 3. Once the build starts, view its progress and details inside the pipeline.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Clicking on a pipeline name opens a detailed build history, where each triggered build is listed with:
 
@@ -76,11 +76,11 @@ The **App Details** in the **Build Section** need to be manually entered based o
 * **Triggered Time**: The timestamp when the build started.
 * **Status**: Indicates whether the build was **successful or failed.**&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Clicking the arrow (**>**) button next to a build allows you to view detailed logs, status, timestamp, and deployment insights.
 
-<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 **Upload Build**
 
@@ -88,11 +88,11 @@ The **App Details** in the **Build Section** need to be manually entered based o
 7. A popup titled **"Upload To SAPUI5 ABAP Repository"** will appear.
 8. Click the **clipboard icon** to **select an existing transport request** from the list.
 
-<figure><img src="../../../.gitbook/assets/image (1370).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1370).png" alt=""><figcaption></figcaption></figure>
 
 9. Alternatively, click the **Create** button next to the dropdown to open the **"Create Workbench Transport"** dialog
 
-<figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 10. When the **"Create Workbench Transport"** popup appears:
     * **Name**: Enter a meaningful name for the transport request.
@@ -100,7 +100,7 @@ The **App Details** in the **Build Section** need to be manually entered based o
     * **Target System**: Select the appropriate target system from the dropdown.
 11. Click **Create** to generate the transport request. Once created, the transport will be automatically selected in the **Upload To SAPUI5 ABAP Repository** dialog.
 
-<figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 12. After selecting or creating the transport request, click the **Upload** button.
 
@@ -108,11 +108,11 @@ The **App Details** in the **Build Section** need to be manually entered based o
 
 
 
-<figure><img src="../../../.gitbook/assets/image (1372).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1372).png" alt=""><figcaption></figcaption></figure>
 
 13. You can monitor the deployment status in the **Upload Logs** section, which provides real-time updates and logs for each step of the upload process.
 
-<figure><img src="../../../.gitbook/assets/image (1373).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1373).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** The **Upload Log** provides real-time updates on the execution of the upload process.

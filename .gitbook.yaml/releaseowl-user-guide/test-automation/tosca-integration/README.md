@@ -30,7 +30,7 @@ The RO Agent is a standalone application that facilitates communication between 
 2. Go to the **RO Agents** page.
 3. Click **Register RO Agent**.
 
-<figure><img src="../../.gitbook/assets/image (544).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (544).png" alt=""><figcaption></figcaption></figure>
 
 **2.2. Fill in the Required Details**
 
@@ -40,7 +40,7 @@ Provide the following information to complete the configuration:
 * **Host URL**: Provide the URL of the RO Agent, which begins with `http` or `https`.
 * **Security Key**: Locate the `agent.properties` file in the RO Agent directory and copy the Security Key value from there.
 
-<figure><img src="../../.gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Test Configuration
 
@@ -51,7 +51,7 @@ Setting up the test configuration allows the ReleaseOwl application to run Tosca
 1. In **Project View**, navigate to **Test Configuration**.
 2. On the displayed page, click **Create Test Configuration**.
 
-<figure><img src="../../.gitbook/assets/image (542).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (542).png" alt=""><figcaption></figcaption></figure>
 
 #### **3.2. Fill in the Test Configuration Details**
 
@@ -65,23 +65,23 @@ Setting up the test configuration allows the ReleaseOwl application to run Tosca
 * **Configuration File**: Specify the complete path to a file that contains the parameters for the test run.
 * **RO Agent**: Select the RO Agent where the current test should be executed.
 
-<figure><img src="../../.gitbook/assets/image (541).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (541).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the **Submit** button. After submission, a Tosca configuration path is created.
 4. Click the **Run** button to initiate the test execution. A confirmation message will indicate whether the test execution was successful.
 
-<figure><img src="../../.gitbook/assets/image (540).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (540).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Viewing Test Runs and Reports
 
 1. To view the test runs, navigate to the **Test Configuration** screen and click **View Test Runs** against the desired Test Configuration.
 2. The test runs and their results, along with **Logs** and **Reports**, will be displayed.
 
-<figure><img src="../../.gitbook/assets/image (539).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (539).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on **Logs** to view the logs.
 
-<figure><img src="../../.gitbook/assets/image (538).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (538).png" alt=""><figcaption></figcaption></figure>
 
 4. Click on **Reports** to view detailed insights, including:
 
@@ -90,4 +90,4 @@ Setting up the test configuration allows the ReleaseOwl application to run Tosca
 * Failure count.
 * Time taken for test case execution.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

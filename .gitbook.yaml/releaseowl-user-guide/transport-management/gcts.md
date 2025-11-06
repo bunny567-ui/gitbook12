@@ -54,20 +54,20 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 3. Log in using your **SAP gCTS ABAP system credentials**.
 4. A **blank screen** is displayed by default upon successful login.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. **Search for:** `gcts` in the Fiori Launchpad.
 6. **Select:** **Git-enabled CTS – Manage Repositories**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. All **existing repositories** linked to the current gCTS environment are displayed.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click on **Create** to initiate repository creation.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Fill the required details as follows:
 
@@ -84,9 +84,9 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Click **Save**. A new repository gets created.
 11. Upon repository creation:
@@ -95,7 +95,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
     * The naming convention used is `Z<vSID>` where `<vSID>` is the system ID.
     * It is also visible in the **Transport Routes** screen.
 
-<figure><img src="../../../.gitbook/assets/image (6).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).jpg" alt=""><figcaption></figcaption></figure>
 
 ### Repository Authorization and Configuration
 
@@ -104,18 +104,18 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
     * Navigate to the **Configuration** tab.
     * Click **Create**.
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Add the following two parameters:
 
     * `CLIENT_VCS_AUTH_USER`: Enter the GitHub user ID in the **Value** field.
     * `CLIENT_VCS_AUTH_TOKEN`: Enter the GitHub personal access token.
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 13. Both parameters will appear in the configuration list.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### GitHub Branch Setup
 
@@ -124,20 +124,20 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * `dev` branch from `main`
 * `qa` branch from `dev`&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Repository Cloning and Development in SAP
 
 1. Navigate to the **SAP gCTS** application.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Clone the ABAP system repository with the one created in **GitHub**.
 
 * This creates a **local copy** of the GitHub repository in the SAP ABAP system.
 * The **latest commits** from GitHub become visible in the local repository.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. For every repository:
 
@@ -145,29 +145,29 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * Any changes made in SAP will be saved to this branch by default.
 * Based on the requirement, the **active branch** can be changed (e.g., set to `dev` instead of `main`).
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Create the **same package** in the SAP ABAP system as defined in the gCTS environment.
 
-<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 5. Enter all the required details:
 
 * Select the **transport layer** created during the repository creation in gCTS.
 * Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. The system prompts the user to **create a transport request**:
 
 * Create a new transport request.
 * Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Now, **create a class** in the same package:
 
@@ -175,13 +175,13 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * Choose the appropriate package.
 * Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. The system prompts to associate the class with a **transport request**:
 
@@ -190,28 +190,28 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * Make required changes to the class.
 * Save and **activate** the objects.
 
-<figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. **Release the task** associated with the transport request in use.
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Integration of SAP gCTS with ReleaseOwl and GitHub
 
 1. Register the **Transport Manager Credential** in the Credential Manager section in **ReleaseOwl**.
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 2. Register the **Transport Domain Controller** in ReleaseOwl:
 
 * Click **Get Repositories** to fetch all systems available in the system landscape.
 * The newly created SAP system ID (e.g., **RKS**) will be listed.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Register the **GITHub** credential in the **Credential** **Manager.**
 
-<figure><img src="../../../.gitbook/assets/image (1389).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1389).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note: GITHub APIs** can be **accessed** only via **Personal Access Tokens** and **not** by **username** and **password.** For further information on the **Personal Access Tokens, please refer to the link -** [**https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token**](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)&#x20;
@@ -223,18 +223,18 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * Choose the appropriate credential for each repository.
 * The SAP system should be the actual **Development system** (e.g., **S4D**) and **not** the gCTS Virtual System (e.g., **RKD**).
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5.  Set up the **QA gCTS system** for transporting changes from Dev to QA:
 
     * Set up the QA gCTS system to enable transport of changes from **Dev** to **QA**.&#x20;
     * Log in to the QA SAP gCTS system using SAP ABAP credentials and follow the same configuration steps as performed for the Dev gCTS system.
 
-    <figure><img src="../../../.gitbook/assets/image (1317).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1317).png" alt=""><figcaption></figcaption></figure>
 
 
 
-    <figure><img src="../../../.gitbook/assets/image (1316).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1316).png" alt=""><figcaption></figcaption></figure>
 6. Create a **repository** in QA with the **same name** as in Dev.
 
 * Fill in the required details accordingly.
@@ -252,24 +252,24 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 
 
-<figure><img src="../../../.gitbook/assets/image (1315).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1315).png" alt=""><figcaption></figcaption></figure>
 
 7. Add two configuration parameters in QA as done in Dev:
 
 * `CLIENT_VCS_AUTH_USER`
 * `CLIENT_VCS_AUTH_TOKEN`&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1312).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1312).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1311).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1311).png" alt=""><figcaption></figcaption></figure>
 
 8. Clone the repository in **SAP gCTS (QA)** environment to the ABAP system.
 
-<figure><img src="../../../.gitbook/assets/image (1313).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1313).png" alt=""><figcaption></figcaption></figure>
 
 9. Switch the **active branch** from `main` to `qa`.
 
-<figure><img src="../../../.gitbook/assets/image (1314).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1314).png" alt=""><figcaption></figcaption></figure>
 
 10. Register the same ABAP system in **ReleaseOwl** for QA:
 
@@ -278,30 +278,30 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * Choose the appropriate credential for each repository.
 * The SAP system should be the actual **QA system** (e.g., **S4Q**) and **not** the gCTS Virtual System (e.g., **RKS**).
 
-<figure><img src="../../../.gitbook/assets/image (1318).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1318).png" alt=""><figcaption></figcaption></figure>
 
 11. Add the appropriate **SAP ABAP environment** to the active project in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (1319).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1319).png" alt=""><figcaption></figcaption></figure>
 
 12. Create a **User Story** in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (1320).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1320).png" alt=""><figcaption></figcaption></figure>
 
 13. Add the **Transport Request** to the user story and save the changes.
 
-<figure><img src="../../../.gitbook/assets/image (1321).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1321).png" alt=""><figcaption></figcaption></figure>
 
 14. **Release** the **transport** **request** from **ReleaseOwl**.
 
-<figure><img src="../../../.gitbook/assets/image (1397).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1397).png" alt=""><figcaption></figcaption></figure>
 
 15. Once the transport request is released:
 
 * The associated **commits** can be viewed.
 * In GitHub, refresh the repository — the new objects will now be visible in the **dev** branch.
 
-<figure><img src="../../../.gitbook/assets/image (1398).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1398).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** Whenever a **transport request** which is **associated** with **gCTS** is **released**, all the **changes** will be **pushed** to **GIT**.
@@ -313,10 +313,10 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
     * Add a **Deployment Task**.
     * Save the pipeline.
 
-    <figure><img src="../../../.gitbook/assets/image (1390).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1390).png" alt=""><figcaption></figcaption></figure>
 18. Associate the release pipeline with the active **Project Settings** in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (1391).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1391).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -325,37 +325,37 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * Navigate to: **Project Settings > Users > Security**.
 * Without this, deployment will not proceed.
 
-<figure><img src="../../../.gitbook/assets/image (1392).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1392).png" alt=""><figcaption></figcaption></figure>
 
 20. &#x20;Promote the **User Story to QA**:
 
 * Click **OK**.
 
-<figure><img src="../../../.gitbook/assets/image (1393).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1393).png" alt=""><figcaption></figcaption></figure>
 
 * Check for any **Approval Tasks** that may be pending for **deployment** to take place.
 
-<figure><img src="../../../.gitbook/assets/image (1394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1394).png" alt=""><figcaption></figcaption></figure>
 
 21. Once the **approver** **approves** the **task**, the **deployment** **starts**.
 
-<figure><img src="../../../.gitbook/assets/image (1395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1395).png" alt=""><figcaption></figcaption></figure>
 
 22. Click on **Go to Pipeline Activity**.
 
-<figure><img src="../../../.gitbook/assets/image (1400).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1400).png" alt=""><figcaption></figcaption></figure>
 
 23. **Check** the **Deployment Logs.**
 
-<figure><img src="../../../.gitbook/assets/image (1396).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1396).png" alt=""><figcaption></figcaption></figure>
 
 24. The gCTS task details are visible directly in the pipeline activity logs. This links the deployment to specific **gCTS tasks**, supporting traceability and audits.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1401).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1401).png" alt=""><figcaption></figcaption></figure>
 
 25. When you click **“View gCTS  Switch Details”** in ReleaseOwl (Pipeline Activity > Logs), you can view metadata related to the gCTS operation for the associated deployment.
 
-<figure><img src="../../../.gitbook/assets/image (1402).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1402).png" alt=""><figcaption></figcaption></figure>
 
 26. **Validation Report:**&#x20;
 
@@ -372,7 +372,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
     * Located beside the Release Status Check.
     * sequence check (Beta) for gCTS transport to validate object-level sequences during the validation process.
 
-<figure><img src="../../../.gitbook/assets/image (1088).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1088).png" alt=""><figcaption></figcaption></figure>
 
 27. &#x20;When you click on the **gCTS Sequence Check (Beta)**:
     * You will see two sections:
@@ -380,14 +380,14 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
           * This section shows the dependencies between different transport requests.
 
-          <figure><img src="../../../.gitbook/assets/image (1089).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (1089).png" alt=""><figcaption></figcaption></figure>
 
-          <figure><img src="../../../.gitbook/assets/image (1090).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (1090).png" alt=""><figcaption></figcaption></figure>
       2.  **Valid Transport Sequence**
 
           * This feature is used to validate the order in which SAP transport requests should be imported to avoid inconsistencies or errors in the target system.
 
-          <figure><img src="../../../.gitbook/assets/image (1091).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (1091).png" alt=""><figcaption></figcaption></figure>
 28. Once deployment is successful:
 
 * Verify that changes are pushed to the **qa branch** in GitHub.
