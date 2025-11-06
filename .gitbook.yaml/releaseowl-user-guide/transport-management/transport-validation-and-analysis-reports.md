@@ -6,10 +6,18 @@ Validating a transport ensures that the changes comply with enterprise standards
 
 ### **How to Validate a Transport**
 
-1. In the **Transport Management** screen, select a transport.
-2. Click **Validate** under **Actions** to trigger the validation process.
+1. Navigate to the **Transport Management** screen.
+2. Select the transport you want to validate.
+3. Click **Validate** under the **Actions** menu.
 
 <figure><img src="../../.gitbook/assets/image (497).png" alt=""><figcaption></figcaption></figure>
+
+4. A pop-up window will appear displaying the **Source** and **Target** systems.
+5. Click on the **Target System** field to view the list of available systems.
+6. Select the appropriate target system (for example, **DEQ** or **DEP**).
+7. Once the target system is selected, the system performs the validation checks and displays the results, helping ensure that the transport meets all required compliance and configuration criteria before promotion.
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### **Validation Report**
 

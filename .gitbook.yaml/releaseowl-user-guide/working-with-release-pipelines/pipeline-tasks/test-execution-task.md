@@ -3,7 +3,7 @@
 A **Test Execution Task** in ReleaseOwl is a pipeline task used to automatically run test cases after a deployment. It allows integration with external testing tools (such as **HCL OneTest UI** or **Tosca**) so that functional, regression, or web tests can be executed in the target environment.\
 
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 

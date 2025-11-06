@@ -12,7 +12,9 @@ gCTS is an offering from SAP that allows us to manage ABAP (Advanced Business Ap
 
 ### **gCTS Integration with ReleaseOwl** <a href="#pdf-page-5oopygj2qtse4j6l4ary-gcts-integration-with-releaseowl" id="pdf-page-5oopygj2qtse4j6l4ary-gcts-integration-with-releaseowl"></a>
 
-The integration of gCTS (Git-enabled Change and Transport System) with ReleaseOwl is a powerful combination for SAP customers. By integrating gCTS with ReleaseOwl, organizations can leverage the functionalities of Git repositories and establish robust Continuous Integration and Continuous Delivery (CI/CD) processes for their ABAP (Advanced Business Application Programming) development. The integration of gCTS with ReleaseOwl offers a streamlined and efficient approach to managing ABAP development, enabling organizations to deliver high-quality SAP applications faster, with reduced risks, and improved collaboration among team members. To enable gCTS we require a Git platform host, an ABAP system in which code will be developed, and a CI server (which is optional) which can be used to automate development cycle.
+The integration of gCTS (Git-enabled Change and Transport System) with ReleaseOwl is a powerful combination for SAP customers. By integrating gCTS with ReleaseOwl, organizations can leverage the functionalities of Git repositories and establish robust Continuous Integration and Continuous Delivery (CI/CD) processes for their ABAP (Advanced Business Application Programming) development.&#x20;
+
+The integration of gCTS with ReleaseOwl offers a streamlined and efficient approach to managing ABAP development, enabling organizations to deliver high-quality SAP applications faster, with reduced risks, and improved collaboration among team members. To enable gCTS we require a Git platform host, an ABAP system in which code will be developed, and a CI server (which is optional) which can be used to automate development cycle.
 
 ### **Prerequisites**
 
@@ -52,22 +54,24 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 3. Log in using your **SAP gCTS ABAP system credentials**.
 4. A **blank screen** is displayed by default upon successful login.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. **Search for:** `gcts` in the Fiori Launchpad.
 6. **Select:** **Git-enabled CTS – Manage Repositories**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. All **existing repositories** linked to the current gCTS environment are displayed.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click on **Create** to initiate repository creation.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Fill the required details as follows:
+
+
 
 | **Field**       | **Description**                                                                                                                                                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -78,9 +82,11 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 | **Type**        | Select **GitHub**.                                                                                                                                                                                                                          |
 | **Visibility**  | You can choose either one: **Public** or **Private**.                                                                                                                                                                                       |
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Click **Save**. A new repository gets created.
 11. Upon repository creation:
@@ -98,18 +104,18 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
     * Navigate to the **Configuration** tab.
     * Click **Create**.
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Add the following two parameters:
 
     * `CLIENT_VCS_AUTH_USER`: Enter the GitHub user ID in the **Value** field.
     * `CLIENT_VCS_AUTH_TOKEN`: Enter the GitHub personal access token.
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 13. Both parameters will appear in the configuration list.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### GitHub Branch Setup
 
@@ -118,7 +124,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 * `dev` branch from `main`
 * `qa` branch from `dev`&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Repository Cloning and Development in SAP
 
@@ -233,6 +239,8 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 * Fill in the required details accordingly.
 
+
+
 | **Field**       | **Description**                                                                            |
 | --------------- | ------------------------------------------------------------------------------------------ |
 | **URL**         | Enter the URL of the GIT repository that you want to link with the SAP gCTS environment.   |
@@ -241,6 +249,8 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 | **Role**        | Select **Provided**.                                                                       |
 | **Type**        | Select **GitHub**.                                                                         |
 | **Visibility**  | You can choose either one: **Public** or **Private**.                                      |
+
+
 
 <figure><img src="../../../.gitbook/assets/image (1315).png" alt=""><figcaption></figcaption></figure>
 

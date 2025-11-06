@@ -16,18 +16,19 @@ To create a new transport request, follow these steps:
 
 * A new window will appear where you need to enter the transport details:
 
-| Field                   | Description                                                                                                       |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Description**         | Provide a description to the transport request.                                                                   |
-| **Type**                | Select the type of transport request from the dropdown.                                                           |
-| **Owner**               | SAP user with permissions to create and import transports.                                                        |
-| **Dev System**          | Select the development system.                                                                                    |
-| **Target System**       | The system where the transport will be imported post-release. This is auto-populated but can be modified.         |
-| **User Story**          | Select the relevant development system.                                                                           |
-| **Notification Emails** | Enter email addresses of people to be notified about the transport request. Separate multiple emails with commas. |
-| **Tasks**               | A sub-request that is part of the transport request. Tasks can be assigned to different users.                    |
+| Field                   | Description                                                                                                                                                                                               |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Description**         | Provide a description to the transport request.                                                                                                                                                           |
+| **Type**                | Select the type of transport request from the dropdown.                                                                                                                                                   |
+| **Owner**               | SAP user with permissions to create and import transports.                                                                                                                                                |
+| **Dev System**          | Select the development system.                                                                                                                                                                            |
+| **Target System**       | The system where the transport will be imported post-release. This is auto-populated but can be modified.                                                                                                 |
+| **User Story**          | Select the relevant development system.                                                                                                                                                                   |
+| **Notification Emails** | Enter email addresses of people to be notified about the transport request. Separate multiple emails with commas.                                                                                         |
+| **Tasks**               | A sub-request that is part of the transport request. Tasks can be assigned to different users.                                                                                                            |
+| **Project**             | Select the project under which the transport request should be created. This ensures that each transport request is properly associated with a specific project for better traceability and organization. |
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 5. **Save and View the Transport**
 
@@ -116,10 +117,10 @@ External transports are transport requests that are created or imported manually
 **Note:** To create an external transport for a user, the **Manage External Transport** role must be assigned.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

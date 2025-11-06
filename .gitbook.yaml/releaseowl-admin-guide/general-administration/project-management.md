@@ -35,11 +35,11 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 8. To the right of each project, click on the action button(three dots).
 9. The **Archive** option is available, which archives the project instead of deleting it.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. To view archived projects, open the **Show** dropdown at the top and select **Archived**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -62,13 +62,19 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
    * **Description**: A brief description of the project.
    * **Project Prefix**: A short identifier for the project.
    * **Default Pipeline**: The pipeline associated with the project.
+   * **Attachments are mandatory for User Story Promotion**: &#x20;
+     * Enable this option to make attachments mandatory during User Story promotion.
+     * When this option is checked, any attempt to promote a User Story without attachments will be restricted.
+     * During **Change Management**, if a User Story does not have attachments, an error message will appear, preventing the promotion until the required attachments are added.
 5. In the **Release Pipeline (default)** field:
    * Click on the dropdown or the search icon to browse the list of pipelines configured for the project.
-6.  Click the **Save** button located at the top-right corner to save the details.
+6. Click the **Save** button located at the top-right corner to save the details.
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../.gitbook/assets/image (1168).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Note :**&#x20;
+{% endhint %}
 
 ### Environments
 

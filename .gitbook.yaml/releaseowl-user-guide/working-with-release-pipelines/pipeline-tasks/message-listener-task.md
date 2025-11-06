@@ -10,6 +10,6 @@ The **Message Listener Task** is designed to wait for specific message events an
 | **Message Template** | Defines the structure or format of the expected message event.                                     |
 | **Description**      | Any message that is to be conveyed  to the task performer can be mentioned here.                   |
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (1405).png" alt=""><figcaption></figcaption></figure>

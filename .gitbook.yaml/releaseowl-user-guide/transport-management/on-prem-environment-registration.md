@@ -11,17 +11,17 @@
 
     * Provide your **Username** and **Password** (SAP BTP credentials).
 
-    <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. **If OAuth2 authentication is selected:**
    * **Client ID**: Enter the details from the created API service key in the SAP BTP cockpit.
    * **Client Secret**: Enter the details from the created API service key in the SAP BTP cockpit.
    * **Token URL**: Enter the details from the created API service key in the SAP BTP cockpit.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **Save**. The credential will now appear in the **List of Credentials**.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Registering SAP On-Premise Environment**
 
@@ -58,11 +58,11 @@ Follow these steps to register a new SAP On-Premise Environment:
    * **Password**: Enter your SAP Logon password.
 4. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. The credential will now be available to access your **Transport Domain Controller** system.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Transport Domain Controller**
 
@@ -96,7 +96,7 @@ The following fields appear:
 * **Enable Retrofit (Source)** – Enable this option if **transport retrofit** is required.
 * **Retrofit Domain Controller (Destination)** – Define the **destination retrofit domain controller**, if applicable.
 
-<figure><img src="../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **If Proxy Type: SAP Cloud Connector is selected**
 
@@ -122,12 +122,14 @@ The **System Landscape** section allows you to define multiple systems within th
 * **System Type:** The category of the system, such as Development, Production, or Test.
 * **Type:** Specifies the system’s role or function (e.g., Customizing, Test, Production).
 * **Target Group:** Defines the associated target group, if applicable.
+* **Default Client :** When a system contains multiple clients, **Workbench Transport Requests** must be imported into the system’s default client ID. Usually, this default client matches the source client defined in the **Domain Controller**. However, in some cases, the system’s default client ID may differ from the Domain Controller’s source client.&#x20;
+* In such cases, this checkbox is used to explicitly specify which client should be treated as the **default client** for Workbench Transport imports.
 
 **Additional Configurations**
 
 * If Virtual System, gCTS Generated, SAP Reference, or Non-ABAP System is selected, then the SAP User and Destination fields will be disabled.
 
-<figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### **Adding a System**
 
@@ -136,7 +138,7 @@ The **System Landscape** section allows you to define multiple systems within th
 3. Select the appropriate System Type and Description.
 4. Click Save to register the system.
 
-<figure><img src="../../.gitbook/assets/image (475).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### **Fetching Existing Systems**
 
@@ -151,7 +153,7 @@ The **System Landscape** section allows you to define multiple systems within th
 * Click Save to store modifications.
 * Click Cancel to discard changes and exit the interface.
 
-<figure><img src="../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 The newly created Transport Domain Controller gets displayed in the Transport Domain Controller screen.
 
