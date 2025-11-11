@@ -17,7 +17,7 @@ Through secure credential management and environment registration, ReleaseOwl co
 | OAuth Credential | Select the OAuth credential created in the credential manager. |
 | Environment Type | Select the environment type (e.g., Dev, QA, Prod).             |
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Create the Project <a href="#create-the-project" id="create-the-project"></a>
 
@@ -34,7 +34,7 @@ Through secure credential management and environment registration, ReleaseOwl co
 | **Project Prefix** | Specify a prefix that aligns with your project standards. This will act as a short identifier. |
 | **Project Type**   | Select **SAP CPI** as the project type.                                                        |
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. To the right of each project, click on the **action button** (three dots).
 7. Click on **Switch To Project** to navigate to the configuration page of the selected project.
@@ -61,6 +61,6 @@ Through secure credential management and environment registration, ReleaseOwl co
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2486808281-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FntTXS8vTRxGt8qfbPi3l%252Fuploads%252F1mQm9D1fEcm6N8h4BFkn%252Fimage.png%3Falt%3Dmedia%26token%3D67d2d457-66b6-405b-9d6f-77f727999312&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e651d26c&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-* Check the **Deploy** checkbox for relevant environment(s)
+* Check the **Deploy** checkbox for relevant environment(s).
 
-<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2486808281-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FntTXS8vTRxGt8qfbPi3l%252Fuploads%252FyUKbEmsVdfHG7Cw8g1u8%252Fimage.png%3Falt%3Dmedia%26token%3D6a3c1976-1580-4051-8730-335c5ff2de2a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a17a922c&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

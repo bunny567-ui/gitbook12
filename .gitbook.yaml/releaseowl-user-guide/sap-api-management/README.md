@@ -1,4 +1,4 @@
-# SAP API
+# SAP API Management
 
 ReleaseOwl integrates seamlessly with **SAP API Management** to automate the deployment and promotion of API-related artifacts across different environments. This ensures consistent and reliable delivery of API services in a DevOps-enabled SAP landscape.
 

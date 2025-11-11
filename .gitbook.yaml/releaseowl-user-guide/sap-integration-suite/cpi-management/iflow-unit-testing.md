@@ -5,9 +5,9 @@ Go to the ‘**Unit Test Cases’** tab, input all the required details. The req
 
 <figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Name**                    | Name for identifying a test case                                                                                                                                           |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
