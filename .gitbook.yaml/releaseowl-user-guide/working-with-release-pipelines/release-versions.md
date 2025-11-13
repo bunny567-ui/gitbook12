@@ -1,6 +1,6 @@
 # Release Versions
 
-Release Versioning is the process of assigning unique version names or version numbers for managing multiple product releases to help in tracking the changes, features implemented, or updates done.
+It is the process of assigning unique version names or version numbers for managing multiple product releases to help in tracking the changes, features implemented, or updates done.
 
 ### Navigating to the Release Versions Screen <a href="#pdf-page-0ebflbp2eco5zehbqqzc-navigating-to-the-release-versions-screen" id="pdf-page-0ebflbp2eco5zehbqqzc-navigating-to-the-release-versions-screen"></a>
 
