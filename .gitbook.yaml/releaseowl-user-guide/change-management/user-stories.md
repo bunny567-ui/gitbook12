@@ -25,9 +25,7 @@ b) Always ensure to **sync the Sprints first** before syncing the User Stories.
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note : Column widths** for **User Story ID, Status, Type, and Assigned To** now auto-adjust based on content.
-
-* **Summary** and **Pipeline Status** columns have a fixed maximum width, capped at **20% of the table**.
+**Note :**  The column widths for **User Story ID**, **Status**, **Type**, and **Assigned To** are now dynamically adjusted based on content length. The **Summary** and **Pipeline Status** columns are restricted to a maximum width of **20%** of the table to maintain layout consistency and prevent overflow.
 {% endhint %}
 
 ### Creating User Stories Without ALM Integration
