@@ -101,14 +101,17 @@ This is the primary section for entering and managing story information.
 
 **b. Actions**
 
-| Action                | Description                                                      |
-| --------------------- | ---------------------------------------------------------------- |
-| **Validate**          | Performs validation to ensure all required details are complete. |
-| **Validation Report** | Displays a summary of validation results.                        |
-| **Promote**           | Promotes the story to the next stage in the release workflow.    |
-| **Save**              | Saves all modifications made to the story details.               |
+| Action                | Description                                                                                                                                               |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Validate**          | Performs validation to ensure all required details are complete.                                                                                          |
+| **Validation Report** | Displays a summary of validation results.                                                                                                                 |
+| **Promote**           | Promotes the story to the next stage in the release workflow.                                                                                             |
+| **Save**              | Saves all modifications made to the story details.                                                                                                        |
+| **Activity Log**      | Displays a chronological list of all actions performed on the story, including status changes, updates, and user actions, allowing for full traceability. |
 
 <figure><img src="../../.gitbook/assets/image (1614).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 
 #### **3.  Artifacts Tab**
 
