@@ -137,12 +137,15 @@ Use this tab to upload and manage supporting files and links related to your use
 9\) **Options in Pipeline Activity Screen (Right Panel)**\
 The right side of the **Pipeline Activity** screen contains the following options:
 
-*   **Abort:**\
-    This button allows users to stop a currently running pipeline activity. When clicked, a confirmation popup appears where the user must provide a reason to proceed. Once confirmed, the pipeline status changes to **Aborted** for the respective task.
+* **Abort:**\
+  This button allows users to stop a currently running pipeline activity. When clicked, a confirmation popup appears where the user must provide a reason to proceed. Once confirmed, the pipeline status changes to **Aborted** for the respective task.
+* When aborting an action, users can also update the status of the associated User Story.
 
-    If a deployment is already in progress, selecting **Abort** will **not** stop the ongoing deployment. Therefore, the **Abort** action should be used only when the pipeline is in a **Waiting for Approval** or **Suspended** state.
+{% hint style="info" %}
+**Note:** The **Abort** action **will not** interrupt a deployment that is already in progress. Use this action only when the pipeline is in a **Waiting for Approval** or **Suspended** state.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1618).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1124).png" alt=""><figcaption></figcaption></figure>
 
