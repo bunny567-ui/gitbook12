@@ -125,17 +125,17 @@ Use this tab to upload and manage supporting files and links related to your use
 
 <figure><img src="../../.gitbook/assets/image (1615).png" alt=""><figcaption></figcaption></figure>
 
+#### Validation Report
 
-
-7\) The Validation Report will look as follows:
+* The Validation Report will look as follows:
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-8\) On clicking the **Pipeline Activity**, you can view the release pipeline execution status as follows:
+* On clicking the **Pipeline Activity**, you can view the release pipeline execution status as follows:
 
 <figure><img src="../../.gitbook/assets/image (1123).png" alt=""><figcaption></figcaption></figure>
 
-9\) **Options in Pipeline Activity Screen (Right Panel)**\
+**Options in Pipeline Activity Screen (Right Panel)**\
 The right side of the **Pipeline Activity** screen contains the following options:
 
 * **Abort:**\
