@@ -1,4 +1,4 @@
-# ReleaseOwl Callout Feature
+# Callout Feature
 
 Callout is a feature of making a call to an external web service or sending an HTTP request and receiving the response. Each REST callout request is associated with an HTTP method and an endpoint. A REST API callout is the process of a client application submitting a request to an API and that API retrieving the requested data from the third-party system say external server or program and delivering it back to the client.
 
@@ -15,7 +15,7 @@ This section is for registering REST API Callouts for ServiceNow.
 2\. In page displayed, click **Register Callout.**\
 
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\. Fill in the required details.
 
@@ -36,7 +36,7 @@ This section is for registering REST API Callouts for ServiceNow.
 
 5\. Once the connection is verified, you can save the callout.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Adding a Callout Task in Release Pipeline**
 
@@ -45,7 +45,7 @@ You can add callout as a Task in the Release Pipeline.
 1\. When adding a new task in Pipeline stage, select **Callout Task**, then the following screen is displayed:\
 
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Fill in the required details:
 
@@ -77,9 +77,6 @@ You can add callout as a Task in the Release Pipeline.
 | **${jobins.endTime}**        | <p>End time when instance is completed.<br>(YYYY-MM-DDTHH24:MM:SS.000+0000)</p>           |
 | **${jobins.createTime}**     | <p>Represents the time when instance was created.<br>(YYYY-MM-DDTHH24:MM:SS.000+0000)</p> |
 | **${jobins.startTime}**      | <p>Represents the time when instance was started<br>(YYYY-MM-DDTHH24:MM:SS.000+0000)</p>  |
-
-\
-
 
 ### **System Defined Parameters specific to the Release Pipelines of type SAP BTP**
 

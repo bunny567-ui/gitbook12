@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Landscape Connectors
 
 In general, SAP ECC and S/4HANA landscape systems will be deployed in the Client Network. As a SaaS platform, ReleaseOwl must communicate with the SAP system from the ReleaseOwl Network. There are multiple ways you can establish secure communication between ReleaseOwl and SAP systems.

@@ -39,7 +39,7 @@ The **Enable Rollback** option is one of the key **Deployment Actions** that can
 * To rollback a build, click **Rollback** on the **Pipeline Activity status page**.
 * Once rollback is triggered, the **rollback status and details** will be visible in the **deployment logs**, providing transparency into the rollback process and outcomes.
 
-<figure><img src="../../../.gitbook/assets/image (1074).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1616).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** Rollback logs in the Pipeline Activity section are now dynamically displayed only when a rollback is actually triggered.

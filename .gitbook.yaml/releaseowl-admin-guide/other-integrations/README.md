@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Other Integrations
 
 In addition to Jira, ReleaseOwl supports key integrations to streamline DevOps workflows:
