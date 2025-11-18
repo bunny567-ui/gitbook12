@@ -122,3 +122,7 @@ External transports are transport requests that are created or imported manually
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* When working with external transports, ReleaseOWL checks whether the transport has been previously imported into the target system. If the external transport is already imported, you will see a message indicating that "Import via TOC is not allowed for external transport.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1617).png" alt=""><figcaption></figcaption></figure>
