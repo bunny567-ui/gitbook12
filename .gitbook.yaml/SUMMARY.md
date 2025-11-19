@@ -32,7 +32,7 @@
   * [SAP On-Premise](releaseowl-user-guide/sap-on-premise/README.md)
     * [Administration](releaseowl-user-guide/sap-on-premise/administration/README.md)
       * [Credential Management](releaseowl-user-guide/sap-on-premise/administration/credential-management.md)
-      * [Cloud Environment Registration](releaseowl-user-guide/sap-on-premise/administration/cloud-environment-registration.md)
+      * [On-Premise Environment Registration](releaseowl-user-guide/sap-on-premise/administration/on-premise-environment-registration.md)
     * [On-Prem Environment Registration](releaseowl-user-guide/sap-on-premise/on-prem-environment-registration.md)
     * [Transport Management](releaseowl-user-guide/sap-on-premise/transport-management.md)
     * [Transport Promotion and Pipeline Activity](releaseowl-user-guide/sap-on-premise/transport-promotion-and-pipeline-activity.md)

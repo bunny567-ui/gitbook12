@@ -1,4 +1,4 @@
-# Cloud Environment Registration
+# On-Premise Environment Registration
 
 ### **Registering SAP On-Premise Environment**
 
@@ -24,22 +24,6 @@ Follow these steps to register a new SAP On-Premise Environment:
 5. Click **Save.**
 
 <figure><img src="../../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
-
-### **Registering Transport Manager Credential**
-
-1. Click on the **"Register Credential"** button.
-2. Select **Credential Type** → **Transport Manager Credential**.
-3. Provide the required details:
-   * **Credential Name**: Enter a name of your choice.
-   * **Username**: Enter your SAP Logon username.
-   * **Password**: Enter your SAP Logon password.
-4. Click **Save**.
-
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-5. The credential will now be available to access your **Transport Domain Controller** system.
-
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Transport Domain Controller**
 
