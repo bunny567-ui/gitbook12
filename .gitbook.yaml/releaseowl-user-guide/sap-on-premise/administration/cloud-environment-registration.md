@@ -1,31 +1,4 @@
----
-hidden: true
----
-
-# On-Prem Environment Registration
-
-### **Credential Registration for SAP Cloud Environment**
-
-1. Go to the **Credential Manager** in the administration view and Click on the **"Register Credential"** button.
-2. Fill in the required fields:
-   * **Credential Name**: Enter a name of your choice.
-   * **Credential Type**: Select **SAP Cloud Environment**.
-   * **Authentication Type**: Choose either **Basic** or **OAuth2**.
-3.  If Basic authentication is selecte&#x64;**:**
-
-    * Provide your **Username** and **Password** (SAP BTP credentials).
-
-    <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4. **If OAuth2 authentication is selected:**
-   * **Client ID**: Enter the details from the created API service key in the SAP BTP cockpit.
-   * **Client Secret**: Enter the details from the created API service key in the SAP BTP cockpit.
-   * **Token URL**: Enter the details from the created API service key in the SAP BTP cockpit.
-
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-5. Click **Save**. The credential will now appear in the **List of Credentials**.
-
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+# Cloud Environment Registration
 
 ### **Registering SAP On-Premise Environment**
 
@@ -36,7 +9,7 @@ Follow these steps to register a new SAP On-Premise Environment:
 1. In **Administration View**, go to **Environments** and select **SAP Cloud Environment**.
 2. On the displayed page, click **Register Cloud Environment**.
 
-<figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the required details:&#x20;
 
@@ -48,9 +21,9 @@ Follow these steps to register a new SAP On-Premise Environment:
 * **Space**: This is also automatically populated from the dropdown menu.
 * **Environment Type**: Select the environment type of your choice.
 
-<figure><img src="../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
-
 5. Click **Save.**
+
+<figure><img src="../../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
 
 ### **Registering Transport Manager Credential**
 
@@ -62,11 +35,11 @@ Follow these steps to register a new SAP On-Premise Environment:
    * **Password**: Enter your SAP Logon password.
 4. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. The credential will now be available to access your **Transport Domain Controller** system.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Transport Domain Controller**
 
@@ -74,7 +47,7 @@ Follow these steps to register a new SAP On-Premise Environment:
 * Select **Transport Domain Controller**.
 * Click **"Register Transport Domain Controller"** to begin registration.
 
-<figure><img src="../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Enter Transport Domain Controller Settings:**&#x20;
 
@@ -90,9 +63,9 @@ The following fields appear:
 * **Application Server (Required)** – Enter the **application server address**.
 * **Port (Required)** – Specify the port number as defined in SAP Logon. To find the port number, go to **SAP Easy Access**, enter transaction code **SMICM**, then navigate to the **Goto** menu and select **Services**. The **HTTP port number** will be listed there.
 
-<figure><img src="../../.gitbook/assets/image (1111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1111).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1110).png" alt=""><figcaption></figcaption></figure>
 
 * **HTTPS** – Check the box if **HTTPS** is required.
 * **Client ID (Required)** – Enter the **Client ID** of the Transport Domain Controller.
@@ -100,7 +73,7 @@ The following fields appear:
 * **Enable Retrofit (Source)** – Enable this option if **transport retrofit** is required.
 * **Retrofit Domain Controller (Destination)** – Define the **destination retrofit domain controller**, if applicable.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **If Proxy Type: SAP Cloud Connector is selected**
 
@@ -112,7 +85,7 @@ The following additional fields appear:
 * **SAP User (Required)** – Enter the **SAP Username** from the **Destination Configuration** in the **Connectivity section** of SAP BTP.
 * **Client ID (Required)** – Enter the **Client ID** of the **SAP system**.
 
-<figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure System Landscape**
 
@@ -133,7 +106,7 @@ The **System Landscape** section allows you to define multiple systems within th
 
 * If Virtual System, gCTS Generated, SAP Reference, or Non-ABAP System is selected, then the SAP User and Destination fields will be disabled.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Adding a System**
 
@@ -142,7 +115,7 @@ The **System Landscape** section allows you to define multiple systems within th
 3. Select the appropriate System Type and Description.
 4. Click Save to register the system.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Fetching Existing Systems**
 
@@ -157,11 +130,11 @@ The **System Landscape** section allows you to define multiple systems within th
 * Click Save to store modifications.
 * Click Cancel to discard changes and exit the interface.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The newly created Transport Domain Controller gets displayed in the Transport Domain Controller screen.
 
-<figure><img src="../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** Create Transport Domain Controller in ReleaseOwl as per the destination created for all the dev Environment.
@@ -171,31 +144,30 @@ The newly created Transport Domain Controller gets displayed in the Transport Do
 
 1. Navigate to the **Projects** section and click on **Create a Project**.
 
-<figure><img src="../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
 
 2. Fill in the required details:
    * **Name**: Enter a project name of your choice.
    * **Project Type**: Select **SAP On-Premise**.
 3. Click the **Save** button to create the project.
 
-<figure><img src="../../.gitbook/assets/image (477).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (477).png" alt=""><figcaption></figcaption></figure>
 
 4. After creating the project, click on the **three-dot menu** next to the project.
 5. Select **Switch On Project** to activate it.
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 6. Click on **Project Settings**, located in the top-right corner, before your account user icon.
 
-<figure><img src="../../.gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
 
 7. Navigate to the **Environment** section.
 8. Click on the **+ Add** button to add the newly created **On-Premise** environment.
 9. Click on the **Select** button to confirm your choice.
 
-<figure><img src="../../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
 
 10. If needed, you can set the selected environment as a **Source System** by checking the **Source** button.
 
-<figure><img src="../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (1620).png" alt=""><figcaption></figcaption></figure>
