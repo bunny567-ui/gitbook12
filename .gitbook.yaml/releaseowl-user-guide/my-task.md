@@ -7,7 +7,7 @@ The **My Tasks** section in ReleaseOwl provides users with a centralized view of
 * Navigate to the **My Tasks** section from the left-hand menu.
 * The screen will display a list of tasks assigned to the logged-in user.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Overview of My Tasks**
 
@@ -94,29 +94,29 @@ Deputy users can manage tasks when the primary user is unavailable.
 6. When a user story is promoted, the assigned Deputy User will receive an approval request. The Deputy User can then navigate to the **My Tasks** section and go to the **Tasks** tab.&#x20;
 7. In the **Action** column, they can choose to **Approve** or **Reject** the request.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FKW21vajbvqYWmHIWwwKU%252Fimage.png%3Falt%3Dmedia%26token%3D5ed024a6-d23a-4217-a1e8-a9992e157243&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=54cd62c7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 8. When you click on the **Approve/Reject** button, a detailed view will appear, displaying relevant information about the user story.&#x20;
 9. The Deputy User can review this information before making a decision to approve or reject the user story promotion.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FZ3zjGoeTsHBwWFCjGpAU%252Fimage.png%3Falt%3Dmedia%26token%3Dbade8a64-b497-4c0e-a9c4-0f086ac40faa&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=61f71a41&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 10. When the task is approved, a confirmation message will appear. In the **Pipeline Activity** section, you can see the task marked as **completed**, along with the name of the **Deputy User** who approved it.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fo8BTyNeMrKtsJwQQhZwG%252Fimage.png%3Falt%3Dmedia%26token%3D69a51b6f-ffe2-45dd-b055-d436977e3aa7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ae4505c4&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 11. In the **Deputy Tasks** section, the **Deputy User** can view the **task status**, including the **task name, reference ID, stage, task type, delivery time, assigned to, and action**.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F6bieUIzzV1b8mUVSrVfp%252Fimage.png%3Falt%3Dmedia%26token%3Dc6ddad2e-bf51-4ea9-bc21-950781fe70ad&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b8ca79a5&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 12. When you check the **History** in the **My Tasks** section, you can see a record of all actions taken, including approvals, rejections, and task completions, along with the corresponding timestamps and the user who performed each action.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -49,7 +49,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * In the administration view, navigate to the **Credential Manager**.
     * Click on **Register Credential**.
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Fill in the Credential Details**
 
     * **Credential Name**: Enter a name of your choice.
@@ -61,7 +61,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * **Username**: Enter your SAP BTP Username.
     * **Credentials**: Use your SAP BTP password.
 
-    <figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Steps to Register an SAP Cloud Environment**
 
@@ -160,9 +160,9 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * Navigate to the **Build Pipelines** section and click on **Create Build Pipeline**.
     * Enter the **Build Pipeline Name** and assign **Labels** for filtering.
 
-    <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **Repository Configuration**
 
 * Enter the **Repository URL** (e.g., Bitbucket or other platforms).
@@ -170,7 +170,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 * Choose the branch (e.g., QA, Master, or Dev).
 * Select the type of version control system (e.g., GitHub, GitLab, Bitbucket).
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Builder Section**
 
@@ -178,7 +178,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 * **Build Tool Version**: Select the required version.
 * **Max # of Builds to Keep**: Set to 30 to store the latest versions and avoid storage issues in Jenkins.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Scheduler**
 
@@ -223,7 +223,7 @@ The purpose of a malware scan is to scan business documents for any potential th
         * Navigate to **Services** and open the **Service Marketplace**.
         * Search for "**Malware**" and click **Create** to create an instance.
 
-        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -251,7 +251,7 @@ The purpose of a malware scan is to scan business documents for any potential th
     * Select the **Registered Credential** from the dropdown menu.
     * Specify the timeout duration for the malware scan.
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Save** to finalize the configuration.
 

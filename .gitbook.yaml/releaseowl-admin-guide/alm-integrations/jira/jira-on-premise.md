@@ -1,34 +1,133 @@
 # Jira On-Premise
 
-### **Integrating Jira with ReleaseOwl**
+This guide provides detailed instructions for integrating Jira with ReleaseOwl to streamline user story management and automation. After successful configuration, ReleaseOwl automatically fetches **Projects**, **Sprints**, and **User Stories** from your Jira instance based on the settings you define.
 
-If you work with external project management systems such as **Jira**, you can integrate them with **ReleaseOwl**. ReleaseOwl also supports **Jira On-Premise** access.
+To enable continuous, real-time synchronization of User Stories, Jira must be configured with appropriate **Webhooks** or **Automation Rules**. These configurations ensure that ReleaseOwl receives updates instantly whenever changes occur in Jira.
 
-### **Granting Jira Access to Your Servers:**&#x20;
+### **1. Jira Environment & Connectivity Requirements**
 
-To enable integration and secure communication with Jira Cloud or Jira On-Premise environments, follow these steps:
+Ensure that the following prerequisites are met before configuring the integration:
 
-1. Go to **Credential Manager** from the **Administration** menu.
-2. Click **Register Credential**.
-3. Select **Credential Type** and choose **Jira**.
-4. Provide the following details:
-   * **Credential Name**: Any identifiable name (e.g., JiraIntegration).
-   * **Authentication Type**: Basic.
-   * **Username**: Jira Technical User account.
-   * **Password/API Token**: API token generated from Atlassian (Cloud) or Jira Admin (On-Premise).
-   * **Jira URL**: Enter the Jira base URL (e.g., [https://yourcompany.atlassian.net](https://yourcompany.atlassian.net/)).
-   * **Proxy Type**: Select **SAP Cloud Connector**.
-   * **Proxy URL**: Provide the virtual URL via Cloud Connector (e.g., https:///proxy).
-   * **SAP Cloud Credentials**: Select an existing **ServiceUserCredBtp** for proxy communication.
-5. Save the credential.
+* **Jira URL is reachable** from ReleaseOwl
+* **Basic Authentication** is enabled
+* **REST API endpoints** are accessible
+* If Jira uses an **IP Allowlist**, ensure ReleaseOwl’s IP/domain is added to the allowed list
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### **2. Required Jira Global Permissions**
 
-### **Validation:**
+The Jira user account configured in ReleaseOwl must have the following permissions:
 
-* &#x20;**Test the integration** by verifying **user story sync** or checking **webhook status** in: **Jira → System → Webhooks**
+* **Browse Users**
+* **Create Shared Objects** (optional, but recommended for shared filters and boards)
 
-{% hint style="info" %}
-**Recommendations:**  ✅ Use a **dedicated Jira Technical User** with API access permissions.\
-✅ **Rotate API tokens regularly** for security.
-{% endhint %}
+### **3. Register Jira On-Premise Credential (Basic Authentication)**
+
+Follow the steps below to register your Jira credentials in ReleaseOwl:
+
+1. Go to the **ReleaseOwl Dashboard**.
+2. Navigate to **Administration → Credential Manager**.
+3. Click **Register Credential**.
+4. Fill in the credential form with the following details:
+   * **Credential Name:** Enter a preferred name for this credential.
+   * **Credential Type:** Jira
+   * **Authentication Type:** Basic
+   * **Username:** Jira technical user account
+   * **Password / API Token:** Enter the password
+   * **Jira URL:** `https://jira-dev.releaseowl.com`
+   * **Proxy Type:** None
+5. Click **Save** to complete the credential registration.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## **Jira Project Integration**
+
+To link a Jira project with a ReleaseOwl project, follow the steps below:
+
+### **1. Navigate to Project Settings**
+
+* Switch to the required working project in ReleaseOwl.
+* Go to **Project Settings**.
+* In Project Settings, navigate to **ALM Integrations** and click **Add**.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### **2. Fill in the Required Details**
+
+* **Name:** Enter a unique integration name.
+* **Description:** (Optional) Add a relevant description.
+* **External System:** Select Jira.
+* **Credential:** Choose the registered Jira credential.
+* **Host URL:** Jira Server URL (e.g., [_https://jira-dev.releaseowl.com/_](https://jira-dev.releaseowl.com/)).
+
+### **3. Select Hosting Type**
+
+* Choose **On-Premise** if your Jira runs on a private server.
+* Choose **Cloud** if your Jira instance is hosted on Atlassian Cloud.
+
+### **4. Select External Project**
+
+* Choose the Jira project from the pop-up list.
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+#### **A. Using Boards**
+
+* Select **Boards** to sync issues using a specific Jira board.
+* **Board:** Choose the required Scrum or Kanban board.
+* Click **Save**.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Once saved, the integration appears in the list. If **Default Integration** is selected, it will be used by default.
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+#### **B. Using Filters**
+
+* Select **Filters** to sync issues using Jira’s saved filters.
+* All available filters that user has permission will be displayed.
+* Choose the desired filter.
+* Ensure the filter has proper permissions and is shared with required users.
+
+#### **C. Using JQL (Jira Query Language)**
+
+* Select **JQL** to fetch issues using advanced queries.
+* Create a JQL query in Jira.
+* Copy and paste the query into ReleaseOwl.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+### **Note**
+
+* **Webhook URL:** Auto-generated by ReleaseOwl and used to capture and sync Jira events.
+* **Webhook Request URL for Automation Rule:** Also auto-generated by ReleaseOwl.
+* **Disable Writing of Comments/Notes:** An optional toggle that allows you to control whether comments or notes are automatically added.
+
+## **Configuring the Webhook URL**
+
+ReleaseOwl supports automatic synchronization of user story changes made in Jira through webhooks.
+
+1. Log in to your Jira account.
+2. Go to **Settings → System → WebHooks**.
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+3. Copy the Webhook URL generated in ReleaseOwl.
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+4. Paste it in the **URL** field on the Jira WebHook configuration page.
+
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+5. In the events section, instead of all events it is recommended to add filter condition for Project.
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+6. Select the issue-related events that you want to track for your project (e.g., story creation, updates, etc.).
+7. After entering all the details, you can enable or disable the webhook in the status section.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+

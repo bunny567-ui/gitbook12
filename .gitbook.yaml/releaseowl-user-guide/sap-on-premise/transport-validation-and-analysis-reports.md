@@ -17,7 +17,7 @@ Validating a transport ensures that the changes comply with enterprise standards
 6. Select the appropriate target system (for example, **DEQ** or **DEP**).
 7. Once the target system is selected, the system performs the validation checks and displays the results, helping ensure that the transport meets all required compliance and configuration criteria before promotion.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Validation Report**
 
