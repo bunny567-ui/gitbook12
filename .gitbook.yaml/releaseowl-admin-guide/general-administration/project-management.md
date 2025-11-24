@@ -39,7 +39,7 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 
 10. To view archived projects, open the **Show** dropdown at the top and select **Archived**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -70,7 +70,7 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
    * Click on the dropdown or the search icon to browse the list of pipelines configured for the project.
 6. Click the **Save** button located at the top-right corner to save the details.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :**&#x20;

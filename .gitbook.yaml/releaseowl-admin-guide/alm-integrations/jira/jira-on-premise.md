@@ -37,7 +37,7 @@ Follow the steps below to register your Jira credentials in ReleaseOwl:
    * **Proxy Type:** None
 5. Click **Save** to complete the credential registration.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## **Jira Project Integration**
 
@@ -49,7 +49,7 @@ To link a Jira project with a ReleaseOwl project, follow the steps below:
 * Go to **Project Settings**.
 * In Project Settings, navigate to **ALM Integrations** and click **Add**.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. Fill in the Required Details**
 

@@ -2,13 +2,15 @@
 
 Transport management is used to model your change management across the landscape.
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 #### **Create New Transport Request**
 
 To create a new transport request, follow these steps:
 
 1. Click **"Create New Transport Request".**
 
-<figure><img src="../../.gitbook/assets/image (1289).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Fill in the Required Details**
 
