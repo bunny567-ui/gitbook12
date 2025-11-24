@@ -44,7 +44,7 @@ Setting up a **Test Configuration** allows the ReleaseOwl application to execute
 **Note:** Test Configuration for Web UI and Functional Tests are to be created separately.
 {% endhint %}
 
-### **Test Configuration for Web UI Test**  
+### **Test Configuration for Web UI Test** <br>
 
 <figure><img src="../../../.gitbook/assets/image (1276).png" alt=""><figcaption></figcaption></figure>
 
@@ -62,8 +62,7 @@ Fill in the required details:
 | **Configuration File** | Use this option to specify the complete path to a file that contains the parameters for a test run                                                        |
 | **RO Agent**           | Select the RO Agent where the current test should be executed.                                                                                            |
 
-**Test Configuration for Functional Test**\
-
+**Test Configuration for Functional Test**<br>
 
 <figure><img src="../../../.gitbook/assets/image (1278).png" alt=""><figcaption></figcaption></figure>
 

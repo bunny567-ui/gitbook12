@@ -46,8 +46,7 @@ ReleaseOwl interacts with SAP Systems via HTTP/HTTPS protocol, but SAP Router ru
 
 [https://help.sap.com/viewer/af8bcf35778c4d098ba482cc0b59f339/7.5.22/en-US/46d37ef8e5343c1de10000000a155369.html](https://help.sap.com/viewer/af8bcf35778c4d098ba482cc0b59f339/7.5.22/en-US/46d37ef8e5343c1de10000000a155369.html)
 
-The diagram below shows connection flow between SAP Routers (server and client)\
-
+The diagram below shows connection flow between SAP Routers (server and client)<br>
 
 <figure><img src="../../.gitbook/assets/image (1185).png" alt=""><figcaption></figcaption></figure>
 

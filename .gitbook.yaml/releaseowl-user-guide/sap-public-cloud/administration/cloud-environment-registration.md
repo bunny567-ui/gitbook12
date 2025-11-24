@@ -32,7 +32,7 @@
 
 3. Click **“Switch to Project”** for the project you just created.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. From the **Projects** dropdown (top-right corner), select **Project Settings → Environment**.
 

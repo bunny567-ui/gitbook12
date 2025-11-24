@@ -19,13 +19,11 @@ Creating a Release Pipeline is a three-step process.
 
 #### For creating release pipeline:
 
-1.  Select the required On-Prem Project and in Release go to Release Pipelines.\
-
+1.  Select the required On-Prem Project and in Release go to Release Pipelines.<br>
 
     <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Click **Create New Release Pipeline.**
-3. **Release Pipeline Name:** Give a name for the release pipeline.\
-
+3. **Release Pipeline Name:** Give a name for the release pipeline.<br>
 
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -33,12 +31,10 @@ Creating a Release Pipeline is a three-step process.
 
     * Click **Add Stage**
     * Name the stage (e.g., `Dev`, `QA`, `UAT`, `Prod`)
-    * Click **OK**\
-
+    * Click **OK**<br>
 
     <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-5. **Add Tasks in Each Stage:** Click **Add** to configure tasks within the stage.\
-
+5. **Add Tasks in Each Stage:** Click **Add** to configure tasks within the stage.<br>
 
 <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -48,7 +44,7 @@ Creating a Release Pipeline is a three-step process.
 
 6. Once all tasks are added, click the **Save** button to finalize the pipeline configuration.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Post-Creation Options**
 
@@ -56,11 +52,11 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
 
 * **Delete**: Permanently removes the pipeline from the project.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Save As**: Opens a popup where you can enter a new name and create a copy of the pipeline.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Monitoring Release Pipeline Execution**
 
@@ -70,9 +66,9 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
     * The **trigger time**&#x20;
     * The **current execution status** of each stage
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     When you **click the Details tab**, you can view:
 
@@ -90,7 +86,7 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
 
 In the **Release Pipeline > Details** section, during pipeline execution, you will find **Skip and Continue** button available for the **Validation Task**. This button allow you to bypass the validation step under specific conditions—typically used in exception scenarios where validations are not mandatory or have been reviewed externally. When you click on the **Skip and Continue** button:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. A **popup dialog** will appear prompting you to provide a **justification** or **reason** for skipping the validation task (e.g., "Validation not required for this transport", "Approved via external review", or "Urgent fix deployment").
 2. Enter the **required reason** in the text field.
@@ -112,8 +108,7 @@ In the **Release Pipeline > Details** section, during pipeline execution, you wi
 
 ### **Deployment Task**
 
-The **Deployment Task** defines how an SAP transport request (TR) is deployed to the specified SAP target system during pipeline execution. When you add a Deployment Task to a pipeline stage, a configuration screen appears where you can provide the necessary transport deployment details.\
-
+The **Deployment Task** defines how an SAP transport request (TR) is deployed to the specified SAP target system during pipeline execution. When you add a Deployment Task to a pipeline stage, a configuration screen appears where you can provide the necessary transport deployment details.<br>
 
 <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -150,14 +145,13 @@ Validation task is added to perform Static Code Analysis checks and generate the
 | **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Quality Checks**      | <p><strong>ATC Checks:</strong> Executes <strong>ABAP Test Cockpit (ATC)</strong> checks to analyze code quality, syntax errors, performance, and security compliance.                                                                     </p><p></p><p><strong>Impact Analysis:</strong> Checks how the changes in the transport affect other dependent or referencing objects across systems.                                                                      </p><p></p><p><strong>Unit Tests:</strong> Runs <strong>ABAP Unit Tests</strong> to verify the functional correctness of the objects in the transport.                                                                    </p><p></p><p><strong>User  Story Dependencies (Beta):</strong>  Identifies and validates dependent user stories to prevent conflicts or incomplete deployments.                       </p><p></p><p><strong>Note:</strong> You can select <strong>any one or more</strong> of the following <strong>Quality Checks</strong> when configuring the validation task.</p> |
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Promotion**
 
-Promotion is the process of Moving/Deploying/Importing the transports to the target systems using a Release pipeline associated with the project.\
-
+Promotion is the process of Moving/Deploying/Importing the transports to the target systems using a Release pipeline associated with the project.<br>
 
 <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -165,8 +159,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 
 #### **a) Promotion by User story**
 
-1\. From Actions Menu of the User story, promotion can be done.\
-
+1\. From Actions Menu of the User story, promotion can be done.<br>
 
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -178,8 +171,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 
 <figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-5\. Runtime view of the pipeline can be viewed using “**Pipeline Activity**” menu option in the Actions Menu.\
-
+5\. Runtime view of the pipeline can be viewed using “**Pipeline Activity**” menu option in the Actions Menu.<br>
 
 <figure><img src="../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -193,8 +185,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 **Note:** The **Wait for Promotion** task is **needed** for a **multistage** Release Pipeline if the user wants to **wait** or **hold** the promotion of the user story to further stages.
 {% endhint %}
 
-8\. User Story can be promoted to the next stage (in this case, Prod) or a new Release Package can be created with all the User Stories waiting in UAT stage (here in this case) for getting promoted to Prod.\
-
+8\. User Story can be promoted to the next stage (in this case, Prod) or a new Release Package can be created with all the User Stories waiting in UAT stage (here in this case) for getting promoted to Prod.<br>
 
 <figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -208,8 +199,7 @@ Release Package is a logical grouping of user stories or transports that are to 
 
 ### **Promotion of Release Package by User Stories**
 
-1\. Clicking **“Add Stories for Promotion”** will add all the user stories eligible for promotion from the selected **Promoted from (Stage)** as a unit.\
-
+1\. Clicking **“Add Stories for Promotion”** will add all the user stories eligible for promotion from the selected **Promoted from (Stage)** as a unit.<br>
 
 **Key Points to Note:**
 
@@ -220,8 +210,7 @@ Release Package is a logical grouping of user stories or transports that are to 
 
 ### **Promotion of Release Package by Transports**
 
-1\. Clicking **“Add Stories for Promotion”** will add all the transports eligible for promotion from the selected **Promoted from (Stage)** as a unit.\
-
+1\. Clicking **“Add Stories for Promotion”** will add all the transports eligible for promotion from the selected **Promoted from (Stage)** as a unit.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1282).png" alt=""><figcaption></figcaption></figure>
 
@@ -236,13 +225,11 @@ The following points apply when promoting a Release Package based on transports:
 
 <figure><img src="../../../.gitbook/assets/image (1142).png" alt=""><figcaption></figcaption></figure>
 
-3\. Execution of the Release package can be seen using the option “**Pipeline Activity**.”\
-
+3\. Execution of the Release package can be seen using the option “**Pipeline Activity**.”<br>
 
 <figure><img src="../../../.gitbook/assets/image (1143).png" alt=""><figcaption></figcaption></figure>
 
-4\. Once Promotion for **Release package** starts then the **Release Package** will be locked and no changes are possible like addition of more user stories or transports.\
-
+4\. Once Promotion for **Release package** starts then the **Release Package** will be locked and no changes are possible like addition of more user stories or transports.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1144).png" alt=""><figcaption></figcaption></figure>
 
@@ -256,7 +243,6 @@ Any number of stages can be added while creating a release pipeline. An existing
 
 This is required when we want the deployments to take place in multiple environments one after the other continuously which is a part of Continuous Delivery.
 
-For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.\
-
+For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.<br>
 
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

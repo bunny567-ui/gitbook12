@@ -16,7 +16,7 @@ Before triggering user story abortion or promotion from external systems, ensure
 
 3. The **user story** is attached to a **valid release pipeline** within ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### User Story Abortion&#x20;
 
@@ -70,7 +70,7 @@ This is the most critical part, as the data included in the request body is what
 **System Action:**\
 The user story pipeline stops execution, and the status updates to _Aborted_ in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### User Story Promotion
 
@@ -116,4 +116,4 @@ https://<domain>/webhook/tenant/{tenant}/project/{ProjectID}?secretkey=<secretke
 **System Action:**\
 The user story pipeline advances to the next stage as defined in the release pipeline, and the user story status is updated accordingly in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

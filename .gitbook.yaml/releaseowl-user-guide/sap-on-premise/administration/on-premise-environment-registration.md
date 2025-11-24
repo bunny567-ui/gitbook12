@@ -57,7 +57,7 @@ The following fields appear:
 * **Enable Retrofit (Source)** – Enable this option if **transport retrofit** is required.
 * **Retrofit Domain Controller (Destination)** – Define the **destination retrofit domain controller**, if applicable.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **If Proxy Type: SAP Cloud Connector is selected**
 
@@ -90,7 +90,7 @@ The **System Landscape** section allows you to define multiple systems within th
 
 * If Virtual System, gCTS Generated, SAP Reference, or Non-ABAP System is selected, then the SAP User and Destination fields will be disabled.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Adding a System**
 
@@ -99,7 +99,7 @@ The **System Landscape** section allows you to define multiple systems within th
 3. Select the appropriate System Type and Description.
 4. Click Save to register the system.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Fetching Existing Systems**
 
@@ -114,7 +114,7 @@ The **System Landscape** section allows you to define multiple systems within th
 * Click Save to store modifications.
 * Click Cancel to discard changes and exit the interface.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The newly created Transport Domain Controller gets displayed in the Transport Domain Controller screen.
 

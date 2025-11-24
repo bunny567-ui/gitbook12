@@ -6,10 +6,9 @@ ABAP Compare is used to compare any differences between objects under different 
 
 1\. Expand Utilities in project view and click on ABAP Compare section
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt=""><figcaption></figcaption></figure>
 
-2\. Select the **Compare System** from which objects needs to be compared.\
-
+2\. Select the **Compare System** from which objects needs to be compared.<br>
 
 <figure><img src="../../.gitbook/assets/image (1202).png" alt=""><figcaption></figcaption></figure>
 
@@ -21,8 +20,7 @@ ABAP Compare is used to compare any differences between objects under different 
 
 * Include Non-Versioning Objects -> if Non version object also needs to be included while comparison, check this option.
 * Include DOCU Objects -> If DOCU/Internationalization (i18n) of the objects needs to be included while comparison, then check this option
-* Include Object only in compare system -> Check this option when objects which present in compare system are available.\
-
+* Include Object only in compare system -> Check this option when objects which present in compare system are available.<br>
 
 <figure><img src="../../.gitbook/assets/image (1205).png" alt=""><figcaption></figcaption></figure>
 
@@ -30,30 +28,25 @@ ABAP Compare is used to compare any differences between objects under different 
 
 * All Customer Objects -> Select this if you want to compare all non-SAP objects
 * All Modified SAP Object -> Select this if only modified SAP Object needs to be compared
-* Objects from Package -> Select this if specific package needs to be compared\
-
+* Objects from Package -> Select this if specific package needs to be compared<br>
 
 <figure><img src="../../.gitbook/assets/image (1206).png" alt=""><figcaption></figcaption></figure>
 
-* If Object from Package is selected, provide a package in package input.\
-
+* If Object from Package is selected, provide a package in package input.<br>
 
 <figure><img src="../../.gitbook/assets/image (1207).png" alt=""><figcaption></figcaption></figure>
 
-* After providing all the required details, the screen will be as shown below:\
-
+* After providing all the required details, the screen will be as shown below:<br>
 
 <figure><img src="../../.gitbook/assets/image (1208).png" alt=""><figcaption></figcaption></figure>
 
 6\. Once all the required selections are made, click compare button to get the comparison data.
 
-7\. Once the comparison is done, data can be seen as follows:\
-
+7\. Once the comparison is done, data can be seen as follows:<br>
 
 <figure><img src="../../.gitbook/assets/image (1209).png" alt=""><figcaption></figcaption></figure>
 
-8\. Expand to the object to view the comparison. \
-
+8\. Expand to the object to view the comparison. <br>
 
 <figure><img src="../../.gitbook/assets/image (1213).png" alt=""><figcaption></figcaption></figure>
 
@@ -61,8 +54,7 @@ ABAP Compare is used to compare any differences between objects under different 
 
 <figure><img src="../../.gitbook/assets/image (1215).png" alt=""><figcaption></figcaption></figure>
 
-10\. The objects with red cross icons have no version in either of the compared systems\
-
+10\. The objects with red cross icons have no version in either of the compared systems<br>
 
 <figure><img src="../../.gitbook/assets/image (1216).png" alt=""><figcaption></figcaption></figure>
 
@@ -70,8 +62,7 @@ ABAP Compare is used to compare any differences between objects under different 
 
 <figure><img src="../../.gitbook/assets/image (1217).png" alt=""><figcaption></figcaption></figure>
 
-12\. To see the difference, click on the icon and the difference between the objects will be shown in a dialog. In a similar manner, you can compare different objects and see the difference side by side in the browser itself.\
-
+12\. To see the difference, click on the icon and the difference between the objects will be shown in a dialog. In a similar manner, you can compare different objects and see the difference side by side in the browser itself.<br>
 
 <figure><img src="../../.gitbook/assets/image (1218).png" alt=""><figcaption></figcaption></figure>
 

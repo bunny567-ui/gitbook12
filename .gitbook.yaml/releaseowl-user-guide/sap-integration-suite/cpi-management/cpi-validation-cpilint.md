@@ -28,8 +28,7 @@ Validation report is visible only after the validation process is complete.\
 
 1\. Go to a required package and click **Actions**. Click **Validation Report**.
 
-2\. The validation report is displayed below.\
-
+2\. The validation report is displayed below.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1076).png" alt=""><figcaption></figcaption></figure>
 

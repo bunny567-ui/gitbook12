@@ -22,18 +22,15 @@ Creating a Release Pipeline is a guided **five-step process**, designed to help 
 **To create a release pipeline:**
 
 1. In **Release**, go to **Release Pipelines.**
-2. Click **Create New Release Pipeline.**\
-
+2. Click **Create New Release Pipeline.**<br>
 
 <figure><img src="../../../.gitbook/assets/image (1230).png" alt=""><figcaption></figcaption></figure>
 
-3. **Release Pipeline Name:** Give a name for the release pipeline.\
-
+3. **Release Pipeline Name:** Give a name for the release pipeline.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1229).png" alt=""><figcaption></figcaption></figure>
 
-4. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.\
-
+4. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1231).png" alt=""><figcaption></figcaption></figure>
 
@@ -53,7 +50,9 @@ The newly added stage appears as follows:
 
 **Note:** Deployment Task varies for different project types.
 
-**Deployment Task** – All the details pertaining to the deployment of the artifact is specified in deployment task.The following screen is displayed on adding a deployment task.
+### **Deployment Task** –&#x20;
+
+All the details pertaining to the deployment of the artifact is specified in deployment task. The following screen is displayed on adding a deployment task.
 
 <figure><img src="../../../.gitbook/assets/image (1240).png" alt=""><figcaption></figcaption></figure>
 
@@ -67,8 +66,7 @@ The newly added stage appears as follows:
 
 * Select the option **Upload Artifact** to Cloud Transport Management if the artifact has to be uploaded to any other BTP environment.
 
-The following screen is displayed.\
-
+The following screen is displayed.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1241).png" alt=""><figcaption></figcaption></figure>
 
@@ -84,8 +82,7 @@ Fill in the required details:
 
 <figure><img src="../../../.gitbook/assets/image (1242).png" alt=""><figcaption></figcaption></figure>
 
-7. **Notification Emails:** You can specify an email distribution list separated by comma who you want to notify the result of the Release Pipeline Execution – either **Success** or **Failure**. \
-
+7. **Notification Emails:** You can specify an email distribution list separated by comma who you want to notify the result of the Release Pipeline Execution – either **Success** or **Failure**. <br>
 
 {% hint style="info" %}
 **Note:** If the Release Pipeline fails, the logs are also attached in the notification email. By default, the user who creates the Release Pipeline is notified and specifying the distribution list is optional.
@@ -95,12 +92,11 @@ Fill in the required details:
 
 8. On clicking Save, the release pipeline gets created and is shown in the Release Pipelines screen.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Multi-Stage Release Pipeline**
 
-Any number of stages can be added while creating a release pipeline. An existing release pipeline can also be edited to include various stages. This is required when we want the deployments to take place in multiple environments one after the other continuously which is a part of Continuous Delivery. For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.\
-
+Any number of stages can be added while creating a release pipeline. An existing release pipeline can also be edited to include various stages. This is required when we want the deployments to take place in multiple environments one after the other continuously which is a part of Continuous Delivery. For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1243).png" alt=""><figcaption></figcaption></figure>
 
@@ -142,18 +138,15 @@ To run a release pipeline:
 
 <figure><img src="../../../.gitbook/assets/image (1251).png" alt=""><figcaption></figcaption></figure>
 
-9. To view more error details, click **View Details**.\
-
+9. To view more error details, click **View Details**.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1252).png" alt=""><figcaption></figcaption></figure>
 
-10. For a multi-stage Release Pipeline, the execution details of a test cycle in each environment will be shown one after the other in the order of their addition while creating the release pipeline.\
-
+10. For a multi-stage Release Pipeline, the execution details of a test cycle in each environment will be shown one after the other in the order of their addition while creating the release pipeline.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1253).png" alt=""><figcaption></figcaption></figure>
 
-11. Click **Deployment Changes** to know which user story is associated with a Release Pipeline and which artifacts are a part of it.\
-
+11. Click **Deployment Changes** to know which user story is associated with a Release Pipeline and which artifacts are a part of it.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1254).png" alt=""><figcaption></figcaption></figure>
 
@@ -161,4 +154,4 @@ To run a release pipeline:
 
 Go to the required pipeline in **Release Pipeline** page and click **Edit** to edit the pipeline.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

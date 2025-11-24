@@ -191,7 +191,7 @@ Efficient integration of tools like UiPath with ReleaseOwl enhances automation a
 * Paste the **Client ID** and **Client Secret** into the appropriate fields.
 * Click **Save** to register the credential.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **5. Test Configuration in ReleaseOwl**
 

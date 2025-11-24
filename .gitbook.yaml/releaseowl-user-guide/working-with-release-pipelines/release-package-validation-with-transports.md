@@ -2,7 +2,7 @@
 
 Following are the actions that can be performed on every release package:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Edit                  | To edit the release package                                                                                                                                                                                                                                                                                                                                                                                    |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,8 +26,7 @@ Validation report is visible only after the validation process is complete. To v
 
 <figure><img src="../../.gitbook/assets/image (1132).png" alt=""><figcaption></figcaption></figure>
 
-3\. The validation report for a failed validation is displayed below:\
-
+3\. The validation report for a failed validation is displayed below:<br>
 
 <figure><img src="../../.gitbook/assets/image (1130).png" alt=""><figcaption></figcaption></figure>
 
@@ -43,8 +42,7 @@ The following details are available in the Validation Report:
 
 4\) **TR Report** – By default, the user can view the TR (Transport Request) Report. It has the following checks done:
 
-a) **Release Status Check:** This option shows the user whether the transport requests were released successfully or not. On clicking **Details**, you can view the Transport Requests that are a part of the Release Package and their Release Status.\
-
+a) **Release Status Check:** This option shows the user whether the transport requests were released successfully or not. On clicking **Details**, you can view the Transport Requests that are a part of the Release Package and their Release Status.<br>
 
 <figure><img src="../../.gitbook/assets/image (1133).png" alt=""><figcaption></figcaption></figure>
 
@@ -78,8 +76,7 @@ e) **Critical Object Check:** This is to determine if transport requests contain
 * Package checks
 * Security Checks
 
-8\) Click **Details** to see further info on Errors and Warnings.\
-
+8\) Click **Details** to see further info on Errors and Warnings.<br>
 
 <figure><img src="../../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 

@@ -25,7 +25,7 @@ It is the process of assigning unique version names or version numbers for manag
 
 * The user stories that are a part of the selected **Release Version** are listed as follows:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Create a Release Version** <a href="#pdf-page-0ebflbp2eco5zehbqqzc-create-a-release-version" id="pdf-page-0ebflbp2eco5zehbqqzc-create-a-release-version"></a>
 
@@ -56,7 +56,7 @@ Follow the steps below to create a Release Package from a Release Version:
    * **Release Pipeline**: Select the relevant Release Pipeline. This pipeline determines the stages and environments through which the package will be deployed.
 5. Click the **Save** button to complete the creation process.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. The newly created **Release Package** will now be displayed under the **Release Packages** section on the Release Versions tab.
 
@@ -66,5 +66,5 @@ Follow the steps below to create a Release Package from a Release Version:
 **Note:** All user stories associated with the Release Version will be automatically added to the Release Package during creation, ensuring alignment and traceability across the deployment lifecycle
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 

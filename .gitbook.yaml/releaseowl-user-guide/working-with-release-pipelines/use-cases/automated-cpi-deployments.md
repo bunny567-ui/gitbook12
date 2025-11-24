@@ -22,30 +22,28 @@ Creating a Release Pipeline is a three-step process.
 1. Select the required CPI Project.
 2. Navigate to **Release and** click on the **Release Pipelines.**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a **Pipeline Name**.
 4. Click **Create New Release Pipeline**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **Add Stage**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 6. **Tasks:** Click Add to enter any tasks that are to be performed
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** To remove any stage, click Remove stage button.
 {% endhint %}
 
-7. Different tasks that can be added are as follows:\
-
+7. Different tasks that can be added are as follows:
 
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -55,7 +53,7 @@ Creating a Release Pipeline is a three-step process.
 
 ### **Deployment Task**
 
-All the details pertaining to the deployment of the artifact is specified in the deployment task. The following screen is displayed on adding a deployment task. The various Deployment Actions that can be performed are as follows:
+The **CPI Deployment Task** handles the automated deployment of integration artifacts into an SAP Integration Suite (CPI) tenant. These artifacts may include iFlows, APIs, value mappings, scripts, or other integration components packaged within a CPI project.
 
 <figure><img src="../../../.gitbook/assets/image (1024).png" alt=""><figcaption></figcaption></figure>
 
@@ -69,8 +67,7 @@ In general, pipeline will execute the configured tasks sequentially one after th
 
 ### **Promotion**
 
-Promotion is the process of Moving/Deploying CPI Artifacts to various environments using a Release pipeline associated with the project.\
-
+Promotion is the process of Moving/Deploying CPI Artifacts to various environments using a Release pipeline associated with the project.<br>
 
 <figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -100,8 +97,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 7\. Once Pipeline execution reaches the “**Promotion Task**” Pipeline will continue to wait until further promotion from the User Story or Release Package.
 
 8\. User Story can be promoted to next stage (in this case, Prod) or a new Release Package can be created with all the User Stories waiting in QA stage for getting promoted to Prod.\
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/image (1026).png" alt=""><figcaption></figcaption></figure>
 
@@ -114,8 +110,7 @@ A **Release Package** is a logical grouping of user stories that are promoted to
 
 <figure><img src="../../../.gitbook/assets/image (1255).png" alt=""><figcaption></figcaption></figure>
 
-1\. Clicking on “**Add stories for promotion**” will add all the user stories eligible for promotion.\
-
+1\. Clicking on “**Add stories for promotion**” will add all the user stories eligible for promotion.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1256).png" alt=""><figcaption></figcaption></figure>
 
@@ -123,8 +118,7 @@ A **Release Package** is a logical grouping of user stories that are promoted to
 
 <figure><img src="../../../.gitbook/assets/image (1257).png" alt=""><figcaption></figcaption></figure>
 
-3\. Execution of the Release package can be seen using the option “**Pipeline Activity**”.\
-
+3\. Execution of the Release package can be seen using the option “**Pipeline Activity**”.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1259).png" alt=""><figcaption></figcaption></figure>
 
@@ -176,8 +170,7 @@ By default, the user who creates the Release Pipeline is notified and specifying
 Any number of stages can be added while creating a release pipeline. An existing release pipeline can also be edited to include various stages. This is required when we want the deployments to take place in multiple environments one after the other continuously which is a part of Continuous Delivery.
 
 For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.\
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/image (1268).png" alt=""><figcaption></figcaption></figure>
 
@@ -203,8 +196,7 @@ Go to the required pipeline and click **Edit** to edit the pipeline or **Delete*
 
 **Rollback Logs**
 
-Rollback Logs are available for CPI artifacts that are deployed to design time in addition to those published to run time. To rollback a build, click Rollback in the status page. Once rollback is enabled, you can see the rollback= status in the deployment logs.\
-
+Rollback Logs are available for CPI artifacts that are deployed to design time in addition to those published to run time. To rollback a build, click Rollback in the status page. Once rollback is enabled, you can see the rollback= status in the deployment logs.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1273).png" alt=""><figcaption></figcaption></figure>
 

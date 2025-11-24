@@ -12,10 +12,9 @@
 
 <figure><img src="https://www.docs.releaseowl.com/assets/img/cpi-artifact-comparison-4.jpg" alt=""><figcaption></figcaption></figure>
 
-3. **Compare Versions** option is for comparing two different versions of an iFlow. Ensure to select two versions for comparing.\
+3. **Compare Versions** option is for comparing two different versions of an iFlow. Ensure to select two versions for comparing.<br>
 
-
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Download**
 

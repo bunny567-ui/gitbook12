@@ -14,13 +14,11 @@ The **Enable Rollback** option is one of the key **Deployment Actions** that can
 
 1. While adding a **Deployment Task**, you will see an option for **Enable Rollback**.
 2. **Select the checkbox** next to this option.
-3. Click **Save** to confirm the changes.\
-
+3. Click **Save** to confirm the changes.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1068).png" alt=""><figcaption></figcaption></figure>
 
-4. You can view the Release Pipeline execution status from User Stories screen by navigating to the Pipeline Activity as shown below:\
-
+4. You can view the Release Pipeline execution status from User Stories screen by navigating to the Pipeline Activity as shown below:<br>
 
 <figure><img src="../../../.gitbook/assets/image (1071).png" alt=""><figcaption></figcaption></figure>
 

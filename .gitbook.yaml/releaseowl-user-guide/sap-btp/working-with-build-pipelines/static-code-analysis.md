@@ -10,8 +10,7 @@ If you choose tool integration while creating a build pipeline, SonarQube report
 
 <figure><img src="../../../.gitbook/assets/image (1453).png" alt=""><figcaption></figcaption></figure>
 
-2.  A comprehensive report is displayed here.\
-
+2.  A comprehensive report is displayed here.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1454).png" alt=""><figcaption></figcaption></figure>
 3. Click on the numbers corresponding to bugs, vulnerabilities, etc. to be redirected to your SonarQube account for a more detailed report.

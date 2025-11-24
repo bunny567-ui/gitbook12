@@ -12,8 +12,7 @@ This section is for registering REST API Callouts for ServiceNow.
 
 1\. In **Administration**, go to **Callouts**.
 
-2\. In page displayed, click **Register Callout.**\
-
+2\. In page displayed, click **Register Callout.**<br>
 
 <figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -29,8 +28,7 @@ This section is for registering REST API Callouts for ServiceNow.
 | **Response JSON**     | The response JSON string upon calling the third-party REST API.                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Unique Identifier** | <p>Unique ID created by the third-party system for a particular REST API call in case of POST type request. This will be useful to track the tasks when callouts are used in the Release Pipeline.<br>The expression specified in the field will be evaluated on the response JSON from the REST API call.</p>                                                                                                                                                                |
 
-\
-
+<br>
 
 4\. You can check whether the established connection to the third-party REST API is successful or not by clicking the Test button.
 
@@ -42,8 +40,7 @@ This section is for registering REST API Callouts for ServiceNow.
 
 You can add callout as a Task in the Release Pipeline.
 
-1\. When adding a new task in Pipeline stage, select **Callout Task**, then the following screen is displayed:\
-
+1\. When adding a new task in Pipeline stage, select **Callout Task**, then the following screen is displayed:<br>
 
 <figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,8 +55,7 @@ You can add callout as a Task in the Release Pipeline.
 | **Message**            | Any message that is to be conveyed to the task approver can be mentioned here.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 3. When you click the **Config Params** button, the configuration screen is displayed. Here, enter the variable parameter names as defined in the **Payload JSON**, along with their corresponding values. These parameters will be passed at runtime during the execution of the **Release Pipeline**.
-4. After entering the required values, click **Save** to apply the changes.\
-
+4. After entering the required values, click **Save** to apply the changes.<br>
 
 <figure><img src="../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
 
