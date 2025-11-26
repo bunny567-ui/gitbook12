@@ -1,6 +1,6 @@
 # SAP Cloud ALM
 
-This guide explains how to integrate **SAP Cloud ALM** with **ReleaseOwl** and synchronize artifacts, user stories, and related components between the two systems
+This guide explains how to integrate **SAP Cloud ALM** with **ReleaseOwl** and synchronize artifacts, user stories, and related components between the two systems. Cloud ALM is providing the API'S for updating the status of the feature.
 
 #### Prerequisites
 
@@ -74,6 +74,32 @@ After successful integration, you can start syncing data between SAP Cloud ALM a
 
 <figure><img src="../../.gitbook/assets/image (1603).png" alt=""><figcaption></figcaption></figure>
 
+5. When you click on the External ID, it will redirect to the SAP Cloud ALM where any feature added in the releaseowl will be reflected in the description section the SAP Cloud ALM. Cloud ALM is a bidirectional whenever you add any transport in the releaseowl it will be relfected as a comment in the SAP Cloud ALM in the description section.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1622).png" alt=""><figcaption></figcaption></figure>
+
+When you click on the "Start Implementation" it will get a pop up to confirm it and after confirming it( User needs to add the transport in the releaseowl and release it  before the clicking the start implementation.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1623).png" alt=""><figcaption></figcaption></figure>
+
+* Once user clicks the handover to test and the pipeline in the releaseowl will be triggered.
+
+<figure><img src="../../.gitbook/assets/image (1624).png" alt=""><figcaption></figcaption></figure>
+
+Click on the refresh button where you can see the comment in the description saying that userstory is performed by the webhook.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1625).png" alt=""><figcaption></figcaption></figure>
+
+When you go to the releaseowl dashboard, in the user stories section, you can the QA-Waiting which is in the pipeline stage.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1626).png" alt=""><figcaption></figcaption></figure>
+
+You can also see the validation report of it by clicking on the validation report in the actions button of the user story.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1627).png" alt=""><figcaption></figcaption></figure>
+
+
+
 #### Managing User Stories in ReleaseOwl
 
 Each synced user story can be further enhanced and managed directly within ReleaseOwl:
@@ -95,3 +121,7 @@ Once your user story is updated and ready for deployment:
 <figure><img src="../../.gitbook/assets/image (1605).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1606).png" alt=""><figcaption></figcaption></figure>
+
+When you click on the Approve for Production and deployment will continue in the the releaseowl.
+
+<figure><img src="../../.gitbook/assets/image (1628).png" alt=""><figcaption></figcaption></figure>
