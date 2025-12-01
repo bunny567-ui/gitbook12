@@ -20,7 +20,7 @@ Before setting up the UI5 ABAP build pipeline in ReleaseOwl, ensure the followin
 2. In the left-side navigation panel, go to **Build** and then select the **Build Pipelines**.
 3. Click on **Create New Build Pipeline.**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Step 2: Define Pipeline Details**
 
@@ -35,7 +35,7 @@ Before setting up the UI5 ABAP build pipeline in ReleaseOwl, ensure the followin
 4. Choose the **Version Control Platform**.
 5. Click **Next** to proceed.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Configure Build Parameters**
 
@@ -48,7 +48,7 @@ Before setting up the UI5 ABAP build pipeline in ReleaseOwl, ensure the followin
 
 The **App Details** in the **Build Section** need to be manually entered based on the information provided in the `ui5-deploy.yaml` file. Attributes such as **App Id, App Name, Description and Package Name** should be extracted from the configuration file and entered into the respective fields to ensure accurate deployment.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5: Scheduler and Notifications**
 
@@ -57,7 +57,7 @@ The **App Details** in the **Build Section** need to be manually entered based o
 3. **Tool Integrations**: Enable **SonarQube** and select credentials if needed.
 4. Click **Save** button.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6: Triggering and Monitoring a Build**
 

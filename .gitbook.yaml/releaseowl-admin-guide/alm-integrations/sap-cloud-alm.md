@@ -2,6 +2,12 @@
 
 This guide explains how to integrate **SAP Cloud ALM** with **ReleaseOwl** and synchronize artifacts, user stories, and related components between the two systems. Cloud ALM is providing the API'S for updating the status of the feature.
 
+### Overview
+
+SAP Cloud ALM provides centralized management for requirements and features, serving as the single source of truth throughout the product lifecycle. ReleaseOwl, on the other hand, focuses on automating the technical delivery process—including managing transports, CPI artifacts, pipelines, and deployments.&#x20;
+
+Through this connection, Cloud ALM can initiate implementation phases, monitor progress, and enforce approvals, while ReleaseOwl updates Cloud ALM with transport information, pipeline execution results, and deployment status, allowing Cloud ALM to maintain complete traceability from requirement definition to final production deployment.&#x20;
+
 #### Prerequisites
 
 Before proceeding, ensure that:
@@ -10,7 +16,7 @@ Before proceeding, ensure that:
 * You have the required permissions to create service instances in **SAP BTP Cockpit**.
 * You have access to **ReleaseOwl** with administrative privileges.
 
-### **Obtaining the Client ID, Client Secret, and URL**
+### Connect SAP Cloud ALM with ReleaseOwl
 
 To connect SAP Cloud ALM to ReleaseOwl, you first need to obtain the client credentials from your SAP BTP environment.
 
@@ -62,7 +68,7 @@ After registering the credentials, you can link your SAP Cloud ALM project with 
 
 <figure><img src="../../.gitbook/assets/image (1602).png" alt=""><figcaption></figcaption></figure>
 
-#### Syncing User Stories and Features
+#### Syncing  Features and  User Stories
 
 After successful integration, you can start syncing data between SAP Cloud ALM and ReleaseOwl.
 
@@ -74,27 +80,86 @@ After successful integration, you can start syncing data between SAP Cloud ALM a
 
 <figure><img src="../../.gitbook/assets/image (1603).png" alt=""><figcaption></figcaption></figure>
 
-5. When you click on the External ID, it will redirect to the SAP Cloud ALM where any feature added in the releaseowl will be reflected in the description section the SAP Cloud ALM. Cloud ALM is a bidirectional whenever you add any transport in the releaseowl it will be relfected as a comment in the SAP Cloud ALM in the description section.&#x20;
+### Managing User Stories in ReleaseOwl&#x20;
+
+Each synced user story can be further enhanced and managed directly within ReleaseOwl:&#x20;
+
+* Click on the **Actions** button corresponding to a user story.&#x20;
+* From here, you can edit the user story and attach relevant components such as transports, CPI artifacts, and other related deliverables.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* This enables seamless linkage between SAP Cloud ALM features and the technical artifacts managed through ReleaseOwl.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+### Promoting User Stories from ReleaseOwl&#x20;
+
+Once your user story is updated and ready for deployment:&#x20;
+
+1. Click on the Promote button for the respective user story.&#x20;
+2. This action triggers the Release Pipeline associated with that user story.&#x20;
+3. The pipeline executes all defined stages — such as build, validation, and deployment — ensuring end-to-end automation from SAP Cloud ALM to your target environments&#x20;
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+### Promoting User Stories from SAP Cloud ALM&#x20;
+
+&#x20;You can promote user stories directly from SAP Cloud ALM, and the corresponding execution continues in ReleaseOwl based on the lifecycle actions performed in Cloud ALM.&#x20;
+
+#### Accessing the User Story in Cloud ALM&#x20;
+
+1. In ReleaseOwl, open the required user story.&#x20;
+2. Click the External ID, which redirects you to the user story/features in SAP Cloud ALM
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+#### Bidirectional Synchronization&#x20;
+
+SAP Cloud ALM and ReleaseOwl maintain a bidirectional connection:&#x20;
+
+* Any Cloud ALM lifecycle action (Start Implementation, Handover to Test, etc.) is sent to ReleaseOwl via webhook events.&#x20;
+* Any technical action performed in ReleaseOwl (adding a transport, deployment updates) is written back to Cloud ALM as comments in the description of the user story.&#x20;
+* This ensures both systems stay aligned throughout the implementation lifecycle.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1622).png" alt=""><figcaption></figcaption></figure>
 
-When you click on the "Start Implementation" it will get a pop up to confirm it and after confirming it( User needs to add the transport in the releaseowl and release it  before the clicking the start implementation.&#x20;
+#### Start Implementation&#x20;
+
+When you click Start Implementation in SAP Cloud ALM:&#x20;
+
+1. A confirmation dialog appears.&#x20;
+2. Before performing this action, the user must attach and release the transport in ReleaseOwl.&#x20;
+3. After confirmation, Cloud ALM sends the updated status event to ReleaseOwl.&#x20;
+4. ReleaseOwl updates the user story and records the change back in Cloud ALM as a comment.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1623).png" alt=""><figcaption></figcaption></figure>
 
-* Once user clicks the handover to test and the pipeline in the releaseowl will be triggered.
+#### Handover to Test&#x20;
+
+When the user selects Handover to Test in SAP Cloud ALM:&#x20;
+
+1. Cloud ALM emits a status change event through the configured webhook.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1624).png" alt=""><figcaption></figcaption></figure>
 
-Click on the refresh button where you can see the comment in the description saying that userstory is performed by the webhook.&#x20;
+2. ReleaseOwl receives the event and triggers the corresponding pipeline stage.&#x20;
+3. On refreshing the user story in Cloud ALM, you will see a comment added under the description indicating that the change was processed by the webhook event.  &#x20;
 
 <figure><img src="../../.gitbook/assets/image (1625).png" alt=""><figcaption></figcaption></figure>
 
-When you go to the releaseowl dashboard, in the user stories section, you can the QA-Waiting which is in the pipeline stage.&#x20;
+### Pipeline Status in ReleaseOwl&#x20;
+
+You can verify execution progress in ReleaseOwl:&#x20;
+
+* Navigate to the User Stories dashboard.&#x20;
+* As the Cloud ALM status changes are processed, the corresponding user story will automatically move to the next pipeline stage in ReleaseOwl.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1626).png" alt=""><figcaption></figcaption></figure>
 
-You can also see the validation report of it by clicking on the validation report in the actions button of the user story.&#x20;
+
 
 <figure><img src="../../.gitbook/assets/image (1627).png" alt=""><figcaption></figcaption></figure>
 
@@ -110,18 +175,6 @@ Each synced user story can be further enhanced and managed directly within Relea
 
 <figure><img src="../../.gitbook/assets/image (1604).png" alt=""><figcaption></figcaption></figure>
 
-#### Promoting User Stories
-
-Once your user story is updated and ready for deployment:
-
-1. Click on the **Promote** button for the respective user story.
-2. This action triggers the **Release Pipeline** associated with that user story.
-3. The pipeline executes all defined stages — such as **build**, **validation**, and **deployment** — ensuring end-to-end automation from SAP Cloud ALM to your target environments
-
-<figure><img src="../../.gitbook/assets/image (1605).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (1606).png" alt=""><figcaption></figcaption></figure>
-
-When you click on the Approve for Production and deployment will continue in the the releaseowl.
+####
 
 <figure><img src="../../.gitbook/assets/image (1628).png" alt=""><figcaption></figcaption></figure>
