@@ -175,6 +175,80 @@ Each synced user story can be further enhanced and managed directly within Relea
 
 <figure><img src="../../.gitbook/assets/image (1604).png" alt=""><figcaption></figcaption></figure>
 
-####
+### Webhook Configuration in Cloud ALM&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1628).png" alt=""><figcaption></figcaption></figure>
+To ensure ReleaseOwl stays updated with changes made in Cloud, you must configure webhooks in Cloud ALM.&#x20;
+
+#### Configure Destination in SAP BTP&#x20;
+
+1. Log in to your SAP BTP subaccount.&#x20;
+2. Go to Connectivity from the left-side navigation pane.&#x20;
+3. Select Destinations and click on the Create button.&#x20;
+4. Provide the required destination details:&#x20;
+
+* Name: Enter a destination name of your choice.&#x20;
+* Type: Select HTTP.&#x20;
+* Proxy Type: Set to Internet.&#x20;
+* URL: Enter the webhook URL provided during the ReleaseOwl solution implementation.&#x20;
+* Click Save to complete the configuration.
+
+<figure><img src="../../.gitbook/assets/image (1630).png" alt=""><figcaption></figcaption></figure>
+
+#### Configure Webhooks in SAP Cloud ALM&#x20;
+
+1. Navigate to SAP Cloud ALM → Administration → External API Management.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1631).png" alt=""><figcaption></figcaption></figure>
+
+2. In the external Management, click on the Webhooks Management. &#x20;
+
+<figure><img src="../../.gitbook/assets/image (1632).png" alt=""><figcaption></figcaption></figure>
+
+3. Click the “+” icon to create a new webhook and fill in the required details:&#x20;
+
+* Name: Provide a meaningful webhook name.&#x20;
+* Resource Type: Select the desired resource type (any applicable option can be chosen).&#x20;
+* Destination ID: Choose the destination you created in SAP BTP.&#x20;
+
+4. Click Save.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1633).png" alt=""><figcaption></figcaption></figure>
+
+#### Enter the Webhook Path&#x20;
+
+In the **Path** field, enter the ReleaseOwl webhook endpoint using the following general structure:
+
+```
+ratesaptms/webhook/tenant/<tenant_id>/project/<project_id>/calm/pmsint/<integration_id>/sync?secretKey=<secret_key>
+```
+
+#### Parameter Details
+
+* **tenant\_id**:\
+  The unique identifier assigned to your ReleaseOwl tenant.
+* **project\_id**:\
+  The ID of the specific ReleaseOwl project where the integration is configured.
+* **integration\_id**:\
+  The reference ID of the Cloud ALM integration you created in ReleaseOwl.
+* **secret\_key**:\
+  The authentication key automatically generated during the ReleaseOwl webhook setup, used to securely validate incoming requests.
+
+<figure><img src="../../.gitbook/assets/image (1634).png" alt=""><figcaption></figcaption></figure>
+
+#### Add External API Management to Subscription Management&#x20;
+
+1. Navigate to **Subscription Management** within SAP Cloud ALM.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1635).png" alt=""><figcaption></figcaption></figure>
+
+2\. Click the “+” icon to add a new subscription.&#x20;
+
+3\. Provide the following details:&#x20;
+
+* Resource Type: Select Feature.&#x20;
+* Type: Choose External.&#x20;
+* Webhook: Select the webhook created &#x20;
+
+4\. Click Save to complete the subscription setup.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1636).png" alt=""><figcaption></figcaption></figure>
