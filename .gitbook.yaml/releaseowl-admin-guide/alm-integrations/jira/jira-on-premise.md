@@ -49,7 +49,7 @@ To link a Jira project with a ReleaseOwl project, follow the steps below:
 * Go to **Project Settings**.
 * In Project Settings, navigate to **ALM Integrations** and click **Add**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. Fill in the Required Details**
 

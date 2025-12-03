@@ -128,7 +128,7 @@ To perform **Basic Authentication**, follow the steps below:
 
 * The Webhook URL is generated automatically. Click on the **Save** button to confirm the integration settings.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Assignment Group Option
 

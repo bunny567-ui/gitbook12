@@ -58,7 +58,14 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 <figure><img src="../../../.gitbook/assets/image (1500).png" alt=""><figcaption></figcaption></figure>
 
-* After clicking the **Save** button, a **Test** button will appear. This button is used to verify whether the entered credentials are correct. Click on the **Test** button to validate the connection.<br>
+* For the **IDP Auth Email Address/Group Name** field, enter the **exact value that your Identity Provider sends in the SAML/OIDC assertion** for the user.
+* This value must match the **group name or email address defined in the&#x20;**_**Value**_**&#x20;field** of the **User Groups** or **Attribute Mappings** configuration in your IDP.\
+  ReleaseOwl (or SAP BTP) uses this returned attribute value to validate user authorization.
+* Refer to the _Assign Role Collections_ section to ensure that the mapped group/attribute is correctly linked to the required role collections.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* After entering all the required details, click **Save**. Once saved, a **Test** button will appear. Use this button to verify whether the provided credentials and configuration are correct. Click **Test** to validate the connection.
 
 <figure><img src="../../../.gitbook/assets/image (1101).png" alt=""><figcaption></figcaption></figure>
 
@@ -87,7 +94,7 @@ To assign role collections, you can choose **one** of the following methods:
 
 * Open the newly created **Custom IDP for Applocations** and click **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
 * Configure the mappings like the example below:
@@ -159,7 +166,7 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 
 7\. Click **Permissions** (under **Users** tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Permissions**. The roles that are assigned to the selected user are seen.
 
@@ -214,7 +221,7 @@ For artifacts to load in SAP CPI Management page, the Integration Suite environm
 
 * After selecting "**Save as Artifact**", a new artifact is created with the updated values.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * To view more details about the new artifact, click the three dots (Actions) next to it.
 * Click on **Edit Configuration** to open the artifact configuration.
@@ -242,7 +249,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Switch to the **Project view** and select the **Release section**.
 * Navigate to Release Pipelines and click on **Create New Release Pipeline**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a Pipeline Name.
 * Add stages (e.g., QA, Prod) and assign tasks to each stage.
