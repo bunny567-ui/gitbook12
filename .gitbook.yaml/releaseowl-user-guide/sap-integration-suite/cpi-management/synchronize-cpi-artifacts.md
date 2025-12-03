@@ -15,7 +15,7 @@
 4. Click **Sync All Artifacts** to fetch and display the available CPI artifacts within the selected project.
 5. Navigate to **Build > SAP CPI Management** and click on the **actions** button to view **Sync Artifacts**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Synchronize Integration Suite Artifacts**
 
@@ -23,7 +23,7 @@
 7. If there are changes made to the existing artifacts, the changes will also be updated.
 8. Click **Sync Artifacts** to sync the CPI artifacts.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sync History**
 
@@ -44,7 +44,7 @@ You can sort the artifacts as per your convenience. To sort them:
 
 Multiple actions can be performed on an artifact, based on the type of artifact. These actions include – View Test Cases, Comment , Configure, Deployment History, Versions and Download.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Manage Environment Wide IFlow Configurations**
 

@@ -52,15 +52,15 @@ To set up your credentials in ReleaseOwl, complete the following fields:
 
 4. Click the **New** button.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Select **Create an OAuth API endpoint for external clients**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. ServiceNow will generate a **Client ID** and **Client Secret** automatically.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Copy these credentials and paste them into the appropriate fields in the **Register Credential** form in ReleaseOwl under OAuth2 Authentication.
 8. Click the **Save** button.
@@ -98,7 +98,7 @@ To perform **Basic Authentication**, follow the steps below:
 | **Password**            | Enter **ServiceNow password**.                                                                                                  |
 | **Instance URL**        | Enter your ServiceNow hosting URL (e.g., `https://<instance-name>.service-now.com`).                                            |
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Integrating User Stories from ServiceNow to ReleaseOwl
 
@@ -118,7 +118,7 @@ To perform **Basic Authentication**, follow the steps below:
 * Language:  Select the language that enables users to change the language of the user story task.&#x20;
 * Credential: The registered credential will be auto-populated.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Access Filters Option
 
@@ -128,7 +128,7 @@ To perform **Basic Authentication**, follow the steps below:
 
 * The Webhook URL is generated automatically. Click on the **Save** button to confirm the integration settings.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Assignment Group Option
 
@@ -153,7 +153,7 @@ Select the project. Any changes made in ServiceNow will be reflected in the User
 
 * If you choose the Filters option, you will access the Filters Section.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Add New Filters
 
@@ -170,7 +170,7 @@ Select the project. Any changes made in ServiceNow will be reflected in the User
 * Choose the appropriate filter type based on your requirements.
 * Click Add to apply the selected filter.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Sync User Stories with Applied Filters
 
@@ -183,7 +183,7 @@ Select the project. Any changes made in ServiceNow will be reflected in the User
 
 * The **Project** section allows users to select the project associated with a particular task.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Configure Webhook URL in ServiceNow
 
@@ -246,4 +246,4 @@ Follow the steps below to configure a webhook in ServiceNow:&#x20;
     ```
 * **{tableName}** must match the table selected in the Business Rule Record (e.g., `incident`, `task`, `change_request,`). This means the table name is not only used to determine which records trigger the webhook—it also appears explicitly in the webhook URL path.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

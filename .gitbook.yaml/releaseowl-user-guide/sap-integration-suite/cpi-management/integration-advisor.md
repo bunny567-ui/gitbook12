@@ -11,16 +11,28 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 1. **Integration Suite Created**: The **Integration Suite** must be set up within SAP Business Technology Platform (SAP BTP).
 2. **API Instance Created**: An **API Instance** must be created to provide the credentials required for configuration in the **CPI Environment**.
 3. SAP CPI Environment Configured in ReleaseOwl
-4. &#x20;**Role Collections Assigned**: To enable Integration Advisor capabilities, assign the following role collections to the **Identity Provider (IdP)**:
-   * `iadv-content-read`
-   * `iadv-content-administrator`
-   * `Integration Advisor (Non-Prod & Prod)`
+4.  &#x20;**Role Collections Assigned**: To enable Integration Advisor capabilities, assign the following role collections to the **Identity Provider (IdP)**:
 
-| **Custom Role Collection**          | **Required Roles**                  |
-| ----------------------------------- | ----------------------------------- |
-| Integration Advisor Role Collection | <ul><li>Content Developer</li></ul> |
+    * `iadv-content-read`
+    * `iadv-content-administrator`
+    * `Integration Advisor (Non-Prod & Prod)`&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1491).png" alt=""><figcaption></figcaption></figure>
+
+5. **Create the Custom Role  Collection:**&#x20;
+
+* Navigate to **Security → Role Collections** in the SAP BTP Cockpit.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+* Click **Create** and enter the **Role Collection Name**. Confirm by clicking **Create**.
+* Once the role collection is created, select it from the list and click **Edit**.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* Under the **Roles** section, click **Add Role** and assign the required roles. Add the **Content Developer** role.
+* Click **Save** to update the role collection.
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Steps to Create a Custom Type System** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system" id="pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system"></a>
 
@@ -99,10 +111,24 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
 4. By clicking the **Action** button, you can view:
 
-* **Versions**: Displays previous versions, allowing you to roll back changes if needed.
+* **Versions**: Displays previous versions, allowing you to roll back changes if needed.&#x20;
+* When you open the **Versions** tab, you can:
+  * View the complete version history.
+  * **Assign** or **Unassign** a user story linked to a particular version.
+  * Track changes made across different versions for audit or review purposes.
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+* **Download**
+  * The **Download** option under the Action menu lets you download the message or artifact locally.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
 * **Details**: Provides additional information about the artifact.
 
 <figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating and Managing a Release Pipeline** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-creating-and-managing-a-release-pipeline" id="pdf-page-gq2jqh5hz5sfguou1udk-creating-and-managing-a-release-pipeline"></a>
 
@@ -110,8 +136,13 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
 1. Navigate to the **Release** section.
 2. Click on **Release Pipeline** and select **Create New Release Pipeline**.
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
 3. Enter a **name** for the release pipeline.
 4. Click **+Add Stage** to create a new stage.
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 **2. Configuring Deployment Tasks**
 

@@ -8,7 +8,7 @@ Before using the Message Listener Task, make sure that:
 
 * An **ALM integration** is already configured and attached to the project.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The project has an **external User Story ID** from an ALM system (e.g., Jira, ServiceNow).
 
@@ -62,7 +62,7 @@ Where:
 * Promote the User Story directly in ReleaseOwl.
 * Open the **Pipeline Activity** view.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Locate the **Message Listener** task.
 * Click **Send Message** to open the message form and view the event payload details.
