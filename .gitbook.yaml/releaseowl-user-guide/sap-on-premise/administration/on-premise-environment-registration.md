@@ -98,28 +98,8 @@ The newly created Transport Domain Controller gets displayed in the Transport Do
 <figure><img src="../../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** Create Transport Domain Controller in ReleaseOwl as per the destination created for all the dev Environment.
+**Note:**&#x20;
+
+* Create Transport Domain Controller in ReleaseOwl as per the destination created for all the dev Environment.&#x20;
+* To create a new project, follow the [link](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/project-management) and complete the setup.
 {% endhint %}
-
-#### Create a New Project
-
-1. Navigate to the **Projects** section and click on **Create a Project**.
-2. Fill in the required details:
-   * **Name**: Enter a project name of your choice.
-   * **Project Type**: Select **SAP On-Premise**.
-3. Click the **Save** button to create the project.
-
-<figure><img src="../../../.gitbook/assets/image (477).png" alt=""><figcaption></figcaption></figure>
-
-4. After creating the project, click on the **three-dot menu** next to the project.
-5. Select **Switch On Project** to activate it.
-6. Click on **Project Settings**, located in the top-right corner, before your account user icon.
-
-<figure><img src="../../../.gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
-
-7. Navigate to the **Environment** section.
-8. Click on the **+ Add** button to add the newly created **On-Premise** environment.
-9. Click on the **Select** button to confirm your choice.
-10. If needed, you can set the selected environment as a **Source System** by checking the **Source** button.
-
-<figure><img src="../../../.gitbook/assets/image (1620).png" alt=""><figcaption></figcaption></figure>

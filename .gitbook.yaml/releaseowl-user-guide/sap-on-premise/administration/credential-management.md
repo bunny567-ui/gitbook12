@@ -20,7 +20,7 @@ To integrate a SAP On-Premise system with ReleaseOwl, you must first register th
 
 ### **Credential Registration for SAP BTP Environment**
 
-To register a SAP Cloud Environment in ReleaseOwl, you first need to configure your SAP BTP credentials in the Credential Manager. Follow the steps below to add your SAP BTP credential:
+&#x20;If the Cloud Connector is used to connect on-premise SAP systems to SAP BTP, then you must register an **SAP Cloud Environment credential** in ReleaseOwl. It is required because the destination pointing to the on-premise system is configured in **SAP BTP**, and ReleaseOwl must authenticate to BTP to access that destination.&#x20;
 
 1. Go to the **Credential Manager** in the administration view and Click on the **"Register Credential"** button.
 2. Fill in the required fields:
