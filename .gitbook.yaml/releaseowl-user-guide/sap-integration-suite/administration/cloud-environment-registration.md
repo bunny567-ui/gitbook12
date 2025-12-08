@@ -1,6 +1,6 @@
 # Integration Environment Registration
 
-To register the SAP CPI Environment, you must first register the CPI credential. Follow the[ link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-integration-suite/administration/credential-management)and complete the credential setup.
+To register the SAP Integration Environment, you must first register the CPI credential. Follow the[ link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-integration-suite/administration/credential-management)and complete the credential setup.
 
 ### CPI Environment Registration <a href="#pdf-page-della43ge2ynalx23r7p-cpi-environment-registration" id="pdf-page-della43ge2ynalx23r7p-cpi-environment-registration"></a>
 
