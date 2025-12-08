@@ -20,7 +20,7 @@ To integrate SAP Cloud environments with ReleaseOwl, first register the authenti
 
 ### **Credential Registration for SAP BTP Environment**
 
-To register an SAP Cloud Environment in ReleaseOwl, you first need to configure your SAP BTP credentials in the Credential Manager. Follow the steps below to add your SAP BTP credential:
+To register a SAP Cloud Environment in ReleaseOwl, you first need to configure your SAP BTP credentials in the Credential Manager. Follow the steps below to add your SAP BTP credential:
 
 1. Go to the **Credential Manager** in the administration view and Click on the **"Register Credential"** button.
 2. Fill in the required fields:
