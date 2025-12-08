@@ -1,4 +1,4 @@
-# Cloud Environment Registration
+# Environment Registration
 
 ReleaseOwl seamlessly integrates with SAP API Management to enable continuous integration and delivery of API artifacts.&#x20;
 

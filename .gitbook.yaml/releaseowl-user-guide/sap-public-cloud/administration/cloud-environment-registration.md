@@ -1,4 +1,4 @@
-# Cloud Environment Registration
+# Public Cloud Environment Registration
 
 **Environment Registration** allows you to onboard SAP S/4HANA Public Cloud environments into ReleaseOwl. These environments represent the actual system domains where deployments and validations will occur (e.g., Development, Test, Production).
 

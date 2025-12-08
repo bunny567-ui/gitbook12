@@ -1,4 +1,4 @@
-# Cloud Environment Registration
+# Integration Environment Registration
 
 ### CPI Environment Registration <a href="#pdf-page-della43ge2ynalx23r7p-cpi-environment-registration" id="pdf-page-della43ge2ynalx23r7p-cpi-environment-registration"></a>
 
