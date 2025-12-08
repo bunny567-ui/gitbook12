@@ -1,6 +1,6 @@
 # On-Premise Environment Registration
 
-### **Registering SAP On-Premise Environment**
+## **Registering SAP On-Premise Environment**
 
 To access the **SAP On-Premise environment** with **ReleaseOwl**, you must first register the **SAP On-Premise system login credentials**. Follow the steps below to add your SAP On-Premise Environment:
 
@@ -10,7 +10,7 @@ To access the **SAP On-Premise environment** with **ReleaseOwl**, you must first
 
 <figure><img src="../../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Enter Transport Domain Controller Settings:**&#x20;
+### **Transport Domain Controller Settings**
 
 * **Name (Required)** – Enter a name for the Transport Domain Controller.
 * **Proxy Type (Required)** – Choose one of the following:
@@ -48,7 +48,7 @@ The following additional fields appear:
 
 <figure><img src="../../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 
-#### **Configure System Landscape**
+### **Configure System Landscape**
 
 The **System Landscape** section allows you to define multiple systems within the transport domain.
 
@@ -101,5 +101,10 @@ The newly created Transport Domain Controller gets displayed in the Transport Do
 **Note:**&#x20;
 
 * Create Transport Domain Controller in ReleaseOwl as per the destination created for all the dev Environment.&#x20;
-* To create a new project, follow the [link](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/project-management) and complete the setup.
 {% endhint %}
+
+### Create the Project
+
+To create a new project, follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/project-management)and complete the setup.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

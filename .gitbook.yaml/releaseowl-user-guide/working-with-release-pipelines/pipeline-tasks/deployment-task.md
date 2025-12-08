@@ -35,7 +35,7 @@ The **CPI Deployment Task** handles the automated deployment of integration arti
 
 The **MTAR Deployment Task** is designed for deploying **Multi-Target Application (MTAR)** packages to SAP BTP Cloud Foundry or Kyma environments. MTAR packages typically contain application modules such as CAP services, HTML5 UI modules, or microservices.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **MTAR- Deployment Task Configuration**
 

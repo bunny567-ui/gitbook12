@@ -33,7 +33,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 
 3. Select **Edit Scopes** to grant permissions for both **Classic Scopes** and **Granular Scopes**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Classic Scopes**: Select all scope names available under the **Jira Platform REST API**.
 
