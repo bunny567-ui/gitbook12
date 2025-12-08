@@ -129,48 +129,9 @@ You can configure granular permissions by creating the custom role collection wi
 
 ### Create a Project
 
-1. Go to the projects in the adminstation view.
-2. Click on the "**Create New Project**"
+To create a new project, follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/project-management)and complete the setup.
 
-<figure><img src="../../../.gitbook/assets/image (1047).png" alt=""><figcaption></figcaption></figure>
-
-3. Fill in the necessary details, select the project type as '**SAP CPI'**, and click the Save button
-
-<figure><img src="../../../.gitbook/assets/image (1048).png" alt=""><figcaption></figcaption></figure>
-
-### **Adding Environments to the Project** <a href="#pdf-page-della43ge2ynalx23r7p-adding-integration-suite-environments-to-the-project" id="pdf-page-della43ge2ynalx23r7p-adding-integration-suite-environments-to-the-project"></a>
-
-For artifacts to load in SAP CPI Management page, the Integration Suite environments must be registered in Project Settings in ReleaseOwl.
-
-**To register SAP Integration Suite environment:**
-
-1\. Go to **Projects** drop down at the top right corner and click **Project Settings**.
-
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-2\. In Project Settings, go to **Environment**.
-
-3\. The following screen is displayed.
-
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-4\. Click  +**Add button** to add a new environment in ReleaseOwl.
-
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-5\. In the subsequent screen, choose the required environment from the list displayed by selecting Source. Only the artifacts with source are synced to ReleaseOwl.
-
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-6\. The environment is added to the corresponding project in ReleaseOwl.
-
-7\. Click **Permissions** (under **Users** tab in Project Settings), to add users that can access (read or deploy to) the registered CPI environment.
-
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-8. Click **Permissions**. The roles that are assigned to the selected user are seen.
-
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1637).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** On clicking Permissions in the above screen, one can know the actions that the user role can perform each for the available features such as Transport Management, Change Management, Pipelines, Release Management.
