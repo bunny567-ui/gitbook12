@@ -2,34 +2,11 @@
 
 ### **Registering SAP On-Premise Environment**
 
-To access the **SAP On-Premise environment** with **ReleaseOwl**, you must first register the **SAP On-Premise system login credentials**.
+To access the **SAP On-Premise environment** with **ReleaseOwl**, you must first register the **SAP On-Premise system login credentials**. Follow the steps below to add your SAP On-Premise Environment:
 
-Follow these steps to register a new SAP On-Premise Environment:
-
-1. In **Administration View**, go to **Environments** and select **SAP Cloud Environment**.
-2. On the displayed page, click **Register Cloud Environment**.
-
-<figure><img src="../../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
-
-4. Fill in the required details:&#x20;
-
-* **Name**: Enter a name of your choice.
-* **Region**: Select the region of the SAP BTP Cockpit (e.g., Singapore, USA).
-* **API Endpoint**: Provide the API endpoint.
-* **Credential Name**: Select the credential created in the Credential Manager.
-* **Org**: This is automatically populated from the dropdown menu.
-* **Space**: This is also automatically populated from the dropdown menu.
-* **Environment Type**: Select the environment type of your choice.
-
-5. Click **Save.**
-
-<figure><img src="../../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
-
-## **Transport Domain Controller**
-
-* Go to **Administration View**.
-* Select **Transport Domain Controller**.
-* Click **"Register Transport Domain Controller"** to begin registration.
+1. Go to **Administration View**.
+2. Select **Transport Domain Controller**.
+3. Click **"Register Transport Domain Controller"** to begin registration.
 
 <figure><img src="../../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -127,9 +104,6 @@ The newly created Transport Domain Controller gets displayed in the Transport Do
 #### Create a New Project
 
 1. Navigate to the **Projects** section and click on **Create a Project**.
-
-<figure><img src="../../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
-
 2. Fill in the required details:
    * **Name**: Enter a project name of your choice.
    * **Project Type**: Select **SAP On-Premise**.
@@ -139,9 +113,6 @@ The newly created Transport Domain Controller gets displayed in the Transport Do
 
 4. After creating the project, click on the **three-dot menu** next to the project.
 5. Select **Switch On Project** to activate it.
-
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
-
 6. Click on **Project Settings**, located in the top-right corner, before your account user icon.
 
 <figure><img src="../../../.gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
@@ -149,9 +120,6 @@ The newly created Transport Domain Controller gets displayed in the Transport Do
 7. Navigate to the **Environment** section.
 8. Click on the **+ Add** button to add the newly created **On-Premise** environment.
 9. Click on the **Select** button to confirm your choice.
-
-<figure><img src="../../../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
-
 10. If needed, you can set the selected environment as a **Source System** by checking the **Source** button.
 
 <figure><img src="../../../.gitbook/assets/image (1620).png" alt=""><figcaption></figcaption></figure>
