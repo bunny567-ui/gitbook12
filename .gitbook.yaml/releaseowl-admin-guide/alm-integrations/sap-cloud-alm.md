@@ -2,13 +2,13 @@
 
 This guide explains how to integrate **SAP Cloud ALM** with **ReleaseOwl** and synchronize artifacts, user stories, and related components between the two systems. Cloud ALM is providing the API'S for updating the status of the feature.
 
-### Overview
+## Overview
 
 SAP Cloud ALM provides centralized management for requirements and features, serving as the single source of truth throughout the product lifecycle. ReleaseOwl, on the other hand, focuses on automating the technical delivery process—including managing transports, CPI artifacts, pipelines, and deployments.&#x20;
 
 Through this connection, Cloud ALM can initiate implementation phases, monitor progress, and enforce approvals, while ReleaseOwl updates Cloud ALM with transport information, pipeline execution results, and deployment status, allowing Cloud ALM to maintain complete traceability from requirement definition to final production deployment.&#x20;
 
-#### Prerequisites
+## Prerequisites
 
 Before proceeding, ensure that:
 
@@ -16,9 +16,11 @@ Before proceeding, ensure that:
 * You have the required permissions to create service instances in **SAP BTP Cockpit**.
 * You have access to **ReleaseOwl** with administrative privileges.
 
-### Connect SAP Cloud ALM with ReleaseOwl
+## Connect SAP Cloud ALM with ReleaseOwl
 
 To connect SAP Cloud ALM to ReleaseOwl, you first need to obtain the client credentials from your SAP BTP environment.
+
+### Fetch Cloud ALM Client Credentials from SAP BTP
 
 1. Navigate to **Instances and Subscriptions** in your SAP BTP Cockpit.
 2. Click **Create**, select the service **SAP Cloud ALM API**, and provide the required details.
@@ -46,17 +48,17 @@ Once you have the credentials, register them in ReleaseOwl to enable integration
 
 <figure><img src="../../.gitbook/assets/image (1601).png" alt=""><figcaption></figcaption></figure>
 
-#### SAP Cloud ALM Project Integration
+## SAP Cloud ALM Project Integration
 
 After registering the credentials, you can link your SAP Cloud ALM project with a ReleaseOwl project.
 
-**Step 1: Navigate to Project Settings**
+### **Step 1: Navigate to Project Settings**
 
 1. Switch to the desired working project in **ReleaseOwl**.
 2. Go to **Project Settings**.
 3. In the Project Settings section, navigate to **ALM Integrations** and click **Add**.
 
-**Step 2: Fill in the Required Details**
+### **Step 2: Fill in the Required Details**
 
 * **Name:** Enter a unique name for the integration.
 * **Description (Optional):** Add a short description for future reference.
@@ -68,7 +70,7 @@ After registering the credentials, you can link your SAP Cloud ALM project with 
 
 <figure><img src="../../.gitbook/assets/image (1602).png" alt=""><figcaption></figcaption></figure>
 
-#### Syncing  Features and  User Stories
+## Syncing  Features and  User Stories
 
 After successful integration, you can start syncing data between SAP Cloud ALM and ReleaseOwl.
 
@@ -80,7 +82,7 @@ After successful integration, you can start syncing data between SAP Cloud ALM a
 
 <figure><img src="../../.gitbook/assets/image (1603).png" alt=""><figcaption></figcaption></figure>
 
-### Managing User Stories in ReleaseOwl&#x20;
+## Managing User Stories in ReleaseOwl&#x20;
 
 Each synced user story can be further enhanced and managed directly within ReleaseOwl:&#x20;
 
@@ -93,7 +95,7 @@ Each synced user story can be further enhanced and managed directly within Relea
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Promoting User Stories from ReleaseOwl&#x20;
+## Promoting User Stories from ReleaseOwl&#x20;
 
 Once your user story is updated and ready for deployment:&#x20;
 
@@ -105,18 +107,18 @@ Once your user story is updated and ready for deployment:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Promoting User Stories from SAP Cloud ALM&#x20;
+## Promoting User Stories from SAP Cloud ALM&#x20;
 
 &#x20;You can promote user stories directly from SAP Cloud ALM, and the corresponding execution continues in ReleaseOwl based on the lifecycle actions performed in Cloud ALM.&#x20;
 
-#### Accessing the User Story in Cloud ALM&#x20;
+### Accessing the User Story in Cloud ALM&#x20;
 
 1. In ReleaseOwl, open the required user story.&#x20;
 2. Click the External ID, which redirects you to the user story/features in SAP Cloud ALM
 
 <figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Bidirectional Synchronization&#x20;
+### Bidirectional Synchronization&#x20;
 
 SAP Cloud ALM and ReleaseOwl maintain a bidirectional connection:&#x20;
 
@@ -126,7 +128,7 @@ SAP Cloud ALM and ReleaseOwl maintain a bidirectional connection:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1622).png" alt=""><figcaption></figcaption></figure>
 
-#### Start Implementation&#x20;
+### Start Implementation&#x20;
 
 When you click Start Implementation in SAP Cloud ALM:&#x20;
 
@@ -137,7 +139,7 @@ When you click Start Implementation in SAP Cloud ALM:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1623).png" alt=""><figcaption></figcaption></figure>
 
-#### Handover to Test&#x20;
+### Handover to Test&#x20;
 
 When the user selects Handover to Test in SAP Cloud ALM:&#x20;
 
@@ -163,8 +165,6 @@ You can verify execution progress in ReleaseOwl:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1627).png" alt=""><figcaption></figcaption></figure>
 
-
-
 #### Managing User Stories in ReleaseOwl
 
 Each synced user story can be further enhanced and managed directly within ReleaseOwl:
@@ -175,11 +175,11 @@ Each synced user story can be further enhanced and managed directly within Relea
 
 <figure><img src="../../.gitbook/assets/image (1604).png" alt=""><figcaption></figcaption></figure>
 
-### Webhook Configuration in Cloud ALM&#x20;
+## Webhook Configuration in Cloud ALM&#x20;
 
 To ensure ReleaseOwl stays updated with changes made in Cloud, you must configure webhooks in Cloud ALM.&#x20;
 
-#### Configure Destination in SAP BTP&#x20;
+### Configure Destination in SAP BTP&#x20;
 
 1. Log in to your SAP BTP subaccount.&#x20;
 2. Go to Connectivity from the left-side navigation pane.&#x20;
@@ -194,7 +194,7 @@ To ensure ReleaseOwl stays updated with changes made in Cloud, you must configur
 
 <figure><img src="../../.gitbook/assets/image (1630).png" alt=""><figcaption></figcaption></figure>
 
-#### Configure Webhooks in SAP Cloud ALM&#x20;
+### Configure Webhooks in SAP Cloud ALM&#x20;
 
 1. Navigate to SAP Cloud ALM → Administration → External API Management.&#x20;
 
@@ -214,7 +214,7 @@ To ensure ReleaseOwl stays updated with changes made in Cloud, you must configur
 
 <figure><img src="../../.gitbook/assets/image (1633).png" alt=""><figcaption></figcaption></figure>
 
-#### Enter the Webhook Path&#x20;
+### Enter the Webhook Path&#x20;
 
 In the **Path** field, enter the ReleaseOwl webhook endpoint using the following general structure:
 
@@ -235,7 +235,7 @@ ratesaptms/webhook/tenant/<tenant_id>/project/<project_id>/calm/pmsint/<integrat
 
 <figure><img src="../../.gitbook/assets/image (1634).png" alt=""><figcaption></figcaption></figure>
 
-#### Add External API Management to Subscription Management&#x20;
+### Add External API Management to Subscription Management&#x20;
 
 1. Navigate to **Subscription Management** within SAP Cloud ALM.&#x20;
 
