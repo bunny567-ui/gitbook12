@@ -1,6 +1,6 @@
 # Credential Management
 
-To integrate an SAP On-Premise system with ReleaseOwl, you must first register the authentication credentials. Follow the steps below to add your SAP On-Premise credential:
+To integrate a SAP On-Premise system with ReleaseOwl, you must first register the authentication credentials. Follow the steps below to add your SAP On-Premise credential:
 
 ### **Registering Transport Manager Credential**
 
