@@ -26,20 +26,11 @@ To register a SAP Cloud Environment in ReleaseOwl, you first need to configure y
 2. Fill in the required fields:
    * **Credential Name**: Enter a name of your choice.
    * **Credential Type**: Select **SAP Cloud Environment**.
-   * **Authentication Type**: Choose either **Basic** or **OAuth2**.
-3.  If Basic authentication is selecte&#x64;**:**
-
-    * Provide your **Username** and **Password** (SAP BTP credentials).
+   * **Authentication Type**: Choose **Basic.**
+3.  &#x20;Provide your **Username** and **Password** (SAP BTP credentials).
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4. **If OAuth2 authentication is selected:**
-   * **Client ID**: Enter the details from the created API service key in the SAP BTP cockpit.
-   * **Client Secret**: Enter the details from the created API service key in the SAP BTP cockpit.
-   * **Token URL**: Enter the details from the created API service key in the SAP BTP cockpit.
-
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-5. Click **Save**. The credential will now appear in the **List of Credentials**.
+4. Click **Save**. The credential will now appear in the **List of Credentials**.
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
