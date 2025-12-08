@@ -1,6 +1,8 @@
 # Cloud Environment Registration
 
-### **1. Navigate to SAP Cloud Environment** <a href="#pdf-page-5hkyhw0dgtvjrdeu0fx7-id-1.-navigate-to-sap-cloud-environment" id="pdf-page-5hkyhw0dgtvjrdeu0fx7-id-1.-navigate-to-sap-cloud-environment"></a>
+To register the SAP cloud Environment, you must first register the corresponding credential. Follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-btp/administration/credential-management) and complete the credential setup.
+
+### **1. Navigate to SAP  Cloud Environment** <a href="#pdf-page-5hkyhw0dgtvjrdeu0fx7-id-1.-navigate-to-sap-cloud-environment" id="pdf-page-5hkyhw0dgtvjrdeu0fx7-id-1.-navigate-to-sap-cloud-environment"></a>
 
 * In the left-hand menu, under the **Environments** section, select **SAP Cloud Environment**.
 

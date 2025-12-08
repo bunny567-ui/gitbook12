@@ -1,4 +1,6 @@
-# Cloud Environment Registration
+# Environment Registration
+
+To register the SAC Environment, you must first register the SAC credential. Follow the [link](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-analytics-cloud/administration/credential-management) and complete the credential setup.
 
 ### **To Register SAC Environment:** <a href="#pdf-page-gxe94pcl07aymb35lkd4-to-register-sac-environment" id="pdf-page-gxe94pcl07aymb35lkd4-to-register-sac-environment"></a>
 

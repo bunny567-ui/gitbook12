@@ -1,4 +1,6 @@
-# Cloud Environment Registration
+# Datasphere Environment Registration
+
+To register the SAP Datasphere Environment, you must first register the Datasphere credential. Follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-datasphere/administration/credential-management) and complete the credential setup.
 
 ### **To Register SAP Datasphere:** <a href="#pdf-page-dk8rbzgxugve408ig5ly-to-register-sap-datasphere" id="pdf-page-dk8rbzgxugve408ig5ly-to-register-sap-datasphere"></a>
 

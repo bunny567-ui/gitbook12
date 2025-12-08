@@ -1,8 +1,6 @@
 # Environment Registration
 
-ReleaseOwl seamlessly integrates with SAP API Management to enable continuous integration and delivery of API artifacts.&#x20;
-
-Through secure credential management and environment registration, ReleaseOwl connects directly with the API Management tenant to manage, deploy, and promote API proxies and related artifacts across development, quality, and production landscapes.
+ReleaseOwl seamlessly integrates with SAP API Management to enable continuous integration and delivery of API artifacts.  To register the SAP API Environment, you must first register the API credential. Follow the[ link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-api-management/adminstration/credential-management)and complete the credential setup.
 
 ### API Environment Registration
 

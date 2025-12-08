@@ -1,5 +1,7 @@
 # On-Premise Environment Registration
 
+Before configuring the SAP On-Premise Environment, you must first register the SAP On-Premise authentication credential. Use the [link](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-on-premise/administration/credential-management) to complete the credential setup.
+
 ## **Registering SAP On-Premise Environment**
 
 To access the **SAP On-Premise environment** with **ReleaseOwl**, you must first register the **SAP On-Premise system login credentials**. Follow the steps below to add your SAP On-Premise Environment:
