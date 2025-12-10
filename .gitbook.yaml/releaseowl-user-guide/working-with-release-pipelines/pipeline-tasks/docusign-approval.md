@@ -21,7 +21,7 @@ Fill in the required details:
 | **Subject**        | Optional subject line that appears in the DocuSign approval email. Helps the recipient quickly understand the approval request.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **Add Recipients** | <p>Add the users who need to act on the DocuSign task. For each recipient, provide the following:</p><p>• <strong>Name</strong>: Full name of the signer or recipient. </p><p>• <strong>Email ID</strong>: Email address where the DocuSign request will be sent. </p><p>• <strong>Order</strong>: The signing order if multiple recipients are involved. </p><p>• <strong>Type</strong>: Defines recipient role, e.g., <strong>Signer</strong>, <strong>Approver</strong>, <strong>CC</strong>. </p><p>• <strong>Group</strong>: (Optional) Group the recipient is associated with, if applicable.</p> |
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## How to Use DocuSign&#x20;
 
@@ -147,7 +147,7 @@ Here are the following steps to access your DocuSign account and begin using the
 1. Go to the **Administration View** in ReleaseOwl.
 2. Click on **Credential Manager** and then **Register Credential.**
 
-<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Fill in the fields:
 

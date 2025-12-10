@@ -49,7 +49,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * In the administration view, navigate to the **Credential Manager**.
     * Click on **Register Credential**.
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Fill in the Credential Details**
 
     * **Credential Name**: Enter a name of your choice.
@@ -61,7 +61,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * **Username**: Enter your SAP BTP Username.
     * **Credentials**: Use your SAP BTP password.
 
-    <figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Steps to Register an SAP Cloud Environment**
 
@@ -103,7 +103,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * Locate the newly created project.
     * Click on the three-dot menu (•••) and select **Project Settings**.
 
-    <figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -160,9 +160,9 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
     * Navigate to the **Build Pipelines** section and click on **Create Build Pipeline**.
     * Enter the **Build Pipeline Name** and assign **Labels** for filtering.
 
-    <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **Repository Configuration**
 
 * Enter the **Repository URL** (e.g., Bitbucket or other platforms).
@@ -170,7 +170,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 * Choose the branch (e.g., QA, Master, or Dev).
 * Select the type of version control system (e.g., GitHub, GitLab, Bitbucket).
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Builder Section**
 
@@ -178,7 +178,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 * **Build Tool Version**: Select the required version.
 * **Max # of Builds to Keep**: Set to 30 to store the latest versions and avoid storage issues in Jenkins.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Scheduler**
 
@@ -188,7 +188,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 
 * Enter email addresses to receive notifications.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Tool Integrations** <a href="#pdf-page-hbalethepy3zsklyalpx-tool-integrations" id="pdf-page-hbalethepy3zsklyalpx-tool-integrations"></a>
 
@@ -209,13 +209,13 @@ The purpose of a malware scan is to scan business documents for any potential th
     * Open the **Administration** section of the application.
     * Click **Register Credential** to create a new credential entry.
 
-    <figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Enter the Required Details**
 
     * **Credential Name**: Provide a meaningful name, such as "**Malware Scanner.**"
     * **Credential Type**: Select **Malware** from the dropdown options.
 
-    <figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     *   **Obtain Credentials**:
 
@@ -223,7 +223,7 @@ The purpose of a malware scan is to scan business documents for any potential th
         * Navigate to **Services** and open the **Service Marketplace**.
         * Search for "**Malware**" and click **Create** to create an instance.
 
-        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -232,7 +232,7 @@ The purpose of a malware scan is to scan business documents for any potential th
 
 
 
-    <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FR9XmVCIu5Kx9lcATvlAs%252Fimage.png%3Falt%3Dmedia%26token%3Dcd1f7f9e-bbcd-4cf3-ae37-bb05338f8b0a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7198401a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 3.  **Save the Credentials**
@@ -240,7 +240,7 @@ The purpose of a malware scan is to scan business documents for any potential th
     * Paste the copied details into the **Credential Manager**.
     * Click **Save** to register the credentials successfully.
 
-    <figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Configure the Malware Scan in the Build Pipeline**
 
@@ -251,11 +251,11 @@ The purpose of a malware scan is to scan business documents for any potential th
     * Select the **Registered Credential** from the dropdown menu.
     * Specify the timeout duration for the malware scan.
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Save** to finalize the configuration.
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Execute the Malware Scan**
 
@@ -263,7 +263,7 @@ The purpose of a malware scan is to scan business documents for any potential th
 
     * Click on the **Build Now** button in the **Build Pipeline** to start the process.
 
-    <figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **View the Malware Scan Results**
    * Once the pipeline runs, click the arrow button next to the malware scan stage to view the results.
    *   Review the malware scan results, including:
@@ -294,7 +294,7 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
     * Enable the option for **SAP CVE Scan**.
     * Click **Save** to apply the changes.
 
-    <figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Configure CVE Settings**
 
     * In the **Project Settings**, go to the **CVE** section.
@@ -304,7 +304,7 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
       * **Versions**: Provide the version(s) of the library that are vulnerable.
     * Click **Save** to ensure the scan is correctly set up.
 
-    <figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Running the Build Pipeline** <a href="#pdf-page-hbalethepy3zsklyalpx-running-the-build-pipeline" id="pdf-page-hbalethepy3zsklyalpx-running-the-build-pipeline"></a>
 
@@ -313,7 +313,7 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
     * Click on the **Save** button to create the build pipeline.
     * Click on the **Build** button to run the pipeline.
 
-    <figure><img src="../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **View the Results**
 
     * Once the pipeline runs, click the arrow button next to it to view the results.

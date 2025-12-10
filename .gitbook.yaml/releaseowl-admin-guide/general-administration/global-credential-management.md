@@ -253,7 +253,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 5. Copy these credentials and paste them into the corresponding fields in the **Register Credential** form in ReleaseOwl under **Basic Authentication**.
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Ui path**
 
@@ -289,7 +289,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
    8. Paste the Client ID and Client Secret into the appropriate fields.
 6. Click **Save** to register the credential.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Docusign**
 
@@ -365,7 +365,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 13. Copy all the credentials, paste them into the Register Credential, and click the Save button.
 
-<figure><img src="../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Generate a Token**
 
