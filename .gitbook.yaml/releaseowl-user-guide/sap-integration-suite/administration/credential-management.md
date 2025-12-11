@@ -228,6 +228,10 @@ This section explains how to apply for and configure SAP Passport, and how to re
 * **Password:** Enter the **SAP Passport Password** you provided during the apply process
 * **Certificate:** Upload your downloaded **SAP Passport (.pfx)**
 
+{% hint style="info" %}
+**Note:** You **must** keep using the PFX if the server requires client certificate authentication.
+{% endhint %}
+
 4. Save the credential.
 
 <figure><img src="../../../.gitbook/assets/image (1643).png" alt=""><figcaption></figcaption></figure>
