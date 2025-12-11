@@ -157,9 +157,9 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-SAP Cloud Identity Services&#x20;
+## **Registering SAP Cloud Identity Services Credentials**
 
-Here are the following steps to create the Cloud Identity Service instance:
+This section explains how to create and configure **Cloud Identity Services (IAS/IPS)** in SAP BTP and register them in ReleaseOwl. This setup is essential because ReleaseOwl uses Cloud Identity Services for secure web-based authentication, ensuring that users access deployments and environments through trusted identity providers.
 
 #### **Create Cloud Identity Service Instance**
 
@@ -179,99 +179,6 @@ Here are the following steps to create the Cloud Identity Service instance:
 
 <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-### **Trust Configuration in SAP BTP**
-
-1. Go to **Trust Configuration** in your SAP BTP subaccount.
-2. Click on **Establish Trust**.
-
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-
-#### **Configure Trust**
-
-1. Select your **Cloud Identity Service tenant** → click **Next**.
-
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-2. Select your **Cloud Identity Service domain** → click **Next**.
-
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-
-3. Under **Configuration Parameters**:
-   * Set **Origin Key = sap.custom**
-   * Click **Next** and then **Finish**.
-
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
-
-4. A new trust configuration will be created with Origin Key **sap.custom**.
-
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
-
-#### **OpenID Connect Settings**
-
-1. Open your created **OpenID Connect** trust configuration.
-
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-
-2. In the **Parameters** section, enable **Available for User Logon.**&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
-
-3. Navigate to **Attribute Mappings** and fill in the required mappings:
-
-| **Related Role** | **Attribute Name** | **Value**                         | **Operator** |
-| ---------------- | ------------------ | --------------------------------- | ------------ |
-| Role Collection  | email              | Your Cloud Identity Service email | equals       |
-
-
-
-4. Click **Save** to update the configuration.
-
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
-
-## **Registering SAP Cloud Identity Services Credentials**
-
-This section explains how to create and configure **Cloud Identity Services (IAS/IPS)** in SAP BTP and register them in ReleaseOwl.
-
-### **Access Applications**
-
-1. Log in to your **Cloud Identity Service tenant**.
-2. Navigate to **Applications & Resources → Applications**.
-
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
-
-3. A new **Bundled Application** will be automatically created with the name:\
-   **SAP BTP Subaccount – \<Subaccount Name>**
-
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
-
-#### **Configure Single Sign-On**
-
-1. Open the newly created application.
-2. Go to **Single Sign-On → Subject Name Identifier**.
-
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-3. Configure as follows:
-
-* **Source (Primary):** Identity Directory
-* **Attribute (Primary):** Email
-* **Source (Fallback):** Identity Directory
-* **Attribute (Fallback):** Email
-
-4. Click on the **Save** button.&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-#### **Configure Conditional Authentication**
-
-1. Go to **Trust** → **Conditional Authentication**.
-
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-2. Set **Default Identity Provider = Identity Authentication**.
-
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
 ### Credential Registration with ReleaseOwl
 
 1. Log in to **ReleaseOwl**.
@@ -288,9 +195,9 @@ This section explains how to create and configure **Cloud Identity Services (IAS
 
 <figure><img src="../../../.gitbook/assets/image (1647).png" alt=""><figcaption></figcaption></figure>
 
-## **Registering SAP Passport Credentials**
+## SAP Passport: Application and Configuration&#x20;
 
-This section explains how to create and configure **SAP Passport** and register them in ReleaseOwl.
+This section explains how to apply for and configure SAP Passport, and how to register it in ReleaseOwl. This setup is essential because **SAP Passport** provides secure certificate-based authentication, allowing ReleaseOwl to verify your identity.&#x20;
 
 1. Go to **SAP for Me**.
 2. Navigate to the **SAP Passport** page (reference link: [_SAP Passport_](https://me.sap.com/app/sappassport)).
@@ -319,7 +226,7 @@ This section explains how to create and configure **SAP Passport** and register 
 
 * **Credential Type:** SAP Passport
 * **Password:** Enter the **SAP Passport Password** you provided during the apply process
-* **Certificate:** Upload your downloaded **SAP Passport (.pfx)** certificate
+* **Certificate:** Upload your downloaded **SAP Passport (.pfx)**
 
 4. Save the credential.
 

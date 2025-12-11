@@ -16,7 +16,6 @@ To register the SAP Integration Environment, you must first register the CPI cre
 | **Enable Test Automation** _(Optional)_ | Toggle to enable or disable test automation capabilities.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **IFLOW OAuth Credential**              | Select the OAuth credentials used for IFLOW authentication.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **IFLOW URL**                           | Enter the IFLOW URL from the service key.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Use Custom IdP**                      | Enable this option to set up a custom Identity Provider (IdP). _**Note**_**: The setup process is outlined in the section below.**                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **SSO URL**                             | Provide the Single Sign-On (SSO) URL for authentication. _**Note**_**: The setup process is outlined in the section below.**                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **IDP Auth Email Address / Group Name** | The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should also match the corresponding group or email configuration in the IDP Auth Email Address/Group Name within the ReleaseOwl CPI environment registration page.                                                                                                                                                                                                                                                                                            |
 | **Integration Advisor**                 | Enable Integration Advisor to provide the Host URL.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -66,11 +65,13 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
   ReleaseOwl (or SAP BTP) uses this returned attribute value to validate user authorization.
 * Refer to the _Assign Role Collections_ section to ensure that the mapped group/attribute is correctly linked to the required role collections.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1652).png" alt=""><figcaption></figcaption></figure>
 
 * After entering all the required details, click **Save**. Once saved, a **Test** button will appear. Use this button to verify whether the provided credentials and configuration are correct. Click **Test** to validate the connection.
 
-<figure><img src="../../../.gitbook/assets/image (1101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1653).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1654).png" alt=""><figcaption></figcaption></figure>
 
 * Upon successful validation, a **Download** option will be available to download the **tenant-specific metadata** and the **SAP CPI environment descriptor file**.
 
@@ -133,6 +134,90 @@ You can configure granular permissions by creating the custom role collection wi
 ### SAP Cloud Identity Provider
 
 ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support secure authentication and identity management across deployment pipelines. To register the SAP Cloud Identity environment, you must first register the Cloud Identity credential. Follow the[ link](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-integration-suite/administration/credential-management) and complete the credential setup.
+
+### **Trust Configuration in SAP BTP**
+
+1. Go to **Trust Configuration** in your SAP BTP subaccount.
+2. Click on **Establish Trust**.
+
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+#### **Configure Trust**
+
+1. Select your **Cloud Identity Service tenant** → click **Next**.
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+2. Select your **Cloud Identity Service domain** → click **Next**.
+
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+3. Under **Configuration Parameters**:
+   * Set **Origin Key = sap.custom**
+   * Click **Next** and then **Finish**.
+
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+#### **OpenID Connect Settings**
+
+1. &#x20;A new trust configuration will be created using the origin key `sap.custom` with the OpenID Connect (OIDC) protocol.
+
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+2. In the **Parameters** section, enable **Available for User Logon.**&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+3. Navigate to **Attribute Mappings** and fill in the required mappings:
+
+| **Related Role**                                                                                                      | **Attribute Name** | **Value**                         | **Operator** |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------- | ------------ |
+| <ul><li>Trail-content-adminstrator<br></li><li>PI_Integration_Developer</li><li>PI_Administrator</li></ul><p><br></p> | email              | Your Cloud Identity Service email | equals       |
+
+4. Click **Save** to update the configuration.
+
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
+### **Access Applications**
+
+1. Log in to your **Cloud Identity Service tenant**.
+2. Navigate to **Applications & Resources → Applications**.
+
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
+3. A new bundled application will be automatically created and associated with the trust configuration and linked to the corresponding SAP BTP subaccount.
+
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
+#### **Configure Single Sign-On**
+
+1. Open the newly created application.
+2. Go to **Single Sign-On → Subject Name Identifier**.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+3. Configure as follows:
+
+* **Source (Primary):** Identity Directory
+* **Attribute (Primary):** Email
+* **Source (Fallback):** Identity Directory
+* **Attribute (Fallback):** Email
+
+4. Click on the **Save** button.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+#### **Configure Conditional Authentication**
+
+1. Go to **Trust** → **Conditional Authentication**.
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+2. Set **Default Identity Provider = Identity Authentication**.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Environment Registration
 
