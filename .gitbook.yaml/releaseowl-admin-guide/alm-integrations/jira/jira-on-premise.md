@@ -38,8 +38,8 @@ Follow the steps below to register your Jira credentials in ReleaseOwl:
 * **Scope** – Select the scope of the credential:
   * **Global** – Visible to all users.
   * **Private** – Visible only to the user who created it.
-* **Username:** Jira technical user account
-* **Password / API Token:** Enter the password
+* **Username:** Provide the username associated with the credential (e.g., Jira account)
+* **Password/API Token**: Enter the password or API token for authentication with the chosen system.
 * **Jira URL:** `https://jira-dev.releaseowl.com`
 * **Proxy Type:** None
 
