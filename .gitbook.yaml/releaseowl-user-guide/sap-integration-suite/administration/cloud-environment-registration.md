@@ -58,7 +58,7 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 * Copy the extracted **SSO URL**.
 * Paste it into the **SSO URL** field in the **SAP CPI Environment**.
 
-<figure><img src="../../../.gitbook/assets/image (1500).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 * For the **IDP Auth Email Address/Group Name** field, enter the **exact value that your Identity Provider sends in the SAML/OIDC assertion** for the user.
 * This value must match the **group name or email address defined in the&#x20;**_**Value**_**&#x20;field** of the **User Groups** or **Attribute Mappings** configuration in your IDP.\
@@ -98,7 +98,7 @@ To assign role collections, you can choose **one** of the following methods:
 
 * Open the newly created **Custom IDP for Applocations** and click **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
 * Configure the mappings like the example below:
@@ -207,7 +207,7 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 
 4. Click on the **Save** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure Conditional Authentication**
 
@@ -303,7 +303,7 @@ ReleaseOwl seamlessly integrates with **SAP Passport** to enable secure certific
 
 * After selecting "**Save as Artifact**", a new artifact is created with the updated values.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * To view more details about the new artifact, click the three dots (Actions) next to it.
 * Click on **Edit Configuration** to open the artifact configuration.
@@ -331,7 +331,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Switch to the **Project view** and select the **Release section**.
 * Navigate to Release Pipelines and click on **Create New Release Pipeline**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a Pipeline Name.
 * Add stages (e.g., QA, Prod) and assign tasks to each stage.

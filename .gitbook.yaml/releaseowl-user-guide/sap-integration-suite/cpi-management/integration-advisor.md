@@ -27,7 +27,7 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 * Click **Create** and enter the **Role Collection Name**. Confirm by clicking **Create**.
 * Once the role collection is created, select it from the list and click **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Under the **Roles** section, click **Add Role** and assign the required roles. Add the **Content Developer** role.
 * Click **Save** to update the role collection.
