@@ -223,7 +223,7 @@ The purpose of a malware scan is to scan business documents for any potential th
         * Navigate to **Services** and open the **Service Marketplace**.
         * Search for "**Malware**" and click **Create** to create an instance.
 
-        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -314,12 +314,30 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
     * Click on the **Build** button to run the pipeline.
 
     <figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2.  **View the Results**
 
-    * Once the pipeline runs, click the arrow button next to it to view the results.
 
-    <figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3.  **Pipeline Status**
+
+2. **Action Button**
+
+**Edit :**  Use **Edit** to modify the existing build pipeline configuration. This option allows you to update details such as the repository, branch, build type, schedules, or any pipeline-related settings. Changes made here affect the same pipeline.
+
+**Commits :**  The **Commits** option lets you view the list of code commits associated with this build pipeline.&#x20;
+
+**Save as:**  Use **Save As** to create a copy of the existing build pipeline.
+
+**Archive :** The **Archive** option is used to deactivate the build pipeline. Archived pipelines are not deleted but are removed from active use.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
+
+3. **View the Results**
+
+* Once the pipeline runs, click the arrow button next to it to view the results.
+
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+1.  **Pipeline Status**
 
     * The results display the status of various stages such as **Build** and **Prepare**.
     *   Key details include:
