@@ -6,10 +6,10 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 
 1. Go to the SAP CPI Environment and click on the **Register SAP CPI Environment**.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Web Authentication:** Select **SAP Cloud Identity Provider**.
 3. **Credential:** Choose the **SAP Cloud Identity Credential** that you registered earlier.
 4. Click on the **Create** button.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>

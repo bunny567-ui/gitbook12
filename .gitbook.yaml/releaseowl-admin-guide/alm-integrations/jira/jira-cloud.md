@@ -29,15 +29,15 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 1. After the app is created, go to the **Permissions** section.
 2. Under **Jira API**, click **Add** to grant the necessary permissions. Once added, the button changes to **Configure** — click **Configure**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **Edit Scopes** to grant permissions for both **Classic Scopes** and **Granular Scopes**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Classic Scopes**: Select all scope names available under the **Jira Platform REST API**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. **Granular Scopes**: Enable the following permissions:
 
@@ -65,7 +65,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
 | **read:issue-meta:jira**                 | Read issue metadata (e.g., create metadata)                                      |
 | **read:board-scope:jira-software**       | Allows reading board scope details (e.g., filters/JQL that define board issues). |
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 5. Authorization Configuration
 
@@ -78,7 +78,7 @@ This user guide provides step-by-step instructions to integrate Jira with the Re
    [https://na3.releaseowl.com/rateloginserver/api/jira/accesstoken](https://na3.releaseowl.com/rateloginserver/api/jira/accesstoken)
 4. &#x20;Click on **Save Changes.**
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** In the OAuth framework, there are refresh tokens and access tokens. When the access token expires, a refresh token is used to obtain a new access token. The configuration must be set to send the refresh token when required. Since local URLs are not recognized due to intra-network restrictions, the callback URL uses the ReleaseOwl server (na3.releaseowl.com) to handle token exchange.
@@ -101,12 +101,15 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to **Administration**, then select **Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill out the credential form with the following details:
 
 * **Credential Name:** Enter your preferred name for the credential.
 * **Credential Type**: Jira
+* **Scope** – Select the scope of the credential:
+  * **Global** – Visible to all users.
+  * **Private** – Visible only to the user who created it.
 * **Authentication Type**: Select the authentication type as theOAuth2
 * **Client ID and Client Secret:** Paste the Client ID and Client Secret obtained from the OAuth2 integration you created in the Atlassian Developer Console.
 * **Jira URL**:  [https://api.atlassian.com/](https://api.atlassian.com/)
@@ -280,4 +283,4 @@ To integrate user stories from Jira, follow these steps:
 4. Once the sync is completed, you will get a pop up saying, **User Story Sync completed**.
 5. Click **Ok**.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -155,7 +155,7 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 5. Click **Save**.
 6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for IFLOW deployments.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Registering SAP Cloud Identity Services Credentials**
 
@@ -169,7 +169,7 @@ This section explains how to create and configure **Cloud Identity Services (IAS
 4. In the **Plan** field, choose **Default** under **Subscriptions**, then click **Next**.
 5. Click **Create** to provision the instance.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 #### **Activate Administrator Account**
 
@@ -177,7 +177,7 @@ This section explains how to create and configure **Cloud Identity Services (IAS
 2. Open the email and click **Activate Account**.
 3. Set your password and click on **Continue.**
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Credential Registration with ReleaseOwl
 
@@ -185,7 +185,7 @@ This section explains how to create and configure **Cloud Identity Services (IAS
 2. Go to **Administration → Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter the following information:
    * **Credential Type:** SAP Cloud Identity

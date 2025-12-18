@@ -27,15 +27,15 @@ The **CPI Deployment Task** handles the automated deployment of integration arti
 | **Notify Promotion User** | Sends an email notification to the user who initiated the promotion (from a User Story or Release Package), regardless of whether the task succeeds or fails. |
 | **Schedule Time**         | Allows a Release Pipeline to be executed manually or scheduled automatically after its reference build pipeline completes successfully.                       |
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. MTAR Deployment Task (SAP BTP Multi-Target Applications)**
 
 The **MTAR Deployment Task** is designed for deploying **Multi-Target Application (MTAR)** packages to SAP BTP Cloud Foundry or Kyma environments. MTAR packages typically contain application modules such as CAP services, HTML5 UI modules, or microservices.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **MTAR- Deployment Task Configuration**
 
@@ -50,9 +50,9 @@ The **MTAR Deployment Task** is designed for deploying **Multi-Target Applicatio
 | **Notify Promotion User** | Sends an email notification to the user who triggered the promotion (from a user story or release package), regardless of task success or failure. |
 | **Schedule Time**         | Allows you to execute the Release Pipeline manually or automatically after its reference build pipeline runs successfully.                         |
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. Transport Management Deployment Task (SAP ABAP Transport Requests)**
 
@@ -71,7 +71,7 @@ The **Transport Management Deployment Task** handles deployment for **SAP Transp
 | **Notify Promotion User**  | Sends notifications to the user who promoted the user story or release package that triggered the deployment.                                        |
 | **Description**            | A free-text field where notes or additional information about the deployment can be provided. Useful for context or specific instructions.           |
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
