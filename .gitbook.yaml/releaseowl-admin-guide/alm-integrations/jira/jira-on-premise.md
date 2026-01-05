@@ -53,26 +53,26 @@ Follow the steps below to register your Jira credentials in ReleaseOwl:
 
 1. Select **Applications** from the Jira administration menu.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **Applications** section, click **Application Links**, then click **Create link**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. For **Application type**, select **External Application**.
 4. For **Direction**, select **Incoming**, and then click **Continue**.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Under _**Application Permissions**_, select only _**Admin**_**&#x20;permissions**.
 6. For the **Redirect URL**, enter: [https://na3.releaseowl.com/rateloginserver/api/jira/accesstoken](https://na3.releaseowl.com/rateloginserver/api/jira/accesstoken)
 7. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. After saving, copy the **Client ID** and **Client Secret** for use in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Registering Jira in ReleaseOwl Dashboard**
 
@@ -82,7 +82,7 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 2. Navigate to **Administration**, then select **Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill out the credential form with the following details:
 
@@ -110,7 +110,7 @@ To link a Jira project with a ReleaseOwl project, follow the steps below:
 * Go to **Project Settings**.
 * In Project Settings, navigate to **ALM Integrations** and click **Add**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. Fill in the Required Details**
 
@@ -129,7 +129,7 @@ To link a Jira project with a ReleaseOwl project, follow the steps below:
 
 * Choose the Jira project from the pop-up list.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **A. Using Boards**
 
@@ -137,11 +137,11 @@ To link a Jira project with a ReleaseOwl project, follow the steps below:
 * **Board:** Choose the required Scrum or Kanban board.
 * Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once saved, the integration appears in the list. If **Default Integration** is selected, it will be used by default.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **B. Using Filters**
 
@@ -156,7 +156,7 @@ Once saved, the integration appears in the list. If **Default Integration** is s
 * Create a JQL query in Jira.
 * Copy and paste the query into ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Note**
 

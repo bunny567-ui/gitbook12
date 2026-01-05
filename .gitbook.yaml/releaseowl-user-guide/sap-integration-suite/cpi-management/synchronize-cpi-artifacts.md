@@ -15,12 +15,12 @@
 4. Click **Sync All Artifacts** to fetch and display the available CPI artifacts within the selected project.
 5. Navigate to **Build > SAP CPI Management** and click on the **actions** button to view **Sync Artifacts**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The **Modified By** and **Modified Date** information displayed in the ReleaseOwl dashboard is **sourced directly from SAP CPI** for supported artifact types such as **IFLOW**, **ODATAAPIPROVIDER**, **SOAPAPIPROVIDER**, and **RESTAPIPROVIDER**.
 * For artifact types like **SCRIPT\_COLLECTION**, **MESSAGE\_MAPPING**, and **VALUE\_MAPPING**, SAP CPI **does not provide these metadata fields via its public APIs**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * In such cases, ReleaseOwl **derives and updates the Modified By and Modified Date based on ReleaseOwl activity and processing timestamps**, reflecting when the artifact was last handled or updated within ReleaseOwl rather than the original CPI metadata.
 
@@ -30,7 +30,7 @@
 7. If there are changes made to the existing artifacts, the changes will also be updated.
 8. Click **Sync Artifacts** to sync the CPI artifacts.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sync History**
 
@@ -51,7 +51,7 @@ You can sort the artifacts as per your convenience. To sort them:
 
 Multiple actions can be performed on an artifact, based on the type of artifact. These actions include – View Test Cases, Comment , Configure, Deployment History, Versions and Download.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Manage Environment Wide IFlow Configurations**
 

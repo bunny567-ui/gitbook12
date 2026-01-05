@@ -39,3 +39,16 @@ Validation report is visible only after the validation process is complete.\
 3\. Expand the artifact to view the details.
 
 <figure><img src="../../../.gitbook/assets/image (1676).png" alt=""><figcaption></figcaption></figure>
+
+#### CPI Downgrade Check
+
+This feature ensures that the correct user story is reused during a downgrade operation when a target version already exists.
+
+#### How It Works
+
+1. During a downgrade, the system checks whether the **target version** is already associated with a user story.
+2. If a user story already exists for the target version, the system displays that **existing user story**.
+3. After the downgrade validation is successful, the system **reuses the same artifact-assigned user story**.
+4. The reused user story is displayed in the **Target User Story** column.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
