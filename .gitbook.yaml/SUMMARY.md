@@ -28,7 +28,7 @@
     * [Sprints](releaseowl-user-guide/change-management/sprints.md)
     * [User Stories](releaseowl-user-guide/change-management/user-stories.md)
     * [Release Versions](releaseowl-user-guide/working-with-release-pipelines/release-versions.md)
-    * [User Story Dependency](releaseowl-user-guide/change-management/user-story-dependency.md)
+    * [Dependencies(Beta)](releaseowl-user-guide/change-management/dependencies-beta.md)
   * [SAP On-Premise](releaseowl-user-guide/sap-on-premise/README.md)
     * [Administration](releaseowl-user-guide/sap-on-premise/administration/README.md)
       * [Credential Management](releaseowl-user-guide/sap-on-premise/administration/credential-management.md)

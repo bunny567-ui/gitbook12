@@ -16,9 +16,13 @@ Note: **License terms of CPI Lint tool can be found here:**\
 ### **To validate a package:**
 
 1. Go to a required package in the Release Packages screen under Release Section and click **Actions**. Click **Validate** to start the validation process.
-2. Once the process is complete, you can see the status under **Validation Status**.
 
-<figure><img src="../../../.gitbook/assets/image (1075).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1671).png" alt=""><figcaption></figcaption></figure>
+
+2. A pop-up dialog appears prompting you to select the appropriate **SAP CPI target environment** from the list.
+3. After selecting the target environment, click the **Validate** button to initiate the validation process.
+
+<figure><img src="../../../.gitbook/assets/image (1673).png" alt=""><figcaption></figcaption></figure>
 
 ### **Validation Report**
 
@@ -28,10 +32,10 @@ Validation report is visible only after the validation process is complete.\
 
 1\. Go to a required package and click **Actions**. Click **Validation Report**.
 
-2\. The validation report is displayed below.<br>
+2\. The validation report is displayed below.
 
-<figure><img src="../../../.gitbook/assets/image (1076).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1675).png" alt=""><figcaption></figcaption></figure>
 
 3\. Expand the artifact to view the details.
 
-<figure><img src="../../../.gitbook/assets/image (1077).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1676).png" alt=""><figcaption></figcaption></figure>

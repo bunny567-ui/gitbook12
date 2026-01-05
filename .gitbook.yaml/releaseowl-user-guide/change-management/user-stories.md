@@ -1,5 +1,7 @@
 # User Stories
 
+### Creating User Stories With ALM Integration
+
 To  Sync user stories using an ALM integration (e.g., JIRA), follow these steps:
 
 1\) Navigate to the **User Stories** section under **Change Management**.
@@ -18,11 +20,11 @@ b) Always ensure to **sync the Sprints first** before syncing the User Stories.
 
 3\) Click **OK**. The user stories created in the external system will be synced to ReleaseOwl and will appear on the **User Stories** screen.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1656).png" alt=""><figcaption></figcaption></figure>
 
 4\) To view previously performed sync actions, click on **Sync History**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1657).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :**  The column widths for **User Story ID**, **Status**, **Type**, and **Assigned To** are now dynamically adjusted based on content length. The **Summary** and **Pipeline Status** columns are restricted to a maximum width of **20%** of the table to maintain layout consistency and prevent overflow.
@@ -34,7 +36,7 @@ To create user stories manually for systems not integrated through ALM , follow 
 
 1\) To create a new user story manually, click the **Create New User Story** button.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1658).png" alt=""><figcaption></figcaption></figure>
 
 2\) Enter the following details and click **Save**:
 
@@ -53,11 +55,11 @@ To create user stories manually for systems not integrated through ALM , follow 
 
 4\) You can delete user stories by clicking the **Delete** button.
 
-<figure><img src="../../.gitbook/assets/image (1093).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1659).png" alt=""><figcaption></figcaption></figure>
 
 5\) The following columns are seen for a user story:
 
-<figure><img src="../../.gitbook/assets/image (1092).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1660).png" alt=""><figcaption></figcaption></figure>
 
 | **Field**                    | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -66,7 +68,7 @@ To create user stories manually for systems not integrated through ALM , follow 
 | **Summary**                  | A brief description of the user story.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Status**                   | Current status of the user story. **Status options**: To Do, In Progress, QA Ready, Prod Ready, Done                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Type**                     | Issue type of the user story. Available types: **Story**, **Task**, **Sub-task**, **Bug**, **Issue**, **Epic**, **Incident**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **External ID**              | ID of the user story from an external system (e.g., JIRA or ServiceNow), shown if the project is integrated with external systems.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **External ID**              | ID of the user story from an external system shown if the project is integrated with external systems.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Assigned To**              | The user to whom the issue type is assigned.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Validation Status Filter** | <p>The <strong>Validation Status</strong> shows the current stage of the user story validation process. The possible statuses are:</p><ul><li><strong>Not Validated</strong>: Validation has not yet started for this user story.</li><li><strong>Started</strong>: The validation process has been initiated.</li><li><strong>In Progress</strong>: Validation is actively running and not yet completed.</li><li><strong>Success</strong>: Validation is completed successfully without any errors.</li><li><strong>Review Pending</strong>: Validation is completed, but the results are awaiting manual review.</li><li><strong>Review Completed</strong>: The validation review has been completed and closed.</li></ul> |
 | **Pipeline Stage**           | Default value is **Dev**. Updates to the next stage upon each promotion in the release pipeline.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -75,7 +77,7 @@ To create user stories manually for systems not integrated through ALM , follow 
 
 6\) When you click the **Action** button, you will see the list of available actions that can be performed on the user story.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1661).png" alt=""><figcaption></figcaption></figure>
 
 #### **2. User Story Tab**
 
@@ -83,19 +85,20 @@ This is the primary section for entering and managing story information.
 
 **a. Core Fields**
 
-| Field                | Description                                                                                |
-| -------------------- | ------------------------------------------------------------------------------------------ |
-| **Summary**          | A short title summarizing the purpose of the user story.                                   |
-| **Description**      | Provides detailed context or requirements for the story (optional).                        |
-| **Type**             | Identifies the work item type.                                                             |
-| **Assigned To**      | The user responsible for implementing this story.                                          |
-| **Status**           | Current state of the story (_Open_, _In Progress_, _Done_).                                |
-| **Sprint**           | Sprint in which the story is scheduled for completion.                                     |
-| **Release Pipeline** | The release pipeline associated with the story, used for deployment tracking.              |
-| **Release Version**  | Specifies the release version or build where this story is included.                       |
-| **Component**        | Refers to the business or technical component impacted (e.g., _TC_ for Testing Component). |
+| Field                | Description                                                                                                            |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Summary**          | A short title summarizing the purpose of the user story.                                                               |
+| **Description**      | Provides detailed context or requirements for the story (optional).                                                    |
+| **Type**             | Identifies the work item type.                                                                                         |
+| **Assigned To**      | The user responsible for implementing this story.                                                                      |
+| **Status**           | Current state of the story (_Open_, _In Progress_, _Done_).                                                            |
+| **No Artifacts**     | When enabled, all artifacts associated with the User Story are **automatically deleted** to maintain data consistency. |
+| **Release Pipeline** | The release pipeline associated with the story, used for deployment tracking.                                          |
+| **Release Version**  | Specifies the release version or build where this story is included.                                                   |
+| **Component**        | Refers to the business or technical component impacted (e.g., _TC_ for Testing Component).                             |
+| **External ID**      | A unique identifier used to map or synchronize the User Story with external systems                                    |
 
-<figure><img src="../../.gitbook/assets/image (1613).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1655).png" alt=""><figcaption></figcaption></figure>
 
 **b. Actions**
 
@@ -125,13 +128,42 @@ Use this tab to upload and manage supporting files and links related to your use
 
 <figure><img src="../../.gitbook/assets/image (1615).png" alt=""><figcaption></figcaption></figure>
 
-#### Validation Report
+#### Validation&#x20;
 
-* The Validation Report will look as follows:
+* Navigate to the **User Stories** section.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1664).png" alt=""><figcaption></figcaption></figure>
 
-* On clicking the **Pipeline Activity**, you can view the release pipeline execution status as follows:
+* Click on the **Validation** option.
+* Navigate back to the **User Story** section.
+
+<figure><img src="../../.gitbook/assets/image (1665).png" alt=""><figcaption></figcaption></figure>
+
+* A pop-up dialog appears prompting you to select the appropriate **SAP CPI target environment** from the list.
+* After selecting the target environment, click the **Validate** button to initiate the validation process.
+
+<figure><img src="../../.gitbook/assets/image (1663).png" alt=""><figcaption></figcaption></figure>
+
+#### Validation  Report
+
+* Navigate back to the **User Story** section. Click on the **Validation Report** button
+
+<figure><img src="../../.gitbook/assets/image (1667).png" alt=""><figcaption></figcaption></figure>
+
+* The system generates the validation report based on the selected environment and displays the results.
+
+<figure><img src="../../.gitbook/assets/image (1662).png" alt=""><figcaption></figcaption></figure>
+
+**Pipeline Activity:**
+
+To view the pipeline activity:
+
+1. Navigate to the **User Story** section.
+2. Click on the **Pipeline Activity** button.
+
+<figure><img src="../../.gitbook/assets/image (1668).png" alt=""><figcaption></figcaption></figure>
+
+3. On clicking **Pipeline Activity**, you can view the **release pipeline execution status**, including the current stage, progress, and overall execution details.
 
 <figure><img src="../../.gitbook/assets/image (1123).png" alt=""><figcaption></figcaption></figure>
 
@@ -170,11 +202,17 @@ This option displays the execution history of the release pipeline, including de
 
 **Refresh**:&#x20;
 
-This button allows you to update the Pipeline Activity screen with the latest information. When you click on the Refresh button, it reloads the current status of the release pipeline to reflect any recent changes or updates.
+This button allows you to update the **Pipeline Activity** screen with the latest information. When you click on the Refresh button, it reloads the current status of the release pipeline to reflect any recent changes or updates.
 
 <figure><img src="../../.gitbook/assets/image (1128).png" alt=""><figcaption></figcaption></figure>
 
-### Release Audit Report&#x20;
+#### Dependencies ( Beta)
+
+The **Dependencies (Beta)** feature ensures that **User Stories are executed in the correct sequence during deployments**. This helps prevent **conflicts, execution blockers, and missed dependencies**, resulting in a smoother and more reliable deployment process.
+
+<figure><img src="../../.gitbook/assets/image (1670).png" alt=""><figcaption></figcaption></figure>
+
+#### Release Audit Report&#x20;
 
 You have the option to export the details as a **Release Audit Report**. The exported document provides comprehensive information to help track and communicate the progress of the user story.
 

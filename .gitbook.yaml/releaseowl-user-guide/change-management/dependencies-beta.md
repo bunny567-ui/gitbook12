@@ -1,4 +1,4 @@
-# User Story Dependency
+# Dependencies(Beta)
 
 ReleaseOwl includes a **User Story Dependency Check** as part of the validation process. This feature ensures that user stories follow the correct execution sequence during deployments — helping avoid conflicts, blockers, or missed dependencies.
 
@@ -19,9 +19,9 @@ To enable this functionality:
 
 To add or remove dependent user stories:
 
-1. Open the desired user story and click on the **Dependencies** option.
+1. Open the desired user story and click on the **Dependencies (Beta)** option.
 
-<figure><img src="../../.gitbook/assets/image (1303).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1669).png" alt=""><figcaption></figcaption></figure>
 
 2. Use the dropdown to select either **Depends On** or **Dependent On**, based on the type of relationship you want to define.
 
