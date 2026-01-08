@@ -100,7 +100,7 @@ The following fields appear:
 * **Enable Retrofit (Source)** – Enable this option if **transport retrofit** is required.
 * **Retrofit Domain Controller (Destination)** – Define the **destination retrofit domain controller**, if applicable.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **If Proxy Type: SAP Cloud Connector is selected**
 

@@ -14,7 +14,7 @@
 
 3. **Compare Versions** option is for comparing two different versions of an iFlow. Ensure to select two versions for comparing.<br>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Download**
 
