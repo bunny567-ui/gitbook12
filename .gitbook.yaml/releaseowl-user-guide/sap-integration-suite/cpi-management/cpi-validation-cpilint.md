@@ -52,3 +52,17 @@ This feature ensures that the correct user story is reused during a downgrade op
 4. The reused user story is displayed in the **Target User Story** column.
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+### CPI Governance
+
+The **CPI Rules** section in **ReleaseOwl** provides a centralized configuration interface to define and enforce governance policies and best practices for **SAP Cloud Platform Integration (CPI)** artifacts. These rules help ensure that integration artifacts comply with established **security**, **coding**, and **operational** standards across projects.
+
+#### Design Guidelines Report
+
+Under CPI governance, ReleaseOwl includes **CPI Design Guidelines** that are automatically validated as part of the **validation reports**. These guidelines consist of built-in rules and industry best practices designed to help developers build **high-quality**, **standardized**, and **maintainable** integration flows.
+
+* During the validation of **CPI Design Guidelines**, ReleaseOwl evaluates integration artifacts against built-in rules and best practices. These guidelines help developers create **high-quality**, **standardized**, and **maintainable** integration flows.
+* The validation generates compliance reports (**Compliant / Non-Compliant**) with defined **severity levels** (High, Medium, Low). The reports are accessible directly within the **Integration Flow editor** and provide **actionable insights**, including navigation to the affected steps.
+* Additionally, the reports reference recommended integration packages such as the **CPI Cloud Exemplar** to help developers learn and apply proven patterns for **performance, security, and efficiency**, ensuring consistent integration quality across projects.
+
+<figure><img src="../../../.gitbook/assets/image (1677).png" alt=""><figcaption></figcaption></figure>
