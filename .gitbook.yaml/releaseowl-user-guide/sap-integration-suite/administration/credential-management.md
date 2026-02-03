@@ -2,11 +2,26 @@
 
 This  section explains how to register and manage credentials required for connecting ReleaseOwl with Integration suite, SAP Cloud Identity Services and SAP Passport.
 
-### Step-by-Step Guide: Registering Credentials in ReleaseOwl
+## Prerequisites
+
+1. **Tenant Provisioning:** A ReleaseOwl Tenant/Subaccount must be provisioned for your organization by the **ReleaseOwl** team.&#x20;
+2. **User Access:**  Ensure that users have access to SAP BTP in any form possible. This could be through: &#x20;
+
+* SAP Identity Authentication Service (IAS) -> S-User ID&#x20;
+* Custom IDP&#x20;
+
+3. Specify the Email Id(s) to be added as **Tenant Admin:**&#x20;
+
+* ReleaseOwl will provide you with the URL to access the **ReleaseOwl Subaccount**.&#x20;
+* Provide the email ID(s) that should be added as **Tenant Admin**.&#x20;
+
+4. Grant access to the **ReleaseOwl** platform by adding users within the platform and ensure each user is assigned the appropriate user type such as admin or user.&#x20;
+
+## Process Integration Runtime Instance Creation &#x20;
 
 A **Process Integration Runtime (PIR)** instance is required in **SAP BTP** for ReleaseOwl to securely manage and deploy **CPI artifacts** across environments. The setup involves creating PIR instances with two different plans — **api** and **IFLOW** — followed by credential registration in ReleaseOwl.
 
-#### A. Create a PIR Instance with Plan: `api`
+### A. Create a PIR Instance with Plan: `api`
 
 This instance enables **programmatic access via API** for integration tasks.
 
@@ -35,7 +50,7 @@ This instance enables **programmatic access via API** for integration tasks.
 **Note:** The `api` plan provides programmatic access to the SAP Process Integration Runtime, allowing you to connect via APIs for integration tasks.
 {% endhint %}
 
-### Assign Required Roles
+#### Assign Required Roles
 
 In the **Parameters** step, assign the following roles to allow artifact management:
 
@@ -54,7 +69,7 @@ In the **Parameters** step, assign the following roles to allow artifact managem
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FQeZkcua5pYBQBiksaMC7%252Fimage.png%3Falt%3Dmedia%26token%3D476837b5-932e-4bed-bf70-61c9bbdf6797&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a4526b6f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-### Create Service Key (for `api` plan)
+#### Create Service Key (for `api` plan)
 
 After instance creation:
 
@@ -97,7 +112,7 @@ This is used for managing and deploying **integration artifacts (iFlows)**.
 
 <figure><img src="../../../.gitbook/assets/image (1042).png" alt=""><figcaption></figcaption></figure>
 
-### Create Service Key (for `IFLOW` plan)
+#### Create Service Key (for `IFLOW` plan)
 
 1. Navigate to **Instances and Subscriptions**.
 2. Locate the `IFLOW` instance.
@@ -111,11 +126,57 @@ This is used for managing and deploying **integration artifacts (iFlows)**.
 
 <figure><img src="../../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
 
-### Step 2: Register Credentials in ReleaseOwl
+## Web Authentication
 
-Credential registration enables secure communication between **ReleaseOwl** and **SAP CPI** environments.
+This section explains how to create and configure **Cloud Identity Services (IAS/IPS)** and **SAP Passport** in **SAP BTP**, and how to register them in **ReleaseOwl**.
 
-#### A. Register SAP CPI Credential (API Access)
+This setup is essential because **ReleaseOwl uses Cloud Identity Services for secure web-based authentication**, ensuring that users access deployments and environments through trusted identity providers, and **SAP Passport provides secure certificate-based authentication**, allowing ReleaseOwl to verify your identity.
+
+### A.  **Create Cloud Identity Service Instance**
+
+1. Navigate to **Instances & Subscriptions** in your SAP BTP subaccount.
+2. Click on the **Create** button.
+3. In the **Service** field, select **Cloud Identity Services**.
+4. In the **Plan** field, choose **Default** under **Subscriptions**, then click **Next**.
+5. Click **Create** to provision the instance.
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+#### **Activate Administrator Account**
+
+1. An **activation email** will be sent to the registered email address.
+2. Open the email and click **Activate Account**.
+3. Set your password and click on **Continue.**
+
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+
+### B. SAP Passport: Application and Configuration&#x20;
+
+1. Go to **SAP for Me**.
+2. Navigate to the **SAP Passport** page (reference link: [_SAP Passport_](https://me.sap.com/app/sappassport)).
+3. Enter your **S-User password** when prompted.
+4. Click on the **Apply for SAP Passport**.
+
+<figure><img src="../../../.gitbook/assets/image (1640).png" alt=""><figcaption></figcaption></figure>
+
+5. Give your SAP Passport **Password** in that box, then click on **Apply** button your SAP Passport will created.
+
+<figure><img src="../../../.gitbook/assets/image (1638).png" alt=""><figcaption></figcaption></figure>
+
+6. After successful creation, click **Download the SAP Passport**.
+7. The passport will be downloaded in **.pfx** format to your system.
+
+<figure><img src="../../../.gitbook/assets/image (1641).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+## Register Credentials in ReleaseOwl
+
+Credential registration enables secure communication between **ReleaseOwl**, **SAP CPI environments**, **SAP Cloud Identity Services**, and **SAP Passport**.
+
+### A. Register SAP CPI Credential (API Access)
 
 **✅ Steps:**
 
@@ -137,7 +198,7 @@ The credential will now appear in your list and can be used in pipelines and dep
 
 <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### B. Register SAP CPI Credential (IFLOW Access)
+### B. Register SAP CPI Credential (IFLOW Access)
 
 This step allows ReleaseOwl to securely interact with CPI for **artifact deployment and management** via the IFLOW plan.
 
@@ -155,31 +216,9 @@ This step allows ReleaseOwl to securely interact with CPI for **artifact deploym
 5. Click **Save**.
 6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for IFLOW deployments.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## **Registering SAP Cloud Identity Services Credentials**
-
-This section explains how to create and configure **Cloud Identity Services (IAS/IPS)** in SAP BTP and register them in ReleaseOwl. This setup is essential because ReleaseOwl uses Cloud Identity Services for secure web-based authentication, ensuring that users access deployments and environments through trusted identity providers.
-
-#### **Create Cloud Identity Service Instance**
-
-1. Navigate to **Instances & Subscriptions** in your SAP BTP subaccount.
-2. Click on the **Create** button.
-3. In the **Service** field, select **Cloud Identity Services**.
-4. In the **Plan** field, choose **Default** under **Subscriptions**, then click **Next**.
-5. Click **Create** to provision the instance.
-
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-#### **Activate Administrator Account**
-
-1. An **activation email** will be sent to the registered email address.
-2. Open the email and click **Activate Account**.
-3. Set your password and click on **Continue.**
-
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Credential Registration with ReleaseOwl
+### C. **SAP Cloud Identity Services**&#x20;
 
 1. Log in to **ReleaseOwl**.
 2. Go to **Administration → Credential Manager**.
@@ -195,27 +234,7 @@ This section explains how to create and configure **Cloud Identity Services (IAS
 
 <figure><img src="../../../.gitbook/assets/image (1647).png" alt=""><figcaption></figcaption></figure>
 
-## SAP Passport: Application and Configuration&#x20;
-
-This section explains how to apply for and configure SAP Passport, and how to register it in ReleaseOwl. This setup is essential because **SAP Passport** provides secure certificate-based authentication, allowing ReleaseOwl to verify your identity.&#x20;
-
-1. Go to **SAP for Me**.
-2. Navigate to the **SAP Passport** page (reference link: [_SAP Passport_](https://me.sap.com/app/sappassport)).
-3. Enter your **S-User password** when prompted.
-4. Click on the **Apply for SAP Passport**.
-
-<figure><img src="../../../.gitbook/assets/image (1640).png" alt=""><figcaption></figcaption></figure>
-
-5. Give your SAP Passport **Password** in that box, then click on **Apply** button your SAP Passport will created.
-
-<figure><img src="../../../.gitbook/assets/image (1638).png" alt=""><figcaption></figcaption></figure>
-
-6. After successful creation, click **Download the SAP Passport**.
-7. The passport will be downloaded in **.pfx** format to your system.
-
-<figure><img src="../../../.gitbook/assets/image (1641).png" alt=""><figcaption></figcaption></figure>
-
-### **Integrate SAP Passport With ReleaseOwl**&#x20;
+### D. SAP Passport
 
 1. Go to **Credential Manager** in ReleaseOwl.
 2. Click **Register Credential**.
@@ -234,4 +253,7 @@ This section explains how to apply for and configure SAP Passport, and how to re
 
 4. Save the credential.
 
-<figure><img src="../../../.gitbook/assets/image (1643).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
