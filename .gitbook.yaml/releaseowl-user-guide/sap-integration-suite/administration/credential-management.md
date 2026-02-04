@@ -260,7 +260,7 @@ Web Authentication is used for interactive and user-based access to SAP services
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. API Portal & Management <a href="#id-2.-api-portal-and-management" id="id-2.-api-portal-and-management"></a>
+### 2. API Portal & Management <a href="#id-2.-api-portal-and-management" id="id-2.-api-portal-and-management"></a>
 
 The API Portal & Management layer is responsible for managing credentials associated with external API consumers. It governs API exposure, access control, and security policies for third-party system integrations.
 
