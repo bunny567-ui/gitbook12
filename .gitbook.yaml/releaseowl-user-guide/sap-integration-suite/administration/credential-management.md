@@ -8,24 +8,22 @@ Credential Management is classified into two primary domains:
 
 ### 1. CPI (Cloud Platform Integration)
 
-The CPI domain manages credentials required for securing integration scenarios and internal SAP communications. It supports both system-level and user-level authentication mechanisms.
+The CPI domain manages credentials required for securing integration scenarios and internal SAP communications. It supports both system-level and user-level authentication mechanism
 
 #### a. Service Keys
 
-Service Keys are used for system-to-system authentication and are primarily consumed by CPI runtime components.
+Service Keys are used for **system-to-system authentication** and are primarily consumed by **CPI runtime components**. They enable secure, automated communication between ReleaseOwl and SAP Integration Suite without user interaction
 
-1. **PIR – API**\
-   Used to authenticate and authorize API-based integration endpoints exposed or consumed by CPI.
-2. **PIR – iFlow**\
-   Used to authenticate and securely execute integration flows (iFlows) within the CPI runtime.
+#### PIR – API (Process Integration Runtime – API Access)
 
-#### Service Keys: Process Integration Runtime
+A **Process Integration Runtime (PIR)** instance is required in SAP BTP for ReleaseOwl to securely manage and deploy CPI artifacts across environments. It is used to **authenticate and authorize API-based integration endpoints** that are exposed or consumed by **SAP Cloud Platform Integration (CPI)**.
 
-A **Process Integration Runtime (PIR)** instance is required in **SAP BTP** for **ReleaseOwl** to securely manage and deploy **CPI artifacts** across environments. The setup involves creating PIR instances with two different plans — **api** and **IFLOW** — followed by credential registration in **ReleaseOwl**.
+This setup involves creating PIR instances with two different service plans — **api** and **IFLOW** — followed by **credential registration in ReleaseOwl** for secure system integration.
 
-#### 1. Create a PIR Instance with Plan: `api`
+#### 1. Create PIR Instance (Plan: API)
 
-This instance enables **programmatic access via API** for integration tasks.
+**Purpose:**\
+This instance enables **programmatic access via APIs** for integration, automation, and artifact management tasks.
 
 #### **Steps:**
 
@@ -91,11 +89,9 @@ After instance creation:
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### Register Credentials in ReleaseOwl
+#### Register **SAP CPI Credential (API Access)** Credentials in ReleaseOwl
 
 Credential registration enables secure communication between **ReleaseOwl** and **SAP CPI environments.**&#x20;
-
-**Register SAP CPI Credential (API Access)**
 
 **✅ Steps:**
 
@@ -156,7 +152,7 @@ The IFlow plan service key is required to execute test cases from ReleaseOwl
 
 <figure><img src="../../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
 
-#### Register Credentials in ReleaseOwl
+#### Register **SAP CPI Credential (Iflow)**  in ReleaseOwl
 
 This step allows **ReleaseOwl** to securely interact with CPI for **artifact deployment and management** via the **IFLOW** plan.
 
@@ -201,7 +197,7 @@ Web Authentication is used for interactive and user-based access to SAP services
 
 <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Register Credentials in Releaseowl
+#### Register SAP Cloud Identity Service Credential in Releaseowl
 
 1. Log in to **ReleaseOwl**.
 2. Go to **Administration → Credential Manager**.
@@ -239,7 +235,7 @@ Web Authentication is used for interactive and user-based access to SAP services
 
 
 
-#### Register credentials in ReleaseOwl
+#### Register SAP Passport Credential in ReleaseOwl
 
 1. Go to **Credential Manager** in ReleaseOwl.
 2. Click **Register Credential**.
