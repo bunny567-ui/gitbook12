@@ -97,7 +97,7 @@ Here are the following steps to create the Cloud Identity Service instance:
 
 4. Click on the **Save** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure Conditional Authentication**
 

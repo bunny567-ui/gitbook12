@@ -15,7 +15,7 @@
 4. Click **Sync All Artifacts** to fetch and display the available CPI artifacts within the selected project.
 5. Navigate to **Build > SAP CPI Management** and click on the **actions** button to view **Sync Artifacts**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The **Modified By** and **Modified Date** information displayed in the ReleaseOwl dashboard is **sourced directly from SAP CPI** for supported artifact types such as **IFLOW**, **ODATAAPIPROVIDER**, **SOAPAPIPROVIDER**, and **RESTAPIPROVIDER**.
 * For artifact types like **SCRIPT\_COLLECTION**, **MESSAGE\_MAPPING**, and **VALUE\_MAPPING**, SAP CPI **does not provide these metadata fields via its public APIs**.
@@ -102,7 +102,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Switch to the **Project view** and select the **Release section**.
 * Navigate to Release Pipelines and click on **Create New Release Pipeline**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a Pipeline Name.
 * Add stages (e.g., QA, Prod) and assign tasks to each stage.
@@ -258,4 +258,4 @@ The **Attachments** section allows users to add reference links directly to thei
 * **Status Button**\
   If the status is shown as **"Suspended"**, it usually indicates that the pipeline or task has been paused or is awaiting a manual action.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
