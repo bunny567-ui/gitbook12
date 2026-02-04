@@ -14,11 +14,11 @@ The CPI domain manages credentials required for securing integration scenarios a
 
 Service Keys are used for **system-to-system authentication** and are primarily consumed by **CPI runtime components**. They enable secure, automated communication between ReleaseOwl and SAP Integration Suite without user interaction
 
-#### **PIR – API (Process Integration Runtime – API Access)**:&#x20;
+#### **Process Integration Runtime – API Access**:&#x20;
 
 A **Process Integration Runtime (PIR)** instance is required in SAP BTP for ReleaseOwl to securely manage and deploy CPI artifacts across environments. It is used to **authenticate and authorize API-based integration endpoints** that are exposed or consumed by **SAP Cloud Platform Integration (CPI)**.  This setup involves creating PIR instances with two different service plans — **api** and **IFLOW** — followed by **credential registration in ReleaseOwl** for secure system integration.
 
-#### 1. Create PIR Instance (Plan: API)
+#### 1.  Create a PIR Instance with Plan: `API`
 
 **Purpose:**\
 This instance enables **programmatic access via APIs** for integration, automation, and artifact management tasks.
@@ -152,7 +152,7 @@ The IFlow plan service key is required to execute test cases from ReleaseOwl
 
 #### Register **SAP CPI Credential (Iflow)**  in ReleaseOwl
 
-This step allows **ReleaseOwl** to securely interact with CPI for **artifact deployment and management** via the **IFLOW** plan.
+This step allows **ReleaseOwl** to securely interact with CPI for **artifact deployment** and **management** via the **IFLOW** plan.
 
 **Steps:**
 
