@@ -135,7 +135,7 @@ The credential will now appear in your list and can be used in pipelines and dep
 
 ### B. Create a PIR Instance with Plan: `IFLOW`
 
-This is used for managing and deploying **integration artifacts (iFlows)**.
+This is used for managing and testing **integration artifacts (iFlows)**.
 
 #### **✅ Steps:**
 
@@ -157,6 +157,8 @@ This is used for managing and deploying **integration artifacts (iFlows)**.
 <figure><img src="../../../.gitbook/assets/image (1042).png" alt=""><figcaption></figcaption></figure>
 
 #### Create Service Key (for `IFLOW` plan)
+
+The IFlow plan service key is required to execute test cases from ReleaseOwl
 
 1. Navigate to **Instances and Subscriptions**.
 2. Locate the `IFLOW` instance.

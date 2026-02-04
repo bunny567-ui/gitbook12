@@ -4,8 +4,8 @@ To register the SAP Integration Environment, you must first register the CPI cre
 
 ### CPI Environment Registration <a href="#pdf-page-della43ge2ynalx23r7p-cpi-environment-registration" id="pdf-page-della43ge2ynalx23r7p-cpi-environment-registration"></a>
 
-1. Navigate to Environments from the Administration menu.
-2. Select CPI environment and click on register CPI environment.
+1. Navigate to **Environments** from the **Administration** menu.
+2. Select CPI environment and click on register **CPI** environment.
 3. Provide the following details:
 
 | **Field**                               | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -63,7 +63,7 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 * For the **IDP Auth Email Address/Group Name** field, enter the **exact value that your Identity Provider sends in the SAML/OIDC assertion** for the user.
 * This value must match the **group name or email address defined in the&#x20;**_**Value**_**&#x20;field** of the **User Groups** or **Attribute Mappings** configuration in your IDP.\
   ReleaseOwl (or SAP BTP) uses this returned attribute value to validate user authorization.
-* Refer to the _Assign Role Collections_ section to ensure that the mapped group/attribute is correctly linked to the required role collections.
+* Refer to the _**Assign Role Collections**_**&#x20;section** to ensure that the mapped group/attribute is correctly linked to the required role collections.
 
 <figure><img src="../../../.gitbook/assets/image (1652).png" alt=""><figcaption></figcaption></figure>
 
