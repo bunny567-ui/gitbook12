@@ -252,3 +252,6 @@ ratesaptms/webhook/tenant/<tenant_id>/project/<project_id>/calm/pmsint/<integrat
 4\. Click Save to complete the subscription setup.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1636).png" alt=""><figcaption></figcaption></figure>
+
+* In SAP cloud ALM, post creation of subscription and webhook in external API management, opt the same subscription in your project in the subscriptions tab for the feature item type.&#x20;
+* Once your SAP Cloud ALM feature is moved to "**In Testing**" status, then only RO user story will be automatically promoted through release pipeline with the help of webhook.
