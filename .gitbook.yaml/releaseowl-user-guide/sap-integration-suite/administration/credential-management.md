@@ -260,3 +260,78 @@ Web Authentication is used for interactive and user-based access to SAP services
 The API Portal & Management layer is responsible for managing credentials associated with external API consumers. It governs API exposure, access control, and security policies for third-party system integrations.
 
 * **External API Credentials** Used to authenticate external systems consuming APIs, typically via OAuth client credentials, API keys, or access tokens.
+
+### Create new instance : API Management, API Portal
+
+1. Go to the **SAP BTP Cockpit** and log in with your credentials.
+2. In the **SAP BTP Cockpit**, navigate to **Instances and Subscriptions**.
+3. Click on the **Create** button.
+4.  Fill in the necessary details as follows:
+
+    * **Service**: API Management, API Portal
+    * **Plan**: `apiportal-apiaccess`
+    * **Runtime Environment**: Cloud Foundry
+    * **Space**: Dev
+    * **Instance Name**: Enter a name of your choice
+    * Click "**Next**".
+
+    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* In the JSON format, enter:
+
+```json
+{ "role": "APIPortal.Administrator" }
+```
+
+* Click **"Next".**
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Click **"Create"**.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Create APIPortal-APIAccess Plan Service key
+
+1. After the instance is created, click the **three-dot menu (⋮)** next to it.
+2. Select **"Create Service Key"**.
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png" alt=""><figcaption></figcaption></figure>
+
+3. Enter a **name** for the key (e.g., `api-access-key`) and click **Create**.
+4. Once created, click on the key to view credentials like `clientid`, `clientsecret`, and `url` — used for API authentication.
+
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Step-by-Step Guide: Registering Credentials in ReleaseOwl
+
+1. From the Administration menu, go to **Credential Manager**.
+2. Click **Register Credential**.
+
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+3. **Credential Name**: Enter any identifiable name for the credential.
+
+* **Credential Type**: Select **API Management**.
+* **Scope** – Select the scope of the credential:
+  * **Global** – Visible to all users.
+  * **Private** – Visible only to the user who created it.
+
+4. **Authentication Type:** To register your credentials, you can choose one of the following methods:
+
+**Option A: Upload Credentials File** :&#x20;
+
+This is the recommended and easiest method.
+
+1. Click **Browse**.
+2. Select and upload the **credentials file** downloaded from the **SAP BTP Cockpit (API Management Service)**.
+3. Once uploaded, the system will automatically extract and populate the required fields.
+
+**Option B: Manual Entry**
+
+Use this option if you prefer to enter the credentials manually.
+
+1. Select **Manual Entry** as the authentication type.
+2. Provide the required details from the **API service key** created in **SAP BTP Cockpit**.
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
