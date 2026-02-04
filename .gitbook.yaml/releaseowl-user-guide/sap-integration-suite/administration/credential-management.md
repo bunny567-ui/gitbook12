@@ -8,17 +8,15 @@ Credential Management is classified into two primary domains:
 
 ### 1. CPI (Cloud Platform Integration)
 
-The CPI domain manages credentials required for securing integration scenarios and internal SAP communications. It supports both system-level and user-level authentication mechanism
+The CPI domain manages credentials required for securing integration scenarios and internal SAP communications. It supports both system-level and user-level authentication mechanism.
 
 #### a. Service Keys
 
 Service Keys are used for **system-to-system authentication** and are primarily consumed by **CPI runtime components**. They enable secure, automated communication between ReleaseOwl and SAP Integration Suite without user interaction
 
-#### PIR – API (Process Integration Runtime – API Access)
+#### **PIR – API (Process Integration Runtime – API Access)**:&#x20;
 
-A **Process Integration Runtime (PIR)** instance is required in SAP BTP for ReleaseOwl to securely manage and deploy CPI artifacts across environments. It is used to **authenticate and authorize API-based integration endpoints** that are exposed or consumed by **SAP Cloud Platform Integration (CPI)**.
-
-This setup involves creating PIR instances with two different service plans — **api** and **IFLOW** — followed by **credential registration in ReleaseOwl** for secure system integration.
+A **Process Integration Runtime (PIR)** instance is required in SAP BTP for ReleaseOwl to securely manage and deploy CPI artifacts across environments. It is used to **authenticate and authorize API-based integration endpoints** that are exposed or consumed by **SAP Cloud Platform Integration (CPI)**.  This setup involves creating PIR instances with two different service plans — **api** and **IFLOW** — followed by **credential registration in ReleaseOwl** for secure system integration.
 
 #### 1. Create PIR Instance (Plan: API)
 
@@ -89,7 +87,7 @@ After instance creation:
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### Register **SAP CPI Credential (API Access)** Credentials in ReleaseOwl
+#### Register **SAP CPI (API Access)** Credential in ReleaseOwl
 
 Credential registration enables secure communication between **ReleaseOwl** and **SAP CPI environments.**&#x20;
 
@@ -176,10 +174,9 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 
 Web Authentication is used for interactive and user-based access to SAP services and applications.
 
-1. **SAP Cloud Identity Services – Identity Authentication (IAS) Instance :** Acts as the Identity Provider (IdP) for SAP Integration Suite and is used to authenticate users accessing the platform. It provides browser-based authentication and Single Sign-On (SSO) using the OpenID Connect (OIDC) protocol.
-2. **SAP Passport:** Enables secure authentication and establishes trusted communication between SAP internal systems and SAP Integration Suite. It ensures system-to-system trust and protects data exchanged across integrated SAP landscapes.
+**SAP Cloud Identity Services – Identity Authentication (IAS) Instance :** Acts as the Identity Provider (IdP) for SAP Integration Suite and is used to authenticate users accessing the platform. It provides browser-based authentication and Single Sign-On (SSO) using the OpenID Connect (OIDC) protocol.
 
-#### 1.  SAP Cloud Identity Service: Create IAS Instance
+**SAP Cloud Identity Service: Create IAS Instance**
 
 1. Navigate to **Instances & Subscriptions** in your SAP BTP subaccount.
 2. Click on the **Create** button.
@@ -213,7 +210,9 @@ Web Authentication is used for interactive and user-based access to SAP services
 
 <figure><img src="../../../.gitbook/assets/image (1647).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. SAP Passport:  Steps to Create SAP Passport
+2\. **SAP Passport:**  It enables secure authentication and establishes trusted communication between SAP internal systems and SAP Integration Suite. It ensures system-to-system trust and protects data exchanged across integrated SAP landscapes.
+
+#### Steps to Create SAP Passport
 
 1. Go to **SAP for Me**.
 2. Navigate to the **SAP Passport** page (reference link: [_SAP Passport_](https://me.sap.com/app/sappassport)).
