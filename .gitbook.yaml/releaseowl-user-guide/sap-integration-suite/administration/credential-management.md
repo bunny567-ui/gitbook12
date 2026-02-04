@@ -261,7 +261,7 @@ The API Portal & Management layer is responsible for managing credentials associ
 
 * **External API Credentials** Used to authenticate external systems consuming APIs, typically via OAuth client credentials, API keys, or access tokens.
 
-### Create new instance : API Management, API Portal
+#### Create new instance : API Management, API Portal
 
 1. Go to the **SAP BTP Cockpit** and log in with your credentials.
 2. In the **SAP BTP Cockpit**, navigate to **Instances and Subscriptions**.
