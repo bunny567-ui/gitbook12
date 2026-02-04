@@ -1,6 +1,6 @@
 # Credential Management
 
-This section explains how to register and manage credentials required for connecting ReleaseOwl with Integration suite, SAP Cloud Identity Services and SAP Passport.
+This section explains how to register and manage credentials required for connecting **ReleaseOwl** with Integration suite, SAP Cloud Identity Services and SAP Passport.
 
 ## Credential Management
 
@@ -14,32 +14,16 @@ The CPI domain manages credentials required for securing integration scenarios a
 
 Service Keys are used for system-to-system authentication and are primarily consumed by CPI runtime components.
 
-* **PIR – API**\
-  Used to authenticate and authorize API-based integration endpoints exposed or consumed by CPI.
-* **PIR – iFlow**\
-  Used to authenticate and securely execute integration flows (iFlows) within the CPI runtime.
+1. **PIR – API**\
+   Used to authenticate and authorize API-based integration endpoints exposed or consumed by CPI.
+2. **PIR – iFlow**\
+   Used to authenticate and securely execute integration flows (iFlows) within the CPI runtime.
 
-#### b. Web Authentication
+#### Service Keys: Process Integration Runtime
 
-Web Authentication is used for interactive and user-based access to SAP services and applications.
+A **Process Integration Runtime (PIR)** instance is required in **SAP BTP** for **ReleaseOwl** to securely manage and deploy **CPI artifacts** across environments. The setup involves creating PIR instances with two different plans — **api** and **IFLOW** — followed by credential registration in **ReleaseOwl**.
 
-* **SAP Passport**\
-  Enables secure authentication and trusted communication between SAP internal systems.
-* **SAP Cloud Identity Services – Identity Authentication (IAS) Instance**\
-  Provides centralized identity management and browser-based authentication using standards such as SAML 2.0, OAuth 2.0, and OpenID Connect.
-
-### 2. API Portal & Management
-
-The API Portal & Management layer is responsible for managing credentials associated with external API consumers. It governs API exposure, access control, and security policies for third-party system integrations.
-
-* **External API Credentials**\
-  Used to authenticate external systems consuming APIs, typically via OAuth client credentials, API keys, or access tokens.
-
-## Service Keys: Process Integration Runtime
-
-A **Process Integration Runtime (PIR)** instance is required in **SAP BTP** for ReleaseOwl to securely manage and deploy **CPI artifacts** across environments. The setup involves creating PIR instances with two different plans — **api** and **IFLOW** — followed by credential registration in ReleaseOwl.
-
-### A. Create a PIR Instance with Plan: `api`
+#### 1. Create a PIR Instance with Plan: `api`
 
 This instance enables **programmatic access via API** for integration tasks.
 
@@ -133,7 +117,7 @@ The credential will now appear in your list and can be used in pipelines and dep
 
 <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### B. Create a PIR Instance with Plan: `IFLOW`
+#### 2. Create a PIR Instance with Plan: `IFLOW`
 
 This is used for managing and testing **integration artifacts (iFlows)**.
 
@@ -192,24 +176,14 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Web Authentication
+#### **b. Web Authentication**
 
-This section explains how to create and configure **Cloud Identity Services (IAS/IPS)** and **SAP Passport** in **SAP BTP**, and how to register them in **ReleaseOwl**.
+Web Authentication is used for interactive and user-based access to SAP services and applications.
 
-#### Web Authentication in SAP Integration Suite
+1. **SAP Cloud Identity Services – Identity Authentication (IAS) Instance :** Acts as the Identity Provider (IdP) for SAP Integration Suite and is used to authenticate users accessing the platform. It provides browser-based authentication and Single Sign-On (SSO) using the OpenID Connect (OIDC) protocol.
+2. **SAP Passport:** Enables secure authentication and establishes trusted communication between SAP internal systems and SAP Integration Suite. It ensures system-to-system trust and protects data exchanged across integrated SAP landscapes.
 
-Web Authentication is used in SAP Integration Suite for browser-based user authentication. It is used to perform operations such as updating Value Mappings and managing (sync, upload, deploy) SOAP API, REST API and OData APIs.
-
-#### Why This Setup Is Required
-
-This configuration is essential for secure access and identity verification:
-
-* **SAP Cloud Identity Services – Identity Authentication (IAS):** It acts as the **Identity Provider** (IdP) for **SAP Integration Suite** and is used to authenticate users accessing the platform. It provides browser-based authentication and Single Sign-On (SSO) using the **OpenID Connect** (OIDC) protocol.
-* **SAP Passport  :** It enables secure authentication and establishes trusted communication between SAP internal systems and SAP Integration Suite. It ensures system-to-system trust and protects data exchanged across integrated SAP landscapes.
-
-Together, these components ensure a secure, compliant, and trusted authentication mechanism between **ReleaseOwl**, **SAP BTP**, and **SAP Integration Suite**.
-
-### A.  **Create Cloud Identity Service Instance**
+#### 1.  SAP Cloud Identity Service: Create IAS Instance
 
 1. Navigate to **Instances & Subscriptions** in your SAP BTP subaccount.
 2. Click on the **Create** button.
@@ -243,7 +217,7 @@ Together, these components ensure a secure, compliant, and trusted authenticatio
 
 <figure><img src="../../../.gitbook/assets/image (1647).png" alt=""><figcaption></figcaption></figure>
 
-### B. SAP Passport: Application and Configuration&#x20;
+#### 2. SAP Passport:  Steps to Create SAP Passport
 
 1. Go to **SAP for Me**.
 2. Navigate to the **SAP Passport** page (reference link: [_SAP Passport_](https://me.sap.com/app/sappassport)).
@@ -286,5 +260,8 @@ Together, these components ensure a secure, compliant, and trusted authenticatio
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+#### 2. API Portal & Management <a href="#id-2.-api-portal-and-management" id="id-2.-api-portal-and-management"></a>
 
+The API Portal & Management layer is responsible for managing credentials associated with external API consumers. It governs API exposure, access control, and security policies for third-party system integrations.
 
+* **External API Credentials** Used to authenticate external systems consuming APIs, typically via OAuth client credentials, API keys, or access tokens.
