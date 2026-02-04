@@ -105,7 +105,7 @@ After instance creation:
 * **Client Secret**
 * **Token URL**
 
-<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252F1XSUCq1nxBsbL8WaXGIo%252Fimage.png%3Falt%3Dmedia%26token%3Dd2feabe3-64ba-4ef6-8274-c68fe9b874b7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2b1c4184&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Register Credentials in ReleaseOwl
 
@@ -196,7 +196,18 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 
 This section explains how to create and configure **Cloud Identity Services (IAS/IPS)** and **SAP Passport** in **SAP BTP**, and how to register them in **ReleaseOwl**.
 
-This setup is essential because **ReleaseOwl uses Cloud Identity Services for secure web-based authentication**, ensuring that users access deployments and environments through trusted identity providers, and **SAP Passport provides secure certificate-based authentication**, allowing ReleaseOwl to verify your identity.
+#### Web Authentication in SAP Integration Suite
+
+Web Authentication is used in SAP Integration Suite for browser-based user authentication. It is used to perform operations such as updating Value Mappings and managing (sync, upload, deploy) SOAP API, REST API and OData APIs.
+
+#### Why This Setup Is Required
+
+This configuration is essential for secure access and identity verification:
+
+* **SAP Cloud Identity Services – Identity Authentication (IAS):** It acts as the **Identity Provider** (IdP) for **SAP Integration Suite** and is used to authenticate users accessing the platform. It provides browser-based authentication and Single Sign-On (SSO) using the **OpenID Connect** (OIDC) protocol.
+* **SAP Passport  :** It enables secure authentication and establishes trusted communication between SAP internal systems and SAP Integration Suite. It ensures system-to-system trust and protects data exchanged across integrated SAP landscapes.
+
+Together, these components ensure a secure, compliant, and trusted authentication mechanism between **ReleaseOwl**, **SAP BTP**, and **SAP Integration Suite**.
 
 ### A.  **Create Cloud Identity Service Instance**
 
@@ -273,7 +284,7 @@ This setup is essential because **ReleaseOwl uses Cloud Identity Services for se
 
 4. Save the credential.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

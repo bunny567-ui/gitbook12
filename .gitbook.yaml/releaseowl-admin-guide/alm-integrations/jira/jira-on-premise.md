@@ -53,7 +53,7 @@ Follow the steps below to register your Jira credentials in ReleaseOwl:
 
 1. Select **Applications** from the Jira administration menu.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **Applications** section, click **Application Links**, then click **Create link**.
 
