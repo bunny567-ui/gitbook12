@@ -72,10 +72,6 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-**Note :**&#x20;
-{% endhint %}
-
 ### Environments
 
 1. In the **Project Settings** page, navigate to the **Environments** tab.

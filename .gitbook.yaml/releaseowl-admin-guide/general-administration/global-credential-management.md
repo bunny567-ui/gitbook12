@@ -1,6 +1,6 @@
 # Global Credential Management
 
-There are several third-party sites and applications that can interact with Release Owl, like artifact repositories, cloud-based storage systems, services etc. The admin can configure credentials in the application for use by Release Owl. Once the user adds/configures the credentials in Release Owl, the credentials can be used by Pipeline projects to interact with the 3rd party applications.
+There are several third-party sites and applications that can interact with **ReleaseOwl**, like artifact repositories, cloud-based storage systems, services etc. The admin can configure credentials in the application for use by Release Owl. Once the user adds/configures the credentials in Release Owl, the credentials can be used by Pipeline projects to interact with the 3rd party applications.
 
 ## **Registering the Credential Manager**
 

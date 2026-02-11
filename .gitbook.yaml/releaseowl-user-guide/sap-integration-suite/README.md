@@ -25,5 +25,5 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Integration (CPI)** to enable 
 * Grant access to the ReleaseOwl platform by **adding users within the platform**.
 * Assign each user an appropriate **user role**, such as:
   * **Admin** – for full administrative access
-  * **User** – for standard operational acces
+  * **User** – for standard operational access
 

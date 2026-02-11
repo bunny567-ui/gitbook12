@@ -46,6 +46,10 @@ Once you have the credentials, register them in ReleaseOwl to enable integration
 3. Paste the copied **Client ID**, **Client Secret**, and **URL** into the respective fields.
 4. Click **Save** to register the credentials successfully.
 
+{% hint style="info" %}
+**Note :** For the **Token URL**, append "**/oauth/token**" to the **URL** obtained from the service key.
+{% endhint %}
+
 <figure><img src="../../.gitbook/assets/image (1601).png" alt=""><figcaption></figcaption></figure>
 
 ## SAP Cloud ALM Project Integration
