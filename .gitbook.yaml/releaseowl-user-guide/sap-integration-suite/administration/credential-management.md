@@ -1,10 +1,6 @@
 # Credential Management
 
-This section explains how to register and manage credentials required for connecting **ReleaseOwl** with Integration suite, SAP Cloud Identity Services and SAP Passport.
-
-## Credential Management
-
-This section explains how to configure and manage credentials required for integrating **ReleaseOwl with SAP Cloud Platform Integration (CPI)**. Credential management ensures secure communication between ReleaseOwl and SAP systems using both **system-level** and \*\*user-level authentication mechanisms.
+This section explains how to configure and manage credentials required for integrating **ReleaseOwl with SAP Cloud Platform Integration (CPI)**. Credential management ensures secure communication between ReleaseOwl and SAP systems using both **system-level** and **user-level authentication mechanisms**.
 
 ## CPI (Cloud Platform Integration)
 
