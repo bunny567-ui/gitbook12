@@ -4,19 +4,23 @@ This section explains how to register and manage credentials required for connec
 
 ## Credential Management
 
-Credential Management is classified into two primary domains:
+This section explains how to configure and manage credentials required for integrating **ReleaseOwl with SAP Cloud Platform Integration (CPI)**. Credential management ensures secure communication between ReleaseOwl and SAP systems using both **system-level** and \*\*user-level authentication mechanisms.
 
-### 1. CPI (Cloud Platform Integration)
+## CPI (Cloud Platform Integration)
 
-The CPI domain manages credentials required for securing integration scenarios and internal SAP communications. It supports both system-level and user-level authentication mechanism.
+The CPI domain manages credentials required for securing integration scenarios and internal SAP communications. It supports:
 
-#### a. Service Keys
+* **System-to-system authentication** (Service Keys)
+* **User-based authentication** (Web Authentication)
 
-Service Keys are used for **system-to-system authentication** and are primarily consumed by **CPI runtime components**. They enable secure, automated communication between ReleaseOwl and SAP Integration Suite without user interaction
+### Service Keys (System-to-System Authentication)
 
-#### **Process Integration Runtime – API Access**:&#x20;
+Service Keys are used for automated, system-level authentication. They allow ReleaseOwl to communicate securely with SAP Integration Suite without any user interaction.
 
-A **Process Integration Runtime (PIR)** instance is required in SAP BTP for ReleaseOwl to securely manage and deploy CPI artifacts across environments. It is used to **authenticate and authorize API-based integration endpoints** that are exposed or consumed by **SAP Cloud Platform Integration (CPI)**.  This setup involves creating PIR instances with two different service plans — **api** and **IFLOW** — followed by **credential registration in ReleaseOwl** for secure system integration.
+ReleaseOwl requires a **Process Integration Runtime (PIR)** instance in SAP BTP to manage and deploy CPI artifacts. Two PIR service plans are required:
+
+* **API Plan** – for programmatic API access
+* **IFLOW Plan** – for managing and testing iFlows
 
 #### 1.  Create a PIR Instance with Plan: `API`
 
