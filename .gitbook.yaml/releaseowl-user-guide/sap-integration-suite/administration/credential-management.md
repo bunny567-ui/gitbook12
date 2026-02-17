@@ -85,7 +85,7 @@ After instance creation:
 * **Client Secret**
 * **Token URL**
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Register **SAP CPI (API Access)** Credential in ReleaseOwl
 
@@ -168,7 +168,7 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 5. Click **Save**.
 6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for **IFLOW** deployments.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Web Authentication**
 
@@ -204,13 +204,30 @@ It acts as the Identity Provider (IdP) for SAP Integration Suite and is used to 
 
 <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. Enter the following information:
-   * **Credential Type:** SAP Cloud Identity
-   * **User Name:** Cloud Identity Service Username
-   * **Password:** Cloud Identity Service Password
-5. Click **Save** to complete the credential registration.
+4.  Enter the following information:
 
-<figure><img src="../../../.gitbook/assets/image (1647).png" alt=""><figcaption></figcaption></figure>
+    * **Credential Type:** SAP IS Web Authentication
+    * **User Name:** Cloud Identity Service Username
+    * **Password:** Cloud Identity Service Password
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+5. **Idp Metadata URL**: To obtain the **IdP Metadata URL**, follow these steps:
+
+* Log in to **SAP Cloud Identity Services**.
+* Go to **Applications & Resources**.
+* Select **OpenID Connect Configuration**.
+* Click on **Show Discovery Endpoint**.
+* You will be redirected to a new page.
+* Copy the **URL** from the browser address bar — this is your **IdP Metadata URL**.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+6. Paste the copied URL into the **IdP Metadata URL** field in ReleaseOwl.
+7. Click **Save**.
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. **SAP Passport:** &#x20;
 
@@ -257,5 +274,5 @@ It enables secure authentication and establishes trusted communication between S
 
 4. Save the credential.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 

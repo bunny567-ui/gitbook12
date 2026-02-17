@@ -22,17 +22,17 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
 * Navigate to **Security → Role Collections** in the SAP BTP Cockpit.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Create** and enter the **Role Collection Name**. Confirm by clicking **Create**.
 * Once the role collection is created, select it from the list and click **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Under the **Roles** section, click **Add Role** and assign the required roles. Add the **Content Developer** role.
 * Click **Save** to update the role collection.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Steps to Create a Custom Type System** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system" id="pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system"></a>
 
