@@ -1,6 +1,8 @@
 # Datasphere Management
 
-### **Adding SAP Datasphere to the Project:** <a href="#pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project" id="pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project"></a>
+This section describes the process of configuring and managing **Datasphere Management** environments in **ReleaseOwl**.
+
+### **Adding SAP Datasphere to the Project** <a href="#pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project" id="pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project"></a>
 
 The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
 
