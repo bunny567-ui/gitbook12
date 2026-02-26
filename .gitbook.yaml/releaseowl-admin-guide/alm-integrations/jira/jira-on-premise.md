@@ -20,7 +20,7 @@ The Jira user account configured in ReleaseOwl must have the following permissio
 * **Browse Users**
 * **Create Shared Objects** (optional, but recommended for shared filters and boards)
 
-### **3. Register Jira On-Premise Credential (Basic Authentication)**
+### **3. Register Jira On-Premise Credential ( Basic Authentication)**
 
 Follow the steps below to register your Jira credentials in ReleaseOwl:
 
@@ -40,14 +40,18 @@ Follow the steps below to register your Jira credentials in ReleaseOwl:
   * **Private** – Visible only to the user who created it.
 * **Username:** Provide the username associated with the credential (e.g., Jira account)
 * **Password/API Token**: Enter the password or API token for authentication with the chosen system.
-* **Jira URL:** `https://jira-dev.releaseowl.com`
+* **Jira URL:** Paste your local or organization-specific Jira URL
 * **Proxy Type:** None
 
 5. Click **Save** to complete the credential registration.
 
 <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **3. Register Jira On-Premise Credential (OAuth Authentication)**
+{% hint style="info" %}
+Note: Don't paste bearer token in the password/ api as it won't work in the basic authentication
+{% endhint %}
+
+### **4. Register Jira On-Premise Credential (OAuth Authentication)**
 
 Follow the steps below to register your Jira credentials in ReleaseOwl:
 
@@ -57,7 +61,7 @@ Follow the steps below to register your Jira credentials in ReleaseOwl:
 
 2. In the **Applications** section, click **Application Links**, then click **Create link**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. For **Application type**, select **External Application**.
 4. For **Direction**, select **Incoming**, and then click **Continue**.
@@ -93,12 +97,58 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
   * **Global** – Visible to all users.
   * **Private** – Visible only to the user who created it.
 * **Client ID and Client Secret:** Paste the Client ID and Client Secret obtained from the OAuth2 integration you created in the Atlassian Developer Console.
-* **Jira URL**:  `https://4c896a136ca8.ngrok-free.app`
+* **Jira URL**:  Paste your local or organization-specific Jira URL
 * **Proxy Type**: Select None
 
 5. Click **Save** to register the credential.
 
 <figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+
+### **5. Register Jira On-Premise Credential ( Bearer Token)**
+
+* Log in to your Jira account.
+* Navigate to your **Profile** in Jira.
+
+<figure><img src="../../../.gitbook/assets/image (1689).png" alt=""><figcaption></figcaption></figure>
+
+* Click on **Create Token**.
+
+<figure><img src="../../../.gitbook/assets/image (1690).png" alt=""><figcaption></figcaption></figure>
+
+* Provide the required details (such as token name and expiration, if applicable).
+* Click **Create** to generate the token.
+
+<figure><img src="../../../.gitbook/assets/image (1691).png" alt=""><figcaption></figcaption></figure>
+
+* Copy the generated **Bearer Token** for use in ReleaseOwl credential configuration
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### Jira Bearer Token Integration with ReleaseOwl
+
+To integrate Jira with ReleaseOwl for issue tracking and traceability, follow the steps below to register Jira credentials and set up project integration.
+
+1. Go to  the ReleaseOwl Dashboard.
+2. Navigate to **Administration**, then select **Credential Manager**.
+3. Click on **Register Credential**.
+
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+4. Fill out the credential form with the following details:
+
+* **Credential Name:** Enter your preferred name for the credential.
+* **Credential Type**: Jira
+* **Authentication Type**: Select **Bearer Token**.
+* **Scope** – Select the scope of the credential:
+  * **Global** – Visible to all users.
+  * **Private** – Visible only to the user who created it.
+* **Token:** Paste the copied **Bearer Token**.&#x20;
+* **Jira URL**:  Paste your local or organization-specific Jira URL
+* **Proxy Type**: Select **None**
+
+5. Click **Save** to register the credential.
+
+<figure><img src="../../../.gitbook/assets/image (1688).png" alt=""><figcaption></figcaption></figure>
 
 ## **Jira Project Integration**
 
@@ -110,7 +160,7 @@ To link a Jira project with a ReleaseOwl project, follow the steps below:
 * Go to **Project Settings**.
 * In Project Settings, navigate to **ALM Integrations** and click **Add**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. Fill in the Required Details**
 

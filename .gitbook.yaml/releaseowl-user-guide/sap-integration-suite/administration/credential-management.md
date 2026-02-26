@@ -168,7 +168,7 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 5. Click **Save**.
 6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for **IFLOW** deployments.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Web Authentication**
 
@@ -226,7 +226,7 @@ It acts as the Identity Provider (IdP) for SAP Integration Suite and is used to 
 * You will be redirected to a new page.
 * Copy the **URL** from the browser address bar — this is your **IdP Metadata URL**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Paste the copied URL into the **IdP Metadata URL** field in ReleaseOwl.
 7. Click **Save**.
@@ -289,11 +289,11 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 1. Create your Ping Identity account using the provided[ URL](https://www.pingidentity.com/en/try-ping.html) and log in to **PingOne**.
 2. From the left-hand menu, navigate to **Applications**. In the Applications section, click on the **+ (Add Application)** button.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a name of your choice for the application and select the application type based on your requirement, such as **SAML Application** or **OIDC Web App**. For this setup, select **OIDC Web App** and click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Toggle the application **ON** and navigate to the **Attribute Mappings** tab.
 
