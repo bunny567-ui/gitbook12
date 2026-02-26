@@ -48,7 +48,7 @@ Follow the steps below to register your Jira credentials in ReleaseOwl:
 <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Note: Don't paste bearer token in the password/ api as it won't work in the basic authentication
+**Note:** Do not paste the Bearer Token in the Password/API field under Basic Authentication, as it will not work. Always select **Bearer Token** as the authentication type.
 {% endhint %}
 
 ### **4. Register Jira On-Premise Credential (OAuth Authentication)**
