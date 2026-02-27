@@ -78,7 +78,7 @@ Follow the steps below to register your Jira credentials in ReleaseOwl:
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Registering Jira in ReleaseOwl Dashboard**
+#### **Registering Jira in ReleaseOwl Dashboard**
 
 To integrate Jira with ReleaseOwl for issue tracking and traceability, follow the steps below to register Jira credentials and set up project integration.
 
