@@ -1,4 +1,8 @@
-# SAP BTP ABAP Environment (ABAP Cloud) – Configuration Guide
+---
+hidden: true
+---
+
+# SAP ABAP Cloud
 
 This document outlines the configuration steps required to set up the **SAP BTP ABAP Environment (ABAP Cloud)** for integration with the ReleaseOwl dashboard. It includes the creation of the service instance, Service Key, Communication Arrangements, and Software Components
 
