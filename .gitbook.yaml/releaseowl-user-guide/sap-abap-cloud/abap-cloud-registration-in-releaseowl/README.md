@@ -1,5 +1,7 @@
 # ABAP Cloud Registration in ReleaseOwl
 
+This section describes the configuration of credentials and environment registrations in ReleaseOwl required for integrating SAP BTP and SAP BTP ABAP Environment (ABAP Cloud).
+
 ### Register SAP Cloud Credential in ReleaseOwl
 
 1. Log in to the **ReleaseOwl Dashboard**.
