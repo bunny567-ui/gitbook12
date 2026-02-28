@@ -15,12 +15,12 @@
 4. Click **Sync All Artifacts** to fetch and display the available CPI artifacts within the selected project.
 5. Navigate to **Build > SAP CPI Management** and click on the **actions** button to view **Sync Artifacts**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The **Modified By** and **Modified Date** information displayed in the ReleaseOwl dashboard is **sourced directly from SAP CPI** for supported artifact types such as **IFLOW**, **ODATAAPIPROVIDER**, **SOAPAPIPROVIDER**, and **RESTAPIPROVIDER**.
 * For artifact types like **SCRIPT\_COLLECTION**, **MESSAGE\_MAPPING**, and **VALUE\_MAPPING**, SAP CPI **does not provide these metadata fields via its public APIs**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * In such cases, ReleaseOwl **derives and updates the Modified By and Modified Date based on ReleaseOwl activity and processing timestamps**, reflecting when the artifact was last handled or updated within ReleaseOwl rather than the original CPI metadata.
 
@@ -30,7 +30,7 @@
 7. If there are changes made to the existing artifacts, the changes will also be updated.
 8. Click **Sync Artifacts** to sync the CPI artifacts.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sync History**
 
@@ -51,7 +51,7 @@ You can sort the artifacts as per your convenience. To sort them:
 
 Multiple actions can be performed on an artifact, based on the type of artifact. These actions include – View Test Cases, Comment , Configure, Deployment History, Versions and Download.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Manage Environment Wide IFlow Configurations**
 
@@ -102,12 +102,12 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Switch to the **Project view** and select the **Release section**.
 * Navigate to Release Pipelines and click on **Create New Release Pipeline**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a Pipeline Name.
 * Add stages (e.g., QA, Prod) and assign tasks to each stage.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fp9bYnD6MU10rrjza1IzY%252Fimage.png%3Falt%3Dmedia%26token%3D7e30a12a-4061-483e-a9a2-06d82b9f2caf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3549c696&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -123,7 +123,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
       * **Upload Only:** Uploads the deployment package without executing the deployment.
       * **Upload and Deploy:** Uploads the deployment package and executes the deployment.
 
-      <figure><img src="../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (54) (1).png" alt=""><figcaption></figcaption></figure>
 * **Notify Users:**  Sends a notification to selected users **when the  task is created** or **when pipeline execution reaches this stage**
 * **Notify Promotion User:** Sends a notification to the **user who promoted** the artifact or initiated the deployment to this stage.
 * **Notify  to Button :**  It has three options — **User**, **Role**, and **Custom** — to specify the recipients of the notification based on individual users, assigned roles, or custom groups.
@@ -134,14 +134,14 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 | **Role**   | Sends the notification to all users who belong to a specific predefined role (such as Developer, Tester, Release Manager). Every user in the role will receive the notification. |
 | **Custom** | Sends the notification based on a custom mapping between components and roles. Different components can notify different roles, depending on your configuration.                 |
 
-<figure><img src="../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. &#x20;**Save and Configure Notifications:**
 
 * Add notification emails if needed.
 * Save the pipeline configuration.
 
-<figure><img src="../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Managing Sprints and User Stories**
 
@@ -149,21 +149,21 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 
 * In the Project View, navigate to Change Management and click Create Sprint.
 
-<figure><img src="../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Enter the sprint name and click Save.
 
-<figure><img src="../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click the three dots (Actions) button and select Start Sprint.
 
-<figure><img src="../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Create a User Story:**
 
 * Go to User Stories and click **Create New User Story**.
 
-<figure><img src="../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -171,21 +171,21 @@ Fill in the required details:
 * Type: Select the type of story.
 * Click Save.
 
-<figure><img src="../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Edit and Promote User Story:**
 
 * After creating the user story, click the three dots (Actions) and select Edit.
 
-<figure><img src="../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select the release pipeline and associated component.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Add the artifact in CPI Artifacts and click Save.
 
-<figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Import Settings
 
@@ -193,7 +193,7 @@ The **CPI Import Settings** dialog, accessible from the **User Story Edit View**
 
 * Click the **“...”** next to a CPI artifact and select **“CPI Import Settings.”**
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * In the popup, you’ll see a list of available **target environments**.
 * Check the **Force Deploy** box if you want to allow redeployment of CPI artifacts.
@@ -218,17 +218,17 @@ The **Attachments** section allows users to add reference links directly to thei
    * **URL** – Enter the complete URL of the reference link.
 4. Click **Add** to attach the link.
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. The added link will be listed in the **Attachments** section and can be viewed by all relevant users
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Promotion of User Story**
 
 * To promote the user story, click the three dots (Actions) and select Promote.
 
-<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (66) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You can view the **Deploy Logs** under the **SAP CPI Deploy Logs** window after promoting the user story.
 
@@ -258,4 +258,4 @@ The **Attachments** section allows users to add reference links directly to thei
 * **Status Button**\
   If the status is shown as **"Suspended"**, it usually indicates that the pipeline or task has been paused or is awaiting a manual action.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

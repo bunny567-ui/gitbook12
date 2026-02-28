@@ -8,7 +8,7 @@ This user guide provides step-by-step instructions to integrate **Freshservice**
 2. Click on **Credential Manager**.
 3. On the **Credential Manager** page, click **Register Credential**.
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the details as follows:
 

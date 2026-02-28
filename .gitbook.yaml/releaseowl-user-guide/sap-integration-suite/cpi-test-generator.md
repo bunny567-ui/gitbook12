@@ -8,7 +8,7 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 
 * Navigate to **Instances and Subscriptions** and click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Fill in the following details:
   * **Service:** SAP Process Integration Runtime
@@ -18,14 +18,14 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
   * **Instance Name:** Choose a suitable name
 * Click **Next**, then **Create** to set up the instance.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Create Service Key
 3. Enable Custom Idp
 4. Enable Test Automation in ReleaseOwl CPI Environment Configuration
 5. Update the OAuth credentials and Instance URLs in the ReleaseOwl CPI Environment using the details from the Service Key in SAP BTP Cockpit.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Generating Test Cases** <a href="#pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases" id="pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases"></a>
 
@@ -35,7 +35,7 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 * Navigate to **Artifact Details** and change the **Log Level** to **Trace** to track detailed logs during testing.
 * Trigger the iFlow with the expected input using **Postman** or another tool.
 
-<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Generate Test Cases**
 
@@ -54,7 +54,7 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 5. This will retrieve messages from the latest iFlow execution. The first message will be the input message, and the remaining messages will be treated as output messages.
 6. Click the **Model Step Id** to view the messages.
 
-<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Select the **Message Group ID** and click **Generate Test Case**.
 7. Enter the **Test Case Name** and **Description**, then click **OK**.
