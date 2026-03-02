@@ -136,8 +136,6 @@ Once the required Communication Arrangements (SAP\_COM\_0510 and SAP\_COM\_0735)
 * **Type**
 * **Repository URL (Git Repository URL)**
 
-⚠ The **Repository URL is mandatory**. Without maintaining the repository URL, deployments through ReleaseOwl will not be possible.
-
 4. Click **Create**.
 
 <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
