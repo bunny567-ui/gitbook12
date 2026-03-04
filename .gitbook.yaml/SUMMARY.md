@@ -67,6 +67,7 @@
       * [iFlow Unit Testing](releaseowl-user-guide/sap-integration-suite/cpi-management/iflow-unit-testing.md)
       * [Integration Advisor](releaseowl-user-guide/sap-integration-suite/cpi-management/integration-advisor.md)
     * [CPI Test Generator](releaseowl-user-guide/sap-integration-suite/cpi-test-generator.md)
+    * [CPI Monitoring](releaseowl-user-guide/sap-integration-suite/cpi-monitoring.md)
   * [SAP Cloud Identity Services](releaseowl-user-guide/sap-cloud-identity-services/README.md)
     * [Administration](releaseowl-user-guide/sap-cloud-identity-services/administration/README.md)
       * [Credential Management](releaseowl-user-guide/sap-cloud-identity-services/administration/credential-management.md)

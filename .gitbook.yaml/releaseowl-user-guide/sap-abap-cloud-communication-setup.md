@@ -23,20 +23,20 @@ After successfully creating the ABAP Environment instance, follow these steps to
 5. Click **Create Service Key**.
 6. Provide a name for the service key and click **Create**.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Create Communication Arrangement (Software Component Integration – SAP\_COM\_0510)
 
 1. Log in to the **ABAP Cloud system**.
 2. Navigate to **Administration → Communication Arrangements**.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **New**.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the Communication Scenario:
 
@@ -44,7 +44,7 @@ After successfully creating the ABAP Environment instance, follow these steps to
 
 5. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. In the **Common Data** section:
    * Enter an **Arrangement Name**.
@@ -110,7 +110,7 @@ Repeat the same process for ABAP Unit Test Integration:
 
 4. Click **Save** to complete the arrangement setup.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Verification of Service Details
 
