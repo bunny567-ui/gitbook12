@@ -122,7 +122,7 @@ If a message is marked as **Failed**:
 * **Environment** - Select the appropriate CPI environment from the dropdown list. Alerts will monitor runtime failures only for the selected environment.
 * **Active** – When enabled, the alert configuration is active and notifications will be sent.
 * **Similar Error Notification Interval (Minutes)** – Defines the minimum time gap between repeated notifications for the same error. If the same error occurs multiple times within 10 minutes, only one notification will be sent. This prevents alert flooding and reduces duplicate email notifications.
-* Artifacts - When you click on +add button, you can add the pagaes or artifacts oof it
+* **Artifacts** - When you click the **+ Add** button, you can select and add specific CPI packages or individual artifacts to the alert configuration. This defines the scope of integrations that will be monitored under the alert rule.
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
@@ -175,3 +175,5 @@ When a message row is selected, detailed information appears on the right panel:
 5. After corrective action, the alert can be marked as **Resolved**.
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1699).png" alt=""><figcaption></figcaption></figure>
