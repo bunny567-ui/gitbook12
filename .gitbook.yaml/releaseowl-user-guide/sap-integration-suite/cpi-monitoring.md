@@ -80,15 +80,10 @@ Each row represents a single message processing instance.
 
 * Displays execution result.
 * Shows error message if processing failed.
-* Example: _Message processing failed. Please check the logs._
 
-**Properties**
+**Properties:** Displays runtime metadata and technical properties.
 
-* Displays runtime metadata and technical properties.
-
-**Artifact Details**
-
-* Shows additional artifact-level information related to the execution.
+**Artifact Details:** Shows additional artifact-level information related to the execution.
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
@@ -152,7 +147,7 @@ The following filters are available in the CPI Alerts screen to refine and analy
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-### **Messages Grid**
+#### **Messages Grid**
 
 The **Messages** section displays all runtime instances that triggered the configured alert. Each row represents a failed execution that met the alert condition.
 
