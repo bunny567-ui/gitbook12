@@ -20,7 +20,7 @@ To create a new role:
 
 <figure><img src="../../../.gitbook/assets/image (1015).png" alt=""><figcaption></figcaption></figure>
 
-#### Assign Role Actions
+### Assign Role Actions
 
 To assign the role actions to an existing role:
 

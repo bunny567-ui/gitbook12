@@ -2,7 +2,7 @@
 
 This functionality allows administrators to effectively oversee and control user access within the system.
 
-#### License Overview
+### License Overview
 
 Provides insights into the number of licenses across the following categories:
 
@@ -13,7 +13,7 @@ Displays the total, used, and available licenses, facilitating efficient resourc
 
 <figure><img src="../../../.gitbook/assets/image (1713).png" alt=""><figcaption></figcaption></figure>
 
-#### User Details
+### User Details
 
 Lists all registered users along with the following details:
 
@@ -65,7 +65,7 @@ If changes are required:
 
 <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-#### Lock&#x20;
+### Lock&#x20;
 
 The **Lock** feature allows administrators to control access to the system for selected users. When a user is locked, they are prevented from logging in or performing any operations until their access is restored.
 
@@ -77,7 +77,7 @@ The **Lock** feature allows administrators to control access to the system for s
 
 <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-**Unlock**
+### **Unlock**
 
 The **Unlock** feature allows administrators to restore access to users who were previously locked. Once unlocked, users can log in and resume their activities in the system.
 
@@ -89,19 +89,19 @@ The **Unlock** feature allows administrators to restore access to users who were
 
 <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-**Show**
+### **Show**
 
 It allows users to filter and view the user list based on their role or status, such as Admin, User or Locked Users.
 
 <figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-**Filter**
+### **Filter**
 
 It is used to search for users based on their **name** or **email ID**.
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-**Import**&#x20;
+### **Import**&#x20;
 
 The **Import** option allows administrators to import user and role information into the system. To perform an import, click the **Import** button available on the screen. When you click it, two options will be displayed:
 
@@ -118,7 +118,9 @@ Before importing the data, it is important to follow the required format and pro
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-**Download Option :**  The **Download** option provides sample templates that help users prepare the correct file format for importing data into the system. When you click the **Download** button, you will see two available options:
+### **Download Option**&#x20;
+
+The **Download** option provides sample templates that help users prepare the correct file format for importing data into the system. When you click the **Download** button, you will see two available options:
 
 * **User Template**
 * **Projects/Roles Template**
