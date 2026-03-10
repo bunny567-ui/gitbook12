@@ -84,6 +84,10 @@ This section provides a comprehensive guide for configuring Projects, Build Pipe
 1. In this step, enable **ATC Checks** to perform static code analysis and ensure compliance with coding standards, performance, and security guidelines.
 2. Enable **ABAP Unit Test Checks** to execute automated unit tests and validate the functional correctness of the code.&#x20;
 3. These checks help maintain code quality and prevent defective or non-compliant code from progressing in the pipeline.
+
+* For the **ATC Service Key**, select **Software Component Integration (SAP\_COM\_0510)**.
+* For the **Unit Test Service Key**, select **ABAP Unit Test Integration (SAP\_COM\_0735)**
+
 4. Click **Next (Step 4)** to continue.
 
 <figure><img src="../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>

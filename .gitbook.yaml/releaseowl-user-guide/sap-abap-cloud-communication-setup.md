@@ -27,7 +27,41 @@ After successfully creating the ABAP Environment instance, follow these steps to
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Step 2: Create Communication Arrangement (Software Component Integration – SAP\_COM\_0510)
+#### Step 2: Create Communication Keys&#x20;
+
+Communication keys must be created for the required **communication scenarios** in the ABAP Environment instance.
+
+Follow the steps below:
+
+1. Navigate to your **ABAP Environment instance** in the SAP BTP Cockpit.
+2. Select the **Service Keys** section.
+3. Click **Create Service Key**.
+4. Provide the required **JSON configuration** for the communication scenario.
+5. Click **Create** to generate the service key.
+
+#### Service Key for Software Component Integration (SAP\_COM\_0510)
+
+Use the following JSON configuration:
+
+```
+{"scenario_id": "SAP_COM_0510", "type": "basic"}
+```
+
+<figure><img src="../.gitbook/assets/image (1702).png" alt=""><figcaption></figcaption></figure>
+
+#### Service Key for ABAP Unit Test Integration (SAP\_COM\_0735)
+
+Similarly, create the service key for **ABAP Unit Test Integration** using the following JSON configuration:
+
+```
+{"scenario_id": "SAP_COM_0735","type": "basic"}
+```
+
+<figure><img src="../.gitbook/assets/image (1701).png" alt=""><figcaption></figcaption></figure>
+
+#### Alternative Method: Create Communication Arrangements in ABAP Cloud
+
+Communication arrangements can also be created directly in the **ABAP Cloud system** for the required communication scenarios.
 
 1. Log in to the **ABAP Cloud system**.
 2. Navigate to **Administration → Communication Arrangements**.
@@ -78,7 +112,7 @@ After successfully creating the ABAP Environment instance, follow these steps to
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-#### Step 3: Create Communication Arrangement for ABAP Unit Test Integration (SAP\_COM\_0735)
+#### &#x20;Create Communication Arrangement for ABAP Unit Test Integration (SAP\_COM\_0735)
 
 Repeat the same process for ABAP Unit Test Integration:
 
@@ -114,13 +148,13 @@ Repeat the same process for ABAP Unit Test Integration:
 
 #### Verification of Service Details
 
-Once the required Communication Arrangements (SAP\_COM\_0510 and SAP\_COM\_0735) are successfully created and activated, the corresponding service details can be verified in the **Service Key** generated for the ABAP Environment service instance.
+Once the **communication arrangements (SAP\_COM\_0510 and SAP\_COM\_0735)** are successfully created and activated, the corresponding **service details** can be verified in the **Service Key generated for the ABAP Environment service instance**.
 
 <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 ## 3. Manage Software Components
 
-#### Step 4: Create Software Component
+#### Step 3: Create Software Component
 
 1. In the ABAP Cloud system, navigate to **Manage Software Components**.
 

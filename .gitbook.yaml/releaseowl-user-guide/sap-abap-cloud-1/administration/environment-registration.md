@@ -43,7 +43,7 @@ This section explains the process of registering SAP Cloud and SAP ABAP environm
 3. **Name**: Enter a name as per your environment naming convention.
 4. **SAP Cloud Environment**: Select the previously registered **SAP Cloud Environment** from the dropdown list.
 5. **ABAP Instance**: The ABAP service instance will be automatically populated based on the selected SAP Cloud Environment.
-6. **ABAP Service Key**: Once the ABAP instance is selected, the available Service Keys will be displayed. Select the required **Service Key**.
+6. **ABAP Service Key**: Once the ABAP instance is selected, the available Service Keys will be displayed. Select the required Service Key, which corresponds to **Software Component Integration (SAP\_COM\_0510)**.
 7. **Host URL**: Automatically populated based on the selected **Service Key**.
 8. **ABAP Credential**: Select the previously registered ABAP credential from the dropdown list.
 9. **Environment Type**: Select the appropriate environment type (e.g., Development).
