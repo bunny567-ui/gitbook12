@@ -51,13 +51,7 @@ The CPI Monitoring screen provides multiple filters to refine runtime log result
 * **Package** – The **Package** filter enables users to select a specific CPI package.
 * **Artifacts** – The **Artifacts** filter allows users to select one or more specific integration flows (iFlows).
 
-4. Click **Configuration** to view the existing configuration.
-
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-5. Edit the configuration if required based on your monitoring needs.
-
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1703).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** Monitoring data is displayed only for projects linked to a configured CPI environment.
@@ -119,19 +113,7 @@ If **Real Time Monitor** is enabled and the **Schedule Interval** is set to **10
 
 **Artifact Details:** Shows additional artifact-level information related to the execution.
 
-**Error Analysis and Troubleshooting**
-
-If a message is marked as **Failed**:
-
-1. Review the error message in the **Status** tab.
-2. Identify the root cause (e.g., HTTP error, adapter issue, authentication failure, mapping error).
-3. Make the necessary correction in the CPI iFlow.
-4. Redeploy the artifact if required.
-5. Re-trigger the integration from the source system.
-
-**Refreshing Monitoring Data**
-
-* Click the **Refresh** icon to fetch the latest message processing records.
+**Refreshing Monitoring Data :** Click the **Refresh** icon to fetch the latest message processing records.
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
@@ -218,20 +200,20 @@ Once triggered:
 
 #### Mark as Resolved
 
-Once an issue has been fixed, users can update the alert status by clicking Mark as Resolved.
+Once an issue has been fixed, users can update the alert status by clicking **Mark as Resolved**. When this action is performed, the alert status changes from _**Open**_ to _**Resolved**_, indicating that the issue has been addressed.
 
-When this action is performed, the alert status changes from _Open_ to _Resolved_, indicating that the issue has been addressed.
+**Resolve All Similar Errors :**  If multiple alerts are triggered for the same artifact and similar error, users can resolve them all at once.
 
-Resolve All Similar Errors
-
-If multiple alerts are triggered for the same artifact and similar error, users can resolve them all at once.
-
-·        Select the Resolve All Similar Errors checkbox.
-
-·        Click on Resolved.
+* Select the Resolve All Similar Errors checkbox.
+* Click on Resolved.
 
 This will automatically resolve all alerts associated with the same artifact and similar error, helping users manage alerts more efficiently and reduce manual effort.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1705).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1699).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1706).png" alt=""><figcaption></figcaption></figure>
+
+**Viewing Alert Data:** Once an alert is triggered, the corresponding alert information will be available in **ReleaseOwl** for monitoring and analysis. At the same time, notification emails will be sent to the configured users to inform them about the alert. This allows users to quickly review the issue and take the necessary action.
+
+<figure><img src="../../.gitbook/assets/unknown (3).png" alt=""><figcaption></figcaption></figure>
+
