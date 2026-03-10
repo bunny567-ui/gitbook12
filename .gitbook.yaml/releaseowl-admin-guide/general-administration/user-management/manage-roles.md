@@ -1,7 +1,5 @@
 # Manage Roles
 
-### Manage Roles
-
 The Manage Roles feature in the Administration View allows administrators to create, edit, and delete roles to manage user privileges within the platform.
 
 #### Create Role

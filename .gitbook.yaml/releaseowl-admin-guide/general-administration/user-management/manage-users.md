@@ -1,7 +1,5 @@
 # Manage Users
 
-### Manage Users
-
 This functionality allows administrators to effectively oversee and control user access within the system.
 
 #### License Overview
