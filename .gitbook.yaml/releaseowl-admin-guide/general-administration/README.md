@@ -2,18 +2,18 @@
 
 Once a client account is granted the special permissions to create administrator accounts, users with admin privileges can login to **ReleaseOwl** and use the admin account. It is through this account that the admin will assign roles and access to specific users of any given project.
 
-#### User Views in ReleaseOwl
+## User Views in ReleaseOwl
 
 ReleaseOwl provides **two distinct views** for users based on their roles and access permissions.
 
-**1. Project View**
+### **1. Project View**
 
 **Access:** Available to all users.
 
 **Purpose:**\
 The Project View allows users to **manage, monitor, and perform activities related to specific projects** based on the permissions assigned to them. Users can access only the projects and functionalities for which they have been granted access.
 
-**2. Administration View**
+### **2. Administration View**
 
 **Access:** Restricted to **administrator users** created during the customer provisioning process.
 
@@ -28,7 +28,7 @@ The Administration View enables administrators to manage **platform-level config
 
 This view provides centralized control for managing the ReleaseOwl platform.
 
-#### Accessing the Administration View
+### Accessing the Administration View
 
 To access the **Administration View**, follow these steps:
 
