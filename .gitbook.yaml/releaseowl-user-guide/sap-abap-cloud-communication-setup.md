@@ -23,9 +23,9 @@ After successfully creating the ABAP Environment instance, follow these steps to
 5. Click **Create Service Key**.
 6. Provide a name for the service key and click **Create**.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Create Communication Keys&#x20;
 
@@ -66,11 +66,11 @@ Communication arrangements can also be created directly in the **ABAP Cloud syst
 1. Log in to the **ABAP Cloud system**.
 2. Navigate to **Administration → Communication Arrangements**.
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **New**.
 
-<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the Communication Scenario:
 
@@ -78,7 +78,7 @@ Communication arrangements can also be created directly in the **ABAP Cloud syst
 
 5. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. In the **Common Data** section:
    * Enter an **Arrangement Name**.
@@ -91,13 +91,13 @@ Communication arrangements can also be created directly in the **ABAP Cloud syst
 1. Enter a **System ID** and **Name** (as per naming convention).
 2. Click **Create** to generate the Communication System.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create User for Outbound Communication
 
 1. Under **Outbound Communication**, click the **“+” (Add)** button.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Enter:
 
@@ -106,7 +106,7 @@ Communication arrangements can also be created directly in the **ABAP Cloud syst
 
 3. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Click **Save** to complete the arrangement setup.
 
@@ -144,7 +144,7 @@ Repeat the same process for ABAP Unit Test Integration:
 
 4. Click **Save** to complete the arrangement setup.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Verification of Service Details
 

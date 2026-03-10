@@ -2,8 +2,11 @@
 
 * [ReleaseOwl Admin Guide](README.md)
   * [General Administration](releaseowl-admin-guide/general-administration/README.md)
-    * [Project Management](releaseowl-admin-guide/general-administration/project-management.md)
-    * [User & Role Management](releaseowl-admin-guide/general-administration/user-and-role-management.md)
+    * [Project Management](releaseowl-admin-guide/general-administration/project-management/README.md)
+      * [User & Role Management](releaseowl-admin-guide/general-administration/project-management/user-and-role-management.md)
+    * [User Management](releaseowl-admin-guide/general-administration/user-management/README.md)
+      * [Manage Users](releaseowl-admin-guide/general-administration/user-management/manage-users.md)
+      * [Manage Roles](releaseowl-admin-guide/general-administration/user-management/manage-roles.md)
     * [Landscape Registration](releaseowl-admin-guide/general-administration/landscape-registration.md)
     * [Global Credential Management](releaseowl-admin-guide/general-administration/global-credential-management.md)
     * [Settings](releaseowl-admin-guide/general-administration/settings.md)
