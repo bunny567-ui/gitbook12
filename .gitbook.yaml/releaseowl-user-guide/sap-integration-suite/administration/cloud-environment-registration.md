@@ -123,9 +123,16 @@ To assign role collections, you can choose **one** of the following methods:
 
 You can configure granular permissions by creating the custom role collection with the below required roles:
 
-| **Custom Role Collection**                       | **Required Roles**                                                                                            |
-| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| Roles required for ReleaseOwl CPI test generator | <p></p><ul><li>Trail-content-adminstrator</li><li>PI_Integration_Developer</li><li>PI_Administrator</li></ul> |
+| **Custom Role Collection**                       | **Required Roles**                                                         |
+| ------------------------------------------------ | -------------------------------------------------------------------------- |
+| Roles required for ReleaseOwl CPI test generator | <p></p><ul><li>PI_Integration_Developer</li><li>PI_Administrator</li></ul> |
+
+{% hint style="info" %}
+**Note :** If you want to use the **Integration Advisor**, you must assign the following roles to the user:
+
+* **iadv-content-administrator**
+* **iadv-content-read**
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (1607).png" alt=""><figcaption></figcaption></figure>
 

@@ -15,7 +15,6 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
     * `iadv-content-read`
     * `iadv-content-administrator`
-    * `Integration Advisor (Non-Prod & Prod)`&#x20;
 
 
 5. **Create the Custom Role  Collection:**&#x20;
