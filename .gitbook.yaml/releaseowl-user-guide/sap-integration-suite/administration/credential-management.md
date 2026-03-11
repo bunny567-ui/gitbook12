@@ -434,7 +434,3 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 
 
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-**Note :**  In Conditional Authentication, **Ping** must be configured as the **default Identity Provider (IdP)** in **SAP Cloud Identity Services (CIS)** to ensure that all authentication requests are routed through Ping unless a different IdP is specified by the conditional authentication rules.
-{% endhint %}
