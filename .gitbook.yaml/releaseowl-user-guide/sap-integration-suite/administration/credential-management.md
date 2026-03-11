@@ -331,7 +331,7 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-4. Paste the copied endpoint into the **Discovery URL** field in SAP Cloud Identity Services.
+4. Paste the copied endpoint into the **Discovery URL** field in OpenID Connect Configuration.
 
 <figure><img src="../../../.gitbook/assets/image (1715).png" alt=""><figcaption></figcaption></figure>
 
