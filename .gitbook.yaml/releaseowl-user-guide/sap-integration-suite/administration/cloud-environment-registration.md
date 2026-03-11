@@ -60,7 +60,7 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 * Copy the extracted **SSO URL**.
 * Paste it into the **SSO URL** field in the **SAP CPI Environment**.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * For the **IDP Auth Email Address/Group Name** field, enter the **exact value that your Identity Provider sends in the SAML/OIDC assertion** for the user.
 * This value must match the **group name or email address defined in the&#x20;**_**Value**_**&#x20;field** of the **User Groups** or **Attribute Mappings** configuration in your IDP.\
@@ -100,7 +100,7 @@ To assign role collections, you can choose **one** of the following methods:
 
 * Open the newly created **Custom IDP for Applocations** and click **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
 * Configure the mappings like the example below:
@@ -138,7 +138,7 @@ You can configure granular permissions by creating the custom role collection wi
 
 6. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### SAP Cloud Identity Provider
 
@@ -149,7 +149,7 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 1. Go to **Trust Configuration** in your SAP BTP subaccount.
 2. Click on **Establish Trust**.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure Trust**
 
@@ -205,7 +205,7 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 1. Open the newly created application.
 2. Go to **Single Sign-On → Subject Name Identifier**.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Configure as follows:
 
@@ -216,23 +216,23 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 
 4. Click on the **Save** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure Conditional Authentication**
 
 1. Go to **Trust** → **Conditional Authentication**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Set **Default Identity Provider = Identity Authentication**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Environment Registration
 
 1. Go to the SAP CPI Environment and click on the **Register SAP CPI Environment**.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Web Authentication:** Select **SAP Cloud Identity Provider**.
 3. **Credential:** Choose the **SAP Cloud Identity Credential** that you registered earlier.
@@ -261,7 +261,7 @@ ReleaseOwl seamlessly integrates with **SAP Passport** to enable secure certific
 
 * To add environments to project, follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/project-management)and complete the setup.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
