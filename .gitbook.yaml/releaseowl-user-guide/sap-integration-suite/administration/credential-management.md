@@ -85,7 +85,7 @@ After instance creation:
 * **Client Secret**
 * **Token URL**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Register **SAP CPI (API Access)** Credential in ReleaseOwl
 
@@ -168,7 +168,7 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 5. Click **Save**.
 6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for **IFLOW** deployments.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Web Authentication**
 
@@ -219,19 +219,19 @@ It acts as the Identity Provider (IdP) for SAP Integration Suite and is used to 
 * Go to **Applications & Resources.**
 * Select **Tenant Settings**.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Open the **OpenID Connect Configuration** section.
 * Click on **Show Discovery Endpoint**.
 * You will be redirected to a new page.
 * Copy the **URL** from the browser address bar — this is your **IdP Metadata URL**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Paste the copied URL into the **IdP Metadata URL** field in ReleaseOwl.
 7. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. **SAP Passport**&#x20;
 
@@ -278,30 +278,67 @@ It enables secure authentication and establishes trusted communication between S
 
 4. Save the credential.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Ping Identity
 
 Ping Identity enables secure authentication and establishes trusted communication between applications and identity providers using industry-standard protocols such as **OAuth 2.0** and **OpenID Connect (OIDC)**. It ensures secure user and system authentication, supports single sign-on (SSO), and protects access to applications by issuing tokens that contain verified user identity and authorization claims.
+
+#### Prerequisites
+
+Before configuring the integration, ensure that the following prerequisites are completed:
+
+1. **Subscribe to Cloud Identity Services**\
+   Ensure that the **Cloud Identity Services** subscription is active in your SAP BTP subaccount.
+2. **Establish Trust Configuration**\
+   To establish trust between the subaccount and the Identity Provider:
+   * Navigate to the **Security** section in your SAP BTP subaccount.
+   * Select **Trust Configuration**.
+   * Click on **Establish Trust**.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+3. **Select the Tenant**
+
+* Choose the **subscribed tenant** from the list.
+* Click **Next** to create the trust configuration.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+4. **Assign Roles**
+
+* After the trust configuration is created, open the configuration.
+* Click **Edit**.
+* Assign the required roles to the users.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+5. **Configure Role Attributes**
+
+* In the **Attribute Mapping** section, assign the required roles to users as shown in the screenshot below.
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### Create Application in PingOne
 
 1. Create your Ping Identity account using the provided[ URL](https://www.pingidentity.com/en/try-ping.html) and log in to **PingOne**.
 2. From the left-hand menu, navigate to **Applications**. In the Applications section, click on the **+ (Add Application)** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a name of your choice for the application and select the application type based on your requirement, such as **SAML Application** or **OIDC Web App**. For this setup, select **OIDC Web App** and click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Toggle the application **ON** and navigate to the **Attribute Mappings** tab.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click on **Add Mapping**. For the **PingOne** attribute, select **Email Address**, then click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Configure Identity Provider in SAP Cloud Identity Services**
 
@@ -312,12 +349,12 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 
 * Click on the **+ Create** button.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Enter a name of your choice and select the **Identity Provider Type** as **OpenID Connect compliant**.
 * Click **Create** to complete the setup.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 * Open the newly created Identity Provider.
 * Go to the **Trust** section.
@@ -329,7 +366,7 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 2. Navigate to the **Overview** section.
 3. Copy the **OIDC Discovery Endpoint**.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Paste the copied endpoint into the **Discovery URL** field in OpenID Connect Configuration.
 
@@ -345,15 +382,15 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 3. Navigate to the **Configuration** section.
 4. Copy the **Client ID and Client Secret**.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Paste the **Client ID** and **Client Secret** obtained from the Ping Identity application.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **Load** button. Once the configuration details are loaded successfully, the **Validate** button will be enabled.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Copy the **OIDC Callback URL**. Then navigate to the application you created and open it. Go to the **Configuration** section and click **Edit**.&#x20;
 
