@@ -9,7 +9,7 @@ The CPI domain manages credentials required for securing integration scenarios a
 * **System-to-system authentication** (Service Keys)
 * **User-based authentication** (Web Authentication)
 
-### Service Keys (System-to-System Authentication)
+## Service Keys (System-to-System Authentication)
 
 Service Keys are used for automated, system-level authentication. They allow ReleaseOwl to communicate securely with SAP Integration Suite without any user interaction.
 
@@ -18,7 +18,7 @@ ReleaseOwl requires a **Process Integration Runtime (PIR)** instance in SAP BTP 
 * **API Plan** – for programmatic API access
 * **IFLOW Plan** – for managing and testing iFlows
 
-#### 1. Create a PIR Instance with Plan: `API`
+### 1.  **API Plan** – for programmatic API access
 
 **Purpose:**\
 This instance enables **programmatic access via APIs** for integration, automation, and artifact management tasks.
@@ -111,7 +111,7 @@ The credential will now appear in your list and can be used in pipelines and dep
 
 <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. Create a PIR Instance with Plan: `IFLOW`
+### **2. IFLOW Plan** – for managing and testing iFlows
 
 This is used for managing and testing **integration artifacts (iFlows)**.
 
@@ -170,11 +170,11 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Web Authentication**
+## **Web Authentication**
 
 Web Authentication is used for interactive and user-based access to SAP services and applications.
 
-**SAP Cloud Identity Services – Identity Authentication (IAS) Instance**&#x20;
+### **1. SAP Cloud Identity Services – Identity Authentication (IAS)**&#x20;
 
 It acts as the Identity Provider (IdP) for SAP Integration Suite and is used to authenticate users accessing the platform. It provides browser-based authentication and Single Sign-On (SSO) using the OpenID Connect (OIDC) protocol.
 
@@ -233,7 +233,7 @@ It acts as the Identity Provider (IdP) for SAP Integration Suite and is used to 
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. **SAP Passport:** &#x20;
+### 2. **SAP Passport**&#x20;
 
 It enables secure authentication and establishes trusted communication between SAP internal systems and SAP Integration Suite. It ensures system-to-system trust and protects data exchanged across integrated SAP landscapes.
 
@@ -280,11 +280,11 @@ It enables secure authentication and establishes trusted communication between S
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 3. Ping Identity
+### 3. Ping Identity
 
 Ping Identity enables secure authentication and establishes trusted communication between applications and identity providers using industry-standard protocols such as **OAuth 2.0** and **OpenID Connect (OIDC)**. It ensures secure user and system authentication, supports single sign-on (SSO), and protects access to applications by issuing tokens that contain verified user identity and authorization claims.
 
-#### Step 1: Create Application in PingOne
+#### Create Application in PingOne
 
 1. Create your Ping Identity account using the provided[ URL](https://www.pingidentity.com/en/try-ping.html) and log in to **PingOne**.
 2. From the left-hand menu, navigate to **Applications**. In the Applications section, click on the **+ (Add Application)** button.
@@ -303,7 +303,7 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Step 2: Configure Identity Provider in SAP Cloud Identity Services**
+**Configure Identity Provider in SAP Cloud Identity Services**
 
 * Log in to **SAP Cloud Identity Services**.
 * Navigate to **Identity Providers** and select **Corporate Identity Providers**.
@@ -362,7 +362,7 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-#### Step 4: Validate the Configuration
+#### Validate the Configuration
 
 1. Click on the **Validate** button.
 
