@@ -338,6 +338,9 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 **Configure authentication details:**
 
 1. Under **Client Authentication**, select **Client Secret in Authorization Header**.
+
+<figure><img src="../../../.gitbook/assets/image (1716).png" alt=""><figcaption></figcaption></figure>
+
 2. Log in to **Ping Identity** and open the application you created earlier.
 3. Navigate to the **Configuration** section.
 4. Copy the **Client ID and Client Secret**.
