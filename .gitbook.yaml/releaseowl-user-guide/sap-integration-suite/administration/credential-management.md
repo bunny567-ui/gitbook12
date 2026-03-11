@@ -311,13 +311,20 @@ Before configuring the integration, ensure that the following prerequisites are 
 
 * After the trust configuration is created, open the configuration.
 * Click **Edit**.
-* Assign the required roles to the users.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. **Configure Role Attributes**
 
-* In the **Attribute Mapping** section, assign the required roles to users as shown in the screenshot below.
+* In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
+* Click the **"+"** button to add a new mappings.&#x20;
+*   Define mappings like this:
+
+    | Role Collection            | Attribute | Operator | Value                        |
+    | -------------------------- | --------- | -------- | ---------------------------- |
+    | PI\_Integration\_Developer | email     | equals   | Email ID of the service user |
+    | PI\_Administrator          | email     | equals   | Email ID of the service user |
+    | Integration\_Provisioner   | email     | equals   | Email ID of the service user |
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -434,3 +441,4 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 
 
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
