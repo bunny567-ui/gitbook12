@@ -9,7 +9,7 @@ Using this feature, users can:
 * Identify failed or retried messages
 * Troubleshoot integration issues in real time
 
-#### **1. SAP CPI Role Requirement**
+#### **SAP CPI Role Requirement**
 
 To read monitoring data in ReleaseOwl, the **“MonitoringDataRead”** role must be assigned in the **SAP Process Integration Runtime (API)** instance.
 
@@ -19,7 +19,7 @@ To read monitoring data in ReleaseOwl, the **“MonitoringDataRead”** role mus
 **Note :**  Without this role, ReleaseOwl will not be able to fetch runtime logs or message processing details.
 {% endhint %}
 
-#### **2. CPI Environment Configuration in ReleaseOwl**
+#### **CPI Environment Configuration in ReleaseOwl**
 
 To enable monitoring:
 
@@ -117,7 +117,7 @@ If **Real Time Monitor** is enabled and the **Schedule Interval** is set to **10
 
 <figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Accessing CPI Alert Configurations**
+### &#x20;**Alerts**
 
 The **Alerts** feature allows users to configure notifications based on specific **CPI environments** and **monitoring statuses**. When a configured alert condition is triggered, **ReleaseOwl** sends notification emails to the specified users so that integration issues can be addressed quickly. Alerts help teams proactively monitor **integration failures, escalations, or retries**, enabling them to respond promptly and maintain stable integrations.
 
