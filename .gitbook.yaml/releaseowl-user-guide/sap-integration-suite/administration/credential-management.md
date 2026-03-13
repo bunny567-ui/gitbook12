@@ -388,6 +388,8 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 * Go to the **Trust** section.
 * Select **OpenID Connect Configuration**.
 
+<figure><img src="../../../.gitbook/assets/image (1733).png" alt=""><figcaption></figcaption></figure>
+
 **To configure the Discovery URL:**
 
 1. Log in to **Ping Identity** and open the application you created earlier.
@@ -442,3 +444,148 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+#### Configure Identity Provider using Ping Identity (SAML) in SAP Cloud Identity Services
+
+Follow the steps below to configure **Ping Identity as a SAML Identity Provider** in SAP Cloud Identity Services.
+
+**Log in to SAP Cloud Identity Services**
+
+1. Log in to **SAP Cloud Identity Services**.
+2. Navigate to **Applications & Resources**.
+3. Open the **SAP BTP application** associated with your tenant.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### Configure Conditional Authentication
+
+1. Go to the **Trust** section.
+2. Navigate to **Conditional Authentication**.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+3. In the **Default Authenticating Identity Provider** field, select **Oping Saml.**
+4. Click **Save** to apply the configuration.
+
+<figure><img src="../../../.gitbook/assets/image (1718).png" alt=""><figcaption></figcaption></figure>
+
+**Download Metadata from SAP Cloud Identity Services**
+
+1. Navigate to **Applications & Resources**.
+2. Select **Tenant Settings**.
+
+<figure><img src="../../../.gitbook/assets/image (1719).png" alt=""><figcaption></figcaption></figure>
+
+3. Go to **Authentication**.
+4. Navigate to **Single Sign-On**.
+5. Click **Download Metadata File**.
+6. This metadata file will be used to configure the application in **Ping Identity**.
+
+<figure><img src="../../../.gitbook/assets/image (1721).png" alt=""><figcaption></figcaption></figure>
+
+**Create Application in Ping Identity**
+
+1. Log in to **Ping Identity**.
+2. From the left-hand menu, navigate to **Applications**.
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+3. Click the **+ (Add Application)** button.
+4. Enter a **Name** for the application.
+5. Select **Application Type** based on your requirement.
+6. For this setup: Select **SAML Application**
+7. Click **Configure**
+
+<figure><img src="../../../.gitbook/assets/image (1722).png" alt=""><figcaption></figcaption></figure>
+
+**Configure SAML Settings in Ping Identity**
+
+During SAML configuration, choose **one of the following options**.
+
+**Option 1: Import Metadata File**
+
+1. Select **Import Metadata**.
+2. Click **Select File**.
+3. Upload the **metadata file downloaded from SAP Cloud Identity Services**.
+
+<figure><img src="../../../.gitbook/assets/image (1723).png" alt=""><figcaption></figcaption></figure>
+
+4. Click **Save.**
+
+<figure><img src="../../../.gitbook/assets/image (1724).png" alt=""><figcaption></figcaption></figure>
+
+**Option 2: Import Metadata from URL**
+
+1. In **SAP Cloud Identity Services**, navigate to:
+   * **Authentication**
+   * **Single Sign-On**
+2. Open **OpenID Connect Configuration**.
+3. Click **Show Discovery Endpoint**.
+4. Copy the **metadata URL**.
+
+<figure><img src="../../../.gitbook/assets/image (1725).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1726).png" alt=""><figcaption></figcaption></figure>
+
+5. Paste the URL into the **Import from URL** field in **Ping Identity**.
+
+<figure><img src="../../../.gitbook/assets/image (1727).png" alt=""><figcaption></figcaption></figure>
+
+* Toggle the application **ON** and navigate to the **Attribute Mappings** tab.
+
+<figure><img src="../../../.gitbook/assets/image (1730).png" alt=""><figcaption></figcaption></figure>
+
+* Click on **Add Mapping**. For the **PingOne** attribute, select **Email Address**, then click **Save**.
+
+<figure><img src="../../../.gitbook/assets/image (1731).png" alt=""><figcaption></figcaption></figure>
+
+#### **Create a Corporate Identity Provider**
+
+* Navigate to **Identity Providers** and select **Corporate Identity Providers**.
+
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Click on the **+ Create** button.
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Enter a name of your choice and select the **Identity Provider Type** as **SAML 2.0 compliant**.
+* Click **Create** to complete the setup.
+
+<figure><img src="../../../.gitbook/assets/image (1732).png" alt=""><figcaption></figcaption></figure>
+
+* Go to the **Trust** section.
+* Select **SAML 2.0 Configuration**.
+
+<figure><img src="../../../.gitbook/assets/image (1734).png" alt=""><figcaption></figcaption></figure>
+
+**Upload Metadata from Ping Identity**
+
+1. Log in to **Ping Identity**.
+2. Navigate to the **Application Overview** section.
+3. Scroll down and **Download the Metadata file**.
+
+<figure><img src="../../../.gitbook/assets/image (1736).png" alt=""><figcaption></figcaption></figure>
+
+**Upload Metadata File**
+
+1. In **SAP Cloud Identity Services**, click the **Browse** button.
+2. Select the **downloaded metadata file**.
+3. Upload the file.
+
+<figure><img src="../../../.gitbook/assets/image (1739).png" alt=""><figcaption></figcaption></figure>
+
+**Configure Metadata URL**
+
+1. In **Ping Identity**, copy the **IdP Metadata URL**.
+
+<figure><img src="../../../.gitbook/assets/image (1737).png" alt=""><figcaption></figcaption></figure>
+
+* Paste the URL into the **Metadata URL field** in **SAP Cloud Identity Services**.
+
+<figure><img src="../../../.gitbook/assets/image (1735).png" alt=""><figcaption></figcaption></figure>
+
+
+
+* Click **Save** to complete the configuration.
+
+<figure><img src="../../../.gitbook/assets/image (1738).png" alt=""><figcaption></figcaption></figure>

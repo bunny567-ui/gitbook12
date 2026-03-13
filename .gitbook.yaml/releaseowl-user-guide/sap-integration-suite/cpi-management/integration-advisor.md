@@ -14,7 +14,8 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 4.  &#x20;**Role Collections Assigned**: To enable Integration Advisor capabilities, assign the following role collections to the **Identity Provider (IdP)**:
 
     * `iadv-content-read`
-    * `iadv-content-administrator`
+    * `iadv-content-administrator`&#x20;
+    * `iadv-content-developer`&#x20;
 
 
 5. **Create the Custom Role  Collection:**&#x20;
