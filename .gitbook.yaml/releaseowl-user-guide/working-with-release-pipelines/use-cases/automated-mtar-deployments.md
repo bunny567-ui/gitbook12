@@ -22,19 +22,28 @@ Creating a Release Pipeline is a guided **five-step process**, designed to help 
 **To create a release pipeline:**
 
 1. In **Release**, go to **Release Pipelines.**
-2. Click **Create New Release Pipeline.**<br>
+2. Click **Create New Release Pipeline.**
 
 <figure><img src="../../../.gitbook/assets/image (1230).png" alt=""><figcaption></figcaption></figure>
 
-3. **Release Pipeline Name:** Give a name for the release pipeline.<br>
+3. Navigate to **Build Pipelines** and click **New Build Pipeline**.
+4. In the pop-up window, select **Import Build Pipeline** or choose **Create New Build Pipeline**.
+5. If **Import Build Pipeline** is selected:
+   * Click **Browse** under **Select JSON File** and upload the exported pipeline configuration file.
+   * Enter a name in the **Build Pipeline Name** field.
+   * Click **Create** to import and create the pipeline.
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+6. **Release Pipeline Name:** Give a name for the release pipeline.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1229).png" alt=""><figcaption></figcaption></figure>
 
-4. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.<br>
+7. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1231).png" alt=""><figcaption></figcaption></figure>
 
-5. **Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
+8. **Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
 
 <figure><img src="../../../.gitbook/assets/image (1237).png" alt=""><figcaption></figcaption></figure>
 
@@ -48,9 +57,7 @@ The newly added stage appears as follows:
 
 <figure><img src="../../../.gitbook/assets/image (1239).png" alt=""><figcaption></figcaption></figure>
 
-**Note:** Deployment Task varies for different project types.
-
-### **Deployment Task** –&#x20;
+### **Deployment Task** &#x20;
 
 All the details pertaining to the deployment of the artifact is specified in deployment task. The following screen is displayed on adding a deployment task.
 
@@ -92,7 +99,7 @@ Fill in the required details:
 
 8. On clicking Save, the release pipeline gets created and is shown in the Release Pipelines screen.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Multi-Stage Release Pipeline**
 
@@ -154,4 +161,16 @@ To run a release pipeline:
 
 Go to the required pipeline in **Release Pipeline** page and click **Edit** to edit the pipeline.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note :**  Users can now promote builds directly from the **User Story** and **Release Package** sections without navigating to the Build Pipelines module.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+* Users can **select and promote multiple builds at once from the User Story**, making the promotion process more efficient when handling multiple build logs.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

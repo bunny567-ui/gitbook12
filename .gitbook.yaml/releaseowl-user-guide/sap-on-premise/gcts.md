@@ -59,15 +59,15 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 5. **Search for:** `gcts` in the Fiori Launchpad.
 6. **Select:** **Git-enabled CTS – Manage Repositories**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
 
 7. All **existing repositories** linked to the current gCTS environment are displayed.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click on **Create** to initiate repository creation.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Fill the required details as follows:
 
@@ -84,9 +84,9 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
 
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Click **Save**. A new repository gets created.
 11. Upon repository creation:
@@ -104,7 +104,7 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
     * Navigate to the **Configuration** tab.
     * Click **Create**.
 
-    <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Add the following two parameters:
 
@@ -368,11 +368,16 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
       * **Release Status Check**:\
         Shows whether all the linked transports have passed the required checks.
         * **Status: Success** indicates everything is in order.
-  * **gCTS Sequence Check (Beta)**
-    * Located beside the Release Status Check.
-    * sequence check (Beta) for gCTS transport to validate object-level sequences during the validation process.
+  *   **gCTS Sequence Check (Beta)**
 
-<figure><img src="../../.gitbook/assets/image (1088).png" alt=""><figcaption></figcaption></figure>
+      * The **Sequence Check (Beta)** option is located beside the **Release Status Check**.
+      * It is used to validate object-level transport sequences during the validation process for gCTS transports.
+      * The system displays a detailed list of all associated transports along with an overall summary view, enabling easier analysis of transport dependencies.
+      * If the sequence check fails due to dependency issues, the system displays the recommended transport sequence required for successful deployment.
+
+
+
+      <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 27. &#x20;When you click on the **gCTS Sequence Check (Beta)**:
     * You will see two sections:
@@ -387,15 +392,13 @@ Once the prerequisites are met and the ABAP system is ready, proceed with the co
 
           * This feature is used to validate the order in which SAP transport requests should be imported to avoid inconsistencies or errors in the target system.
 
-          <figure><img src="../../.gitbook/assets/image (1091).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 28. Once deployment is successful:
 
 * Verify that changes are pushed to the **qa branch** in GitHub.
 * Login to **SAP gCTS (QA)** and confirm that the latest **commits** are available.
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FAnXBENB6QupWyyxJh0AH%252Fimage.png%3Falt%3Dmedia%26token%3D13c3e7e5-6816-4044-bd37-e6bed990d075&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=26f15c3d&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-27. Login to **S4Q (QA) ABAP system**:
+29. Login to **S4Q (QA) ABAP system**:
 
 * On the **first transport**, the package, class, and objects will be pushed to QA ABAP.
 * On **subsequent transports**, only the changed objects will be updated in both:
