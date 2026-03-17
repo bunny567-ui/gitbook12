@@ -180,18 +180,28 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 1. Navigate to **Change Management** and click on **User Stories**.
 2. Click **Create New User Story**, fill in the required details, and save it.
 3. Click on the **Action** button, select **Edit**, and add the **integration artifacts**.
+4. Click **Save** to update the user story.
 
 <figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+5. Click the **three-dot (More Actions)** menu.
+6. Select **Import Settings**.
 
-4. Click **Save** to update the user story.
-5. Click **Promote** to check the **deployment status** of the user story.
-6. Click **Deploy Logs** to view deployment details.
+<figure><img src="../../../.gitbook/assets/image (1746).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+6. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
 
-7. In the **Info Section**, you can see **artifact details**:
+<figure><img src="../../../.gitbook/assets/image (1748).png" alt=""><figcaption></figcaption></figure>
+
+7. When _Force Deploy_ is enabled, version validation checks do not block the deployment.
+8. If the target environment version is higher than the source environment version, a warning message is displayed.
+9. Click **Promote** to check the **deployment status** of the user story.
+10. Click **Deploy Logs** to view deployment details.
+11. An indicator icon appears in the **Deployment Logs** to show that Force Deploy was applied.
+
+<figure><img src="../../../.gitbook/assets/image (1749).png" alt=""><figcaption></figcaption></figure>
+
+12. In the **Info Section**, you can see **artifact details**:
 
 * **For MAG:**  You can see the details of Message type and administrative data.
 
