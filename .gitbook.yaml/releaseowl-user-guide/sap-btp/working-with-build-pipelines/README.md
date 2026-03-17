@@ -327,7 +327,7 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
 
 **Archive :** The **Archive** option is used to deactivate the build pipeline. Archived pipelines are not deleted but are removed from active use.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

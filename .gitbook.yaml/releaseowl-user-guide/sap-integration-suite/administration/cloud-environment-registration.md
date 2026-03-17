@@ -92,53 +92,119 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 <figure><img src="../../../.gitbook/assets/image (1495).png" alt=""><figcaption></figcaption></figure>
 
-4. **Assign Role Collections (Choose One of the Methods Below)**
+#### **4. Assign Role Collections (Choose One of the Methods Below)**
 
-To assign role collections, you can choose **one** of the following methods:
+1. Navigate to **Security → Role Collections**.
+2. Click on the **Create** button.
+3. Enter a name for the role collection and create it.
+
+<figure><img src="../../../.gitbook/assets/image (1741).png" alt=""><figcaption></figcaption></figure>
+
+4. Search for the newly created role collection name.
+5. Click on the role collection name.
+
+<figure><img src="../../../.gitbook/assets/image (1742).png" alt=""><figcaption></figcaption></figure>
+
+6. Click on the **Edit** button.
+
+**Production Environment Role Collection**
+
+7. Add the following roles to ensure proper access and deployment capabilities:
+
+* WorkspaceArtifactsDeploy
+* WorkspacePackagesConfigure
+* WorkspacePackagesRead
+* WorkspacePackagesEdit
+
+8. Click **Save** after adding the roles.
+
+<figure><img src="../../../.gitbook/assets/image (1743).png" alt=""><figcaption></figcaption></figure>
+
+**Non-Production Environment Role Collection**
+
+Similarly, create a role collection for the non-production environment to enable monitoring, tracing, and deployment activities.
+
+1. Navigate to **Security → Role Collections**.
+2. Click on the **Create** button.
+3. Enter a name for the non-production role collection.
+4. Search for the created role collection and open it.
+5. Click on the **Edit** button.
+
+**Assign the following roles:**
+
+* MessagePayloadsRead
+* MonitoringDataRead
+* TraceConfigurationEdit
+* TraceConfigurationRead
+* WorkspaceArtifactsDeploy
+* WorkspacePackagesConfigure
+* WorkspacePackagesRead
+* WorkspacePackagesEdit
+
+6. Click **Save** to complete the setup.
+
+<figure><img src="../../../.gitbook/assets/image (1744).png" alt=""><figcaption></figcaption></figure>
+
+**Steps to Configure User Groups**
+
+1. Navigate to **Security → Role Collections**.
+2. Select the required **Role Collection** (e.g., _Production_ or _Non-Production_).
+3. Open the **User Groups** tab.
+4. Click on the **“+”** button to add a new user group.
+
+| Field                 | Description                                                 |
+| --------------------- | ----------------------------------------------------------- |
+| **Identity Provider** | Select the configured Identity Provider (e.g., Custom IDP). |
+| **Name**              | Enter an appropriate user group name.                       |
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### **Role Collection Assignment Methods**
+
+You can assign role collections using one of the following methods:
 
 **Method 1: Assign Role Collections using User Groups**
 
-* Open the newly created **Custom IDP for Applocations** and click **Edit**.
+1. Open the newly created **Custom Identity Provider (IDP) for Applications** and click **Edit**.
+2. Navigate to the **User Groups** section.
+3. Click the **“+”** button to add a new mapping.
+4. Configure the mappings as required.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
-* Configure the mappings like the example below:
+5. Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
+6. Create a custom role collection with the following roles for assignment in non-production/ production environments:
 
-| Role Collection            | Attribute | Operator | Value      |
-| -------------------------- | --------- | -------- | ---------- |
-| PI\_Integration\_Developer | Groups    | equals   | group name |
+| Field                | Description                                                                             |
+| -------------------- | --------------------------------------------------------------------------------------- |
+| **Role Collection**  | Choose the role collection that was created earlier. ( Like production, non-production) |
+| **User Group Name**  | Enter the name that was created earlier.                                                |
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **Method 2: Assign Role Collections using Attribute Mapping (Email-Based)**
 
-* In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
-* Click the **"+"** button to add a new mapping.
-* Define mappings like this:
+1. In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
+2. Click the **"+"** button to add a new mapping.
+3. Define mappings like this:
 
-| Role Collection            | Attribute    | Operator | Value                                 |
-| -------------------------- | ------------ | -------- | ------------------------------------- |
-| PI\_Integration\_Developer | emailAddress | equals   | The email ID of the **service user**  |
+| Role Collection                                                               | Attribute    | Operator | Value                                 |
+| ----------------------------------------------------------------------------- | ------------ | -------- | ------------------------------------- |
+| <p></p><ul><li>Enter the role collection that was created earlier. </li></ul> | emailAddress | equals   | The email ID of the **service user**  |
 
-**Method 3: Configure Custom Role Collection Mappings for the IdP**
-
-You can configure granular permissions by creating the custom role collection with the below required roles:
-
-| **Custom Role Collection**                       | **Required Roles**                                                         |
-| ------------------------------------------------ | -------------------------------------------------------------------------- |
-| Roles required for ReleaseOwl CPI test generator | <p></p><ul><li>PI_Integration_Developer</li><li>PI_Administrator</li></ul> |
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** If you want to use the **Integration Advisor**, you must assign the following roles to the user:
 
 * **iadv-content-administrator**
 * **iadv-content-read**
+* **iadv-content-developer**
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1607).png" alt=""><figcaption></figcaption></figure>
+4. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the **ReleaseOwl CPI Environment** registration page.
 
-6. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the ReleaseOwl CPI environment registration page.
-
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1740).png" alt=""><figcaption></figcaption></figure>
 
 ### SAP Cloud Identity Provider
 
@@ -216,17 +282,17 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 
 4. Click on the **Save** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure Conditional Authentication**
 
 1. Go to **Trust** → **Conditional Authentication**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Set **Default Identity Provider = Identity Authentication**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Environment Registration
 
@@ -261,7 +327,7 @@ ReleaseOwl seamlessly integrates with **SAP Passport** to enable secure certific
 
 * To add environments to project, follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/project-management)and complete the setup.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
