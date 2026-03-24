@@ -13,7 +13,7 @@ Using this feature, users can:
 
 To read monitoring data in ReleaseOwl, the **“MonitoringDataRead”** role must be assigned in the **SAP Process Integration Runtime (API)** instance.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :**  Without this role, ReleaseOwl will not be able to fetch runtime logs or message processing details.
@@ -39,7 +39,7 @@ To view the monitoring configuration:
 2. Navigate to **Monitoring**.
 3. Select **CPI Monitoring**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### CPI Monitoring Screen
 
