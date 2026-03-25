@@ -47,3 +47,22 @@ Provide the following details:
 
 <figure><img src="../../../.gitbook/assets/image (1424).png" alt=""><figcaption></figcaption></figure>
 
+#### **Linked Projects**
+
+The **Linked Projects** tab provides a detailed view of all projects associated with the selected environment.
+
+**Key Features**
+
+* **Environment Usage Visibility**:\
+  Identify all projects dependent on the environment to avoid unintended changes.
+* **Source Environment Identification**:\
+  The system indicates whether the selected environment is configured as a **source environment** for any project, improving visibility in deployment and transport flows.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### Logs
+
+The system displays a history of all actions performed on the selected environment. Each log entry provides detailed information, including the action performed, the user who executed the action, and the corresponding timestamp, enabling effective tracking and auditing of environment activities.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
