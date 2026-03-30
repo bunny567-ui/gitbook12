@@ -51,7 +51,7 @@ This feature ensures that the correct user story is reused during a downgrade op
 3. After the downgrade validation is successful, the system **reuses the same artifact-assigned user story**.
 4. The reused user story is displayed in the **Target User Story** column.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### CPI Governance
 

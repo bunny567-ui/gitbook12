@@ -1,6 +1,6 @@
 # Project Management
 
-Project Management in ReleaseOwl simplifies the planning, execution, and deployment of SAP artifacts by providing centralized control over environments, user roles, and release pipelines.
+Project Management in **ReleaseOwl** simplifies the planning, execution, and deployment of SAP artifacts by providing centralized control over environments, user roles, and release pipelines.
 
 ### Steps to Create a Project
 
@@ -35,11 +35,11 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 8. To the right of each project, click on the action button(three dots).
 9. The **Archive** option is available, which archives the project instead of deleting it.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. To view archived projects, open the **Show** dropdown at the top and select **Archived**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -51,67 +51,102 @@ Project Management in ReleaseOwl simplifies the planning, execution, and deploym
 
 ### Project Settings Configuration
 
-1. Click on **Project Settings** to navigate to the configuration page of the selected project.
+1. Navigate to the required project.
+2. Click on **Project Settings** to open the configuration page.
 
-<figure><img src="../../../.gitbook/assets/image (1563).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-2. On the **Project Settings** page, select the **General** tab
-3. Select the **General** tab.
-4. This section contains basic information about the project, including:
-   * **Name**: The project name.
-   * **Description**: A brief description of the project.
-   * **Project Prefix**: A short identifier for the project.
-   * **Default Pipeline**: The pipeline associated with the project.
-   * **Attachments are mandatory for User Story Promotion**: &#x20;
-     * Enable this option to make attachments mandatory during User Story promotion.
-     * When this option is checked, any attempt to promote a User Story without attachments will be restricted.
-     * During **Change Management**, if a User Story does not have attachments, an error message will appear, preventing the promotion until the required attachments are added.
-5. In the **Release Pipeline (default)** field:
-   * Click on the dropdown or the search icon to browse the list of pipelines configured for the project.
-6. **Additional Settings:**  These settings apply to **project-specific user story and approval processes:**&#x20;
+#### General Tab
 
-* **Attachments Mandatory for User Story Promotion**\
-  When this option is enabled, the system validates whether a **user story contains attachments** during the promotion process. If attachments are not available, the **user story promotion will be blocked** until the required attachments are added.
-* **Do Not Approve Without Opening Task Details**\
-  When this option is enabled, users must **open the task and review its details** before performing any approval or action. This ensures that users review the task information before approving or proceeding with the workflow.
-* **Enable User Story Component Field as Required**\
-  When this option is enabled, the **Components field becomes mandatory** while saving a user story. Additionally, components can be **configured and maintained at the project level**, ensuring proper categorization and organization of user stories.
+1. On the **Project Settings** page, select the **General** tab.
 
-<figure><img src="../../../.gitbook/assets/image (1708).png" alt=""><figcaption></figcaption></figure>
+This section contains the basic details and configuration options for the project.
 
-**On-Premise Integration Settings**
+| Field                | Description                                         |
+| -------------------- | --------------------------------------------------- |
+| **Name**             | Displays the project name.                          |
+| **Description**      | Provides a brief description of the project.        |
+| **Project Prefix**   | A short identifier used for the project.            |
+| **Default Pipeline** | Specifies the pipeline associated with the project. |
 
-These settings are applicable to **projects connected to on-premise systems**, such as SAP environments.
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-**Set Transport Description from User Story**\
-When enabled, the **transport request description** is automatically populated using the **linked user story details** during transport creation.\
-This improves traceability and ensures consistent documentation across transport requests.
+#### Release Pipeline (Default)
 
-**Enable Project Field as Required During Transport Creation**\
-When this option is enabled, users must **specify a project while creating a transport request**.\
-This ensures that transports are accurately mapped to their respective projects, improving **tracking, reporting, and auditability**.
+*   In the **Release Pipeline (Default)** field:
 
-<figure><img src="../../../.gitbook/assets/image (1709).png" alt=""><figcaption></figcaption></figure>
+    * Click on the dropdown or search icon.
+    * Select a pipeline from the list of configured pipelines.
 
-**CPI Settings**
+    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-These settings apply to **Cloud Integration (CPI) validation and compliance checks**.
+#### Additional Settings
 
-**CPI Validation Controls**
+These settings control validation and approval workflows:
 
-Projects can enable **one or both of the following governance validations** to ensure integration artifacts comply with technical and design standards.
+**1. Attachments Mandatory for User Story Promotion**
 
-**Lint Validation**\
-Performs validation of integration artifacts against **technical standards and best practices**. This helps identify potential issues such as coding inconsistencies or configuration errors before deployment.
+* Enable this option to make attachments mandatory during user story promotion.
+* When enabled:
+  * Promotion of a user story without attachments is restricted.
+  * During Change Management, an error message is displayed if attachments are missing.
+  * Promotion is blocked until the required attachments are added.
 
-**Design Compliance Validation**\
-Validates **CPI Design Guidelines** through the **Validation Reports** available in the project-level settings.
+**2. Do Not Approve Without Opening Task Details**
 
-<figure><img src="../../../.gitbook/assets/image (1710).png" alt=""><figcaption></figcaption></figure>
+* Requires users to open and review task details before approval.
+* Ensures proper validation before workflow actions.
 
-7. Click the **Save** button located at the top-right corner to save the details.
+**3. Enable User Story Component Field as Required**
 
-<figure><img src="../../../.gitbook/assets/image (1707).png" alt=""><figcaption></figcaption></figure>
+* Makes the **Components** field mandatory when saving a user story.
+* Components can be configured at the project level.
+* Helps in better categorization and organization.
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+### On-Premise Integration Settings
+
+These settings apply to projects integrated with on-premise systems (e.g., SAP environments).
+
+**Set Transport Description from User Story**
+
+* Automatically populates the transport request description using linked user story details.
+* Improves traceability and ensures consistent documentation.
+
+**Enable Project Field as Required During Transport Creation**
+
+* Makes the **Project** field mandatory during transport creation.
+* Ensures accurate mapping of transports to projects.
+* Improves tracking, reporting, and auditability.
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+### CPI Settings
+
+These settings apply to Cloud Integration (CPI) validations and compliance checks.
+
+#### CPI Validation Controls
+
+Projects can enable the following validations:
+
+**1. Lint Validation**
+
+* Validates integration artifacts against technical standards and best practices.
+* Helps identify coding inconsistencies and configuration issues before deployment.
+
+**2. Design Compliance Validation**
+
+* Validates CPI design guidelines.
+* Uses validation reports available in project-level settings to ensure compliance.
+
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+#### Saving the Configuration
+
+* Click the **Save** button located at the top-right corner of the page to apply and save all changes.
+
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ### Environments
 
@@ -190,5 +225,5 @@ Validates **CPI Design Guidelines** through the **Validation Reports** available
 <figure><img src="../../../.gitbook/assets/image (1180).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** The role and the role actions of the selected user under the Users tab in Project Settings match with the ones specified by the admin user while creating this specific user.
+**Note:** The role and the role actions of the selected user under the Users tab in **Project Settings** match with the ones specified by the admin user while creating this specific user.
 {% endhint %}
