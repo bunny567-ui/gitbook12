@@ -13,12 +13,14 @@ To sync API artifacts from SAP API Management:
 
 3. Click the **Synchronize** button to fetch available API artifacts such as:
 
-* **API Proxies**
+* **API Proxy**
 * **Key Value Maps**
+* **API\_Product**
+* **API\_Provider**
 
 4. These artifacts are retrieved from the registered SAP API Management environment and reflected within ReleaseOwl.
 
-<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2486808281-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FntTXS8vTRxGt8qfbPi3l%252Fuploads%252Fr4KtoIO20ImCAGwcK6au%252Fimage.png%3Falt%3Dmedia%26token%3D43630a07-dc32-4c99-a409-0317f552685d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=22d3c421&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1754).png" alt=""><figcaption></figcaption></figure>
 
 #### Sync History
 
@@ -46,16 +48,17 @@ You can define configuration parameters separately for each environment, and Rel
 
 1. Navigate to the required artifact, click the **Actions** button, and select **Configure**.
 
-<figure><img src="../../.gitbook/assets/image (1086).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1755).png" alt=""><figcaption></figcaption></figure>
 
 2. The configuration screen displays the same API Proxy across different SAP API Management environments (such as QA, Prod, etc.) that are part of the deployment landscape.
 3. **Note:** No changes can be made to the **Dev** environment.
-4. To update parameters for other environments:
-   * Click the **Edit (pencil)** icon next to each field.
-   * Make the necessary changes.
-   * Click **Save**.
+4.  To update parameters for other environments:
 
-<figure><img src="../../.gitbook/assets/image (1285).png" alt=""><figcaption></figcaption></figure>
+    * Click the **Edit (pencil)** icon next to each field.
+    * Make the necessary changes.
+    * Click **Save**.
+
+    <figure><img src="../../.gitbook/assets/image (1756).png" alt=""><figcaption></figcaption></figure>
 
 #### Target EndPoints Configuration
 
@@ -71,7 +74,7 @@ Use the **Target EndPoint** tab to define and manage backend endpoint values for
 
 This configuration is deployed during the API Proxy deployment.
 
-<figure><img src="../../.gitbook/assets/image (1286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1757).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Definition:** A _**Target Endpoint**_ is the backend service to which the API Proxy forwards client requests. The client interacts with the proxy URL, and the request is internally routed to the defined target endpoint.
@@ -101,7 +104,7 @@ To perform revisions, follow these steps:
 
 * Click on the "**Revisions**"  button.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1758).png" alt=""><figcaption></figcaption></figure>
 
 The following actions are available:
 

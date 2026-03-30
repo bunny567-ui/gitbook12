@@ -15,7 +15,11 @@ ReleaseOwl seamlessly integrates with SAP API Management to enable continuous in
 | OAuth Credential | Select the OAuth credential created in the credential manager. |
 | Environment Type | Select the environment type (e.g., Dev, QA, Prod).             |
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1751).png" alt=""><figcaption></figcaption></figure>
+
+4. Once an environment is created, the **Linked Projects** section becomes available. This section displays a list of all projects that are currently associated with or utilizing the selected environment.
+
+<figure><img src="../../../.gitbook/assets/image (1752).png" alt=""><figcaption></figcaption></figure>
 
 ### Create the Project <a href="#create-the-project" id="create-the-project"></a>
 
@@ -37,7 +41,7 @@ ReleaseOwl seamlessly integrates with SAP API Management to enable continuous in
 6. To the right of each project, click on the **action button** (three dots).
 7. Click on **Switch To Project** to navigate to the configuration page of the selected project.
 
-<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2486808281-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FntTXS8vTRxGt8qfbPi3l%252Fuploads%252F2Dn3Qm6ImFNuHL8a1e1S%252Fimage.png%3Falt%3Dmedia%26token%3De95acfbd-5890-48ca-86b3-3c0bda8f80f2&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e5aadaba&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1753).png" alt=""><figcaption></figcaption></figure>
 
 8. Navigate to the **Project Settings** page. Click the **Environments** tab.
 
