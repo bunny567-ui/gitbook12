@@ -135,6 +135,7 @@
       * [Validation Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/validation-task.md)
       * [Test Evidence Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/test-evidence-task.md)
       * [Deployment Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/deployment-task.md)
+      * [Check List](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/check-list.md)
     * [Use Cases](releaseowl-user-guide/working-with-release-pipelines/use-cases/README.md)
       * [Automated Transport import along with Transport Promotion](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-transport-import-along-with-transport-promotion.md)
       * [Automated MTAR Deployments](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-mtar-deployments.md)

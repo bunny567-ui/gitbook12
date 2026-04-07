@@ -35,11 +35,11 @@ Project Management in **ReleaseOwl** simplifies the planning, execution, and dep
 8. To the right of each project, click on the action button(three dots).
 9. The **Archive** option is available, which archives the project instead of deleting it.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. To view archived projects, open the **Show** dropdown at the top and select **Archived**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -54,7 +54,7 @@ Project Management in **ReleaseOwl** simplifies the planning, execution, and dep
 1. Navigate to the required project.
 2. Click on **Project Settings** to open the configuration page.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### General Tab
 
@@ -69,7 +69,7 @@ This section contains the basic details and configuration options for the projec
 | **Project Prefix**   | A short identifier used for the project.            |
 | **Default Pipeline** | Specifies the pipeline associated with the project. |
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Release Pipeline (Default)
 
@@ -78,7 +78,7 @@ This section contains the basic details and configuration options for the projec
     * Click on the dropdown or search icon.
     * Select a pipeline from the list of configured pipelines.
 
-    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Additional Settings
 
@@ -103,7 +103,7 @@ These settings control validation and approval workflows:
 * Components can be configured at the project level.
 * Helps in better categorization and organization.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### On-Premise Integration Settings
 
@@ -120,7 +120,7 @@ These settings apply to projects integrated with on-premise systems (e.g., SAP e
 * Ensures accurate mapping of transports to projects.
 * Improves tracking, reporting, and auditability.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### CPI Settings
 
@@ -140,13 +140,13 @@ Projects can enable the following validations:
 * Validates CPI design guidelines.
 * Uses validation reports available in project-level settings to ensure compliance.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Saving the Configuration
 
 * Click the **Save** button located at the top-right corner of the page to apply and save all changes.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Environments
 

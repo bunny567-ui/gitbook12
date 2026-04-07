@@ -23,9 +23,9 @@ After successfully creating the ABAP Environment instance, follow these steps to
 5. Click **Create Service Key**.
 6. Provide a name for the service key and click **Create**.
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Create Communication Keys&#x20;
 
@@ -66,11 +66,11 @@ Communication arrangements can also be created directly in the **ABAP Cloud syst
 1. Log in to the **ABAP Cloud system**.
 2. Navigate to **Administration → Communication Arrangements**.
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **New**.
 
-<figure><img src="../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the Communication Scenario:
 
@@ -78,26 +78,26 @@ Communication arrangements can also be created directly in the **ABAP Cloud syst
 
 5. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. In the **Common Data** section:
    * Enter an **Arrangement Name**.
    * In the **Communication System** field, click **New** to create a new system.
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create Communication System
 
 1. Enter a **System ID** and **Name** (as per naming convention).
 2. Click **Create** to generate the Communication System.
 
-<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create User for Outbound Communication
 
 1. Under **Outbound Communication**, click the **“+” (Add)** button.
 
-<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Enter:
 
@@ -106,11 +106,11 @@ Communication arrangements can also be created directly in the **ABAP Cloud syst
 
 3. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Click **Save** to complete the arrangement setup.
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### &#x20;Create Communication Arrangement for ABAP Unit Test Integration (SAP\_COM\_0735)
 
@@ -122,7 +122,7 @@ Repeat the same process for ABAP Unit Test Integration:
    * **SAP\_COM\_0735 – ABAP Unit Test Integration**
 4. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. In the **Common Data** section:
    * Enter an **Arrangement Name**.
@@ -130,7 +130,7 @@ Repeat the same process for ABAP Unit Test Integration:
 6. Enter a **System ID** and **Name** (as per naming convention).
 7. Click **Create** to generate the Communication System.
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Create User for Outbound Communication**
 
@@ -140,17 +140,17 @@ Repeat the same process for ABAP Unit Test Integration:
    * Password (define a secure password of your choice, following your organization’s password policy)
 3. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Click **Save** to complete the arrangement setup.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Verification of Service Details
 
 Once the **communication arrangements (SAP\_COM\_0510 and SAP\_COM\_0735)** are successfully created and activated, the corresponding **service details** can be verified in the **Service Key generated for the ABAP Environment service instance**.
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 3. Manage Software Components
 
@@ -158,11 +158,11 @@ Once the **communication arrangements (SAP\_COM\_0510 and SAP\_COM\_0735)** are 
 
 1. In the ABAP Cloud system, navigate to **Manage Software Components**.
 
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Provide:
 
@@ -172,7 +172,7 @@ Once the **communication arrangements (SAP\_COM\_0510 and SAP\_COM\_0735)** are 
 
 4. Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 5: Clone the Software Component
 
@@ -181,7 +181,7 @@ After creating the Software Component:
 1. Select the created Software Component.
 2. Click **Clone**.
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Provide:
 
@@ -193,6 +193,6 @@ After creating the Software Component:
 
 The software component is now connected to the Git repository and ready for ReleaseOwl-based deployment.
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once the above setup is completed, the system will be ready for integration through ReleaseOwl.

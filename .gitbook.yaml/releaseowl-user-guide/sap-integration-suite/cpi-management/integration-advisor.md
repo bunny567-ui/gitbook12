@@ -22,17 +22,17 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
 * Navigate to **Security → Role Collections** in the SAP BTP Cockpit.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Create** and enter the **Role Collection Name**. Confirm by clicking **Create**.
 * Once the role collection is created, select it from the list and click **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Under the **Roles** section, click **Add Role** and assign the required roles. Add the **Content Developer** role.
 * Click **Save** to update the role collection.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Steps to Create a Custom Type System** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system" id="pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system"></a>
 
@@ -98,37 +98,69 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 ### Synchronization with ReleaseOwl <a href="#pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl" id="pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl"></a>
 
 1. Go to the **Build** section and click on **Integration Advisor**.
-2. Click on the **Synchronize** button to sync the integration artifacts.
+2. Click the **Synchronize** button to retrieve and update the latest **MIG** and  **MAG** artifacts from the integrated system into ReleaseOwl, ensuring that the artifacts are in sync with the source environment.
 
-<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-3. The **Sync History** provides details of previous synchronizations, including:
+3.  After synchronization is completed, the retrieved **MAG** and **MIG** artifacts are displayed within ReleaseOwl.
+
+    The artifacts are organized under separate tabs:
+
+    * **MAG** tab
+    * **MIG** tab
+
+    Each tab displays the total number of available artifacts.
+
+<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+
+4. The **Sync History** provides details of previous synchronizations, including:
 
 * **Synced On** – Timestamp of synchronization.
 * **Synced By** – User who performed the synchronization.
 
-<figure><img src="../../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 4. By clicking the **Action** button, you can view:
 
-* **Versions**: Displays previous versions, allowing you to roll back changes if needed.&#x20;
-* When you open the **Versions** tab, you can:
-  * View the complete version history.
-  * **Assign** or **Unassign** a user story linked to a particular version.
-  * Track changes made across different versions for audit or review purposes.
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### Actions
 
-* **Download**
-  * The **Download** option under the Action menu lets you download the message or artifact locally.
+By clicking the **Actions** button, the following options are available:
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* **Sync**:\
+  Allows individual synchronization of **Mapping Guidelines (MAG)** and **Message Implementation Guidelines (MIG)** artifacts, fetching the latest version from the source system.
 
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+* **Versions**:\
+  Displays the version history of the selected artifact, enabling tracking and management of changes over time.
+
+<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+
+Within the **Versions** view, you can:
+
+* View the complete version history
+* Assign or unassign a user story associated with a specific version
+* Track changes across versions for audit and review purposes
+
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
+* **Download**:\
+  Enables downloading of the selected artifact (MIG or MAG) to the local system for offline access or reference.
+
+<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+*   **Download**
+
+    * The **Download** option under the Action menu lets you download the message or artifact locally.
+
+    <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 * **Details**: Provides additional information about the artifact.
 
-<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating and Managing a Release Pipeline** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-creating-and-managing-a-release-pipeline" id="pdf-page-gq2jqh5hz5sfguou1udk-creating-and-managing-a-release-pipeline"></a>
 
@@ -137,12 +169,12 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 1. Navigate to the **Release** section.
 2. Click on **Release Pipeline** and select **Create New Release Pipeline**.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a **name** for the release pipeline.
 4. Click **+Add Stage** to create a new stage.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Configuring Deployment Tasks**
 

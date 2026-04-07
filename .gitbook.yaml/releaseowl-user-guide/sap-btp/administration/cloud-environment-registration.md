@@ -58,11 +58,11 @@ The **Linked Projects** tab provides a detailed view of all projects associated 
 * **Source Environment Identification**:\
   The system indicates whether the selected environment is configured as a **source environment** for any project, improving visibility in deployment and transport flows.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Logs
 
 The system displays a history of all actions performed on the selected environment. Each log entry provides detailed information, including the action performed, the user who executed the action, and the corresponding timestamp, enabling effective tracking and auditing of environment activities.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

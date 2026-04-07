@@ -29,7 +29,7 @@ This section explains the process of registering SAP Cloud and SAP ABAP environm
 11. **Environment Type**: Select the appropriate environment type (e.g., Development, Quality, Production).
 12. Click **Save** to register the SAP Cloud Environment.
 
-<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### SAP ABAP Environment Registration in ReleaseOwl
 
