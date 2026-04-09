@@ -257,8 +257,6 @@ When a KVM is selected, the configuration is displayed under the **Entries** tab
 * Each column represents an **environment**&#x20;
 * Values are maintained **per environment** for each key.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-
 **Updating KVM Entries**
 
 To update values:
