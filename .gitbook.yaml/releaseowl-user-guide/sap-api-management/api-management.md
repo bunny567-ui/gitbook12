@@ -20,7 +20,7 @@ To sync API artifacts from SAP API Management:
 
 4. These artifacts are retrieved from the registered SAP API Management environment and reflected within ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Sync History
 
@@ -28,7 +28,7 @@ To track previous synchronizations:
 
 * Click on **Sync History** to view a detailed log of all synchronization activities performed within the project.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Artifact Actions**
 
@@ -372,7 +372,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Navigate to **Release Pipelines**.
 * Click **Create New Release Pipeline**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (25).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a **Pipeline Name**.
 * Add stages (e.g., QA, Prod) and assign tasks to each stage.

@@ -64,5 +64,5 @@ The **Linked Projects** tab provides a detailed view of all projects associated 
 
 The system displays a history of all actions performed on the selected environment. Each log entry provides detailed information, including the action performed, the user who executed the action, and the corresponding timestamp, enabling effective tracking and auditing of environment activities.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
