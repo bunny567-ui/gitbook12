@@ -100,6 +100,10 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 1. Go to the **Build** section and click on **Integration Advisor**.
 2. Click the **Synchronize** button to retrieve and update the latest **MIG** and  **MAG** artifacts from the integrated system into ReleaseOwl, ensuring that the artifacts are in sync with the source environment.
 
+{% hint style="info" %}
+Note: Use the **Synchronize** option to fetch and add Integration Advisor artifacts into ReleaseOwl.
+{% endhint %}
+
 <figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 3.  After synchronization is completed, the retrieved **MAG** and **MIG** artifacts are displayed within ReleaseOwl.
