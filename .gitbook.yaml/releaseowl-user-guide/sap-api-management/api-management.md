@@ -169,7 +169,7 @@ The **Unassign User Story** option allows you to remove the current assignment o
 
 <figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FIfAAuqDQE8zHewRe3GKa%252Fimage.png%3Falt%3Dmedia%26token%3Da1184e9d-ff65-4b21-9fe0-9d948a54f10d&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=f757838a&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-### API Provider
+#### API Provider
 
 The **API Provider** section in **ReleaseOwl** is used to configure provider-specific parameters that define how API artifacts interact with backend services across different environments.
 
