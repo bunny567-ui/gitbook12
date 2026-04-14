@@ -39,6 +39,6 @@ Fill in the required details:
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-* You can access the **Checklist Task** either from the **Pipeline Activity** or by navigating to the **User Story**, where the task has been promoted to the next stage and the checklist details are available.
+* After performing **Approve** or **Reject**, the executed checklist details can be viewed in the **Pipeline Activity** section.
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
