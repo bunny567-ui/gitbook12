@@ -85,7 +85,7 @@ After instance creation:
 * **Client Secret**
 * **Token URL**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Register **SAP CPI (API Access)** Credential in ReleaseOwl
 
@@ -168,7 +168,7 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 5. Click **Save**.
 6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for **IFLOW** deployments.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Web Authentication**
 
@@ -239,7 +239,7 @@ To establish trust between the subaccount and the Identity Provider:
 * Locate the generated **Origin Key** in the Trust Configuration table you have created.
 * Copy the **Origin Key** for use in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### Register SAP Cloud Identity Service Credential in Releaseowl
 
@@ -269,7 +269,7 @@ To establish trust between the subaccount and the Identity Provider:
 * You will be redirected to a new page.
 * Copy the **URL** from the browser address bar — this is your **IdP Metadata URL**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Paste the copied URL into the **IdP Metadata URL** field in ReleaseOwl.
 7. **Origin Key Configuration :** Enter the copied **Origin Key** value in the **Origin Key** field in ReleaseOwl by following the steps [outlined above.](credential-management.md#establish-trust-configuration)
@@ -349,19 +349,19 @@ Before configuring the integration, ensure that the following prerequisites are 
 1. Create your Ping Identity account using the provided[ URL](https://www.pingidentity.com/en/try-ping.html) and log in to **PingOne**.
 2. From the left-hand menu, navigate to **Applications**. In the Applications section, click on the **+ (Add Application)** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a name of your choice for the application and select the application type based on your requirement, such as **SAML Application** or **OIDC Web App**. For this setup, select **OIDC Web App** and click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Toggle the application **ON** and navigate to the **Attribute Mappings** tab.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click on **Add Mapping**. For the **PingOne** attribute, select **Email Address**, then click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure Identity Provider in SAP Cloud Identity Services**
 
@@ -371,19 +371,19 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 2. Navigate to **Applications & Resources**.
 3. Open the **SAP BTP application** associated with your tenant.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure Conditional Authentication
 
 1. Go to the **Trust** section.
 2. Navigate to **Conditional Authentication**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. In the **Default Authenticating Identity Provider** field, select **Ping OIDC**.
 4. Click **Save** to apply the configuration.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Create a Corporate Identity Provider**
 
@@ -393,7 +393,7 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 
 * Click on the **+ Create** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Enter a name of your choice and select the **Identity Provider Type** as **OpenID Connect compliant**.
 * Click **Create** to complete the setup.
@@ -412,7 +412,7 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 2. Navigate to the **Overview** section.
 3. Copy the **OIDC Discovery Endpoint**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Paste the copied endpoint into the **Discovery URL** field in OpenID Connect Configuration.
 
@@ -432,11 +432,11 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 
 5. Paste the **Client ID** and **Client Secret** obtained from the Ping Identity application.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **Load** button. Once the configuration details are loaded successfully, the **Validate** button will be enabled.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Copy the **OIDC Callback URL**. Then navigate to the application you created and open it. Go to the **Configuration** section and click **Edit**.&#x20;
 
@@ -470,14 +470,14 @@ Follow the steps below to configure **Ping Identity as a SAML Identity Provider*
 2. Navigate to **Applications & Resources**.
 3. Open the **SAP BTP application** associated with your tenant.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure Conditional Authentication
 
 1. Go to the **Trust** section.
 2. Navigate to **Conditional Authentication**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. In the **Default Authenticating Identity Provider** field, select **Oping Saml.**
 4. Click **Save** to apply the configuration.
@@ -503,7 +503,7 @@ Follow the steps below to configure **Ping Identity as a SAML Identity Provider*
 1. Log in to **Ping Identity**.
 2. From the left-hand menu, navigate to **Applications**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the **+ (Add Application)** button.
 4. Enter a **Name** for the application.
@@ -562,7 +562,7 @@ During SAML configuration, choose **one of the following options**.
 
 * Click on the **+ Create** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Enter a name of your choice and select the **Identity Provider Type** as **SAML 2.0 compliant**.
 * Click **Create** to complete the setup.

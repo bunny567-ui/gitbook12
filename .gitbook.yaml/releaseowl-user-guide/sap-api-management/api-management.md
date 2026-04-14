@@ -20,7 +20,7 @@ To sync API artifacts from SAP API Management:
 
 4. These artifacts are retrieved from the registered SAP API Management environment and reflected within ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Sync History
 
@@ -28,7 +28,7 @@ To track previous synchronizations:
 
 * Click on **Sync History** to view a detailed log of all synchronization activities performed within the project.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Artifact Actions**
 
@@ -51,7 +51,7 @@ The **Sync** option is used to fetch the latest version of API Proxy artifacts f
 * Click **Sync** to refresh and retrieve the most up-to-date API Proxy definitions.
 * This ensures that ReleaseOwl reflects the current state of artifacts across environments.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Configure**&#x20;
 
@@ -64,7 +64,7 @@ To configure an API Proxy artifact in ReleaseOwl:
 3. Click the **Actions** button.
 4. Select **Configure**.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** The **Development (Dev) environment is read-only** and does not allow modification.
@@ -372,7 +372,7 @@ Release Pipelines in ReleaseOwl manage approvals, validations, deployments, auto
 * Navigate to **Release Pipelines**.
 * Click **Create New Release Pipeline**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (26).png" alt=""><figcaption></figcaption></figure>
 
 * Provide a **Pipeline Name**.
 * Add stages (e.g., QA, Prod) and assign tasks to each stage.
@@ -539,4 +539,4 @@ Allows users to retry a failed deployment or re-execute a failed stage of the pi
 
 * After deploying the artifacts, you will receive a notification email containing the deployment details, including the user story ID, artifact type, version ID, and deployment status.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
