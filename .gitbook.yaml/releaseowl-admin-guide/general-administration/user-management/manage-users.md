@@ -35,17 +35,17 @@ To create a new user:
 3. The **User Creation form** will open. Enter the required user details in the provided fields.
 4. Click the **Create** button to save the user.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Once the user is created, the newly created user will appear in the **Users Details** list.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Managing User Details**
 
 * Click the **arrow ( > ) icon** next to the user to open the **user details page**.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * In this section, you can:
   * Assign **Projects** to the user.
@@ -53,7 +53,7 @@ To create a new user:
   * Configure **Environment access** for the user.
 * After assigning the necessary roles and access permissions, click **Save** to confirm the configuration.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Editing User Information**
 
@@ -63,7 +63,7 @@ If changes are required:
 * Modify the required user details.
 * Click **Save** to apply the updates.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Lock&#x20;
 
