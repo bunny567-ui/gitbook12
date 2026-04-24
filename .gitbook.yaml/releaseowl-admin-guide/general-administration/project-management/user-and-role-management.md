@@ -67,7 +67,7 @@ To create a new user:
 3. The **User Creation form** will open. Enter the required user details in the provided fields.
 4. Click the **Create** button to save the user.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Once the user is created, the **newly created user will appear in the Users Details list**.
 

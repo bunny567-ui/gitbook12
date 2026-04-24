@@ -18,14 +18,14 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
   * **Instance Name:** Choose a suitable name
 * Click **Next**, then **Create** to set up the instance.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt=""><figcaption></figcaption></figure>
 
 2. Create Service Key
 3. Enable Custom Idp
 4. Enable Test Automation in ReleaseOwl CPI Environment Configuration
 5. Update the OAuth credentials and Instance URLs in the ReleaseOwl CPI Environment using the details from the Service Key in SAP BTP Cockpit.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Generating Test Cases** <a href="#pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases" id="pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases"></a>
 
@@ -42,11 +42,6 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 1. In **CPI Test Generator**, click **Generate Test Cases**.
 2. Select the **Artifact Name** for the iFlow.
 3. After the iFlow execution, go to the **ReleaseOwl Dashboard** and click **Fetch Activity Messages**.
-
-
-
-
-
 4. When you click on the **Test Case** button, ensure that special characters are not used in the CPI test case names.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1083).png" alt=""><figcaption></figcaption></figure>
@@ -107,7 +102,7 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 #### **Mock Endpoints** <a href="#pdf-page-ahecdlthytd4fxld4qwa-mock-endpoints" id="pdf-page-ahecdlthytd4fxld4qwa-mock-endpoints"></a>
 
 * When enabled, ReleaseOwl **mocks all receiver channels** in the iFlow with **HTTPS receivers** pointing to the **ReleaseOwl mock service**.
-* ReleaseOwl creates a **new iFlow** with the name **ROMOCK** and prefixes the package name with **ROMOCK**.
+* **ReleaseOwl** creates a new iFlow by applying the prefix defined during environment creation to both the iFlow name and the package name.
 * The mock service simulates responses returned by external calls using recorded messages from the test case generation.
 * This allows integration flow testing **without relying on actual external APIs**.
 
@@ -143,8 +138,9 @@ ReleaseOwl mocks all the receiver channels in the iFlow with https receivers poi
 <figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
 2. **Run the test case with mock enabled.**
-3. **Mock Package and iFlow:**
-   * A **Mock Package** and **Mock iFlow** will be created in the **CPI tenant** with the prefix **ROMOCK**.
+3.  **Mock Package and iFlow:**
+
+    A mock package and mock iFlow are created in the CPI tenant using the prefix defined during environment creation.
 
 #### **Test Results after Execution:**
 

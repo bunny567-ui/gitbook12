@@ -137,6 +137,7 @@
       * [Deployment Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/deployment-task.md)
       * [Check List Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/check-list-task.md)
       * [Update User Story Fields Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/update-user-story-fields-task.md)
+      * [Branch Merge Task](releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/branch-merge-task.md)
     * [Use Cases](releaseowl-user-guide/working-with-release-pipelines/use-cases/README.md)
       * [Automated Transport import along with Transport Promotion](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-transport-import-along-with-transport-promotion.md)
       * [Automated MTAR Deployments](releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-mtar-deployments.md)

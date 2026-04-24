@@ -13,6 +13,14 @@ Note: **License terms of CPI Lint tool can be found here:**\
 [https://github.com/mwittrock/cpilint?tab=MIT-1-ov-file#readme](https://github.com/mwittrock/cpilint?tab=MIT-1-ov-file#readme)
 {% endhint %}
 
+
+
+**Prerequisites:**
+
+In the **General** tab of Project Settings, scroll down to the **CPI Settings** section. If the **"Both"** option is selected, the system generates a **Validation Report** that includes results from both **CPI Lint** and **CPI Design Guidelines**.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 ### **To validate a package:**
 
 1. Go to a required package in the Release Packages screen under Release Section and click **Actions**. Click **Validate** to start the validation process.
@@ -51,7 +59,7 @@ This feature ensures that the correct user story is reused during a downgrade op
 3. After the downgrade validation is successful, the system **reuses the same artifact-assigned user story**.
 4. The reused user story is displayed in the **Target User Story** column.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### CPI Governance
 
