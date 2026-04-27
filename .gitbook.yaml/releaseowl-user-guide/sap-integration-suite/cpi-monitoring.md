@@ -13,7 +13,7 @@ Using this feature, users can:
 
 To read monitoring data in ReleaseOwl, the **“MonitoringDataRead”** role must be assigned in the **SAP Process Integration Runtime (API)** instance.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :**  Without this role, ReleaseOwl will not be able to fetch runtime logs or message processing details.
@@ -39,7 +39,7 @@ To view the monitoring configuration:
 2. Navigate to **Monitoring**.
 3. Select **CPI Monitoring**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### CPI Monitoring Screen
 
@@ -67,11 +67,11 @@ The monitoring table displays the following details:
 * **Started On** – This column shows the exact date and time when the message processing began.
 * **Status** – The Status column indicates the current processing state of the message.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Configuration** -  Click **Configuration** to view or modify the **CPI Monitoring configuration settings**. These settings control how monitoring data is fetched from the **SAP CPI tenant** into **ReleaseOwl**. Through this configuration, users can define which messages should be monitored, how many records should be retrieved, and how frequently the monitoring data should be updated.
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The following parameters are available in the configuration:
 
@@ -93,11 +93,11 @@ Specifies the time interval, in minutes, between each scheduled monitoring data 
 **Example:**\
 If **Real Time Monitor** is enabled and the **Schedule Interval** is set to **10 minutes**, ReleaseOwl will automatically retrieve monitoring data from the SAP CPI tenant **every 10 minutes** and update the monitoring dashboard accordingly
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Check Messages** -  Click **Check Messages** to manually fetch monitoring data from the CPI tenant. When this option is used, ReleaseOwl retrieves monitoring records from the **last execution time until the current time**. This option is typically used when **Real-Time Monitoring is disabled**.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Viewing Detailed Execution Information**
 

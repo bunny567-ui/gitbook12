@@ -18,7 +18,7 @@ Fill in the required details:
 | **Mandatory**                  | Indicates compulsory checks                   | Enable to ensure the step must be completed before proceeding                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **Evidence Required**          | Proof for compliance                          | Enable to require supporting documents/screenshots as evidence                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Completing the Checklist Task**
 
@@ -26,7 +26,7 @@ Fill in the required details:
 2. Navigate to the **My Tasks** section.
 3. Locate the assigned task and click on **Approve / Reject** to open it.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Inside the task, you will see the **Checklist items** that must be completed before promoting to the next stage.
 * For each checklist item:
@@ -37,7 +37,7 @@ Fill in the required details:
 * Ensure all mandatory checklist items are completed.
 * Click **Approve** to proceed to the next stage (or **Reject** if the task is not satisfied).
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After performing **Approve** or **Reject**, the executed checklist details can be viewed in the **Pipeline Activity** section.
 

@@ -4,12 +4,12 @@ The settings section consists of two components: component management and freeze
 
 ## Component Management
 
-The Component Management section helps in organizing and managing software components used in ReleaseOwl workflows.
+The Component Management section helps in organizing and managing software components used in **ReleaseOwl** workflows.
 
 1. Navigate to **Settings** and select **Components**.
 2. Click on the **Create** button to add a new component.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Provide the **Component Name** and a brief **Description**.
 4. Click **Save** to create the component.

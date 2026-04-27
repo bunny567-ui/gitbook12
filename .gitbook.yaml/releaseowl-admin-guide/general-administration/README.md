@@ -40,4 +40,4 @@ To access the **Administration View**, follow these steps:
 
 Once **Administration** is selected, a **comprehensive list of all projects associated with the client account** will be displayed. From this view, administrators can manage projects and perform administrative configurations across the platform.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -1,6 +1,6 @@
 # Manage Roles
 
-The Manage Roles feature in the Administration View allows administrators to create, edit, and delete roles to manage user privileges within the platform.
+The Manage Roles feature in the **Administration View** allows administrators to create, edit, and delete roles to manage user privileges within the platform.
 
 #### Create Role
 
@@ -41,7 +41,7 @@ To assign the role actions to an existing role:
 
 ### **Notification Bar in ReleaseOwl**
 
-To keep users informed and up to date, ReleaseOwl includes a **Notification Bar** feature that displays important system messages directly within the application interface.
+To keep users informed and up to date, **ReleaseOwl** includes a **Notification Bar** feature that displays important system messages directly within the application interface.
 
 <figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
