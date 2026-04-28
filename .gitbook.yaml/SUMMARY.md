@@ -113,7 +113,7 @@
     * [Working with Build Pipelines](releaseowl-user-guide/sap-abap-cloud-1/working-with-build-pipelines/README.md)
       * [ATC Report](releaseowl-user-guide/sap-abap-cloud-1/working-with-build-pipelines/atc-report.md)
       * [ABAP Unit Test](releaseowl-user-guide/sap-abap-cloud-1/working-with-build-pipelines/abap-unit-test.md)
-  * [SAP ABAP Cloud Communication Setup](releaseowl-user-guide/sap-abap-cloud-communication-setup.md)
+    * [SAP ABAP Cloud Communication Setup](releaseowl-user-guide/sap-abap-cloud-1/sap-abap-cloud-communication-setup.md)
   * [Working with Release Packages](releaseowl-user-guide/working-with-release-pipelines/README.md)
     * [Create Release Package with User Stories](releaseowl-user-guide/working-with-release-pipelines/create-release-package-with-user-stories.md)
     * [Release Package Validation with Transports](releaseowl-user-guide/working-with-release-pipelines/release-package-validation-with-transports.md)
