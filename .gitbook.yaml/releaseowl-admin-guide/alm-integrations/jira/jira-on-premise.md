@@ -246,10 +246,7 @@ After completing the system mapping, the entry will be added under the **Access 
 
 **Maintain Resource Details**
 
-* **URL Path**: Enter `/`
-
-👉 This exposes the **entire application** (all endpoints) of the Jira On-Premise system.
-
+* **URL Path**: Enter `/`This exposes the **entire application** (all endpoints) of the Jira On-Premise system.
 * **Access Policy**: Select **Path and All Sub-Paths**
 * Click on **Save** to apply the resource configuration.
 
