@@ -154,9 +154,112 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 
 ## 6. Proxy Type : SAP Cloud Connector
 
-In the ReleaseOwl Dashboard, if the proxy type is choosen as the SAP Cloud Connector, here are the following steps you need to follow:
+When the Proxy Type is selected as **SAP Cloud Connector** for Jira On-Premise integration, you need to follow the steps below:
 
-Go to the SAP BTP account and go to the destination side and click on the create button and click on the create from the scratch&#x20;
+#### **A. Configure Destination in SAP BTP**
+
+1. Go to the SAP BTP Cockpit.
+2. Navigate to **Subaccount → Connectivity → Destinations**.
+3. Click on **Create** → **From Scratch**.
+4. Enter the destination details as shown:
+   * **Name**: Enter a name of your choice (e.g., `JIRA_ONPREM`)
+   * **Type**: Select **HTTP**
+   * **URL**: Provide the Jira On-Premise endpoint URL or virtual host (e.g., `http://<host>:<port>`)
+   * **Proxy Type**: Select **OnPremise**
+   * **Authentication**: Select **BasicAuthentication**
+   * **User**: Enter the Jira On-Premise username
+   * **Password**: Enter the corresponding password or API token
+   * **Location ID**: Enter the Location ID configured in SAP Cloud Connector&#x20;
+5. Click on "**Create**".
+6. After creating, click on **Check Connection** to validate the setup.
+
+<figure><img src="../../../.gitbook/assets/image (1788).png" alt=""><figcaption></figcaption></figure>
+
+#### **B. Configure SAP Cloud Connector**
+
+**1. Navigate to Cloud To On-Premise**
+
+* Open SAP Cloud Connector
+* Select your Subaccount
+* Click **Cloud To On-Premise**
+
+<figure><img src="../../../.gitbook/assets/image (1778).png" alt=""><figcaption></figcaption></figure>
+
+**2. Add System Mapping**
+
+* Click **“+” (Add)**
+
+**3. Back-end Type**
+
+* Select **Non-SAP System**
+* Click **Next**
+
+<figure><img src="../../../.gitbook/assets/image (1779).png" alt=""><figcaption></figcaption></figure>
+
+**4. Protocol**
+
+* Select **HTTP / HTTPS** (Recommended: HTTPS)
+* Click **Next**
+
+<figure><img src="../../../.gitbook/assets/image (1780).png" alt=""><figcaption></figcaption></figure>
+
+#### **5. Internal System Details**
+
+* **Internal Host**: Specify the fully qualified domain name (FQDN) or IP address of the Jira On-Premise system (or the public/ngrok endpoint if used).
+* **Internal Port**: Specify the port on which the Jira application is running (e.g., `443` for HTTPS, `8080` for HTTP). This must correspond to the actual backend service port and **not necessarily the port defined in SAP BTP Destination**.
+* Ensure that the internal host and port are **reachable from the host where SAP Cloud Connector is installed**.
+
+<figure><img src="../../../.gitbook/assets/image (1781).png" alt=""><figcaption></figcaption></figure>
+
+#### **6. Virtual Host Configuration**
+
+* **Virtual Host**: Enter virtual host from the BTP tenant (e.g., `jira_ro.com`)
+* **Virtual Port**: Enter port (e.g., `443`). Must match the **Destination URL** in SAP BTP
+
+<figure><img src="../../../.gitbook/assets/image (1782).png" alt=""><figcaption></figcaption></figure>
+
+#### **7. Principal Type**
+
+* **Principal Type** defines how authentication is handled between SAP BTP and the On-Premise system via SAP Cloud Connector.
+* Select **X.509 Certificate (Advanced)** to enable certificate-based authentication.
+
+<figure><img src="../../../.gitbook/assets/image (1783).png" alt=""><figcaption></figcaption></figure>
+
+**8. Complete System Mapping**
+
+After maintaining all required configuration details (Protocol, Internal Host, and Virtual Host):
+
+* Click on **“Check Internal Host”** to validate connectivity from SAP Cloud Connector to the On-Premise system.  Ensure that the internal host is **reachable** before proceeding.
+* Once the validation is successful, click on **Finish** to complete the system mapping.
+
+<figure><img src="../../../.gitbook/assets/image (1784).png" alt=""><figcaption></figcaption></figure>
+
+**9. Configure Access Control and Resources**
+
+After completing the system mapping, the entry will be added under the **Access Control** tab in SAP Cloud Connector.
+
+**Add Resource Configuration**
+
+1. Select the newly created system mapping.
+2. Navigate to the **Resources** section.
+3. Click on **Add** to define a resource.
+
+**Maintain Resource Details**
+
+* **URL Path**: Enter `/`
+
+👉 This exposes the **entire application** (all endpoints) of the Jira On-Premise system.
+
+* **Access Policy**: Select **Path and All Sub-Paths**
+* Click on **Save** to apply the resource configuration.
+
+<figure><img src="../../../.gitbook/assets/image (1785).png" alt=""><figcaption></figcaption></figure>
+
+* The resource will be added under the mapping.
+* The system status should remain **Reachable (Green)**.
+* SAP BTP can now access all endpoints of the On-Premise Jira system via the defined virtual host
+
+<figure><img src="../../../.gitbook/assets/image (1786).png" alt=""><figcaption></figcaption></figure>
 
 ## **Jira Project Integration**
 
