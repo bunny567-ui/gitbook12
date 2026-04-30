@@ -152,6 +152,12 @@ To integrate Jira with ReleaseOwl for issue tracking and traceability, follow th
 
 <figure><img src="../../../.gitbook/assets/image (1688).png" alt=""><figcaption></figcaption></figure>
 
+## 6. Proxy Type : SAP Cloud Connector
+
+In the ReleaseOwl Dashboard, if the proxy type is choosen as the SAP Cloud Connector, here are the following steps you need to follow:
+
+Go to the SAP BTP account and go to the destination side and click on the create button and click on the create from the scratch&#x20;
+
 ## **Jira Project Integration**
 
 To link a Jira project with a ReleaseOwl project, follow the steps below:
