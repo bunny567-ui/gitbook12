@@ -399,6 +399,10 @@ It enables secure authentication and establishes trusted communication between S
 
 <figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note :** For role assignment, follow the same role mapping configuration process described in the [previous section.](credential-management.md#assign-required-roles)
+{% endhint %}
+
 ### 3. Ping Identity
 
 Ping Identity enables secure authentication and establishes trusted communication between applications and identity providers using industry-standard protocols such as **OAuth 2.0** and **OpenID Connect (OIDC)**. It ensures secure user and system authentication, supports single sign-on (SSO), and protects access to applications by issuing tokens that contain verified user identity and authorization claims.
@@ -676,4 +680,6 @@ During SAML configuration, choose **one of the following options**.
 
 {% hint style="info" %}
 **Note:** For **Ping Identity** configuration, ensure that the **email** attribute is mapped to **Email Address** in the application attribute mappings. Additionally, verify that the email used in role mapping matches the service user email configured in Ping Identity to ensure proper role assignment and authentication.
+
+* For role assignment, follow the same role mapping configuration process described in the [previous section.](credential-management.md#assign-required-roles)
 {% endhint %}
