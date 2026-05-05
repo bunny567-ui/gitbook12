@@ -258,6 +258,49 @@ After completing the system mapping, the entry will be added under the **Access 
 
 <figure><img src="../../../.gitbook/assets/image (1786).png" alt=""><figcaption></figcaption></figure>
 
+### Jira Integration via SAP Cloud Connector with ReleaseOwl
+
+To integrate Jira with ReleaseOwl using **SAP Cloud Connector** as the proxy type, follow the steps below:
+
+#### Step 1: Configure SAP Cloud Environment Credentials
+
+1. Log in to the ReleaseOwl Dashboard.
+2. Navigate to **Administration** → **Credential Manager**.
+3. Click **Register Credential**.
+
+Provide the following details:
+
+* **Credential Type:** Select **SAP Cloud Environment**.
+* **Authentication Type:** Select **Basic Authentication**.
+* **Username:** Enter the username configured for SAP BTP credentials.
+* **Password:** Enter the corresponding password for the SAP BTP credential.
+
+4. Click **Save** to complete the SAP Cloud Environment credential configuration.
+
+<figure><img src="../../../.gitbook/assets/image (1795).png" alt=""><figcaption></figcaption></figure>
+
+#### Step 2: Configure Jira Credentials
+
+1. Navigate to **Administration** → **Credential Manager**.
+2. Click **Register Credential**.
+
+Fill out the credential form with the following details:
+
+* **Credential Name:** Enter a preferred name for the credential.
+* **Credential Type:** Select **Jira**.
+* **Scope:** Choose the required scope:
+  * **Global:** Visible to all users
+  * **Private:** Visible only to the user who created it
+* **Proxy Type:** Select **SAP Cloud Connector**.
+* **Proxy URL:** Enter your ReleaseOwl tenant URL.
+* **Destination:** Select the destination created in SAP Business Technology Platform.
+* **SAP Cloud Credentials:** Select the SAP Cloud credentials configured in Step 1.
+* **Hosting Type:** Select **On-Premise**.
+
+3. Click **Save** to register the Jira credential.
+
+<figure><img src="../../../.gitbook/assets/image (1796).png" alt=""><figcaption></figcaption></figure>
+
 ## **Jira Project Integration**
 
 To link a Jira project with a ReleaseOwl project, follow the steps below:
