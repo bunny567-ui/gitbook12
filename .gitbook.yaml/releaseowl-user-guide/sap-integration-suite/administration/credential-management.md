@@ -50,20 +50,31 @@ This instance enables **programmatic access via APIs** for integration, automati
 
 #### Assign Required Roles
 
-In the **Parameters** step, assign the following roles to allow artifact management:
+In the **Parameters** step, assign the required roles based on the target environment.
 
-| **Role**                     | **Description**                                   |
-| ---------------------------- | ------------------------------------------------- |
-| `MessagePayloadsRead`        | Read message payloads in the integration runtime. |
-| `MonitoringDataRead`         | View monitoring data for integration flows.       |
-| `TraceConfigurationEdit`     | Edit tracing configurations.                      |
-| `TraceConfigurationRead`     | View current tracing configuration.               |
-| `WorkspaceArtifactsDeploy`   | Deploy artifacts from workspace to runtime.       |
-| `WorkspacePackagesConfigure` | Configure packages, parameters, and dependencies. |
-| `WorkspacePackagesRead`      | Read-only access to integration packages.         |
-| `WorkspacePackagesEdit`      | Modify and configure integration packages.        |
+**For Production Environments**, add the following roles to enable deployment access
 
+| Role                           | Description                                                                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**      | Provides read access to CPI artifacts such as **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                                     |
+| **WorkspacePackagesConfigure** | Allows users to configure artifact settings, such as **iFlow configuration parameters**.                                                                            |
+| **WorkspacePackagesEdit**      | Enables creation and modification of artifacts such as **iFlow, Script Collection, and Message Mapping**. For **Value Mapping**, it supports only initial creation. |
+| **WorkspaceArtifactsDeploy**   | Grants permission to deploy artifacts to runtime, including **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                       |
+| **MonitoringDataRead**         | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
+| **MessagePayloadsRead**        | Allows users to view message payloads in monitoring.                                                                                                                |
 
+**For Non-Production Environments**, add the following roles:
+
+| Role                           | Description                                                                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**      | Provides read access to CPI artifacts such as **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                                     |
+| **WorkspacePackagesConfigure** | Allows configuration of artifact settings, such as **iFlow configuration parameters**.                                                                              |
+| **WorkspacePackagesEdit**      | Enables creation and modification of artifacts such as **iFlow, Script Collection, and Message Mapping**. For **Value Mapping**, it supports only initial creation. |
+| **WorkspaceArtifactsDeploy**   | Grants permission to deploy artifacts to runtime, including **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                       |
+| **MonitoringDataRead**         | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
+| **MessagePayloadsRead**        | Allows users to view message payloads in monitoring.                                                                                                                |
+| **TraceConfigurationRead**     | Provides access to view the current tracing configuration.                                                                                                          |
+| **TraceConfigurationEdit**     | Allows modification of tracing settings, including enabling trace configuration.                                                                                    |
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FQeZkcua5pYBQBiksaMC7%252Fimage.png%3Falt%3Dmedia%26token%3D476837b5-932e-4bed-bf70-61c9bbdf6797&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a4526b6f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -220,20 +231,77 @@ To establish trust between the subaccount and the Identity Provider:
 
 <figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FQW4csOsTAKJeEFrGVsyq%252Fimage.png%3Falt%3Dmedia%26token%3D8e7c4214-95df-4bdd-8137-f7fd24aabcec&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=31946591&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-**Configure Role Attributes**
+#### Configure Email Attribute
+
+* In **SAP Cloud Identity Services**, navigate to **Applications & Resources** and select your **SAP BTP Subaccount Application**.
+* Go to the **Trust** tab and scroll to the **Attributes** section.
+* Under **Self-defined Attributes**, configure the **email** attribute with:
+  * **Source:** Identity Directory
+  * **Value:** Email
+* Click **Save**.
+
+<figure><img src="../../../.gitbook/assets/image (1798).png" alt=""><figcaption></figcaption></figure>
+
+#### **Configure Role Attributes**
 
 * In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
 * Click the **"+"** button to add a new mappings.
+* If you plan to use **SAP Integration Advisor**, assign the additional roles required for Integration Advisor functionality.
 
-| Role                       | Attribute | Operator | Value                        |
-| -------------------------- | --------- | -------- | ---------------------------- |
-| PI\_Integration\_Developer | email     | equals   | Email ID of the service user |
-| PI\_Administrator          | email     | equals   | Email ID of the service user |
-| Integration\_Provisioner   | email     | equals   | Email ID of the service user |
+| Role                              | Attribute | Operator | Value                         |
+| --------------------------------- | --------- | -------- | ----------------------------- |
+| PI\_Integration\_Developer        | email     | equals   | Email ID of the service user  |
+| <p><br>iadv-content-developer</p> | email     | equals   | Email ID of the Service User  |
 
 <figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FD6bR1lMUOU1fz4YBQxTf%252Fimage.png%3Falt%3Dmedia%26token%3D7b201ba3-a71d-4a3e-8ee7-52209c4c2a00&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=78bb2fa&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-**Origin Key Configuration**
+{% hint style="info" %}
+&#x20;**Note:** Ensure the email used in role mapping matches the email maintained in SAP Cloud Identity Services.
+{% endhint %}
+
+#### Assign Role Collections&#x20;
+
+If you do not want to create a role collection, use the [**Configure Role Attributes**](credential-management.md#configure-role-attributes) method described earlier to assign the required roles.
+
+To create and assign a role collection for the required environment access, follow these steps:
+
+1. Navigate to **Security → Role Collections**.
+2. Click **Create**.
+3. Enter a name for the role collection and click **Create**.
+
+<figure><img src="../../../.gitbook/assets/image (1797).png" alt=""><figcaption></figcaption></figure>
+
+4. Search for the newly created role collection.
+5. Select the role collection name.
+6. Click **Edit**.
+7.  Add the required roles based on your environment type:
+
+    **For Production Environments**, add the following roles:
+
+
+
+    | Role                         | Description                                                                                                                 |
+    | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+    | **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
+    | **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
+    | **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
+    | **TraceConfigurationRead**   | Provides access to view the current tracing configuration.                                                                  |
+    | **TraceConfigurationEdit**   | Allows modification of tracing settings, including enabling trace configuration.                                            |
+
+    **For Non-Production Environments**, add the following roles:
+
+
+
+    | Role                         | Description                                                                                                                 |
+    | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+    | **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
+    | **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
+    | **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
+    | **TraceConfigurationRead**   | Provides access to view the current tracing configuration.                                                                  |
+    | **TraceConfigurationEdit**   | Allows modification of tracing settings, including enabling trace configuration.                                            |
+8. Click **Save** to apply the changes.
+
+#### **Origin Key Configuration**
 
 * Click **Save** after completing the configuration.
 * Locate the generated **Origin Key** in the Trust Configuration table you have created.
@@ -272,7 +340,7 @@ To establish trust between the subaccount and the Identity Provider:
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Paste the copied URL into the **IdP Metadata URL** field in ReleaseOwl.
-7. **Origin Key Configuration :** Enter the copied **Origin Key** value in the **Origin Key** field in ReleaseOwl by following the steps [outlined above.](credential-management.md#establish-trust-configuration)
+7. **Origin Key Configuration :** Enter the copied **Origin Key** value in the **Origin Key** field in ReleaseOwl by following the steps [outlined above](credential-management.md#origin-key-configuration).
 8. Click **Save**.
 
 <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
@@ -605,3 +673,7 @@ During SAML configuration, choose **one of the following options**.
 * Click **Save** to complete the configuration.
 
 <figure><img src="../../../.gitbook/assets/image (1738).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:** For **Ping Identity** configuration, ensure that the **email** attribute is mapped to **Email Address** in the application attribute mappings. Additionally, verify that the email used in role mapping matches the service user email configured in Ping Identity to ensure proper role assignment and authentication.
+{% endhint %}
