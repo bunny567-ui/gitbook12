@@ -112,10 +112,14 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 7. Add the following roles to ensure proper access and deployment capabilities:
 
-* WorkspaceArtifactsDeploy
-* WorkspacePackagesConfigure
-* WorkspacePackagesRead
-* WorkspacePackagesEdit
+| **Role**                       | **Description**                                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**      | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
+| **WorkspacePackagesConfigure** | Configure artifact settings, such as iFlow configuration parameters.                                                                          |
+| **WorkspacePackagesEdit**      | Create and update artifacts such as iFlow, Script Collection, and Message Mapping. Also supports initial creation of Value Mapping artifacts. |
+| **WorkspaceArtifactsDeploy**   | Deploy artifacts to runtime, including iFlow, Script Collection, Message Mapping, and Value Mapping.                                          |
+| **MonitoringDataRead**         | Access message processing logs and monitoring data for iFlow, SOAP, REST, and OData APIs.                                                     |
+| **MessagePayloadsRead**        | View message payloads in monitoring.                                                                                                          |
 
 8. Click **Save** after adding the roles.
 
@@ -133,14 +137,18 @@ Similarly, create a role collection for the non-production environment to enable
 
 **Assign the following roles:**
 
-* MessagePayloadsRead
-* MonitoringDataRead
-* TraceConfigurationEdit
-* TraceConfigurationRead
-* WorkspaceArtifactsDeploy
-* WorkspacePackagesConfigure
-* WorkspacePackagesRead
-* WorkspacePackagesEdit
+Add the following roles to ensure proper access and deployment capabilities:
+
+| **Role**                       | **Description**                                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**      | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
+| **WorkspacePackagesConfigure** | Configure artifact settings (for example, iFlow configuration parameters).                                                                    |
+| **WorkspacePackagesEdit**      | Create and update artifacts such as iFlow, Script Collection, and Message Mapping. Supports initial creation of Value Mapping artifacts only. |
+| **WorkspaceArtifactsDeploy**   | Deploy artifacts to runtime, including iFlow, Script Collection, Message Mapping, and Value Mapping.                                          |
+| **MonitoringDataRead**         | Access message processing logs and monitoring data for iFlow, SOAP, REST, and OData APIs.                                                     |
+| **MessagePayloadsRead**        | View message payloads in monitoring.                                                                                                          |
+| **TraceConfigurationRead**     | View the current tracing configuration.                                                                                                       |
+| **TraceConfigurationEdit**     | Modify tracing configuration (enable trace configuration).                                                                                    |
 
 6. Click **Save** to complete the setup.
 
@@ -198,8 +206,6 @@ You can assign role collections using one of the following methods:
 {% hint style="info" %}
 **Note :** If you want to use the **Integration Advisor**, you must assign the following roles to the user:
 
-* **iadv-content-administrator**
-* **iadv-content-read**
 * **iadv-content-developer**
 {% endhint %}
 
