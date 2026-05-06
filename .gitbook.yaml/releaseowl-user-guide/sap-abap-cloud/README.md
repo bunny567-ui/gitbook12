@@ -27,20 +27,20 @@ After successfully creating the ABAP Environment instance, follow these steps to
 5. Click **Create Service Key**.
 6. Provide a name for the service key and click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Create Communication Arrangement (Software Component Integration – SAP\_COM\_0510)
 
 1. Log in to the **ABAP Cloud system**.
 2. Navigate to **Administration → Communication Arrangements**.
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **New**.
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the Communication Scenario:
 
@@ -48,26 +48,26 @@ After successfully creating the ABAP Environment instance, follow these steps to
 
 5. Click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. In the **Common Data** section:
    * Enter an **Arrangement Name**.
    * In the **Communication System** field, click **New** to create a new system.
 
-<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create Communication System
 
 1. Enter a **System ID** and **Name** (as per naming convention).
 2. Click **Create** to generate the Communication System.
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create User for Outbound Communication
 
 1. Under **Outbound Communication**, click the **“+” (Add)** button.
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Enter:
 
@@ -76,11 +76,11 @@ After successfully creating the ABAP Environment instance, follow these steps to
 
 3. Click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Click **Save** to complete the arrangement setup.
 
-<figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 3: Create Communication Arrangement for ABAP Unit Test Integration (SAP\_COM\_0735)
 
@@ -92,7 +92,7 @@ Repeat the same process for ABAP Unit Test Integration:
    * **SAP\_COM\_0735 – ABAP Unit Test Integration**
 4. Click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. In the **Common Data** section:
    * Enter an **Arrangement Name**.
@@ -100,7 +100,7 @@ Repeat the same process for ABAP Unit Test Integration:
 6. Enter a **System ID** and **Name** (as per naming convention).
 7. Click **Create** to generate the Communication System.
 
-<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Create User for Outbound Communication**
 
@@ -110,11 +110,11 @@ Repeat the same process for ABAP Unit Test Integration:
    * Password (define a secure password of your choice, following your organization’s password policy)
 3. Click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Click **Save** to complete the arrangement setup.
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Verification of Service Details
 

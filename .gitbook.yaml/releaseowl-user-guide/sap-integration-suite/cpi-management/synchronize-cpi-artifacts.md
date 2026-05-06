@@ -1,59 +1,108 @@
 # Synchronize CPI Artifacts
 
-### **Prerequisites**
+#### SAP CPI Management – Add Packages
 
-1. Begin by registering your SAP BTP credentials and the corresponding SAP Integration Suite environment within ReleaseOwl.
-2.  Navigate to the **Projects** section and create a new project.
+1. Navigate to **Build → SAP CPI Management**.
+2. Click **Add Packages** to synchronize packages from the registered **SAP Integration Suite** environment.
 
-    * **Project Type**: Select **SAP CPI**.
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (1052).png" alt=""><figcaption></figcaption></figure>
-3. Once the project is created, add the registered environments to the project via **Project Settings > Environment**.
+3. The system displays the list of available packages for selection.
+4. Select the required packages and click **Add**.
 
-<figure><img src="../../../.gitbook/assets/image (1053).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-4. Click **Sync All Artifacts** to fetch and display the available CPI artifacts within the selected project.
-5. Navigate to **Build > SAP CPI Management** and click on the **actions** button to view **Sync Artifacts**.
+5. After the packages are added, the following details are displayed:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* **Version**
+* **Synced On**
+* **Synced By**
+* **Modified By**
+* **Modified On**
 
-* The **Modified By** and **Modified Date** information displayed in the ReleaseOwl dashboard is **sourced directly from SAP CPI** for supported artifact types such as **IFLOW**, **ODATAAPIPROVIDER**, **SOAPAPIPROVIDER**, and **RESTAPIPROVIDER**.
-* For artifact types like **SCRIPT\_COLLECTION**, **MESSAGE\_MAPPING**, and **VALUE\_MAPPING**, SAP CPI **does not provide these metadata fields via its public APIs**.
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### Metadata Behavior
 
-* In such cases, ReleaseOwl **derives and updates the Modified By and Modified Date based on ReleaseOwl activity and processing timestamps**, reflecting when the artifact was last handled or updated within ReleaseOwl rather than the original CPI metadata.
+6. For supported artifact types, ReleaseOwl retrieves the **Modified By** and **Modified On** details directly from **SAP Integration Suite**. Supported artifact types include:
 
-### **Synchronize Integration Suite Artifacts**
+* **IFLOW**
+* **ODATAAPIPROVIDER**
+* **SOAPAPIPROVIDER**
+* **RESTAPIPROVIDER**
 
-6. Click **Sync  Artifacts** to fetch various artifacts like IFlows, Value Maps, Packages, Configuration parameters, etc. from the registered SAP CPI environment into ReleaseOwl.
-7. If there are changes made to the existing artifacts, the changes will also be updated.
-8. Click **Sync Artifacts** to sync the CPI artifacts.
+7. For the following artifact types, **SAP Integration Suite** does not expose metadata details through its public APIs:
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* **SCRIPT\_COLLECTION**
+* **MESSAGE\_MAPPING**
+* **VALUE\_MAPPING**
+
+8. For these artifact types, ReleaseOwl generates the **Modified By** and **Modified On** details based on internal processing activity, indicating when the artifact was last processed or updated within the platform
+
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sync History**
 
-With this, you can view the history of all the artifact syncs that have occurred. Click **Sync History**, to view the CPI sync history of this project.
+Click **Sync History** to view the history of all synchronization activities performed for the **SAP CPI** packages, including previously synced packages and their corresponding sync details.
 
-<figure><img src="../../../.gitbook/assets/image (1055).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure></div>
+
+### **Sync Artifacts**
+
+1. After a package is added, click the **Actions** button associated with the package.
+2. Select **Sync Artifacts**.
+3. Click **Sync Artifacts** to retrieve artifacts associated with the selected package from the registered **SAP Integration Suite** environment.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### **Remove From Project**
+
+This option is used to remove a package from the project in **ReleaseOwl**. When you select this action, the package is automatically removed from the project and will no longer be available within the project scope.
+
+<div><figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure></div>
 
 ### **Sort**
 
 You can sort the artifacts as per your convenience. To sort them:
 
 1. Click the **Sort icon**.
-2.  In the page displayed, choose an option and click **OK**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1056).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+2. In the page displayed, choose an option and click **OK**.
+
+<figure><img src="../../../.gitbook/assets/image (1056).png" alt=""><figcaption></figcaption></figure>
 
 ### **Actions**
 
-Multiple actions can be performed on an artifact, based on the type of artifact. These actions include – View Test Cases, Comment , Configure, Deployment History, Versions and Download.
+After a package is added to the project, you can view its artifacts and perform various actions on each artifact based on its type.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The available actions are described below:
 
-### **Manage Environment Wide IFlow Configurations**
+* **Synchronize**\
+  Used to sync the latest changes of the artifact from the connected SAP Integration Suite environment into ReleaseOwl. This ensures that the artifact details in ReleaseOwl are up to date.
+* **Configure**\
+  Used to configure artifact-specific settings required for deployment or execution.
+* **Resources**\
+  Displays additional supporting information related to the artifact, such as its **type and size**. This helps users quickly understand the nature and storage details of the artifact within the project.
+* **Deployment History**\
+  Displays the complete history of deployments for the selected artifact, including status and timestamps.
+* **Versions**\
+  Shows all available versions of the artifact, allowing you to track changes over time.
+* **Download**\
+  Allows you to download the artifact for offline use or reference.
+* **Comment**\
+  Enables you to add or view comments related to the artifact for collaboration and tracking purposes.
+
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### Synchronize
+
+It is used to retrieve and update the latest artifacts from the connected SAP Integration Suite (CPI) environment into **ReleaseOwl**. This ensures that **ReleaseOwl** reflects the most recent changes made in the source system, including updates to artifact details such as version, configuration, and metadata.
+
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+### Configure
 
 You can maintain configuration parameters for IFlows for each environment separately in ReleaseOwl. These will be updated accordingly during the deployment.
 
@@ -69,193 +118,112 @@ You can maintain configuration parameters for IFlows for each environment separa
 
 <figure><img src="../../../.gitbook/assets/image (1059).png" alt=""><figcaption></figcaption></figure>
 
-### **Artifact Versions**
+### **Versions**
 
 1\. To view the versions, go to the required artifact, click **Actions** and choose **Versions**.
 
-<figure><img src="../../../.gitbook/assets/image (1060).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 2. &#x20;The following screen is displayed showing the user different versions of the artifact.
 
-<figure><img src="../../../.gitbook/assets/image (1061).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-3. **Assign User Story** option is used to link a specific version of an artifact (such as a configuration or integration flow) to a designated User Story.
-4. On clicking **Assign User Story**, the system will prompt you to:
 
-* Select a User Story from a searchable button.&#x20;
-* Associate the current version of the artifact with the selected User Story, establishing a traceable link between the artifact version and the development requirement.
 
-<figure><img src="../../../.gitbook/assets/image (1062).png" alt=""><figcaption></figcaption></figure>
+#### **Compare Environments**
 
+The **Compare Environments** option is used to compare an iFlow between two different environments. It helps you identify differences between:
 
+* **Source Environment**: Contains the source version of the iFlow
+* **Destination Environment**: Contains the active version of the iFlow
 
-5. Click **Actions and** choose either **Download** or **Where Used List** based on the requirement.
+#### Steps:
 
-<figure><img src="../../../.gitbook/assets/image (1063).png" alt=""><figcaption></figcaption></figure>
+1. Click **Compare Environments**
+2. Select the **Source Environment**
+3. Select the **Destination Environment**
+4. Click **Submit**
 
-## Creating a Release Pipeline <a href="#pdf-page-della43ge2ynalx23r7p-managing-cpi-packages" id="pdf-page-della43ge2ynalx23r7p-managing-cpi-packages"></a>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-Release Pipelines in ReleaseOwl manage approvals, validations, deployments, automated tests, task assignments, and user story updates for SAP systems.
+5. The system will display the differences between the iFlow versions across the selected environments.
 
-#### **1. Create a New Release Pipeline:**
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-* Switch to the **Project view** and select the **Release section**.
-* Navigate to Release Pipelines and click on **Create New Release Pipeline**.
+#### Compare Versions
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Compare Versions** option is used to compare two different versions of the same iFlow within an environment.
 
-* Provide a Pipeline Name.
-* Add stages (e.g., QA, Prod) and assign tasks to each stage.
+**Steps:**
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Click **Compare Versions**
+2. Select the two iFlow versions you want to compare
+3. Submit the selection
 
-<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252Fp9bYnD6MU10rrjza1IzY%252Fimage.png%3Falt%3Dmedia%26token%3D7e30a12a-4061-483e-a9a2-06d82b9f2caf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3549c696&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+The system will show a side-by-side comparison highlighting the differences between the selected versions.<br>
 
-**2. Add Deployment Tasks:**
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Click the **Add button** in a task stage to include deployment tasks.
-* Fill in the required details:
-  * **Name:** Enter a preferred name for the deployment task.
-  * **Deploy Type:** Select the type of deployment.
-  * **Select CPI Environment:** Select the target CPI environment where the deployment will take place.
-  *   **Deployment Action:** Choose between:
+### Assign User Story
 
-      * **Upload Only:** Uploads the deployment package without executing the deployment.
-      * **Upload and Deploy:** Uploads the deployment package and executes the deployment.
+The **Assign User Story** option is used to link a specific version of an artifact (such as a configuration or integration flow) to a designated User Story.
 
-      <figure><img src="../../../.gitbook/assets/image (54) (1).png" alt=""><figcaption></figcaption></figure>
-* **Notify Users:**  Sends a notification to selected users **when the  task is created** or **when pipeline execution reaches this stage**
-* **Notify Promotion User:** Sends a notification to the **user who promoted** the artifact or initiated the deployment to this stage.
-* **Notify  to Button :**  It has three options — **User**, **Role**, and **Custom** — to specify the recipients of the notification based on individual users, assigned roles, or custom groups.
+This helps maintain traceability between development requirements and artifact versions.
 
-| Option     | Definition                                                                                                                                                                       |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **User**   | Sends the notification directly to a specific individual user.                                                                                                                   |
-| **Role**   | Sends the notification to all users who belong to a specific predefined role (such as Developer, Tester, Release Manager). Every user in the role will receive the notification. |
-| **Custom** | Sends the notification based on a custom mapping between components and roles. Different components can notify different roles, depending on your configuration.                 |
+**Steps:**
 
-<figure><img src="../../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
+1. Click **Assign User Story**
 
-3. &#x20;**Save and Configure Notifications:**
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-* Add notification emails if needed.
-* Save the pipeline configuration.
+2. The system will prompt a selection window
+3. Select the required **User Story**
+4. Confirm the selection
 
-<figure><img src="../../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-**Managing Sprints and User Stories**
+The current version of the artifact is associated with the selected User Story, creating a traceable link between the implementation and the requirement.
 
-**1. Create a Sprint:**
+### Download
 
-* In the Project View, navigate to Change Management and click Create Sprint.
+You can download the required artifact. To download:
 
-<figure><img src="../../../.gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
+1. Go to the required artifact. Click **Actions** and choose **Download**.
+2. A zip file of the artifact is downloaded into your computer.
 
-* Enter the sprint name and click Save.
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
+### Comment
 
-* Click the three dots (Actions) button and select Start Sprint.
+To add or update a comment for a specific version of an artifact:
 
-<figure><img src="../../../.gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to the required artifact.
+2. Click the **Actions** button.
+3. Select **Comment** from the dropdown.
 
-**2. Create a User Story:**
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Go to User Stories and click **Create New User Story**.
+4. Click the **Edit** next to the comment.
 
-<figure><img src="../../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Fill in the required details:
+5. Enter  the comment text as needed.
+6. Click **Save** to store the comment for the CPI artifact.
 
-* Summary: Provide a summary of the user story.
-* Type: Select the type of story.
-* Click Save.
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. **Edit and Promote User Story:**
 
-* After creating the user story, click the three dots (Actions) and select Edit.
+7. The **Comment** button is located adjacent to the **Version** field.
 
-<figure><img src="../../../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Select the release pipeline and associated component.
+8. When clicked, it displays the **Created by**, **Created on**, **Modified by**, and **Modified on** information.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-* Add the artifact in CPI Artifacts and click Save.
+### Deployment History
 
-<figure><img src="../../../.gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
+The **Deployment History** option displays the complete history of a package’s deployment activities. It provides detailed tracking of each artifact deployed within the package.
 
-#### Import Settings
-
-The **CPI Import Settings** dialog, accessible from the **User Story Edit View** under the **CPI Artifacts** section, enables users to configure deployment settings for each target CPI environment. It allows selective activation of the **Force Deploy** option, which permits redeployment of artifact versions when necessary.
-
-* Click the **“...”** next to a CPI artifact and select **“CPI Import Settings.”**
-
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-* In the popup, you’ll see a list of available **target environments**.
-* Check the **Force Deploy** box if you want to allow redeployment of CPI artifacts.
-* Click **Save**.
-
-<figure><img src="../../../.gitbook/assets/image (1332).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-**Note :**  These settings empower deployment teams to handle complex CPI deployment scenarios such as partial rollouts, forced redeployments, or selective tenant targeting—without compromising consistency or governance policies.
-{% endhint %}
-
-### Adding Links in the Attachments Section
-
-The **Attachments** section allows users to add reference links directly to their items for easy access and documentation.
-
-#### Steps to Add a Link
-
-1. Navigate to the **Attachments** section of the desired item.
-2. Click the **Link** button.
-3. In the dialog box, enter the following details:
-   * **Name** – Provide a meaningful name for the link.
-   * **URL** – Enter the complete URL of the reference link.
-4. Click **Add** to attach the link.
-
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-5. The added link will be listed in the **Attachments** section and can be viewed by all relevant users
-
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-**Promotion of User Story**
-
-* To promote the user story, click the three dots (Actions) and select Promote.
-
-<figure><img src="../../../.gitbook/assets/image (66) (1).png" alt=""><figcaption></figcaption></figure>
-
-* You can view the **Deploy Logs** under the **SAP CPI Deploy Logs** window after promoting the user story.
-
-<figure><img src="../../../.gitbook/assets/image (1022).png" alt=""><figcaption></figcaption></figure>
-
-* **Upload Status**: Indicates whether the artifact was successfully uploaded.
-* **Config Status**: Confirms if the configuration for new or updated artifacts was successful.
-* **Deploy Status:** Reflects the final deployment status of the artifact.
-* **Already Deployed:**  Indicates that the artifact was **previously deployed**, either during a **retry** operation or through **manual completion**. This status helps avoid duplicate deployments and provides clarity during re-runs.
-
-<figure><img src="../../../.gitbook/assets/image (1069).png" alt=""><figcaption></figcaption></figure>
-
-* **Manual Completion:** If a deployment, configuration, or upload fails or times out, users can use the **Manual Completion** option to resolve the issue manually and continue the pipeline execution.
-
-<figure><img src="../../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>
-
-* **Refresh Button**\
-  Fetches the CPI runtime artifact deployment status and updates the runtime status in the deployment log.
-
-<figure><img src="../../../.gitbook/assets/image (1023).png" alt=""><figcaption></figcaption></figure>
-
-* **Retry Button**\
-  Allows you to reattempt a failed deployment or pipeline stage.
-
-<figure><img src="../../../.gitbook/assets/image (1050).png" alt=""><figcaption></figcaption></figure>
-
-* **Status Button**\
-  If the status is shown as **"Suspended"**, it usually indicates that the pipeline or task has been paused or is awaiting a manual action.
-
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure></div>
