@@ -2,7 +2,7 @@
 
 The **Enable Rollback** option is one of the key **Deployment Actions** that can be configured during the deployment process. When enabled, this option creates a **backup of the current deployment version**, allowing you to **rollback changes** in case of deployment failures or post-deployment issues.
 
-### **Key Points:**
+### **Key Points**
 
 * Rollback is supported for **CPI artifacts** deployed both to **design time** and **runtime**.
 * To use rollback during a release pipeline, you must **enable rollback while creating the pipeline**.
@@ -10,7 +10,7 @@ The **Enable Rollback** option is one of the key **Deployment Actions** that can
 * Detailed deployment information, including rollback status, is available in the associated **deployment task**.
 * Rollback logs in the **Pipeline Activity** section appear only when a rollback is triggered, reducing clutter in the pipeline history.
 
-### **How to Enable Rollback:**
+### **How to Enable Rollback**
 
 1. While adding a **Deployment Task**, you will see an option for **Enable Rollback**.
 2. **Select the checkbox** next to this option.
