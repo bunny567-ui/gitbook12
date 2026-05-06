@@ -63,6 +63,8 @@ In the **Parameters** step, assign the required roles based on the target enviro
 | **MonitoringDataRead**         | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
 | **MessagePayloadsRead**        | Allows users to view message payloads in monitoring.                                                                                                                |
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 **For Non-Production Environments**, add the following roles:
 
 | Role                           | Description                                                                                                                                                         |
@@ -76,7 +78,7 @@ In the **Parameters** step, assign the required roles based on the target enviro
 | **TraceConfigurationRead**     | Provides access to view the current tracing configuration.                                                                                                          |
 | **TraceConfigurationEdit**     | Allows modification of tracing settings, including enabling trace configuration.                                                                                    |
 
-<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FQeZkcua5pYBQBiksaMC7%252Fimage.png%3Falt%3Dmedia%26token%3D476837b5-932e-4bed-bf70-61c9bbdf6797&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a4526b6f&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create Service Key (for `api` plan)
 
@@ -96,7 +98,7 @@ After instance creation:
 * **Client Secret**
 * **Token URL**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Register **SAP CPI (API Access)** Credential in ReleaseOwl
 
@@ -117,8 +119,7 @@ Credential registration enables secure communication between **ReleaseOwl** and 
    * **Client Secret:** Provide the details from the above created **API service key**.
    * **Token URL:** Provide the details from the above created **API service key**.
 5. Click **Save**.
-
-The credential will now appear in your list and can be used in pipelines and deployments.
+6. The credential will now appear in your **Credentials List** and can be used in pipelines to upload and deploy CPI artifacts
 
 <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -157,7 +158,7 @@ The IFlow plan service key is required to execute test cases from ReleaseOwl
 <figure><img src="../../../.gitbook/assets/image (1043).png" alt=""><figcaption></figcaption></figure>
 
 5. Click on the service key name to view the key details.
-6. You will need these values when setting up ReleaseOwl credentials.
+6. You will need these values when setting up **ReleaseOwl** credentials.
 
 <figure><img src="../../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
 
@@ -177,9 +178,9 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
    * **Client Secret:** Provide the details from the above created IFLOW service key.
    * **Token URL:** Provide the details from the above created IFLOW service key.
 5. Click **Save**.
-6. The new credential will now appear in the **List of Credentials** and can be used in Release Pipelines for **IFLOW** deployments.
+6. The new credential will now appear in the **Credentials List** and can be used in **Release Pipelines** to test **IFLOW.**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt=""><figcaption></figcaption></figure>
 
 ## **Web Authentication**
 
@@ -197,7 +198,7 @@ It acts as the Identity Provider (IdP) for SAP Integration Suite and is used to 
 4. In the **Plan** field, choose **Default** under **Subscriptions**, then click **Next**.
 5. Click **Create** to provision the instance.
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Activate Administrator Account**
 
@@ -205,7 +206,7 @@ It acts as the Identity Provider (IdP) for SAP Integration Suite and is used to 
 2. Open the email and click **Activate Account**.
 3. Set your password and click on **Continue.**
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Establish Trust Configuration**&#x20;
 
@@ -221,12 +222,13 @@ To establish trust between the subaccount and the Identity Provider:
 
 * Choose the **subscribed tenant** from the list.
 * Click **Next** to create the trust configuration.
+* Click **Finish** to complete and create the trust configuration.
 
-<figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FPdPnVRmtpc8l5Frgey50%252Fimage.png%3Falt%3Dmedia%26token%3Dba33968d-e96d-445f-a052-790c1b0b46fe&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=1ab62b1&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure></div>
 
-**Assign Roles**
+#### **Assign Roles**
 
-* After the trust configuration is created, open the configuration.
+* If you do not want to create a [**Role Collection**](credential-management.md#assign-role-collections), use the **Configure Role Attributes** method described below to assign the required roles.
 * Click **Edit**.
 
 <figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FQW4csOsTAKJeEFrGVsyq%252Fimage.png%3Falt%3Dmedia%26token%3D8e7c4214-95df-4bdd-8137-f7fd24aabcec&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=31946591&#x26;sv=2" alt=""><figcaption></figcaption></figure>
@@ -246,22 +248,20 @@ To establish trust between the subaccount and the Identity Provider:
 
 * In the same **Trust Configuration** screen, scroll to **Attribute Mappings**.
 * Click the **"+"** button to add a new mappings.
-* If you plan to use **SAP Integration Advisor**, assign the additional roles required for Integration Advisor functionality.
+* Assign the **iadv-content-developer** role only if **SAP Integration Advisor** functionality is required. This role is not mandatory for standard integration scenarios and should be assigned only when Integration Advisor are being used.
 
 | Role                              | Attribute | Operator | Value                         |
 | --------------------------------- | --------- | -------- | ----------------------------- |
 | PI\_Integration\_Developer        | email     | equals   | Email ID of the service user  |
 | <p><br>iadv-content-developer</p> | email     | equals   | Email ID of the Service User  |
 
-<figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FD6bR1lMUOU1fz4YBQxTf%252Fimage.png%3Falt%3Dmedia%26token%3D7b201ba3-a71d-4a3e-8ee7-52209c4c2a00&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=78bb2fa&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-&#x20;**Note:** Ensure the email used in role mapping matches the email maintained in SAP Cloud Identity Services.
+**Note:** Ensure the email used in role mapping matches the email maintained in SAP Cloud Identity Services.
 {% endhint %}
 
 #### Assign Role Collections&#x20;
-
-If you do not want to create a role collection, use the [**Configure Role Attributes**](credential-management.md#configure-role-attributes) method described earlier to assign the required roles.
 
 To create and assign a role collection for the required environment access, follow these steps:
 
@@ -285,20 +285,21 @@ To create and assign a role collection for the required environment access, foll
     | **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
     | **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
     | **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
-    | **TraceConfigurationRead**   | Provides access to view the current tracing configuration.                                                                  |
-    | **TraceConfigurationEdit**   | Allows modification of tracing settings, including enabling trace configuration.                                            |
 
-    **For Non-Production Environments**, add the following roles:
+    <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
+&#x20;       **For Non-Production Environments**, add the following roles:
 
+| Role                         | Description                                                                                                                 |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
+| **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
+| **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
+| **TraceConfigurationRead**   | Provides access to view the current tracing configuration.                                                                  |
+| **TraceConfigurationEdit**   | Allows modification of tracing settings, including enabling trace configuration.                                            |
 
-    | Role                         | Description                                                                                                                 |
-    | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-    | **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
-    | **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
-    | **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
-    | **TraceConfigurationRead**   | Provides access to view the current tracing configuration.                                                                  |
-    | **TraceConfigurationEdit**   | Allows modification of tracing settings, including enabling trace configuration.                                            |
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
 8. Click **Save** to apply the changes.
 
 #### **Origin Key Configuration**
@@ -307,7 +308,7 @@ To create and assign a role collection for the required environment access, foll
 * Locate the generated **Origin Key** in the Trust Configuration table you have created.
 * Copy the **Origin Key** for use in ReleaseOwl.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Register SAP Cloud Identity Service Credential in Releaseowl
 
@@ -315,7 +316,7 @@ To create and assign a role collection for the required environment access, foll
 2. Go to **Administration → Credential Manager**.
 3. Click on **Register Credential**.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4.  Enter the following information:
 
@@ -330,17 +331,17 @@ To create and assign a role collection for the required environment access, foll
 * Go to **Applications & Resources.**
 * Select **Tenant Settings**.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Open the **OpenID Connect Configuration** section.
 * Click on **Show Discovery Endpoint**.
 * You will be redirected to a new page.
 * Copy the **URL** from the browser address bar — this is your **IdP Metadata URL**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Paste the copied URL into the **IdP Metadata URL** field in ReleaseOwl.
-7. **Origin Key Configuration :** Enter the copied **Origin Key** value in the **Origin Key** field in ReleaseOwl by following the steps [outlined above](credential-management.md#origin-key-configuration).
+7. **Origin Key Configuration :** Enter the copied **Origin Key** value in the **Origin Key** field in ReleaseOwl by following the [**Origin Key configuration**](credential-management.md#origin-key-configuration) steps provided above.
 8. Click **Save**.
 
 <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
@@ -400,7 +401,7 @@ It enables secure authentication and establishes trusted communication between S
 <figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note :** For role assignment, follow the same role mapping configuration process described in the [previous section.](credential-management.md#assign-required-roles)
+**Note :** For role assignment, follow the[ **Role Collection** ](credential-management.md#assign-role-collections)configuration steps provided above.
 {% endhint %}
 
 ### 3. Ping Identity
@@ -421,19 +422,19 @@ Before configuring the integration, ensure that the following prerequisites are 
 1. Create your Ping Identity account using the provided[ URL](https://www.pingidentity.com/en/try-ping.html) and log in to **PingOne**.
 2. From the left-hand menu, navigate to **Applications**. In the Applications section, click on the **+ (Add Application)** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a name of your choice for the application and select the application type based on your requirement, such as **SAML Application** or **OIDC Web App**. For this setup, select **OIDC Web App** and click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Toggle the application **ON** and navigate to the **Attribute Mappings** tab.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click on **Add Mapping**. For the **PingOne** attribute, select **Email Address**, then click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure Identity Provider in SAP Cloud Identity Services**
 
@@ -443,34 +444,34 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 2. Navigate to **Applications & Resources**.
 3. Open the **SAP BTP application** associated with your tenant.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure Conditional Authentication
 
 1. Go to the **Trust** section.
 2. Navigate to **Conditional Authentication**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. In the **Default Authenticating Identity Provider** field, select **Ping OIDC**.
 4. Click **Save** to apply the configuration.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Create a Corporate Identity Provider**
 
 * Navigate to **Identity Providers** and select **Corporate Identity Providers**.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the **+ Create** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Enter a name of your choice and select the **Identity Provider Type** as **OpenID Connect compliant**.
 * Click **Create** to complete the setup.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Open the newly created Identity Provider.
 * Go to the **Trust** section.
@@ -484,7 +485,7 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 2. Navigate to the **Overview** section.
 3. Copy the **OIDC Discovery Endpoint**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Paste the copied endpoint into the **Discovery URL** field in OpenID Connect Configuration.
 
@@ -500,37 +501,37 @@ Follow the steps below to configure an Identity Provider using **Ping Identity (
 3. Navigate to the **Configuration** section.
 4. Copy the **Client ID and Client Secret**.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Paste the **Client ID** and **Client Secret** obtained from the Ping Identity application.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **Load** button. Once the configuration details are loaded successfully, the **Validate** button will be enabled.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Copy the **OIDC Callback URL**. Then navigate to the application you created and open it. Go to the **Configuration** section and click **Edit**.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Paste the **OIDC Callback URL** into the **Redirect URL** field, and then click **Save** to apply the changes.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Validate the Configuration
 
 1. Click on the **Validate** button.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. If the configuration is correct, validation will succeed and you will see the confirmation screen (as shown in the image below)
 
 
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure Identity Provider using Ping Identity (SAML) in SAP Cloud Identity Services
 
@@ -542,14 +543,14 @@ Follow the steps below to configure **Ping Identity as a SAML Identity Provider*
 2. Navigate to **Applications & Resources**.
 3. Open the **SAP BTP application** associated with your tenant.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure Conditional Authentication
 
 1. Go to the **Trust** section.
 2. Navigate to **Conditional Authentication**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. In the **Default Authenticating Identity Provider** field, select **Oping Saml.**
 4. Click **Save** to apply the configuration.
@@ -575,7 +576,7 @@ Follow the steps below to configure **Ping Identity as a SAML Identity Provider*
 1. Log in to **Ping Identity**.
 2. From the left-hand menu, navigate to **Applications**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the **+ (Add Application)** button.
 4. Enter a **Name** for the application.
@@ -630,11 +631,11 @@ During SAML configuration, choose **one of the following options**.
 
 * Navigate to **Identity Providers** and select **Corporate Identity Providers**.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the **+ Create** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Enter a name of your choice and select the **Identity Provider Type** as **SAML 2.0 compliant**.
 * Click **Create** to complete the setup.
@@ -681,5 +682,5 @@ During SAML configuration, choose **one of the following options**.
 {% hint style="info" %}
 **Note:** For **Ping Identity** configuration, ensure that the **email** attribute is mapped to **Email Address** in the application attribute mappings. Additionally, verify that the email used in role mapping matches the service user email configured in Ping Identity to ensure proper role assignment and authentication.
 
-* For role assignment, follow the same role mapping configuration process described in the [previous section.](credential-management.md#assign-required-roles)
+* For role assignment, follow the[ **Role Collection** ](credential-management.md#assign-role-collections)configuration steps provided above.
 {% endhint %}
