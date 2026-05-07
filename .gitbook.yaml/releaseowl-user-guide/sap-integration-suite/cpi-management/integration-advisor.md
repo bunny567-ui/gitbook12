@@ -13,8 +13,6 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 3. SAP CPI Environment Configured in ReleaseOwl
 4.  &#x20;**Role Collections Assigned**: To enable Integration Advisor capabilities, assign the following role collections to the **Identity Provider (IdP)**:
 
-    * `iadv-content-read`
-    * `iadv-content-administrator`&#x20;
     * `iadv-content-developer`&#x20;
 
 
@@ -22,17 +20,17 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
 * Navigate to **Security → Role Collections** in the SAP BTP Cockpit.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Create** and enter the **Role Collection Name**. Confirm by clicking **Create**.
 * Once the role collection is created, select it from the list and click **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Under the **Roles** section, click **Add Role** and assign the required roles. Add the **Content Developer** role.
 * Click **Save** to update the role collection.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Steps to Create a Custom Type System** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system" id="pdf-page-gq2jqh5hz5sfguou1udk-steps-to-create-a-custom-type-system"></a>
 
@@ -95,29 +93,27 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
 <figure><img src="../../../.gitbook/assets/image (1329).png" alt=""><figcaption></figcaption></figure>
 
-### Synchronization with ReleaseOwl <a href="#pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl" id="pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl"></a>
+### &#x20;Add Artifacts <a href="#pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl" id="pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl"></a>
 
 1. Go to the **Build** section and click on **Integration Advisor**.
-2. Click the **Synchronize** button to retrieve and update the latest **MIG** and  **MAG** artifacts from the integrated system into ReleaseOwl, ensuring that the artifacts are in sync with the source environment.
+2. Click **Add Artifacts**. The system displays the available Integration Advisor artifacts in separate tabs based on the artifact type, such as:
+   * **MAG**
+   * **MIG**
 
-{% hint style="info" %}
-Note: Use the **Synchronize** option to fetch and add Integration Advisor artifacts into ReleaseOwl.
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+3. Select the required artifacts from the respective tabs.
+4. Click **Add** to import the selected artifacts into ReleaseOwl.
 
-3.  After synchronization is completed, the retrieved **MAG** and **MIG** artifacts are displayed within ReleaseOwl.
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-    The artifacts are organized under separate tabs:
+5. Once the process is completed, the selected **MAG** and **MIG** artifacts will be displayed in the Integration Advisor section.
 
-    * **MAG** tab
-    * **MIG** tab
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-    Each tab displays the total number of available artifacts.
+**Sync History**
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
-
-4. The **Sync History** provides details of previous synchronizations, including:
+The **Sync History** provides details of previous synchronizations, including:
 
 * **Synced On** – Timestamp of synchronization.
 * **Synced By** – User who performed the synchronization.

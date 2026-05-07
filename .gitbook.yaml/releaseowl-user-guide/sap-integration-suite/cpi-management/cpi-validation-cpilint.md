@@ -15,13 +15,13 @@ Note: **License terms of CPI Lint tool can be found here:**\
 
 
 
-**Prerequisites:**
+#### **Prerequisites**
 
 In the **General** tab of Project Settings, scroll down to the **CPI Settings** section. If the **"Both"** option is selected, the system generates a **Validation Report** that includes results from both **CPI Lint** and **CPI Design Guidelines**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **To validate a package:**
+### **To validate a package**
 
 1. Go to a required package in the Release Packages screen under Release Section and click **Actions**. Click **Validate** to start the validation process.
 
