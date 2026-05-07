@@ -233,7 +233,7 @@ To establish trust between the subaccount and the Identity Provider:
 
 <figure><img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FQW4csOsTAKJeEFrGVsyq%252Fimage.png%3Falt%3Dmedia%26token%3D8e7c4214-95df-4bdd-8137-f7fd24aabcec&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=31946591&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-#### Configure Email Attribute
+#### Configure  Attribute Value
 
 * In **SAP Cloud Identity Services**, navigate to **Applications & Resources** and select your **SAP BTP Subaccount Application**.
 * Go to the **Trust** tab and scroll to the **Attributes** section.
@@ -324,7 +324,9 @@ To create and assign a role collection for the required environment access, foll
     * **User Name:** Cloud Identity Service Username
     * **Password:** Cloud Identity Service Password
 
-    <figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1800).png" alt=""><figcaption></figcaption></figure>
+
+
 5. **Idp Metadata URL**: To obtain the **IdP Metadata URL**, follow these steps:
 
 * Log in to **SAP Cloud Identity Services**.
@@ -344,7 +346,9 @@ To create and assign a role collection for the required environment access, foll
 7. **Origin Key Configuration :** Enter the copied **Origin Key** value in the **Origin Key** field in ReleaseOwl by following the [**Origin Key configuration**](credential-management.md#origin-key-configuration) steps provided above.
 8. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Note : Origin Key** and **IdP Metadata URL** are required only when multiple logon options are enabled in the BTP trust configuration.
+{% endhint %}
 
 ### 2. **SAP Passport**&#x20;
 
@@ -398,11 +402,28 @@ It enables secure authentication and establishes trusted communication between S
 
 4. Save the credential.
 
-<figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1802).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** For role assignment, follow the[ **Role Collection** ](credential-management.md#assign-role-collections)configuration steps provided above.
 {% endhint %}
+
+**Assign Role Collections to Users**
+
+1. In the SAP BTP Cockpit, navigate to:\
+   **Security → Users**
+2. Select the required user from the **Users** list.
+3. On the right-side panel, click the **Role Collections** tab.
+4. Click the **three-dot menu (⋯)** in the Role Collections section.
+5. Select **Assign Role Collection**.
+
+<figure><img src="../../../.gitbook/assets/image (1803).png" alt=""><figcaption></figcaption></figure>
+
+6. Search for the required role collection that was created earlier.
+7. Select the appropriate role collection.
+8. Click **Assign** to grant the role collection to the user.
+
+<figure><img src="../../../.gitbook/assets/image (1804).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Ping Identity
 
@@ -436,7 +457,7 @@ Before configuring the integration, ensure that the following prerequisites are 
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Configure Identity Provider in SAP Cloud Identity Services**
+#### Configure Identity Provider in SAP Cloud Identity Services
 
 Follow the steps below to configure an Identity Provider using **Ping Identity (OIDC)** in **SAP Cloud Identity Services (IAS)**.
 
