@@ -339,6 +339,25 @@ To create and assign a role collection for the required environment access, foll
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+#### Configure Conditional Authentication
+
+1. Log in to **SAP Cloud Identity Services**.
+2. Navigate to **Applications & Resources**.
+3. Select "**Applications**."
+4. Open the **SAP BTP application** associated with your tenant.
+
+<figure><img src="../../../.gitbook/assets/image (1830).png" alt=""><figcaption></figcaption></figure>
+
+5. Go to the **Trust** section.
+6. Navigate to **Conditional Authentication**.
+
+<figure><img src="../../../.gitbook/assets/image (1831).png" alt=""><figcaption></figcaption></figure>
+
+6. In the **Default Authenticating Identity Provider** field, select "**Identity Authentication."**
+7. Click **Save** to apply the configuration.
+
+<figure><img src="../../../.gitbook/assets/image (1832).png" alt=""><figcaption></figcaption></figure>
+
 #### Register SAP Cloud Identity Service Credential in Releaseowl
 
 1. Log in to **ReleaseOwl**.
@@ -378,6 +397,8 @@ To create and assign a role collection for the required environment access, foll
 {% hint style="info" %}
 **Note : Origin Key** and **IdP Metadata URL** are required only when multiple logon options are enabled in the BTP trust configuration.
 {% endhint %}
+
+
 
 ### 2. **SAP Passport**&#x20;
 
@@ -591,7 +612,8 @@ Follow the steps below to configure **Ping Identity as a SAML Identity Provider*
 
 1. Log in to **SAP Cloud Identity Services**.
 2. Navigate to **Applications & Resources**.
-3. Open the **SAP BTP application** associated with your tenant.
+3. Select "**Applications**."
+4. Open the **SAP BTP application** associated with your tenant.
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
