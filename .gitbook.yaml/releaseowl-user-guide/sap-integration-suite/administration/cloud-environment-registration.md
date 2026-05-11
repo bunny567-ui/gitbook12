@@ -18,93 +18,98 @@ To register the SAP Integration Environment, you must first register the CPI cre
 | **Enable Test Automation** _(Optional)_ | Toggle to enable or disable test automation capabilities.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **IFLOW OAuth Credential**              | Select the OAuth credentials used for IFLOW authentication.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **IFLOW URL**                           | Enter the IFLOW URL from the service key.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **SSO URL**                             | Provide the Single Sign-On (SSO) URL for authentication. _**Note**_**: The setup process is outlined in the section below.**                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **IDP Auth Email Address / Group Name** | The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should also match the corresponding group or email configuration in the IDP Auth Email Address/Group Name within the ReleaseOwl CPI environment registration page.                                                                                                                                                                                                                                                                                            |
 | **Integration Advisor**                 | Enable Integration Advisor to provide the Host URL.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Mock Artifacts Prefix**               | The prefix defined in the **Environment Settings** is used for naming mock artifacts created during test execution.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Host URL**                            | The host URL is the base address of your SAP Integration Suite instance. _(Example: https://\<subdomain>.integrationsuite-\<region>.cfapps.\<domain>.hana.ondemand.com)_                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Mock Artifacts Prefix**               | Enter any name of your choice. The prefix configured in **Environment Settings** is automatically applied when naming mock artifacts generated during test execution.                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Enable Git** _(Optional)_             | Enable this option to integrate Git with the environment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Git Credential**                      | Select the credential for accessing the Git repository.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Repository URL**                      | Provide the Git repository URL.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Branch**                              | Specify the branch to be used for the integration.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Environment Type**                    | Select the environment type (e.g., **Dev**, **QA**, **Prod**).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Web Authentication**                  | <p>There are <strong>three authentication types</strong> available for CPI Web Authentication in ReleaseOwl:</p><ol><li><strong>None</strong> – No authentication is required.</li><li><strong>Custom Identity Provider (Custom IdP)</strong> – Authentication is performed using a customer-configured Identity Provider.</li><li><strong>SAP Cloud Identity Provider</strong> – Authentication is performed using SAP Cloud Identity Services (IAS).</li><li><strong>SAP Passport</strong> – Authentication is performed using browser-based SAP Passport certificates.</li></ol> |
+| **Enable monitoring ( Beta)**           | <p>Check the <strong>Monitoring</strong> option to enable runtime log tracking for deployed artifacts. </p><p></p><p>If an artifact fails during runtime, the logs can be reviewed to identify the cause of the failure and troubleshoot the issue.</p>                                                                                                                                                                                                                                                                                                                             |
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1818).png" alt=""><figcaption></figcaption></figure>
 
-### Custom Identity Provider (IDP) Setup and Configuration <a href="#pdf-page-della43ge2ynalx23r7p-toc190778976" id="pdf-page-della43ge2ynalx23r7p-toc190778976"></a>
 
-A Custom IDP (Identity Provider) must be configured to allow secure authentication and authorization for users who interact with the Integration Suite (CPI) instance through ReleaseOwl.
 
-**Use Case:** This is particularly useful for executing test cases, simulation testing and updating value mappings as part of the pipeline.
+**Validate the Environment**
 
-#### Steps to Configure a Custom Identity Provider (IDP)
+After the environment is created, open the registered environment where the following actions are available:
+
+* **Test** – Use the **Test** option to confirm that the environment connection has been configured successfully.
+* **Edit** – Modify the environment details.
+* **Delete** – Remove the registered environment.
+* **Linked Projects** – Displays all projects associated with the selected environment. This helps users identify which projects are currently using the environment.
+* **Logs** – Displays environment-related logs who created it and who modified it .
+
+<figure><img src="../../../.gitbook/assets/image (1820).png" alt=""><figcaption></figcaption></figure>
+
+### Web Authentication : Custom Identity Provider (IDP)  <a href="#pdf-page-della43ge2ynalx23r7p-toc190778976" id="pdf-page-della43ge2ynalx23r7p-toc190778976"></a>
 
 A **Custom Identity Provider (IDP)** is required for deploying certain artifact types—such as **Value Mapping**, **REST**, **SOAP**, and **OData APIs**—as well as for executing test cases associated with these artifacts via ReleaseOwl.
 
-1. **Download SAP BTP SAML Metadata**
+<figure><img src="../../../.gitbook/assets/image (1821).png" alt=""><figcaption></figcaption></figure>
 
-* Navigate to the **Security** section of your SAP BTP Subaccount.
-* Go to **Trust Configuration**.
-* Click **Download SAML Metadata** to download the BTP metadata file.
+**Steps to configure the SSO URL**
+
+1. Navigate to the **Security** section of your SAP BTP Subaccount.
+2. Go to **Trust Configuration**.
+3. Click **Download SAML Metadata** to download the BTP metadata file.
 
 <figure><img src="../../../.gitbook/assets/image (1100).png" alt=""><figcaption></figcaption></figure>
 
-2. **Extract the SAP BTP SSO URL**
+4. Open the downloaded SAML metadata XML file in a text editor (e.g., Notepad++, VS Code, or a browser).
+5. Search for the `<AssertionConsumerService>` tag.
+6. In this tag, locate the **Location** attribute. The value of this attribute is your **SAP BTP SSO URL**.
 
-* Open the downloaded SAML metadata XML file in a text editor (e.g., Notepad++, VS Code, or a browser).
-* Search for the `<AssertionConsumerService>` tag.
-* In this tag, locate the **Location** attribute. The value of this attribute is your **SAP BTP SSO URL**.
+<figure><img src="../../../.gitbook/assets/image (1822).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1099).png" alt=""><figcaption></figcaption></figure>
+7. Copy the extracted **SSO URL**.
+8. Paste it into the **SSO URL** field in the **SAP CPI Environment**.
 
-* Copy the extracted **SSO URL**.
-* Paste it into the **SSO URL** field in the **SAP CPI Environment**.
+<figure><img src="../../../.gitbook/assets/image (1824).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Steps to Configure the IDP Auth Email Address/Group Name**
 
-* For the **IDP Auth Email Address/Group Name** field, enter the **exact value that your Identity Provider sends in the SAML/OIDC assertion** for the user.
-* This value must match the **group name or email address defined in the&#x20;**_**Value**_**&#x20;field** of the **User Groups** or **Attribute Mappings** configuration in your IDP.\
-  ReleaseOwl (or SAP BTP) uses this returned attribute value to validate user authorization.
-* Refer to the _**Assign Role Collections**_**&#x20;section** to ensure that the mapped group/attribute is correctly linked to the required role collections.
+1. Specify the exact attribute value returned by your Identity Provider (IdP) in the **SAML assertion** or **OIDC token** for the authenticated user.
+2. This value must exactly match the configured **group name** or **email address** defined in the **Value** field of the **User Groups** or **Attribute Mappings** section within your IdP configuration.
+3. During the authentication process, ReleaseOwl (or SAP Business Technology Platform, based on your authentication setup) validates the returned attribute value against the configured mappings to authorize user access.
 
 <figure><img src="../../../.gitbook/assets/image (1652).png" alt=""><figcaption></figcaption></figure>
 
-* After entering all the required details, click **Save**. Once saved, a **Test** button will appear. Use this button to verify whether the provided credentials and configuration are correct. Click **Test** to validate the connection.
+4. After entering all the required details, click **Save**. Once saved, a **Test** button will appear. Use this button to verify whether the provided credentials and configuration are correct. Click **Test** to validate the connection.
 
 <figure><img src="../../../.gitbook/assets/image (1653).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1654).png" alt=""><figcaption></figcaption></figure>
+5. Upon successful validation, a **Download** option will be available to download the **tenant-specific metadata** and the **SAP CPI environment descriptor file**.
 
-* Upon successful validation, a **Download** option will be available to download the **tenant-specific metadata** and the **SAP CPI environment descriptor file**.
+<figure><img src="../../../.gitbook/assets/image (1825).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1494).png" alt=""><figcaption></figcaption></figure>
+**Steps to Create Trust Configuration in SAP BTP**
 
-3. **Create Trust Configuration in SAP BTP**
-
-* Return to **Trust Configuration** in the SAP BTP Cockpit.
-* Click **New Trust Configuration** and select **New** **SAML Trust Configuration**.
+1. Return to **Trust Configuration** in the SAP BTP Cockpit.
+2. Click **New Trust Configuration** and select **New** **SAML Trust Configuration**.
 
 <figure><img src="../../../.gitbook/assets/image (1103).png" alt=""><figcaption></figcaption></figure>
 
-* Upload the **ReleaseOwl CPI Environment metadata XML** file.
-* **Uncheck** the option **"Available for User Logon"** to prevent this IDP from appearing on the SAP login screen.
-* Click **Save**.
+3. Upload the **ReleaseOwl CPI Environment metadata XML** file.
+4. **Uncheck** the option **"Available for User Logon"** to prevent this IDP from appearing on the SAP login screen.
+5. Click **Save**.
 
 <figure><img src="../../../.gitbook/assets/image (1495).png" alt=""><figcaption></figcaption></figure>
 
-#### **4. Assign Role Collections (Choose One of the Methods Below)**
+#### **Assign Role Collections (Choose One of the Methods Below)**
 
 1. Navigate to **Security → Role Collections**.
 2. Click on the **Create** button.
 3. Enter a name for the role collection and create it.
 
-<figure><img src="../../../.gitbook/assets/image (1741).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1827).png" alt=""><figcaption></figcaption></figure>
 
 4. Search for the newly created role collection name.
 5. Click on the role collection name.
 
-<figure><img src="../../../.gitbook/assets/image (1742).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1828).png" alt=""><figcaption></figcaption></figure>
 
 6. Click on the **Edit** button.
 
@@ -123,7 +128,7 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 8. Click **Save** after adding the roles.
 
-<figure><img src="../../../.gitbook/assets/image (1743).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1829).png" alt=""><figcaption></figcaption></figure>
 
 **Non-Production Environment Role Collection**
 
@@ -166,9 +171,9 @@ Add the following roles to ensure proper access and deployment capabilities:
 | **Identity Provider** | Select the configured Identity Provider (e.g., Custom IDP). |
 | **Name**              | Enter an appropriate user group name.                       |
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1826).png" alt=""><figcaption></figcaption></figure>
 
-### **Role Collection Assignment Methods**
+#### **Role Collection Assignment Methods**
 
 You can assign role collections using one of the following methods:
 
@@ -184,10 +189,10 @@ You can assign role collections using one of the following methods:
 5. Go to the **User Groups** section and Click the **"+"** button to add a new mapping.
 6. Create a custom role collection with the following roles for assignment in non-production/ production environments:
 
-| Field                | Description                                                                             |
-| -------------------- | --------------------------------------------------------------------------------------- |
-| **Role Collection**  | Choose the role collection that was created earlier. ( Like production, non-production) |
-| **User Group Name**  | Enter the name that was created earlier.                                                |
+| Field                | Description                                                                                                   |
+| -------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Role Collection**  | Choose the role collection that was created earlier. ( Like production, non-production)                       |
+| **User Group Name**  | Enter the exact role collection name that was configured during the earlier role collection creation process. |
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -197,9 +202,9 @@ You can assign role collections using one of the following methods:
 2. Click the **"+"** button to add a new mapping.
 3. Define mappings like this:
 
-| Role Collection                                                               | Attribute    | Operator | Value                                 |
-| ----------------------------------------------------------------------------- | ------------ | -------- | ------------------------------------- |
-| <p></p><ul><li>Enter the role collection that was created earlier. </li></ul> | emailAddress | equals   | The email ID of the **service user**  |
+| Role Collection                                                               | Attribute | Operator | Value                                 |
+| ----------------------------------------------------------------------------- | --------- | -------- | ------------------------------------- |
+| <p></p><ul><li>Enter the role collection that was created earlier. </li></ul> | email     | equals   | The email ID of the **service user**  |
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

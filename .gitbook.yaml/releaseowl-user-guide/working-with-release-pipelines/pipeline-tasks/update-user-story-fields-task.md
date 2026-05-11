@@ -1,6 +1,6 @@
 # Update User Story Fields Task
 
-In projects with defined workflows, certain fields must be updated to enable transition from one state to another. The **Update User Story Fields Task** facilitates updating the required fields to ensure successful state transitions and alignment with the external ALM system.
+In projects with defined workflows, certain fields must be updated to enable transition from one state to another. The **Update User Story Fields Task** facilitates updating the required fields to ensure successful state transitions and alignment with the external ALM system. Currently, **ReleaseOwl** supports integration only with Jira for this functionality.
 
 This task operates by:
 
