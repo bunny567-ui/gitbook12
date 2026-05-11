@@ -184,7 +184,7 @@ After the instance is created:
    * **Client ID**
    * **Client Secret**
    * **Token URL**
-8. These credentials are required for registering the SAP CPI (API access) credential in **ReleaseOwl**.
+8. These credentials are required for registering the SAP CPI (Iflow access) credential in **ReleaseOwl**.
 
 <figure><img src="../../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
 
