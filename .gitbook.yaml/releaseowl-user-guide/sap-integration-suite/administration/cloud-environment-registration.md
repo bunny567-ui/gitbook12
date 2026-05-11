@@ -214,15 +214,11 @@ You can assign role collections using one of the following methods:
 * **iadv-content-developer**
 {% endhint %}
 
-4. The group name or email address configured in the '**Value**' section under **User Groups** or **Attribute Mappings** should match the corresponding group or email configuration in the **IDP Auth Email Address/Group Name** on the **ReleaseOwl CPI Environment** registration page.
-
-<figure><img src="../../../.gitbook/assets/image (1740).png" alt=""><figcaption></figcaption></figure>
-
 ### SAP Cloud Identity Provider
 
 ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support secure authentication and identity management across deployment pipelines. To register the SAP Cloud Identity environment, you must first register the Cloud Identity credential. Follow the[ link](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-integration-suite/administration/credential-management) and complete the credential setup.
 
-### **Trust Configuration in SAP BTP**
+#### **Trust Configuration in SAP BTP**
 
 1. Go to **Trust Configuration** in your SAP BTP subaccount.
 2. Click on **Establish Trust**.
@@ -267,7 +263,7 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 
 <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Access Applications**
+#### **Access Applications**
 
 1. Log in to your **Cloud Identity Service tenant**.
 2. Navigate to **Applications & Resources → Applications**.
@@ -322,7 +318,7 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 
 ReleaseOwl seamlessly integrates with **SAP Passport** to enable secure certificate-based authentication for SAP CPI environments. To register the SAP Passport–based authentication, you must first generate your SAP Passport and register it as a credential in ReleaseOwl. Follow the [link](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-integration-suite/administration/credential-management) and complete the credential setup.
 
-### Environment Registration
+#### Environment Registration
 
 1. Go to the SAP CPI Environment and click on the **Register SAP CPI Environment**.&#x20;
 2. Click on **Register SAP CPI Environment**.
@@ -335,7 +331,7 @@ ReleaseOwl seamlessly integrates with **SAP Passport** to enable secure certific
 
 <figure><img src="../../../.gitbook/assets/image (1651).png" alt=""><figcaption></figcaption></figure>
 
-### Adding Environments to Project
+#### Adding Environments to Project
 
 * To add environments to project, follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/project-management)and complete the setup.
 
