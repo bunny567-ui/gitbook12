@@ -25,20 +25,20 @@ This instance enables **programmatic access via APIs** for integration, automati
 
 #### **Steps:**
 
-1. Log in to your SAP BTP Cockpit.
-2. Navigate to your **Global Account > Subaccount**.
-3. Go to **Instances and Subscriptions** from the left menu.
+1. Log in to your **SAP BTP Cockpit**.
+2. Navigate to your **Global Account**, then select the required **Subaccount**.
+3. From the left navigation menu, go to **Instances and Subscriptions**.
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FUT7hY8QW2SESG2LRE3ER%252Fimage.png%3Falt%3Dmedia%26token%3Da9ab0b09-9b18-4e83-853a-7e64f8c008d6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=95d6209e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-4. Click on **Create**.
+4. Click **Create**.
 5. In the "**New Instance or Subscription**" wizard:
 
-* **Service**: SAP Process Integration Runtime
-* **Plan**: `api`
-* **Runtime Environment**: Cloud Foundry
-* **Space**: Select your development space (e.g., `dev`)
-* **Instance Name**: Choose a name like `CPI_API_Instance`
+* **Service**: Select **SAP Process Integration Runtime**
+* **Plan**:  Choose the **API** plan
+* **Runtime Environment**: Select **Cloud Foundry**
+* **Space**: Select your development space.
+* **Instance Name**: Enter a name of your choice
 
 6. Click **Next**, then **Create**.
 
@@ -82,23 +82,36 @@ In the **Parameters** step, assign the required roles based on the target enviro
 
 #### Create Service Key (for `api` plan)
 
-After instance creation:
+After the instance is created:
 
-1. Go to **Instances and Subscriptions**.
-2. Expand your newly created `api` instance.
-3. Click **Create Service Key**.
-4. Enter a name (e.g., `cpi-api-key`) and leave parameters blank.
-5. Click **Create**.
+1. Locate the newly created **API instance**.
+2. Click the **Actions** menu (**...**) for the instance.
+3. Select **Create Service Key**.
 
-<figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FQtdh3ftS2qBadEGGv2VP%252Fimage.png%3Falt%3Dmedia%26token%3Dee6c05f2-0af7-4a7f-bc69-28e6941c6a20&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=30ea3cb7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1808).png" alt=""><figcaption></figcaption></figure>
 
-6. Click **View Credentials** to retrieve:
+4. Enter a service key name of your choice.
+5. Leave the parameters field blank.
+6. Click **Create**.
+
+<figure><img src="../../../.gitbook/assets/image (1809).png" alt=""><figcaption></figcaption></figure>
+
+7. Open the newly created **Service Instance**.
+8. Locate the created **Service Key**.
+
+<figure><img src="../../../.gitbook/assets/image (1815).png" alt=""><figcaption></figcaption></figure>
+
+
+
+9. Click **View Credentials** to access the generated authentication details. The following details will be displayed:
 
 * **Client ID**
 * **Client Secret**
 * **Token URL**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+10. These credentials are required for registering the SAP CPI (API access) credential in **ReleaseOwl**.
+
+<figure><img src="../../../.gitbook/assets/image (1805).png" alt=""><figcaption></figcaption></figure>
 
 #### Register **SAP CPI (API Access)** Credential in ReleaseOwl
 
@@ -107,13 +120,17 @@ Credential registration enables secure communication between **ReleaseOwl** and 
 **✅ Steps:**
 
 1. Log in to the **ReleaseOwl Platform**.
-2. Go to **Administration > Credential Manager**.
+2. From the Administration menu, go to **Credential Manager**.
 
-<figure><img src="../../../.gitbook/assets/image (1404).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1806).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Register Credential**.
 4. Fill in the details:
    * **Credential Name:** Any identifiable name for the credential.
+   * **Credential Type:** Select **SAP Cloud Environment**.
+   * **Scope** – Select the scope of the credential:
+     * **Global** – Visible to all users.
+     * **Private** – Visible only to the user who created it.
    * **Authentication Type:** Select OAuth2
    * **Client ID:** Provide the details from the above created **API service key**.
    * **Client Secret:** Provide the details from the above created **API service key**.
@@ -121,7 +138,7 @@ Credential registration enables secure communication between **ReleaseOwl** and 
 5. Click **Save**.
 6. The credential will now appear in your **Credentials List** and can be used in pipelines to upload and deploy CPI artifacts
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1810).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. IFLOW Plan** – for managing and testing iFlows
 
@@ -129,36 +146,45 @@ This is used for managing and testing **integration artifacts (iFlows)**.
 
 #### **✅ Steps:**
 
-1. Go to your **SAP BTP Cockpit**.
-2. Select your **subaccount** that hosts SAP CPI.
-3. Go to **Services > Service Marketplace**.
-4. Select **SAP Process Integration Runtime** → Click **Create**.
-5. Fill in the following:
-   * **Service**: SAP Process Integration Runtime
-   * **Plan**: `IFLOW`
-   * **Runtime Environment**: Cloud Foundry
-   * **Space**: Provide the appropriate space (e.g., `dev`)
-   * **Instance Name**: (e.g., `CPI_IFLOW_Instance`)
+1. Navigate to your **Subaccount** and select **Instances and Subscriptions**.
+2. Click **Create**.
+3. In the **New Instance or Subscription** wizard, provide the following details:
 
-<figure><img src="../../../.gitbook/assets/image (1041).png" alt=""><figcaption></figcaption></figure>
+* **Service** – Select **SAP Process Integration Runtime**
+* **Plan** – Choose **IFLOW**
+* **Runtime Environment** – Select **Cloud Foundry**
+* **Space** – Select the appropriate space
+* **Instance Name** – Enter a name of your choice
 
-6. Click **Next** and then **Create**.
+<figure><img src="../../../.gitbook/assets/image (1811).png" alt=""><figcaption></figcaption></figure>
+
+4. Click **Next** and then **Create**.
 
 <figure><img src="../../../.gitbook/assets/image (1042).png" alt=""><figcaption></figcaption></figure>
 
 #### Create Service Key (for `IFLOW` plan)
 
-The IFlow plan service key is required to execute test cases from ReleaseOwl
+The IFlow plan service key is required to execute test cases from ReleaseOwl.
 
-1. Navigate to **Instances and Subscriptions**.
-2. Locate the `IFLOW` instance.
-3. Click **Actions > Create Service Key**.
-4. Enter a name for the key (e.g., `cpi-iflow-key`) → Click **Create**.
+After the instance is created:
 
-<figure><img src="../../../.gitbook/assets/image (1043).png" alt=""><figcaption></figcaption></figure>
+1. Locate the newly created **API instance**.
+2. Click the **Actions** menu (**...**) for the instance.
+3. Select **Create Service Key**.
 
-5. Click on the service key name to view the key details.
-6. You will need these values when setting up **ReleaseOwl** credentials.
+<figure><img src="../../../.gitbook/assets/image (1812).png" alt=""><figcaption></figcaption></figure>
+
+4. Enter a service key name of your choice.
+5. Leave the parameters field blank.
+6. Click **Create**.
+
+<figure><img src="../../../.gitbook/assets/image (1813).png" alt=""><figcaption></figcaption></figure>
+
+7. Click **View Credentials** to access the generated authentication details. The following details will be displayed:
+   * **Client ID**
+   * **Client Secret**
+   * **Token URL**
+8. These credentials are required for registering the SAP CPI (API access) credential in **ReleaseOwl**.
 
 <figure><img src="../../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
 
@@ -170,17 +196,20 @@ This step allows **ReleaseOwl** to securely interact with CPI for **artifact dep
 
 1. Navigate to **Credential Manager** from the **Administration** menu in the **ReleaseOwl** Platform.
 2. Click **Register Credential**.
-3. Set the **Credential Type** to **SAP Cloud Environment**.
-4. Fill in the following details:
-   * **Credential Name**: Enter a meaningful name (e.g., `CPI IFLOW Credential`)
+3. Fill in the following details:
+   * **Credential Name:** Any identifiable name for the credential.
+   * **Credential Type:** Select **SAP Cloud Environment**.
+   * **Scope** – Select the scope of the credential:
+     * **Global** – Visible to all users.
+     * **Private** – Visible only to the user who created it.
    * **Authentication Type**: Select **OAuth2**
    * **Client ID:** Provide the details from the above created IFLOW service key.
    * **Client Secret:** Provide the details from the above created IFLOW service key.
    * **Token URL:** Provide the details from the above created IFLOW service key.
-5. Click **Save**.
-6. The new credential will now appear in the **Credentials List** and can be used in **Release Pipelines** to test **IFLOW.**
+4. Click **Save**.
+5. The new credential will now appear in the **Credentials List** and can be used in **Release Pipelines** to test **IFLOW.**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1814).png" alt=""><figcaption></figcaption></figure>
 
 ## **Web Authentication**
 
