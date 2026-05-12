@@ -264,6 +264,13 @@ To establish trust between the subaccount and the Identity Provider:
 
 <div><figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure></div>
 
+#### **Origin Key Configuration**
+
+* Locate the generated **Origin Key** in the Trust Configuration table you have created.
+* Copy the **Origin Key** for use in ReleaseOwl.
+
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
 #### Configure Conditional Authentication
 
 1. Log in to **SAP Cloud Identity Services**.
@@ -331,14 +338,6 @@ To create and assign a role collection for the required environment access, foll
 <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Save** to apply the changes.
-
-#### **Origin Key Configuration**
-
-* Click **Save** after completing the configuration.
-* Locate the generated **Origin Key** in the Trust Configuration table you have created.
-* Copy the **Origin Key** for use in ReleaseOwl.
-
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure Role Attributes
 
