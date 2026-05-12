@@ -208,9 +208,9 @@ Credential registration enables secure communication between **ReleaseOwl** and 
 
 <figure><img src="../../../.gitbook/assets/image (1834).png" alt=""><figcaption></figcaption></figure>
 
-## **Web Authentication**
+## **User-based Authentication** (Web Authentication)
 
-ReleaseOwl supports different web authentication methods and it is necessary for deploying certain artifact types, such as value mapping, REST, SOAP, and OData APIs. It is also essential for executing test cases associated with the artifacts&#x20;
+**ReleaseOwl** supports different web authentication methods and it is necessary for deploying certain artifact types, such as value mapping, REST, SOAP, and OData APIs. It is also essential for executing test cases associated with the artifacts&#x20;
 
 The supported authentication methods are:
 
