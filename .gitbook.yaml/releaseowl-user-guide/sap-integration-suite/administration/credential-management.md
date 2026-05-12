@@ -4,12 +4,12 @@ This section explains how to configure and manage credentials required for integ
 
 ## CPI (Cloud Platform Integration)
 
-The CPI domain manages credentials required for securing integration scenarios and internal SAP communications. It supports:
+The CPI requires credentials to secure integration scenarios and enable internal SAP communications. It supports the following credential types:
 
 * **System-to-system authentication** (Service Keys)
 * **User-based authentication** (Web Authentication)
 
-## Service Keys (System-to-System Authentication)
+## System-to-System Authentication ( Service Keys)
 
 Service Keys are used for automated, system-level authentication. They allow ReleaseOwl to communicate securely with SAP Integration Suite without any user interaction.
 
@@ -21,22 +21,22 @@ ReleaseOwl requires a **Process Integration Runtime (PIR)** instance in SAP BTP 
 ### 1.  **API Plan** – for programmatic API access
 
 **Purpose:**\
-This instance enables **programmatic access via APIs** for integration, automation, and artifact management tasks.
+This instance enables **programmatic access via APIs** for integration, deployment, and artifact management tasks.
 
 #### **Steps:**
 
-1. Log in to your **SAP BTP Cockpit**.
-2. Navigate to your **Global Account**, then select the required **Subaccount**.
-3. From the left navigation menu, go to **Instances and Subscriptions**.
+1. Log in to your SAP BTP Cockpit.
+2. Navigate to your Global Account, then select the required Subaccount.
+3. From the left navigation menu, go to Instances and Subscriptions.
 
 <figure><img src="https://releaseowl.gitbook.io/~gitbook/image?url=https%3A%2F%2F2526592735-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsYuNJuZFJFC32XbiuvZf%252Fuploads%252FUT7hY8QW2SESG2LRE3ER%252Fimage.png%3Falt%3Dmedia%26token%3Da9ab0b09-9b18-4e83-853a-7e64f8c008d6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=95d6209e&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
-4. Click **Create**.
+4. Click Create.
 5. In the "**New Instance or Subscription**" wizard:
 
-* **Service**: Select **SAP Process Integration Runtime**
-* **Plan**:  Choose the **API** plan
-* **Runtime Environment**: Select **Cloud Foundry**
+* **Service**: Select SAP Process Integration Runtime
+* **Plan**:  Choose the API plan
+* **Runtime Environment**: Select Cloud Foundry
 * **Space**: Select your development space.
 * **Instance Name**: Enter a name of your choice
 
@@ -52,19 +52,6 @@ This instance enables **programmatic access via APIs** for integration, automati
 
 In the **Parameters** step, assign the required roles based on the target environment.
 
-**For Production Environments**, add the following roles to enable deployment access
-
-| Role                           | Description                                                                                                                                                         |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **WorkspacePackagesRead**      | Provides read access to CPI artifacts such as **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                                     |
-| **WorkspacePackagesConfigure** | Allows users to configure artifact settings, such as **iFlow configuration parameters**.                                                                            |
-| **WorkspacePackagesEdit**      | Enables creation and modification of artifacts such as **iFlow, Script Collection, and Message Mapping**. For **Value Mapping**, it supports only initial creation. |
-| **WorkspaceArtifactsDeploy**   | Grants permission to deploy artifacts to runtime, including **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                       |
-| **MonitoringDataRead**         | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
-| **MessagePayloadsRead**        | Allows users to view message payloads in monitoring.                                                                                                                |
-
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-
 **For Non-Production Environments**, add the following roles:
 
 | Role                           | Description                                                                                                                                                         |
@@ -79,6 +66,19 @@ In the **Parameters** step, assign the required roles based on the target enviro
 | **TraceConfigurationEdit**     | Allows modification of tracing settings, including enabling trace configuration.                                                                                    |
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+**For Production Environments**, add the following roles to enable deployment access
+
+| Role                           | Description                                                                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**      | Provides read access to CPI artifacts such as **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                                     |
+| **WorkspacePackagesConfigure** | Allows users to configure artifact settings, such as **iFlow configuration parameters**.                                                                            |
+| **WorkspacePackagesEdit**      | Enables creation and modification of artifacts such as **iFlow, Script Collection, and Message Mapping**. For **Value Mapping**, it supports only initial creation. |
+| **WorkspaceArtifactsDeploy**   | Grants permission to deploy artifacts to runtime, including **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                       |
+| **MonitoringDataRead**         | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
+| **MessagePayloadsRead**        | Allows users to view message payloads in monitoring.                                                                                                                |
+
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 #### Create Service Key (for `api` plan)
 
@@ -121,9 +121,6 @@ Credential registration enables secure communication between **ReleaseOwl** and 
 
 1. Log in to the **ReleaseOwl Platform**.
 2. From the Administration menu, go to **Credential Manager**.
-
-<figure><img src="../../../.gitbook/assets/image (1806).png" alt=""><figcaption></figcaption></figure>
-
 3. Click **Register Credential**.
 4. Fill in the details:
    * **Credential Name:** Any identifiable name for the credential.
@@ -136,9 +133,9 @@ Credential registration enables secure communication between **ReleaseOwl** and 
    * **Client Secret:** Provide the details from the above created **API service key**.
    * **Token URL:** Provide the details from the above created **API service key**.
 5. Click **Save**.
-6. The credential will now appear in your **Credentials List** and can be used in pipelines to upload and deploy CPI artifacts
+6. The credential will now appear in your **Credentials List** and will be used for the registering the CPI environment.
 
-<figure><img src="../../../.gitbook/assets/image (1810).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1833).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. IFLOW Plan** – for managing and testing iFlows
 
@@ -190,34 +187,46 @@ After the instance is created:
 
 #### Register **SAP CPI Credential (Iflow)**  in ReleaseOwl
 
-This step allows **ReleaseOwl** to securely interact with CPI for **artifact deployment** and **management** via the **IFLOW** plan.
+Credential registration enables secure communication between **ReleaseOwl** and **SAP CPI environments.**&#x20;
 
 **Steps:**
 
-1. Navigate to **Credential Manager** from the **Administration** menu in the **ReleaseOwl** Platform.
-2. Click **Register Credential**.
+1. Navigate to Credential Manager from the Administration menu in the ReleaseOwl Platform.
+2. Click Register Credential.
 3. Fill in the following details:
    * **Credential Name:** Any identifiable name for the credential.
-   * **Credential Type:** Select **SAP Cloud Environment**.
+   * **Credential Type:** Select SAP Cloud Environment.
    * **Scope** – Select the scope of the credential:
      * **Global** – Visible to all users.
      * **Private** – Visible only to the user who created it.
-   * **Authentication Type**: Select **OAuth2**
+   * **Authentication Type**: Select OAuth2
    * **Client ID:** Provide the details from the above created IFLOW service key.
    * **Client Secret:** Provide the details from the above created IFLOW service key.
    * **Token URL:** Provide the details from the above created IFLOW service key.
 4. Click **Save**.
-5. The new credential will now appear in the **Credentials List** and can be used in **Release Pipelines** to test **IFLOW.**
+5. The new credential will now appear in the Credentials List and will be used for the registering the CPI environment.
 
-<figure><img src="../../../.gitbook/assets/image (1814).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1834).png" alt=""><figcaption></figcaption></figure>
 
 ## **Web Authentication**
 
-Web Authentication is used for interactive and user-based access to SAP services and applications.
+ReleaseOwl supports different web authentication methods and it is necessary for deploying certain artifact types, such as value mapping, REST, SOAP, and OData APIs. It is also essential for executing test cases associated with the artifacts&#x20;
+
+The supported authentication methods are:
+
+1. SAP Cloud Identity Services-
+2. SAP Passport
+3. Ping Identity&#x20;
 
 ### **1. SAP Cloud Identity Services – Identity Authentication (IAS)**&#x20;
 
-It acts as the Identity Provider (IdP) for SAP Integration Suite and is used to authenticate users accessing the platform. It provides browser-based authentication and Single Sign-On (SSO) using the OpenID Connect (OIDC) protocol.
+#### **Prerequisites**&#x20;
+
+1. A technical user must be created and available for use in IAS. &#x20;
+2. Trust must be established with SAP Identity Authentication Service (IAS). &#x20;
+3. Conditional Authentication must be set up.&#x20;
+
+If trust is not already established, follow the steps below:
 
 #### **SAP Cloud Identity Service: Create IAS Instance**
 
@@ -255,7 +264,83 @@ To establish trust between the subaccount and the Identity Provider:
 
 <div><figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-#### **Assign Roles**
+#### Configure Conditional Authentication
+
+1. Log in to **SAP Cloud Identity Services**.
+2. Navigate to **Applications & Resources**.
+3. Select "**Applications**."
+4. Open the **SAP BTP application** associated with your tenant.
+
+<figure><img src="../../../.gitbook/assets/image (1830).png" alt=""><figcaption></figcaption></figure>
+
+5. Go to the **Trust** section.
+6. Navigate to **Conditional Authentication**.
+
+<figure><img src="../../../.gitbook/assets/image (1831).png" alt=""><figcaption></figcaption></figure>
+
+6. In the **Default Authenticating Identity Provider** field, select "**Identity Authentication."**
+7. Click **Save** to apply the configuration.
+
+<figure><img src="../../../.gitbook/assets/image (1832).png" alt=""><figcaption></figcaption></figure>
+
+8. Create authentication rules to configure access for the technical user. &#x20;
+9. If third-party identity providers are being used, separate authentication rules can also be configured based on the user type. &#x20;
+
+**Example:**&#x20;
+
+* One rule can be created to allow the technical user to authenticate through Identity Authentication. &#x20;
+* Another rule can be created to allow business users to authenticate through a third-party identity provider such as Microsoft. &#x20;
+
+<figure><img src="../../../.gitbook/assets/image" alt=""><figcaption></figcaption></figure>
+
+#### Assign Role Collections&#x20;
+
+To create and assign a role collection for the required environment access, follow these steps:
+
+1. Navigate to **Security → Role Collections**.
+2. Click **Create**.
+3. Enter a name for the role collection and click **Create**.
+
+<figure><img src="../../../.gitbook/assets/image (1797).png" alt=""><figcaption></figcaption></figure>
+
+4. Search for the newly created role collection.
+5. Select the role collection name.
+6. Click **Edit**.
+7.  Add the required roles based on your environment type:
+
+    **For Non-Production Environments**, add the following roles:
+
+| Role                         | Description                                                                                                                 |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
+| **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
+| **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
+| **TraceConfigurationRead**   | Provides access to view the current tracing configuration.                                                                  |
+| **TraceConfigurationEdit**   | Allows modification of tracing settings, including enabling trace configuration.                                            |
+
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+
+**For Production Environments**, add the following roles:
+
+| Role                         | Description                                                                                                                 |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
+| **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
+| **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
+
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+
+8. Click **Save** to apply the changes.
+
+#### **Origin Key Configuration**
+
+* Click **Save** after completing the configuration.
+* Locate the generated **Origin Key** in the Trust Configuration table you have created.
+* Copy the **Origin Key** for use in ReleaseOwl.
+
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Configure Role Attributes
 
 * If you do not want to create a [**Role Collection**](credential-management.md#assign-role-collections), use the **Configure Role Attributes** method described below to assign the required roles.
 * Click **Edit**.
@@ -289,74 +374,6 @@ To establish trust between the subaccount and the Identity Provider:
 {% hint style="info" %}
 **Note:** Ensure the email used in role mapping matches the email maintained in SAP Cloud Identity Services.
 {% endhint %}
-
-#### Assign Role Collections&#x20;
-
-To create and assign a role collection for the required environment access, follow these steps:
-
-1. Navigate to **Security → Role Collections**.
-2. Click **Create**.
-3. Enter a name for the role collection and click **Create**.
-
-<figure><img src="../../../.gitbook/assets/image (1797).png" alt=""><figcaption></figcaption></figure>
-
-4. Search for the newly created role collection.
-5. Select the role collection name.
-6. Click **Edit**.
-7.  Add the required roles based on your environment type:
-
-    **For Production Environments**, add the following roles:
-
-
-
-    | Role                         | Description                                                                                                                 |
-    | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-    | **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
-    | **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
-    | **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
-
-    <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
-
-&#x20;       **For Non-Production Environments**, add the following roles:
-
-| Role                         | Description                                                                                                                 |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
-| **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
-| **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
-| **TraceConfigurationRead**   | Provides access to view the current tracing configuration.                                                                  |
-| **TraceConfigurationEdit**   | Allows modification of tracing settings, including enabling trace configuration.                                            |
-
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
-
-8. Click **Save** to apply the changes.
-
-#### **Origin Key Configuration**
-
-* Click **Save** after completing the configuration.
-* Locate the generated **Origin Key** in the Trust Configuration table you have created.
-* Copy the **Origin Key** for use in ReleaseOwl.
-
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-#### Configure Conditional Authentication
-
-1. Log in to **SAP Cloud Identity Services**.
-2. Navigate to **Applications & Resources**.
-3. Select "**Applications**."
-4. Open the **SAP BTP application** associated with your tenant.
-
-<figure><img src="../../../.gitbook/assets/image (1830).png" alt=""><figcaption></figcaption></figure>
-
-5. Go to the **Trust** section.
-6. Navigate to **Conditional Authentication**.
-
-<figure><img src="../../../.gitbook/assets/image (1831).png" alt=""><figcaption></figcaption></figure>
-
-6. In the **Default Authenticating Identity Provider** field, select "**Identity Authentication."**
-7. Click **Save** to apply the configuration.
-
-<figure><img src="../../../.gitbook/assets/image (1832).png" alt=""><figcaption></figcaption></figure>
 
 #### Register SAP Cloud Identity Service Credential in Releaseowl
 
@@ -397,8 +414,6 @@ To create and assign a role collection for the required environment access, foll
 {% hint style="info" %}
 **Note : Origin Key** and **IdP Metadata URL** are required only when multiple logon options are enabled in the BTP trust configuration.
 {% endhint %}
-
-
 
 ### 2. **SAP Passport**&#x20;
 
@@ -483,10 +498,8 @@ Ping Identity enables secure authentication and establishes trusted communicatio
 
 Before configuring the integration, ensure that the following prerequisites are completed:
 
-1. **Subscribe to Cloud Identity Services**\
-   Ensure that the **Cloud Identity Services** subscription is active in your SAP BTP subaccount.
-2. **Establish Trust Configuration**\
-   To establish trust between the subaccount and the Identity Provider, follow the process outlined [above](credential-management.md#establish-trust-configuration).
+1. Ensure that the **Cloud Identity Services** subscription is active in your SAP BTP subaccount.
+2. To establish trust between the subaccount and the Identity Provider, follow the process outlined [above](credential-management.md#establish-trust-configuration).
 
 #### Create Application in PingOne
 
