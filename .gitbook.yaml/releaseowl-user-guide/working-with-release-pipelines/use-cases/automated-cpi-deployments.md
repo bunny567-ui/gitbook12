@@ -20,11 +20,14 @@ Creating a Release Pipeline is a three-step process.
 #### **For creating release pipeline:**
 
 1. Select the required CPI Project.
-2. Navigate to **Release and** click on the **Release Pipelines.**
+2. Navigate to **Release** and click on the **Release Pipelines.**
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (27).png" alt=""><figcaption></figcaption></figure>
 
-3. Click **Create New Release Pipeline**.
+3. Click **Create New Release Pipeline** to create the pipeline.
+
+<figure><img src="../../../.gitbook/assets/image (1840).png" alt=""><figcaption></figcaption></figure>
+
 4. Enter a **Pipeline Name**.
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (15).png" alt=""><figcaption></figcaption></figure>
@@ -50,6 +53,59 @@ Creating a Release Pipeline is a three-step process.
 {% hint style="info" %}
 **Note:** All the tasks except Deployment Task are similar for any project type. For CPI projects, Wait for Promotion and Validation tasks are the two extra tasks available other than the ones available for every project type.
 {% endhint %}
+
+#### **Post-Creation Options**
+
+Once the Release Pipeline is created, you can use the **Actions** button for the following options:
+
+* **Save As**:  Opens a popup where you can enter a new name and create a copy of the pipeline.
+
+<figure><img src="../../../.gitbook/assets/image (1839).png" alt=""><figcaption></figcaption></figure>
+
+* **Versions:** Displays all versions created for the selected release pipeline. This option helps users track previously generated versions of a release pipeline.  To view a specific version:
+
+1. Select the required version from the list.
+
+<figure><img src="../../../.gitbook/assets/image (1843).png" alt=""><figcaption></figcaption></figure>
+
+2. Click the **Actions (⋯)** button for that version.
+3. Select **View**.
+
+This allows you to view the details of the selected version of the release pipeline.
+
+<figure><img src="../../../.gitbook/assets/image (1842).png" alt=""><figcaption></figcaption></figure>
+
+* **Delete:** Deletes an existing release pipeline from the system.
+
+<figure><img src="../../../.gitbook/assets/image (1847).png" alt=""><figcaption></figcaption></figure>
+
+* **Archive** : The **Archive** option is available, which archives the project instead of deleting it.
+
+<figure><img src="../../../.gitbook/assets/image (1841).png" alt=""><figcaption></figcaption></figure>
+
+**Export Release Pipeline:** It is the process of downloading the complete configuration of an existing release pipeline as a file (usually in **JSON format**) so it can be reused, shared, or backed up.
+
+1. Navigate to the **Release Pipelines** section.
+2. Select the existing pipeline you want to reuse.
+3. Click **Export Release Pipeline**.
+4. The pipeline configuration is downloaded as a **JSON file** to your local system.
+
+<figure><img src="../../../.gitbook/assets/image (1846).png" alt=""><figcaption></figcaption></figure>
+
+**Import Release Pipeline** : It is a process of creating a new release pipeline by uploading a previously exported pipeline configuration file (usually in **JSON format**).
+
+1. Navigate to the **Release Pipelines** section.
+2. Click **New Release Pipeline**.
+
+<figure><img src="../../../.gitbook/assets/image (1845).png" alt=""><figcaption></figcaption></figure>
+
+3. Select the **Import Release Pipeline.**&#x20;
+4. Upload the previously exported **JSON** file.
+5. Enter a name for the new release pipeline.
+6. Review the pipeline details.
+7. Click **Create** to create the new release pipeline.
+
+<figure><img src="../../../.gitbook/assets/image (1844).png" alt=""><figcaption></figcaption></figure>
 
 ### **Deployment Task**
 
@@ -138,7 +194,7 @@ A **Release Package** is a logical grouping of user stories that are promoted to
 
 Validation task is added to perform Static Code Analysis checks and generate the validation report to view the errors encountered. You can continue the execution of the pipeline even upon failure by checking the checkbox – Continue On Failure by fixing the errors seen in the log and re-running the release pipeline.
 
-### Validation Task for CPI and API projects:
+### Validation Task for CPI Projects
 
 | **Field / Option**      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -196,7 +252,14 @@ Go to the required pipeline and click **Edit** to edit the pipeline or **Delete*
 
 **Rollback Logs**
 
-Rollback Logs are available for CPI artifacts that are deployed to design time in addition to those published to run time. To rollback a build, click Rollback in the status page. Once rollback is enabled, you can see the rollback= status in the deployment logs.<br>
+Rollback logs are available for CPI artifacts deployed to **Design Time**, in addition to artifacts that are published to **Run Time**.
+
+To roll back a build:
+
+1. Navigate to the **Status** page of the deployed build.
+2. Click **Rollback**.
+
+Once the rollback is initiated, the deployment logs will display the rollback status, allowing users to track the rollback activity. You can verify the rollback operation by checking the deployment logs, where the rollback status will be updated accordingly.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1273).png" alt=""><figcaption></figcaption></figure>
 
