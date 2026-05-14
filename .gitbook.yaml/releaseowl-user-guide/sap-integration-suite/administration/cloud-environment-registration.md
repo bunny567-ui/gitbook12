@@ -94,9 +94,9 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 3. Upload the **ReleaseOwl CPI Environment metadata XML** file.
 4. **Uncheck** the option **"Available for User Logon"** to prevent this IDP from appearing on the SAP login screen.
-5. Click **Save**.
+5. Click **AddSAMLTrust**.
 
-<figure><img src="../../../.gitbook/assets/image (1495).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1836).png" alt=""><figcaption></figcaption></figure>
 
 #### **Assign Role Collections (Choose One of the Methods Below)**
 
