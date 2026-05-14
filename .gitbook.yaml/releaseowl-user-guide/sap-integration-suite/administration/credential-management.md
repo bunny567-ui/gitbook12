@@ -474,6 +474,8 @@ It enables secure authentication and establishes trusted communication between S
 
 **Assign Role Collections to Users**
 
+After creating the required role collections and assigning the necessary roles, complete the following steps to assign the role collection to a user:
+
 1. In the SAP BTP Cockpit, navigate to:\
    **Security → Users**
 2. Select the required user from the **Users** list.
