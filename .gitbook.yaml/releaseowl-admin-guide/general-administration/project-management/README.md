@@ -7,7 +7,7 @@ Project Management in **ReleaseOwl** simplifies the planning, execution, and dep
 1. Go to the **Administration** page.
 2. Under the **Projects** section, click on the **Create New Project** button located at the top right corner.
 
-<figure><img src="../../../.gitbook/assets/image (1175).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1837).png" alt=""><figcaption></figcaption></figure>
 
 3. A popup form titled **Create Project** will appear.
 
@@ -30,7 +30,7 @@ Project Management in **ReleaseOwl** simplifies the planning, execution, and dep
 6. The newly created project will be listed in the **Projects** table.
 7. The table will display key details such as the project’s **name**, **type**, and **creator**.
 
-<figure><img src="../../../.gitbook/assets/image (1166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1838).png" alt=""><figcaption></figcaption></figure>
 
 8. To the right of each project, click on the action button(three dots).
 9. The **Archive** option is available, which archives the project instead of deleting it.
