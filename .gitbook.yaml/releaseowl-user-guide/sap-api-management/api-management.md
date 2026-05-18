@@ -11,7 +11,7 @@ To sync API artifacts from SAP API Management:
 
 <figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-3. Click **Add Artifacts**. The system display the newly created artifact that are not available in ReleaseOwl in separate tabs based on the selected artifact type, such as **API Proxies**, **API Providers**, **Key Value Maps (KVMs)**, and **Products**.
+3. Click **Add Artifacts**. The system displays newly created artifacts that are not available in **ReleaseOwl** in separate tabs based on the selected artifact type, such as API Proxies, API Providers, Key Value Maps (KVMs), and Products.
    * **API Proxies**
    * **API Providers**
    * **Key Value Maps (KVMs)**
