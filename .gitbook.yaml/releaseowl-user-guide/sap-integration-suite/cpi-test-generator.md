@@ -8,7 +8,7 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 
 * Navigate to **Instances and Subscriptions** and click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Fill in the following details:
   * **Service:** SAP Process Integration Runtime
@@ -18,14 +18,14 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
   * **Instance Name:** Choose a suitable name
 * Click **Next**, then **Create** to set up the instance.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Create Service Key
 3. Enable Custom Idp
 4. Enable Test Automation in ReleaseOwl CPI Environment Configuration
 5. Update the OAuth credentials and Instance URLs in the ReleaseOwl CPI Environment using the details from the Service Key in SAP BTP Cockpit.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Generating Test Cases** <a href="#pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases" id="pdf-page-ahecdlthytd4fxld4qwa-generating-test-cases"></a>
 
@@ -39,26 +39,70 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 
 ### **Generate Test Cases**
 
-1. In **CPI Test Generator**, click **Generate Test Cases**.
-2. Select the **Artifact Name** for the iFlow.
-3. After the iFlow execution, go to the **ReleaseOwl Dashboard** and click **Fetch Activity Messages**.
-4. When you click on the **Test Case** button, ensure that special characters are not used in the CPI test case names.&#x20;
+1. Navigate to **CPI Test Generator**.
+2. Go to the **Test Cases** section.
+3. Click **Generate Test Cases** to create test cases.
 
-<figure><img src="../../.gitbook/assets/image (1083).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-5. This will retrieve messages from the latest iFlow execution. The first message will be the input message, and the remaining messages will be treated as output messages.
-6. Click the **Model Step Id** to view the messages.
+4. Select the **Artifact Name** for the iFlow.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+5. After selecting the required iFlow, click **Fetch Activity Messages** to retrieve the activity messages associated with the iFlow.
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+6. Once the fetching process is completed and the status changes to **Completed**, click **Close**.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+7. Select the required **Message Group ID**.
+8. Click **Generate Test Case**.
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+9. A pop-up window will appear to create the test case.
+
+* Enter the **Test Case Name**.
+* Ensure that special characters are not used while naming the test case.
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+10. Once the test case is created, click the **Actions** button and select **Edit**.
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
+
+11. This will retrieve messages from the latest iFlow execution:
+    * The **first message** will be considered the **input message**.
+    * The **remaining messages** will be treated as **output messages**.
+12. Click the **Model Step Id** to view the messages.
 
 <figure><img src="../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
 
-6. Select the **Message Group ID** and click **Generate Test Case**.
-7. Enter the **Test Case Name** and **Description**, then click **OK**.
+**Active Button**
+
+* If you need to **temporarily disable** the execution of a test case, uncheck the **Active** button.
+* Once the issue is resolved, re-enable the test case by checking the **Active** button again.
+
+<figure><img src="../../.gitbook/assets/image (1848).png" alt=""><figcaption></figcaption></figure>
+
+**Mock Endpoints**
+
+* When enabled, ReleaseOwl **mocks all receiver channels** in the iFlow with **HTTPS receivers** pointing to the **ReleaseOwl mock service**.
+* **ReleaseOwl** creates a new iFlow by applying the prefix defined during environment creation to both the iFlow name and the package name.
+* The mock service simulates responses returned by external calls using recorded messages from the test case generation.
+* This allows integration flow testing **without relying on actual external APIs**.
+
+<figure><img src="../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 ### **Executing Test Cases** <a href="#pdf-page-ahecdlthytd4fxld4qwa-executing-test-cases" id="pdf-page-ahecdlthytd4fxld4qwa-executing-test-cases"></a>
 
 1. Click **Run** to execute the test case.
 
-<figure><img src="../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 2. After execution, click the **Actions button (···)** and select **Last Test Results** to view test case results.
 3.  You can view the executed test cases, including details such as:
@@ -69,11 +113,17 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 
     <figure><img src="../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
+#### **Other Action Buttons**
+
 **Run on button:** It provides an option to select a particular environment before executing the test case.
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 **Test Runs:** Displays all test runs with timestamps, executed artifact versions, and environments.
 
-### **Comparing Test Run Messages**
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+**Comparing Test Run Messages**
 
 * **Expected Output:** The message recorded during test case creation.
 * **Actual Output:** The message from the current test execution.
@@ -98,6 +148,8 @@ The CPI Test Generator helps automate the process of testing SAP Cloud Platform 
 
 * If you need to **temporarily disable** the execution of a test case, uncheck the **Active** button.
 * Once the issue is resolved, re-enable the test case by checking the **Active** button again.
+
+<figure><img src="../../.gitbook/assets/image (1848).png" alt=""><figcaption></figcaption></figure>
 
 #### **Mock Endpoints** <a href="#pdf-page-ahecdlthytd4fxld4qwa-mock-endpoints" id="pdf-page-ahecdlthytd4fxld4qwa-mock-endpoints"></a>
 
@@ -137,7 +189,7 @@ ReleaseOwl mocks all the receiver channels in the iFlow with https receivers poi
 
 <figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
-2. **Run the test case with mock enabled.**
+2. Run the test case with mock enabled.
 3.  **Mock Package and iFlow:**
 
     A mock package and mock iFlow are created in the CPI tenant using the prefix defined during environment creation.

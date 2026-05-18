@@ -17,16 +17,16 @@ To sync API artifacts from SAP API Management:
    * **Key Value Maps (KVMs)**
    * **Products**
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the required artifacts from the respective tab.
 5. Click **Add** to synchronize the selected artifacts.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. These artifacts are retrieved from the registered SAP API Management environment and reflected within ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Sync History
 
@@ -34,7 +34,7 @@ To track previous synchronizations:
 
 * Click on **Sync History** to view a detailed log of all synchronization activities performed within the project.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Artifact Actions**
 
@@ -57,7 +57,7 @@ The **Sync** option is used to fetch the latest version of API Proxy artifacts f
 * Click **Sync** to refresh and retrieve the most up-to-date API Proxy definitions.
 * This ensures that ReleaseOwl reflects the current state of artifacts across environments.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Configure**&#x20;
 
@@ -70,7 +70,7 @@ To configure an API Proxy artifact in ReleaseOwl:
 3. Click the **Actions** button.
 4. Select **Configure**.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** The **Development (Dev) environment is read-only** and does not allow modification.
@@ -179,7 +179,7 @@ The **Unassign User Story** option allows you to remove the current assignment o
 
 The **API Provider** section in **ReleaseOwl** is used to configure provider-specific parameters that define how API artifacts interact with backend services across different environments.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Sync**
 
@@ -188,7 +188,7 @@ The **Sync** option allows users to fetch the latest API Provider configurations
 * Click **Sync** to retrieve the most recent provider entries.
 * This ensures that the configuration in **ReleaseOwl** is up to date with the source environment.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Configure**
 
@@ -231,7 +231,7 @@ To modify configuration values for non-Dev environments:
 
 The **Key Value Maps (KVM)** section in ReleaseOwl is used to manage environment-specific key-value pairs that are consumed by API Proxies at runtime. Each KVM consists of multiple **keys**, with corresponding **values maintained per environment** (e.g., Dev, QA, Prod).
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Sync**
 
@@ -240,7 +240,7 @@ The **Sync** option retrieves the latest KVM artifacts from the registered SAP A
 * Click **Sync** to refresh and fetch the most recent KVM definitions.
 * Ensures **ReleaseOwl** reflects the current state of KVMs from the source system.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Configure**
 
@@ -405,4 +405,4 @@ Allows users to retry a failed deployment or re-execute a failed stage of the pi
 
 * After deploying the artifacts, you will receive a notification email containing the deployment details, including the user story ID, artifact type, version ID, and deployment status.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
