@@ -62,9 +62,11 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
 
 <figure><img src="../../../.gitbook/assets/image (1839).png" alt=""><figcaption></figcaption></figure>
 
-* **Versions:** Displays all versions created for the selected release pipeline. This option helps users track previously generated versions of a release pipeline.  To view a specific version:
+**Versions**: Displays all versions created for the selected Release Pipeline. This option helps users track previously generated versions of the **Release Pipeline**. Versions are displayed only after the **Release Pipeline** has been promoted for the corresponding user story.
 
-1. Select the required version from the list.
+To view a specific version:
+
+1. Select the required version from the created Release Pipeline list.
 
 <figure><img src="../../../.gitbook/assets/image (1843).png" alt=""><figcaption></figcaption></figure>
 
