@@ -36,6 +36,15 @@ To track previous synchronizations:
 
 <figure><img src="../../.gitbook/assets/image (1849).png" alt=""><figcaption></figcaption></figure>
 
+* If any API artifact fails during the artifact add process, the status will be displayed as **COMPLETED\_WITH\_ERRORS**.
+*   To view the failure details:
+
+    * Locate the artifact with the status **COMPLETED\_WITH\_ERRORS**.
+    * Click **Error Details** corresponding to the artifact.
+    * A **Failure Details** pop-up window will be displayed with the error message and additional information about the failed artifact configuration.
+
+    <figure><img src="../../.gitbook/assets/image (1850).png" alt=""><figcaption></figcaption></figure>
+
 ### **Artifact Actions**
 
 Based on the type of artifact, the following actions are available:
