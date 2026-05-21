@@ -10,8 +10,7 @@ ReleaseOwl provides **two distinct views** for users based on their roles and ac
 
 **Access:** Available to all users.
 
-**Purpose:**\
-The Project View allows users to **manage, monitor, and perform activities related to specific projects** based on the permissions assigned to them. Users can access only the projects and functionalities for which they have been granted access.
+**Purpose:** The Project View allows users to **manage, monitor, and perform activities related to specific projects** based on the permissions assigned to them. Users can access only the projects and functionalities for which they have been granted access.
 
 <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
@@ -19,8 +18,7 @@ The Project View allows users to **manage, monitor, and perform activities relat
 
 **Access:** Restricted to **administrator users** created during the customer provisioning process.
 
-**Purpose:**\
-The Administration View enables administrators to manage **platform-level configurations**, including:
+**Purpose:** The Administration View enables administrators to manage **platform-level configurations**, including:
 
 * Projects
 * Users
@@ -40,4 +38,4 @@ To access the **Administration View**, follow these steps:
 
 Once **Administration** is selected, a **comprehensive list of all projects associated with the client account** will be displayed. From this view, administrators can manage projects and perform administrative configurations across the platform.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1864).png" alt=""><figcaption></figcaption></figure>
