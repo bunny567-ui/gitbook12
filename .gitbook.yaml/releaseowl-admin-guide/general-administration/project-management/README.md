@@ -182,11 +182,10 @@ The **Environments** tab allows users to add and manage environments associated 
 
 To add an environment, follow these steps:
 
-1. Navigate to the **Environments** tab in the **Project Settings** page.
-2. Click the **+ Add** button located at the top-right corner of the Environments table.
-3. Select the required environments from the popup list.
-4. If the environment will serve as the source for deployments or synchronization, enable the **Source** checkbox.
-5. Click **Save** to add the environment.
+1. Click the **+ Add** button located at the top-right corner of the Environments table.
+2. Select the required environments from the popup list.
+3. If the environment will serve as the source for deployments or synchronization, enable the **Source** checkbox.
+4. Click **Save** to add the environment.
 
 The newly added environment will appear in the Environments table with details such as the environment name, type, and host URL.
 
@@ -250,7 +249,7 @@ To view and manage roles, follow these steps:
 
 <figure><img src="../../../.gitbook/assets/image (1179).png" alt=""><figcaption></figcaption></figure>
 
-3. Click on a person icon to open the **Role Actions** page.
+3. Click the **Person** icon corresponding to a role to open the **Role Actions** page.
 
 <figure><img src="../../../.gitbook/assets/image (1181).png" alt=""><figcaption></figcaption></figure>
 
