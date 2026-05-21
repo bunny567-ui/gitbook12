@@ -170,7 +170,7 @@ Projects can enable the following validations:
 
 <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Saving the Configuration
+**Saving the Configuration**
 
 * Click the **Save** button located at the top-right corner of the page to apply and save all changes.
 
@@ -239,7 +239,7 @@ The **ALM Integrations** tab is used to configure and manage integrations with A
 
 <figure><img src="../../../.gitbook/assets/image (1711).png" alt=""><figcaption></figcaption></figure>
 
-### Roles
+#### Roles
 
 The **Roles** tab displays all roles configured for the project. Users can view role details, manage role assignments, and configure role-based actions and permissions for project users.
 
