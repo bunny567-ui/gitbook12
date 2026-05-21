@@ -16,7 +16,7 @@ To create a new role:
 
 <figure><img src="../../../.gitbook/assets/image (1162).png" alt=""><figcaption></figcaption></figure>
 
-4. The newly created role will appear in the list of available roles.
+5. The newly created role will appear in the list of available roles.
 
 <figure><img src="../../../.gitbook/assets/image (1015).png" alt=""><figcaption></figcaption></figure>
 
