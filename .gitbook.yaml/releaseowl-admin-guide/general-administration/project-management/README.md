@@ -92,7 +92,7 @@ The **Project Settings** option allows users to configure and manage project-spe
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-**General Tab**
+#### **General Tab**
 
 The **General** tab contains the basic project configuration details and settings. Users can configure default release pipelines, validation settings, approval workflows, and project-specific integration settings based on the selected project type.
 
