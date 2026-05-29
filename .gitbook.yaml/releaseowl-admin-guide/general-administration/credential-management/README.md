@@ -1,4 +1,4 @@
-# Global Credential Management
+# Credential Management
 
 There are several third-party sites and applications that can interact with **ReleaseOwl**, like artifact repositories, cloud-based storage systems, services etc. The admin can configure credentials in the application for use by **ReleaseOwl**. Once the user adds/configures the credentials in Release Owl, the credentials can be used by Pipeline projects to interact with the 3rd party applications.
 
@@ -8,27 +8,27 @@ Admin users can switch to the **Administration View** to access the **Credential
 
 1. Click the **Credential Manager** option from the left-hand menu to view the list of registered credentials.
 
-<figure><img src="../../.gitbook/assets/image (1584).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 2. In the **Credential Type** section, you can see:
 
 * **Credential Types** –Select from the available types to view the corresponding registered credentials. You can also select multiple credentials to view them together.
 
-<figure><img src="../../.gitbook/assets/image (1585).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Scope** – Credentials are categorized based on visibility:
   * **Global**: Visible to all users. Credentials created under this scope cannot be deleted by other users.
   * **Private**: Visible only to the user who created them. These credentials remain hidden from other users.
 * **Search Bar** – Use this to quickly search for credentials by name.
 
-<figure><img src="../../.gitbook/assets/image (1586).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 3. **Registering a New Credential**:
 
 * To add a new credential, click **Register Credential**, available on the right-hand panel.
 * The following screen will be displayed:
 
-<figure><img src="../../.gitbook/assets/image (1587).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1587).png" alt=""><figcaption></figcaption></figure>
 
 ## **Credential Types**
 
@@ -47,7 +47,7 @@ ReleaseOwl supports various credential types for registration. Below, we will ex
    * **Password**: Enter your GitHub/Bitbucket password.
 3. Save the configuration to enable access to your GitHub/Bitbucket account.
 
-<figure><img src="../../.gitbook/assets/image (1588).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1588).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For information on setting up the tokens in GITHub, please refer to the link -[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
@@ -71,7 +71,7 @@ For information on setting up the tokens in BitBucket, please refer to the link 
    * **Host URL**: Enter the Azure DevOps organization URL (e.g., `https://dev.azure.com/)`.
 3. Save the configuration to enable access to your Azure DevOps account.
 
-<figure><img src="../../.gitbook/assets/image (1564).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1564).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For information on setting up the tokens in Azure DevOps, please refer to the link -[https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=Windows](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=Windows)
@@ -93,7 +93,7 @@ For information on setting up the tokens in Azure DevOps, please refer to the li
 
          * Provide your **Username** and **Password** (SAP BTP credentials).
 
-         <figure><img src="../../.gitbook/assets/image (1565).png" alt=""><figcaption></figcaption></figure>
+         <figure><img src="../../../.gitbook/assets/image (1565).png" alt=""><figcaption></figcaption></figure>
      * If **OAuth2** is selected:
        * **Client ID**: Provide the details from the created API service key in the SAP BTP cockpit.
        * **Client Secret**: Provide the details from the created API service key in the SAP BTP cockpit.
@@ -101,7 +101,7 @@ For information on setting up the tokens in Azure DevOps, please refer to the li
 3. Click **Save**.
 4. The credential will appear in the List of Credentials.
 
-<figure><img src="../../.gitbook/assets/image (1566).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1566).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 OAuth 2 provides better security than basic authentication as the initial requests for credentials are made under the SSL protocol and its access object is a transitory token.
@@ -123,7 +123,7 @@ OAuth 2 provides better security than basic authentication as the initial reques
 3. Click **Save**.
 4. The credential will appear in the **List of Credentials**.
 
-<figure><img src="../../.gitbook/assets/image (1567).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1567).png" alt=""><figcaption></figcaption></figure>
 
 ### **SonarQube On-Prem**
 
@@ -140,7 +140,7 @@ OAuth 2 provides better security than basic authentication as the initial reques
    * **Hosting Type**: Choose either **On-Premise** or **Cloud**, depending on your SonarQube setup.
 3. Save the changes to configure and enable access to your SonarQube On-Prem account.
 
-<figure><img src="../../.gitbook/assets/image (1568).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1568).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Further information on getting the user token for SonarQube can be found @[https://docs.sonarqube.org/6.7/UserToken.html](https://docs.sonarqube.org/6.7/UserToken.html)
@@ -159,7 +159,7 @@ Further information on getting the user token for SonarQube can be found @[https
    * **Password**: Provide the password associated with your username.
 3. Click **Save** to finalize the setup and enable access to your Transport Domain Controller system.
 
-<figure><img src="../../.gitbook/assets/image (1569).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1569).png" alt=""><figcaption></figcaption></figure>
 
 ### **JIRA**
 
@@ -178,7 +178,7 @@ Further information on getting the user token for SonarQube can be found @[https
     * **Jira URL**: Provide the Jira instance URL, such as: `https://Saparate.atlassian.net`.
     * **Proxy Type**: Select the proxy type for communication .
 
-    <figure><img src="../../.gitbook/assets/image (1570).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1570).png" alt=""><figcaption></figcaption></figure>
 4. If OAuth2 is selected:
    1. **Client ID**: Obtain the Client ID from the **Atlassian Developer Console**.
    2. **Client Secret**: Obtain the Client Secret from the **Atlassian Developer Console**
@@ -186,7 +186,7 @@ Further information on getting the user token for SonarQube can be found @[https
    4. **Proxy Type**: Select the proxy type for communication .
 5. Click **Save** button to save the credentials.
 
-<figure><img src="../../.gitbook/assets/image (1571).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1571).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For information on setting up the tokens in JIRA, please refer to the link - [https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/integrations/jira-cloud](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/integrations/jira-cloud)
@@ -207,7 +207,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
       * **Basic Authentication**: For username and password-based access.
     * **Instance URL**: Enter your ServiceNow hosting URL.
 
-    <figure><img src="../../.gitbook/assets/image (1572).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1572).png" alt=""><figcaption></figcaption></figure>
 
 #### **For  OAuth2 Authentication**
 
@@ -215,17 +215,17 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 2. Navigate to **ALL** and search for **Application Registry**.
 3. Click on **Application Registry**.
 
-<figure><img src="../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
 4. Locate and click on **ReleaseOwl** in the list of OAuth Registries.
 5. View the **Client ID** and **Client Secret** associated with ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
 
 6. Copy the **Client ID** and **Client Secret** and paste them into the corresponding fields in the **Register Credential** form in ReleaseOwl under **OAuth2 Authentication**.
 7. Click the **Save** button.
 
-<figure><img src="../../.gitbook/assets/image (1573).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1573).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Generate Token**.
 9. A popup will appear prompting you to enter your ServiceNow **username** and **password**.
@@ -233,27 +233,27 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 
 
-<figure><img src="../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
 
 11. The generated token will be available in the **Manage Tokens** section under **ALL** in the ServiceNow website.
 
-<figure><img src="../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
 
 #### **For  Basic Authentication**
 
 1. Log in to your ServiceNow instance.
 2. Click the **Request Instance** button.
 
-<figure><img src="../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
 
 3. You will receive an email containing the instance details.
 4. In the email, locate the section containing your **username** and **password** details.
 
-<figure><img src="../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
 
 5. Copy these credentials and paste them into the corresponding fields in the **Register Credential** form in ReleaseOwl under **Basic Authentication**.
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Ui path**
 
@@ -268,34 +268,34 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
           * **Private** – Visible only to the user who created it.
        4. **Token URL**: Enter the following URL: [https://account.uipath.com](https://account.uipath.com/).&#x20;
 
-       <figure><img src="../../.gitbook/assets/image (1574).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (1574).png" alt=""><figcaption></figcaption></figure>
 3. **Obtain Client ID and Client Secret**:&#x20;
    1. Log in to your **UiPath Orchestrator** account.&#x20;
    2.  Click on your **profile icon** (usually in the top-right corner) and select **Preferences.**
 
-       <figure><img src="../../.gitbook/assets/image (315).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (315).png" alt=""><figcaption></figcaption></figure>
    3.  In **Preferences**, go to the **Privacy & Security** section.&#x20;
 
-       <figure><img src="../../.gitbook/assets/image (316).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (316).png" alt=""><figcaption></figcaption></figure>
    4. Click on **View API Access**.&#x20;
 4.  Here, you will find your **User Key**, which acts as both the **Client ID** and **Client Secret**.&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 5. **Copy and Paste Credentials**:&#x20;
    6.  Copy the **Client ID** and **Client Secret** from the **View API Access** section in UiPath. &#x20;
 
-       <figure><img src="../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
    7. Return to the Register Credential page in ReleaseOwl.
    8. Paste the Client ID and Client Secret into the appropriate fields.
 6. Click **Save** to register the credential.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Docusign**
 
 1. Click on Credential Manager and then Register Credential.
 
-<figure><img src="../../.gitbook/assets/image (1575).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1575).png" alt=""><figcaption></figcaption></figure>
 
 2. Fill in the fields:
 
@@ -306,29 +306,29 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
     * **Global** – Visible to all users.
     * **Private** – Visible only to the user who created it.
 
-    <figure><img src="../../.gitbook/assets/image (1576).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1576).png" alt=""><figcaption></figcaption></figure>
 
 **Retrieve Client ID and Secret**
 
 3. Log in to DocuSign and click the “**Admin**” button.
 
-<figure><img src="../../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
 
 4. Navigate to Integrations and select Apps and Keys.
 
-<figure><img src="../../.gitbook/assets/image (298).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (298).png" alt=""><figcaption></figcaption></figure>
 
 5. Click Add App and Integration Key.
 
-<figure><img src="../../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
 
 6. Copy the Integration Key which is nothing but the client id
 
-<figure><img src="../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
 
 7. Click on the “**Add Secret Key**” button which is nothing but the Client Secret
 
-<figure><img src="../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
 
 8. Set the Redirect URI to:
 
@@ -336,7 +336,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 9. Check all allowed HTTP methods and click Save.
 
-<figure><img src="../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -346,7 +346,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (304).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (304).png" alt=""><figcaption></figcaption></figure>
 
 11. In the Apps and Keys section, locate:
 
@@ -354,7 +354,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 * **Account Base URL**: This is the API Host URL.
 * Copy these URLs to paste them into the credential manager.
 
-<figure><img src="../../.gitbook/assets/image (306).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (306).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -365,14 +365,14 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 
 13. Copy all the credentials, paste them into the Register Credential, and click the Save button.
 
-<figure><img src="../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Generate a Token**
 
 14. In Credential Manager, select the created credential.
 15. Click Generate Token to verify if the entered credentials are correct.
 
-<figure><img src="../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 
 ### **CRT**
 
@@ -387,7 +387,7 @@ For information on setting up the tokens in JIRA, please refer to the link - [ht
 * **Username**: Enter your CRT username.
 * **Personal Access key :** Provide the required access token ( found in your CRT account).
 
-<figure><img src="../../.gitbook/assets/image (1577).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1577).png" alt=""><figcaption></figcaption></figure>
 
 ### 4Me
 
@@ -406,7 +406,7 @@ Follow these steps to register your 4Me credentials in the system:
 | **4Me API URL**     | Enter: `https://api.4me-demo.com`                                                                                                                                                       |
 | **Scope**           | <p>Select the scope of the credential:</p><ul><li><strong>Global</strong> – Visible to all users.</li><li><strong>Private</strong> – Visible only to the user who created it.</li></ul> |
 
-<figure><img src="../../.gitbook/assets/image (1578).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1578).png" alt=""><figcaption></figcaption></figure>
 
 ### Freshservice
 
@@ -426,7 +426,7 @@ Follow these steps to register your 4Me credentials in the system:
 | **Instance URL**        | Enter your Freshservice instance URL (e.g., https://\<yourdomain.freshservice.com>).                                                                                                           |
 | **Scope**               | <p></p><p>Select the scope of the credential:</p><ul><li><strong>Global</strong> – Visible to all users.</li><li><strong>Private</strong> – Visible only to the user who created it.</li></ul> |
 
-<figure><img src="../../.gitbook/assets/image (1579).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1579).png" alt=""><figcaption></figcaption></figure>
 
 ### **Others**
 
@@ -441,20 +441,20 @@ Follow these steps to register your 4Me credentials in the system:
    * **Password**: Enter the password associated with your username.
 3. Click **Save** to finalize the setup and enable access to your required account.
 
-<figure><img src="../../.gitbook/assets/image (1580).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1580).png" alt=""><figcaption></figcaption></figure>
 
 **Edit**
 
 * You can edit a credential by clicking on the registered credential entry. This allows you to make and save any necessary changes.&#x20;
 * Additionally, you can view information about who created and last modified the credential.
 
-<figure><img src="../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Delete**
 
 * You can delete any credential by clicking the delete icon seen against that credential.
 
-<figure><img src="../../.gitbook/assets/image (1581).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1581).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note: Edit** and **Delete** options are available only for the users with appropriate user roles.

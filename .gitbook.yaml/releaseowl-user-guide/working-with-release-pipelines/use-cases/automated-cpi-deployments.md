@@ -22,7 +22,7 @@ Creating a Release Pipeline is a three-step process.
 1. Select the required CPI Project.
 2. Navigate to **Release** and click on the **Release Pipelines.**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (31).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Create New Release Pipeline** to create the pipeline.
 
@@ -30,17 +30,17 @@ Creating a Release Pipeline is a three-step process.
 
 4. Enter a **Pipeline Name**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (19).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **Add Stage**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png" alt=""><figcaption></figcaption></figure>
 
 <br>
 
 6. **Tasks:** Click Add to enter any tasks that are to be performed
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** To remove any stage, click Remove stage button.
@@ -48,7 +48,7 @@ Creating a Release Pipeline is a three-step process.
 
 7. Different tasks that can be added are as follows:
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** All the tasks except Deployment Task are similar for any project type. For CPI projects, Wait for Promotion and Validation tasks are the two extra tasks available other than the ones available for every project type.
@@ -62,7 +62,7 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
 
 <figure><img src="../../../.gitbook/assets/image (1839).png" alt=""><figcaption></figcaption></figure>
 
-**Versions**: Displays all versions created for the selected Release Pipeline. This option helps users track previously generated versions of the **Release Pipeline**. Versions are displayed only after the **Release Pipeline** has been promoted for the corresponding user story.
+**Versions**: Displays all versions for the selected Release Pipeline. This option helps users track generated versions of the **Release Pipeline**. Versions are displayed only after the **Release Pipeline** has been promoted for the corresponding user story.
 
 To view a specific version:
 
@@ -127,7 +127,7 @@ In general, pipeline will execute the configured tasks sequentially one after th
 
 Promotion is the process of Moving/Deploying CPI Artifacts to various environments using a Release pipeline associated with the project.<br>
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pre-requisite for the promotion to work is that every stage in the Release pipeline should end with “**Promotion Task**”. Promotion can be performed in two ways – via User Story and via Release Package.
 
@@ -136,7 +136,7 @@ Pre-requisite for the promotion to work is that every stage in the Release pipel
 1\. From Actions Menu of the User story, promotion can be done.\
 2\. Clicking **Promote** will Trigger the Release pipeline associated with the project.
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\. The column “**Pipeline Stage**” shows the current stage in the Release Pipeline execution and status of the Release Pipeline.
 
@@ -207,7 +207,7 @@ Validation task is added to perform Static Code Analysis checks and generate the
 | **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **Quality Checks**      | <p><strong>CPI Downgrade Check:</strong> The downgrade check evaluates version consistency between deploying artifact version and target environments version for CPI artifacts.  </p><p></p><p> <strong>Unit Tests:</strong>  Executes CPI unit tests to validate business logic.                                                          </p><p></p><p><strong>User  Story Dependencies (Beta):</strong>  Identifies and validates dependent user stories to prevent conflicts or incomplete deployments.   </p><p></p><p><strong>CPI Governance :</strong> Enforces organizational policies by validating artifact metadata, naming standards, and deployment readiness—ensuring controlled and compliant releases.                    </p><p></p><p><strong>Note:</strong> You can select <strong>any one or more</strong> of the following <strong>Quality Checks</strong> when configuring the validation task.</p> |
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (1322).png" alt=""><figcaption></figcaption></figure>
 
@@ -240,35 +240,56 @@ Go to the required pipeline and click **Edit** to edit the pipeline or **Delete*
 
 <figure><img src="../../../.gitbook/assets/image (1269).png" alt=""><figcaption></figcaption></figure>
 
-**Rollback**
+### **Assigning Artifacts to User Stories**
 
-1. Rollback is available for CPI artifacts that are deployed to design time in addition to those published to run time. To rollback a build, click **Rollback** in the status page.
-2. While creating a release pipeline, you must enable the option to rollback as a prerequisite.
+1. Navigate to **Change Management** and click on **User Stories**.
+2. Click **Create New User Story**, fill in the required details, and save it.
+3. Click on the **Action** button, select **Edit**, and add the **CPI Artifacts**.
+4. Click **Save** to save the artifacts.
 
-<figure><img src="../../../.gitbook/assets/image (1270).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1888).png" alt=""><figcaption></figcaption></figure>
 
-3. Click rollback in the deployment screen to rollback while running release pipelines.
-4. In the confirmation pop-up that appears, click **Yes**. Rollback process starts.
+5. Click the **three-dot (More Actions)** menu.
+6. Select **Import Settings**.
 
-<figure><img src="../../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1889).png" alt=""><figcaption></figcaption></figure>
 
-**Rollback Logs**
+7. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
 
-Rollback logs are available for CPI artifacts deployed to **Design Time**, in addition to artifacts that are published to **Run Time**.
+<figure><img src="../../../.gitbook/assets/image (1890).png" alt=""><figcaption></figcaption></figure>
 
-To roll back a build:
+8. When _Force Deploy_ is enabled, version validation checks do not block the deployment.
+9. If the target environment version is higher than the source environment version, a warning message is displayed.
 
-1. Navigate to the **Status** page of the deployed build.
-2. Click **Rollback**.
+{% hint style="info" %}
+Note : Additionally, an icon is displayed in the **Deployment Logs** section to indicate that Force Deployment was applied.
+{% endhint %}
 
-Once the rollback is initiated, the deployment logs will display the rollback status, allowing users to track the rollback activity. You can verify the rollback operation by checking the deployment logs, where the rollback status will be updated accordingly.<br>
+10. Click **Promote** to start the deployment process.
+11. Monitor the deployment status of the user story.
 
-<figure><img src="../../../.gitbook/assets/image (1273).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1891).png" alt=""><figcaption></figcaption></figure>
 
-**Deploy Logs**
+12. Click **Deploy Logs**.
+13. The deployment details are displayed in the **SAP CPI Deploy Logs** window with the following columns:
 
-Click **Deploy Logs** to view the logs of the current release pipeline.
+* **Upload Status** – Indicates whether the artifact was successfully uploaded.
+* **Config Status** – Confirms whether the configuration for new or updated artifacts was completed successfully.
+* **Deploy Status** – Reflects the final deployment status of the artifact.
+* **Already Deployed** – Indicates that the artifact was previously deployed, either during a retry operation or through manual completion. This status helps avoid duplicate deployments and provides clarity during re-runs.
+* **Manual Completion** – If a deployment fails or times out, users can use the Manual Completion option in ReleaseOwl to resolve the issue manually and continue the pipeline execution.
+* **Refresh Button** – Fetches the CPI runtime artifact deployment status and updates the runtime status in the deployment log.
 
-<figure><img src="../../../.gitbook/assets/image (1272).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1892).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1271).png" alt=""><figcaption></figcaption></figure>
+#### Additional Actions
+
+* **Retry Button** – Allows users to reattempt a failed deployment or pipeline stage.
+
+<figure><img src="../../../.gitbook/assets/image (1894).png" alt=""><figcaption></figcaption></figure>
+
+* **Status Button** – If the status is displayed as **“Suspended”**, it indicates that the pipeline or task has been paused or is awaiting manual action.
+
+<figure><img src="../../../.gitbook/assets/image (1893).png" alt=""><figcaption></figcaption></figure>
+
+<br>

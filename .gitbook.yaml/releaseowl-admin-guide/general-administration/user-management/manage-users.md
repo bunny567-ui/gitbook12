@@ -35,11 +35,11 @@ To create a new user:
 3. The **User Creation form** will open. Enter the required user details in the provided fields.
 4. Click the **Create** button to save the user.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Once the user is created, the newly created user will appear in the **Users Details** list.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Managing User Details
 
@@ -85,7 +85,7 @@ The **Lock** feature allows administrators to control access to the system for s
 2. Click the **Lock** button.
 3. The selected users will be locked and denied access to the system until unlocked.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Unlock**
 
@@ -97,19 +97,19 @@ The **Unlock** feature allows administrators to restore access to users who were
 2. Click the **Unlock** button.&#x20;
 3. The selected users will regain access to the system.
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Show**
 
 It allows users to filter and view the user list based on their role or status, such as Admin, User or Locked Users.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Filter**
 
 It is used to search for users based on their **name** or **email ID**.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Import**&#x20;
 
@@ -132,7 +132,7 @@ The **Import** option allows administrators to import user and role information 
 7. Click the **Download** button to download the sample template and detailed import instructions.
 8. Prepare the import file according to the provided template to avoid validation or import errors.
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Download**&#x20;
 
@@ -146,5 +146,5 @@ The **Download** option provides sample templates that help users prepare the co
 4. Use the downloaded template to prepare your Excel file by following the same data structure and format.
 5. Preparing the file according to the provided template helps avoid validation issues and import errors during the import process.
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
