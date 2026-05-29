@@ -267,11 +267,6 @@ Go to the required pipeline and click **Edit** to edit the pipeline or **Delete*
 
 8. When _Force Deploy_ is enabled, version validation checks do not block the deployment.
 9. If the target environment version is higher than the source environment version, a warning message is displayed.
-
-{% hint style="info" %}
-Note : Additionally, an icon is displayed in the **Deployment Logs** section to indicate that Force Deployment was applied.
-{% endhint %}
-
 10. Click **Promote** to start the deployment process.
 11. Monitor the deployment status of the user story.
 
