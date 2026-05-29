@@ -286,8 +286,9 @@ Note : Additionally, an icon is displayed in the **Deployment Logs** section to 
 * **Already Deployed** – Indicates that the artifact was previously deployed, either during a retry operation or through manual completion. This status helps avoid duplicate deployments and provides clarity during re-runs.
 * **Manual Completion** – If a deployment fails or times out, users can use the Manual Completion option in ReleaseOwl to resolve the issue manually and continue the pipeline execution.
 * **Refresh Button** – Fetches the CPI runtime artifact deployment status and updates the runtime status in the deployment log.
+* **Icon in Artifact Name** - An icon is displayed in the Deployment Logs section next to the artifact name to indicate that **Force Deployment** was applied.
 
-<figure><img src="../../../.gitbook/assets/image (1892).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1898).png" alt=""><figcaption></figcaption></figure>
 
 #### Additional Actions
 
