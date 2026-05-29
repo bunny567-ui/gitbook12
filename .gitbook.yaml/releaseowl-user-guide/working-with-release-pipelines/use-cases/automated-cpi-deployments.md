@@ -243,9 +243,16 @@ Go to the required pipeline and click **Edit** to edit the pipeline or **Delete*
 ### **Assigning Artifacts to User Stories**
 
 1. Navigate to **Change Management** and click on **User Stories**.
+
+<figure><img src="../../../.gitbook/assets/image (1896).png" alt=""><figcaption></figcaption></figure>
+
 2. Click **Create New User Story**, fill in the required details, and save it.
-3. Click on the **Action** button, select **Edit**, and add the **CPI Artifacts**.
-4. Click **Save** to save the artifacts.
+3. Click on the **Action** button and select **Edit**.
+
+<figure><img src="../../../.gitbook/assets/image (1897).png" alt=""><figcaption></figcaption></figure>
+
+4. Add the required **CPI Artifacts**.
+5. Click **Save** to save the artifacts.
 
 <figure><img src="../../../.gitbook/assets/image (1888).png" alt=""><figcaption></figcaption></figure>
 
