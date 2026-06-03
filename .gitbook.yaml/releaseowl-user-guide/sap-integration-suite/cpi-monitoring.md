@@ -131,27 +131,20 @@ The **Alerts** feature allows users to configure notifications based on specific
 
 4. Fill in the following details:&#x20;
 
-* **Name** –  A unique and identifiable name representing the purpose and environment of the alert.
-* **Description** – Sends email notifications for failed iFlow executions.
-* **Environment** - Select the **CPI environment** for which the alert should be triggered.
-* **Active** – Enable the **Active** checkbox to activate the alert.
-  * When the alert is **active**, notifications will be sent to users when the alert conditions are triggered.
-  * When the alert is **inactive**, notifications will not be sent.
-* **Similar Error Notification Interval (Minutes)** –  This setting prevents sending duplicate notifications for the same error repeatedly. If the same artifact generates multiple identical errors within the specified interval, **ReleaseOwl** sends only **one notification** during that time period. **Example:** If the interval is set to **10 minutes** and the same artifact generates **10 identical errors**, only **one notification email** will be sent within those 10 minutes.
-* **Notification Email(s):** Specify the email addresses that should receive the alert notifications.
-  * Multiple email addresses can be added.
-  * Separate each email address with a **comma (,)**.
-*   **Artifacts :**  Alerts can be configured to trigger notifications based on specific **Packages** or **Artifacts**. This allows users to:
-
-    * Monitor specific **integration packages**
-    * Track failures for particular **integration artifacts**
-    * Receive **targeted alerts** only for selected integrations
-
-    This ensures that notifications are sent only for the integrations that require monitoring.
+| Field                                             | Description                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Name**                                          | Enter a unique and identifiable name that represents the purpose and environment of the alert configuration.                                                                                                                                                                                                                                                                                           |
+| **Description**                                   | Enter a description that explains the purpose of the alert. For example, notifications for failed iFlow executions.                                                                                                                                                                                                                                                                                    |
+| **Environment**                                   | Select the CPI environment for which the alert should be triggered.                                                                                                                                                                                                                                                                                                                                    |
+| **Active**                                        | Enable the **Active** checkbox to activate the alert configuration. When enabled, notifications are sent whenever the configured alert conditions are triggered. When disabled, notifications are not sent.                                                                                                                                                                                            |
+| **Similar Error Notification Interval (Minutes)** | Prevents duplicate notifications for the same error from being sent repeatedly. If the same artifact generates multiple identical errors within the specified interval, ReleaseOwl sends only one notification during that period. For example, if the interval is set to 10 minutes and the same artifact generates 10 identical errors, only one notification email is sent within those 10 minutes. |
+| **Notification Email(s)**                         | Specify the email addresses that should receive alert notifications. Multiple email addresses can be added and must be separated by a comma (,).                                                                                                                                                                                                                                                       |
+| **Artifacts**                                     | Configure alerts for specific Packages or Artifacts. This allows users to monitor specific integration packages, track failures for particular integration artifacts, and receive targeted notifications only for selected integrations.                                                                                                                                                               |
 
 <figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-5. After clicking the **Save** button in the Alert Configuration screen, the system redirects to the **CPI Alerts Monitoring** page. This screen displays real-time alert-triggered message details based on the configured alert rules.
+* After clicking the **Save** button in the Alert Configuration screen, the system redirects to the **CPI Alerts Monitoring** page.&#x20;
+* This screen displays real-time alert-triggered message details based on the configured alert rules.
 
 <figure><img src="../../.gitbook/assets/image (1900).png" alt=""><figcaption></figcaption></figure>
 
