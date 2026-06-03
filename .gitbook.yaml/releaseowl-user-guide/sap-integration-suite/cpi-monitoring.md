@@ -69,7 +69,9 @@ The monitoring table displays the following details:
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-*   **Configuration** -  Click **Configuration** to view or modify the **CPI Monitoring configuration settings**. These settings control how monitoring data is fetched from the **SAP CPI tenant** into **ReleaseOwl**. Through this configuration, users can define which messages should be monitored, how many records should be retrieved, and how frequently the monitoring data should be updated.
+* **Configuration** -  Click **Configuration** to view or modify the **CPI Monitoring configuration settings**.&#x20;
+* These settings control how monitoring data is fetched from the **SAP CPI tenant** into **ReleaseOwl**.
+*   Through this configuration, users can define which messages should be monitored, how many records should be retrieved, and how frequently the monitoring data should be updated.
 
     <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -151,7 +153,7 @@ The **Alerts** feature allows users to configure notifications based on specific
 
 5. After clicking the **Save** button in the Alert Configuration screen, the system redirects to the **CPI Alerts Monitoring** page. This screen displays real-time alert-triggered message details based on the configured alert rules.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1900).png" alt=""><figcaption></figcaption></figure>
 
 #### **Top-Level Filters**
 
@@ -168,7 +170,7 @@ The following filters are available in the CPI Alerts screen to refine and analy
 | **Package**              | Filters alerts based on the CPI package to which the artifact belongs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | **Artifacts**            | Allows selection of specific artifacts (iFlows) to narrow down alert-triggered messages for targeted analysis.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1901).png" alt=""><figcaption></figcaption></figure>
 
 #### **Messages Grid**
 
@@ -194,26 +196,74 @@ Once triggered:
 * An **AI-based recommendation** is generated.
 * The recommendation helps determine the **possible cause of the failure** and assists users in troubleshooting the issue more efficiently.
 
-<figure><img src="../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1902).png" alt=""><figcaption></figcaption></figure>
 
 #### Mark as Resolved
 
-Once an issue has been fixed, users can update the alert status by clicking **Mark as Resolved**. When this action is performed, the alert status changes from _**Open**_ to _**Resolved**_, indicating that the issue has been addressed.
+The **Mark as Resolved** feature allows users to update the status of an alert once the underlying issue has been fixed. This helps maintain accurate alert tracking and provides visibility into issues that have been successfully addressed.
 
-**Resolve All Similar Errors :**  If multiple alerts are triggered for the same artifact and similar error, users can resolve them all at once.
+**Resolving an Alert**
 
-* Select the Resolve All Similar Errors checkbox.
-* Click on Resolved.
+1. Select the alert that has been addressed.
+2. Click **Mark as Resolved**.
+3. The alert status is updated from **Open** to **Resolved**, indicating that the issue has been successfully resolved.
 
-This will automatically resolve all alerts associated with the same artifact and similar error, helping users manage alerts more efficiently and reduce manual effort.
+**Resolve All Similar Errors**
 
-<figure><img src="../../.gitbook/assets/image (1705).png" alt=""><figcaption></figcaption></figure>
+The **Resolve All Similar Errors** feature enables users to resolve multiple alerts that were triggered by the same artifact and error pattern. This helps reduce manual effort and simplifies alert management when the same issue generates multiple alerts.
 
-<figure><img src="../../.gitbook/assets/image (1706).png" alt=""><figcaption></figcaption></figure>
+**Resolving All Similar Errors**
 
-**Viewing Alert Data:** Once an alert is triggered, the corresponding alert information will be available in **ReleaseOwl** for monitoring and analysis. At the same time, notification emails will be sent to the configured users to inform them about the alert. This allows users to quickly review the issue and take the necessary action.
+1. Select the alert to be resolved.
+2. Enable the **Resolve All Similar Errors** checkbox.
+3. Click **Resolved**.
+4. The system automatically resolves all alerts associated with the same artifact and matching error pattern.
+
+<figure><img src="../../.gitbook/assets/image (1903).png" alt=""><figcaption></figcaption></figure>
+
+#### Raise Defect
+
+The **Raise Defect** feature enables users to create and manage defects directly from CPI Monitoring alerts whenever issues are identified in integration flows or message processing.
+
+**Creating a Defect from an Alert**
+
+1. Select the alert for which a defect needs to be created.
+2. Click **Raise Defect**.
+3. A pop-up window is displayed, allowing you to select the required ALM integration for defect management.
+4. Select the ALM platform where the defect should be created.
+
+<figure><img src="../../.gitbook/assets/image (1904).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note** : Currently, **SAP Cloud ALM** is supported as the integrated ALM platform. Users can optionally set the selected ALM integration as the default integration for future defect creation activities. Once configured, the application automatically redirects users to SAP Cloud ALM whenever a defect is raised.
+{% endhint %}
+
+**Access the Created Defect**
+
+1. Return to the CPI Alert record.
+2. Navigate to the **Status** section.
+3. Locate the **Defect ID** associated with the alert.
+4. Click the **Defect ID** hyperlink to open the corresponding defect record in SAP Cloud ALM.
+5. View, track, update, and manage the defect throughout its lifecycle.
+
+<figure><img src="../../.gitbook/assets/image (1906).png" alt=""><figcaption></figcaption></figure>
+
+#### **Code Change**
+
+The **Code Change** feature allows users to compare the previous and current versions of an artifact to understand the changes that may have contributed to an issue. This helps users analyze modifications, perform impact assessments, and support troubleshooting activities.
+
+**Viewing Code Changes**
+
+1. Select an alert from the **Messages** grid.
+2. Click the **Code Change** button.
+3. The system displays the previous and current versions of the selected artifact side by side.
+4. Review and compare the changes between the two versions.
+
+<figure><img src="../../.gitbook/assets/image (1907).png" alt=""><figcaption></figcaption></figure>
+
+#### **Viewing Alert Data**&#x20;
+
+Once an alert is triggered, the corresponding alert information will be available in **ReleaseOwl** for monitoring and analysis. At the same time, notification emails will be sent to the configured users to inform them about the alert. This allows users to quickly review the issue and take the necessary action.
 
 <figure><img src="../../.gitbook/assets/unknown (3).png" alt=""><figcaption></figcaption></figure>
 
