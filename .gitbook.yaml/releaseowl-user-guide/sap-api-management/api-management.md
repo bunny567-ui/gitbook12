@@ -36,7 +36,7 @@ The **Remove Artifacts** feature allows users to remove one or more artifacts fr
 **Removing Artifacts from a Project**
 
 1. Select the artifact(s) that need to be removed from the project.
-2. Click **Remove from Project**.
+2. Click **Remove Artifacts**.
 
 <figure><img src="../../.gitbook/assets/image (1912).png" alt=""><figcaption></figcaption></figure>
 
