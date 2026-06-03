@@ -83,7 +83,6 @@ Based on the type of artifact, the following actions are available:
 * **Revisions** – View available revisions of the artifact.
 * **Deployment History** – Track deployment activity across stages.
 * **Download** –Download the API Proxy as a ZIP file for backup or inspection.
-* **Remove from Project** -  Removes the selected artifact from the current project. The artifact can be added again later if required.
 
 #### **API Proxies**
 
