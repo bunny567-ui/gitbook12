@@ -9,41 +9,70 @@ To sync API artifacts from SAP API Management:
 1. Navigate to the **Project View**.
 2. Under the **Build** section, click on **API Management**.
 
-<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1908).png" alt=""><figcaption></figcaption></figure>
 
-3.  Click **Add Artifacts**. The system displays newly created artifacts that are not available in **ReleaseOwl** in separate tabs based on the selected artifact type, such as API Proxies, API Providers, Key Value Maps (KVMs), and Products.
+3. Click **Add Artifacts**. The system displays newly created artifacts that are not available in **ReleaseOwl** in separate tabs based on the selected artifact type, such as API Proxies, API Providers, Key Value Maps (KVMs), and Products.
 
-    * **API Proxies**
-    * **API Providers**
-    * **Key Value Maps (KVMs)**
-    * **Products**
+* **API Proxies**
+* **API Providers**
+* **Key Value Maps (KVMs)**
+* **Products**
 
-    <figure><img src="../../.gitbook/assets/image (1851).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1909).png" alt=""><figcaption></figcaption></figure>
+
 4. Select the required artifacts from the respective tab.
 5. Click **Add** to synchronize the selected artifacts.
 
-<figure><img src="../../.gitbook/assets/image (1852).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1910).png" alt=""><figcaption></figcaption></figure>
 
 6. These artifacts are retrieved from the registered SAP API Management environment and reflected within ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (1853).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1911).png" alt=""><figcaption></figcaption></figure>
+
+#### Remove Artifacts
+
+The **Remove Artifacts** feature allows users to remove one or more artifacts from an API Management project. This helps users efficiently manage project artifacts without removing them individually.
+
+**Removing Artifacts from a Project**
+
+1. Select the artifact(s) that need to be removed from the project.
+2. Click **Remove from Project**.
+
+<figure><img src="../../.gitbook/assets/image (1912).png" alt=""><figcaption></figcaption></figure>
+
+3. Confirm the removal action when prompted.
+
+<figure><img src="../../.gitbook/assets/image (1913).png" alt=""><figcaption></figcaption></figure>
+
+4. The selected artifacts are removed from the project and will no longer be associated with it.
+
+<figure><img src="../../.gitbook/assets/image (1914).png" alt=""><figcaption></figcaption></figure>
 
 #### Sync History
+
+The Sync History page displays details such as the synchronization status, execution time, artifacts processed, and the outcome of each synchronization activity.
 
 To track previous synchronizations:
 
 * Click on **Sync History** to view a detailed log of all synchronization activities performed within the project.
 
-<figure><img src="../../.gitbook/assets/image (1854).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1915).png" alt=""><figcaption></figcaption></figure>
 
-* If any API artifact fails during the artifact add process, the status will be displayed as **COMPLETED\_WITH\_ERRORS**.
-*   To view the failure details:
+**Action Column**
 
-    * Locate the artifact with the status **COMPLETED\_WITH\_ERRORS**.
-    * Click **Error Details** corresponding to the artifact.
-    * A **Failure Details** pop-up window will be displayed with the error message and additional information about the failed artifact configuration.
+The Sync History view includes an **Action** column that provides visibility into the type of operation performed on each artifact during synchronization.
 
-    <figure><img src="../../.gitbook/assets/image (1850).png" alt=""><figcaption></figcaption></figure>
+The following actions are displayed:
+
+* **ADDED** – Indicates that the artifact was newly added to the project during synchronization.
+* **UPDATED** – Indicates that the artifact was modified and updated during a subsequent synchronization.
+* **REMOVED** – Indicates that the artifact was removed from the project.
+
+{% hint style="info" %}
+**Note :** If an API Management artifact is removed while it is assigned to a User Story, the synchronization status will be displayed as **COMPLETED\_WITH\_ERRORS**.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (1917).png" alt=""><figcaption></figcaption></figure>
 
 ### **Artifact Actions**
 
@@ -67,7 +96,7 @@ The **Sync** option is used to fetch the latest version of API Proxy artifacts f
 * Click **Sync** to refresh and retrieve the most up-to-date API Proxy definitions.
 * This ensures that ReleaseOwl reflects the current state of artifacts across environments.
 
-<figure><img src="../../.gitbook/assets/image (1855).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1918).png" alt=""><figcaption></figcaption></figure>
 
 **Configure**&#x20;
 
@@ -80,7 +109,7 @@ To configure an API Proxy artifact in ReleaseOwl:
 3. Click the **Actions** button.
 4. Select **Configure**.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1856).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1919).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** The **Development (Dev) environment is read-only** and does not allow modification.
@@ -135,7 +164,7 @@ To perform revisions, follow these steps:
 
 * Click on the "**Revisions**" button.
 
-<figure><img src="../../.gitbook/assets/image (1771).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1920).png" alt=""><figcaption></figcaption></figure>
 
 Within the Revisions section, the following options are available:&#x20;
 
@@ -190,7 +219,7 @@ The **Unassign User Story** option allows you to remove the current assignment o
 
 The **API Provider** section in **ReleaseOwl** is used to configure provider-specific parameters that define how API artifacts interact with backend services across different environments.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1922).png" alt=""><figcaption></figcaption></figure>
 
 **Sync**
 
@@ -199,7 +228,7 @@ The **Sync** option allows users to fetch the latest API Provider configurations
 * Click **Sync** to retrieve the most recent provider entries.
 * This ensures that the configuration in **ReleaseOwl** is up to date with the source environment.
 
-<figure><img src="../../.gitbook/assets/image (1858).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1921).png" alt=""><figcaption></figcaption></figure>
 
 **Configure**
 
@@ -212,7 +241,7 @@ To configure an API Provider in ReleaseOwl:
 3. Click the **Actions** button.
 4. Select **Configure**.
 
-<figure><img src="../../.gitbook/assets/image (1859).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1923).png" alt=""><figcaption></figcaption></figure>
 
 **Configuration Screen**
 
@@ -220,29 +249,36 @@ The configuration screen displays the API Provider entries across multiple envir
 
 The **Provider Name** can be modified for the target environment during deployment using the **Edit** option, allowing environment-specific customization of the provider configuration.
 
-For example, if the provider name in the **Dev** environment is _NorthWindProvider_, it can be updated for the **QA** environment to _NorthWindProvider\_QA_. During deployment, the provider will be created in the target environment with the updated name.
-
 To modify configuration values for non-Dev environments:
 
 1. Click the **Edit (pencil)** icon next to the desired field.
 2. Update the required parameters.
 3. Click **Save** to persist the changes.
 
+**Provider-Specific Configuration Fields**
+
+Based on the selected provider type, the following configuration fields are available:
+
+| Provider Type         | Configuration Fields                                                            |
+| --------------------- | ------------------------------------------------------------------------------- |
+| **Internet**          | Host, Port, and SSL Configuration                                               |
+| **On-Premise**        | Host, Port, Location ID, Authentication, and Additional Properties              |
+| **Open Connectors**   | Region, Host, Port, Organization Secret, and User Secret                        |
+| **Cloud Integration** | Cloud Integration Management Host, Port, Authentication, Username, and Password |
+
+The configuration screen dynamically displays only the fields applicable to the selected provider type, simplifying the setup process and ensuring that users provide the required connection details.
+
+<figure><img src="../../.gitbook/assets/image (1924).png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 **Note:** If the provider includes authentication settings, these may be overridden in the target environment during deployment. After deployment, it is recommended to manually update the authentication details in the target environment.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (1772).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-**Note:** The **Development (Dev) environment is read-only** and cannot be modified.
 {% endhint %}
 
 #### Key Value Maps <a href="#pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline" id="pdf-page-della43ge2ynalx23r7p-creating-a-release-pipeline"></a>
 
 The **Key Value Maps (KVM)** section in ReleaseOwl is used to manage environment-specific key-value pairs that are consumed by API Proxies at runtime. Each KVM consists of multiple **keys**, with corresponding **values maintained per environment** (e.g., Dev, QA, Prod).
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1925).png" alt=""><figcaption></figcaption></figure>
 
 **Sync**
 
@@ -251,7 +287,7 @@ The **Sync** option retrieves the latest KVM artifacts from the registered SAP A
 * Click **Sync** to refresh and fetch the most recent KVM definitions.
 * Ensures **ReleaseOwl** reflects the current state of KVMs from the source system.
 
-<figure><img src="../../.gitbook/assets/image (1860).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1926).png" alt=""><figcaption></figcaption></figure>
 
 **Configure**
 
@@ -264,7 +300,7 @@ To configure key Value Maps in ReleaseOwl:
 3. Click the **Actions** button.
 4. Select **Configure**.
 
-<figure><img src="../../.gitbook/assets/image (1861).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1927).png" alt=""><figcaption></figcaption></figure>
 
 **Configuration Screen**
 
@@ -290,7 +326,7 @@ To update values:
 
 An **API Product** in ReleaseOwl represents a collection of API Proxies bundled together and exposed for consumption.
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1928).png" alt=""><figcaption></figcaption></figure>
 
 **Sync**
 
@@ -299,7 +335,7 @@ The **Sync** option is used to fetch the latest API Product artifacts from the r
 * Click **Sync** to retrieve the most recent API Product definitions.
 * Ensures that ReleaseOwl reflects the current state of API Products from the source system.
 
-<figure><img src="../../.gitbook/assets/image (1862).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1929).png" alt=""><figcaption></figcaption></figure>
 
 #### Configuring an API Product
 
@@ -310,7 +346,7 @@ To configure an API Product in ReleaseOwl:
 3. Click the **Actions** button.
 4. Select **Configure**.
 
-<figure><img src="../../.gitbook/assets/image (1863).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1930).png" alt=""><figcaption></figcaption></figure>
 
 #### Configuration
 
@@ -350,7 +386,7 @@ To perform revisions, follow these steps:
 
 * Click on the "**Revisions**"  button.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1931).png" alt=""><figcaption></figcaption></figure>
 
 The following actions are available:
 
