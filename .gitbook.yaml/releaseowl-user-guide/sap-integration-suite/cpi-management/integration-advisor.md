@@ -1,8 +1,8 @@
 # Integration Advisor
 
-The **Integration Advisor** in SAP Integration Suite helps streamline and accelerate integration projects by providing tools to define, customize, and manage interface content such as codelists, IDocs, messages, and SOA structures. It enables organizations to adapt standard content to meet specific business requirements, ensuring consistency and reducing manual effort in integration scenarios.
+The Integration Advisor in SAP Integration Suite helps streamline and accelerate integration projects by providing tools to define, customize, and manage interface content such as code lists, IDocs, message definitions, and SOA structures. It enables organizations to adapt standard integration content to meet specific business requirements, ensuring consistency and reducing manual effort across integration scenarios.
 
-Before using Integration Advisor, some setup is required both in **SAP BTP** and in **ReleaseOwl** to enable access and manage integration artifacts effectively.
+ReleaseOwl supports Integration Advisor artifact management, including synchronization and deployment operations. These operations rely on the configured **Custom Identity Provider (IDP)**, as the required functionality is accessed through browser-based APIs that are not available through standard public APIs. Before using Integration Advisor, some setup is required both in **SAP BTP** and in **ReleaseOwl** to enable access and manage integration artifacts effectively.
 
 ### **Prerequisites**&#x20;
 

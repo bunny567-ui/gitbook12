@@ -46,11 +46,20 @@ After the environment is created, open the registered environment where the foll
 
 ### Web Authentication : Custom Identity Provider (IDP)  <a href="#pdf-page-della43ge2ynalx23r7p-toc190778976" id="pdf-page-della43ge2ynalx23r7p-toc190778976"></a>
 
-A **Custom Identity Provider (IDP)** is required for deploying certain artifact types—such as **Value Mapping**, **REST**, **SOAP**, and **OData APIs**—as well as for executing test cases associated with these artifacts via ReleaseOwl.
+A **Custom Identity Provider (IDP)** is required to support ReleaseOwl operations that rely on SAP Integration Suite browser-based APIs.  In certain SAP Integration Suite scenarios, the required functionality is not exposed through public APIs. To enable these operations, ReleaseOwl uses a Custom IDP configuration to authenticate against the SAP tenant on behalf of a designated user account.
+
+The Custom IDP is used for CPI artifact operations such as:
+
+* Value Mapping updates and maintenance.
+* Synchronization of CPI artifacts, including REST APIs, SOAP APIs, and OData APIs.
+* Upload and deployment operations for supported CPI artifacts.
+* Test case execution features that require browser-based access, such as trace enablement and related monitoring operations.
 
 <figure><img src="../../../.gitbook/assets/image (1821).png" alt=""><figcaption></figcaption></figure>
 
-**Steps to configure the SSO URL**
+**Steps to Configure Trust Between SAP BTP Subaccount and ReleaseOwl**
+
+**Purpose :** The trust configuration enables SAP BTP to accept authentication assertions from the ReleaseOwl Identity Provider, allowing secure user authentication and authorization for ReleaseOwl-integrated operations.
 
 1. Navigate to the **Security** section of your SAP BTP Subaccount.
 2. Go to **Trust Configuration**.
@@ -71,17 +80,22 @@ A **Custom Identity Provider (IDP)** is required for deploying certain artifact 
 
 **Steps to Configure the IDP Auth Email Address/Group Name**
 
-1. Specify the exact attribute value returned by your Identity Provider (IdP) in the **SAML assertion** or **OIDC token** for the authenticated user.
-2. This value must exactly match the configured **group name** or **email address** defined in the **Value** field of the **User Groups** or **Attribute Mappings** section within your IdP configuration.
-3. During the authentication process, ReleaseOwl (or SAP Business Technology Platform, based on your authentication setup) validates the returned attribute value against the configured mappings to authorize user access.
+**Purpose** : The IDP Auth Email Address / Group Name configuration determines which users or user groups are authorized to use the configured Custom Identity Provider for browser-based CPI operations within ReleaseOwl.
+
+1. Enter the email address or group name in ReleaseOwl and click **Save** to create the configuration.
+
+{% hint style="info" %}
+**Note :** During the authentication process, ReleaseOwl (or SAP Business Technology Platform, based on your authentication setup) validates the returned attribute value against the configured mappings to authorize user access.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (1652).png" alt=""><figcaption></figcaption></figure>
 
-4. After entering all the required details, click **Save**. Once saved, a **Test** button will appear. Use this button to verify whether the provided credentials and configuration are correct. Click **Test** to validate the connection.
+2. Once saved, a **Test** button will appear. Use this button to verify whether the provided credentials and configuration are correct. Click **Test** to validate the connection.
+3. Upon successful validation, a **shadow user** is created in the SAP BTP tenant. This shadow user is used by ReleaseOwl to authenticate through the configured Custom IDP and perform browser-based operations required for supported CPI artifact activities.
 
 <figure><img src="../../../.gitbook/assets/image (1653).png" alt=""><figcaption></figcaption></figure>
 
-5. Upon successful validation, a **Download** option will be available to download the **tenant-specific metadata** and the **SAP CPI environment descriptor file**.
+3. A **Download** option also becomes available, allowing you to download the metadata descriptor file.
 
 <figure><img src="../../../.gitbook/assets/image (1825).png" alt=""><figcaption></figcaption></figure>
 
