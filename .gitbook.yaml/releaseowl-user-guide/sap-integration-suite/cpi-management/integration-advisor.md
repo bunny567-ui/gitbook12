@@ -96,12 +96,12 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 ### &#x20;Add Artifacts <a href="#pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl" id="pdf-page-gq2jqh5hz5sfguou1udk-synchronization-with-releaseowl"></a>
 
 1. Go to the **Build** section and click on **Integration Advisor**.
-2. Click **Add Artifacts**. The system displays the available Integration Advisor artifacts in separate tabs based on the artifact type, such as:
-   * **MAG**
-   * **MIG**
+2.  Click **Add Artifacts**. The system displays the available Integration Advisor artifacts in separate tabs based on the artifact type, such as:
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+    * **MAG**
+    * **MIG**
 
+    <figure><img src="../../../.gitbook/assets/image (1932).png" alt=""><figcaption></figcaption></figure>
 3. Select the required artifacts from the respective tabs.
 4. Click **Add** to import the selected artifacts into ReleaseOwl.
 
@@ -109,20 +109,49 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
 5. Once the process is completed, the selected **MAG** and **MIG** artifacts will be displayed in the Integration Advisor section.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1933).png" alt=""><figcaption></figcaption></figure>
+
+**Remove Artifacts**
+
+The **Remove Artifacts** feature allows users to remove one or more artifacts from an API Management project. This helps users efficiently manage project artifacts without removing them individually.
+
+**Removing Artifacts from a Project**
+
+1. Select the artifact(s) that need to be removed from the project.
+2. Click **Remove Artifacts**.
+3. Confirm the removal action when prompted.
+
+<figure><img src="../../../.gitbook/assets/image (1942).png" alt=""><figcaption></figcaption></figure>
+
+4. The selected artifacts are removed from the project and will no longer be associated with it.
+
+<figure><img src="../../../.gitbook/assets/image (1935).png" alt=""><figcaption></figcaption></figure>
 
 **Sync History**
 
-The **Sync History** provides details of previous synchronizations, including:
+The Sync History page displays details such as the synchronization status, execution time, artifacts processed, and the outcome of each synchronization activity.
 
-* **Synced On** – Timestamp of synchronization.
-* **Synced By** – User who performed the synchronization.
+To track previous synchronizations:
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* Click on **Sync History** to view a detailed log of all synchronization activities performed within the project.
 
-4. By clicking the **Action** button, you can view:
+<figure><img src="../../../.gitbook/assets/image (1936).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Action Column**
+
+The Sync History view includes an **Action** column that provides visibility into the type of operation performed on each artifact during synchronization.
+
+The following actions are displayed:
+
+* **ADDED** – Indicates that the artifact was newly added to the project during synchronization.
+* **UPDATED** – Indicates that the artifact was modified and updated during a subsequent synchronization.
+* **REMOVED** – Indicates that the artifact was removed from the project.
+
+{% hint style="info" %}
+**Note :** If an Integration Advisor artifact is removed while it is assigned to a User Story, the synchronization status will be displayed as **COMPLETED\_WITH\_ERRORS**.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (1934).png" alt=""><figcaption></figcaption></figure>
 
 #### Actions
 
@@ -131,12 +160,12 @@ By clicking the **Actions** button, the following options are available:
 * **Sync**:\
   Allows individual synchronization of **Mapping Guidelines (MAG)** and **Message Implementation Guidelines (MIG)** artifacts, fetching the latest version from the source system.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1939).png" alt=""><figcaption></figcaption></figure>
 
 * **Versions**:\
   Displays the version history of the selected artifact, enabling tracking and management of changes over time.
 
-<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1940).png" alt=""><figcaption></figcaption></figure>
 
 Within the **Versions** view, you can:
 
@@ -155,12 +184,18 @@ Within the **Versions** view, you can:
 
     * The **Download** option under the Action menu lets you download the message or artifact locally.
 
-    <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1938).png" alt=""><figcaption></figcaption></figure>
 * **Details**: Provides additional information about the artifact.
 
 <figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+**Deployment History**
+
+The **Deployment History** option in **Integration Advisor** provides a comprehensive view of all package deployment activities. This feature enables users to track deployment operations performed on a package and review the status of each deployed artifact.
+
+<figure><img src="../../../.gitbook/assets/image (1941).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating and Managing a Release Pipeline** <a href="#pdf-page-gq2jqh5hz5sfguou1udk-creating-and-managing-a-release-pipeline" id="pdf-page-gq2jqh5hz5sfguou1udk-creating-and-managing-a-release-pipeline"></a>
 
