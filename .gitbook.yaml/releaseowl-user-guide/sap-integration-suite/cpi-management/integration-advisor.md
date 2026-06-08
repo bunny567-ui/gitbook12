@@ -113,7 +113,7 @@ Before proceeding with Integration Advisor , ensure the following are in place:
 
 **Remove Artifacts**
 
-The **Remove Artifacts** feature allows users to remove one or more artifacts from an API Management project. This helps users efficiently manage project artifacts without removing them individually.
+The **Remove Artifacts** feature allows users to remove one or more artifacts from an **Integration Advisor** project. This helps users efficiently manage project artifacts without removing them individually.
 
 **Removing Artifacts from a Project**
 
