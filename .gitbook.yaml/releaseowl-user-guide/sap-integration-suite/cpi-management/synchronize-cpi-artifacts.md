@@ -45,7 +45,7 @@
 
 Click **Sync History** to view the history of all synchronization activities performed for the **SAP CPI** packages, including previously synced packages and their corresponding sync details.
 
-<div><figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1944).png" alt=""><figcaption></figcaption></figure></div>
 
 ### **Sync Artifacts**
 

@@ -9,14 +9,14 @@ These reports help teams monitor deployment progress, validate successful deploy
 
 ### Deployment Report
 
-The **Deployment Report** offers detailed visibility into the deployment status of user stories, Transports, CPI  within a selected project.
+The Deployment Report offers detailed insights into the deployment status of User Stories, Transports, CPI artifacts, BTP artifacts, and Multiverse artifacts within the selected project.
 
 **How to Generate the Report:**
 
 1. Navigate to the **Reports** section in the **Project View**.
 2. Click on the type of the user story that you want to do.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1943).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the following parameters:
 
