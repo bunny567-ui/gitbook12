@@ -57,7 +57,7 @@ The Custom IDP is used for CPI artifact operations such as:
 
 <figure><img src="../../../.gitbook/assets/image (1821).png" alt=""><figcaption></figcaption></figure>
 
-**Steps to Configure Trust Between SAP BTP Subaccount and ReleaseOwl**
+**Steps to Configure Trust Between SAP BTP Subaccount and ReleaseOwl ( SSO URL)**
 
 **Purpose :** The trust configuration enables SAP BTP to accept authentication assertions from the ReleaseOwl Identity Provider, allowing secure user authentication and authorization for ReleaseOwl-integrated operations.
 
@@ -133,12 +133,12 @@ The Custom IDP is used for CPI artifact operations such as:
 
 | **Role**                       | **Description**                                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **WorkspacePackagesRead**      | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
+| **WorkspacePackagesRead W**    | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
 | **WorkspacePackagesConfigure** | Configure artifact settings, such as iFlow configuration parameters.                                                                          |
 | **WorkspacePackagesEdit**      | Create and update artifacts such as iFlow, Script Collection, and Message Mapping. Also supports initial creation of Value Mapping artifacts. |
 | **WorkspaceArtifactsDeploy**   | Deploy artifacts to runtime, including iFlow, Script Collection, Message Mapping, and Value Mapping.                                          |
 | **MonitoringDataRead**         | Access message processing logs and monitoring data for iFlow, SOAP, REST, and OData APIs.                                                     |
-| **MessagePayloadsRead**        | View message payloads in monitoring.                                                                                                          |
+| **Content Developer**          | Create/update MIGs and MAGs                                                                                                                   |
 
 8. Click **Save** after adding the roles.
 
@@ -158,16 +158,17 @@ Similarly, create a role collection for the non-production environment to enable
 
 Add the following roles to ensure proper access and deployment capabilities:
 
-| **Role**                       | **Description**                                                                                                                               |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **WorkspacePackagesRead**      | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
-| **WorkspacePackagesConfigure** | Configure artifact settings (for example, iFlow configuration parameters).                                                                    |
-| **WorkspacePackagesEdit**      | Create and update artifacts such as iFlow, Script Collection, and Message Mapping. Supports initial creation of Value Mapping artifacts only. |
-| **WorkspaceArtifactsDeploy**   | Deploy artifacts to runtime, including iFlow, Script Collection, Message Mapping, and Value Mapping.                                          |
-| **MonitoringDataRead**         | Access message processing logs and monitoring data for iFlow, SOAP, REST, and OData APIs.                                                     |
-| **MessagePayloadsRead**        | View message payloads in monitoring.                                                                                                          |
-| **TraceConfigurationRead**     | View the current tracing configuration.                                                                                                       |
-| **TraceConfigurationEdit**     | Modify tracing configuration (enable trace configuration).                                                                                    |
+| **Role**                                               | **Description**                                                                                                                               |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**                              | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
+| <p><strong>WorkspacePackagesConfigure</strong><br></p> | Configure artifact settings (for example, iFlow configuration parameters).                                                                    |
+| **WorkspacePackagesEdit**                              | Create and update artifacts such as iFlow, Script Collection, and Message Mapping. Supports initial creation of Value Mapping artifacts only. |
+| **WorkspaceArtifactsDeploy**                           | Deploy artifacts to runtime, including iFlow, Script Collection, Message Mapping, and Value Mapping.                                          |
+| **MonitoringDataRead**                                 | Access message processing logs and monitoring data for iFlow, SOAP, REST, and OData APIs.                                                     |
+| **MessagePayloadsRead**                                | View message payloads in monitoring.                                                                                                          |
+| **TraceConfigurationRead**                             | View the current tracing configuration.                                                                                                       |
+| **TraceConfigurationEdit**                             | Modify tracing configuration (enable trace configuration).                                                                                    |
+| **Content Developer**                                  | Create/update MIGs and MAGs                                                                                                                   |
 
 6. Click **Save** to complete the setup.
 
