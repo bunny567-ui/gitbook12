@@ -34,7 +34,7 @@ Role Actions define the permissions and access levels associated with a role. To
 
 <figure><img src="../../../.gitbook/assets/image (1949).png" alt=""><figcaption></figcaption></figure>
 
-#### Role Actions
+### Role Actions
 
 The **Role Actions** screen allows administrators to define and manage permissions assigned to a role. Users assigned to a role inherit all permissions configured for that role, enabling controlled access to specific features and operations within the platform. Permissions are grouped into functional categories to simplify role management.
 
