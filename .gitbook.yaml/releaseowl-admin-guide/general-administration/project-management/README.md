@@ -229,11 +229,11 @@ Role-based access ensures that users can perform only the actions required for t
 
 <figure><img src="../../../.gitbook/assets/image (1170).png" alt=""><figcaption></figcaption></figure>
 
-4. Click the **Edit (Lock)** icon next to the user for whom you want to manage roles and permissions.
+5. Click the **Edit (Lock)** icon next to the user for whom you want to manage roles and permissions.
 
 <figure><img src="../../../.gitbook/assets/image (1172).png" alt=""><figcaption></figcaption></figure>
 
-5. This opens the **Permissions** page for the selected user, where roles and environment-specific permissions can be configured.
+6. This opens the **Permissions** page for the selected user, where roles and environment-specific permissions can be configured.
 
 <figure><img src="../../../.gitbook/assets/image (1171).png" alt=""><figcaption></figcaption></figure>
 
