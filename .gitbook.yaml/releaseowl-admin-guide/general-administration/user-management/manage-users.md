@@ -32,10 +32,38 @@ To create a new user:
 
 <figure><img src="../../../.gitbook/assets/image (1879).png" alt=""><figcaption></figcaption></figure>
 
-3. The **User Creation form** will open. Enter the required user details in the provided fields.
+3. The **User Creation form** will open. Enter the required user details:
+   * **First Name**
+   * **Last Name**
+   * **Email ID**
+   * **User Type**
+
+**User Type** : The **User Type** determines the level of access granted to the user.
+
+1. **Tenant Admin**&#x20;
+
+Users assigned the **Tenant Admin** role have administrative privileges across the tenant. Tenant Admins can perform all actions available under the **Administration** menu, including:
+
+* Creating and managing users
+* Creating and managing projects
+* Configuring and editing environments
+* Managing tenant-level settings and configurations
+* Performing other administrative operations available within the platform
+
+2. **User**
+
+Users assigned the **User** role have access only to the projects to which they are assigned. Based on their project permissions, they can:
+
+* Access assigned projects
+* View and work on project-related tasks
+* Review and approve tasks or workflow activities
+* Perform actions permitted within their assigned role and project scope
+
+<figure><img src="../../../.gitbook/assets/image (1948).png" alt=""><figcaption></figcaption></figure>
+
 4. Click the **Create** button to save the user.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1947).png" alt=""><figcaption></figcaption></figure>
 
 5. Once the user is created, the newly created user will appear in the **Users Details** list.
 

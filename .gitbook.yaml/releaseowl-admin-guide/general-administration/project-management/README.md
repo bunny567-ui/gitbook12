@@ -200,8 +200,32 @@ To add users to the project, follow these steps:
 1. Click the **+ Add** button located at the top-right corner of the Users section.
 2. Select the required user(s) from the popup list.
 3. Click the **Select** button to add the selected users to the project.
+4. The selected users will appear in the Users table.
 
-The selected users will appear in the Users table.
+**Project Admin Access**
+
+When the **Project Admin** option is selected for a user, the user is granted project-level administrative privileges. Project Administrators can perform the following actions:
+
+* Manage project configurations.
+* Add or remove users from the project.
+* Assign roles and permissions.
+* Configure ALM integrations.
+* Grant deployment permissions for environments.
+* Review and approve project tasks.
+
+**Role-Based Access**
+
+If the **Project Admin** option is not selected, the user receives access based on the permissions defined by the assigned role.
+
+Depending on the configured role, users may be granted permissions such as:
+
+* Read-only access to project resources.
+* Permission to approve tasks.
+* Other project-specific actions defined by the role configuration.
+
+Role-based access ensures that users can perform only the actions required for their responsibilities within the project
+
+
 
 <figure><img src="../../../.gitbook/assets/image (1170).png" alt=""><figcaption></figcaption></figure>
 
