@@ -48,7 +48,7 @@ Transport Management permissions control the creation, modification, synchroniza
 | **Edit Transport**                | Allows users to modify transport details and configurations.                                           |
 | **Release Transport**             | Allows users to release transports for deployment or promotion.                                        |
 | **Import Transport**              | Allows users to import transports into target environments.                                            |
-| **Sync Transports From SAP**      | Allows users to synchronize transport information directly from connected SAP systems.                 |
+| **Sync Transports From SAP**      | Allows users to synchronize transport  directly from connected SAP systems.                            |
 | **Manage Critical Objects**       | Allows users to manage and review critical objects contained within transports.                        |
 | **Retrofit Transports**           | Allows users to perform retrofit activities across system landscapes.                                  |
 | **Remove Transport From Project** | Allows users to remove transport requests that are associated with a project.                          |
