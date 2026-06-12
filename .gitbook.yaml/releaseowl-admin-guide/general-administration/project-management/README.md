@@ -226,6 +226,10 @@ Users can view project information, including:
 * Deployment information
 * Reports and other project-related data
 
+{% hint style="info" %}
+**Note :** If tasks are assigned directly to the user within a **Release Pipeline**, the user can view those tasks and perform the assigned approval actions, such as **Approve** or **Reject**.
+{% endhint %}
+
 **Role-Based Access**
 
 If the **Project Admin** option is not selected, the user receives access based on the permissions defined by the assigned role.
