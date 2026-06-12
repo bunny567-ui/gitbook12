@@ -156,9 +156,3 @@ Test Automation permissions control test configuration and execution activities.
 
 <figure><img src="../../../.gitbook/assets/image (1164).png" alt=""><figcaption></figcaption></figure>
 
-### **Notification Bar in ReleaseOwl**
-
-To keep users informed and up to date, **ReleaseOwl** includes a **Notification Bar** feature that displays important system messages directly within the application interface.
-
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-

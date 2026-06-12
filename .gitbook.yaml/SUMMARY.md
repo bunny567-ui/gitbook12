@@ -167,6 +167,7 @@
     * [ABAP Version Compare](releaseowl-user-guide/utilities/abap-version-compare.md)
     * [gCTS Merge](releaseowl-user-guide/utilities/gcts-merge.md)
   * [Reports](releaseowl-user-guide/reports.md)
+  * [Platform Updates](releaseowl-user-guide/platform-updates.md)
 * [ReleaseOwl Releases](releaseowl-releases/README.md)
   * [Release Calendar](releaseowl-releases/release-calendar.md)
   * [Release Notes](releaseowl-releases/release-notes/README.md)
