@@ -213,6 +213,19 @@ When the **Project Admin** option is selected for a user, the user is granted pr
 * Grant deployment permissions for environments.
 * Review and approve project tasks.
 
+**Non-Project Admin Access**
+
+When the **Project Admin** option is disabled and no roles are assigned, the user is granted **view-only access** to the project.
+
+Users can view project information, including:
+
+* User Stories
+* Sprints
+* Builds
+* Tasks
+* Deployment information
+* Reports and other project-related data
+
 **Role-Based Access**
 
 If the **Project Admin** option is not selected, the user receives access based on the permissions defined by the assigned role.
@@ -220,7 +233,6 @@ If the **Project Admin** option is not selected, the user receives access based 
 Depending on the configured role, users may be granted permissions such as:
 
 * Read-only access to project resources.
-* Permission to approve tasks.
 * Other project-specific actions defined by the role configuration.
 
 Role-based access ensures that users can perform only the actions required for their responsibilities within the project

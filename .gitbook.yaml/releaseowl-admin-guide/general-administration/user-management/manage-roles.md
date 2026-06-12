@@ -2,7 +2,7 @@
 
 The Manage Roles feature in the **Administration View** allows administrators to create, edit, and delete roles to manage user privileges within the platform.
 
-#### Create Role
+## Create Role
 
 To create a new role:
 
@@ -20,7 +20,7 @@ To create a new role:
 
 <figure><img src="../../../.gitbook/assets/image (1015).png" alt=""><figcaption></figcaption></figure>
 
-### Assign Role Actions
+## Assign Role Actions
 
 Role Actions define the permissions and access levels associated with a role. To assign the role actions to an existing role:
 
@@ -34,11 +34,11 @@ Role Actions define the permissions and access levels associated with a role. To
 
 <figure><img src="../../../.gitbook/assets/image (1957).png" alt=""><figcaption></figcaption></figure>
 
-### Role Actions
+## Role Actions
 
 The **Role Actions** screen allows administrators to define and manage permissions assigned to a role. Users assigned to a role inherit all permissions configured for that role, enabling controlled access to specific features and operations within the platform. Permissions are grouped into functional categories to simplify role management.
 
-#### Transport Management
+### Transport Management
 
 Transport Management permissions control the creation, modification, synchronization, and deployment of SAP transports.
 
@@ -46,7 +46,7 @@ Transport Management permissions control the creation, modification, synchroniza
 | --------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | **Create Transport**              | Allows users to create new transport requests within a project.                                        |
 | **Edit Transport**                | Allows users to modify transport details and configurations.                                           |
-| **Release Transport**             | Allows users to release transports for deployment or promotion.                                        |
+| **Release Transport**             | Allows users to release transports in the ReleaseOwl.                                                  |
 | **Import Transport**              | Allows users to import transports into target environments.                                            |
 | **Sync Transports From SAP**      | Allows users to synchronize transport  directly from connected SAP systems.                            |
 | **Manage Critical Objects**       | Allows users to manage and review critical objects contained within transports.                        |
@@ -57,7 +57,7 @@ Transport Management permissions control the creation, modification, synchroniza
 
 <figure><img src="../../../.gitbook/assets/image (1950).png" alt=""><figcaption></figcaption></figure>
 
-#### Change Management
+### Change Management
 
 Change Management permissions control sprint management and user story administration.
 
@@ -74,7 +74,7 @@ Change Management permissions control sprint management and user story administr
 
 <figure><img src="../../../.gitbook/assets/image (1951).png" alt=""><figcaption></figcaption></figure>
 
-#### CPI Management
+### CPI Management
 
 CPI Management permissions control SAP Cloud Integration artifact management and deployment activities.
 
@@ -92,7 +92,7 @@ CPI Management permissions control SAP Cloud Integration artifact management and
 
 <figure><img src="../../../.gitbook/assets/image (1952).png" alt=""><figcaption></figcaption></figure>
 
-#### SAC Network Item
+### SAC Network Item
 
 SAC Network Item permissions manage integration with SAP Analytics Cloud network items.
 
@@ -103,7 +103,7 @@ SAC Network Item permissions manage integration with SAP Analytics Cloud network
 
 <figure><img src="../../../.gitbook/assets/image (1953).png" alt=""><figcaption></figcaption></figure>
 
-#### Pipelines
+### Pipelines
 
 Pipeline permissions control build pipeline management activities.
 
@@ -123,7 +123,7 @@ Pipeline permissions control build pipeline management activities.
 
 <figure><img src="../../../.gitbook/assets/image (1954).png" alt=""><figcaption></figcaption></figure>
 
-#### Release Management
+### Release Management
 
 Release Management permissions control release package administration and deployment readiness activities.
 
@@ -139,7 +139,7 @@ Release Management permissions control release package administration and deploy
 
 <figure><img src="../../../.gitbook/assets/image (1955).png" alt=""><figcaption></figcaption></figure>
 
-#### Test Automation
+### Test Automation
 
 Test Automation permissions control test configuration and execution activities.
 

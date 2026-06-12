@@ -56,7 +56,7 @@ Users assigned the **User** role have access only to the projects to which they 
 
 * Access assigned projects
 * View and work on project-related tasks
-* Review and approve tasks or workflow activities
+* Review and approve tasks&#x20;
 * Perform actions permitted within their assigned role and project scope
 
 <figure><img src="../../../.gitbook/assets/image (1948).png" alt=""><figcaption></figcaption></figure>
