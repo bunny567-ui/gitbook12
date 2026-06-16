@@ -42,7 +42,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 1. Create new project of type SAP BTP (MTAR) or SAP HANA XSA (MTAR)
 2. Register BTP Credentials and BTP Environment with ReleaseOwl before starting to work with Build Pipelines.
 
-#### **Build Pipelines** <a href="#pdf-page-hbalethepy3zsklyalpx-build-pipelines" id="pdf-page-hbalethepy3zsklyalpx-build-pipelines"></a>
+### **Build Pipelines** <a href="#pdf-page-hbalethepy3zsklyalpx-build-pipelines" id="pdf-page-hbalethepy3zsklyalpx-build-pipelines"></a>
 
 1. Navigate to the **Build Pipelines** section and click on **New** **Build Pipeline**.
 
