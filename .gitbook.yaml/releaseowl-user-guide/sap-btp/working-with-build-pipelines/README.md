@@ -71,7 +71,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 4. **Version Control System**: Select the repository type (for example, **GitHub**, **GitLab**, or **Bitbucket**).
 5. After entering the required details, click **Step 3** to continue.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 **Builder Section**
 
@@ -80,7 +80,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 3. **Max # of Builds to Keep**: Specify the maximum number of build records to retain. It is recommended to set this value to **30** to preserve recent build history and prevent excessive storage consumption in Jenkins.
 4. After completing the configuration, click **Step 4** to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Scheduler Section**&#x20;
 
@@ -94,7 +94,7 @@ Configure the pipeline execution and notification settings:
 
 2. After selecting the required scheduler option, click **Step 5** to continue.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Environment**
 
@@ -103,7 +103,7 @@ Configure the deployment environment for the Build Pipeline:
 1. **Development Environment** – Select the required environment from the drop-down list. The available environments are those that have been previously registered in ReleaseOwl through the **SAP Cloud  Environment** registration process.&#x20;
 2. After selecting the required development environment, click **Step 6** to continue.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Notification**
 

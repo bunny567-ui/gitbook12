@@ -8,7 +8,7 @@ ReleaseOwl supports multiple credential types for registration. To register a Tr
 
 1. Click on the **"Register Credential"** butto&#x6E;**.**
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Fill in the required fields:**
 
@@ -22,4 +22,4 @@ ReleaseOwl supports multiple credential types for registration. To register a Tr
 
 3. Click **Save** to finalize the setup and enable access to your Transport Domain Controller system.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>

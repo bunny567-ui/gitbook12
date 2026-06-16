@@ -12,9 +12,4 @@ You get to see the **Download Artifact** option only after the build execution i
 
 <figure><img src="../../../.gitbook/assets/image (1451).png" alt=""><figcaption></figcaption></figure>
 
-### **Edit/Delete**
-
-* Click **Edit** to make changes in a created pipeline and save the changes. You can’t make changes to the name of the build pipeline.
-* Click **Delete** to delete the required build pipeline.
-
-<figure><img src="../../../.gitbook/assets/image (1452).png" alt=""><figcaption></figcaption></figure>
+###

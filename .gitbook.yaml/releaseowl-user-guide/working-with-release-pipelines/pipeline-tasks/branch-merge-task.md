@@ -6,7 +6,7 @@ If merge conflicts occur, they are identified and surfaced at the **User Story**
 
 A **Branch Merge Task** can be added as follows:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Branch Merge Task Configuration**
 
@@ -33,4 +33,4 @@ A **Branch Merge Task** can be added as follows:
     * If the status is **Resolved**, the merge has been successfully completed for that file.
     * If conflicts exist, they must be resolved before proceeding.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
