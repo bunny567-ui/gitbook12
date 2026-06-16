@@ -16,7 +16,7 @@
       * [Version Control](releaseowl-admin-guide/general-administration/credential-management/version-control.md)
       * [SAP HANA XSA Environment](releaseowl-admin-guide/general-administration/credential-management/sap-hana-xsa-environment.md)
       * [ABAP Cloud Communication](releaseowl-admin-guide/general-administration/credential-management/abap-cloud-communication.md)
-      * [Page 3](releaseowl-admin-guide/general-administration/credential-management/page-3.md)
+      * [Malware Scanning](releaseowl-admin-guide/general-administration/credential-management/malware-scanning.md)
     * [Settings](releaseowl-admin-guide/general-administration/settings.md)
     * [Callout Feature](releaseowl-admin-guide/general-administration/callout-feature.md)
     * [RO Agents](releaseowl-admin-guide/general-administration/ro-agents.md)

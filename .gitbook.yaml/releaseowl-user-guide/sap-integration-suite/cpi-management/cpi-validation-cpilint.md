@@ -19,7 +19,7 @@ Note: **License terms of CPI Lint tool can be found here:**\
 
 In the **General** tab of Project Settings, scroll down to the **CPI Settings** section. If the **"Both"** option is selected, the system generates a **Validation Report** that includes results from both **CPI Lint** and **CPI Design Guidelines**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **To validate a package**
 

@@ -8,7 +8,7 @@ ReleaseOwl supports multiple credential types for registration. To register a Ve
 
 1. Click on the **"Register Credential"** button.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Fill in the required fields:
 
@@ -22,7 +22,7 @@ ReleaseOwl supports multiple credential types for registration. To register a Ve
 
 3. Save the configuration to enable access to your GitHub/Bitbucket account.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note** : For information on setting up the tokens in GITHub, please refer to the link -[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)

@@ -18,10 +18,10 @@ Provide the following details:
 
 * **Name**: Enter a unique name for the cloud environment&#x20;
 * **Region**: Select the region where the environment is hosted
-* **API Endpoint**: Enter the API endpoint URL of the cloud environment (e.g., `https://api.cf.us10-001.hana.ondemand.com`).
+* **API Endpoint**: Enter the Cloud Foundry API endpoint URL. This value can be found in the **SAP BTP Cockpit** under the corresponding **Cloud Foundry Environment**.
 * **Credential Name**: Select the credential previously registered from the dropdown list.
 * **Org**: Select the correct organization from the dropdown list.
-* **Space**: Select the space associated with the environment (e.g., `dev`).
+* **Space**: Select the space associated with the environment.
 * **Environment Type**: Specify the environment type (e.g., `DEV`, `QA`, or `PROD`).
 
 ### **3. Save the Environment** <a href="#pdf-page-5hkyhw0dgtvjrdeu0fx7-id-3.-save-the-environment" id="pdf-page-5hkyhw0dgtvjrdeu0fx7-id-3.-save-the-environment"></a>
@@ -64,5 +64,5 @@ The **Linked Projects** tab provides a detailed view of all projects associated 
 
 The system displays a history of all actions performed on the selected environment. Each log entry provides detailed information, including the action performed, the user who executed the action, and the corresponding timestamp, enabling effective tracking and auditing of environment activities.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
