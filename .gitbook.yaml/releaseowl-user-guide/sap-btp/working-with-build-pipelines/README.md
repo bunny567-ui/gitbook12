@@ -108,7 +108,7 @@ Configure the deployment environment for the Build Pipeline:
 **Notification**
 
 1. **Notification Emails**: Enter one or more email addresses to receive build status notifications, including build success, failure, and other pipeline-related updates.
-2. After entering the required notification email addresses, click step 7 to continue
+2. After entering the required notification email addresses, click **Step 7** to continue
 
 <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
