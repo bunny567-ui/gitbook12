@@ -21,12 +21,9 @@ Here are the steps to register **Credential Management**:
 * **Password**: Enter the corresponding password.
 
 4. Once all fields are filled, click the **Save** button to register the credential.
-5. A confirmation message will appear if the registration is successful.
-6. The newly registered credential will appear in the **List of Credentials** section.
 
 <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-7. Save the changes to access your BTP user account.
-8. The newly created credential gets listed in the **Credential Manager** screen.
+5. The newly created credential gets listed in the **Credential Manager** screen.
 
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

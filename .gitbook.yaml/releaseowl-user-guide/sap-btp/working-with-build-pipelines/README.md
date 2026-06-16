@@ -100,7 +100,7 @@ Configure the pipeline execution and notification settings:
 
 Configure the deployment environment for the Build Pipeline:
 
-1. **Development Environment** – Select the required SAP BTP environment from the drop-down list. The available environments are those that have been previously registered in ReleaseOwl through the SAP BTP Environment registration process
+1. **Development Environment** – Select the required environment from the drop-down list. The available environments are those that have been previously registered in ReleaseOwl through the **SAP Cloud  Environment** registration process.&#x20;
 2. After selecting the required development environment, click **Step 6** to continue.
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
@@ -162,15 +162,11 @@ After clicking **Save**, the new Build Pipeline is created and appears in the Bu
 
 The **Actions** menu provides the following options:
 
-**Edit :**  Use **Edit** to modify the existing build pipeline configuration. This option allows you to update details such as the repository, branch, build type, schedules, or any pipeline-related settings. Any changes made are applied to the existing Build Pipeline.
-
-**Commits :** Use **Commits** to view the list of source code commits associated with the Build Pipeline. This helps track the changes included in each build execution.
-
-**Save as:**  Use **Save As** to create a copy of an existing Build Pipeline. The copied pipeline can then be modified independently without affecting the original pipeline.
-
-**Archive :** Use **Archive** to deactivate a Build Pipeline. Archived pipelines are retained in the system for reference purposes but are removed from active use and cannot be executed until restored.
-
-**Export Build Pipeline :** Use **Export Build Pipeline** to export the Build Pipeline configuration. The exported file can later be imported using the **Import Build Pipeline** option available when creating a new Build Pipeline, allowing the same configuration to be reused across projects or environments.
+1. **Edit :**  Use **Edit** to modify the existing build pipeline configuration. This option allows you to update details such as the repository, branch, build type, schedules, or any pipeline-related settings. Any changes made are applied to the existing Build Pipeline.
+2. **Commits :** Use **Commits** to view the list of source code commits associated with the Build Pipeline. This helps track the changes included in each build execution.
+3. **Save as:**  Use **Save As** to create a copy of an existing Build Pipeline. The copied pipeline can then be modified independently without affecting the original pipeline.
+4. **Archive :** Use **Archive** to deactivate a Build Pipeline. Archived pipelines are retained in the system for reference purposes but are removed from active use and cannot be executed until restored.
+5. **Export Build Pipeline :** Use **Export Build Pipeline** to export the Build Pipeline configuration. The exported file can later be imported using the **Import Build Pipeline** option available when creating a new Build Pipeline, allowing the same configuration to be reused across projects or environments.
 
 <figure><img src="../../../.gitbook/assets/image (1971).png" alt=""><figcaption></figcaption></figure>
 
