@@ -94,10 +94,13 @@ For information on setting up the tokens in Azure DevOps, please refer to the li
          * Provide your **Username** and **Password** (SAP BTP credentials).
 
          <figure><img src="../../../.gitbook/assets/image (1565).png" alt=""><figcaption></figcaption></figure>
-     * If **OAuth2** is selected:
-       * **Client ID**: Provide the details from the created API service key in the SAP BTP cockpit.
-       * **Client Secret**: Provide the details from the created API service key in the SAP BTP cockpit.
-       * **Token URL**: Provide the details from the created API service key in the SAP BTP cockpit.
+     *   If **OAuth2** is selected:
+
+         * **Client ID**: Provide the details from the created API service key in the SAP BTP cockpit.
+         * **Client Secret**: Provide the details from the created API service key in the SAP BTP cockpit.
+         * **Token URL**: Provide the details from the created API service key in the SAP BTP cockpit.
+
+         <figure><img src="../../../.gitbook/assets/image (1973).png" alt=""><figcaption></figcaption></figure>
 3. Click **Save**.
 4. The credential will appear in the List of Credentials.
 
@@ -459,3 +462,4 @@ Follow these steps to register your 4Me credentials in the system:
 {% hint style="info" %}
 **Note: Edit** and **Delete** options are available only for the users with appropriate user roles.
 {% endhint %}
+
