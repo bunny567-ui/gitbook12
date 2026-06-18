@@ -265,12 +265,12 @@ Go to the required pipeline in **Release Pipeline** page and click **Edit** to e
 
 <figure><img src="../../../.gitbook/assets/image (1984).png" alt=""><figcaption></figcaption></figure>
 
-*   Users can select and promote multiple builds simultaneously from a User Story, making the promotion process more efficient when managing multiple build logs.
+10. Users can select and promote multiple builds simultaneously from a User Story, making the promotion process more efficient when managing multiple build logs.
 
-    1. Select one or more builds from the User Story.
-    2. Click **Promote** to initiate the deployment process.
-    3. Click **Deploy** **Logs** to view the deployment details.
+* Select one or more builds from the User Story.
+* Click **Promote** to initiate the deployment process.
+* Click **Deploy** **Logs** to view the deployment details.
 
-    <div><figure><img src="../../../.gitbook/assets/image (1988).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1987).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/image (1988).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1987).png" alt=""><figcaption></figcaption></figure></div>
 
 <figure><img src="../../../.gitbook/assets/image (1989).png" alt=""><figcaption></figcaption></figure>
