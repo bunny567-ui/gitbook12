@@ -65,7 +65,7 @@ Creating a Release Pipeline is a guided **five-step process**, designed to help 
 
 All the details pertaining to the deployment of the artifact is specified in deployment task. The following screen is displayed on adding a deployment task.
 
-<figure><img src="../../../.gitbook/assets/image (1240).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1990).png" alt=""><figcaption></figcaption></figure>
 
 **Cloud Transport Management**
 
@@ -122,11 +122,22 @@ Use the **Notification Email(s)** field to specify email addresses that should r
 **Note:** If the Release Pipeline fails, the logs are also attached in the notification email. By default, the user who creates the Release Pipeline is notified and specifying the distribution list is optional.
 {% endhint %}
 
+### CAP Application Build Task
 
+The **CAP Application Build Task** is used to build an SAP Cloud Application Programming (CAP) application as part of the release pipeline. This task compiles the application source code, resolves dependencies, and generates the deployment artifacts required for subsequent deployment stages.
 
-8. After configuring the required settings, click **Save** to apply the changes. The **Release Pipeline** will be created successfully and will be available in the **Release Pipelines** list.
+**Configuration**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* **Name**: Enter a unique name for the build task.
+* **Description**: Provide a brief description of the task.
+* **Select Environment(s)**: Choose the environment(s) where the build should be executed.
+* **Notify Users**: Enable this option to send notifications to users when the task starts, completes, or fails.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+After configuring the required settings, click **Save** to apply the changes. The **Release Pipeline** will be created successfully and will be available in the **Release Pipelines** list.
+
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Post-Creation Options**
 

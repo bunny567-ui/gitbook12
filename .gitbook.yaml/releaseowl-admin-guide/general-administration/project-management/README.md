@@ -75,7 +75,7 @@ The **Delete** option allows users to permanently remove a project from the appl
 
 The **Project Settings** option allows users to configure and manage project-specific settings. Users can update project configurations, manage ALM integrations, maintain environment details, and modify project-related parameters based on the project requirements.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Project Settings Configuration
 
@@ -90,7 +90,7 @@ The **Project Settings** option allows users to configure and manage project-spe
 
     Each tab provides specific configuration options related to project management and integrations.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **General Tab**
 
@@ -128,7 +128,7 @@ These settings control validation and approval workflows:
 
 When the project type is selected as an **On-Premise System**, the following additional configuration options are available. These settings apply to projects integrated with on-premise systems such as SAP environments.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Set Transport Description from User Story**
 

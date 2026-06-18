@@ -38,7 +38,7 @@ You can add callout as a Task in the Release Pipeline.
 
 1\. When adding a new task in Pipeline stage, select **Callout Task**, then the following screen is displayed:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Fill in the required details:
 
