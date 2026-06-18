@@ -234,7 +234,7 @@ Go to the required pipeline in **Release Pipeline** page and click **Edit** to e
 **Note :**  Users can now promote builds directly from the **User Story** and **Release Package** sections without navigating to the Build Pipelines module.
 {% endhint %}
 
-#### **Assigning Artifacts to User Stories** <a href="#assigning-artifacts-to-user-stories" id="assigning-artifacts-to-user-stories"></a>
+### **Assigning Artifacts to User Stories** <a href="#assigning-artifacts-to-user-stories" id="assigning-artifacts-to-user-stories"></a>
 
 1. Navigate to **Change Management** and click on **User Stories**.
 
