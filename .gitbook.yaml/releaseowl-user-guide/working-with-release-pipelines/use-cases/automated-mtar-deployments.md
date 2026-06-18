@@ -65,7 +65,7 @@ Creating a Release Pipeline is a guided **five-step process**, designed to help 
 
 All the details pertaining to the deployment of the artifact is specified in deployment task. The following screen is displayed on adding a deployment task.
 
-<figure><img src="../../../.gitbook/assets/image (1990).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1991).png" alt=""><figcaption></figcaption></figure>
 
 **Cloud Transport Management**
 
@@ -83,11 +83,17 @@ The following screen is displayed.<br>
 
 Fill in the required details:
 
-| **Select Environment** | Select an environment from the available list of registered SAP BTP environments where the deployment has to take place.                   |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Service Instance**   | Select the Service Instance from the available service instances listed in the dropdown.                                                   |
-| **Service Key**        | Select the Service Key from the available service keys listed in the dropdown.                                                             |
-| **Node Name**          | Enter a node name added in the Cloud Transport Management System corresponding to the environment to which the artifact is to be uploaded. |
+| **Select Environment**                       | Select an environment from the available list of registered SAP BTP environments where the deployment has to take place.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Service Instance**                         | Select the Service Instance from the available service instances listed in the dropdown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Service Key**                              | Select the Service Key from the available service keys listed in the dropdown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Node Name**                                | Enter a node name added in the Cloud Transport Management System corresponding to the environment to which the artifact is to be uploaded.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Discard old builds**                       | <p>Enable <strong>Discard Old Builds</strong> to automatically remove older build records and artifacts based on the retention criteria specified below.</p><ul><li><strong>Max # of Builds to Keep</strong>: Specifies the maximum number of recent builds to retain. When this limit is exceeded, older builds are automatically removed.</li><li><strong>Keep Builds for (Days)</strong>: Specifies the number of days build records and artifacts should be retained. Builds older than the specified number of days will be automatically deleted.</li></ul><p><br></p> |
+| <p></p><p><strong>Notify Users</strong> </p> | <p></p><p>Enable this option to send notifications to the users associated with the task or pipeline. Notifications are triggered based on configured events, such as task creation, approval requests, build completion, deployment status, or task failures.</p><p></p><p></p>                                                                                                                                                                                                                                                                                             |
+| **Notify Promotion User**                    | Enable this option to notify the user who initiated the promotion whenever the promotion process starts, completes, succeeds, or fails.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Schedule Time**                            | Specify the date and time at which the task, build, deployment, or promotion should be executed. The configured schedule allows the process to run automatically at the designated time without requiring manual intervention.                                                                                                                                                                                                                                                                                                                                               |
+
+<figure><img src="../../../.gitbook/assets/image (1992).png" alt=""><figcaption></figcaption></figure>
 
 **Trigger:** You can trigger a Release Pipeline either **Manually** or on **Successful Build** it to get triggered automatically once its reference build pipeline gets executed successfully.
 
@@ -130,7 +136,7 @@ The **CAP Application Build Task** is used to build an SAP Cloud Application Pro
 
 * **Name**: Enter a unique name for the build task.
 * **Description**: Provide a brief description of the task.
-* **Select Environment(s)**: Choose the environment(s) where the build should be executed.
+* **Select Environment(s)**: Choose the environment(s) where the build should be executed. The available environments are those that have been registered and configured in the **Project Settings** section.
 * **Notify Users**: Enable this option to send notifications to users when the task starts, completes, or fails.
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
@@ -285,3 +291,9 @@ Go to the required pipeline in **Release Pipeline** page and click **Edit** to e
 <div><figure><img src="../../../.gitbook/assets/image (1988).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1987).png" alt=""><figcaption></figcaption></figure></div>
 
 <figure><img src="../../../.gitbook/assets/image (1989).png" alt=""><figcaption></figcaption></figure>
+
+**Build Logs**
+
+The **Build Logs** page displays the execution details of the **CAP Application Build Task** configured in the Release Pipeline. These logs help users monitor the build process, verify successful execution, and troubleshoot any build failures.
+
+<div><figure><img src="../../../.gitbook/assets/image (1994).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1994).png" alt=""><figcaption></figcaption></figure></div>
