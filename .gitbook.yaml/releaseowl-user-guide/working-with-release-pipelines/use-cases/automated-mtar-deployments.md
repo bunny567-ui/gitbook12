@@ -22,38 +22,42 @@ Creating a Release Pipeline is a guided **five-step process**, designed to help 
 **To create a release pipeline:**
 
 1. In **Release**, go to **Release Pipelines.**
-2. Click **Create New Release Pipeline.**
+2. Click **New Release Pipeline.**
 
-<figure><img src="../../../.gitbook/assets/image (1230).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1974).png" alt=""><figcaption></figcaption></figure>
 
-3. Navigate to **Build Pipelines** and click **New Build Pipeline**.
-4. In the pop-up window, select **Import Build Pipeline** or choose **Create New Build Pipeline**.
-5. If **Import Build Pipeline** is selected:
-   * Click **Browse** under **Select JSON File** and upload the exported pipeline configuration file.
-   * Enter a name in the **Build Pipeline Name** field.
-   * Click **Create** to import and create the pipeline.
+3. A pop-up window will appear where you can choose either **New Build Pipeline** or **Import Build Pipeline**.
+4.  If **Import Build Pipeline** is selected:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    * Click **Browse** under **Select JSON File** and upload the exported pipeline configuration file.
+    * Enter a name in the **Build Pipeline Name** field.
+    * Click **Create** to import the configuration and create the build pipeline.
 
-6. **Release Pipeline Name:** Give a name for the release pipeline.<br>
+    <figure><img src="../../../.gitbook/assets/image (1976).png" alt=""><figcaption></figcaption></figure>
+5. If **Create New Build Pipeline** is selecte&#x64;**:**
+   * You will be redirected to the **Build Pipeline** configuration page, where you can define and configure the pipeline stages and tasks.
+6. **Release Pipeline Name:** Give a name for the release pipeline.
+7. **Labels:** Labels act as tags for your release pipeline, helping you categorize, organize, and easily search for pipelines. Multiple labels can be added as needed.
 
 <figure><img src="../../../.gitbook/assets/image (1229).png" alt=""><figcaption></figcaption></figure>
 
-7. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.<br>
+8. **Artifact Source:** The dropdown contains all the build pipelines of type **MTAR**. Choose the build pipeline with the necessary artifacts to be deployed in the environment.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1231).png" alt=""><figcaption></figcaption></figure>
 
-8. **Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
+9. **Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
 
 <figure><img src="../../../.gitbook/assets/image (1237).png" alt=""><figcaption></figcaption></figure>
 
-The newly added stage appears as follows:
+10. The newly added stage appears as follows:
 
 <figure><img src="../../../.gitbook/assets/image (1238).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
 **Note:** To remove any stage, click **Remove Stage** button.
+{% endhint %}
 
-**Tasks:** Click Add to enter any tasks that are to be performed as desired. (Deployment, Approvals, Manual Task, Callout, Test Execution and User Story Status Update)
+**Tasks:** Click **Add** to enter any tasks that are to be performed as desired. (Deployment, Approvals, Manual Task, Callout, Test Execution and User Story Status Update)
 
 <figure><img src="../../../.gitbook/assets/image (1239).png" alt=""><figcaption></figcaption></figure>
 
@@ -85,11 +89,34 @@ Fill in the required details:
 | **Service Key**        | Select the Service Key from the available service keys listed in the dropdown.                                                             |
 | **Node Name**          | Enter a node name added in the Cloud Transport Management System corresponding to the environment to which the artifact is to be uploaded. |
 
-6. **Trigger:** You can trigger a Release Pipeline either **Manually** or on **Successful Build** it to get triggered automatically once its reference build pipeline gets executed successfully.
+**Trigger:** You can trigger a Release Pipeline either **Manually** or on **Successful Build** it to get triggered automatically once its reference build pipeline gets executed successfully.
 
 <figure><img src="../../../.gitbook/assets/image (1242).png" alt=""><figcaption></figcaption></figure>
 
-7. **Notification Emails:** You can specify an email distribution list separated by comma who you want to notify the result of the Release Pipeline Execution – either **Success** or **Failure**. <br>
+**Advance Settings :** The **Advanced Settings** section provides additional configuration options for the release pipeline to help enforce governance and notification requirements.
+
+**Prevent Same Approver Across Tasks**
+
+Enable the **Prevent same approver across tasks** option to enforce segregation of duties within the release pipeline.
+
+When this option is enabled, the same user cannot approve multiple **Human Tasks** within the same release pipeline. This ensures that different approval stages are handled by different individuals, maintaining proper checks and balances throughout the release process.
+
+**Behavior:**
+
+For example, a user who approves a **Peer Review** task cannot also approve subsequent tasks such as **QA Approval** or **UAT Testing** in the same pipeline.
+
+* The system validates approvers across all Human Tasks in the pipeline.
+* If the same user attempts to approve more than one Human Task, the approval action is blocked.
+* An error message is displayed, indicating that the approver has already been used for another task in the pipeline.
+
+**Notification Email(s)**
+
+Use the **Notification Email(s)** field to specify email addresses that should receive notifications related to the release pipeline.
+
+* Enter one or more email addresses separated by commas.
+* Notifications will be sent to the specified recipients based on pipeline events and task activities.
+
+<figure><img src="../../../.gitbook/assets/image (1975).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** If the Release Pipeline fails, the logs are also attached in the notification email. By default, the user who creates the Release Pipeline is notified and specifying the distribution list is optional.
@@ -97,7 +124,7 @@ Fill in the required details:
 
 
 
-8. On clicking Save, the release pipeline gets created and is shown in the Release Pipelines screen.
+8. After configuring the required settings, click **Save** to apply the changes. The **Release Pipeline** will be created successfully and will be available in the **Release Pipelines** list.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -105,7 +132,7 @@ Fill in the required details:
 
 Once the Release Pipeline is created, you can use the **Actions** button for the following options:
 
-* **Save As**:  Opens a popup where you can enter a new name and create a copy of the pipeline.
+**Save As**:  Opens a popup where you can enter a new name and create a copy of the pipeline.
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
@@ -139,24 +166,11 @@ This allows you to view the details of the selected version of the release pipel
 
 <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-**Import Release Pipeline** : It is a process of creating a new release pipeline by uploading a previously exported pipeline configuration file (usually in **JSON format**).
-
-1. Navigate to the **Release Pipelines** section.
-2. Click **New Release Pipeline**.
-
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
-
-3. Select the **Import Release Pipeline.**&#x20;
-4. Upload the previously exported **JSON** file.
-5. Enter a name for the new release pipeline.
-6. Review the pipeline details.
-7. Click **Create** to create the new release pipeline.
-
-<figure><img src="../../../.gitbook/assets/image (1844).png" alt=""><figcaption></figcaption></figure>
-
 **Multi-Stage Release Pipeline**
 
-Any number of stages can be added while creating a release pipeline. An existing release pipeline can also be edited to include various stages. This is required when we want the deployments to take place in multiple environments one after the other continuously which is a part of Continuous Delivery. For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.<br>
+Any number of stages can be added while creating a release pipeline. An existing release pipeline can also be edited to include various stages. This is required when we want the deployments to take place in multiple environments one after the other continuously which is a part of Continuous Delivery.&#x20;
+
+For each stage, the tasks are to be added separately. This corresponds to the tasks that are to be performed in that particular environment for the deployment to take place and the required actions that are to be taken.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1243).png" alt=""><figcaption></figcaption></figure>
 
@@ -214,16 +228,49 @@ To run a release pipeline:
 
 Go to the required pipeline in **Release Pipeline** page and click **Edit** to edit the pipeline.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1977).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :**  Users can now promote builds directly from the **User Story** and **Release Package** sections without navigating to the Build Pipelines module.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### **Assigning Artifacts to User Stories** <a href="#assigning-artifacts-to-user-stories" id="assigning-artifacts-to-user-stories"></a>
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to **Change Management** and click on **User Stories**.
 
-* Users can **select and promote multiple builds at once from the User Story**, making the promotion process more efficient when handling multiple build logs.
+<figure><img src="../../../.gitbook/assets/image (1978).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+2. Click **Create New User Story**.
+3. Enter the required details in the user story creation form.
+4. Click **Create** to save the user story.
+
+<figure><img src="../../../.gitbook/assets/image (1979).png" alt=""><figcaption></figcaption></figure>
+
+5. Click on the **Action** button and select **Edit**.
+
+<figure><img src="../../../.gitbook/assets/image (1980).png" alt=""><figcaption></figcaption></figure>
+
+6. Go to the BTP Applications and click on the "Add " button&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (1981).png" alt=""><figcaption></figcaption></figure>
+
+6. Select the required **BTP Application** and click **Next**.
+7. &#x20;Configure the **Source Reference**:
+   * **Feature Branch**: If **Feature Branch** was selected as the **Transport Mode** during the creation of the BTP Application, the feature branch option will be available while adding the application to the user story. Select the required feature branch as the source reference.
+   * **Cherry Pick**: If **Cherry Pick** was selected as the transport mode, the **Source Reference** field will display the available commits. Select the required commit(s) to be included in the build.
+8. Review the selected configuration and verify that all details are correct.
+9. Click **Finish** to add the build application.
+
+<div><figure><img src="../../../.gitbook/assets/image (1983).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1982).png" alt=""><figcaption></figcaption></figure></div>
+
+<figure><img src="../../../.gitbook/assets/image (1984).png" alt=""><figcaption></figcaption></figure>
+
+*   Users can select and promote multiple builds simultaneously from a User Story, making the promotion process more efficient when managing multiple build logs.
+
+    1. Select one or more builds from the User Story.
+    2. Click **Promote** to initiate the deployment process.
+    3. Click **Deploy** **Logs** to view the deployment details.
+
+    <div><figure><img src="../../../.gitbook/assets/image (1988).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1987).png" alt=""><figcaption></figcaption></figure></div>
+
+<figure><img src="../../../.gitbook/assets/image (1989).png" alt=""><figcaption></figcaption></figure>
