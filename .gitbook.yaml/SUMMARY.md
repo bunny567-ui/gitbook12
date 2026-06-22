@@ -17,6 +17,8 @@
       * [SAP HANA XSA Environment](releaseowl-admin-guide/general-administration/credential-management/sap-hana-xsa-environment.md)
       * [ABAP Cloud Communication](releaseowl-admin-guide/general-administration/credential-management/abap-cloud-communication.md)
       * [Malware Scanning](releaseowl-admin-guide/general-administration/credential-management/malware-scanning.md)
+      * [Static Code Analysis-SonarQube](releaseowl-admin-guide/general-administration/credential-management/static-code-analysis-sonarqube.md)
+      * [Jira](releaseowl-admin-guide/general-administration/credential-management/jira.md)
     * [Settings](releaseowl-admin-guide/general-administration/settings.md)
     * [Callout Feature](releaseowl-admin-guide/general-administration/callout-feature.md)
     * [RO Agents](releaseowl-admin-guide/general-administration/ro-agents.md)
