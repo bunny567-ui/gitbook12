@@ -15,6 +15,7 @@ To register the SAP Integration Environment, you must first register the CPI cre
 | **Name**                                | Enter a unique name for the SAP CPI Environment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Auth Type**                           | Select the authentication type: **Basic Auth** or **OAuth2**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **API URL**                             | Provide the **API URL** for connecting to the SAP CPI Environment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Host URL**                            | Provide the host URL of your Integration Suite instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **Enable Test Automation** _(Optional)_ | Toggle to enable or disable test automation capabilities.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **IFLOW OAuth Credential**              | Select the OAuth credentials used for IFLOW authentication.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **IFLOW URL**                           | Enter the IFLOW URL from the service key.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -28,9 +29,7 @@ To register the SAP Integration Environment, you must first register the CPI cre
 | **Web Authentication**                  | <p>There are <strong>three authentication types</strong> available for CPI Web Authentication in ReleaseOwl:</p><ol><li><strong>None</strong> – No authentication is required.</li><li><strong>Custom Identity Provider (Custom IdP)</strong> – Authentication is performed using a customer-configured Identity Provider.</li><li><strong>SAP Cloud Identity Provider</strong> – Authentication is performed using SAP Cloud Identity Services (IAS).</li><li><strong>SAP Passport</strong> – Authentication is performed using browser-based SAP Passport certificates.</li></ol> |
 | **Enable monitoring ( Beta)**           | <p>Check the <strong>Monitoring</strong> option to enable runtime log tracking for deployed artifacts. </p><p></p><p>If an artifact fails during runtime, the logs can be reviewed to identify the cause of the failure and troubleshoot the issue.</p>                                                                                                                                                                                                                                                                                                                             |
 
-<figure><img src="../../../.gitbook/assets/image (1818).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (2010).png" alt=""><figcaption></figcaption></figure>
 
 **Validate the Environment**
 
@@ -55,7 +54,7 @@ The Custom IDP is used for CPI artifact operations such as:
 * Upload and deployment operations for supported CPI artifacts.
 * Test case execution features that require browser-based access, such as trace enablement and related monitoring operations.
 
-<figure><img src="../../../.gitbook/assets/image (1821).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2008).png" alt=""><figcaption></figcaption></figure>
 
 **Steps to Configure Trust Between SAP BTP Subaccount and ReleaseOwl ( SSO URL)**
 
@@ -76,7 +75,7 @@ The Custom IDP is used for CPI artifact operations such as:
 7. Copy the extracted **SSO URL**.
 8. Paste it into the **SSO URL** field in the **SAP CPI Environment**.
 
-<figure><img src="../../../.gitbook/assets/image (1824).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2011).png" alt=""><figcaption></figcaption></figure>
 
 **Steps to Configure the IDP Auth Email Address/Group Name**
 
@@ -88,23 +87,18 @@ The Custom IDP is used for CPI artifact operations such as:
 **Note :** During the authentication process, ReleaseOwl (or SAP Business Technology Platform, based on your authentication setup) validates the returned attribute value against the configured mappings to authorize user access.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1652).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2012).png" alt=""><figcaption></figcaption></figure>
 
-2. Once saved, a **Test** button will appear. Use this button to verify whether the provided credentials and configuration are correct. Click **Test** to validate the connection.
-3. Upon successful validation, a **shadow user** is created in the SAP BTP tenant. This shadow user is used by ReleaseOwl to authenticate through the configured Custom IDP and perform browser-based operations required for supported CPI artifact activities.
-
-<figure><img src="../../../.gitbook/assets/image (1653).png" alt=""><figcaption></figcaption></figure>
-
-3. A **Download** option also becomes available, allowing you to download the metadata descriptor file.
+2. A **Download** option also becomes available, allowing you to download the metadata descriptor file.
 
 <figure><img src="../../../.gitbook/assets/image (1825).png" alt=""><figcaption></figcaption></figure>
 
 **Steps to Create Trust Configuration in SAP BTP**
 
 1. Return to **Trust Configuration** in the SAP BTP Cockpit.
-2. Click **New Trust Configuration** and select **New** **SAML Trust Configuration**.
+2. &#x20;Select **Add SAML Trust**.
 
-<figure><img src="../../../.gitbook/assets/image (1103).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2013).png" alt=""><figcaption></figcaption></figure>
 
 3. Upload the **ReleaseOwl CPI Environment metadata XML** file.
 4. **Uncheck** the option **"Available for User Logon"** to prevent this IDP from appearing on the SAP login screen.
@@ -133,7 +127,7 @@ The Custom IDP is used for CPI artifact operations such as:
 
 | **Role**                       | **Description**                                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **WorkspacePackagesRead W**    | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
+| **WorkspacePackagesRead**      | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
 | **WorkspacePackagesConfigure** | Configure artifact settings, such as iFlow configuration parameters.                                                                          |
 | **WorkspacePackagesEdit**      | Create and update artifacts such as iFlow, Script Collection, and Message Mapping. Also supports initial creation of Value Mapping artifacts. |
 | **WorkspaceArtifactsDeploy**   | Deploy artifacts to runtime, including iFlow, Script Collection, Message Mapping, and Value Mapping.                                          |
@@ -177,7 +171,7 @@ Add the following roles to ensure proper access and deployment capabilities:
 **Steps to Configure User Groups**
 
 1. Navigate to **Security → Role Collections**.
-2. Select the required **Role Collection** (e.g., _Production_ or _Non-Production_).
+2. Select the previously created **Role Collection**.
 3. Open the **User Groups** tab.
 4. Click on the **“+”** button to add a new user group.
 
@@ -186,7 +180,7 @@ Add the following roles to ensure proper access and deployment capabilities:
 | **Identity Provider** | Select the configured Identity Provider (e.g., Custom IDP). |
 | **Name**              | Enter an appropriate user group name.                       |
 
-<figure><img src="../../../.gitbook/assets/image (1826).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2014).png" alt=""><figcaption></figcaption></figure>
 
 #### **Role Collection Assignment Methods**
 
@@ -206,10 +200,10 @@ You can assign role collections using one of the following methods:
 
 | Field                | Description                                                                                                   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Role Collection**  | Choose the role collection that was created earlier. ( Like production, non-production)                       |
+| **Role Collection**  | Choose the role collection that was created earlier.                                                          |
 | **User Group Name**  | Enter the exact role collection name that was configured during the earlier role collection creation process. |
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2015).png" alt=""><figcaption></figcaption></figure>
 
 **Method 2: Assign Role Collections using Attribute Mapping (Email-Based)**
 
@@ -221,13 +215,28 @@ You can assign role collections using one of the following methods:
 | ----------------------------------------------------------------------------- | --------- | -------- | ------------------------------------- |
 | <p></p><ul><li>Enter the role collection that was created earlier. </li></ul> | email     | equals   | The email ID of the **service user**  |
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2016).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** If you want to use the **Integration Advisor**, you must assign the following roles to the user:
 
 * **iadv-content-developer**
 {% endhint %}
+
+#### Connection Verification
+
+1. Navigate to the credential configuration in **ReleaseOwl**.
+2. Click **Test** to verify that the provided credentials and configuration are valid.
+3. If the validation is successful, ReleaseOwl establishes a connection with the configured SAP BTP tenant.
+
+<figure><img src="../../../.gitbook/assets/image (2017).png" alt=""><figcaption></figcaption></figure>
+
+4. During the verification process, a **shadow user** is automatically created in the SAP BTP tenant.
+5. The shadow user is used by ReleaseOwl to authenticate through the configured **Custom Identity Provider (IDP)** and perform the browser-based operations required for supported **SAP Cloud Integration (CPI)** artifact activities.
+
+<figure><img src="../../../.gitbook/assets/image (2018).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### SAP Cloud Identity Provider
 
