@@ -7,7 +7,7 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 1. Navigate to the **BTP Applications** section.
 2. Click **New BTP Application**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Application Details
 
@@ -24,18 +24,18 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 
 2. After entering all the required details, click **Create** to create the BTP Application.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure Environment Branches
 
 1. Click the **Actions** button corresponding to the BTP Application.
 2. Select **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the **+ Add** button.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Provide the following information:
 
@@ -52,7 +52,7 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 6. Click **Add** to add the application configuration.
 7. Repeat the above steps to add additional environment configurations, if required.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Save** to save the BTP Application and its associated configurations.
 

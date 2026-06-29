@@ -75,7 +75,7 @@ The **Delete** option allows users to permanently remove a project from the appl
 
 The **Project Settings** option allows users to configure and manage project-specific settings. Users can update project configurations, manage ALM integrations, maintain environment details, and modify project-related parameters based on the project requirements.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Project Settings Configuration
 
@@ -90,7 +90,7 @@ The **Project Settings** option allows users to configure and manage project-spe
 
     Each tab provides specific configuration options related to project management and integrations.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **General Tab**
 
@@ -98,7 +98,7 @@ The **General** tab contains the basic project configuration details and setting
 
 <table><thead><tr><th width="374">Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Name</strong></td><td>Displays the project name.</td></tr><tr><td><strong>Description</strong></td><td>Provides a brief description of the project.</td></tr><tr><td><strong>Project Prefix</strong></td><td>A short identifier used for the project.</td></tr><tr><td><strong>Project Type</strong></td><td>Displays the type of project that was selected during project creation. This field is auto-populated based on the configured project type.</td></tr><tr><td><strong>Release Pipeline(default)</strong> </td><td>Specifies the default release pipeline associated with the project. The selected pipeline is used as the default pipeline for release and deployment activities within the project.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Additional Settings**
 
@@ -122,13 +122,13 @@ These settings control validation and approval workflows:
 * Enable this option to make the **Components** field mandatory while creating or updating a user story.
 * Components can be configured at the project level and help improve categorization and organization of user stories.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **On-Premise Integration Settings**
 
 When the project type is selected as an **On-Premise System**, the following additional configuration options are available. These settings apply to projects integrated with on-premise systems such as SAP environments.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Set Transport Description from User Story**
 
@@ -140,7 +140,7 @@ When the project type is selected as an **On-Premise System**, the following add
 * Enable this option to make the **Project** field mandatory during transport creation.
 * This ensures accurate mapping of transports to projects and improves tracking, reporting, and auditability.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -148,7 +148,7 @@ When the project type is selected as an **On-Premise System**, the following add
 
 When the project type is selected as **SAP CPI**, the following additional configuration options are available. These settings apply to projects integrated with SAP Cloud Platform Integration (CPI) systems.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **CPI Settings**
 
@@ -189,7 +189,7 @@ To add an environment, follow these steps:
 
 The newly added environment will appear in the Environments table with details such as the environment name, type, and host URL.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Users
 

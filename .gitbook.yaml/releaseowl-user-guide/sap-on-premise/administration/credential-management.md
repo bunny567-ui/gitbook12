@@ -10,13 +10,16 @@ To integrate a SAP On-Premise system with ReleaseOwl, you must first register th
    * **Credential Name**: Enter a name of your choice.
    * **Username**: Enter your SAP Logon username.
    * **Password**: Enter your SAP Logon password.
-4. Click **Save**.
+4. **Scope** – Select the scope of the credential:
+   * **Global** – Visible to all users.
+   * **Private** – Visible only to the user who created it.
+5. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-5. The credential will now be available to access your **Transport Domain Controller** system.
+6. The credential will now be available to access your **Transport Domain Controller** system.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Credential Registration for SAP BTP Environment**
 
@@ -26,13 +29,17 @@ To integrate a SAP On-Premise system with ReleaseOwl, you must first register th
 2. Fill in the required fields:
    * **Credential Name**: Enter a name of your choice.
    * **Credential Type**: Select **SAP Cloud Environment**.
-   * **Authentication Type**: Choose **Basic.**
-3.  &#x20;Provide your **Username** and **Password** (SAP BTP credentials).
+   * **Scope** – Select the scope of the credential:
+     * **Global** – Visible to all users.
+     * **Private** – Visible only to the user who created it.
+3. **Authentication Type**: Choose **Basic.**
+4. &#x20;Provide your **Username** and **Password** (SAP BTP credentials).
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4. Click **Save**. The credential will now appear in the **List of Credentials**.
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+5. Click **Save**. The credential will now appear in the **List of Credentials**.
+
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

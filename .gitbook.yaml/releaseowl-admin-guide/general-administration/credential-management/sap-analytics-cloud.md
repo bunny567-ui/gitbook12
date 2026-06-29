@@ -8,7 +8,7 @@ ReleaseOwl supports multiple credential types for registration. To register a SA
 
 1. Click on the **"Register Credential"** button.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Fill in the required fields:
 
@@ -20,7 +20,7 @@ ReleaseOwl supports multiple credential types for registration. To register a SA
 
 3. To obtain the **Client ID**, **Client Secret**, **Authorization URL**, and **Token URL**, follow the steps explained below.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### SAP Analytics Cloud&#x20;
 
