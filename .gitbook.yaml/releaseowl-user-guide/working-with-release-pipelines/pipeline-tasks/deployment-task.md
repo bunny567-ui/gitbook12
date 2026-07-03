@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Deployment Task
 
 A **Deployment Task** is a pipeline action that defines _how_ an artifact is delivered, installed, or transported to a designated SAP target system as part of an automated release process. It acts as the execution unit responsible for deploying one or more artifact types—such as SAP Transport Requests (TRs), MTAR packages, or CPI artifacts—to their respective runtime environments.
