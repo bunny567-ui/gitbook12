@@ -25,7 +25,7 @@ By configuring CPI Rules, administrators can establish policies that improve sec
 
 ### 3.2 Configuring Custom Policies
 
-Configure the required policies using the available dropdown fields and selection controls:&#x20;
+Configure the required policies using the available dropdown fields and selection controls.
 
 | **Rule**                                        | **Description**                                                                                                                                       |
 | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
