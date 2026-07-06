@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Transport Manager Credential
 
 ReleaseOwl supports multiple credential types for registration. To register a Transport Manager  credential, follow these steps:

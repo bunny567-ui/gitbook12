@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Jira
 
 ReleaseOwl supports multiple credential types for registration. To register a **Jira Credential,** follow these steps:

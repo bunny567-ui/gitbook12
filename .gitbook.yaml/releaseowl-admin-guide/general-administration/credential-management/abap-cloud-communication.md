@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # ABAP Cloud Communication
 
 ReleaseOwl supports multiple credential types for registration. To register a ABAP Cloud Communication Credential , follow these steps:

@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # SAP Analytics Cloud
 
 ReleaseOwl supports multiple credential types for registration. To register a SAP Analytics Cloud credential, follow these steps:

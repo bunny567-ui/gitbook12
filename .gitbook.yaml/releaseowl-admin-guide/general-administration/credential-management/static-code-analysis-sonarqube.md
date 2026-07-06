@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Static Code Analysis-SonarQube
 
 ReleaseOwl supports multiple credential types for registration. To register a **Static Code Analysis-SonarQube** **Credential,** follow these steps:

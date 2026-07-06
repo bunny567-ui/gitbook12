@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # CRT
 
 ReleaseOwl supports multiple credential types for registration. To register a  **CRT** **Credential,** follow these steps:

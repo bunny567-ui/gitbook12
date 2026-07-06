@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # SAP HANA XSA Environment
 
 ReleaseOwl supports multiple credential types for registration. To register a SAP HANA XSA Environment, follow these steps:

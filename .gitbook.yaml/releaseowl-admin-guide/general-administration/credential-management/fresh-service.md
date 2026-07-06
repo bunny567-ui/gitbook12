@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Fresh Service
 
 ReleaseOwl supports multiple credential types for registration. To register a  **Fresh Service Credential,** follow these steps:

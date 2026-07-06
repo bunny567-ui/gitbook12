@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Docusign
 
 ReleaseOwl supports multiple credential types for registration. To register a  **Docusign,** follow these steps:

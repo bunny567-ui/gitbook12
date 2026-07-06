@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Version Control
 
 ReleaseOwl supports multiple credential types for registration. To register a Version Control credential, follow these steps:

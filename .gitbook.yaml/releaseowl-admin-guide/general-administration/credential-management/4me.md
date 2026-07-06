@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 4Me
 
 ReleaseOwl supports multiple credential types for registration. To register a **4Me** **Credential,** follow these steps:
