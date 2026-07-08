@@ -1,6 +1,6 @@
 # SAP Cloud Environment
 
-ReleaseOwl supports multiple credential types for registration. To register a SAP Analytics Cloud credential, follow these steps:
+ReleaseOwl supports multiple credential types for registration. To register a SAP Cloud Environment credential, follow these steps:
 
 1. Click on the **"Register Credential"** button.
 

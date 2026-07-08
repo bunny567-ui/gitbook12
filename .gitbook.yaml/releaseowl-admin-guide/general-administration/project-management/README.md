@@ -28,7 +28,6 @@ Project Management in **ReleaseOwl** simplifies the planning, execution, and dep
 
 5. Once all fields are filled, click on the **Save** button to create the project.
 6. The newly created project will be listed in the **Projects** table.
-7. The table will display key details such as the project’s **name**, **type**, and **creator**.
 
 <figure><img src="../../../.gitbook/assets/image (1868).png" alt=""><figcaption></figcaption></figure>
 

@@ -1,6 +1,6 @@
 # SAP Datasphere
 
-ReleaseOwl supports multiple credential types for registration. To register a SAP Analytics Cloud credential, follow these steps:
+ReleaseOwl supports multiple credential types for registration. To register a **SAP Datasphere** credential, follow these steps:
 
 1. Click on the **"Register Credential"** button.
 

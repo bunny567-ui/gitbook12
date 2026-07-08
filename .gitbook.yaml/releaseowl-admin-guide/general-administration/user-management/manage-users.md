@@ -85,21 +85,22 @@ Users assigned the **User** role have access only to the projects to which they 
 
 <figure><img src="../../../.gitbook/assets/image (1885).png" alt=""><figcaption></figcaption></figure>
 
-4. The selected projects will be displayed in the Projects table.
-5. Enable the **Project Admin** checkbox if the user should have administrative access for the selected project.
+6. The selected projects will be displayed in the Projects table.
+7. Enable the **Project Admin** checkbox if the user should have administrative access for the selected project.
 
 <figure><img src="../../../.gitbook/assets/image (1883).png" alt=""><figcaption></figcaption></figure>
 
 
 
-6. To manage project-specific roles and environment permissions, click the **Actions** button corresponding to the project.
-7. Select **Edit** to open the configuration page.
+8. To manage project-specific roles and environment permissions, click the **Actions** button corresponding to the project.
+9. Select **Edit** to open the configuration page.
 
 <figure><img src="../../../.gitbook/assets/image (1884).png" alt=""><figcaption></figcaption></figure>
 
-8. In the **Edit** page, users can:
-   * Assign the required roles
-   * Grant deployment permissions for selected environments based on project requirements
+10. In the **Edit** page, users can:
+
+* Assign the required roles
+* Grant deployment permissions for selected environments based on project requirements
 
 <figure><img src="../../../.gitbook/assets/image (1886).png" alt=""><figcaption></figcaption></figure>
 

@@ -36,6 +36,6 @@ To access the **Administration View**, follow these steps:
 2. Navigate to the **Home page**.
 3. Click the **Administration** menu link located at the **bottom-left corner** of the page.
 
-Once **Administration** is selected, a **comprehensive list of all projects associated with the client account** will be displayed. From this view, administrators can manage projects and perform administrative configurations across the platform.
+Once **Administration** is selected, a comprehensive list of all projects associated with the client account will be displayed. From this view, administrators can manage projects and perform administrative configurations across the platform.
 
 <figure><img src="../../.gitbook/assets/image (1864).png" alt=""><figcaption></figcaption></figure>
