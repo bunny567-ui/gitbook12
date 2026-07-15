@@ -11,20 +11,20 @@ ReleaseOwl supports integration with various external systems, including artifac
 
 The **Credential Manager** page displays all registered credentials that are available based on your access permissions.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Credential Types**
 
 Use the **Credential Types** filter to view credentials of a specific type. You can select one or more credential types to display the corresponding registered credentials.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Scope** – Credentials are categorized based on visibility:
   * **Global**: Visible to all users. Credentials created under this scope cannot be deleted by other users.
   * **Private**: Visible only to the user who created them. These credentials remain hidden from other users.
 * **Search Bar** – Use this to quickly search for credentials by name.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Registering a New Credential**:
 

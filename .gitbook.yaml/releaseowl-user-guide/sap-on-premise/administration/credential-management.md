@@ -15,7 +15,7 @@ To integrate a SAP On-Premise system with ReleaseOwl, you must first register th
    * **Private** – Visible only to the user who created it.
 5. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 6. The credential will now be available to access your **Transport Domain Controller** system.
 

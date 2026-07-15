@@ -56,13 +56,13 @@ When configuring **Update Fields**, click on **Add** to open the _Add Custom Fie
 1. After adding the **Update User Story Fields** task to the Release Pipeline, save the configuration and promote the task through any supported mode, such as **User Story**, **Release Package**, or **Transport Management**.
 2. Navigate to the **My Tasks** section, locate the assigned task, and click on the **“>”** icon to open and complete the task.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. You can select the field value defined in the workflow from the available list configured in **Jira** (either Cloud or On-Premise).&#x20;
 4. Once selected, click on the **Update** button. This action will update the corresponding field in the User Story within Jira.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. In the **Pipeline Activity**, you can view the details of the updated workflow fields that have been selected and applied.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

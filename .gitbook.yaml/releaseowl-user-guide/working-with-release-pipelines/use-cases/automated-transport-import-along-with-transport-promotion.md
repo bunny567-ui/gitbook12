@@ -42,9 +42,30 @@ Creating a **Release Pipeline** is a three-step process.
 **Note:** All the tasks **except Deployment** Task are similar for any project type.
 {% endhint %}
 
-6. Once all tasks are added, click the **Save** button to finalize the pipeline configuration.
+**Advanced Settings**
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Advanced Settings** section provides additional configuration options to help enforce governance policies and manage release pipeline notifications.
+
+**Prevent Same Approver Across Tasks**
+
+Enable the **Prevent Same Approver Across Tasks** option to enforce **segregation of duties** within the release pipeline.
+
+When enabled, the same user cannot approve more than one **Human Task** in the same release pipeline. This ensures that each approval stage is completed by a different individual, helping maintain proper governance and accountability throughout the release process.
+
+**Behavior**
+
+* A user who approves one Human Task (for example, **Peer Review**) cannot approve any subsequent Human Tasks, such as **QA Approval** or **UAT Testing**, within the same release pipeline.
+* The system validates approvers across all Human Tasks in the pipeline.
+* If the same user attempts to approve another Human Task, the approval is blocked.
+* An error message is displayed, informing the user that they have already approved a previous Human Task in the pipeline.
+
+**Notification Email(s)**
+
+Use the **Notification Email(s)** field to specify one or more email addresses that should receive notifications related to the release pipeline, such as pipeline events and status updates.
+
+6. After configuring the advanced settings and adding all required tasks, click **Save** to finalize the release pipeline configuration.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Post-Creation Options**
 
@@ -90,9 +111,9 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
     * The **trigger time**&#x20;
     * The **current execution status** of each stage
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (6).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (7).png" alt=""><figcaption></figcaption></figure>
 
     When you **click the Details tab**, you can view:
 
@@ -169,9 +190,9 @@ Validation task is added to perform Static Code Analysis checks and generate the
 | **Continue on Failure** | Checkbox to allow pipeline execution to continue even if validation fails.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Quality Checks**      | <p><strong>ATC Checks:</strong> Executes <strong>ABAP Test Cockpit (ATC)</strong> checks to analyze code quality, syntax errors, performance, and security compliance.                                                                     </p><p></p><p><strong>Impact Analysis:</strong> Checks how the changes in the transport affect other dependent or referencing objects across systems.                                                                      </p><p></p><p><strong>Unit Tests:</strong> Runs <strong>ABAP Unit Tests</strong> to verify the functional correctness of the objects in the transport.                                                                    </p><p></p><p><strong>User  Story Dependencies (Beta):</strong>  Identifies and validates dependent user stories to prevent conflicts or incomplete deployments.                       </p><p></p><p><strong>Note:</strong> You can select <strong>any one or more</strong> of the following <strong>Quality Checks</strong> when configuring the validation task.</p> |
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (22).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (12).png" alt=""><figcaption></figcaption></figure>
 
 ### **Promotion**
 

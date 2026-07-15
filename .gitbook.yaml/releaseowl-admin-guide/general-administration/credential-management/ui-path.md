@@ -4,7 +4,7 @@ ReleaseOwl supports multiple credential types for registration. To register a **
 
 1. Click on the **"Register Credential"** button.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Fill out the credential form with the following details:
 
