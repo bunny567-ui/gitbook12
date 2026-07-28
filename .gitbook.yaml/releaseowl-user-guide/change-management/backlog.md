@@ -1,16 +1,11 @@
 # Backlog
 
-**Backlog** : The backlog is the list of all the user stories that need to get done.
+**Backlog** : The Backlog contains all user stories that have not yet been assigned to a sprint. It serves as a planning area where teams can review, prioritize, and organize work items before including them in a sprint.
 
 <figure><img src="../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:**&#x20;
-
-* If the project that you are working with is associated with any external system like JIRA, and if it has any backlogs, the backlog items appear in the **Backlog** screen upon syncing the user stories in the **User Stories** screen.
-* Always remember to:
-  1. Sync the **Sprints** first.
-  2. Sync the **User Stories**, followed by the **Backlog**.
+**Note:**  Always remember to sync the **Sprints** first.
 {% endhint %}
 
 ### **Syncing User Stories** <a href="#pdf-page-rtodek7jztteuj3bok4r-syncing-user-stories" id="pdf-page-rtodek7jztteuj3bok4r-syncing-user-stories"></a>
