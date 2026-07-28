@@ -23,7 +23,11 @@ Once integrated, you can:
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Creating a Sprint in ReleaseOwl**
+### **Project Integration without External Systems**
+
+Alternatively, for projects without ALM integration, sprints can be created and managed directly within ReleaseOwl.
+
+#### **Creating a Sprint in ReleaseOwl**
 
 1. Click the **Create Sprint** link.
 2. Enter the **Sprint Name** and click **Save**.
