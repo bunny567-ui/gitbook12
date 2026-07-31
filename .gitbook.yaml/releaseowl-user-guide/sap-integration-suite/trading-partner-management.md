@@ -39,15 +39,15 @@ To turn on TPM support for an SAP CPI environment:
 
 4. You'll also need to set up a Releaseowl **Project** and add the **source** and **target** environments (e.g., Dev as the source, QA/Prod as the target) between which TPM artifacts will move.
 
-## &#x20;B2B Scenarios (cpi)
-
-Select the B2B secenarions in the cpi environment. It shows three tabs agreement, partner directory and partner configuration&#x20;
+## &#x20;B2B Scenarios (Cpi)
 
 Once the prerequisites above are complete, open **B2B Scenarios** within the CPI environment/project. This screen has **three tabs**:
 
 1. **Agreements**
 2. **Partner Directory**
 3. **Partner Directory Configuration**
+
+<figure><img src="../../.gitbook/assets/image (2052).png" alt=""><figcaption></figcaption></figure>
 
 ### **1. Agreements**
 
