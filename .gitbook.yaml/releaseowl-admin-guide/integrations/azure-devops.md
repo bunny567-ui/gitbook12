@@ -61,7 +61,7 @@ ReleaseOwl supports **bidirectional integration**, allowing synchronization of u
 3.  **Complete the Sync**:
 
     * A pop-up will confirm when the sync is complete with the message:\
-      &#xNAN;_"User Story Sync Completed."_
+      _"User Story Sync Completed."_
     * Click **OK** to finish.
 
     <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

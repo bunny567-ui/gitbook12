@@ -23,7 +23,7 @@ Release Package is a collection of one or more user stories that are validated a
 | **Promote from (Stage)**      | Default is `Dev`. Displays the list of stages defined in the selected Release Pipeline (excluding the final stage like `Prod`).                                                                                                            |
 | **Add Stories for Promotion** | Automatically adds all eligible user stories that are **not already part of another release package** and are ready to be promoted from the selected stage.                                                                                |
 | **Add User Story**            | Allows manual selection of user stories  from the selected Promote from (Stage). You can select multiple entries in one go.                                                                                                                |
-| **Arrows (**&#xD83D;� 🔽)     | The **arrow buttons** let you change the **execution order** of user stories in the pipeline. Use them when one artifact depends on another, ensuring dependent components are deployed in the correct sequence during pipeline execution. |
+| **Arrows (**&#x1F53C; 🔽)     | The **arrow buttons** let you change the **execution order** of user stories in the pipeline. Use them when one artifact depends on another, ensuring dependent components are deployed in the correct sequence during pipeline execution. |
 
 4. Click **Save.**
 
