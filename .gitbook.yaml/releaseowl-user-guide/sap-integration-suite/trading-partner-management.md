@@ -79,7 +79,7 @@ Use this tab to view the Partner Directory data behind your agreements directly 
 
 ### 3.  Partner Directory Configuration Tab
 
-This is the Releaseowl-only artefact used to **group specific Partner Directory attributes together** so they can be versioned and deployed as a single unit — instead of moving every attribute one at a time.
+This is the Releaseowl-only artifact used to **group specific Partner Directory attributes together** so they can be versioned and deployed as a single unit — instead of moving every attribute one at a time.
 
 **Create a configuration**
 
