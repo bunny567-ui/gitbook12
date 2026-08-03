@@ -10,20 +10,16 @@ Before using the TPM module in Releaseowl, the following must be in place:
 
 **1. Role for Partner Directory sync (public API)**
 
-Releaseowl syncs Partner Directory data using SAP's public **Process Integration Runtime API**. For this to work, assign the following role to the technical/integration user in SAP:
-
-* **`AuthGroup_TenantPartnerDirectoryConfigurator`**
-
-This authorizes Releaseowl's public API calls to read and update Partner Directory attributes.
+**`AuthGroup_TenantPartnerDirectoryConfigurator`** authorizes calls made through SAP's public Process Integration Runtime API, which Releaseowl uses to sync Partner Directory data.
 
 **2. Roles for Agreement actions (web authentication)**
 
-Agreement-level actions — sync and activation — go through web/browser authentication against the TPM tenant, not the public API. In the tenant's **Trust Configuration**, assign both of the following roles to the user/role collection Releaseowl authenticates as:
+Agreement actions — sync, edit, and activation — go through web/browser authentication against the TPM tenant, not the public API. Assign both of the following roles in the tenant's Trust Configuration:
 
-* **`TPM Agreement Configuration – Edit`**
-* **`TPM Agreement Configuration – Activate`**
+* **`TPMAgreementConfigurationEdit`**  — read, edit, and import/export Agreements
+* **`TPMAgreementConfigurationActivate`** — activate/deactivate Agreements
 
-Both roles are required together.
+Both roles are required together — edit access alone does not permit activation, and activate access alone does not permit editing.
 
 **3.  Enable Trading Partner Management for an Environment**
 
