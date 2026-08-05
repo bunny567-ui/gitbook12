@@ -1,6 +1,6 @@
 # Working with User Stories
 
-User Stories allow you to group and manage artifacts that are deployed together through a Release Pipeline. You can associate artifacts from different SAP Integration Suite services, such as Cloud Integration (CPI), Integration Advisor, API Management, and B2B Scenarios, with a single User Story.
+User Stories allow you to group and manage artifacts that are deployed together through a [Release Pipeline](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-cpi-deployments). You can associate artifacts from different SAP Integration Suite services, such as Cloud Integration (CPI), Integration Advisor, API Management, and B2B Scenarios, with a single User Story.
 
 ### Creating a User Story
 
