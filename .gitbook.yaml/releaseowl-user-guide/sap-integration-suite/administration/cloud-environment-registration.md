@@ -28,8 +28,11 @@ To register the SAP Integration Environment, you must first register the CPI cre
 | **Environment Type**                    | Select the environment type (e.g., **Dev**, **QA**, **Prod**).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Web Authentication**                  | <p>There are <strong>three authentication types</strong> available for CPI Web Authentication in ReleaseOwl:</p><ol><li><strong>None</strong> – No authentication is required.</li><li><strong>Custom Identity Provider (Custom IdP)</strong> – Authentication is performed using a customer-configured Identity Provider.</li><li><strong>SAP Cloud Identity Provider</strong> – Authentication is performed using SAP Cloud Identity Services (IAS).</li><li><strong>SAP Passport</strong> – Authentication is performed using browser-based SAP Passport certificates.</li></ol> |
 | **Enable monitoring ( Beta)**           | <p>Check the <strong>Monitoring</strong> option to enable runtime log tracking for deployed artifacts. </p><p></p><p>If an artifact fails during runtime, the logs can be reviewed to identify the cause of the failure and troubleshoot the issue.</p>                                                                                                                                                                                                                                                                                                                             |
+| **Enable Trading Partner Management**   | Check the enable trading partner management and                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-<figure><img src="../../../.gitbook/assets/image (2010).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2054).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (2055).png" alt=""><figcaption></figcaption></figure>
 
 **Validate the Environment**
 
@@ -125,6 +128,8 @@ The Custom IDP is used for CPI artifact operations such as:
 
 7. Add the following roles to ensure proper access and deployment capabilities:
 
+**CPI:** The following roles are required for Cloud Integration (CPI)
+
 | **Role**                       | **Description**                                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | **WorkspacePackagesRead**      | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
@@ -132,7 +137,18 @@ The Custom IDP is used for CPI artifact operations such as:
 | **WorkspacePackagesEdit**      | Create and update artifacts such as iFlow, Script Collection, and Message Mapping. Also supports initial creation of Value Mapping artifacts. |
 | **WorkspaceArtifactsDeploy**   | Deploy artifacts to runtime, including iFlow, Script Collection, Message Mapping, and Value Mapping.                                          |
 | **MonitoringDataRead**         | Access message processing logs and monitoring data for iFlow, SOAP, REST, and OData APIs.                                                     |
-| **Content Developer**          | Create/update MIGs and MAGs                                                                                                                   |
+
+**Integration Advisor:** The following roles are required for Integration Advisor
+
+<table><thead><tr><th width="374">Role</th><th>Description</th></tr></thead><tbody><tr><td><strong>Content Developer</strong></td><td>Create/update MIGs and MAGs</td></tr></tbody></table>
+
+**Trading Partner Management:**  The following roles are required for Trading Partner Management
+
+| `TPMAgreementConfigurationEdit`                | Read, import and export agreements                             |
+| ---------------------------------------------- | -------------------------------------------------------------- |
+| `TPMAgreementConfigurationActivate`            | Activate agreements                                            |
+| `AuthGroup_TenantPartnerDirectoryConfigurator` | Read/write Partner Directory (required for pushing agreements) |
+| `CredentialsRead`                              | Read credentials and keystore entries                          |
 
 8. Click **Save** after adding the roles.
 
@@ -152,6 +168,8 @@ Similarly, create a role collection for the non-production environment to enable
 
 Add the following roles to ensure proper access and deployment capabilities:
 
+**CPI:**&#x54;he following roles are required for Cloud Integration (CPI)
+
 | **Role**                                               | **Description**                                                                                                                               |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | **WorkspacePackagesRead**                              | Read CPI artifacts such as iFlow, Script Collection, Message Mapping, and Value Mapping.                                                      |
@@ -162,7 +180,18 @@ Add the following roles to ensure proper access and deployment capabilities:
 | **MessagePayloadsRead**                                | View message payloads in monitoring.                                                                                                          |
 | **TraceConfigurationRead**                             | View the current tracing configuration.                                                                                                       |
 | **TraceConfigurationEdit**                             | Modify tracing configuration (enable trace configuration).                                                                                    |
-| **Content Developer**                                  | Create/update MIGs and MAGs                                                                                                                   |
+
+**Integration Advisor:** The following roles are required for Integration Advisor
+
+<table><thead><tr><th width="374">Role</th><th>Description</th></tr></thead><tbody><tr><td><strong>Content Developer</strong></td><td>Create/update MIGs and MAGs</td></tr></tbody></table>
+
+**Trading Partner Management:**  The following roles are required for Trading Partner Management
+
+| `TPMAgreementConfigurationEdit`                | Read, import and export agreements                             |
+| ---------------------------------------------- | -------------------------------------------------------------- |
+| `TPMAgreementConfigurationActivate`            | Activate agreements                                            |
+| `AuthGroup_TenantPartnerDirectoryConfigurator` | Read/write Partner Directory (required for pushing agreements) |
+| `CredentialsRead`                              | Read credentials and keystore entries                          |
 
 6. Click **Save** to complete the setup.
 
@@ -278,6 +307,8 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Identity Services** to support
 <figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Navigate to **Attribute Mappings** and fill in the required mappings:
+
+
 
 | **Related Role**                                                                                                      | **Attribute Name** | **Value**                         | **Operator** |
 | --------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------- | ------------ |

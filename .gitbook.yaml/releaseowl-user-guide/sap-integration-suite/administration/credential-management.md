@@ -54,29 +54,31 @@ In the **Parameters** step, assign the required roles based on the target enviro
 
 **For Non-Production Environments**, add the following roles:
 
-| Role                           | Description                                                                                                                                                         |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **WorkspacePackagesRead**      | Provides read access to CPI artifacts such as **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                                     |
-| **WorkspacePackagesConfigure** | Allows configuration of artifact settings, such as **iFlow configuration parameters**.                                                                              |
-| **WorkspacePackagesEdit**      | Enables creation and modification of artifacts such as **iFlow, Script Collection, and Message Mapping**. For **Value Mapping**, it supports only initial creation. |
-| **WorkspaceArtifactsDeploy**   | Grants permission to deploy artifacts to runtime, including **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                       |
-| **MonitoringDataRead**         | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
-| **MessagePayloadsRead**        | Allows users to view message payloads in monitoring.                                                                                                                |
-| **TraceConfigurationRead**     | Provides access to view the current tracing configuration.                                                                                                          |
-| **TraceConfigurationEdit**     | Allows modification of tracing settings, including enabling trace configuration.                                                                                    |
+| Role                                              | Description                                                                                                                                                         |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**                         | Provides read access to CPI artifacts such as **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                                     |
+| **WorkspacePackagesConfigure**                    | Allows configuration of artifact settings, such as **iFlow configuration parameters**.                                                                              |
+| **WorkspacePackagesEdit**                         | Enables creation and modification of artifacts such as **iFlow, Script Collection, and Message Mapping**. For **Value Mapping**, it supports only initial creation. |
+| **WorkspaceArtifactsDeploy**                      | Grants permission to deploy artifacts to runtime, including **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                       |
+| **MonitoringDataRead**                            | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
+| **MessagePayloadsRead**                           | Allows users to view message payloads in monitoring.                                                                                                                |
+| **TraceConfigurationRead**                        | Provides access to view the current tracing configuration.                                                                                                          |
+| **TraceConfigurationEdit**                        | Allows modification of tracing settings, including enabling trace configuration.                                                                                    |
+| **AuthGroup\_TenantPartnerDirectoryConfigurator** | Allows configuration of the Partner Directory, including creating, modifying, and deleting partner directory entries and their associated configuration data.       |
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2053).png" alt=""><figcaption></figcaption></figure>
 
 **For Production Environments**, add the following roles to enable deployment access
 
-| Role                           | Description                                                                                                                                                         |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **WorkspacePackagesRead**      | Provides read access to CPI artifacts such as **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                                     |
-| **WorkspacePackagesConfigure** | Allows users to configure artifact settings, such as **iFlow configuration parameters**.                                                                            |
-| **WorkspacePackagesEdit**      | Enables creation and modification of artifacts such as **iFlow, Script Collection, and Message Mapping**. For **Value Mapping**, it supports only initial creation. |
-| **WorkspaceArtifactsDeploy**   | Grants permission to deploy artifacts to runtime, including **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                       |
-| **MonitoringDataRead**         | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
-| **MessagePayloadsRead**        | Allows users to view message payloads in monitoring.                                                                                                                |
+| Role                                              | Description                                                                                                                                                         |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WorkspacePackagesRead**                         | Provides read access to CPI artifacts such as **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                                     |
+| **WorkspacePackagesConfigure**                    | Allows users to configure artifact settings, such as **iFlow configuration parameters**.                                                                            |
+| **WorkspacePackagesEdit**                         | Enables creation and modification of artifacts such as **iFlow, Script Collection, and Message Mapping**. For **Value Mapping**, it supports only initial creation. |
+| **WorkspaceArtifactsDeploy**                      | Grants permission to deploy artifacts to runtime, including **iFlow, Script Collection, Message Mapping, and Value Mapping**.                                       |
+| **MonitoringDataRead**                            | Provides access to message processing logs and monitoring data for **iFlow, SOAP, REST, and OData APIs**.                                                           |
+| **MessagePayloadsRead**                           | Allows users to view message payloads in monitoring.                                                                                                                |
+| **AuthGroup\_TenantPartnerDirectoryConfigurator** | Allows configuration of the Partner Directory, including creating, modifying, and deleting partner directory entries and their associated configuration data.       |
 
 <figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 

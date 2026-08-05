@@ -112,17 +112,43 @@ Configure the deployment environment for the Build Pipeline:
 
 <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Tool Integrations**
+### **Tool Integrations** <a href="#pdf-page-hbalethepy3zsklyalpx-tool-integrations" id="pdf-page-hbalethepy3zsklyalpx-tool-integrations"></a>
 
-1. **Static Code Analysis**
+The **Tool Integrations** step allows you to configure additional validation and security tools that run during the Build Pipeline execution. You can enable one or more integrations based on your project requirements.
 
-Use Static Code Analysis tools, such as **SonarQube**, to perform code quality checks during the build process.
+#### **1. Static Code Analysis**
 
-* **Enable Static Code Analysis**.
-* **Credentials**: Select the appropriate credential from the drop-down list. The available credentials are those that have been previously registered in the **ReleaseOwl Credentials** section.
-* **ESL Lint**: Enable ESLint to analyze code for coding standard violations, syntax issues, and potential errors. Any ESLint validation failures detected during the build process are displayed in the **Static Code Analysis** results.&#x20;
+Use **Static Code Analysis** tools, such as SonarQube, to perform code quality analysis during the build process.
 
-2. **Malware Scan**
+To configure Static Code Analysis:
+
+1. Select the **Static Code Analysis** checkbox.
+2.  From the **Credentials** drop-down list, select the appropriate SonarQube credential.
+
+    The available credentials are those previously configured in the **Credentials** section of ReleaseOwl.
+3. The available credentials are those previously configured in the **Credentials** section of ReleaseOwl.
+
+**ESLint**
+
+ESLint is a static analysis tool that analyzes source code without executing it to identify coding standard violations, syntax errors, and potential issues.
+
+When enabled, ReleaseOwl executes the ESLint script configured in your project repository during the Build Pipeline execution and forwards the analysis results to SonarQube. The reported violations are also available in the **Issues** tab within ReleaseOwl.
+
+**Prerequisites**
+
+Before enabling ESLint, ensure that your project repository contains the following:
+
+* An ESLint configuration file, such as `eslint.config.js` or `.eslintrc.json`. This file defines the linting rules used to analyze your source code.
+* ESLint dependencies declared in the project's `package.json`.
+* The following script in the `package.json` file to execute ESLint and generate the `eslint-report.json` file required for SonarQube integration:
+
+```
+{  "scripts": {    "lint:sonar": "eslint . -f json -o eslint-report.json"  }}
+```
+
+This script executes ESLint on the project and generates the `eslint-report.json` file, which is imported by SonarQube to display ESLint issues.
+
+#### **2. Malware Scan**
 
 Configure malware scanning to detect potential security threats in the application artifacts.
 
@@ -131,7 +157,7 @@ Configure malware scanning to detect potential security threats in the applicati
 * **Credentials**: Select the registered credential from the drop-down list.
 * **Timeout**: Specify the timeout duration for the malware scan process.
 
-3. **SAP CVE Scan**
+#### **3. SAP CVE Scan**
 
 CVE scans identify any vulnerable versions of libraries used in your **CAP application** by checking known vulnerabilities.
 

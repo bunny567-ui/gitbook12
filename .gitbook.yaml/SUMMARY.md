@@ -89,7 +89,7 @@
       * [CPI Validation - CPILint](releaseowl-user-guide/sap-integration-suite/cpi-management/cpi-validation-cpilint.md)
       * [iFlow Unit Testing](releaseowl-user-guide/sap-integration-suite/cpi-management/iflow-unit-testing.md)
       * [Integration Advisor](releaseowl-user-guide/sap-integration-suite/cpi-management/integration-advisor.md)
-      * [B2B Scenarios](releaseowl-user-guide/sap-integration-suite/cpi-management/b2b-scenarios.md)
+      * [B2B Scenarios](releaseowl-user-guide/sap-integration-suite/trading-partner-management.md)
     * [CPI Test Generator](releaseowl-user-guide/sap-integration-suite/cpi-test-generator.md)
     * [CPI Monitoring](releaseowl-user-guide/sap-integration-suite/cpi-monitoring.md)
   * [SAP Cloud Identity Services](releaseowl-user-guide/sap-cloud-identity-services/README.md)
