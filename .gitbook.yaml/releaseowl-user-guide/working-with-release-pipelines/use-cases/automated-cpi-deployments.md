@@ -240,59 +240,6 @@ Go to the required pipeline and click **Edit** to edit the pipeline or **Delete*
 
 <figure><img src="../../../.gitbook/assets/image (1269).png" alt=""><figcaption></figcaption></figure>
 
-### **Assigning Artifacts to User Stories**
 
-1. Navigate to **Change Management** and click on **User Stories**.
-
-<figure><img src="../../../.gitbook/assets/image (1896).png" alt=""><figcaption></figcaption></figure>
-
-2. Click **Create New User Story**, fill in the required details, and save it.
-3. Click on the **Action** button and select **Edit**.
-
-<figure><img src="../../../.gitbook/assets/image (1897).png" alt=""><figcaption></figcaption></figure>
-
-4. Add the required **CPI Artifacts**.
-5. Click **Save** to save the artifacts.
-
-<figure><img src="../../../.gitbook/assets/image (1888).png" alt=""><figcaption></figcaption></figure>
-
-5. Click the **three-dot (More Actions)** menu.
-6. Select **Import Settings**.
-
-<figure><img src="../../../.gitbook/assets/image (1889).png" alt=""><figcaption></figcaption></figure>
-
-7. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
-
-<figure><img src="../../../.gitbook/assets/image (1890).png" alt=""><figcaption></figcaption></figure>
-
-8. When _Force Deploy_ is enabled, version validation checks do not block the deployment.
-9. If the target environment version is higher than the source environment version, a warning message is displayed.
-10. Click **Promote** to start the deployment process.
-11. Monitor the deployment status of the user story.
-
-<figure><img src="../../../.gitbook/assets/image (1891).png" alt=""><figcaption></figcaption></figure>
-
-12. Click **Deploy Logs**.
-13. The deployment details are displayed in the **SAP CPI Deploy Logs** window with the following columns:
-
-* **Upload Status** – Indicates whether the artifact was successfully uploaded.
-* **Config Status** – Confirms whether the configuration for new or updated artifacts was completed successfully.
-* **Deploy Status** – Reflects the final deployment status of the artifact.
-* **Already Deployed** – Indicates that the artifact was previously deployed, either during a retry operation or through manual completion. This status helps avoid duplicate deployments and provides clarity during re-runs.
-* **Manual Completion** – If a deployment fails or times out, users can use the Manual Completion option in ReleaseOwl to resolve the issue manually and continue the pipeline execution.
-* **Refresh Button** – Fetches the CPI runtime artifact deployment status and updates the runtime status in the deployment log.
-* **Icon in Artifact Name** - An icon is displayed in the Deployment Logs section next to the artifact name to indicate that **Force Deployment** was applied.
-
-<figure><img src="../../../.gitbook/assets/image (1898).png" alt=""><figcaption></figcaption></figure>
-
-#### Additional Actions
-
-* **Retry Button** – Allows users to reattempt a failed deployment or pipeline stage.
-
-<figure><img src="../../../.gitbook/assets/image (1894).png" alt=""><figcaption></figcaption></figure>
-
-* **Status Button** – If the status is displayed as **“Suspended”**, it indicates that the pipeline or task has been paused or is awaiting manual action.
-
-<figure><img src="../../../.gitbook/assets/image (1893).png" alt=""><figcaption></figcaption></figure>
 
 <br>
