@@ -4,78 +4,53 @@ The Trading Partner Management (TPM) module in Releaseowl lets you synchronize, 
 
 Releaseowl integrates with SAP Trading Partner Management to manage the deployment lifecycle of TPM artifacts. Using this module, you can synchronize Agreements and Partner Directory artifacts from a source environment, organize them into User Stories, and promote them through your Release Pipelines
 
-## Prerequisites
+## &#x20;B2B Scenarios&#x20;
 
-Before using the TPM module in Releaseowl, the following must be in place:
-
-**1. Role for Partner Directory sync (public API)**
-
-**`AuthGroup_TenantPartnerDirectoryConfigurator`** authorizes calls made through SAP's public Process Integration Runtime API, which Releaseowl uses to sync Partner Directory data.
-
-**2. Roles for Agreement actions (web authentication)**
-
-Agreement actions — sync, edit, and activation — go through web/browser authentication against the TPM tenant, not the public API. Assign both of the following roles in the tenant's Trust Configuration:
-
-* **`TPMAgreementConfigurationEdit`**  — read, edit, and import/export Agreements
-* **`TPMAgreementConfigurationActivate`** — activate/deactivate Agreements
-
-Both roles are required together — edit access alone does not permit activation, and activate access alone does not permit editing.
-
-**3.  Enable Trading Partner Management for an Environment**
-
-To turn on TPM support for an SAP CPI environment:
-
-1. Go to **Administration → Environments**.
-2. Select the relevant SAP CPI environment (or register a new one if it isn't already added).
-3. Under **General Information**, check **Enable Trading Partner Management**.
-4. Once checked, a **Configure Import Options** button appears next to it — use this to set the tenant-level (default) import behavior for TPM artifacts synced into this environment.
-5. Click **Save** on the environment.
-
-<figure><img src="../../.gitbook/assets/image (2042).png" alt=""><figcaption></figcaption></figure>
-
-4. You'll also need to set up a Releaseowl **Project** and add the **source** and **target** environments (e.g., Dev as the source, QA/Prod as the target) between which TPM artifacts will move.
-
-## &#x20;B2B Scenarios (Cpi)
-
-Once the prerequisites above are complete, open **B2B Scenarios** within the CPI environment/project. This screen has **three tabs**:
+Open **B2B Scenarios** within the CPI environment/project. This screen has **three tabs**:
 
 1. **Agreements**
 2. **Partner Directory**
 3. **Partner Directory Configuration**
 
-<figure><img src="../../.gitbook/assets/image (2052).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2057).png" alt=""><figcaption></figcaption></figure>
 
 ### **1. Agreements**
 
-This tab is where agreements exported from the SAP TPM tenant are brought into Releaseowl and tracked.
+This tab is used to import agreements exported from the **B2B Scenarios** application in SAP Integration Suite into ReleaseOwl.
 
 &#x20;**Adding an Agreement**
 
-* Click **Add Artifacts**. Every agreement that has already been **exported** from the source SAP TPM tenant is listed here and can be pulled into Releaseowl.
-* Releaseowl does not create or edit agreements — it only ever reflects what has already been exported in SAP.
+* Click **Add Artifacts**.
+* The dialog displays all agreement artifacts that have been exported from the **B2B Scenarios** application in SAP Integration Suite and are available for import.
+* Select the required agreement(s) and add them to ReleaseOwl for deployment.
 
-<figure><img src="../../.gitbook/assets/image (2036).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2058).png" alt=""><figcaption></figcaption></figure>
 
-Once an agreement is added, use the action options to view its details, download the artifact, and check its deployment history.
+* Once an agreement is added, use the action options to view its details, download the artifact, and check its deployment history.
 
-| Action                 | What it does                                                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Details**            | Shows what's contained inside the agreement — the configuration elements bundled into that agreement package. |
-| **Download**           | Downloads the exported agreement artifact/package to your local machine.                                      |
-| **Deployment History** | Shows the history of deployments carried out for that agreement — which environment, when, and the outcome.   |
+| Action                 | What it does                                                                                                |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Details**            | Displays the details of the selected exported agreement.                                                    |
+| **Download**           | Downloads the exported agreement artifact to your local machine.                                            |
+| **Deployment History** | Shows the history of deployments carried out for that agreement — which environment, when, and the outcome. |
 
-<figure><img src="../../.gitbook/assets/image (2037).png" alt=""><figcaption></figcaption></figure>
 
-### 2. Partner Directory&#x20;
 
-Use this tab to view the Partner Directory data behind your agreements directly — the raw identifiers and parameters — independent of any configuration grouping.
+<figure><img src="../../.gitbook/assets/image (2059).png" alt=""><figcaption></figcaption></figure>
 
-* Entries appear as type **String** or **Binary**.
-* You can **sync** any entry as an artefact from SAP into Releaseowl.
-* Each entry has a **sync history**, showing when it was last synced and its status.
-* Use **Search by ID** to jump straight to a specific Partner Directory attribute instead of scrolling the full list.
+### 2. Partner Directory Data
 
-<figure><img src="../../.gitbook/assets/image (2038).png" alt=""><figcaption></figcaption></figure>
+Use this tab to view the Partner Directory data associated with Trading Partner Management (TPM).
+
+* Click **Sync Artifacts** to synchronize Partner Directory data from the **B2B Scenarios** application in SAP Integration Suite into ReleaseOwl. Use **Search by ID** to quickly locate a specific Partner Directory ID.
+
+<figure><img src="../../.gitbook/assets/image (2060).png" alt=""><figcaption></figcaption></figure>
+
+* Click the **Expand** (arrow) icon to view the details of a Partner Directory entry, including the **Parameter ID**, **Value**, **Type**, and **Content Type**.
+* Parameter ID entries can be of type **String** or **Binary**.
+* For Parameter ID entries of type **Binary**, you can download the associated binary content.
+
+<figure><img src="../../.gitbook/assets/image (2061).png" alt=""><figcaption></figcaption></figure>
 
 ### 3.  Partner Directory Configuration Tab
 
@@ -85,7 +60,7 @@ This is the Releaseowl-only artifact used to **group specific Partner Directory 
 
 1. Go to the **Partner Directory Configuration** tab.
 
-<figure><img src="../../.gitbook/assets/image (2043).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2062).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **Create Partner Directory Configuration**.
 3. In the pop-up, enter:
@@ -93,74 +68,44 @@ This is the Releaseowl-only artifact used to **group specific Partner Directory 
    * **Version**
 4. Click **Create**. Your new configuration now appears in the configuration list.
 
-<figure><img src="../../.gitbook/assets/image (2040).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2063).png" alt=""><figcaption></figcaption></figure>
 
 5. Click the **Actions** button on your configuration, then choose **Edit**.
+
+<figure><img src="../../.gitbook/assets/image (2064).png" alt=""><figcaption></figcaption></figure>
+
 6. Click **Add**, and select the Partner Directory data (attributes/IDs) you want included.
 7. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (2041).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2065).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-**Note: I**f you go back later and add more Partner Directory IDs to the same configuration, Releaseowl saves that change as a **new version** rather than overwriting the existing one — so each meaningful change to the attribute set is preserved as its own version.
-{% endhint %}
+8. After adding the Partner Directory entries, you can choose one of the following options:
+   * **Save** – Saves the changes to the current Partner Directory Configuration.
+   * **Save as Version** – Creates a new version of the Partner Directory Configuration while preserving the existing version.
 
-**Configurations:**
+<figure><img src="../../.gitbook/assets/image (2066).png" alt=""><figcaption></figcaption></figure>
 
-* To change the value of a parameter on an attribute you've already added, open the **Configurations** button for that Partner Directory ID.
+**Configure:**
 
-<figure><img src="../../.gitbook/assets/image (2044).png" alt=""><figcaption></figcaption></figure>
+* To change the value of a parameter on an attribute you've already added, open the **Configure** button for that Partner Directory ID.
 
-* If the attribute is of type **Binary**, a form opens inline within the configuration where you can update the value of its parameters directly.
+<figure><img src="../../.gitbook/assets/image (2067).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2045).png" alt=""><figcaption></figcaption></figure>
+* Click the **Edit** (pencil) icon next to the required field.
+* Update the necessary configuration parameters.
+* Click **Save** to persist changes.
 
-**Deployment History and Versions**
+<figure><img src="../../.gitbook/assets/image (2068).png" alt=""><figcaption></figcaption></figure>
 
-* **Deployment History** shows you the past deployments of this configuration.
+**Deployment History**&#x20;
+
+* **Deployment History** : Displays the deployment history of the Partner Directory Configuration.
+
+<figure><img src="../../.gitbook/assets/image (2069).png" alt=""><figcaption></figcaption></figure>
+
 * **Versions** lists every version created for the configuration. From here, you can **assign a specific version to a User Story** for deployment.
 
-### 4. Working with User Stories
+<figure><img src="../../.gitbook/assets/image (2070).png" alt=""><figcaption></figcaption></figure>
 
-Once your Agreements and/or Partner Directory Configurations are ready, bundle them into a User Story for deployment:
 
-1. Assign the artifact (or a specific configuration version) to a **User Story** — either from the artefact's **Versions** screen, or by user story sections
-2. &#x20;Go to  **B2B Scenarios** and click **Add** to attach the Agreement or Partner Directory Configuration to that User Story.
-
-<figure><img src="../../.gitbook/assets/image (2046).png" alt=""><figcaption></figcaption></figure>
-
-3. **Agreements:** Click the **Actions** button on an agreement inside the User Story to open its **import settings**, where you'll find:
-
-* **Force Deploy** — lets you redeploy the agreement again even if it was already deployed.
-* **Individual artefact import settings** — artefact-specific import options that override the environment's tenant-level default.
-
-<figure><img src="../../.gitbook/assets/image (2047).png" alt=""><figcaption></figcaption></figure>
-
-4. **Partner Directory Configuration:** Import settings here only offer **Force Deploy** — there are no individual artefact-level import settings for this artifact type.
-
-#### Deployment order
-
-Releaseowl always deploys in this order:
-
-1. **Agreement is imported first.**
-2. **Partner Directory Configuration is imported afterward.**
-
-This order is enforced deliberately — if the Partner Directory Configuration were deployed first, the Agreement import/activation that follows would **override** it. Deploying the Agreement first, then the Partner Directory Configuration, keeps your Partner Directory data intact.
-
-<figure><img src="../../.gitbook/assets/image (2048).png" alt=""><figcaption></figcaption></figure>
-
-### 5. Promoting and Monitoring a Deployment
-
-1. Click **Promote** to deploy the User Story's artifacts through the pipeline.
-2. This opens the **deploy logs**, showing you what was deployed, along with each artifact's **import status.**&#x20;
-
-<figure><img src="../../.gitbook/assets/image (2049).png" alt=""><figcaption></figcaption></figure>
-
-3. Click the **import status** icon next to any Agreement or Partner Directory Configuration to view its detailed **import logs**.
-
-<figure><img src="../../.gitbook/assets/image (2050).png" alt=""><figcaption></figcaption></figure>
-
-3. Click the **activation status** icon (success or failed) on an Agreement to view its **activation logs**.
-
-<figure><img src="../../.gitbook/assets/image (2051).png" alt=""><figcaption></figcaption></figure>
 

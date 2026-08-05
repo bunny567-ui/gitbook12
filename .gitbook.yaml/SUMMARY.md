@@ -92,6 +92,7 @@
       * [B2B Scenarios](releaseowl-user-guide/sap-integration-suite/trading-partner-management.md)
     * [CPI Test Generator](releaseowl-user-guide/sap-integration-suite/cpi-test-generator.md)
     * [CPI Monitoring](releaseowl-user-guide/sap-integration-suite/cpi-monitoring.md)
+    * [Working with User Stories](releaseowl-user-guide/sap-integration-suite/working-with-user-stories.md)
   * [SAP Cloud Identity Services](releaseowl-user-guide/sap-cloud-identity-services/README.md)
     * [Administration](releaseowl-user-guide/sap-cloud-identity-services/administration/README.md)
       * [Credential Management](releaseowl-user-guide/sap-cloud-identity-services/administration/credential-management.md)
