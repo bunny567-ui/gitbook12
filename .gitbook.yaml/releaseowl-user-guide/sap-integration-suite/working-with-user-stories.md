@@ -105,6 +105,16 @@ Click **OK** to add the selected B2B Scenarios to the User Story.
 
 <figure><img src="../../.gitbook/assets/image (2094).png" alt=""><figcaption></figcaption></figure>
 
+### Attachments
+
+The **Attachments** section allows you to add supporting files or external links to the User Story.
+
+* Click **Browse File**.
+* Upload the required file or provide the external link.
+* Click **Upload File** to attach the file or link to the User Story.
+
+<figure><img src="../../.gitbook/assets/image (2102).png" alt=""><figcaption></figcaption></figure>
+
 ### Import Settings
 
 1. Click the **three-dot (More Actions)** menu.
