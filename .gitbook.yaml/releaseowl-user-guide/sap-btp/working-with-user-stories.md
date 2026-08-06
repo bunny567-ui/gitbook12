@@ -84,7 +84,7 @@ To edit the source reference:
 
 The following actions are available on the User Story toolbar:
 
-* **Validate** – Validates the User Story against the configured target environment and displays a **Validation Report** containing the validation results and any identified issues.
+* **Validate** – Validates the User Story against the configured target environment and generates a **Validation Report**.  Depending on the Release Pipeline and associated Build Pipeline configuration, the validation may include artifact validation, dependency and impact analysis, static code analysis, SonarQube analysis, ESLint validation, OPA5 test execution, and build verification.
 * **Promote** – Promotes the User Story to the next stage in the release pipeline.
 * **Save** – Saves the changes made to the User Story. Ensure that you click **Save** before clicking **Promote**.
 * **Refresh** – Refreshes the User Story and reloads the latest information.
@@ -105,6 +105,6 @@ The following actions are available on the User Story toolbar:
 **Promote** –  Click **Promote** to start the deployment process.
 
 * If the [Release Pipeline ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-mtar-deployments)includes a **Deployment** task, monitor the deployment status of the User Story.
-* Click **Deploy Logs** to view the deployment details.
+* Click **Build Logs** to view the execution details of the **CAP Application Build Task** configured in the Release Pipeline. These logs help users monitor the build process, verify successful execution, and troubleshoot any build failures.
 
 <div><figure><img src="../../.gitbook/assets/image (2128).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2129).png" alt=""><figcaption></figcaption></figure></div>
