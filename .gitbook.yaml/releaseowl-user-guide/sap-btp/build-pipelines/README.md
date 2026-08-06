@@ -259,7 +259,7 @@ The **Actions** menu provides the following options:
     <figure><img src="../../../.gitbook/assets/image (2118).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;If **SonarQube** is enabled, click **SonarQube Report** to view the test metrics and code quality results, including:&#x20;
-* **ESLint** - Displays the code quality issues identified by ESLint during analysis in the **SonarQube Report**.
+* **ESLint** - Click the **ESLint** hyperlink to navigate to the **Issues** tab in the **SonarQube Report**, which lists the ESLint rule violations detected in the project.
 
 <div><figure><img src="../../../.gitbook/assets/image (2116).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2117).png" alt=""><figcaption></figcaption></figure></div>
 

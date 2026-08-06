@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # GIT Ops
 
 ## **Prerequisites**
