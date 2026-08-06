@@ -4,7 +4,7 @@ ReleaseOwl supports multiple credential types for registration. To register a SA
 
 1. Click on the **"Register Credential"** button.
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 2.  Fill in the details:
 
@@ -17,12 +17,12 @@ ReleaseOwl supports multiple credential types for registration. To register a SA
     * **Password**: Enter your **SAP BTP** password.
     * Click **Save**.
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
     3\. The credential will appear in the **List of Credentials**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;

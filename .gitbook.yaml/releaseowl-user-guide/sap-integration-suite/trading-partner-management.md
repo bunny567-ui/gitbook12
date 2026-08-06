@@ -52,7 +52,7 @@ Use this tab to view the Partner Directory data associated with Trading Partner 
 
 <figure><img src="../../.gitbook/assets/image (2061).png" alt=""><figcaption></figcaption></figure>
 
-### 3.  Partner Directory Configuration Tab
+### 3.  Partner Directory Configuration&#x20;
 
 This is the Releaseowl-only artifact used to **group specific Partner Directory attributes together** so they can be versioned and deployed as a single unit — instead of moving every attribute one at a time.
 

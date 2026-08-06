@@ -55,7 +55,7 @@ The **Linked Projects** tab displays all projects associated with the selected S
 * **Source Environment Identification**: Identify whether the selected environment is configured as a source environment within any project, providing better visibility into deployment and transport processes.
 * This information helps administrators understand environment dependencies before making configuration changes.
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Logs**
 
@@ -69,5 +69,5 @@ Each log entry includes:
 
 The Logs section enables administrators to track environment-related activities and maintain audit and compliance records.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
