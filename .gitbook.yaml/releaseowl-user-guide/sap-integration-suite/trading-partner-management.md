@@ -1,12 +1,12 @@
 # B2B Scenarios
 
-The Trading Partner Management (TPM) module in Releaseowl lets you synchronize, manage, version, and deploy SAP TPM artefacts across your SAP Integration Suite environments.
+The Trading Partner Management (TPM) module in Releaseowl lets you synchronize, manage, version, and deploy SAP TPM artifacts across your SAP Integration Suite environments.
 
-Releaseowl integrates with SAP Trading Partner Management to manage the deployment lifecycle of TPM artifacts. Using this module, you can synchronize Agreements and Partner Directory artifacts from a source environment, organize them into User Stories, and promote them through your Release Pipelines
+Releaseowl integrates with SAP Trading Partner Management to manage the deployment lifecycle of TPM artifacts. Using this module, you can synchronize the  exported Agreements and Partner Directory artifacts from a source environment, organize them into User Stories, and promote them through your Release Pipelines
 
 ## &#x20;B2B Scenarios&#x20;
 
-Open **B2B Scenarios** within the CPI environment/project. This screen has **three tabs**:
+Open **B2B Scenarios** within the CPI project. This screen has **three tabs**:
 
 1. **Agreements**
 2. **Partner Directory**
@@ -16,7 +16,7 @@ Open **B2B Scenarios** within the CPI environment/project. This screen has **thr
 
 ### **1. Agreements**
 
-This tab is used to import agreements exported from the **B2B Scenarios** application in SAP Integration Suite into ReleaseOwl.
+This tab is used to import agreements exported from the **B2B Scenarios** application in SAP Integration Suite, allowing you to view and manage them  in ReleaseOwl.
 
 &#x20;**Adding an Agreement**
 

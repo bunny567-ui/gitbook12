@@ -18,7 +18,7 @@ To register the SAP cloud Environment, you must first register the corresponding
 
 * **Name**: Enter a unique name for the cloud environment&#x20;
 * **Region**: Select the region where the environment is hosted
-* **API Endpoint**: Enter the Cloud Foundry API endpoint URL. This value can be found in the **SAP BTP Cockpit** under the corresponding **Cloud Foundry Environment**.
+* **API Endpoint**: Enter the Cloud Foundry API endpoint URL. This URL can be found in the **SAP BTP Cockpit** under the corresponding **Cloud Foundry Environment**.
 * **Credential Name**: Select the credential previously registered from the dropdown list.
 * **Org**: Select the correct organization from the dropdown list.
 * **Space**: Select the space associated with the environment.

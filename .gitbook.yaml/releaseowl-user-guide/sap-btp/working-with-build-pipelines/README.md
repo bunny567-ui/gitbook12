@@ -68,10 +68,11 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 1. **Repository URL**: Enter the repository URL (for example, GitHub, GitLab, or Bitbucket).
 2. **SCM Credentials**: Select the required source control credentials from the drop-down list.
 3. **Branch**: Select the branch to be used for the build process (for example, **QA**, **Master**, or **Dev**).
-4. **Version Control System**: Select the repository type (for example, **GitHub**, **GitLab**, or **Bitbucket**).
-5. After entering the required details, click **Step 3** to continue.
+4. **Dynamic branch** : Select this checkbox to use a dynamic branch during pipeline execution. When enabled, you do not need to specify a fixed branch in the **Branch** field, as the branch is provided at runtime.
+5. **Version Control System**: Select the repository type (for example, **GitHub**, **GitLab**, or **Bitbucket**).
+6. After entering the required details, click **Step 3** to continue.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2104).png" alt=""><figcaption></figcaption></figure>
 
 **Builder Section**
 
@@ -138,15 +139,26 @@ When enabled, ReleaseOwl executes the ESLint script configured in your project r
 
 Before enabling ESLint, ensure that your project repository contains the following:
 
-* An ESLint configuration file, such as `eslint.config.js` or `.eslintrc.json`. This file defines the linting rules used to analyze your source code.
-* ESLint dependencies declared in the project's `package.json`.
-* The following script in the `package.json` file to execute ESLint and generate the `eslint-report.json` file required for SonarQube integration:
+* An **ESLint configuration file** (such as `eslint.config.js` or `.eslintrc.json`) must be present in the repository. This file contains the linting rules that ESLint uses to detect issues in the source code.
+*   The `package.json` file must contain the following lint script to execute ESLint and generate the `eslint-report.json` file required for SonarQube integration:
 
-```
-{  "scripts": {    "lint:sonar": "eslint . -f json -o eslint-report.json"  }}
-```
+    ```
+    "lint:sonar": "eslint . -f json -o eslint-report.json"
+    ```
 
-This script executes ESLint on the project and generates the `eslint-report.json` file, which is imported by SonarQube to display ESLint issues.
+
+* This script runs ESLint on the project and generates an `eslint-report.json` file, which is imported by SonarQube to display ESLint issues.
+* ESLint dependencies declared in the project's `package.json`.&#x20;
+
+**Configure ESLint in ReleaseOwl**
+
+To enable ESLint in the Build Pipeline:
+
+1. Navigate to the **Tool Integrations** step while creating or editing the Build Pipeline.
+2. Select the **ESLint** checkbox.
+3. Ensure that **Static Code Analysis** is enabled and a valid **SonarQube** credential is selected.
+
+<figure><img src="../../../.gitbook/assets/image (2106).png" alt=""><figcaption></figcaption></figure>
 
 #### **2. Malware Scan**
 
@@ -157,13 +169,17 @@ Configure malware scanning to detect potential security threats in the applicati
 * **Credentials**: Select the registered credential from the drop-down list.
 * **Timeout**: Specify the timeout duration for the malware scan process.
 
+{% hint style="info" %}
+&#x20;**Note:** For instructions on creating a Malware Scan credential, refer to the [**Malware Scan Credential** ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/credential-management/malware-scanning)page.
+{% endhint %}
+
 #### **3. SAP CVE Scan**
 
 CVE scans identify any vulnerable versions of libraries used in your **CAP application** by checking known vulnerabilities.
 
 * Enable the option for **SAP CVE Scan**.
 
-<figure><img src="../../../.gitbook/assets/image (1964).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2110).png" alt=""><figcaption></figcaption></figure>
 
 **Configure CVE Settings**
 
@@ -178,9 +194,38 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
 
 <figure><img src="../../../.gitbook/assets/image (1969).png" alt=""><figcaption></figcaption></figure>
 
-4. After configuring the required tool integrations, click **Save** to finalize the Build Pipeline configuration
+#### **4. Karma**
 
-<figure><img src="../../../.gitbook/assets/image (1970).png" alt=""><figcaption></figcaption></figure>
+Karma is a test runner that executes OPA5 test cases during the Build Pipeline execution. ReleaseOwl invokes the configured Karma script from your repository and displays the test execution results as part of the build. ReleaseOwl does not create or maintain OPA5 test cases.
+
+### Prerequisites
+
+Before enabling Karma in a Build Pipeline, ensure that your repository contains the following:
+
+* A **karma.conf.js** file that defines the browser, required frameworks (such as UI5 and QUnit), reporters, and other Karma settings.
+* The required Karma dependencies configured in the **package.json** file.
+* A script entry in **package.json** that executes the Karma configuration. This script name is used while configuring the Build Pipeline.
+* A **sonar-project.properties** file, if SonarQube analysis is enabled. The **sonar-project.properties** file must include the following properties to identify the test files:
+
+{% code overflow="wrap" %}
+```
+sonar.tests=webapp/test
+sonar.test.inclusions=webapp/test/unit/**/*.js,webapp/test/integration/**/*.js
+```
+{% endcode %}
+
+<figure><img src="../../../.gitbook/assets/image (2113).png" alt=""><figcaption></figcaption></figure>
+
+**Configure Karma in ReleaseOwl**
+
+To enable ESLint in the Build Pipeline:
+
+1. Navigate to the **Tool Integrations** step while creating or editing the Build Pipeline.
+2. Select the **Karma** checkbox.
+3. In the **Karma Scripts** field, enter the script name defined in the **package.json** file.
+4. Ensure that **Static Code Analysis** is enabled and a valid **SonarQube** credential is selected.
+
+<figure><img src="../../../.gitbook/assets/image (2111).png" alt=""><figcaption></figcaption></figure>
 
 **Actions Button**
 
@@ -191,8 +236,8 @@ The **Actions** menu provides the following options:
 1. **Edit :**  Use **Edit** to modify the existing build pipeline configuration. This option allows you to update details such as the repository, branch, build type, schedules, or any pipeline-related settings. Any changes made are applied to the existing Build Pipeline.
 2. **Commits :** Use **Commits** to view the list of source code commits associated with the Build Pipeline. This helps track the changes included in each build execution.
 3. **Save as:**  Use **Save As** to create a copy of an existing Build Pipeline. The copied pipeline can then be modified independently without affecting the original pipeline.
-4. **Archive :** Use **Archive** to deactivate a Build Pipeline. Archived pipelines are retained in the system for reference purposes but are removed from active use and cannot be executed until restored.
-5. **Export Build Pipeline :** Use **Export Build Pipeline** to export the Build Pipeline configuration. The exported file can later be imported using the **Import Build Pipeline** option available when creating a new Build Pipeline, allowing the same configuration to be reused across projects or environments.
+4. **Archive :**&#x55;se **Archive** to move a Build Pipeline from the active list to the archived list. Archived pipelines are retained in the system for reference and can be restored when required. While archived, the pipeline is not available for regular use.
+5. **Export Build Pipeline:** Use **Export Build Pipeline** to export the configuration of a Build Pipeline. The exported file can be imported while creating a new Build Pipeline using the **Import Build Pipeline** option, enabling the same configuration to be reused across different projects or environments.
 
 <figure><img src="../../../.gitbook/assets/image (1971).png" alt=""><figcaption></figcaption></figure>
 
@@ -202,17 +247,39 @@ The **Actions** menu provides the following options:
 
 <figure><img src="../../../.gitbook/assets/image (1965).png" alt=""><figcaption></figcaption></figure>
 
-2. Once the pipeline runs, click the arrow button next to it to view the results.
+2. After the Build Pipeline execution is complete, click the **arrow (>)** next to the pipeline to view the execution results.
 
 <figure><img src="../../../.gitbook/assets/image (1966).png" alt=""><figcaption></figcaption></figure>
 
-3. The results display the status of various stages such as **Build** and **Prepare**.
-4. Key details include:
-   * **Status**: Indicates whether the result was successful or failed.
-   * **Timestamp**: Shows the date and time the stage was performed.
-   * **Duration**: Displays the time taken to complete the stage.
+3.  The **Build** tab displays the execution status of each stage in the pipeline along with detailed logs.
 
-<figure><img src="../../../.gitbook/assets/image (1967).png" alt=""><figcaption></figcaption></figure>
+    The following information is available:
+
+    * **Stage:** Displays the name of each pipeline stage. The available stages and actions may vary depending on the Build Pipeline configuration and the tools enabled in the **Tool Integrations** stage.
+    * **ESLint:** If **ESLint** is enabled in the **Tool Integrations** stage, the **ESLint** stage is displayed in the Build results. If the ESLint analysis completes successfully, the stage status is displayed as **Success**. If the ESLint execution encounters errors or the configured quality checks fail, the stage status is displayed as **Failed**. Click the **{}** icon in the **Logs** column to view the detailed ESLint execution logs.
+
+    <figure><img src="../../../.gitbook/assets/image (2109).png" alt=""><figcaption></figcaption></figure>
+
+* &#x20;If **SonarQube** is enabled, click **SonarQube Report** to view the test metrics and code quality results, including:&#x20;
+* **ESLint** - Displays the code quality issues identified by ESLint during analysis in the **SonarQube Report**.
+
+<figure><img src="../../../.gitbook/assets/image (2114).png" alt=""><figcaption></figcaption></figure>
+
+* **OPA5 Tests:** If **Karma** is enabled in the **Tool Integrations** stage, the **OPA5 Tests** stage is displayed in the Build results. When the OPA5 test execution completes successfully, the stage status is displayed as **Success**. If one or more OPA5 test cases fail, the stage status is displayed as **Unstable**. Click the **{}** icon to view the detailed OPA5 test execution logs.
+
+<figure><img src="../../../.gitbook/assets/image (2115).png" alt=""><figcaption></figcaption></figure>
+
+* If **SonarQube** is enabled, click **SonarQube Report** to view the test metrics and code quality results, including:
+* **OPA5 Tests** – Displays the total number of OPA5 test cases executed through Karma and included in the SonarQube analysis.
+
+<figure><img src="../../../.gitbook/assets/image (2112).png" alt=""><figcaption></figcaption></figure>
+
+* **Status:** Indicates the execution result of each stage.
+* **Timestamp:** Shows the date and time when the stage was executed.
+* **Duration:** Displays the total time taken to complete the stage.
+* **Logs:** Click the **{}** icon to view the detailed execution logs for the selected stage.
+
+<figure><img src="../../../.gitbook/assets/image (2108).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**  You can now access build log information even after the logs have expired. This allows you to review past build activities for better tracking and understanding of your deployment history.
