@@ -76,6 +76,7 @@
       * [Labels](releaseowl-user-guide/sap-btp/build-pipelines/labels.md)
     * [BTP Applications](releaseowl-user-guide/sap-btp/btp-applications.md)
     * [GIT Ops](releaseowl-user-guide/sap-btp/git-ops.md)
+    * [Working with User stories](releaseowl-user-guide/sap-btp/working-with-user-stories.md)
   * [SAP Integration Suite](releaseowl-user-guide/sap-integration-suite/README.md)
     * [Administration](releaseowl-user-guide/sap-integration-suite/administration/README.md)
       * [Credential Management](releaseowl-user-guide/sap-integration-suite/administration/credential-management.md)

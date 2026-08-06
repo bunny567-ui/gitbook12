@@ -256,10 +256,10 @@ The **Actions** menu provides the following options:
     * **Stage:** Displays the name of each pipeline stage. The available stages and actions may vary depending on the Build Pipeline configuration and the tools enabled in the **Tool Integrations** stage.
     * **ESLint:** If **ESLint** is enabled in the **Tool Integrations** stage, the **ESLint** stage is displayed in the Build results. If the ESLint analysis completes successfully, the stage status is displayed as **Success**. Click the **{}** icon in the **Logs** column to view the detailed ESLint execution logs.
 
-    <figure><img src="../../../.gitbook/assets/image (2118).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2126).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;If **SonarQube** is enabled, click **SonarQube Report** to view the test metrics and code quality results, including:&#x20;
-* **ESLint** - Click the **ESLint** hyperlink to navigate to the **Issues** tab in the **SonarQube Report**, which lists the ESLint rule violations detected in the project.
+* **ESLint** - Click the **ESLint** hyperlink to navigate to the **Issues** tab in the **SonarQube Report**, which lists the ESLint rule violations.&#x20;
 
 <div><figure><img src="../../../.gitbook/assets/image (2116).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2117).png" alt=""><figcaption></figcaption></figure></div>
 
