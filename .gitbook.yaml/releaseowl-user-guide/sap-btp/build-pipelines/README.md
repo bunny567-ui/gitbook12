@@ -216,7 +216,7 @@ sonar.test.inclusions=webapp/test/unit/**/*.js,webapp/test/integration/**/*.js
 
 **Configure Karma in ReleaseOwl**
 
-To enable ESLint in the Build Pipeline:
+To enable Karma in the Build Pipeline:
 
 1. Navigate to the **Tool Integrations** step while creating or editing the Build Pipeline.
 2. Select the **Karma** checkbox.
@@ -254,7 +254,7 @@ The **Actions** menu provides the following options:
     The following information is available:
 
     * **Stage:** Displays the name of each pipeline stage. The available stages and actions may vary depending on the Build Pipeline configuration and the tools enabled in the **Tool Integrations** stage.
-    * **ESLint:** If **ESLint** is enabled in the **Tool Integrations** stage, the **ESLint** stage is displayed in the Build results. If the ESLint analysis completes successfully, the stage status is displayed as **Success**. If the ESLint execution encounters errors or the configured quality checks fail, the stage status is displayed as **Failed**. Click the **{}** icon in the **Logs** column to view the detailed ESLint execution logs.
+    * **ESLint:** If **ESLint** is enabled in the **Tool Integrations** stage, the **ESLint** stage is displayed in the Build results. If the ESLint analysis completes successfully, the stage status is displayed as **Success**. Click the **{}** icon in the **Logs** column to view the detailed ESLint execution logs.
 
     <figure><img src="../../../.gitbook/assets/image (2118).png" alt=""><figcaption></figcaption></figure>
 
