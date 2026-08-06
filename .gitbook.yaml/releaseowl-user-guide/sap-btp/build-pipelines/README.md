@@ -1,6 +1,4 @@
-# Working with Build Pipelines
-
-**Build**
+# Build Pipelines
 
 The Build section in ReleaseOwl enables developers to create MTAR artifacts and validate changes thoroughly for early feedback.
 
@@ -30,14 +28,14 @@ An MTA is logically a single application consisting of multiple related and inte
 
 The MTA archive builder is a standalone command-line tool that builds a deployment-ready MTAR (`.mtar`) file from the artifacts of an MTA project according to the project’s MTA development descriptor (`mta.yaml` file).
 
-### **Key Points about MTAR File Generation**:
+### **Key Points about MTAR File Generation**
 
 1. The build process and the resulting MTA archive depend on the target platform.
 2. The supported platforms currently by ReleaseOwl are:
    * **SAP BTP**
    * **SAP HANA Extended Application Services (XSA), Advanced Model Environment**
 
-### **Prerequisites** <a href="#pdf-page-hbalethepy3zsklyalpx-prerequisites" id="pdf-page-hbalethepy3zsklyalpx-prerequisites"></a>
+#### **Prerequisites** <a href="#pdf-page-hbalethepy3zsklyalpx-prerequisites" id="pdf-page-hbalethepy3zsklyalpx-prerequisites"></a>
 
 1. Create new project of type SAP BTP (MTAR) or SAP HANA XSA (MTAR)
 2. Register BTP Credentials and BTP Environment with ReleaseOwl before starting to work with Build Pipelines.
@@ -258,12 +256,12 @@ The **Actions** menu provides the following options:
     * **Stage:** Displays the name of each pipeline stage. The available stages and actions may vary depending on the Build Pipeline configuration and the tools enabled in the **Tool Integrations** stage.
     * **ESLint:** If **ESLint** is enabled in the **Tool Integrations** stage, the **ESLint** stage is displayed in the Build results. If the ESLint analysis completes successfully, the stage status is displayed as **Success**. If the ESLint execution encounters errors or the configured quality checks fail, the stage status is displayed as **Failed**. Click the **{}** icon in the **Logs** column to view the detailed ESLint execution logs.
 
-    <figure><img src="../../../.gitbook/assets/image (2109).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2118).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;If **SonarQube** is enabled, click **SonarQube Report** to view the test metrics and code quality results, including:&#x20;
 * **ESLint** - Displays the code quality issues identified by ESLint during analysis in the **SonarQube Report**.
 
-<figure><img src="../../../.gitbook/assets/image (2114).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (2116).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2117).png" alt=""><figcaption></figcaption></figure></div>
 
 * **OPA5 Tests:** If **Karma** is enabled in the **Tool Integrations** stage, the **OPA5 Tests** stage is displayed in the Build results. When the OPA5 test execution completes successfully, the stage status is displayed as **Success**. If one or more OPA5 test cases fail, the stage status is displayed as **Unstable**. Click the **{}** icon to view the detailed OPA5 test execution logs.
 
