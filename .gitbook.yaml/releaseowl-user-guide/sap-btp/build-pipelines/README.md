@@ -196,7 +196,7 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
 
 Karma is a test runner that executes OPA5 test cases during the Build Pipeline execution. ReleaseOwl invokes the configured Karma script from your repository and displays the test execution results as part of the build. ReleaseOwl does not create or maintain OPA5 test cases.
 
-### Prerequisites
+#### Prerequisites
 
 Before enabling Karma in a Build Pipeline, ensure that your repository contains the following:
 
