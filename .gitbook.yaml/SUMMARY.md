@@ -74,7 +74,7 @@
       * [Static Code Analysis](releaseowl-user-guide/sap-btp/build-pipelines/static-code-analysis.md)
       * [Build Changes](releaseowl-user-guide/sap-btp/build-pipelines/build-changes.md)
       * [Labels](releaseowl-user-guide/sap-btp/build-pipelines/labels.md)
-    * [BTP Applications](releaseowl-user-guide/sap-btp/btp-applications.md)
+      * [BTP Applications](releaseowl-user-guide/sap-btp/build-pipelines/btp-applications.md)
     * [GIT Ops](releaseowl-user-guide/sap-btp/git-ops.md)
     * [Working with User stories](releaseowl-user-guide/sap-btp/working-with-user-stories.md)
   * [SAP Integration Suite](releaseowl-user-guide/sap-integration-suite/README.md)

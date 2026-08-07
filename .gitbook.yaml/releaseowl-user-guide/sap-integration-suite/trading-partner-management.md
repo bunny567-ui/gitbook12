@@ -21,22 +21,25 @@ This tab is used to import agreements exported from the **B2B Scenarios** applic
 &#x20;**Adding an Agreement**
 
 * Click **Add Artifacts**.
+
+<figure><img src="../../.gitbook/assets/image (2137).png" alt=""><figcaption></figcaption></figure>
+
 * The dialog displays all agreement artifacts that have been exported from the **B2B Scenarios** application in SAP Integration Suite and are available for import.
 * Select the required agreement(s) and add them to ReleaseOwl for deployment.
 
-<figure><img src="../../.gitbook/assets/image (2058).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2139).png" alt=""><figcaption></figcaption></figure>
 
 * Once an agreement is added, use the action options to view its details, download the artifact, and check its deployment history.
 
-| Action                 | What it does                                                                                                |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Details**            | Displays the details of the selected exported agreement.                                                    |
-| **Download**           | Downloads the exported agreement artifact to your local machine.                                            |
-| **Deployment History** | Shows the history of deployments carried out for that agreement — which environment, when, and the outcome. |
+**Details**
 
+Displays the details of the selected exported agreement, including the **Version**, **ID**, **Created On**, and **Created By** information.
 
+<figure><img src="../../.gitbook/assets/image (2138).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2059).png" alt=""><figcaption></figcaption></figure>
+**Download-** Downloads the exported agreement artifact to your local machine.
+
+**Deployment History-** Shows the history of deployments carried out for that agreement, including the environment, deployment time, and the deployment outcome.
 
 ### 2. Partner Directory Data
 
@@ -87,7 +90,7 @@ This is the Releaseowl-only artifact used to **group specific Partner Directory 
 
 **Configure:**
 
-* To change the value of a parameter on an attribute you've already added, open the **Configure** button for that Partner Directory ID.
+* To modify the value of a parameter in the target environment, click the **Configure** button for the corresponding **Partner Directory Configuration**.
 
 <figure><img src="../../.gitbook/assets/image (2067).png" alt=""><figcaption></figcaption></figure>
 

@@ -7,7 +7,7 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 1. Navigate to the **BTP Applications** section.
 2. Click **New BTP Application**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Application Details
 
@@ -33,37 +33,39 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 
 * The **Create Feature Branch From Branch** field is mandatory.
 * Select the base branch from which ReleaseOwl creates feature branches.
-* During User Story creation, a feature branch must be associated with the MTAR application.
+* In user story a feature branch must be associated with the MTAR application.
 * All development, build, and deployment activities for the User Story use the associated feature branch.
 
 **Cherry Pick Model-** When **Cherry Pick Model** is selected:
 
 * The **Create Feature Branch From Branch** field is optional.
 * Configure the development branch for the application.
-* During User Story creation, select the required commits from the development branch and associate them with the User Story.
+* In user story select the required commits from the development branch and associate them with the MTAR application.
 * Only the selected commits are included in the build and promoted through the release pipeline.
-* **Build Pipeline for Dynamic Branches**  : Select the Build Pipeline to be used for **Feature Branches** and other dynamically created branches.
+
+**Build Pipeline for Dynamic Branches**: Select the Build Pipeline to be used for **Feature Branches** and other dynamically created branches.
+
 * **Build Pipeline for Package / Hot Fix Branches**  : Select the Build Pipeline to be used for **Package** and **Hot Fix** branches.
 
 2. After entering all the required details, click **Create** to create the BTP Application.
 
-<figure><img src="../../.gitbook/assets/image (2121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2121).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure Environment Branches
 
 1. Click the **Actions** button corresponding to the BTP Application.
 2. Select **Edit**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the **+ Add** button.
 
-<figure><img src="../../.gitbook/assets/image (2122).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2122).png" alt=""><figcaption></figcaption></figure>
 
 4. Provide the following information:
 
 * **SAP Cloud Environment**: Select the SAP Cloud environment from the drop-down list.
-* **Branch**: Enter the branch name associated with the environment.
+* **Branch**: Enter the branch associated with the environment.
 * **Build Pipeline**: Click the search icon and select the required Build Pipeline.
 * **MTA Extension File (.mtaext)**: Upload the MTA Extension file associated with the selected environment.
   * Click **Browse**.
@@ -72,13 +74,13 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 
 5. The uploaded MTA Extension files are displayed in the application configuration and are used during deployment and release execution for the corresponding environment.
 
-<figure><img src="../../.gitbook/assets/image (2124).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2124).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **Save** to add the application configuration.
 6. Repeat the above steps to add additional environment configurations, if required.
 7. Click **Save** to save the BTP Application and its associated configurations.
 
-<figure><img src="../../.gitbook/assets/image (1972).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1972).png" alt=""><figcaption></figcaption></figure>
 
 #### **Landscape configuration - CherryPick Model**
 
@@ -94,4 +96,4 @@ When a Development Branch is configured:
 
 
 
-<figure><img src="../../.gitbook/assets/image (2125).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2125).png" alt=""><figcaption></figcaption></figure>
