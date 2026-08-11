@@ -115,7 +115,7 @@ The **Attachments** section allows you to add supporting files or external links
 
 <figure><img src="../../.gitbook/assets/image (2102).png" alt=""><figcaption></figcaption></figure>
 
-### Import Settings
+### Import Settings- CPI
 
 1. Click the **three-dot (More Actions)** menu.
 2. Select **Import Settings**.
@@ -125,6 +125,48 @@ The **Attachments** section allows you to add supporting files or external links
 3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
 
 <figure><img src="../../.gitbook/assets/image (2076).png" alt=""><figcaption></figcaption></figure>
+
+### Import Settings- Integration Advisor
+
+1. Click the **three-dot (More Actions)** menu.
+2. Select **Import Settings**.
+
+<figure><img src="../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
+
+3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
+
+
+
+### Import Settings- API
+
+1. Click the **three-dot (More Actions)** menu.
+2. Select **Import Settings**.
+
+<figure><img src="../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
+
+3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
+
+
+
+### Import Settings- API
+
+1. Click the **three-dot (More Actions)** menu.
+2. Select **Import Settings**.
+
+<figure><img src="../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
+
+3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
+
+
+
+### Import Settings- B2B Scenarios&#x20;
+
+1. Click the **three-dot (More Actions)** menu.
+2. Select **Import Settings**.
+
+<figure><img src="../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
+
+3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
 
 {% hint style="info" %}
 Note : **Force Deploy** — lets you redeploy the artifacts/agreements again even if it was already deployed.
@@ -150,7 +192,7 @@ Note : **Force Deploy** — lets you redeploy the artifacts/agreements again eve
 * **Config Status** – Confirms whether the configuration for new or updated artifacts was completed successfully.
 * **Deploy Status** – Reflects the final deployment status of the artifact.
 * **Already Deployed** – Indicates that the artifact was previously deployed, either during a retry operation or through manual completion. This status helps avoid duplicate deployments and provides clarity during re-runs.
-* **Manual Completion** – If a deployment fails or times out, users can use the Manual Completion option in ReleaseOwl to resolve the issue manually and continue the pipeline execution.
+* **Manual Completion** – If a deployment fails or times out, users can use the Manual Completion option in ReleaseOwl to resolve the issue manually and continue the pipeline execution. Selecting **Mark as Complete** indicates that the artifact has been manually completed in the target environment. ReleaseOwl records the deployment as completed and continues the pipeline execution.
 * **Refresh Button** – Fetches the CPI runtime artifact deployment status and updates the runtime status in the deployment log.
 * **Icon in Artifact Name** - An icon is displayed in the Deployment Logs section next to the artifact name to indicate that **Force Deployment** was applied.
 
@@ -173,7 +215,7 @@ The deployment details are displayed in the **SAP Integration Advisor Deploy Log
 <figure><img src="../../.gitbook/assets/image (2098).png" alt=""><figcaption></figcaption></figure>
 
 * **Already Deployed** – Indicates that the artifact was previously deployed, either during a retry operation or through manual completion. This status helps avoid duplicate deployments and provides clarity during deployment re-runs.
-* **Manual Completion** – If a deployment fails or times out, users can use the **Manual Completion** option in ReleaseOwl to manually update the deployment status and continue the pipeline execution
+* **Manual Completion** – If a deployment fails or times out, users can use the **Manual Completion** option in ReleaseOwl to manually update the deployment status and continue the pipeline execution. Selecting **Mark as Complete** indicates that the artifact has been manually completed in the target environment. ReleaseOwl records the deployment as completed and continues the pipeline execution.
 
 <figure><img src="../../.gitbook/assets/image (2096).png" alt=""><figcaption></figcaption></figure>
 
@@ -185,7 +227,7 @@ The deployment details are displayed in the **API Management** window with the f
 * **Deploy Status** – Reflects the current deployment status of the API Management artifact.
 * **Icon in Artifact Name** - An icon is displayed in the Deployment Logs section next to the artifact name to indicate that **Force Deployment** was applied.
 * **Already Deployed** – Indicates that the artifact was previously deployed, either during a retry operation or through manual completion. This status helps avoid duplicate deployments and provides clarity during re-runs.
-* **Manual Completion** – If a deployment fails or times out, users can use the Manual Completion option in ReleaseOwl to resolve the issue manually and continue the pipeline execution.
+* **Manual Completion** – If a deployment fails or times out, users can use the Manual Completion option in ReleaseOwl to resolve the issue manually and continue the pipeline execution. Selecting **Mark as Complete** indicates that the artifact has been manually completed in the target environment. ReleaseOwl records the deployment as completed and continues the pipeline execution.
 * **Refresh Button** – Fetches the CPI runtime artifact deployment status and updates the runtime status in the deployment log.
 * **User Story -** Displays the ID of the User Story associated with the deployment.
 
@@ -198,10 +240,20 @@ The deployment details are displayed in the **B2B Scenarios Deploy Logs** window
 * **Artifact Name** – Displays the name of the B2B scenario artifact being deployed.
 * **Type** – Indicates the type of B2B scenario artifact, such as **Agreements** or **Partner Directory Configuration**.
 * **Version** – Displays the version of the artifact being deployed.
-* **Import Status** – Indicates whether the artifact was successfully imported into the target tenant.
-* **Activate Agreement Status** – Displays the agreement activation status after deployment. This column is applicable only for **Agreement** artifacts. For partner Directory Configuration, the value is displayed as **NA**.
+* **Import Status** – Indicates the import status of the artifact in the target tenant. Click the **Import Status** icon to view the corresponding **deployment logs** and review the details of the import operation.
+
+<div><figure><img src="../../.gitbook/assets/image (2151).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2150).png" alt=""><figcaption></figcaption></figure></div>
+
+* **Activate Agreement Status** – Indicates the activation status of the Agreement in the target environment. This field is applicable only to **Agreement** artifacts. For **Partner Directory Configuration** artifacts, the value is displayed as **N/A**.
+
+<div><figure><img src="../../.gitbook/assets/image (2152).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2153).png" alt=""><figcaption></figcaption></figure></div>
+
 * **Deployment Time** – Displays the date and time when the deployment was completed.
 * **Already Deployed** – Indicates that the artifact was previously deployed, either during a retry operation or through manual completion. This status helps avoid duplicate deployments and provides clarity during deployment re-runs.
-* **Manual Completion** – If a deployment fails or times out, users can use the **Manual Completion** option in ReleaseOwl to manually complete the deployment and continue the pipeline execution.
+* **Manual Completion** – If a deployment fails or times out, use the **Manual Completion** option to manually mark the deployment as completed and continue the pipeline execution.
+
+{% hint style="info" %}
+**Note:** Selecting **Mark as Complete** indicates that the artifact has been manually completed in the target environment. ReleaseOwl records the deployment as completed and continues the pipeline execution.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (2100).png" alt=""><figcaption></figcaption></figure>

@@ -30,9 +30,7 @@ To register the SAP Integration Environment, you must first register the CPI cre
 | **Enable monitoring ( Beta)**           | <p>Check the <strong>Monitoring</strong> option to enable runtime log tracking for deployed artifacts. </p><p></p><p>If an artifact fails during runtime, the logs can be reviewed to identify the cause of the failure and troubleshoot the issue.</p>                                                                                                                                                                                                                                                                                                                             |
 | **Enable Trading Partner Management**   | Check the enable trading partner management and                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-<figure><img src="../../../.gitbook/assets/image (2054).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (2055).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (2054).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2154).png" alt=""><figcaption></figcaption></figure></div>
 
 **Validate the Environment**
 

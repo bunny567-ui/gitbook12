@@ -64,7 +64,7 @@ In the **Parameters** step, assign the required roles based on the target enviro
 | **MessagePayloadsRead**                           | Allows users to view message payloads in monitoring.                                                                                                                |
 | **TraceConfigurationRead**                        | Provides access to view the current tracing configuration.                                                                                                          |
 | **TraceConfigurationEdit**                        | Allows modification of tracing settings, including enabling trace configuration.                                                                                    |
-| **AuthGroup\_TenantPartnerDirectoryConfigurator** | Allows configuration of the Partner Directory, including creating, modifying, and deleting partner directory entries and their associated configuration data.       |
+| **AuthGroup\_TenantPartnerDirectoryConfigurator** | Allows configuration of the Partner Directory, including creating and  modifying partner directory entries and their associated configuration data.                 |
 
 <figure><img src="../../../.gitbook/assets/image (2053).png" alt=""><figcaption></figcaption></figure>
 
@@ -317,7 +317,7 @@ To create and assign a role collection for the required environment access, foll
 6. Click **Edit**.
 7.  Add the required roles based on your environment type:
 
-    **For Non-Production Environments**, add the following roles:
+    **For Non-Production Environments:** The following roles are required for Cloud Integration (CPI)
 
 | Role                         | Description                                                                                                                 |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -327,15 +327,40 @@ To create and assign a role collection for the required environment access, foll
 | **TraceConfigurationRead**   | Provides access to view the current tracing configuration.                                                                  |
 | **TraceConfigurationEdit**   | Allows modification of tracing settings, including enabling trace configuration.                                            |
 
+**Integration Advisor:** The following roles are required for Integration Advisor
+
+| Role                  | Description                 |
+| --------------------- | --------------------------- |
+| **Content Developer** | Create/update MIGs and MAGs |
+
+**Trading Partner Management:** The following roles are required for Trading Partner Management
+
+<table><thead><tr><th width="416.4000244140625">Role</th><th>Description</th></tr></thead><tbody><tr><td><strong>TPMAgreementConfigurationEdit</strong></td><td>Read, import and export agreements</td></tr><tr><td><strong>TPMAgreementConfigurationActivate</strong></td><td>Activate agreements</td></tr><tr><td><strong>AuthGroup_TenantPartnerDirectoryConfigurator</strong></td><td>Read/write Partner Directory (required for pushing agreements)</td></tr><tr><td><strong>CredentialsRead</strong></td><td>Read credentials and keystore entries</td></tr></tbody></table>
+
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**For Production Environments**, add the following roles:
+**For Production Environments:**  The following roles are required for Cloud Integration (CPI)
 
 | Role                         | Description                                                                                                                 |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **WorkspacePackagesRead**    | Provides read access to CPI artifacts such as **SOAP, REST, and OData APIs**.                                               |
 | **WorkspacePackagesEdit**    | Enables creation and modification of artifacts such as **SOAP, REST, and OData APIs**, including **Value Mapping updates**. |
 | **WorkspaceArtifactsDeploy** | Grants permission to deploy **SOAP, REST, and OData API artifacts**.                                                        |
+
+**Integration Advisor:** The following roles are required for Integration Advisor
+
+| Role                  | Description                 |
+| --------------------- | --------------------------- |
+| **Content Developer** | Create/update MIGs and MAGs |
+
+**Trading Partner Management:** The following roles are required for Trading Partner Management
+
+| Role                                              | Description                                                    |
+| ------------------------------------------------- | -------------------------------------------------------------- |
+| **TPMAgreementConfigurationEdit**                 | Read, import and export agreements                             |
+| **TPMAgreementConfigurationActivate**             | Activate agreements                                            |
+| **AuthGroup\_TenantPartnerDirectoryConfigurator** | Read/write Partner Directory (required for pushing agreements) |
+| **CredentialsRead**                               | Read credentials and keystore entries                          |
 
 <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
