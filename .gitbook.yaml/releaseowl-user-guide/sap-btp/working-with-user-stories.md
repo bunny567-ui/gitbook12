@@ -36,30 +36,24 @@ The **MTAR Applications** step displays all registered MTAR applications.
 
 **Step 2: Source Reference**
 
-The **Source Reference** step varies depending on the branching model configured for the selected MTAR application.
+When adding the application to a user story, the **Source Reference** step lets you either create a new feature branch or reference an existing one.
 
-1. Select one of the following options:
-
-* **Create Feature Branch** – Creates a new feature branch for the User Story.
-* **I Already Have a Feature Branch** – Uses an existing feature branch.
-
-2. If **Create Feature Branch** is selected:
-
-* **Feature Branch:** Enter the name of the feature branch.
-* **From Branch:** Select the base branch from which the feature branch will be created.
-
-3. Click **Create Branch**, and then click **Finish**.
+| Field             | Type     | Description                                                                                                                                                    |
+| ----------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Select**        | Radio    | “Create \<Feature/Hotfix> Branch” to have ReleaseOwl create the branch in Git, or “I Already Have a \<Feature/Hotfix> Branch” to reference an existing branch. |
+| **Branch name**   | Text     | The feature/hotfix branch name (e.g. hotfix/DP-488).                                                                                                           |
+| **From Branch**   | Dropdown | The base branch the new branch is cut from. Defaults to the application’s “Create Feature Branch From Branch” value; can be overridden.                        |
+| **Create Branch** | Button   | Creates the branch in the Git repository.                                                                                                                      |
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-4. If **I Already Have a Feature Branch** is selected, Enter  the existing feature branch and click **Finish**.
+* If **I Already Have a Feature Branch** is selected, Enter  the existing feature branch and click **Finish**.
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 **Cherry Pick Model**
 
-* If the selected MTAR application uses the **Cherry Pick Model**, the **Source Reference** step displays the commits available in the configured **Development Branch.**
-* Select the required commits and click **Finish**. Only the selected commits are associated with the User Story and promoted through the release pipeline.
+In the Cherry-Pick model no feature branch is created. Instead, you select the commits related to the user story. The available commits are populated from the application’s development branch — the landscape branch flagged as “**Development Branch**” . The selected commits are cherry-picked onto the target environment branches during promotion.
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -75,10 +69,9 @@ To edit the source reference:
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 3. Update the **Feature Branch** (for the **Feature Branch Model**) or modify the selected **commits** (for the **Cherry Pick Model**).
+4. Click **Save** /**Add** to apply the changes.
 
 <div><figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure></div>
-
-4. Click **Save** /**Add** to apply the changes.
 
 ### User Story Actions
 
