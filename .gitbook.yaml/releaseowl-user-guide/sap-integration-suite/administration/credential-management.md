@@ -335,7 +335,7 @@ To create and assign a role collection for the required environment access, foll
 
 **Trading Partner Management:** The following roles are required for Trading Partner Management
 
-<table><thead><tr><th width="416.4000244140625">Role</th><th>Description</th></tr></thead><tbody><tr><td><strong>TPMAgreementConfigurationEdit</strong></td><td>Read, import and export agreements</td></tr><tr><td><strong>TPMAgreementConfigurationActivate</strong></td><td>Activate agreements</td></tr><tr><td><strong>AuthGroup_TenantPartnerDirectoryConfigurator</strong></td><td>Read/write Partner Directory (required for pushing agreements)</td></tr><tr><td><strong>CredentialsRead</strong></td><td>Read credentials and keystore entries</td></tr></tbody></table>
+<table><thead><tr><th width="416.4000244140625">Role</th><th>Description</th></tr></thead><tbody><tr><td><strong>TPMAgreementConfigurationEdit</strong></td><td>Read, import and export agreements</td></tr><tr><td><strong>TPMAgreementConfigurationActivate</strong></td><td>Activate agreements</td></tr><tr><td><strong>AuthGroup_TenantPartnerDirectoryConfigurator</strong></td><td>Read/write Partner Directory (required for pushing agreements)</td></tr></tbody></table>
 
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -360,7 +360,6 @@ To create and assign a role collection for the required environment access, foll
 | **TPMAgreementConfigurationEdit**                 | Read, import and export agreements                             |
 | **TPMAgreementConfigurationActivate**             | Activate agreements                                            |
 | **AuthGroup\_TenantPartnerDirectoryConfigurator** | Read/write Partner Directory (required for pushing agreements) |
-| **CredentialsRead**                               | Read credentials and keystore entries                          |
 
 <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
