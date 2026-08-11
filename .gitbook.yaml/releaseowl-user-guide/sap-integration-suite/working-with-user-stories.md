@@ -131,42 +131,35 @@ The **Attachments** section allows you to add supporting files or external links
 1. Click the **three-dot (More Actions)** menu.
 2. Select **Import Settings**.
 
-<figure><img src="../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
 
-
+<figure><img src="../../.gitbook/assets/image (2155).png" alt=""><figcaption></figcaption></figure>
 
 ### Import Settings- API
 
 1. Click the **three-dot (More Actions)** menu.
 2. Select **Import Settings**.
 
-<figure><img src="../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2157).png" alt=""><figcaption></figcaption></figure>
 
 3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
 
-
-
-### Import Settings- API
-
-1. Click the **three-dot (More Actions)** menu.
-2. Select **Import Settings**.
-
-<figure><img src="../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
-
-3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
-
-
+<figure><img src="../../.gitbook/assets/image (2156).png" alt=""><figcaption></figcaption></figure>
 
 ### Import Settings- B2B Scenarios&#x20;
 
 1. Click the **three-dot (More Actions)** menu.
 2. Select **Import Settings**.
 
-<figure><img src="../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
+3.  **Agreements:** A pop-up window appears where you can enable the **Force Deploy** option and configure the **Import Options** according to the target environment. Click **Save** to apply the configured settings.
+
+    **Partner Directory Configuration:** A pop-up window appears where you can enable the **Force Deploy** option. Configure Import Options are not available for Partner Directory Configuration. Click **Save** to apply the configured settings.
+
+<div><figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2158).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 Note : **Force Deploy** — lets you redeploy the artifacts/agreements again even if it was already deployed.

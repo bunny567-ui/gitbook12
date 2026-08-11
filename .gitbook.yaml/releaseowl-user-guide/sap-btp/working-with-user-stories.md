@@ -9,16 +9,16 @@ To associate MTAR applications with a User Story:
 1. Navigate to **Change Management** and click **User Stories**.
 2. Click **Create New User Story**.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 2. Enter the required details and click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Actions**, and then click **Edit**.
 4. In the **MTAR Applications** section, click **Add**.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 1: MTAR Applications**
 
