@@ -41,13 +41,15 @@ Displays the details of the selected exported agreement, including the **Version
 
 **Deployment History-** Shows the history of deployments carried out for that agreement, including the environment, deployment time, and the deployment outcome.
 
+<figure><img src="../../.gitbook/assets/image (2140).png" alt=""><figcaption></figcaption></figure>
+
 ### 2. Partner Directory Data
 
 Use this tab to view the Partner Directory data associated with Trading Partner Management (TPM).
 
 * Click **Sync Artifacts** to synchronize Partner Directory data from the **B2B Scenarios** application in SAP Integration Suite into ReleaseOwl. Use **Search by ID** to quickly locate a specific Partner Directory ID.
 
-<figure><img src="../../.gitbook/assets/image (2060).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2141).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **Expand** (arrow) icon to view the details of a Partner Directory entry, including the **Parameter ID**, **Value**, **Type**, and **Content Type**.
 * Parameter ID entries can be of type **String** or **Binary**.
@@ -100,15 +102,35 @@ This is the Releaseowl-only artifact used to **group specific Partner Directory 
 
 <figure><img src="../../.gitbook/assets/image (2068).png" alt=""><figcaption></figcaption></figure>
 
+* For parameters with **Type** set to **Binary**, clicking the **Edit** icon opens a pop-up window. Update or replace the binary content as required, and click **Save** to persist the changes.
+
+<figure><img src="../../.gitbook/assets/image (2149).png" alt=""><figcaption></figcaption></figure>
+
 **Deployment History**&#x20;
 
 * **Deployment History** : Displays the deployment history of the Partner Directory Configuration.
 
-<figure><img src="../../.gitbook/assets/image (2069).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2142).png" alt=""><figcaption></figcaption></figure>
 
-* **Versions** lists every version created for the configuration. From here, you can **assign a specific version to a User Story** for deployment.
+* **Versions** lists every version created for the configuration.
 
-<figure><img src="../../.gitbook/assets/image (2070).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2143).png" alt=""><figcaption></figcaption></figure>
 
+* &#x20;From here, you can **assign a specific version to a User Story** for deployment.&#x20;
+*   To assign a specific version to a User Story for deployment:
 
+    1. Click **Assign User Story**.
 
+    <figure><img src="../../.gitbook/assets/image (2144).png" alt=""><figcaption></figcaption></figure>
+
+    2\. Select the required User Story or User Stories from the list.
+
+<figure><img src="../../.gitbook/assets/image (2145).png" alt=""><figcaption></figcaption></figure>
+
+3. Complete the assignment.
+
+<figure><img src="../../.gitbook/assets/image (2146).png" alt=""><figcaption></figcaption></figure>
+
+**Remove Artifacts:** Users can remove previously added artifacts from **Agreements** and **Partner Directory Configurations** when they are no longer required.
+
+<div><figure><img src="../../.gitbook/assets/image (2147).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2148).png" alt=""><figcaption></figcaption></figure></div>
