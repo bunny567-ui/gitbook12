@@ -2,22 +2,9 @@
 
 ### Release Pipeline
 
-Release Pipelines enable you to orchestrate deployments into SAP environments with right approvals in place. It can be created with one or more stages. Each stage will correspond to automated deployment of mtar application to SAP BTP subaccount with a sequence of activities such as tasks related to approvals, manual changes, deployments, callouts and tests execution
+A Release Pipeline defines how a user story’s changes flow from development to production, including build, merge, validation, approval, and deployment steps. Create or edit pipelines under Release → Release Pipelines. The editor is a five-step wizard:
 
-{% hint style="info" %}
-**Note:** You can create a multi-stage pipeline for continuous deployment across various environments one after the other towards continuous delivery of application all through Dev - QA - Staging - Production.
-{% endhint %}
-
-### Creating a Release Pipeline
-
-Creating a Release Pipeline is a guided **five-step process**, designed to help you define and configure all necessary stages and parameters for end-to-end deployment automation.
-
-| Step1- Release Pipeline Name  | Enter a name in Release Pipeline Name                                                                                                                             |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Step2 - Artifact Source       |  The dropdown contains all the build pipelines of type MTAR. Choose the build pipeline whose mtar artifact must be deployed.                                      |
-| Step3 - Add Stages            | Click on _**Add Stages**_ and add the required stages. Based on your needs, you can add different types of pre-deployment, deployment, and post-deployment tasks. |
-| Step4 - Triggers              | Choose to schedule the pipeline execution or run manually.                                                                                                        |
-| Step5 - Notification Email(s) | Specify the email ids to receive notifications about release pipeline execution status.                                                                           |
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Wizard step</td><td valign="top">Purpose</td></tr><tr><td valign="top">1. Release Pipeline Name</td><td valign="top">Name and basic details of the pipeline.</td></tr><tr><td valign="top">2. Artifact Source</td><td valign="top">The application(s) / source this pipeline promotes.</td></tr><tr><td valign="top">3. Add Stages</td><td valign="top">Define stages (e.g. DEVELOPMENT, QA, PROD) and the ordered tasks in each.</td></tr><tr><td valign="top">4. Triggers</td><td valign="top">How the pipeline is started (promotions are user-initiated / manual).</td></tr><tr><td valign="top">5. Advanced settings</td><td valign="top">Additional pipeline-level options.</td></tr></tbody></table>
 
 **To create a release pipeline:**
 
@@ -45,7 +32,9 @@ Creating a Release Pipeline is a guided **five-step process**, designed to help 
 
 <figure><img src="../../../.gitbook/assets/image (1231).png" alt=""><figcaption></figcaption></figure>
 
-9. **Add Stages:** Click **Add Stage** and enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click **OK.**
+9.  **Add Stages:**  Each stage contains an ordered list of tasks. Within a running pipeline, tasks execute automatically one after another. To pause the pipeline for a manual promotion decision, insert a Wait For Promotion task  at the desired point; human Approval tasks  provide an additional gate.
+
+    In the Feature Branch model the same feature branch is merged into each environment branch as the story advances — the source stays constant and only the Target Environment changes per stage (Development → QA → Production). The development / integration branch is simply the branch mapped to the Development environment; there is no intermediate branch between the feature branch and it.
 
 <figure><img src="../../../.gitbook/assets/image (1237).png" alt=""><figcaption></figcaption></figure>
 
@@ -61,194 +50,120 @@ Creating a Release Pipeline is a guided **five-step process**, designed to help 
 
 <figure><img src="../../../.gitbook/assets/image (1239).png" alt=""><figcaption></figcaption></figure>
 
-### **Deployment Task** &#x20;
+### Common Source Concepts
 
-All the details pertaining to the deployment of the artifact is specified in deployment task. The following screen is displayed on adding a deployment task.
+Several tasks (Pull Request, Merge, Build) choose their source using a Change/Merge/Build Source setting. The options behave consistently:
 
-<figure><img src="../../../.gitbook/assets/image (2135).png" alt=""><figcaption></figcaption></figure>
+<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Source option</td><td valign="top">Meaning</td></tr><tr><td valign="top">Branch / Commits from User Story</td><td valign="top">Uses the feature branch on the user story (Feature Branch model) or the user story’s selected commits (Cherry-Pick model). Each user story is processed individually.</td></tr><tr><td valign="top">Branch from environment</td><td valign="top">Uses the branch mapped to a selected Source Environment. Selecting this reveals an additional Source Environment field. Promotes the whole environment branch (environment-to-environment).</td></tr><tr><td valign="top">Staging branch</td><td valign="top">Uses a staging branch created from the target environment branch . Typically used for Release Package promotion.</td></tr></tbody></table>
 
-**Cloud Transport Management**
+### Pull Request Task
 
-* SAP Cloud Transport Management service allows you to manage the transport of development artifacts and application-specific content between different SAP BTP accounts.
+Creates a pull request from a source branch to a target branch and delivers a review task to the assigned reviewer.
 
-{% hint style="info" %}
-**Note:** Further information on Cloud Transport Management System can be found at [https://help.sap.com/docs/TRANSPORT\_MANAGEMENT\_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/5fef9d6b1cb047b2b18d9eb57aa15352.html](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/5fef9d6b1cb047b2b18d9eb57aa15352.html)
-{% endhint %}
+| Field                           | Type        | Description                                                                                                                                                                                                                                                                                                                |
+| ------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                            | Text        | Task name.                                                                                                                                                                                                                                                                                                                 |
+| Description                     | Text        | Task description.                                                                                                                                                                                                                                                                                                          |
+| Change Source                   | Dropdown    | Branch from User Story (typical for Feature Branch model — PR from the story’s feature branch to the target environment branch) or Branch from environment (PR from a Source Environment branch to the target environment branch; used for Release Package promotions). A Source Environment field appears for the latter. |
+| Target Environment              | Dropdown    | The environment whose branch is the PR target.                                                                                                                                                                                                                                                                             |
+| Assign To                       | Role / User | Who receives the review task (a Role or a specific User) — same as the Approval task.                                                                                                                                                                                                                                      |
+| Promoter cannot be the approver | Checkbox    | Prevents the person promoting from approving their own change.                                                                                                                                                                                                                                                             |
+| Disable email notification      | Checkbox    | Suppresses the notification email.                                                                                                                                                                                                                                                                                         |
+| Approval message required       | Checkbox    | Requires a message on completion.                                                                                                                                                                                                                                                                                          |
+| Message                         | Rich text   | Instruction shown to the reviewer.                                                                                                                                                                                                                                                                                         |
 
-* Select the option **Upload Artifact** to Cloud Transport Management if the artifact has to be uploaded to any other BTP environment.
-
-The following screen is displayed.<br>
-
-<figure><img src="../../../.gitbook/assets/image (1241).png" alt=""><figcaption></figcaption></figure>
-
-Fill in the required details:
-
-| **Select Environment**                       | Select an environment from the available list of registered SAP BTP environments where the deployment has to take place.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Service Instance**                         | Select the Service Instance from the available service instances listed in the dropdown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Service Key**                              | Select the Service Key from the available service keys listed in the dropdown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Node Name**                                | Enter a node name added in the Cloud Transport Management System corresponding to the environment to which the artifact is to be uploaded.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Discard old builds**                       | <p>Enable <strong>Discard Old Builds</strong> to automatically remove older build records and artifacts based on the retention criteria specified below.</p><ul><li><strong>Max # of Builds to Keep</strong>: Specifies the maximum number of recent builds to retain. When this limit is exceeded, older builds are automatically removed.</li><li><strong>Keep Builds for (Days)</strong>: Specifies the number of days build records and artifacts should be retained. Builds older than the specified number of days will be automatically deleted.</li></ul><p><br></p> |
-| <p></p><p><strong>Notify Users</strong> </p> | <p></p><p>Enable this option to send notifications to the users associated with the task or pipeline. Notifications are triggered based on configured events, such as task creation, approval requests, build completion, deployment status, or task failures.</p><p></p><p></p>                                                                                                                                                                                                                                                                                             |
-| **Notify Promotion User**                    | Enable this option to notify the user who initiated the promotion whenever the promotion process starts, completes, succeeds, or fails.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Schedule Time**                            | Specify the date and time at which the task, build, deployment, or promotion should be executed. The configured schedule allows the process to run automatically at the designated time without requiring manual intervention.                                                                                                                                                                                                                                                                                                                                               |
-
-<figure><img src="../../../.gitbook/assets/image (1992).png" alt=""><figcaption></figcaption></figure>
-
-**Trigger:** You can trigger a Release Pipeline either **Manually** or on **Successful Build** it to get triggered automatically once its reference build pipeline gets executed successfully.
-
-<figure><img src="../../../.gitbook/assets/image (1242).png" alt=""><figcaption></figcaption></figure>
-
-### CAP Application Build Task
-
-The **CAP Application Build Task** is used to build an SAP Cloud Application Programming (CAP) application as part of the release pipeline. This task compiles the application source code, resolves dependencies, and generates the deployment artifacts required for subsequent deployment stages.
-
-**Configuration**
-
-* **Name**: Enter a unique name for the build task.
-* **Description**: Provide a brief description of the task.
-* **Select Environment(s)**: Choose the environment(s) where the build should be executed. The available environments are those that have been registered and configured in the **Project Settings** section.
-* **Notify Users**: Enable this option to send notifications to users when the task starts, completes, or fails.
-
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
-
-## MTAR Pull Request Task
-
-The **MTAR Pull Request Task** creates a Pull Request between the configured source and target branches during Release Pipeline execution. It enables code review and approval before changes are promoted to the next environment.
-
-#### Configure the MTAR Pull Request Task
-
-1. Navigate to **Release** and click **Release Pipelines**.
-2. Open the required Release Pipeline.
-3. Add or edit the **MTAR Pull Request Task**.
-4. Provide the following information:
-
-| **Field**              | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**               | Enter a name for the task.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Description**        | Enter a brief description of the task.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Change Source**      | <p>Select the source branch for the Pull Request.<br><br><strong>Available options:</strong><br>• <strong>Branch from User Story</strong> – Uses the <strong>Feature Branch</strong> or <strong>Hot Fix Branch</strong> associated with the User Story.<br>• <strong>Branch from Environment</strong> – Uses the branch configured for the selected source environment in the MTAR Application.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Target Environment** | Select the target environment. ReleaseOwl uses the branch configured for the selected environment as the target branch for the Pull Request.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Assign To**          | <p>Specifies who is responsible for reviewing and approving the Pull Request. The following options are available:<br><br><strong>User</strong> – Select a specific user from the available list. The selected user is assigned the Pull Request approval task.<br><br><strong>Role</strong> – Select a role. Any user assigned to the selected role can review and approve the Pull Request.<br><br><strong>Custom</strong> – Assign different roles to specific components. Users assigned to the configured roles for each component can review and approve the Pull Request for their respective components.<br><br><strong>Note:</strong> The following options are available only when <strong>Custom</strong> is selected:<br><br>• <strong>Export Roles</strong> – Downloads the configured component-to-role mappings. The exported file can be reused in another Release Pipeline.<br>• <strong>Import Roles</strong> – Uploads a previously exported component-to-role mapping file.<br>• <strong>Add Component and Role (+)</strong> – Click <strong>+</strong> to add a component-to-role mapping. Select the required <strong>Component</strong>, specify one or more <strong>Roles</strong> (comma-separated), and click <strong>Add</strong> to save the mapping.<br><strong>Promoter</strong> </p> |
-
-5. Click **Save** to save the task.
+**How it works (Feature Branch model)**: The reviewer receives a task in My Tasks, opens the pull request directly in the Git repository, and approves it there — they do not merge it in Git. The actual merge is performed by the downstream Merge task in the pipeline. The reviewer then returns to ReleaseOwl and completes the Pull Request task, and the pipeline continues. Completion can also be automated with a Git webhook.
 
 {% hint style="info" %}
-**Note :** During pipeline execution, ReleaseOwl creates the Pull Request, assigns the approval task to the configured reviewer, and resumes the Release Pipeline after the Pull Request is approved.
+**Behavior**:  If a reviewer merges the pull request directly in Git instead of only approving, the downstream Merge task still runs but finds no changes to merge — it completes without error.
+
+**Open item**: The behavior of the Git pull request after ReleaseOwl performs the merge (closed via API vs. auto-closed) is \[to be confirmed].
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2130).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-## MTAR Application Merge Task
+### Merge Task
 
-The **MTAR Application Merge Task** merges the source branch into the target branch after the Pull Request is approved.
+Merges changes from a source branch into a target branch. The source and target branches are resolved at runtime from the task configuration.
 
-#### Configure the MTAR Application Merge Task
+| Field                      | Type                | Description                                                                                                                            |
+| -------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Name / Description         | Text                | Task identity.                                                                                                                         |
+| Merge Source               | Dropdown            | Branch/Commits from User Story, Branch from environment, or Staging branch.                                                            |
+| Target Environment         | Dropdown            | The environment whose branch receives the merge.                                                                                       |
+| Notify Users               | Checkbox            | Send notifications on completion.                                                                                                      |
+| Create Staging Branch for  | Dropdown (Advanced) | None, Release Package, or Both — whether a staging branch is created (from the target environment branch) instead of merging directly. |
+| Execute this task only for | Dropdown (Advanced) | User Story, Release Package, or Both — scopes the task to the relevant promotion mode.                                                 |
 
-1. Add or edit the **MTAR Application Merge Task**.
-2. Provide the following information:
+By default the source changes are merged directly into the target environment branch. When staging is enabled, changes are merged into a staging branch cut from the target environment branch instead; a later Merge task then promotes the staging branch into the target environment branch. Creating a staging branch is optional — configure the Merge and Build tasks to match your requirement.
 
-| **Field**                      | **Description**                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**                       | Enter a name for the task.                                                                                                                                                                                                                                                                                                                            |
-| **Description**                | Enter a brief description of the task.                                                                                                                                                                                                                                                                                                                |
-| **Merge Source**               | <p>Select the source branch to merge.<br><br><strong>Available options:</strong><br>• <strong>Branch from User Story</strong> – Uses the Feature Branch or Hot Fix Branch associated with the User Story.<br>• <strong>Branch from Environment</strong> – Uses the branch configured for the selected source environment in the MTAR Application.</p> |
-| **Staging Branch**             | Enable this option to create a temporary staging branch and perform the merge operation through the staging branch.                                                                                                                                                                                                                                   |
-| **Target Environment**         | Select the target environment. ReleaseOwl uses the branch configured for the selected environment as the merge target.                                                                                                                                                                                                                                |
-| **Notify Users**               | Enable this option to send email notifications after the merge operation is completed.                                                                                                                                                                                                                                                                |
-| **Create Staging Branch For**  | <p>Specifies when a staging branch should be created.<br><br><strong>Available options:</strong><br>• <strong>User Story</strong><br>• <strong>Release Package</strong><br>• <strong>Both</strong></p>                                                                                                                                                |
-| **Execute This Task Only For** | <p>Specifies when the Merge Task should execute.<br><br><strong>Available options:</strong><br>• <strong>User Story</strong><br>• <strong>Release Package</strong><br>• <strong>Both</strong></p>                                                                                                                                                     |
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-3. Click **Save** to save the task.
+### Build Task
 
-<div><figure><img src="../../../.gitbook/assets/image (2131).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2132).png" alt=""><figcaption></figcaption></figure></div>
+Builds the application code using the Build Pipeline configured in ReleaseOwl, producing the MTAR artifact.
 
-## MTAR Application Build Task
+| Field                                                 | Type     | Description                                                                                                                                                                   |
+| ----------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name / Description                                    | Text     | Task identity.                                                                                                                                                                |
+| Build Source                                          | Dropdown | Branch from User Story, Branch from environment (reveals a Source Environment), or Staging branch .                                                                           |
+| Select Environment(s)                                 | Dropdown | The environment whose configured Build Pipeline is used to build.                                                                                                             |
+| Use Different Settings for Build from Release Package | Checkbox | Lets User Story builds and Release Package builds use different sources (e.g. User Story builds from the environment branch, Release Package builds from the staging branch). |
+| Notify Users                                          | Checkbox | Send notifications on completion.                                                                                                                                             |
 
-The **MTAR Application Build Task** executes the configured Build Pipeline and generates deployable MTAR artifacts.
+The per-environment Build Pipeline (from the landscape) is used for fixed environment branches. For dynamic branches — hotfix branches and staging branches — the Build task uses the application’s dynamic build pipeline.
 
-**Configure the MTAR Application Build Task**
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-1. Add or edit the **MTAR Application Build Task**.
-2. Provide the following information:
+### Validate Task (optional)
 
-| **Field**                                                 | **Description**                                                                                                                                                                                                                                                                                                                                                                                           |
-| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**                                                  | Enter a name for the task.                                                                                                                                                                                                                                                                                                                                                                                |
-| **Description**                                           | Enter a brief description of the task.                                                                                                                                                                                                                                                                                                                                                                    |
-| **Build Source**                                          | <p>Select the source used for the build.<br><br><strong>Available options:</strong><br>• <strong>Branch from User Story</strong> – Builds the Feature Branch or Hot Fix Branch associated with the User Story.<br>• <strong>Branch from Environment</strong> – Builds the branch configured for the selected environment.<br>• <strong>Staging Branch</strong> – Builds the temporary staging branch.</p> |
-| **Use Different Settings for Build from Release Package** | Enable this option to use a different build strategy for Release Package executions.                                                                                                                                                                                                                                                                                                                      |
-| **Build Source for Release Package**                      | <p>Select the build source for Release Package execution.<br><br><strong>Available options:</strong><br>• <strong>Branch from Environment</strong><br>• <strong>Staging Branch</strong></p>                                                                                                                                                                                                               |
-| **Notify Users**                                          | Enable this option to send email notifications after the build execution is completed.                                                                                                                                                                                                                                                                                                                    |
+Presents the results of the static code checks that were executed as part of the Build task. The Validate task itself does not run the scan — it reads and displays the validation report.
 
-3. Click **Save** to save the task.
+| Field                   | Type                          | Description                                              |
+| ----------------------- | ----------------------------- | -------------------------------------------------------- |
+| Name/ Description       | Text                          | Task identity.                                           |
+| Select Build Task       | Dropdown                      | The Build task whose static-code-check results are read. |
+| Target                  | Dropdown                      | The target environment.                                  |
+| User story Dependencies | Checkbox (Quality Checks)     | Optionally validate user-story dependencies.             |
+| Continue on Failure     | Checkbox (Pipeline Execution) | Allow the pipeline to proceed even if validation fails.  |
 
-{% hint style="info" %}
-**Note** : If multiple MTAR applications are associated with a User Story, ReleaseOwl builds each application independently and generates separate MTAR artifacts.
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2133).png" alt=""><figcaption></figcaption></figure>
+### Approval Task
 
-## MTAR Validation Task
+A human gate that pauses the pipeline until the assigned Role or User approves the deployment. Assignment and options (Promoter cannot be the approver, Disable email notification, Approval message required, Message) mirror the Pull Request task’s assignment settings. The approver receives the task in My Tasks.
 
-The **MTAR Validation Task** validates the generated MTAR artifacts before deployment.
+<figure><img src="../../../.gitbook/assets/image (2164).png" alt=""><figcaption></figcaption></figure>
 
-**Configure the MTAR Validation Task**
+### Deployment Task
 
-1. Add or edit the **MTAR Validation Task**.
-2. Provide the following information:
+Deploys the built MTAR artifact to the target SAP Cloud environment.
 
-| **Field**               | **Description**                                                                                                                                     |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**                | Enter a name for the task.                                                                                                                          |
-| **Description**         | Enter a brief description of the task.                                                                                                              |
-| **Select Build Task**   | Select the Build Task whose generated MTAR artifacts will be validated.                                                                             |
-| **Target Environment**  | Select the target environment used for dependency analysis, impact analysis, and environment compatibility validation.                              |
-| **Continue on Failure** | Enable this option to continue the Release Pipeline even if validation reports failures. When disabled, the pipeline stops if the validation fails. |
+| Field                                         | Type     | Description                                                          |
+| --------------------------------------------- | -------- | -------------------------------------------------------------------- |
+| Name/ Description                             | Text     | Task identity.                                                       |
+| Select Environment(s)                         | Dropdown | The target environment to deploy to.                                 |
+| Select Build Task                             | Dropdown | The Build task whose artifact is deployed.                           |
+| Upload Artifact to Cloud Transport Management | Checkbox | Optionally upload the MTAR to SAP Cloud Transport Management (CTMS). |
+| Keep Logs for (Days)                          | Number   | Retention period for deployment logs.                                |
+| Notify Users / Notify Promotion User          | Checkbox | Notification options.                                                |
+| Schedule Time                                 | Checkbox | Schedule the deployment for a later time.                            |
 
-3. Click **Save** to save the task.
+The MTA extension files applied at deployment are taken from those associated with the target environment in the Landscape Configuration.
 
-{% hint style="info" %}
-**Note :** Validation may include **SonarQube analysis**, **ESLint validation**, **OPA5 test execution**, **static code analysis**, **build verification**, and **artifact validation**, depending on the Build Pipeline configuration.
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2134).png" alt=""><figcaption></figcaption></figure>
+### Update User Story Status task (“Stage Done”)
 
-#### **Triggers**&#x20;
+Updates the status of the user stories processed by the stage (for example, marking DEVELOPMENT as done). Typically the last task in a stage.
 
-The **Triggers** option specifies when the task is executed in the Release Pipeline.
+<figure><img src="../../../.gitbook/assets/image (2165).png" alt=""><figcaption></figcaption></figure>
 
-The following trigger options are available:
+### Wait For Promotion Task
 
-* **Manual** – Executes the task only when it is manually triggered by a user during the Release Pipeline execution.
-* **On Successful Build** – Automatically executes the task after the associated Build Pipeline completes successfully. This ensures that the task is performed only when the build is successful.
+Halts the pipeline at this point and waits for the user to manually promote. Because tasks otherwise run automatically in sequence, this task is how manual stage-gating is implemented — insert it wherever the pipeline should stop and wait for an explicit promotion decision.
 
-#### **Advance Settings**&#x20;
-
-The **Advanced Settings** section provides additional configuration options for the release pipeline to help enforce governance and notification requirements.
-
-1. **Prevent Same Approver Across Tasks**
-
-Enable the **Prevent same approver across tasks** option to enforce segregation of duties within the release pipeline.
-
-When this option is enabled, the same user cannot approve multiple **Human Tasks** within the same release pipeline. This ensures that different approval stages are handled by different individuals, maintaining proper checks and balances throughout the release process.
-
-**Behavior:**
-
-For example, a user who approves a **Peer Review** task cannot also approve subsequent tasks such as **QA Approval** or **UAT Testing** in the same pipeline.
-
-* The system validates approvers across all Human Tasks in the pipeline.
-* If the same user attempts to approve more than one Human Task, the approval action is blocked.
-* An error message is displayed, indicating that the approver has already been used for another task in the pipeline.
-
-2. **Notification Email(s)**
-
-Use the **Notification Email(s)** field to specify email addresses that should receive notifications related to the release pipeline.
-
-* Enter one or more email addresses separated by commas.
-* Notifications will be sent to the specified recipients based on pipeline events and task activities.
-
-<figure><img src="../../../.gitbook/assets/image (1975).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2166).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** If the Release Pipeline fails, the logs are also attached in the notification email. By default, the user who creates the Release Pipeline is notified and specifying the distribution list is optional.
@@ -314,25 +229,24 @@ To run a release pipeline:
 
 3\. A pop-up appears. Enter a **Cycle Name** and **Select build** from the drop down.
 
-<figure><img src="../../../.gitbook/assets/image (1246).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2167).png" alt=""><figcaption></figcaption></figure>
 
 4\. Click **Trigger Pipeline.** A message is displayed, about successful creation of a release pipeline. Click OK. The following screen is displayed:
 
 <figure><img src="../../../.gitbook/assets/image (1440).png" alt=""><figcaption></figcaption></figure>
 
-5\. Click **Refresh.** Click on the required build to view a list of the triggered cycle.
+5. Click **Refresh** to view the newly triggered cycle.
+6. Select the required **Build** to view the list of triggered cycles.
 
 <figure><img src="../../../.gitbook/assets/image (1441).png" alt=""><figcaption></figcaption></figure>
 
-6. Click on the arrow button to expand the required cycle and view its details.
+7. Click the **Expand** (arrow) icon for the required cycle to view its details.
 
 <figure><img src="../../../.gitbook/assets/image (1443).png" alt=""><figcaption></figcaption></figure>
 
-7. Click **Logs¸** to view the logs of this cycle. You can even download the logs by clicking the **Download Dmol Log link.**
+8. Select the required cycle to navigate to **Pipeline Activity**, where you can monitor the pipeline execution and view the status of each stage.
 
 <figure><img src="../../../.gitbook/assets/image (1444).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (1446).png" alt=""><figcaption></figcaption></figure>
 
 **Editing a Release Pipeline**
 
@@ -343,6 +257,6 @@ To run a release pipeline:
 <figure><img src="../../../.gitbook/assets/image (1977).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note :**  Users can now promote builds directly from the **User Story** and **Release Package** sections without navigating to the Build Pipelines module.
+**Note :**  Users can now promote builds directly from the [**User Story**](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-btp/working-with-user-stories) and **Release Package** sections without navigating to the Build Pipelines module.
 {% endhint %}
 

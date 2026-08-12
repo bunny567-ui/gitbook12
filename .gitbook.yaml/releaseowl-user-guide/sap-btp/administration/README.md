@@ -1,9 +1,12 @@
 # Administration
 
-In ReleaseOwl, the SAP BTP Administration section is responsible for configuring secure access and connectivity to BTP services. Administrators manage the core setup required for ReleaseOwl to interact with SAP Cloud Integration and other BTP components. This includes:
+Before an MTAR application can be created, the connections it relies on must exist. These are registered once in the Administration area and then referenced by name throughout the application and pipeline configuration.
 
-* **Credential Management:** Registering and securely storing Basic or OAuth credentials to authenticate ReleaseOwl with SAP BTP services.
-* **Cloud Environment Setup:** Registering BTP environments by providing tenant URLs, environment types (Dev, QA, Prod), and mapping the correct credentials.
+### Registering Credentials
 
-These administrative configurations ensure that ReleaseOwl can securely connect, deploy, and manage artifacts across SAP BTP landscapes.
+Two kinds of credentials are used by MTAR delivery:
+
+•    SCM (Git) credentials — used to read the repository, create branches, raise pull requests, and merge. Typically a username plus a personal access token.
+
+* SAP Cloud credentials — used by the build/deploy tooling to authenticate to the target SAP BTP environment
 

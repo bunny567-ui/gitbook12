@@ -1,6 +1,6 @@
 # Cloud Environment Registration
 
-To register the SAP cloud Environment, you must first register the corresponding credential. Follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-btp/administration/credential-management) and complete the credential setup.
+To register the SAP cloud Environment, you must first register the corresponding credential. Follow the [link ](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-btp/administration/credential-management) and complete the credential setup.  Each SAP Cloud environment (for example Development, QA, Pre-Production, Production) is registered as an Environment. These environments are later selected in the application’s Landscape Configuration and in the release-pipeline tasks (as Source/Target environments).
 
 #### **Navigate to SAP  Cloud Environment** <a href="#pdf-page-5hkyhw0dgtvjrdeu0fx7-id-1.-navigate-to-sap-cloud-environment" id="pdf-page-5hkyhw0dgtvjrdeu0fx7-id-1.-navigate-to-sap-cloud-environment"></a>
 
@@ -69,5 +69,5 @@ Each log entry includes:
 
 The Logs section enables administrators to track environment-related activities and maintain audit and compliance records.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

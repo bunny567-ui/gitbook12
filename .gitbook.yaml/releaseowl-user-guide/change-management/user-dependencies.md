@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# Dependencies(Beta)
+# User Dependencies
 
 ReleaseOwl includes a **User Story Dependency Check** as part of the validation process. This feature ensures that user stories follow the correct execution sequence during deployments — helping avoid conflicts, blockers, or missed dependencies.
 

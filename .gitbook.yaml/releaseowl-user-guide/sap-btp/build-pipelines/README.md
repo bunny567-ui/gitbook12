@@ -1,6 +1,12 @@
 # Build Pipelines
 
-The Build section in ReleaseOwl enables developers to create MTAR artifacts and validate changes thoroughly for early feedback.
+A Build Pipeline compiles the application source and produces the MTAR artifact. ReleaseOwl uses two categories of build pipeline for MTAR delivery:
+
+•    **Per-environment build pipelines** — configured for each environment branch and assigned in the Landscape Configuration (the Build Pipeline field of each landscape row, §4.1).
+
+•    **Dynamic build pipeline** — assigned on the application (Build Pipeline for Dynamic Branches, §3.1) and used to build dynamic branches such as hotfix branches and staging branches that are created on demand and have no fixed per-environment pipeline.
+
+* Build Pipelines are created and maintained under Build → Build Pipelines.
 
 ### **Build Pipeline (SAP BTP)** <a href="#pdf-page-hbalethepy3zsklyalpx-build-pipeline-sap-btp" id="pdf-page-hbalethepy3zsklyalpx-build-pipeline-sap-btp"></a>
 
@@ -42,6 +48,8 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 
 ### **Build Pipelines** <a href="#pdf-page-hbalethepy3zsklyalpx-build-pipelines" id="pdf-page-hbalethepy3zsklyalpx-build-pipelines"></a>
 
+The Build section in ReleaseOwl enables developers to create MTAR artifacts and validate changes thoroughly for early feedback.
+
 1. Navigate to the **Build Pipelines** section and click on **New** **Build Pipeline**.
 
 <figure><img src="../../../.gitbook/assets/image (1959).png" alt=""><figcaption></figcaption></figure>
@@ -79,7 +87,7 @@ The MTA archive builder is a standalone command-line tool that builds a deployme
 3. **Max # of Builds to Keep**: Specify the maximum number of build records to retain. It is recommended to set this value to **30** to preserve recent build history and prevent excessive storage consumption in Jenkins.
 4. After completing the configuration, click **Step 4** to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Scheduler Section**&#x20;
 
@@ -93,7 +101,7 @@ Configure the pipeline execution and notification settings:
 
 2. After selecting the required scheduler option, click **Step 5** to continue.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Environment**
 
@@ -102,7 +110,7 @@ Configure the deployment environment for the Build Pipeline:
 1. **Development Environment** – Select the required environment from the drop-down list. The available environments are those that have been previously registered in ReleaseOwl through the **SAP Cloud  Environment** registration process.&#x20;
 2. After selecting the required development environment, click **Step 6** to continue.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Notification**
 

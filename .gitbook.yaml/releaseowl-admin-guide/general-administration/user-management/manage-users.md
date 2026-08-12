@@ -67,7 +67,7 @@ Users assigned the **User** role have access only to the projects to which they 
 
 5. Once the user is created, the newly created user will appear in the **Users Details** list.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Managing User Details
 
@@ -114,7 +114,7 @@ The **Lock** feature allows administrators to control access to the system for s
 2. Click the **Lock** button.
 3. The selected users will be locked and denied access to the system until unlocked.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Unlock**
 
