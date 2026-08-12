@@ -22,6 +22,8 @@ To sync release versions:
 3. On the **Release Versions** page in ReleaseOwl, click **Sync Release Versions**.
 4. The release version created in Jira is synchronized and displayed in ReleaseOwl.
 
+<figure><img src="../../.gitbook/assets/image (2169).png" alt=""><figcaption></figcaption></figure>
+
 **View User Stories for a Release Version**
 
 * Click **Actions** and select **User Stories** against any release version.

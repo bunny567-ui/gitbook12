@@ -2,7 +2,7 @@
 
 Release Package is a collection of one or more user stories that are validated and deployed as a single entity.
 
-### To create a release package:
+#### To create a release package
 
 1. Go to **Release** and click **Release Packages.**
 2. Click **Create New Release Package.**<br>
