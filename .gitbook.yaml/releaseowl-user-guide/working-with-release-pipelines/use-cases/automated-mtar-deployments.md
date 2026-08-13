@@ -60,7 +60,38 @@ Several tasks (Pull Request, Merge, Build) choose their source using a Change/Me
 
 Creates a pull request from a source branch to a target branch and delivers a review task to the assigned reviewer.
 
-| Field                           | Type        | Description                                                                                                                                                                                                                                                                                                                |
+**Prerequisite — GitLab Token**
+
+The **Pull Request** and **Merge** tasks authenticate to GitLab using the token stored in the project's **Version Control** credential.
+
+Before configuring these tasks, generate a GitLab access token with the required permissions.
+
+1. Log in to GitLab using the service account that ReleaseOwl will use.
+2. Go to **Preferences → Access Tokens**. Alternatively, go to **Group/Project → Settings → Access Tokens**.
+3. Click **Add new token**.
+4. Enter a **Name** and **Expiration date** for the token.
+5. In the **Resource and permission selector**, select the **Group and project** tab and enable the following granular permissions:
+
+| Resource                                     | Permissions that MUST be enabled         | If NOT enabled                                                                                                                                                                                                                     |
+| -------------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Repository → **Code**                        | **Read**                                 | ReleaseOwl cannot read the source and target branches. PR creation fails immediately.                                                                                                                                              |
+| Repository → **Commit**                      | **Create, Read, Update**                 | Story commits cannot be read and merge commits cannot be written. The Merge task fails even when the PR is approved.                                                                                                               |
+| Repository → **Merge Request**               | **Approve, Create, Merge, Read, Update** | The core of the feature. Without _Create_ the Pull Request task cannot open the PR; without _Read_ it cannot track review status; without _Merge_ the downstream Merge task cannot merge — the pipeline stalls at the merge stage. |
+| Repository → **Merge Request Approval Rule** | **Create, Read, Update**                 | Approval state of the PR cannot be evaluated. The Merge task cannot verify the PR is approved before merging.                                                                                                                      |
+| Repository → **Branch**                      | **Create, Read**                         | Feature branches cannot be created (Feature Branch model) and environment branches cannot be resolved as PR source/target.                                                                                                         |
+| Search → **Global Search**                   | **Use**                                  | Repository and merge request lookup via the search API fails.                                                                                                                                                                      |
+
+{% hint style="info" %}
+**Note:** All the above permissions are mandatory. If any permission is missing, the pipeline may fail at runtime. For example, the Pull Request may not be created, the approval status may not be read, or the Merge task may not be able to merge the pull request.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (2175).png" alt=""><figcaption></figcaption></figure>
+
+**Configure the Pull Request Task**
+
+Configure the following fields when adding the **Pull Request Task** to the release pipeline:
+
+| **Field**                       | **Type**    | **Description**                                                                                                                                                                                                                                                                                                            |
 | ------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Name                            | Text        | Task name.                                                                                                                                                                                                                                                                                                                 |
 | Description                     | Text        | Task description.                                                                                                                                                                                                                                                                                                          |
@@ -76,17 +107,17 @@ Creates a pull request from a source branch to a target branch and delivers a re
 
 {% hint style="info" %}
 **Behavior**:  If a reviewer merges the pull request directly in Git instead of only approving, the downstream Merge task still runs but finds no changes to merge — it completes without error.
-
-**Open item**: The behavior of the Git pull request after ReleaseOwl performs the merge (closed via API vs. auto-closed) is \[to be confirmed].
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Merge Task
 
 Merges changes from a source branch into a target branch. The source and target branches are resolved at runtime from the task configuration.
 
-| Field                      | Type                | Description                                                                                                                            |
+| **Field**                  | **Type**            | **Description**                                                                                                                        |
 | -------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Name / Description         | Text                | Task identity.                                                                                                                         |
 | Merge Source               | Dropdown            | Branch/Commits from User Story, Branch from environment, or Staging branch.                                                            |
@@ -103,7 +134,7 @@ By default the source changes are merged directly into the target environment br
 
 Builds the application code using the Build Pipeline configured in ReleaseOwl, producing the MTAR artifact.
 
-| Field                                                 | Type     | Description                                                                                                                                                                   |
+| **Field**                                             | **Type** | **Description**                                                                                                                                                               |
 | ----------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Name / Description                                    | Text     | Task identity.                                                                                                                                                                |
 | Build Source                                          | Dropdown | Branch from User Story, Branch from environment (reveals a Source Environment), or Staging branch .                                                                           |
@@ -119,7 +150,7 @@ The per-environment Build Pipeline (from the landscape) is used for fixed enviro
 
 Presents the results of the static code checks that were executed as part of the Build task. The Validate task itself does not run the scan — it reads and displays the validation report.
 
-| Field                   | Type                          | Description                                              |
+| **Field**               | **Type**                      | **Description**                                          |
 | ----------------------- | ----------------------------- | -------------------------------------------------------- |
 | Name/ Description       | Text                          | Task identity.                                           |
 | Select Build Task       | Dropdown                      | The Build task whose static-code-check results are read. |
@@ -139,7 +170,7 @@ A human gate that pauses the pipeline until the assigned Role or User approves t
 
 Deploys the built MTAR artifact to the target SAP Cloud environment.
 
-| Field                                         | Type     | Description                                                          |
+| **Field**                                     | **Type** | **Description**                                                      |
 | --------------------------------------------- | -------- | -------------------------------------------------------------------- |
 | Name/ Description                             | Text     | Task identity.                                                       |
 | Select Environment(s)                         | Dropdown | The target environment to deploy to.                                 |
