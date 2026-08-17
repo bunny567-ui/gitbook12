@@ -1,8 +1,8 @@
 # Approval Task
 
-### Approval Task
+Approval Task is used to pauses the release pipeline until a designated approver signs off. If a deployment requires prior approval, add an Approval Task before the Deployment Task when creating the Release Pipeline. The pipeline does not proceed to the next task until the approval is completed. Upon selecting this task type, the following configuration screen is displayed:
 
-Pauses the release pipeline until a designated approver signs off. If a deployment requires prior approval, add an Approval Task **before** the Deployment Task when creating the Release Pipeline. The pipeline does not proceed to the next task until the approval is completed.
+<figure><img src="../../../.gitbook/assets/image (2179).png" alt=""><figcaption></figcaption></figure>
 
 | Field                               | Type                 | Description                                                                                                                                                                                    |
 | ----------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -13,6 +13,8 @@ Pauses the release pipeline until a designated approver signs off. If a deployme
 | **Disable Email Notification**      | Checkbox             | Approvers do not receive the approval email link; they are notified only of the final status (approved/rejected).                                                                              |
 | **Approval Message Required**       | Checkbox             | Approvers must enter a comment when performing the Approve or Reject action from My Tasks. The action cannot be completed without a comment.                                                   |
 | **Promoter cannot be the approver** | Checkbox             | Prevents the person who promoted the change from approving their own promotion. Even if the promoter is the assigned user or holds the assigned role, they cannot complete this approval task. |
+
+<figure><img src="../../../.gitbook/assets/image (2178).png" alt=""><figcaption></figcaption></figure>
 
 #### Assignment types
 
