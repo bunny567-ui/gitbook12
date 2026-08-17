@@ -16,7 +16,21 @@ To associate MTAR applications with a User Story:
 <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Actions**, and then click **Edit**.
-4. In the **MTAR Applications** section, click **Add**.
+4. In the User Story section, the **Change Type** field displays two options:
+   * **Normal**
+   * **Hotfix**
+5. Select the required change type.
+6.  **Normal:** The user story follows the standard release process. Branches are created and promoted using the application's regular branch configuration.
+
+    **Hotfix:** The user story is used for urgent fixes. ReleaseOwl always assigns the **hotfix branch** to the user story. Promotion is carried out using the application's Hotfix configuration, so the fix can be delivered to production without waiting for the regular release.
+
+{% hint style="info" %}
+**Note:** Even if the application uses the Cherry-Pick model, a Hotfix user story works only with branches — you add branches to the user story, not individual commits.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (2184).png" alt=""><figcaption></figcaption></figure>
+
+7. In the **MTAR Applications** section, click **Add**.
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -56,6 +70,21 @@ When adding the application to a user story, the **Source Reference** step lets 
 In the Cherry-Pick model no feature branch is created. Instead, you select the commits related to the user story. The available commits are populated from the application’s development branch — the landscape branch flagged as “**Development Branch**” . The selected commits are cherry-picked onto the target environment branches during promotion.
 
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Step 3 — Source Reference (Hotfix Branch)
+
+Because the change type is Hotfix, the Source Reference step works with a **hotfix branch**:
+
+| Field              | Type     | Description                                                                                                                                                                          |
+| ------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Select**         | Radio    | **Create Hotfix Branch** — ReleaseOwl creates the hotfix branch in the Git repository; or **I Already Have a Hotfix Branch** — reference a branch that already exists.               |
+| **Hotfix Branch**  | Text     | The hotfix branch name.                                                                                                                                                              |
+| **From Branch**    | Dropdown | The dropdown lists the application's environment branches . For a production fix, select the branch running in production so the hotfix contains exactly what is live plus your fix. |
+
+* Click **Finish** to create the hotfix branch and complete the assignment.
+* If **I Already Have a Hotfix Branch** is selected, enter the existing hotfix branch name and click **Finish.**
+
+<figure><img src="../../.gitbook/assets/image (2183).png" alt=""><figcaption></figcaption></figure>
 
 #### Edit Feature Branch / Commits
 

@@ -220,7 +220,7 @@ sonar.test.inclusions=webapp/test/unit/**/*.js,webapp/test/integration/**/*.js
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (2113).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (2113).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2180).png" alt=""><figcaption></figcaption></figure></div>
 
 **Configure Karma in ReleaseOwl**
 
