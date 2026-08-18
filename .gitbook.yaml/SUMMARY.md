@@ -122,6 +122,7 @@
       * [Credential Management](releaseowl-user-guide/sap-analytics-cloud/administration/credential-management.md)
       * [Environment Registration](releaseowl-user-guide/sap-analytics-cloud/administration/environment-registration.md)
     * [Analytics Cloud Management](releaseowl-user-guide/sap-analytics-cloud/analytics-cloud-management.md)
+    * [Working with UserStories](releaseowl-user-guide/sap-analytics-cloud/working-with-userstories.md)
   * [SAP Datasphere](releaseowl-user-guide/sap-datasphere/README.md)
     * [Administration](releaseowl-user-guide/sap-datasphere/administration/README.md)
       * [Credential Management](releaseowl-user-guide/sap-datasphere/administration/credential-management.md)
