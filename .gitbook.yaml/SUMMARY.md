@@ -128,6 +128,7 @@
       * [Credential Management](releaseowl-user-guide/sap-datasphere/administration/credential-management.md)
       * [Datasphere Environment Registration](releaseowl-user-guide/sap-datasphere/administration/datasphere-environment-registration.md)
     * [Datasphere Management](releaseowl-user-guide/sap-datasphere/datasphere-management.md)
+    * [Working with UserStories](releaseowl-user-guide/sap-datasphere/working-with-userstories.md)
   * [SAP ABAP Cloud](releaseowl-user-guide/sap-abap-cloud/README.md)
     * [ABAP Cloud Registration in ReleaseOwl](releaseowl-user-guide/sap-abap-cloud/abap-cloud-registration-in-releaseowl/README.md)
       * [ABAP Cloud Management](releaseowl-user-guide/sap-abap-cloud/abap-cloud-registration-in-releaseowl/abap-cloud-management.md)
