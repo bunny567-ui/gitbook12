@@ -1,8 +1,6 @@
 # Pull Request Task
 
-#### Pull Request Task <a href="#pull-request-task" id="pull-request-task"></a>
-
-Creates a pull request from a source branch to a target branch and delivers a review task to the assigned reviewer.
+This task creates a pull request from a source branch to a target branch and delivers a review task to the assigned reviewer.
 
 **Prerequisite — GitLab Token**
 
