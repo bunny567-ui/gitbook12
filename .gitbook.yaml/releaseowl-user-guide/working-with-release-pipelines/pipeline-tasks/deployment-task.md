@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Deployment Task
 
 A **Deployment Task** is a pipeline action that defines _how_ an artifact is delivered, installed, or transported to a designated SAP target system as part of an automated release process. It acts as the execution unit responsible for deploying one or more artifact types—such as SAP Transport Requests (TRs), MTAR packages, or CPI artifacts—to their respective runtime environments.
@@ -18,7 +14,7 @@ The **CPI Deployment Task** handles the automated deployment of integration arti
 
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **CPI -Deployment Task Configuration**
+### **1. CPI -Deployment Task Configuration**
 
 | **Field**                 | **Description**                                                                                                                                               |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,29 +31,23 @@ The **CPI Deployment Task** handles the automated deployment of integration arti
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **2. MTAR Deployment Task (SAP BTP Multi-Target Applications)**
+### **2. MTAR- Deployment Task Configuration**
 
-The **MTAR Deployment Task** is designed for deploying **Multi-Target Application (MTAR)** packages to SAP BTP Cloud Foundry or Kyma environments. MTAR packages typically contain application modules such as CAP services, HTML5 UI modules, or microservices.
+The **Deploy task** deploys the built MTAR artifact to the target SAP Cloud environment.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+| Field                                             | Type     | Description                                                           |
+| ------------------------------------------------- | -------- | --------------------------------------------------------------------- |
+| **Name / Description**                            | Text     | Task identity.                                                        |
+| **Select Environment(s)**                         | Dropdown | The target environment to deploy to.                                  |
+| **Select Build Task**                             | Dropdown | The Build task whose artifact is deployed.                            |
+| **Upload Artifact to Cloud Transport Management** | Checkbox | Optionally uploads the MTAR to SAP Cloud Transport Management (CTMS). |
+| **Keep Logs for (Days)**                          | Number   | Retention period for deployment logs.                                 |
+| **Notify Users / Notify Promotion User**          | Checkbox | Notification options.                                                 |
+| **Schedule Time**                                 | Checkbox | Schedules the deployment for a later time.                            |
 
-### **MTAR- Deployment Task Configuration**
+The MTA extension files applied during deployment are taken from those associated with the target environment in the **Landscape Configuration**.
 
-Fill in the required details:
-
-| **Name**                                     | Enter any name of your choice for the deployment task being created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Description**                              | Add any message or note that needs to be conveyed regarding the deployment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **Select Environment**                       | Select an environment from the available list of registered SAP BTP environments where the deployment has to take place.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Service Instance**                         | Select the Service Instance from the available service instances listed in the dropdown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Service Key**                              | Select the Service Key from the available service keys listed in the dropdown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Node Name**                                | Enter a node name added in the Cloud Transport Management System corresponding to the environment to which the artifact is to be uploaded.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Discard old builds**                       | <p>Enable <strong>Discard Old Builds</strong> to automatically remove older build records and artifacts based on the retention criteria specified below.</p><ul><li><strong>Max # of Builds to Keep</strong>: Specifies the maximum number of recent builds to retain. When this limit is exceeded, older builds are automatically removed.</li><li><strong>Keep Builds for (Days)</strong>: Specifies the number of days build records and artifacts should be retained. Builds older than the specified number of days will be automatically deleted.</li></ul><p><br></p> |
-| <p></p><p><strong>Notify Users</strong> </p> | <p></p><p>Enable this option to send notifications to the users associated with the task or pipeline. Notifications are triggered based on configured events, such as task creation, approval requests, build completion, deployment status, or task failures.</p><p></p><p></p>                                                                                                                                                                                                                                                                                             |
-| **Notify Promotion User**                    | Enable this option to notify the user who initiated the promotion whenever the promotion process starts, completes, succeeds, or fails.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Schedule Time**                            | Specify the date and time at which the task, build, deployment, or promotion should be executed. The configured schedule allows the process to run automatically at the designated time without requiring manual intervention.                                                                                                                                                                                                                                                                                                                                               |
-
-<div><figure><img src="../../../.gitbook/assets/image (2025).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2027).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../../../.gitbook/assets/image (2190).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. Transport Management Deployment Task (SAP ABAP Transport Requests)**
 

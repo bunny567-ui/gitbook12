@@ -61,6 +61,41 @@ This feature ensures that the correct user story is reused during a downgrade op
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+**CPI Downgrade Check – Validation Outcomes**
+
+This check ensures version consistency between the source and target environments before deployment. Below are the possible validation outcomes:
+
+**✅ Success – Equal or Lower Version**
+
+If the **target version is lower than or equal to** the source version, the validation **passes**.
+
+* **Example Message:** `"The artifact '' target environment version '1.2' is lower than the source environment version '1.3'."`
+
+**✅ Success – Artifact Not Present in Target**
+
+If the artifact is **not present** in the target environment (e.g., initial deployment), the validation **passes**.
+
+* **Example Message:** `"The artifact '' is not present in the target environment ''."`
+
+**❌ Failure – Target Has Higher Version**
+
+If the **target version is higher** than the source version, the validation **fails**.
+
+* **Example Message:** `"The artifact '' target environment version '1.4' is higher than the source environment version '1.3'."`
+
+**⚠️ Warning – Force Deploy Enabled**
+
+If **Force Deploy** is enabled, the deployment proceeds, but a **warning** is shown.
+
+* **Example Message:** `"The artifact '' target environment version '1.4' is higher than the source environment version '1.3' but force deploy is enabled."`
+
+**⚠️ Warning – Already Deployed via ReleaseOwl**
+
+If the artifact was **already deployed via ReleaseOwl** and an older version is redeployed, the downgrade is considered intentional. A **warning** is shown and the artifact is **not redeployed**.
+
+* **Example Scenario:** Version 1.1 was deployed, then version 1.2. Attempting to redeploy 1.1 results in:
+* **Example Message:** `"The artifact '' target environment version '1.4' is higher than the source environment version '1.3' but artifact is already deployed via ReleaseOwl."`
+
 ### CPI Governance
 
 The **CPI Rules** section in **ReleaseOwl** provides a centralized configuration interface to define and enforce governance policies and best practices for **SAP Cloud Platform Integration (CPI)** artifacts. These rules help ensure that integration artifacts comply with established **security**, **coding**, and **operational** standards across projects.
