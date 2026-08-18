@@ -30,6 +30,7 @@
     * [Settings](releaseowl-admin-guide/general-administration/settings.md)
     * [Callout Feature](releaseowl-admin-guide/general-administration/callout-feature.md)
     * [RO Agents](releaseowl-admin-guide/general-administration/ro-agents.md)
+    * [Reports](releaseowl-admin-guide/general-administration/reports.md)
     * [Landscape Connectors](releaseowl-admin-guide/general-administration/landscape-connectors.md)
   * [ALM Integrations](releaseowl-admin-guide/integrations/README.md)
     * [Jira](releaseowl-admin-guide/integrations/jira-cloud.md)
