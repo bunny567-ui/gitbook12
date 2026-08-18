@@ -13,7 +13,7 @@ The **Reports** section in the Administration View provides ready-made access re
 
 <figure><img src="../../.gitbook/assets/image (2199).png" alt=""><figcaption></figcaption></figure>
 
-### User and Roles Report
+### User and Roles&#x20;
 
 The User and Roles report lists all users along with their projects, assigned roles, and access status, providing the complete user-to-access mapping of the tenant in a single view.
 
