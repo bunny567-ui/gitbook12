@@ -53,6 +53,7 @@ The Role and Permissions report shows every role with its modules and granted ac
 
 <figure><img src="../../.gitbook/assets/image (2194).png" alt=""><figcaption></figcaption></figure>
 
-Use the **Search by roles** bar to search for a role by the name it was created with. Selecting a role displays its **modules** — the functional areas the role covers, such as API Artifact or CPI Artifact — with the granted **actions** listed under each module (for example, _Configure_ or _ImportSettings_). The report can also be downloaded using the **EXCEL** option.
+* Use the **Search by roles** bar to search for a role by the name it was created with. Selecting a role displays its **modules** — the functional areas the role covers, such as API Artifact or CPI Artifact — with the granted **actions** listed under each module (for example, _Configure_ or _ImportSettings_).&#x20;
+* The report can also be downloaded using the **EXCEL** option.
 
 <figure><img src="../../.gitbook/assets/image (2195).png" alt=""><figcaption></figcaption></figure>
