@@ -81,6 +81,8 @@ Before configuring these tasks, generate a GitLab access token with the required
 | Repository → **Branch**                      | **Create, Read**                         | Feature branches cannot be created (Feature Branch model) and environment branches cannot be resolved as PR source/target.                                                                                                         |
 | Search → **Global Search**                   | **Use**                                  | Repository and merge request lookup via the search API fails.                                                                                                                                                                      |
 
+
+
 {% hint style="info" %}
 **Note:** All the above permissions are mandatory. If any permission is missing, the pipeline may fail at runtime. For example, the Pull Request may not be created, the approval status may not be read, or the Merge task may not be able to merge the pull request.
 {% endhint %}
@@ -146,14 +148,11 @@ Follow the steps below to configure a webhook for the required Bitbucket reposit
 
 <figure><img src="../../../.gitbook/assets/image (2226).png" alt=""><figcaption></figcaption></figure>
 
-5.
+5. Enter the following details:
+   * **Title (Optional):** Enter a name for the webhook.
+   *   **URL:** Enter the webhook URL provided by the application.
 
-    Enter the following details:
-
-    * **Title (Optional):** Enter a name for the webhook.
-    *   **URL:** Enter the webhook URL provided by the application.
-
-        `https://<host>/ratesaptms/webhook/tenant/{tenantName}/project/{projectID}/pullRequest?rotoken={secretKey}`
+       `https://<host>/ratesaptms/webhook/tenant/{tenantName}/project/{projectID}/pullRequest?rotoken={secretKey}`
 6. In the **Status** section, select the **Active** checkbox.
 7. In the **Triggers** section, under **Pull Request**, select the **Approved** checkbox.
 8. Click **Save**.
@@ -198,6 +197,58 @@ Follow the steps below to configure a webhook in Azure DevOps.
 9. A **Success** message is displayed when the webhook configuration is tested successfully.
 
 <figure><img src="../../../.gitbook/assets/image (2223).png" alt=""><figcaption></figcaption></figure>
+
+#### Github Setup
+
+Follow the steps below to configure a webhook for the required GitHub repository.
+
+1. Open the required repository in GitHub.
+2. Go to **Settings** and select **Webhooks** from the left navigation.
+3. Click **Add webhook**.
+
+<figure><img src="../../../.gitbook/assets/image (2229).png" alt=""><figcaption></figcaption></figure>
+
+4. In the **Payload URL** field, enter the webhook URL provided by the application:
+
+`https://<host>/ratesaptms/webhook/tenant/{tenantName}/project/{projectID}/pullRequest?rotoken={secretKey}`
+
+5. Set **Content type** to **application/json**.
+
+<figure><img src="../../../.gitbook/assets/image (2231).png" alt=""><figcaption></figcaption></figure>
+
+6. Under **Which events would you like to trigger this webhook?**, select **Let me select individual events**.
+7. Select **Pull request reviews** as the event to trigger the webhook.
+8. Ensure that **Active** is selected to enable the webhook.
+9. Click **Add webhook** to save the configuration.
+
+<div><figure><img src="../../../.gitbook/assets/image (2232).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2233).png" alt=""><figcaption></figcaption></figure></div>
+
+#### &#x20;Configure the Required Scopes
+
+Follow the steps below to create a GitHub Personal Access Token (classic) with the required scopes.
+
+1. Sign in to GitHub and click your profile picture in the upper-right corner.
+2. Select **Settings**.
+
+
+
+<figure><img src="../../../.gitbook/assets/image (2234).png" alt=""><figcaption></figcaption></figure>
+
+3. In the left navigation, scroll down and select **Developer settings**.
+
+<figure><img src="../../../.gitbook/assets/image (2235).png" alt=""><figcaption></figcaption></figure>
+
+4. Under **Developer settings**, select **Personal access tokens** and then select **Tokens (classic)**.
+
+<figure><img src="../../../.gitbook/assets/image (2236).png" alt=""><figcaption></figcaption></figure>
+
+5. On the **Tokens (classic)** page, click **Generate new token** and select **Generate new token (classic)**.
+
+<figure><img src="../../../.gitbook/assets/image (2237).png" alt=""><figcaption></figcaption></figure>
+
+6. Under **Select scopes**, select the scopes required by the application, as shown in the following image.
+
+<div><figure><img src="../../../.gitbook/assets/image (2238).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2239).png" alt=""><figcaption></figcaption></figure></div>
 
 **Configure the Pull Request Task**
 
@@ -402,4 +453,35 @@ To run a release pipeline:
 {% hint style="info" %}
 **Note :**  Users can now promote builds directly from the [**User Story**](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/sap-btp/working-with-user-stories) and **Release Package** sections without navigating to the Build Pipelines module.
 {% endhint %}
+
+
+
+
+
+#### Configure the Required Scopes
+
+Follow the steps below to create a GitHub Personal Access Token (classic) with the required scopes.
+
+1. Sign in to GitHub and click your profile picture in the upper-right corner.
+2. Select **Settings**.
+
+
+
+<figure><img src="../../../.gitbook/assets/image (2234).png" alt=""><figcaption></figcaption></figure>
+
+3. In the left navigation, scroll down and select **Developer settings**.
+
+<figure><img src="../../../.gitbook/assets/image (2235).png" alt=""><figcaption></figcaption></figure>
+
+4. Under **Developer settings**, select **Personal access tokens** and then select **Tokens (classic)**.
+
+<figure><img src="../../../.gitbook/assets/image (2236).png" alt=""><figcaption></figcaption></figure>
+
+5. On the **Tokens (classic)** page, click **Generate new token** and select **Generate new token (classic)**.
+
+<figure><img src="../../../.gitbook/assets/image (2237).png" alt=""><figcaption></figcaption></figure>
+
+6. Under **Select scopes**, select the scopes required by the application, as shown in the following image.
+
+<div><figure><img src="../../../.gitbook/assets/image (2238).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2239).png" alt=""><figcaption></figcaption></figure></div>
 
