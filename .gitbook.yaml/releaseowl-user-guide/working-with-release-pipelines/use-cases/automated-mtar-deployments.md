@@ -87,7 +87,7 @@ Before configuring these tasks, generate a GitLab access token with the required
 
 <figure><img src="../../../.gitbook/assets/image (2175).png" alt=""><figcaption></figcaption></figure>
 
-### GitLab Webhook Setup
+#### GitLab Webhook Setup
 
 Follow the steps below to configure a webhook for the required GitLab repository.
 
