@@ -106,6 +106,10 @@ Follow the steps below to configure a webhook for the required GitLab repository
 * **Description** _(optional)_ – Enter a description for the webhook.
 * **URL** – Enter the webhook URL provided by the application.
 
+{% hint style="info" %}
+**URL :**&#x68;ttps:///ratesaptms/webhook/tenant/{tenantName}/project/{projectID}/pullRequest?rotoken={secretKey}
+{% endhint %}
+
 <figure><img src="../../../.gitbook/assets/image (2212).png" alt=""><figcaption></figcaption></figure>
 
 5. Under **Triggers**, enable: **Merge request events**
