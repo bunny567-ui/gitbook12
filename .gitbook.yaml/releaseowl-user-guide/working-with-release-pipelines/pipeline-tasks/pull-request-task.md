@@ -29,6 +29,44 @@ Before configuring these tasks, generate a GitLab access token with the required
 
 <img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FgDqx22dW4u5DZ8vysOjw%252Fimage.png%3Falt%3Dmedia%26token%3D424f41a3-a4a2-455c-ad49-4514da6577a0&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=aa2bff70&#x26;sv=2" alt="" height="875" width="1685">
 
+### GitLab Webhook Setup
+
+Follow the steps below to configure a webhook for the required GitLab repository.
+
+1. Open the required GitLab repository.
+2. Navigate to: **Settings → Webhooks**
+
+<figure><img src="../../../.gitbook/assets/image (2207).png" alt=""><figcaption></figcaption></figure>
+
+3. Click **Add new webhook**.
+
+<figure><img src="../../../.gitbook/assets/image (2208).png" alt=""><figcaption></figcaption></figure>
+
+4. Enter the following details:
+
+* **Name** _(optional)_ – Enter a name for the webhook.
+* **Description** _(optional)_ – Enter a description for the webhook.
+* **URL** – Enter the webhook URL provided by the application.
+
+<figure><img src="../../../.gitbook/assets/image (2212).png" alt=""><figcaption></figcaption></figure>
+
+5. Under **Triggers**, enable: **Merge request events**
+
+<figure><img src="../../../.gitbook/assets/image (2211).png" alt=""><figcaption></figcaption></figure>
+
+6. Make sure **Enable SSL verification** is enabled.
+7. Click **Save changes** to create the webhook.
+
+<figure><img src="../../../.gitbook/assets/image (2213).png" alt=""><figcaption></figcaption></figure>
+
+8. After creating the webhook, go to the **Test** section of the webhook configuration.
+9. From the **Test** dropdown, select: **Merge request events**
+10. Click **Test** to send a test webhook request.
+
+<figure><img src="../../../.gitbook/assets/image (2215).png" alt=""><figcaption></figcaption></figure>
+
+11. Verify that the test request is successfully received by the application and that the webhook connection is established successfully.
+
 #### Configure the Pull Request Task
 
 Configure the following fields when adding the **Pull Request Task** to the release pipeline:
