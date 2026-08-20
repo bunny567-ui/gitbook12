@@ -29,7 +29,7 @@ Before configuring these tasks, generate a GitLab access token with the required
 
 <img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FgDqx22dW4u5DZ8vysOjw%252Fimage.png%3Falt%3Dmedia%26token%3D424f41a3-a4a2-455c-ad49-4514da6577a0&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=aa2bff70&#x26;sv=2" alt="" height="875" width="1685">
 
-### GitLab Webhook Setup
+#### GitLab Webhook Setup
 
 Follow the steps below to configure a webhook for the required GitLab repository.
 
@@ -70,6 +70,76 @@ Follow the steps below to configure a webhook for the required GitLab repository
 <figure><img src="../../../.gitbook/assets/image (2215).png" alt=""><figcaption></figcaption></figure>
 
 11. Verify that the test request is successfully received by the application and that the webhook connection is established successfully.
+
+#### Bitbucket Webhook Setup
+
+Follow the steps below to configure a webhook for the required Bitbucket repository.
+
+1. Open Bitbucket and locate the required repository, for example, under **Repositories** in the left sidebar.
+2. Click the **⋯ (More options)** menu next to the repository name and select **Settings**.
+
+<figure><img src="../../../.gitbook/assets/image (2224).png" alt=""><figcaption></figcaption></figure>
+
+3. In the **Repository details** section, enter the repository name and select the required project.
+
+<figure><img src="../../../.gitbook/assets/image (2225).png" alt=""><figcaption></figcaption></figure>
+
+4. In the repository settings, navigate to **Workflow** and select **Webhooks**.
+
+<figure><img src="../../../.gitbook/assets/image (2226).png" alt=""><figcaption></figcaption></figure>
+
+5.
+
+    Enter the following details:
+
+    * **Title (Optional):** Enter a name for the webhook.
+    *   **URL:** Enter the webhook URL provided by the application.
+
+        `https://<host>/ratesaptms/webhook/tenant/{tenantName}/project/{projectID}/pullRequest?rotoken={secretKey}`
+6. In the **Status** section, select the **Active** checkbox.
+7. In the **Triggers** section, under **Pull Request**, select the **Approved** checkbox.
+8. Click **Save**.
+
+<figure><img src="../../../.gitbook/assets/image (2228).png" alt=""><figcaption></figcaption></figure>
+
+#### &#x20;Azure DevOps Webhook Setup
+
+Follow the steps below to configure a webhook in Azure DevOps.
+
+1. Go to **Project Settings** in the required Azure DevOps project.
+
+<figure><img src="../../../.gitbook/assets/image (2216).png" alt=""><figcaption></figcaption></figure>
+
+2. In **Project Settings**, select **Service Hooks**.
+
+<figure><img src="../../../.gitbook/assets/image (2217).png" alt=""><figcaption></figcaption></figure>
+
+3. Click the **+** button to create a new service hook.
+
+<figure><img src="../../../.gitbook/assets/image (2218).png" alt=""><figcaption></figcaption></figure>
+
+4. Select **Webhooks** and click **Next**.
+
+<figure><img src="../../../.gitbook/assets/image (2219).png" alt=""><figcaption></figcaption></figure>
+
+5. Select the required repository and the trigger for the event, which is **Pull Request Updated**. Click **Next**.
+
+<figure><img src="../../../.gitbook/assets/image (2220).png" alt=""><figcaption></figcaption></figure>
+
+6.  &#x20;In the **Settings** section, enter the following URL:
+
+    `https://<host>/ratesaptms/webhook/tenant/{tenantName}/project/{projectID}/pullRequest?rotoken={secretKey}`&#x20;
+7. Click **Next**.
+
+<figure><img src="../../../.gitbook/assets/image (2221).png" alt=""><figcaption></figcaption></figure>
+
+8. Fill in the required details and click **Test**.
+
+<figure><img src="../../../.gitbook/assets/image (2222).png" alt=""><figcaption></figcaption></figure>
+
+9. A **Success** message is displayed when the webhook configuration is tested successfully.
+
+<figure><img src="../../../.gitbook/assets/image (2223).png" alt=""><figcaption></figcaption></figure>
 
 #### Configure the Pull Request Task
 
