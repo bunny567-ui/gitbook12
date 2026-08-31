@@ -1,6 +1,5 @@
 # SAP Datasphere
 
-This guide details the step-by-step process for **registering SAP Datasphere** in ReleaseOwl.\
-It includes configuration of **credentials**, **environment management**, **user permissions**, **package synchronization**, and **deployment execution**.
+ReleaseOwl delivers **SAP Datasphere (SDS)** content across environments (e.g., Development → QA → Production tenants) with the same governed lifecycle used for other SAP artifacts: content is synchronized **from the source tenant only**, assigned to user stories, promoted through release pipelines, and deployed to target tenants with validation, approval, and full deployment history.
 
-SAP Datasphere (formerly known as **SAP Data Warehouse Cloud**) is a unified data service that enables data integration, modeling, and governance across enterprise systems. Integrating SAP Datasphere with **ReleaseOwl** streamlines deployment, automation, and release management, ensuring secure and consistent delivery across multiple environments.
+The unit of delivery is the **package**: Datasphere content is organized in spaces and packages, and ReleaseOwl tracks each package with its **versions**, deploying a selected version to the target environment.

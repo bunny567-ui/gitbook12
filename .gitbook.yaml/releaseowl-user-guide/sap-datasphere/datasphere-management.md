@@ -12,7 +12,7 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
     * In **Project Settings**, navigate to **Environment**.
     * The following screen is displayed.
 
-    <figure><img src="../../.gitbook/assets/image (968).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2247).png" alt=""><figcaption></figcaption></figure>
 2.  **Click Add** to add a new environment in ReleaseOwl.
 
     * In the subsequent screen, select the required environments from the list displayed.
@@ -26,7 +26,7 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
 
 3. The environment gets added to the corresponding project in ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (970).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2248).png" alt=""><figcaption></figcaption></figure>
 
 4. Click on the **Users** tab. This tab lists all existing users associated with the project.
 5. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.
@@ -43,87 +43,76 @@ The SAP Datasphere must be registered in **Project Settings** in ReleaseOwl.
 
 <figure><img src="../../.gitbook/assets/image (972).png" alt=""><figcaption></figcaption></figure>
 
-### **SAP Datasphere  and Deployment**
+### **SAP Datasphere Packages**
 
-1.  **Sync Packages:**
+SAP Datasphere packages are managed in the project view under **Build → SAP Datasphere**. This page lists the packages synchronized from the source environment, and is where you sync new packages, review their versions, and maintain each package's Import Options for deployment.&#x20;
 
-    * Go to **SAP Datasphere** in the **Build** section and click on **Sync Packages**.
+#### Viewing Packages
 
-    <figure><img src="../../.gitbook/assets/image (974).png" alt=""><figcaption></figcaption></figure>
-
-    * You can see the **Deployment History** by clicking on the **Actions** button and selecting **Deployment History**.
-
-    <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2.  **View Package Details:**
-
-    * Click the **Actions** button and select **Import Settings** to view package details.
-
-    <figure><img src="../../.gitbook/assets/image (975).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to **Build → SAP Datasphere** in the project view.
+2. The package list displays all packages synced from the source environment:
 
 
 
-    * Each package has different import settings, and you need to configure the import settings for the required package.
+| Column                       | Description                                                          |
+| ---------------------------- | -------------------------------------------------------------------- |
+| **Name**                     | Package name.                                                        |
+| **Description**              | Package description.                                                 |
+| **Version**                  | The package version (e.g., 1.0.0, 2.0.0).                            |
+| **Type**                     | The item type (Package).                                             |
+| **User Story**               | The user story the package is assigned to, if any.                   |
+| **Created On / Modified On** | When the package was created and last modified in the source tenant. |
+| **Synced By / Synced On**    | Who last synchronized the package into ReleaseOwl, and when.         |
 
-    <figure><img src="../../.gitbook/assets/image (976).png" alt=""><figcaption></figcaption></figure>
-3. **Release  Pipelines:**
 
-* Go to the Release Pipelines and click on the **Create New Release Pipeline.**
 
-<figure><img src="../../.gitbook/assets/image (1376).png" alt=""><figcaption></figcaption></figure>
+3. Use **Search by Name** to locate a package. The list is paginated; use the sort and column settings icons to adjust the view.
 
-* Enter a **Pipeline Name**.
+<figure><img src="../../.gitbook/assets/image (2250).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (28).png" alt=""><figcaption></figcaption></figure>
+#### **Actions**
 
-* Click **Add Stage**.
+1. Click **Sync Packages** (top-right) to fetch the latest packages and versions from the source environment.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2254).png" alt=""><figcaption></figcaption></figure>
 
-* Enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click OK.
+2. Click **Sync History** to view the log of previous synchronization runs.
 
-<figure><img src="../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2251).png" alt=""><figcaption></figcaption></figure>
 
-* **Tasks:** Click **Add** to enter any tasks that are to be performed.
+3. The **⋯** menu next to each package provides:
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (10).png" alt=""><figcaption></figcaption></figure>
+| Action                 | Purpose                                                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Import Settings**    | Opens the package's Import Options (overwrite preferences, deployment preferences, and the objects in the package). |
+| **Versions**           | Displays the package's available versions.                                                                          |
+| **Deployment History** | Displays the package's deployment log across environments.                                                          |
 
-{% hint style="info" %}
-**Note:** To remove any stage, click Remove stage button.
-{% endhint %}
+<figure><img src="../../.gitbook/assets/image (2253).png" alt=""><figcaption></figcaption></figure>
 
-* Different tasks that can be added are as follows:
+#### Import Settings
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The Import Settings of a package control how it is imported into the target environment during deployment.
 
-**Add a Deployment Stage**
+1. Click the **⋯** menu next to the required package and select **Import Settings**.
 
-* Click on **Add** under the **Tasks** section.
-* Select **SDS - Deployment** from the available task types.
+<figure><img src="../../.gitbook/assets/image (2255).png" alt=""><figcaption></figcaption></figure>
 
-**Configure Task Details**
+2. The Import Options page is displayed. Click **Edit** to modify the settings.
 
-In the **Task Details** panel on the right side, fill in the following information:
+| Option                              | Description                                                                                                                           |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Don't overwrite objects or data** | Choose this option to avoid overwriting any existing content. Only new objects are imported.                                          |
+| **Overwrite data only**             | Overwrites the data of existing objects without making changes to the structure of your models.                                       |
+| **Overwrite objects and data**      | Imports all selected content; existing objects can be overwritten. Selecting this option enables the **Remote Permissions** checkbox. |
 
-| **Field**                  | **Description**                                               |
-| -------------------------- | ------------------------------------------------------------- |
-| **Name**                   | Enter a unique name for your task.                            |
-| **Description**            | Optionally, provide a brief description of the task.          |
-| **Select SDS Environment** | Choose the SDS environment for deployment from the dropdown.  |
+<figure><img src="../../.gitbook/assets/image (2256).png" alt=""><figcaption></figcaption></figure>
 
-**Optional Settings**
+**Deployment Preferences**
 
-You may optionally configure the following:
+| Option                  | Description                                                                                                                                                            |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Deploy after import** | When enabled, the imported objects are deployed in the target tenant immediately after the import completes. When disabled, the objects are imported but not deployed. |
 
-* **Schedule Time**\
-  Enable this checkbox to schedule the deployment at a specific date and time.
-* **Notify Users**\
-  Enable this checkbox to send email notifications to selected users after task execution.
-* **Notify Promotion User**\
-  Enable this checkbox to notify the user who promoted the pipeline.
-
-**Finalize the Task**
-
-* Once all configurations are complete, click **Next** to proceed to **Step 3: Notification Email(s)** or continue adding more tasks as needed.
-
-<figure><img src="../../.gitbook/assets/image (1382).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2257).png" alt=""><figcaption></figcaption></figure>
 
