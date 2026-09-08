@@ -14,7 +14,7 @@ The **CPI Deployment Task** handles the automated deployment of integration arti
 
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **CPI -Deployment Task Configuration**
+#### **CPI -Deployment Task Configuration**
 
 | **Field**                 | **Description**                                                                                                                                               |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -53,7 +53,7 @@ The MTA extension files applied during deployment are taken from those associate
 
 The **Transport Management Deployment Task** handles deployment for **SAP Transport Requests (TRs)** in ABAP-based systems, such as S/4HANA, ECC, SAP BW, or SAP CRM.
 
-### **Transport Management – Deployment Task Configuration**
+#### **Transport Management – Deployment Task Configuration**
 
 | **Field**                  | **Description**                                                                                                                                      |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
