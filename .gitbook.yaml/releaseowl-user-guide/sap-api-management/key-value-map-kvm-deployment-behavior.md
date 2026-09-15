@@ -46,11 +46,11 @@ If new configuration parameters are introduced in the source environment:
 
 ### &#x20;Important Notes
 
-#### No Delete Operation
+**No Delete Operation**
 
 ReleaseOwl does **not** perform delete operations for configuration parameters.
 
-**Example Scenario:**
+**Example Scenario**
 
 * A parameter named `testParam` exists in the target environment.
 * The same parameter is deleted from the source environment.

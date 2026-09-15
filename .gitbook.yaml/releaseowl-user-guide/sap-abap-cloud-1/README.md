@@ -1,7 +1,11 @@
 # SAP ABAP Cloud
 
-This guide provides a detailed step-by-step procedure for integrating **SAP ABAP Cloud** with **ReleaseOwl**. The configuration includes credential registration, **SAP Cloud** environment setup, **ABAP** environment registration, service instance and service key selection, and deployment execution through release pipelines.
+ReleaseOwl provides native, end-to-end CI/CD and change management for SAP BTP ABAP Environment&#x20;("Steampunk") applications built with the RESTful ABAP Programming (RAP) model, whose source is&#x20;maintained in Git. This guide describes how to create and configure a RAP Application, attach it to a user&#x20;story, and run it through its own release-pipeline tasks — checkout, merge, validate, and deploy. This guide covers RAP applications on the SAP BTP ABAP Environment (the product area governed&#x20;by the RAP license type and the ABAP Cloud project type).
 
-**SAP ABAP Cloud**, available on **SAP BTP**, enables cloud-based **ABAP** development using service instances and Communication Arrangements. Integration with **ReleaseOwl** allows secure authentication using outbound communication users, controlled transport and deployment execution, and environment-specific release governance.
+#### **Supported Git providers**&#xD;
 
-By registering the **SAP Cloud Environment** and corresponding **ABAP Environment** in **ReleaseOwl**, administrators can establish secure connectivity to the **ABAP** service instance, validate service keys, and enable automated deployment and release management across Development, Quality, and Production landscapes.
+RAP applications can be sourced from any of the following version control systems:\
+Bitbucket\
+GitHub\
+Azure DevOps\
+GitLab

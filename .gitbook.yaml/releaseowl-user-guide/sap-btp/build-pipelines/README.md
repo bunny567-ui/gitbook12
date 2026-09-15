@@ -2,9 +2,9 @@
 
 A Build Pipeline compiles the application source and produces the MTAR artifact. ReleaseOwl uses two categories of build pipeline for MTAR delivery:
 
-•    **Per-environment build pipelines** — configured for each environment branch and assigned in the Landscape Configuration (the Build Pipeline field of each landscape row, §4.1).
+•    **Per-environment build pipelines** — configured for each environment branch and assigned in the Landscape Configuration (the Build Pipeline field of each landscape row).
 
-•    **Dynamic build pipeline** — assigned on the application (Build Pipeline for Dynamic Branches, §3.1) and used to build dynamic branches such as hotfix branches and staging branches that are created on demand and have no fixed per-environment pipeline.
+•    **Dynamic build pipeline** — assigned on the application (Build Pipeline for Dynamic Branches) and used to build dynamic branches such as hotfix branches and staging branches that are created on demand and have no fixed per-environment pipeline.
 
 * Build Pipelines are created and maintained under Build → Build Pipelines.
 
