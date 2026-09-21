@@ -20,7 +20,7 @@ This section describes the process of registering system credentials in ReleaseO
 
 5. Click **Save** to register the credential.
 
-<figure><img src="../../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2290).png" alt=""><figcaption></figcaption></figure>
 
 ### Register ABAP Cloud Credential in ReleaseOwl
 
@@ -41,5 +41,4 @@ Similarly, create a credential for the **ABAP Cloud Environment**:
 
 3. Click **Save** to register the credential.
 
-<figure><img src="../../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (2289).png" alt=""><figcaption></figcaption></figure>

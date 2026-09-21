@@ -76,3 +76,30 @@ To edit the source reference:
 3. Modify the selected **commits**.
 4. Click **Add** to apply the changes.
 
+#### User Story Actions <a href="#user-story-actions" id="user-story-actions"></a>
+
+The following actions are available on the User Story toolbar:
+
+* **Validate** – Validates the User Story against the configured target environment and generates a **Validation Report**.
+* **Promote** – Promotes the User Story to the next stage in the release pipeline.
+* **Save** – Saves the changes made to the User Story. Ensure that you click **Save** before clicking **Promote**.
+* **Refresh** – Refreshes the User Story and reloads the latest information.
+
+<figure><img src="../../.gitbook/assets/image (2291).png" alt=""><figcaption></figcaption></figure>
+
+* **Activity Log**- Click **Activity Log** to view the complete history of actions performed on the User Story.
+
+<figure><img src="../../.gitbook/assets/image (2292).png" alt=""><figcaption></figcaption></figure>
+
+* **Release Package Details**: Click **Release Package Details** to view the release package information associated with the User Story.
+* **Export User Story** : Click **Export User Story** to export the User Story details.
+
+<figure><img src="../../.gitbook/assets/image (2293).png" alt=""><figcaption></figcaption></figure>
+
+#### User Story promotion <a href="#user-story-promotion" id="user-story-promotion"></a>
+
+• Initiated manually from the user story.
+
+• Each user story is processed individually. As the story progresses through the deployment lifecycle (Development → QA → Production), the commits are merged into the corresponding environment branch at each stage. The source branch remains constant, while only the **Target Environment** changes according to the current stage.
+
+<figure><img src="../../.gitbook/assets/image (2294).png" alt=""><figcaption></figcaption></figure>

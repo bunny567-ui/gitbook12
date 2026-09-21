@@ -4,8 +4,11 @@ ReleaseOwl provides native, end-to-end CI/CD and change management for SAP BTP A
 
 #### **Supported Git providers**&#xD;
 
-RAP applications can be sourced from any of the following version control systems:\
-Bitbucket\
-GitHub\
-Azure DevOps\
-GitLab
+RAP applications can be sourced from any of the following version control systems:
+
+
+
+* Bitbucket
+* GitHub
+* Azure DevOps
+* GitLab
