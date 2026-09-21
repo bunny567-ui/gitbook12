@@ -20,7 +20,7 @@ Creating a Release Pipeline is a three-step process.
 
 #### **For creating release pipeline:**
 
-1. Select the required CPI Project.
+1. Select the required RAP Project.
 2. Navigate to **Release** and click on the **Release Pipelines.**
 
 <figure><img src="../../../.gitbook/assets/image (2296).png" alt=""><figcaption></figcaption></figure>
