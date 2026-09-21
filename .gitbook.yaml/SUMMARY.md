@@ -134,7 +134,7 @@
       * [ABAP Cloud Management](releaseowl-user-guide/sap-abap-cloud/abap-cloud-registration-in-releaseowl/abap-cloud-management.md)
   * [SAP ABAP Cloud](releaseowl-user-guide/sap-abap-cloud-1/README.md)
     * [Administration](releaseowl-user-guide/sap-abap-cloud-1/administration/README.md)
-      * [SAP ABAP Cloud Communication Setup](releaseowl-user-guide/sap-abap-cloud-1/administration/sap-abap-cloud-communication-setup.md)
+      * [SAP ABAP Cloud Communication Setup](releaseowl-user-guide/sap-abap-cloud-1/sap-abap-cloud-communication-setup.md)
       * [Credential Management](releaseowl-user-guide/sap-abap-cloud-1/administration/credential-management.md)
       * [Environment Registration](releaseowl-user-guide/sap-abap-cloud-1/administration/environment-registration.md)
     * [Working with Build Pipelines](releaseowl-user-guide/sap-abap-cloud-1/working-with-build-pipelines/README.md)
