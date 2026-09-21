@@ -112,7 +112,7 @@ To integrate Jira with **ReleaseOwl** for issue tracking and traceability, follo
   * **Private** – Visible only to the user who created it.
 * **Authentication Type**: Select the authentication type as theOAuth2
 * **Client ID and Client Secret:** Paste the Client ID and Client Secret obtained from the OAuth2 integration you created in the Atlassian Developer Console.
-* **Jira URL**:  [https://api.atlassian.com/](https://api.atlassian.com/)
+* **Jira URL**:  [https://api.atlassian.com/](https://saparate.atlassian.net/)
 * **Proxy Type**: Select None
 * **Hosting Type** : Select **Cloud**.
 
