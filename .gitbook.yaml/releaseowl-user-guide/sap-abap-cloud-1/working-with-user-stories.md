@@ -1,6 +1,6 @@
 # Working with User Stories
 
-A user story carries the change(s) to be delivered. How changes are attached depends on the branching&#x20;model of the RAP application involved.
+A user story represents the changes to be delivered. The way changes are associated with a user story depends on the branching model used by the RAP application. User stories allow you to group and manage related changes that are deployed together through a [Release Pipeline.](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-rap-applications)
 
 #### Add RAP Applications <a href="#add-mtar-applications" id="add-mtar-applications"></a>
 
@@ -103,3 +103,21 @@ The following actions are available on the User Story toolbar:
 • Each user story is processed individually. As the story progresses through the deployment lifecycle (Development → QA → Production), the commits are merged into the corresponding environment branch at each stage. The source branch remains constant, while only the **Target Environment** changes according to the current stage.
 
 <figure><img src="../../.gitbook/assets/image (2294).png" alt=""><figcaption></figcaption></figure>
+
+#### Deployment - RAP
+
+1. Click **Promote** to start the deployment process.
+
+<figure><img src="../../.gitbook/assets/image (2310).png" alt=""><figcaption></figcaption></figure>
+
+2. If the Release Pipeline includes a **Deployment** task, monitor the deployment status of the User Story.
+3. Click **Deploy Logs** to view the deployment details.
+
+<div><figure><img src="../../.gitbook/assets/image (2311).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2312).png" alt=""><figcaption></figcaption></figure></div>
+
+#### ABAP Checkout -RAP&#x20;
+
+If your [Release Pipeline](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/working-with-release-pipelines/use-cases/automated-rap-applications) includes an **ABAP Checkout** task, click **Checkout Log** to view the details of the checkout operation.
+
+<figure><img src="../../.gitbook/assets/image (2313).png" alt=""><figcaption></figcaption></figure>
+
