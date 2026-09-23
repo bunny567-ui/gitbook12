@@ -1,6 +1,6 @@
-# Working with Build Pipelines
+# RAP Application
 
-This section provides a comprehensive guide for configuring Projects, Build Pipelines, and Release Pipelines in **ReleaseOwl** for **SAP ABAP Cloud** environments. By following these steps, teams can ensure controlled, automated, and auditable build and deployment processes within ReleaseOwl.
+This section describes how to create and configure a RAP Application in ReleaseOwl. It covers defining the application details, connecting the Git repository, specifying the ABAP Cloud software component, and mapping Git branches to the corresponding ABAP Cloud Environment systems.
 
 ### Creating a RAP Application&#xD;
 
