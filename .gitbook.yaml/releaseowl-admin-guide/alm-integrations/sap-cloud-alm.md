@@ -70,9 +70,20 @@ After registering the credentials, you can link your SAP Cloud ALM project with 
 * **Credential:** Choose the registered **SAP Cloud ALM credential** from the dropdown list.
 * **Host URL:** Enter the **SAP Cloud ALM server URL**.
 * **Project:** Select the SAP Cloud ALM project you wish to integrate from the dropdown list.
+* **Disable writing of comments/notes:** When enabled, ReleaseOwl stops writing comments and notes back to the Cloud ALM Feature. This supports one-way synchronization only.
+* **Default Integration:** Only one integration per project can be set as the default. Selecting this option removes the default setting from the previously selected integration.
+
+**Advanced Settings — Monitoring Push**&#x20;
+
+| Field                        | Type         | Description                                                                                                                                                                                                            |
+| ---------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Push Monitoring Messages** | Checkbox     | Master switch for pushing pipeline outcomes to Cloud ALM. If unchecked, ReleaseOwl does not push any pipeline outcomes to Cloud ALM for this integration, regardless of the other Advanced settings.                   |
+| **Integration Service**      | Text/Picker  | Specifies the Cloud ALM monitored service against which this integration reports. This field is required for monitoring messages to be pushed. If no service is configured, the push is skipped.                       |
+| **Message Types**            | Multi-select | Specifies the pipeline task categories for which monitoring messages are pushed to Cloud ALM. Only tasks belonging to the selected categories generate Cloud ALM messages. Tasks in unselected categories are skipped. |
+
 * Once the details are filled in, click **Save** to establish the integration.
 
-<figure><img src="../../.gitbook/assets/image (1602).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2315).png" alt=""><figcaption></figcaption></figure>
 
 ## Syncing  Features and  User Stories
 
