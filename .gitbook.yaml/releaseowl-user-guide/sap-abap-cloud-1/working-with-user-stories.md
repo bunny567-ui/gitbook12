@@ -42,7 +42,7 @@ Go to the user story's RAP Applications tab and use + Add to attach one or more 
 **Normal story — selecting commits**. The available commits are populated from the\
 application's development branch — the landscape row flagged “Development Branch”. Select the&#x20;commits required for this change; they are cherry-picked onto the target environment's branch during&#x20;promotion.
 
-<figure><img src="../../.gitbook/assets/image (2283).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2317).png" alt=""><figcaption></figcaption></figure>
 
 #### Hotfix Story — Hotfix Branch
 
@@ -71,7 +71,7 @@ To edit the source reference:
 1. In the **RAP** **Applications** section, click the **Actions** button corresponding to the required RAP application.
 2. Click **Edit Commits**.
 
-<figure><img src="../../.gitbook/assets/image (2288).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2318).png" alt=""><figcaption></figcaption></figure>
 
 3. Modify the selected **commits**.
 4. Click **Add** to apply the changes.
