@@ -14,9 +14,9 @@ The Deployment Report offers detailed insights into the deployment status of Use
 **How to Generate the Report:**
 
 1. Navigate to the **Reports** section in the **Project View**.
-2. Click on the type of the user story that you want to do.
+2. Click on the type of the deployment user story that you want to do.
 
-<figure><img src="../.gitbook/assets/image (1943).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2316).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the following parameters:
 
