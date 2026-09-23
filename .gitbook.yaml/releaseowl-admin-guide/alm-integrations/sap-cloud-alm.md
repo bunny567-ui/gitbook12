@@ -85,6 +85,14 @@ After registering the credentials, you can link your SAP Cloud ALM project with 
 
 <figure><img src="../../.gitbook/assets/image (2315).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note:**  The following message types are supported:
+
+* **Deployment Messages** – Provides visibility into deployment activities and their status.
+* **Build Messages** – Captures build-related activities and results.
+* **Validation Messages** – Provides information about validation activities and outcomes.
+{% endhint %}
+
 ## Syncing  Features and  User Stories
 
 After successful integration, you can start syncing data between SAP Cloud ALM and ReleaseOwl.
