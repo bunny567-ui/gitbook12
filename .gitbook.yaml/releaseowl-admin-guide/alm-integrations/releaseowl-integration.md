@@ -7,12 +7,14 @@ The ALM Integrations module supports integration with ReleaseOwl, enabling users
 1. Navigate to **ALM Integrations**.
 2. Click **Add Integration**.
 3. Select **ReleaseOwl** as the external system.
-4. Choose the required **Project Workflow Type**:
+4. Choose the required **Project Workflow Type**:&#x20;
    * Scrum
-   * Kanban
-5. Save the configuration.
+   * Kanban( The board/methodology type this integration tracks — affects how Sprints and Backlog are presented for stories synced through it.)
+5. **Link External ID's**: When enabled, links this integration's stories to their external-system IDs (an associated external-link-URL pattern is stored for this.&#x20;
+6. **Default Integration**: Marks this integration as the project's default. Only one integration per project can be default — checking this box automatically un-defaults whichever integration was previously the default for the project.
+7. Save the configuration.
 
-<figure><img src="../../.gitbook/assets/image (1996).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2314).png" alt=""><figcaption></figcaption></figure>
 
 #### Managing Workflow Statuses
 
