@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # ATC Report
 
 The **ATC Report** displays the static code analysis results executed during the Build process. It identifies code-level issues in the transported **ABAP** objects and categorizes them based on predefined quality checks.  If **ATC** validation is enabled in the **Build Pipeline**, the report is available in the **Build** execution screen.
