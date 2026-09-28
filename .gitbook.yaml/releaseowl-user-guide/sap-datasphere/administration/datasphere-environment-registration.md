@@ -33,7 +33,7 @@ Space Mapping defines how the spaces of a source SAP Datasphere environment corr
 
 <figure><img src="../../../.gitbook/assets/image (2240).png" alt=""><figcaption></figcaption></figure>
 
-2. The **Space Mappings** panel opens, listing the existing mappings. Use the **Search mappings** bar to find a mapping by name. Use the **Search mappings** bar to find a mapping by name. If no mappings exist, the message _"No space mappings yet. Choose Create to add the first one."_ is displayed.
+2. The **Space Mappings** panel opens, listing the existing mappings. Use the **Search mappings** bar to find a mapping by name. If no mappings exist, the message _"No space mappings yet. Choose Create to add the first one."_ is displayed.
 3. Click **Create**.
 
 <figure><img src="../../../.gitbook/assets/image (2241).png" alt=""><figcaption></figcaption></figure>
