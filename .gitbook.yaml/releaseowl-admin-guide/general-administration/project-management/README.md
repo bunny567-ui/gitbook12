@@ -89,7 +89,7 @@ The **Project Settings** option allows users to configure and manage project-spe
 
     Each tab provides specific configuration options related to project management and integrations.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2319).png" alt=""><figcaption></figcaption></figure>
 
 #### **General Tab**
 
@@ -97,7 +97,7 @@ The **General** tab contains the basic project configuration details and setting
 
 <table><thead><tr><th width="374">Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Name</strong></td><td>Displays the project name.</td></tr><tr><td><strong>Description</strong></td><td>Provides a brief description of the project.</td></tr><tr><td><strong>Project Prefix</strong></td><td>A short identifier used for the project.</td></tr><tr><td><strong>Project Type</strong></td><td>Displays the type of project that was selected during project creation. This field is auto-populated based on the configured project type.</td></tr><tr><td><strong>Release Pipeline(default)</strong> </td><td>Specifies the default release pipeline associated with the project. The selected pipeline is used as the default pipeline for release and deployment activities within the project.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2320).png" alt=""><figcaption></figcaption></figure>
 
 **Additional Settings**
 
@@ -121,7 +121,7 @@ These settings control validation and approval workflows:
 * Enable this option to make the **Components** field mandatory while creating or updating a user story.
 * Components can be configured at the project level and help improve categorization and organization of user stories.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2321).png" alt=""><figcaption></figcaption></figure>
 
 **On-Premise Integration Settings**
 
@@ -139,9 +139,7 @@ When the project type is selected as an **On-Premise System**, the following add
 * Enable this option to make the **Project** field mandatory during transport creation.
 * This ensures accurate mapping of transports to projects and improves tracking, reporting, and auditability.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (2322).png" alt=""><figcaption></figcaption></figure>
 
 **SAP CPI  Integration Settings**
 
@@ -173,7 +171,7 @@ Projects can enable the following validations:
 
 * Click the **Save** button located at the top-right corner of the page to apply and save all changes.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2323).png" alt=""><figcaption></figcaption></figure>
 
 #### Environments
 
@@ -304,3 +302,42 @@ To view and manage roles, follow these steps:
 {% hint style="info" %}
 **Note:** The role and the role actions of the selected user under the Users tab in **Project Settings** match with the ones specified by the admin user while creating this specific user.
 {% endhint %}
+
+#### CVE
+
+The **CVEs** tab lets you keep a list of known security vulnerabilities (CVEs) for a project. When a Build Pipeline has the **Check SAP CVEs** scan turned on, ReleaseOwl checks each MTAR build against this list. A build that matches any listed CVE fails validation. Each project has its own CVE list.
+
+**Before you begin**
+
+* You need access to the project's settings.
+* Your CVEs must be for **Java** or **Node.js** libraries. Other languages are not supported.
+
+**View the CVE list**
+
+1. Click the **CVEs** tab.
+
+<figure><img src="../../../.gitbook/assets/image (2324).png" alt=""><figcaption></figcaption></figure>
+
+The list shows the following columns:
+
+| Column       | Description                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------------------------------- |
+| CVE ID       | The public vulnerability ID, for example `CVE-2023-12345`.                                                     |
+| Library Name | The affected library. Java libraries appear as `groupId:artifactId`. Node.js libraries appear by package name. |
+| Version      | The affected version or version range, for example `>=1.0 && <2.3`.                                            |
+| Edit         | Change the entry.                                                                                              |
+| Delete       | Remove the entry.                                                                                              |
+
+2. Click **+ Add**. The **CVE** dialog opens.
+
+<figure><img src="../../../.gitbook/assets/image (2325).png" alt=""><figcaption></figcaption></figure>
+
+3. Fill in the three required fields:&#x20;
+
+| Field         | Description                                                                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| CVE ID        | The public vulnerability ID, for example `CVE-2023-12345`.                                                                                    |
+| Library Name  | The affected library. Use `groupId:artifactId` for Java, for example `org.apache.logging.log4j:log4j-core`. Use the package name for Node.js. |
+| Version       | The affected version, or a range, for example `2.14.1` or `>=2.0 && <2.15.0`.                                                                 |
+
+4. Click **Save**.&#x20;
