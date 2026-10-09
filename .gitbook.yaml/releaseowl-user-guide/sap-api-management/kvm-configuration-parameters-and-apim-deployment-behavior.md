@@ -1,4 +1,4 @@
-# Key Value Map (KVM) Deployment Behavior
+# KVM Configuration Parameters & APIM Deployment Behavior
 
 This document explains how **Key Value Map (KVM) configuration parameters** are handled during artifact deployment between source and target environments in ReleaseOwl. It covers deployment behavior for both **encrypted** and **non-encrypted** parameters.
 
@@ -58,3 +58,23 @@ ReleaseOwl does **not** perform delete operations for configuration parameters.
   * ReleaseOwl **will not delete** `testParam` from the target.
   * The parameter remains unchanged in the target environment.
 
+### APIM Deployment Behavior
+
+#### API Proxy
+
+When API Proxies are synchronized — either through **Add Artifacts (New Artifacts)** or through an individual sync of an existing proxy (with or without a new revision) — ReleaseOwl also captures the **Products** associated with the proxy.
+
+During deployment of an API Proxy that is associated with a Product:
+
+1. ReleaseOwl checks whether the Product is available in the **target environment**.
+2. If the Product **is available**, the API Proxy is linked to the existing Product automatically.
+3. If the Product **is not available**, ReleaseOwl does not create it — deploy the Product to the target first if the association is required.
+
+#### API Product
+
+1. During API Product deployment, any associated API Proxy that is **not available in the target environment is skipped** — only proxies existing in the target are associated with the Product.
+2. If the API Product **already exists in the target environment**, you do not need to assign it to the User Story separately — during API Proxy deployment, ReleaseOwl automatically links the proxy to the existing Product in the target.
+
+{% hint style="info" %}
+**Deployment order tip:** when both a Product and its Proxies are new, deploy in an order that lets the associations resolve — the Product needs its proxies present in the target to associate them, and a proxy needs the Product present to link to it.
+{% endhint %}
