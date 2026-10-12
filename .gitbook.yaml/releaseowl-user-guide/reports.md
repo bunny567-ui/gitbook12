@@ -69,6 +69,10 @@ The Pipeline Reports give you an audit trail for your release pipelines. For a c
 
 The Reports section in the Project View has three tabs: Deployment Reports, Task Reports and Pipeline Reports. The Pipeline Reports contain three reports:
 
+1. User Story Deployment Pipeline Report
+2. CPI Artifacts Deployment Pipeline Report
+3. API Artifacts Deployment Pipeline Report
+
 <figure><img src="../.gitbook/assets/image (2326).png" alt=""><figcaption></figcaption></figure>
 
 #### User Story Deployment Pipeline Report
