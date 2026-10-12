@@ -131,14 +131,14 @@ This report lists every CPI artifact that was deployed by the selected pipeline 
 
 Unlike the User Story report, this report displays the deployed artifact details at the beginning of each row, followed by the associated User Story and deployment information.
 
-| **Column**                      | **Description**                                                                                                                  |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Artifact Name**               | Displays the name of the deployed SAP Cloud Integration (CPI) artifact.                                                          |
-| **Artifact Type**               | Displays the type of artifact.                                                                                                   |
-| **Version**                     | Displays the version of the artifact that was deployed.                                                                          |
-| **Package**                     | Displays the CPI package that contains the artifact.                                                                             |
-| **User Story ID … Promoted On** | Displays the User Story ID and the associated stage, promotion, and approval details, as described in the User Story report.     |
-| **Manual Completion**           | For manually completed deployments, displays the user who performed the deployment, the date and time, and the reason provided.  |
+| **Column**                      | **Description**                                                                                                              |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Artifact Name**               | Displays the name of the deployed SAP Cloud Integration (CPI) artifact.                                                      |
+| **Artifact Type**               | Displays the type of artifact.                                                                                               |
+| **Version**                     | Displays the version of the artifact that was deployed.                                                                      |
+| **Package**                     | Displays the CPI package that contains the artifact.                                                                         |
+| **User Story ID … Promoted On** | Displays the User Story ID and the associated stage, promotion, and approval details, as described in the User Story report. |
+| **Manual Completion**           | For manually completed deployments, displays the corresponding icon for manually completed deployments.                      |
 
 <figure><img src="../.gitbook/assets/image (2330).png" alt=""><figcaption></figcaption></figure>
 
