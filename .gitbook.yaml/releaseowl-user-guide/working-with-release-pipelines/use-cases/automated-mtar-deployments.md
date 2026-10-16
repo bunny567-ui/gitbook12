@@ -272,7 +272,7 @@ Configure the following fields when adding the **Pull Request Task** to the rele
 **Behavior**:  If a reviewer merges the pull request directly in Git instead of only approving, the downstream Merge task still runs but finds no changes to merge — it completes without error.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -291,7 +291,7 @@ Merges changes from a source branch into a target branch. The source and target 
 
 By default the source changes are merged directly into the target environment branch. When staging is enabled, changes are merged into a staging branch cut from the target environment branch instead; a later Merge task then promotes the staging branch into the target environment branch. Creating a staging branch is optional — configure the Merge and Build tasks to match your requirement.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Build Task
 
@@ -307,7 +307,7 @@ Builds the application code using the Build Pipeline configured in ReleaseOwl, p
 
 The per-environment Build Pipeline (from the landscape) is used for fixed environment branches. For dynamic branches — hotfix branches and staging branches — the Build task uses the application’s dynamic build pipeline.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Validate Task (optional)
 
@@ -321,7 +321,7 @@ Presents the results of the static code checks that were executed as part of the
 | User story Dependencies | Checkbox (Quality Checks)     | Optionally validate user-story dependencies.             |
 | Continue on Failure     | Checkbox (Pipeline Execution) | Allow the pipeline to proceed even if validation fails.  |
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Approval Task
 
@@ -345,7 +345,7 @@ Deploys the built MTAR artifact to the target SAP Cloud environment.
 
 The MTA extension files applied at deployment are taken from those associated with the target environment in the Landscape Configuration.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Update User Story Status task (“Stage Done”)
 
@@ -369,7 +369,7 @@ Once the Release Pipeline is created, you can use the **Actions** button for the
 
 **Save As**:  Opens a popup where you can enter a new name and create a copy of the pipeline.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Versions**: Displays all versions for the selected Release Pipeline. This option helps users track generated versions of the **Release Pipeline**. Versions are displayed only after the **Release Pipeline** has been promoted for the corresponding user story.
 
@@ -377,7 +377,7 @@ To view a specific version:
 
 1. Select the required version from the created Release Pipeline list.
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Click the **Actions (⋯)** button for that version.
 3. Select **View**.
@@ -386,11 +386,11 @@ This allows you to view the details of the selected version of the release pipel
 
 **Delete:** Deletes an existing release pipeline from the system.
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Archive** : The **Archive** option is available, which archives the project instead of deleting it.
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Export Release Pipeline:** It is the process of downloading the complete configuration of an existing release pipeline as a file (usually in **JSON format**) so it can be reused, shared, or backed up.
 
@@ -399,7 +399,7 @@ This allows you to view the details of the selected version of the release pipel
 3. Click **Export Release Pipeline**.
 4. The pipeline configuration is downloaded as a **JSON file** to your local system.
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Multi-Stage Release Pipeline**
 

@@ -4,7 +4,7 @@ The status of a user story can be set to a specific value automatically once the
 
 On adding a User Story Status Update task, the following screen is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 
@@ -14,7 +14,7 @@ Fill in the required details:
 | **Description**        | Text     | Description of the status update step.                                                                                 |
 | **User Story Status**  | Dropdown | The status value to set on the user story when this task executes (e.g., after deployment to the stage's environment). |
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### How it works
 

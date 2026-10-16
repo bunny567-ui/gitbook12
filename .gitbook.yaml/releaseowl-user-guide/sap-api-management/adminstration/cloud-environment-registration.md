@@ -8,18 +8,19 @@ ReleaseOwl seamlessly integrates with SAP API Management to enable continuous in
 2. Select API Management and click on register API Management.
 3. Provide the following details and click on **Save.**
 
-| **Field**        | **Description**                                                |
-| ---------------- | -------------------------------------------------------------- |
-| Name             | Enter a unique name for the SAP API Environment.               |
-| Host URL         | Copy the URL from the created SAP API Management instance.     |
-| OAuth Credential | Select the OAuth credential created in the credential manager. |
-| Environment Type | Select the environment type (e.g., Dev, QA, Prod).             |
+| **Field**                        | **Description**                                                                                                                                                                                                                                     |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                             | Enter a unique name for the SAP API Environment.                                                                                                                                                                                                    |
+| Host URL                         | Copy the URL from the created SAP API Management instance.                                                                                                                                                                                          |
+| OAuth Credential                 | Select the OAuth credential created in the credential manager.                                                                                                                                                                                      |
+| Environment Type                 | Select the environment type (e.g., Dev, QA, Prod).                                                                                                                                                                                                  |
+| Exclude Encrypted Key Value Maps | Select this option to skip encrypted Key Value Maps (KVMs) during synchronization. Since SAP does not expose the actual values of encrypted KVM entries, synchronizing them may result in blank or masked values being copied to the target system. |
 
-<figure><img src="../../../.gitbook/assets/image (1751).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2345).png" alt=""><figcaption></figcaption></figure>
 
 4. Once an environment is created, the **Linked Projects** section becomes available. This section displays a list of all projects that are currently associated with or utilizing the selected environment.
 
-<figure><img src="../../../.gitbook/assets/image (1752).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2346).png" alt=""><figcaption></figcaption></figure>
 
 ### Adding Environments to Project
 
