@@ -144,5 +144,4 @@ A webhook enables ZohoServiceDesk Plus to notify ReleaseOwl when a request or ch
 
 4. Save the webhook. Create **one webhook per module** (requests, changes), each with its own  module value.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (2338).png" alt=""><figcaption></figcaption></figure>
