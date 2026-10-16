@@ -7,7 +7,7 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 1. Navigate to the **BTP Applications** section.
 2. Click **New BTP Application**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Application Details
 
@@ -35,7 +35,7 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 1. Click the **Actions** button corresponding to the BTP Application.
 2. Select **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Landscape Configuration**: The Landscape Configuration defines, for each SAP Cloud environment, which Git branch it maps to, which Build Pipeline builds it, and which MTA extension files apply. Add one row per environment (Development, QA, Production,...).
 4. Click the **+ Add** button.

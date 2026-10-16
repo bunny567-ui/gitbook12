@@ -1,4 +1,4 @@
-# Working with User stories
+# Working with User Stories
 
 A user story carries the change(s) to be delivered. How changes are attached depends on the branching model of each application involved.
 
@@ -9,11 +9,11 @@ To associate MTAR applications with a User Story:
 1. Navigate to **Change Management** and click **User Stories**.
 2. Click **Create New User Story**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Enter the required details and click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Actions**, and then click **Edit**.
 4. In the User Story section, the **Change Type** field displays two options:
@@ -32,7 +32,7 @@ To associate MTAR applications with a User Story:
 
 7. In the **MTAR Applications** section, click **Add**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 1: MTAR Applications**
 
@@ -46,7 +46,7 @@ The **MTAR Applications** step displays all registered MTAR applications.
    * **Branching Model**
 3. Click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Source Reference**
 
@@ -59,17 +59,17 @@ When adding the application to a user story, the **Source Reference** step lets 
 | **From Branch**   | Dropdown | The base branch the new branch is cut from. Defaults to the application’s “Create Feature Branch From Branch” value; can be overridden.                        |
 | **Create Branch** | Button   | Creates the branch in the Git repository.                                                                                                                      |
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * If **I Already Have a Feature Branch** is selected, Enter  the existing feature branch and click **Finish**.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Cherry Pick Model**
 
 In the Cherry-Pick model no feature branch is created. Instead, you select the commits related to the user story. The available commits are populated from the application’s development branch — the landscape branch flagged as “**Development Branch**” . The selected commits are cherry-picked onto the target environment branches during promotion.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 3 — Source Reference (Hotfix Branch)
 
@@ -95,7 +95,7 @@ To edit the source reference:
 1. In the **MTAR Applications** section, click the **Actions** button corresponding to the required MTAR application.
 2. Click **Edit Feature Branch**.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Update the **Feature Branch** (for the **Feature Branch Model**) or modify the selected **commits** (for the **Cherry Pick Model**).
 4. Click **Save** /**Add** to apply the changes.

@@ -42,6 +42,7 @@
     * [Freshservice](releaseowl-admin-guide/alm-integrations/freshservice.md)
     * [SAP Cloud ALM](releaseowl-admin-guide/alm-integrations/sap-cloud-alm.md)
     * [ReleaseOwl Integration](releaseowl-admin-guide/alm-integrations/releaseowl-integration.md)
+    * [Zoho ServiceDesk Integration](releaseowl-admin-guide/alm-integrations/zoho-servicedesk-integration.md)
   * [Other Integrations](releaseowl-admin-guide/other-integrations/README.md)
     * [DocuSign](releaseowl-admin-guide/other-integrations/docusign.md)
   * [Landscape Mapping](releaseowl-admin-guide/landscape-mapping.md)
