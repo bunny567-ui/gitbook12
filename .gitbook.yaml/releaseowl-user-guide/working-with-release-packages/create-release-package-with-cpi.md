@@ -27,7 +27,7 @@ Release Package is a collection of one or more user stories that are validated a
 
 4. Click **Save.**
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (22).png" alt=""><figcaption></figcaption></figure>
 
 5. When you click the **Show** button, a preview of the user story is displayed. This preview includes details such as the **CPI Artifacts**, their **type**, **version**, and information about **who synced** them and **when**.
 
@@ -37,7 +37,7 @@ Release Package is a collection of one or more user stories that are validated a
 
 6. You can customize the columns seen in the **Create/Edit Release Package** screen by clicking the Settings **Gear** icon.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (32).png" alt=""><figcaption></figcaption></figure>
 
 7. Once created, you can see the newly created release package in the **Release Package** page.
 
@@ -72,7 +72,7 @@ Validation report is visible only after the validation process is complete.\
 
 2\. The validation report is displayed below.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### CPI Governance
 
@@ -91,7 +91,7 @@ Validation report is visible only after the validation process is complete.\
 5. **Follow Recommended Practices**\
    The guidelines can also reference recommended integration packages, such as **CPI Cloud Exemplar**, to help developers follow proven patterns for performance, security, and efficiency.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### CPI Downgrade Check
 
@@ -104,7 +104,7 @@ This feature ensures that the correct user story is reused during a downgrade op
 3. After the downgrade validation is successful, the system **reuses the same artifact-assigned user story**.
 4. The reused user story is displayed in the **Target User Story** column.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### User Story Dependency Check
 

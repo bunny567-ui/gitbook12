@@ -2,73 +2,41 @@
 
 This section describes the process of configuring and managing **SAP Analytics Cloud (SAC)** environments in **ReleaseOwl**.
 
-### **Adding SAC Environments to the Project** <a href="#pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project" id="pdf-page-gxe94pcl07aymb35lkd4-adding-sac-environments-to-the-project"></a>
+### **SAC Management**&#x20;
 
-The SAC environments must be registered in **Project Settings** in ReleaseOwl.
+* Navigate to SAC Management in the Build section and click **Add Packages** to add packages from your SAC tenant to the project.
 
-1.  **To register SAC environment:**
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-    * Go to the **Projects** drop-down at the top right corner and click **Project Settings**.
-    * In **Project Settings**, navigate to **Environment**.
-    * The following screen is displayed.
+* **Remove Artifacts** – removes the selected packages from the project.
 
-    <figure><img src="../../.gitbook/assets/image (1347).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F8kmqQm963h5jWidjxkFl%252Fimage.png%3Falt%3Dmedia%26token%3D1e8202b1-d3e7-4cf5-80cb-86549577aae9&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b2dd4bc3&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-2.  Click **Add** to add a new environment in ReleaseOwl.
+* **Sync History** - shows a log of every add, update and remove.&#x20;
 
-    * In the subsequent screen, select the required environments from the list displayed.
-    * Select **Source environment** and **Save** the changes.
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (1346).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-**Note:** Only the artifacts from the source are synced to ReleaseOwl.
-{% endhint %}
-
-3. The environment gets added to the corresponding project in ReleaseOwl.
-
-<figure><img src="../../.gitbook/assets/image (1348).png" alt=""><figcaption></figcaption></figure>
-
-4. Click on the **Users** tab. This tab lists all existing users associated with the project.4
-5. Click on the **edit (lock)** icon next to the user for whom you want to manage roles and permissions.
-
-<figure><img src="../../.gitbook/assets/image (1349).png" alt=""><figcaption></figcaption></figure>
-
-6. This will open the **Permissions** page for the selected user.
-
-<figure><img src="../../.gitbook/assets/image (1352).png" alt=""><figcaption></figcaption></figure>
-
-7. Scroll down to the Environments section.
-8. Check the Deploy checkbox for the relevant environment(s) to enable deploy access.
-
-<figure><img src="../../.gitbook/assets/image (1351).png" alt=""><figcaption></figcaption></figure>
-
-### **SAC Management and Deployment**
-
-1.  **Sync Packages:**
-
-    * Go to **SAC Management** in the **Build** section and click on **Sync Packages**.
-
-    <figure><img src="../../.gitbook/assets/image (1374).png" alt=""><figcaption></figcaption></figure>
-
-
-
-* You can see the **Deployment History** by clicking on the **Actions** button and selecting **Deployment History**.
-
-<figure><img src="../../.gitbook/assets/image (1375).png" alt=""><figcaption></figcaption></figure>
-
-2. **View Package Details:**
+**Import Settings**
 
 * Click the **Actions** button and select **Import Settings** to view package details.
 
-<figure><img src="../../.gitbook/assets/image (44) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure></div>
 
-* Each package has different import settings, and you need to configure the import settings for the required package.
+*   **Choose an Overwrite Preference**
 
-<figure><img src="../../.gitbook/assets/image (1355).png" alt=""><figcaption></figcaption></figure>
+    Under **Overwrite Preferences**, choose what happens when the package contains objects with the same name as objects already in the target system. New objects are always imported. Select one option:
 
-3. **Release  Pipelines:**
+    * **Don't overwrite objects or data** – leaves existing content unchanged.
+    * **Overwrite data only** – overwrites the data of existing objects but doesn't change the structure of your models.
+    * **Overwrite objects and data** – imports all selected content and lets existing objects be overwritten.
+
+    <figure><img src="../../.gitbook/assets/image (2347).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:** On the environment side, you can set the import settings for each environment separately.
+{% endhint %}
+
+**Release  Pipelines**
 
 * Go to the Release Pipelines and click on the **Create New Release Pipeline.**
 
@@ -76,11 +44,11 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 * Enter a  **Release** **Pipeline Name**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (31).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Add Stage**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (17).png" alt=""><figcaption></figcaption></figure>
 
 * Enter the stage name say for e.g., UAT or QA where the deployment has to be carried out and click OK.
 
@@ -88,7 +56,7 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 * **Tasks:** Click **Add** to enter any tasks that are to be performed
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** To remove any stage, click Remove stage button.
@@ -105,28 +73,29 @@ The SAC environments must be registered in **Project Settings** in ReleaseOwl.
 
 **Configure Task Details**
 
-In the **Task Details** panel on the right side, fill in the following information:
+* In the **Task Details** panel, configure the following fields:
+  * **Name** (required): Enter a name for the deployment task.
+  * **Description**: Enter a description of the task.
+  * **Select SAC Environment** (required): Select the target environment. For an SDS deployment task, select the target SDS environment.
+* Scroll down to **Overwrite Preferences** and select how existing objects and data should be handled during import. New objects are always imported.
+  * **Don't overwrite objects or data**: Preserves existing objects and data.
+  * **Overwrite data only**: Overwrites existing data without changing the structure of objects.
+  * **Overwrite objects and data**: Allows existing objects and data to be overwritten.
+* **Set Include Data:** Tick **Include Data** to import the data along with the objects. Clear it to import the objects only
+* Save the pipeline to apply the configuration.
 
-| **Field**                  | **Description**                                               |
-| -------------------------- | ------------------------------------------------------------- |
-| **Name**                   | Enter a unique name for your task.                            |
-| **Description**            | Optionally, provide a brief description of the task.          |
-| **Select SAC Environment** | Choose the SAC environment for deployment from the dropdown.  |
+<figure><img src="../../.gitbook/assets/image (2348).png" alt=""><figcaption></figcaption></figure>
 
-**Optional Settings**
+{% hint style="info" %}
+&#x20;**Note:** The settings configured in the deployment task serve as the default import settings for the selected environment.
+{% endhint %}
 
-You may optionally configure the following:
+**Advance Settings**
 
-* **Schedule Time**\
-  Enable this checkbox to schedule the deployment at a specific date and time.
-* **Notify Users**\
-  Enable this checkbox to send email notifications to selected users after task execution.
-* **Notify Promotion User**\
-  Enable this checkbox to notify the user who promoted the pipeline.
+* **Prevent same approver across tasks:**
+  * **Behaviour:** once a user approves or rejects one approval task in a run, they can’t act on another approval task in that run.
+  * **Details:** it is off by default, and adding an assignee isn’t counted.
+  * **Message:** the denial message users see is quoted.
+* **Notification Email(s):** type an address, press Enter to add it, then click **Save**.
 
-**Finalize the Task**
-
-* Once all configurations are complete, click **Next** to proceed to **Step 3: Notification Email(s)** or continue adding more tasks as needed.
-
-<figure><img src="../../.gitbook/assets/image (1377).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (2349).png" alt=""><figcaption></figcaption></figure>

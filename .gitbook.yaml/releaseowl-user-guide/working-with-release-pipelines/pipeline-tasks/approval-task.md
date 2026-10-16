@@ -41,4 +41,4 @@ When the pipeline reaches the Approval Task, it is delivered to the assignee(s) 
 * With **Approval Message Required** enabled, every Approve/Reject action carries a mandatory comment, giving you an audit trail of why each decision was made.
 * For Custom assignment, maintain the component–role mapping once, **Export Roles**, and **Import Roles** into other pipelines to keep approval governance consistent across pipelines.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
