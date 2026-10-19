@@ -15,7 +15,7 @@ This document explains how to connect **Zoho ServiceDesk Plus Cloud** to Release
 1. Open the[ Zoho API Console ](https://api-console.zoho.in/)and sign in using the Zoho account associated with ServiceDesk Plus.
 2. Click **Add Client** in the upper-right corner of the Applications list.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **Server-based Applications**.
 4. Click **Create Now** under Server-based Applications.
@@ -118,7 +118,23 @@ When you save the integration, ReleaseOwl generates a webhook URL and secret key
 
 Replace `{module}` with `request` or `change`, depending on the module the webhook is for.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### **Integrating User Stories from Zoho Service Plus to ReleaseOwl**
+
+ReleaseOwl is bidirectional, so the user stories created in Zoho Service Plus can be synced with ReleaseOwl and vice-versa.
+
+To integrate user stories from Zoho Service Plus, follow these steps:
+
+1. Navigate to the required Project.
+2. In **Change Management**, select **User Stories** Menu
+3. Click the **Sync User stories** icon.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+4. After synchronization is complete, the user stories will be available in ReleaseOwl.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Zoho ServiceDesk Webhook Configuration
 
@@ -145,3 +161,6 @@ A webhook enables ZohoServiceDesk Plus to notify ReleaseOwl when a request or ch
 4. Save the webhook. Create **one webhook per module** (requests, changes), each with its own  module value.
 
 <figure><img src="../../.gitbook/assets/image (2338).png" alt=""><figcaption></figcaption></figure>
+
+
+
