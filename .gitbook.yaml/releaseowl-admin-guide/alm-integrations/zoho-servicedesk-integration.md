@@ -1,14 +1,11 @@
 # Zoho ServiceDesk Integration
 
-This document explains how to connect **Zoho ServiceDesk Plus Cloud** to ReleaseOwl using **OAuth 2.0**. Once connected, ReleaseOwl can read and update ServiceDesk Plus **requests, changes and problems**.
+This document explains how to connect **Zoho ServiceDesk Plus Cloud** to ReleaseOwl using **OAuth 2.0**. Once connected, ReleaseOwl can read and update ServiceDesk Plus **requests and changes.**
 
 ### Prerequisites <a href="#user-content-prerequisites" id="user-content-prerequisites"></a>
 
 * A Zoho account that can open your ServiceDesk Plus portal.
-*   The ReleaseOwl callback (redirect) URL:
-
-    <pre data-overflow="wrap"><code>https://na2.releaseowl.com/rateloginserver/api/oauth/accesstoken
-    </code></pre>
+* The ReleaseOwl callback (redirect) URL varies depending on the environment.
 
 ### Configure the Zoho API Console <a href="#user-content-part-a--zoho-api-console" id="user-content-part-a--zoho-api-console"></a>
 
@@ -94,7 +91,7 @@ After creating the credential, connect it to a ReleaseOwl project by configuring
 * If you provide no `search_criteria`, ReleaseOwl uses the default list (first 50 records).
 * The filter must be valid JSON; otherwise the sync fails with _Error parsing a JSON Text_.
 
-**Board Type = `project`.** ReleaseOwl syncs the **tasks** of the SDP project whose id is set as the integration's external id. A project can be looked up by title.
+**Board Type = `change`.** ReleaseOwl syncs the **changes** from ServiceDesk Plus.
 
 #### What ReleaseOwl reads and writes <a href="#user-content-what-releaseowl-reads-and-writes" id="user-content-what-releaseowl-reads-and-writes"></a>
 

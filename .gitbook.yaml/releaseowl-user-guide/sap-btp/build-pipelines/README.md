@@ -85,9 +85,11 @@ The Build section in ReleaseOwl enables developers to create MTAR artifacts and 
 1. **Build Type**: Automatically populated based on the selected project configuration.
 2. **Build Tool Version**: Select the required build tool version.
 3. **Max # of Builds to Keep**: Specify the maximum number of build records to retain. It is recommended to set this value to **30** to preserve recent build history and prevent excessive storage consumption in Jenkins.
-4. After completing the configuration, click **Step 4** to proceed.
+4. **Keep Builds for (Days):** Specify how many days a build record is kept before it is removed.
+5. **Java Build Tool:** Select the tool that builds your Java code, **Maven** or **Gradle**.
+6. After completing the configuration, click **Step 4** to proceed.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2363).png" alt=""><figcaption></figcaption></figure>
 
 **Scheduler Section**&#x20;
 
@@ -163,8 +165,9 @@ To enable ESLint in the Build Pipeline:
 1. Navigate to the **Tool Integrations** step while creating or editing the Build Pipeline.
 2. Select the **ESLint** checkbox.
 3. Ensure that **Static Code Analysis** is enabled and a valid **SonarQube** credential is selected.
+4. **Additional Tests:** Select the tests whose results are added to the analysis. You can select more than one: **Karma**, **WDI5** and **JUnit**. The selected tests appear as tags in the field; click the **x** on a tag to remove it.
 
-<figure><img src="../../../.gitbook/assets/image (2106).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2364).png" alt=""><figcaption></figcaption></figure>
 
 #### **2. Malware Scan**
 
@@ -185,7 +188,7 @@ CVE scans identify any vulnerable versions of libraries used in your **CAP appli
 
 * Enable the option for **SAP CVE Scan**.
 
-<figure><img src="../../../.gitbook/assets/image (2110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2366).png" alt=""><figcaption></figcaption></figure>
 
 **Configure CVE Settings**
 
@@ -227,11 +230,44 @@ sonar.test.inclusions=webapp/test/unit/**/*.js,webapp/test/integration/**/*.js
 To enable Karma in the Build Pipeline:
 
 1. Navigate to the **Tool Integrations** step while creating or editing the Build Pipeline.
-2. Select the **Karma** checkbox.
+2. Select the **Karma** in the **Additional Tests.**
 3. In the **Karma Scripts** field, enter the script name defined in the **package.json** file.
 4. Ensure that **Static Code Analysis** is enabled and a valid **SonarQube** credential is selected.
 
-<figure><img src="../../../.gitbook/assets/image (2111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2368).png" alt=""><figcaption></figcaption></figure>
+
+#### **5. JUnit**
+
+Select **JUnit** to run your Java test cases. ReleaseOwl uses the **Java Build Tool** you chose in the Builder step:
+
+* With **Maven**, the pipeline runs the Maven build with the `clean` and `verify` goals.
+* With **Gradle**, the pipeline runs the Gradle `test` task.
+
+The tests run in a build image that matches the Java version you selected in the Builder step. The supported Java versions are 8, 11, 17 and 21. The images used are Maven 3.6.3 (Java 8 and 11), Maven 3.9 (Java 17 and 21) and Gradle 8 for each Java version.
+
+{% hint style="info" %}
+**Note: JUnit needs a Java build tool.** If no Java build tool is selected in the Builder step, the JUnit tests are not added to the pipeline.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (2370).png" alt=""><figcaption></figcaption></figure>
+
+
+
+#### 6. WDI5  <a href="#user-content-step-4-select-wdi5-to-run-webdriverio-tests" id="user-content-step-4-select-wdi5-to-run-webdriverio-tests"></a>
+
+To run WDI5 tests:
+
+1. Make sure your application's `package.json` defines the test script that runs your WDI5 tests.
+2. Select **WDI5** under **Additional Tests**.
+3. In the **Web Driver IO Scripts** field, enter the script name that matches the one in your `package.json`.
+
+ReleaseOwl runs the script with `npm run <script name>`. The results are converted into a format that SonarQube can process, so they appear in the analysis.
+
+{% hint style="info" %}
+**Note:** The script name must match the name in `package.json` exactly.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (2371).png" alt=""><figcaption></figcaption></figure>
 
 **Actions Button**
 
@@ -277,8 +313,12 @@ The **Actions** menu provides the following options:
 
 * If **SonarQube** is enabled, click **SonarQube Report** to view the test metrics and code quality results, including:
 * **OPA5 Tests** – Displays the total number of OPA5 test cases executed through Karma and included in the SonarQube analysis.
+* **WDI5 Tests** – runs the WebdriverIO tests, if WDI5 is selected under **Additional Tests**.
+* **Maven Tests** or **Gradle Tests** – runs the Java tests, if JUnit is selected under **Additional Tests**. Which one you get depends on the **Java Build Tool** in the Builder step.
 
-<figure><img src="../../../.gitbook/assets/image (2112).png" alt=""><figcaption></figcaption></figure>
+Each stage keeps its reports with the build, for example the ESLint report, the test reports, the SonarQube issues and the malware scan report.
+
+<figure><img src="../../../.gitbook/assets/image (2369).png" alt=""><figcaption></figcaption></figure>
 
 * **Status:** Indicates the execution result of each stage.
 * **Timestamp:** Shows the date and time when the stage was executed.

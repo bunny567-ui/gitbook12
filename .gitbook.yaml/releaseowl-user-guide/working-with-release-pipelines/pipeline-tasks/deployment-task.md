@@ -85,7 +85,7 @@ The SAC Deployment Task handles the automated deployment of SAP Analytics Cloud 
 | **Notify Users**           | Sends deployment status notifications (Success/Failure) to all users associated with the pipeline stage.                                                                                                                                                                                                                                                                                                                                                                          |
 | **Notify Promotion User**  | Sends notifications to the user who promoted the user story or release package that triggered the deployment.                                                                                                                                                                                                                                                                                                                                                                     |
 
-<div><figure><img src="../../../.gitbook/assets/image (2270).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2271).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../../../.gitbook/assets/image (2362).png" alt=""><figcaption></figcaption></figure>
 
 ### 5. SDS Deployment Task (SAP Datasphere Packages)
 
@@ -104,5 +104,4 @@ The SDS Deployment Task deploys SAP Datasphere packages to the target Datasphere
 | **Notify Users**           | Sends deployment status notifications (Success/Failure) to all users associated with the pipeline stage.                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Notify Promotion User**  | Sends notifications to the user who promoted the user story or release package that triggered the deployment.                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-<div><figure><img src="../../../.gitbook/assets/image (2268).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2269).png" alt=""><figcaption></figcaption></figure></div>
-
+<figure><img src="../../../.gitbook/assets/image (2361).png" alt=""><figcaption></figcaption></figure>

@@ -1,6 +1,6 @@
 # Working with UserStories
 
-User Stories allow you to group and manage artifacts that are deployed together through a Release Pipeline.
+User Stories allow you to group and manage artifacts that are deployed together through a [Release Pipeline.](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-user-guide/working-with-release-pipelines/pipeline-tasks/deployment-task)
 
 #### Creating a User Story
 
@@ -53,5 +53,4 @@ User Stories allow you to group and manage artifacts that are deployed together 
 
 * Click the **"Deploy Log"** button to open a pop-up window displaying deployment details.
 
-<img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FvmTiXj88LvsmhQvNFPVX%252Fimage.png%3Falt%3Dmedia%26token%3D583d4517-7016-4bf8-8fff-e85ba04eaf1c&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=59641bf&#x26;sv=2" alt="" height="640" width="1200">
-
+<figure><img src="../../.gitbook/assets/image (2360).png" alt=""><figcaption></figcaption></figure>
