@@ -250,9 +250,9 @@ To ensure ReleaseOwl stays updated with changes made in Cloud, you must configur
 
 4. Click Save.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1633).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2381).png" alt=""><figcaption></figcaption></figure>
 
-### Enter the Webhook Path&#x20;
+#### Enter the Webhook Path&#x20;
 
 In the **Path** field, enter the ReleaseOwl webhook endpoint using the following general structure:
 
