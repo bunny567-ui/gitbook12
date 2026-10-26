@@ -12,7 +12,7 @@ This document explains how to connect **Zoho ServiceDesk Plus Cloud** to Release
 1. Open the[ Zoho API Console ](https://api-console.zoho.in/)and sign in using the Zoho account associated with ServiceDesk Plus.
 2. Click **Add Client** in the upper-right corner of the Applications list.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **Server-based Applications**.
 4. Click **Create Now** under Server-based Applications.
@@ -60,7 +60,7 @@ This document explains how to connect **Zoho ServiceDesk Plus Cloud** to Release
 4. After saving the credential, click **Generate Token**. You will be redirected to a Zoho authorization page.&#x20;
 5. Select **I allow … to access the above data** and click **Accept**. Once authorization is successful, a success message appears, confirming that the token has been generated successfully.
 
-<div><figure><img src="../../.gitbook/assets/image (2336).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (2336).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 #### ReleaseOwl Project Settings
 
@@ -115,7 +115,7 @@ When you save the integration, ReleaseOwl generates a webhook URL and secret key
 
 Replace `{module}` with `request` or `change`, depending on the module the webhook is for.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Integrating User Stories from Zoho Service Plus to ReleaseOwl**
 

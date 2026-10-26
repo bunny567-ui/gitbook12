@@ -73,7 +73,7 @@ Users assigned the **User** role have access only to the projects to which they 
 
 1. Click the **Arrow ( > )** icon next to the user to open the **User Details** page.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **Projects** section, users can view and manage all projects associated with the selected user.
 3. To add projects to the user, click the **+ Add** button in the **Projects** section.
@@ -114,7 +114,7 @@ The **Lock** feature allows administrators to control access to the system for s
 2. Click the **Lock** button.
 3. The selected users will be locked and denied access to the system until unlocked.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Unlock**
 
@@ -126,7 +126,7 @@ The **Unlock** feature allows administrators to restore access to users who were
 2. Click the **Unlock** button.&#x20;
 3. The selected users will regain access to the system.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Show**
 

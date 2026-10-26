@@ -103,7 +103,7 @@ Configure the pipeline execution and notification settings:
 
 2. After selecting the required scheduler option, click **Step 5** to continue.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Environment**
 
@@ -112,7 +112,7 @@ Configure the deployment environment for the Build Pipeline:
 1. **Development Environment** – Select the required environment from the drop-down list. The available environments are those that have been previously registered in ReleaseOwl through the **SAP Cloud  Environment** registration process.&#x20;
 2. After selecting the required development environment, click **Step 6** to continue.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Notification**
 
