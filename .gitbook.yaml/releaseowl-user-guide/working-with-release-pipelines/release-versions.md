@@ -9,7 +9,7 @@ To navigate to the **Release Versions** page:
 1. In the left navigation pane, expand **Change Management**.
 2. Click **Release Versions**.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Sync Release Versions <a href="#pdf-page-0ebflbp2eco5zehbqqzc-sync-release-versions" id="pdf-page-0ebflbp2eco5zehbqqzc-sync-release-versions"></a>
 
@@ -22,21 +22,26 @@ To sync release versions:
 3. On the **Release Versions** page in ReleaseOwl, click **Sync Release Versions**.
 4. The release version created in Jira is synchronized and displayed in ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (2169).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **View User Stories for a Release Version**
 
 * Click **Actions** and select **User Stories** against any release version.
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 * The user stories that are a part of the selected **Release Version** are listed as follows:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (20).png" alt=""><figcaption></figcaption></figure>
 
 ### **Create a Release Version** <a href="#pdf-page-0ebflbp2eco5zehbqqzc-create-a-release-version" id="pdf-page-0ebflbp2eco5zehbqqzc-create-a-release-version"></a>
 
-1. You can also create release versions in ReleaseOwl by clicking the **Create Release Version** link in the Release Versions page.
+A **Release Version** is a record in ReleaseOwl that contains the release name, description, status, planned date, released date, and integration system. User stories are grouped under a release version based on their Fix Version. The release package and release pipeline are linked after you create a package from the release version.
+
+1. On the **Release Versions** page, click **Create Release Version.**
+
+<figure><img src="../../.gitbook/assets/image (2376).png" alt=""><figcaption></figcaption></figure>
+
 2. Enter the required details as follows:
 
 * **Name** – Enter a unique and descriptive name for the release version.
@@ -60,32 +65,30 @@ To sync release versions:
 | **Archived**                | The selected release version gets **archived,** and the user cannot see it in the Release Versions page.                                                                                                                                                                                                 |
 | **Create  Release Package** | Creates a release package for the selected release version by bundling the associated user stories and deployment artifacts. The release package can then be used for deployment through the release pipeline.                                                                                           |
 
-<figure><img src="../../.gitbook/assets/image (2021).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2372).png" alt=""><figcaption></figcaption></figure>
 
 ### Create Release Package
 
 Follow the steps below to create a Release Package from a Release Version:
 
-1. Locate the Release Version for which you want to create a Release Package.
-2. Click on the **Actions** button next to the desired Release Version.
-3. Choose the **Create Release Package** option from the dropdown menu.
+1. To create the release package, go to the **User Stories** of the release version.
 
-<figure><img src="../../.gitbook/assets/image (2023).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2373).png" alt=""><figcaption></figcaption></figure>
 
-4. **Fill in the Release Package Details:**
+2. Add or create the release package for it. Enter:
+   * **Package name** – a name of your choice for the release package.
+   * **Release pipeline** – the release pipeline the package follows. Both the pipeline's ID and name are required.
 
-* **Name**: Enter a meaningful name to identify the purpose or scope of the Release Package.
-* **Release Pipeline**: Select the relevant Release Pipeline. This pipeline determines the stages and environments through which the package will be deployed.
+<figure><img src="../../.gitbook/assets/image (2374).png" alt=""><figcaption></figcaption></figure>
 
-5. Click the **Save** button to complete the creation process.
+4. Click the **Create** button to complete the creation process.
 
 <figure><img src="../../.gitbook/assets/image (2022).png" alt=""><figcaption></figcaption></figure>
 
-6. The newly created **Release Package** will now be displayed under the **Release Packages** section on the Release Versions tab.
+5. Confirm to create the package. ReleaseOwl creates the release package and links it to the release version.
 
 {% hint style="info" %}
 **Note:** All user stories associated with the Release Version will be automatically added to the Release Package during creation, ensuring alignment and traceability across the deployment lifecycle
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (2375).png" alt=""><figcaption></figcaption></figure>

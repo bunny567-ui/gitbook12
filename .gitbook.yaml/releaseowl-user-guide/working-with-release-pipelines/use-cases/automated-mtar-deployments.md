@@ -272,7 +272,7 @@ Configure the following fields when adding the **Pull Request Task** to the rele
 **Behavior**:  If a reviewer merges the pull request directly in Git instead of only approving, the downstream Merge task still runs but finds no changes to merge — it completes without error.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -291,7 +291,7 @@ Merges changes from a source branch into a target branch. The source and target 
 
 By default the source changes are merged directly into the target environment branch. When staging is enabled, changes are merged into a staging branch cut from the target environment branch instead; a later Merge task then promotes the staging branch into the target environment branch. Creating a staging branch is optional — configure the Merge and Build tasks to match your requirement.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Build Task
 

@@ -74,7 +74,7 @@ The **Delete** option allows users to permanently remove a project from the appl
 
 The **Project Settings** option allows users to configure and manage project-specific settings. Users can update project configurations, manage ALM integrations, maintain environment details, and modify project-related parameters based on the project requirements.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Project Settings Configuration
 
@@ -127,7 +127,7 @@ These settings control validation and approval workflows:
 
 When the project type is selected as an **On-Premise System**, the following additional configuration options are available. These settings apply to projects integrated with on-premise systems such as SAP environments.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Set Transport Description from User Story**
 
@@ -145,7 +145,7 @@ When the project type is selected as an **On-Premise System**, the following add
 
 When the project type is selected as **SAP CPI**, the following additional configuration options are available. These settings apply to projects integrated with SAP Cloud Platform Integration (CPI) systems.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **CPI Settings**
 
@@ -186,7 +186,7 @@ To add an environment, follow these steps:
 
 The newly added environment will appear in the Environments table with details such as the environment name, type, and host URL.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Users
 
