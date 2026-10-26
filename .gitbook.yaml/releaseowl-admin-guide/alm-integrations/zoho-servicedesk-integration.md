@@ -127,11 +127,11 @@ To integrate user stories from Zoho Service Plus, follow these steps:
 2. In **Change Management**, select **User Stories** Menu
 3. Click the **Sync User stories** icon.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2377).png" alt=""><figcaption></figcaption></figure>
 
 4. After synchronization is complete, the user stories will be available in ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2378).png" alt=""><figcaption></figcaption></figure>
 
 ### Zoho ServiceDesk Webhook Configuration
 
