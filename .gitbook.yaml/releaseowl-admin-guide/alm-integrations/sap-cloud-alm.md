@@ -35,36 +35,38 @@ To connect SAP Cloud ALM to ReleaseOwl, you first need to obtain the client cred
 
 5. In the **Configure instance parameters** section, enter the parameters manually in JSON format. The configuration specifies the authorities required for the ReleaseOwl integration, the OAuth 2.0 credential type, and the application name. Enter the following JSON configuration in the editor:
 
-{% hint style="info" %}
-{\
-"xs-security": {\
-"authorities": \[\
-"$XSMASTERAPPNAME.imp-cdm-feature-display-ui",\
-"$XSMASTERAPPNAME.imp-cdm-feature-manage-ui",\
-"$XSMASTERAPPNAME.calm-api.features.read",\
-"$XSMASTERAPPNAME.calm-api.features.write",\
-"$XSMASTERAPPNAME.calm-api.projects.read",\
-"$XSMASTERAPPNAME.calm-api.tasks.write",\
-"$XSMASTERAPPNAME.calm-api.tasks.read",\
-"$XSMASTERAPPNAME.calm-api.documents.read",\
-"$XSMASTERAPPNAME.calm-api.documents.write",\
-"$XSMASTERAPPNAME.calm-api.metrics.write",\
-"$XSMASTERAPPNAME.calm-api.hm.write",\
-"$XSMASTERAPPNAME.calm-api.logs.write",\
-"$XSMASTERAPPNAME.calm-api.exm.write",\
-"$XSMASTERAPPNAME.calm-api.integration-monitoring.write",\
-"$XSMASTERAPPNAME.calm-api.bsm.write",\
-"$XSMASTERAPPNAME.calm-api.jobs.write"\
-],\
-"oauth2-configuration": {\
-"credential-types": \[\
-"binding-secret"\
-]\
-},\
-"xsappname": "Testpcalm"\
-}\
+{% code overflow="wrap" expandable="true" %}
+```
+ {
+"xs-security": {
+"authorities": [
+"$XSMASTERAPPNAME.imp-cdm-feature-display-ui",
+"$XSMASTERAPPNAME.imp-cdm-feature-manage-ui",
+"$XSMASTERAPPNAME.calm-api.features.read",
+"$XSMASTERAPPNAME.calm-api.features.write",
+"$XSMASTERAPPNAME.calm-api.projects.read",
+"$XSMASTERAPPNAME.calm-api.tasks.write",
+"$XSMASTERAPPNAME.calm-api.tasks.read",
+"$XSMASTERAPPNAME.calm-api.documents.read",
+"$XSMASTERAPPNAME.calm-api.documents.write",
+"$XSMASTERAPPNAME.calm-api.metrics.write",
+"$XSMASTERAPPNAME.calm-api.hm.write",
+"$XSMASTERAPPNAME.calm-api.logs.write",
+"$XSMASTERAPPNAME.calm-api.exm.write",
+"$XSMASTERAPPNAME.calm-api.integration-monitoring.write",
+"$XSMASTERAPPNAME.calm-api.bsm.write",
+"$XSMASTERAPPNAME.calm-api.jobs.write"
+],
+"oauth2-configuration": {
+"credential-types": [
+"binding-secret"
+]
+},
+"xsappname": "Testpcalm"
 }
-{% endhint %}
+}
+```
+{% endcode %}
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -72,7 +74,7 @@ To connect SAP Cloud ALM to ReleaseOwl, you first need to obtain the client cred
 7. Copy the **Client ID**, **Client Secret**, and **URL** from the credentials section.
 8. These credentials will be used to authenticate and establish a secure connection between ReleaseOwl and SAP Cloud ALM.
 
-<figure><img src="../../.gitbook/assets/image (1600).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2382).png" alt=""><figcaption></figcaption></figure>
 
 ### Register SAP Cloud ALM in ReleaseOwl
 
@@ -159,7 +161,7 @@ SAP Cloud ALM and ReleaseOwl maintain a bidirectional connection:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-## Adding User Stories in ReleaseOwl&#x20;
+## **Editing Features in ReleaseOwl**
 
 Each synced user story can be further enhanced and managed directly within ReleaseOwl:&#x20;
 
