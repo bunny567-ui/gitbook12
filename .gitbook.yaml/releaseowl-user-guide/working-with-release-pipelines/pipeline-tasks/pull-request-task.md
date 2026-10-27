@@ -16,18 +16,20 @@ Before configuring these tasks, generate a GitLab access token with the required
 
 | Resource                                     | Permissions that MUST be enabled         | If NOT enabled                                                                                                                                                                                     |
 | -------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Repository → **Code**                        | **Read**                                 | ReleaseOwl cannot read the source and target branches. PR creation fails immediately.                                                                                                              |
+| Repository → **Code**                        | **Push, Read**                           | ReleaseOwl cannot read the source and target branches. PR creation fails immediately.                                                                                                              |
 | Repository → **Commit**                      | **Create, Read, Update**                 | Story commits cannot be read and merge commits cannot be written. The Merge task fails even when the PR is approved.                                                                               |
 | Repository → **Merge Request**               | **Approve, Create, Merge, Read, Update** | The core of the feature. Without **Create**, the Pull Request task cannot open the PR; without **Read**, it cannot track review status; without **Merge**, the downstream Merge task cannot merge. |
 | Repository → **Merge Request Approval Rule** | **Create, Read, Update**                 | Approval state of the PR cannot be evaluated. The Merge task cannot verify the PR is approved before merging.                                                                                      |
 | Repository → **Branch**                      | **Create, Read**                         | Feature branches cannot be created (Feature Branch model), and environment branches cannot be resolved as PR source/target.                                                                        |
 | Search → **Global Search**                   | **Use**                                  | Repository and merge request lookup via the search API fails.                                                                                                                                      |
 
+
+
 {% hint style="info" %}
 **Note :** All the above permissions are mandatory. If any permission is missing, the pipeline may fail at runtime. For example, the Pull Request may not be created, the approval status may not be read, or the Merge task may not be able to merge the pull request.
 {% endhint %}
 
-<img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FgDqx22dW4u5DZ8vysOjw%252Fimage.png%3Falt%3Dmedia%26token%3D424f41a3-a4a2-455c-ad49-4514da6577a0&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=aa2bff70&#x26;sv=2" alt="" height="875" width="1685">
+<figure><img src="../../../.gitbook/assets/image (2383).png" alt=""><figcaption></figcaption></figure>
 
 #### GitLab Webhook Setup
 
