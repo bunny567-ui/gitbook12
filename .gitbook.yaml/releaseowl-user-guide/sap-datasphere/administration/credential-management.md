@@ -5,11 +5,11 @@
 1. Admin users can switch to the **Administration View** to access the **Credential Manager**.
 2. Click the **Credential Manager** menu option on the left-hand pane to view the list of registered credentials.
 
-<figure><img src="../../../.gitbook/assets/image (1363).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2401).png" alt=""><figcaption></figcaption></figure>
 
 3. To add a new credential, click **Register Credential** available on the right-hand panel, and then click on the **Register Credential** button.
 
-<figure><img src="../../../.gitbook/assets/image (1364).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2402).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252FOlQXbRau9NAUz064D5V8%252Fimage.png%3Falt%3Dmedia%26token%3D403b126d-ca63-4a3f-ab49-49cb64c161bd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=cb343d62&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
@@ -18,7 +18,7 @@
 * **Credential Name**: Enter a name of your choice.
 * **Credential Type**: Select **SAP Datasphere.**
 
-<figure><img src="../../../.gitbook/assets/image (1365).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2403).png" alt=""><figcaption></figcaption></figure>
 
 5. For the Client ID, Secret, Token URL, and Authorization URL:
 6. Log in to your **SAP Datasphere** (formerly known as SAP Data Warehouse Cloud) instance.
