@@ -11,7 +11,7 @@ Provides insights into the number of licenses across the following categories:
 
 Displays the total, used, and available licenses, facilitating efficient resource management.
 
-<div><figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure></div>
 
 ### User Details
 
@@ -19,7 +19,7 @@ Lists all registered users along with the following details:
 
 * **User Type**: Specifies whether the user is an **Admin** or **Standard User**.
 
-<div><figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure></div>
 
 #### Create User
 
@@ -73,7 +73,7 @@ Users assigned the **User** role have access only to the projects to which they 
 
 1. Click the **Arrow ( > )** icon next to the user to open the **User Details** page.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In the **Projects** section, users can view and manage all projects associated with the selected user.
 3. To add projects to the user, click the **+ Add** button in the **Projects** section.
@@ -114,7 +114,7 @@ The **Lock** feature allows administrators to control access to the system for s
 2. Click the **Lock** button.
 3. The selected users will be locked and denied access to the system until unlocked.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Unlock**
 
@@ -126,19 +126,19 @@ The **Unlock** feature allows administrators to restore access to users who were
 2. Click the **Unlock** button.&#x20;
 3. The selected users will regain access to the system.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Show**
 
 It allows users to filter and view the user list based on their role or status, such as Admin, User or Locked Users.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Filter**
 
 It is used to search for users based on their **name** or **email ID**.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Import**&#x20;
 
@@ -152,7 +152,7 @@ The **Import** option allows administrators to import user and role information 
 
 
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the appropriate option based on the type of data you want to import.
 4. In the **Import Details** section, click the **Browse** button to select the required file from your local system.
@@ -161,7 +161,7 @@ The **Import** option allows administrators to import user and role information 
 7. Click the **Download** button to download the sample template and detailed import instructions.
 8. Prepare the import file according to the provided template to avoid validation or import errors.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Download**&#x20;
 
@@ -175,4 +175,4 @@ The **Download** option provides sample templates that help users prepare the co
 4. Use the downloaded template to prepare your Excel file by following the same data structure and format.
 5. Preparing the file according to the provided template helps avoid validation issues and import errors during the import process.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>

@@ -32,7 +32,7 @@ Role Actions define the permissions and access levels associated with a role. To
 
 2. The **Role Actions** screen is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Role Actions
 
