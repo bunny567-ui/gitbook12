@@ -10,7 +10,7 @@ To register the SAP Datasphere Environment, you must first register the Datasphe
 
 2. Click **Register SAP Datasphere Environment**. The following screen is displayed:
 
-<figure><img src="../../../.gitbook/assets/image (1359).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2399).png" alt=""><figcaption></figcaption></figure>
 
 3. **Fill in the required details:**
 
@@ -19,9 +19,9 @@ To register the SAP Datasphere Environment, you must first register the Datasphe
 * **Host URL**: The Datasphere tenant URL.
 * **Environment Type**: Select the environment type you are registering (e.g., Dev or QA, etc.).
 
-4. Click **Save** to register the environment.
+4. Click **Create** to register the environment.
 
-<figure><img src="../../../.gitbook/assets/image (1360).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2400).png" alt=""><figcaption></figcaption></figure>
 
 ### Space Mapping
 
