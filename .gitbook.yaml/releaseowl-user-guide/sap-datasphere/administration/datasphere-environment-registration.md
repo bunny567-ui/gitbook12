@@ -71,12 +71,7 @@ When a user story or release package is deployed from the source environment to 
 
 1. Click on the required environment to view the details.
 2. Click the **edit icon** to edit the registered SAC Environment.
-
-<figure><img src="../../../.gitbook/assets/image (2246).png" alt=""><figcaption></figcaption></figure>
-
 3. Click the **delete icon** to delete the required environment.
 
-<figure><img src="../../../.gitbook/assets/image (1361).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (2424).png" alt=""><figcaption></figcaption></figure>
 
