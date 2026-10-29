@@ -68,7 +68,7 @@ To connect SAP Cloud ALM to ReleaseOwl, you first need to obtain the client cred
 ```
 {% endcode %}
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Once the instance is created, open it and select **View Credentials**.
 7. Copy the **Client ID**, **Client Secret**, and **URL** from the credentials section.
@@ -159,7 +159,7 @@ SAP Cloud ALM and ReleaseOwl maintain a bidirectional connection:&#x20;
 * Any technical action performed in ReleaseOwl (adding a transport, deployment updates) is written back to Cloud ALM as comments in the description of the user story.&#x20;
 * This ensures both systems stay aligned throughout the implementation lifecycle.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Editing Features in ReleaseOwl**
 
@@ -168,11 +168,11 @@ Each synced user story can be further enhanced and managed directly within Relea
 * Click on the **Actions** button corresponding to a user story.&#x20;
 * From here, you can edit the user story and attach relevant components such as transports, CPI artifacts, and other related deliverables.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * This enables seamless linkage between SAP Cloud ALM features and the technical artifacts managed through ReleaseOwl.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -213,7 +213,7 @@ When the user selects Handover to Test in SAP Cloud ALM:&#x20;
 
 4. In ReleaseOwl, the user story promoted through the stages defined in its release pipeline.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Webhook Configuration in Cloud ALM&#x20;
 

@@ -37,7 +37,7 @@ Authorized URL:https://<region>.releaseowl.com/rateloginserver/api/oauth/accesst
 
 6. Open the **Client Secret** tab. Use the copy icons to copy the **Client ID** and **Client Secret**. You will need these credentials when configuring the OAuth connection in ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (2385).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Set Up OAuth Authentication in ReleaseOwl
 
@@ -60,7 +60,7 @@ Authorized URL:https://<region>.releaseowl.com/rateloginserver/api/oauth/accesst
     | Authorization URL   | `https://accounts.zoho.in/oauth/v2/auth`                                                                                                                                                                                                    |
     | OAuth Scope         | SDPOnDemand.requests.READ,SDPOnDemand.changes.READ,SDPOnDemand.projects.READ,SDPOnDemand.releases.READ,SDPOnDemand.setup.READ,SDPOnDemand.requests.UPDATE,SDPOnDemand.changes.UPDATE,SDPOnDemand.requests.CREATE,SDPOnDemand.changes.CREATE |
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 4. After saving the credential, click **Generate Token**. You will be redirected to a Zoho authorization page.&#x20;
 5. Select **I allow … to access the above data** and click **Accept**. Once authorization is successful, a success message appears, confirming that the token has been generated successfully.
@@ -130,7 +130,7 @@ ReleaseOwl uses a filter to decide which ServiceDesk Plus requests to sync. The 
 3. Set **Type** to **Request** and paste the copied value into **Filter**.
 4. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (2388).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Integrating User Stories from Zoho Service Plus to ReleaseOwl**
 
@@ -186,7 +186,7 @@ A webhook enables ZohoServiceDesk Plus to notify ReleaseOwl when a request or ch
 
 4. Save the webhook. Create **one webhook per module** (requests, changes), each with its own  module value. The webhook shows in the Custom Actions list with **Trigger: 0**.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Triggers
 
@@ -248,7 +248,7 @@ A webhook enables ZohoServiceDesk Plus to notify ReleaseOwl when a request or ch
    * **Type**: Request
 6. Click the **External ID** link to open the matching request in ServiceDesk Plus.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2428).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** Use **Refresh**, not **Sync User Stories**. Sync User Stories pulls data manually, so it can’t tell you whether the webhook is working.
