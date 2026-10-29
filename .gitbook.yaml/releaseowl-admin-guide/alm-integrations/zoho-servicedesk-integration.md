@@ -12,7 +12,7 @@ This document explains how to connect **Zoho ServiceDesk Plus Cloud** to Release
 1. Open the[ Zoho API Console ](https://api-console.zoho.in/)and sign in using the Zoho account associated with ServiceDesk Plus.
 2. Click **Add Client** in the upper-right corner of the Applications list.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2425).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **Server-based Applications**.
 4. Click **Create Now** under Server-based Applications.
@@ -27,7 +27,13 @@ This document explains how to connect **Zoho ServiceDesk Plus Cloud** to Release
 | Homepage URL             | Enter your ReleaseOwl homepage URL  |
 | Authorized Redirect URIs | Enter your ReleaseOwl callback URL  |
 
-<figure><img src="../../.gitbook/assets/image (2384).png" alt=""><figcaption></figcaption></figure>
+{% code overflow="wrap" expandable="true" %}
+```
+Authorized URL:https://<region>.releaseowl.com/rateloginserver/api/oauth/accesstoken
+```
+{% endcode %}
+
+<figure><img src="../../.gitbook/assets/image (2426).png" alt=""><figcaption></figcaption></figure>
 
 6. Open the **Client Secret** tab. Use the copy icons to copy the **Client ID** and **Client Secret**. You will need these credentials when configuring the OAuth connection in ReleaseOwl.
 
@@ -75,6 +81,8 @@ After creating the credential, connect it to a ReleaseOwl project by configuring
     | Host URL             | Enter your ServiceDesk Plus portal URL.                  |
     | Filter Configuration | Select the filter to specify which items to synchronize. |
 4. Save the configuration to complete the integration setup.
+
+<figure><img src="../../.gitbook/assets/image (2427).png" alt=""><figcaption></figcaption></figure>
 
 #### Choosing what to sync <a href="#user-content-choosing-what-to-sync" id="user-content-choosing-what-to-sync"></a>
 
