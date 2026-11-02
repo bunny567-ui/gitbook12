@@ -6,7 +6,7 @@ To register the SAP Datasphere Environment, you must first register the Datasphe
 
 1. In Environments, go to **SAP Datasphere**.
 
-<figure><img src="../../../.gitbook/assets/image (1358).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2447).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **Register SAP Datasphere Environment**. The following screen is displayed:
 
@@ -21,7 +21,7 @@ To register the SAP Datasphere Environment, you must first register the Datasphe
 
 4. Click **Create** to register the environment.
 
-<figure><img src="../../../.gitbook/assets/image (2435).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2449).png" alt=""><figcaption></figcaption></figure>
 
 ### Space Mapping
 
@@ -46,7 +46,7 @@ Space Mapping defines how the spaces of a source SAP Datasphere environment corr
 | **Source Environment**  | Select the Datasphere environment whose spaces are the source (e.g., the development tenant). |
 | **Target Environment**  | Select the environment to which the content will be deployed (e.g., the QA tenant).           |
 
-<figure><img src="../../../.gitbook/assets/image (2242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2446).png" alt=""><figcaption></figcaption></figure>
 
 5. The **Map Spaces** section displays all spaces of the selected source environment. The counter in the header shows how many spaces are mapped.
 
