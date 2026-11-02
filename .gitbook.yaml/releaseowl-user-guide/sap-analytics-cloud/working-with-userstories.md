@@ -20,11 +20,11 @@ User Stories allow you to group and manage artifacts that are deployed together 
 * Once the User Story is created, it will appear in the list/grid view.
 * Click on the **Edit** next to the User Story entry.
 
-<figure><img src="../../.gitbook/assets/image (2204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2455).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the **+Add** button to add **SAC Packages**.
 
-<figure><img src="../../.gitbook/assets/image (2201).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2456).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **three-dot (More Actions)** menu.
 * Select **Import Settings**.

@@ -29,19 +29,19 @@ Use this tab to add SAP Datasphere artifacts to the User Story.
 2. Select the SAP Datasphere tab.
 3. Click **Add**.
 
-<figure><img src="../../.gitbook/assets/image (2259).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2457).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the required SAP Datasphere Packages.
 5. Click **ADD** to add the selected packages to the User Story.
 
-<figure><img src="../../.gitbook/assets/image (2260).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2458).png" alt=""><figcaption></figcaption></figure>
 
 #### Import Settings <a href="#import-settings-cpi" id="import-settings-cpi"></a>
 
 1. Click the **three-dot (More Actions)** menu.
 2. Select **Import Settings**.
 
-<figure><img src="../../.gitbook/assets/image (2262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2459).png" alt=""><figcaption></figcaption></figure>
 
 3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
 
