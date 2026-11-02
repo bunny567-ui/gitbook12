@@ -21,7 +21,7 @@ To register the SAP Datasphere Environment, you must first register the Datasphe
 
 4. Click **Create** to register the environment.
 
-<figure><img src="../../../.gitbook/assets/image (2400).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2435).png" alt=""><figcaption></figcaption></figure>
 
 ### Space Mapping
 
@@ -61,7 +61,7 @@ Space Mapping defines how the spaces of a source SAP Datasphere environment corr
 
 7. The newly created mapping appears in the **Space Mappings** list.
 
-<figure><img src="../../../.gitbook/assets/image (2245).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2436).png" alt=""><figcaption></figcaption></figure>
 
 #### How Space Mapping is used
 
@@ -73,5 +73,4 @@ When a user story or release package is deployed from the source environment to 
 2. Click the **edit icon** to edit the registered SAC Environment.
 3. Click the **delete icon** to delete the required environment.
 
-<figure><img src="../../../.gitbook/assets/image (2424).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (2437).png" alt=""><figcaption></figcaption></figure>

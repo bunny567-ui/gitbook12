@@ -16,5 +16,4 @@ The **Credential Manager** allows you to securely store and manage login credent
    * **Password**: Enter the **SAP S/4HANA Public Cloud** password.
 4. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (1502).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (2429).png" alt=""><figcaption></figcaption></figure>

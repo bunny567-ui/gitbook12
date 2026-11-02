@@ -16,7 +16,7 @@
 * **Credential Name**: Enter a name of your choice.
 * **Credential Type**: Select **SAP Analytics Cloud**.
 
-<figure><img src="../../../.gitbook/assets/image (2406).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2430).png" alt=""><figcaption></figcaption></figure>
 
 5. For the Client ID, Secret, Token URL, and Authorization URL:
 
@@ -37,7 +37,7 @@
 * Enter the **Redirect URI** (callback URL) as required.
 * Click **Add** to create the client.
 
-<figure><img src="../../../.gitbook/assets/image (2415).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2431).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :** Upon creation, the **Client ID** and **Client Secret** will be generated. Save these credentials securely&#x20;

@@ -7,7 +7,7 @@ User Stories allow you to group and manage artifacts that are deployed together 
 * Navigate to **Change Management** and click on **User Stories**.
 * Click **Create New User Story**.
 
-<figure><img src="../../.gitbook/assets/image (2202).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2444).png" alt=""><figcaption></figcaption></figure>
 
 * Fill in the required fields, such as:
   * **Summary**: A clear and concise name for the user story.
@@ -15,7 +15,7 @@ User Stories allow you to group and manage artifacts that are deployed together 
   * **Release Version**, **Sprint**, **Assigned To**, and any other custom fields as applicable.
 * After entering the details, click the **Save** button to create the User Story.
 
-<figure><img src="../../.gitbook/assets/image (2203).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2445).png" alt=""><figcaption></figcaption></figure>
 
 * Once the User Story is created, it will appear in the list/grid view.
 * Click on the **Edit** next to the User Story entry.

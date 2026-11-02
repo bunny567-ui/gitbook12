@@ -37,7 +37,7 @@ SAP Datasphere packages are managed in the project view under **Build → SAP Da
 
 4. &#x20;**Sync History:** To check the results, click **Sync History**. Review the affected package names, action, status, and error details, if any, to verify the outcome of each operation.
 
-<figure><img src="../../.gitbook/assets/image (2354).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2438).png" alt=""><figcaption></figcaption></figure>
 
 5. The **⋯** menu next to each package provides:
 

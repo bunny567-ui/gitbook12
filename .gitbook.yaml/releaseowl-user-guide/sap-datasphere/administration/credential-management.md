@@ -43,7 +43,7 @@
 **Note :** Once added, the system will generate the **Client ID** and **Client Secret**. Ensure these values are copied and stored securely.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2391).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2432).png" alt=""><figcaption></figcaption></figure>
 
 8. **Obtain OAuth Endpoints:**
 
@@ -60,11 +60,11 @@ In the Credential Manager, provide the following details:
 * **Authorization URL**
 * **Token URL**
 
-<figure><img src="../../../.gitbook/assets/image (2395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2433).png" alt=""><figcaption></figcaption></figure>
 
 * After entering the required information, click the **Save** button. Upon successful save, a **Generate Token** button will appear. Click this button to initiate token generation and validate the entered credentials.
 
-<figure><img src="../../../.gitbook/assets/image (2396).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2434).png" alt=""><figcaption></figcaption></figure>
 
 * This process confirms whether the provided details can establish a successful connection with the authentication server.
 

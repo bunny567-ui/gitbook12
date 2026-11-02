@@ -6,11 +6,11 @@ To register the SAC Environment, you must first register the SAC credential. Fol
 
 1. In Environments, go to **SAP Analytics Cloud**.
 
-<figure><img src="../../../.gitbook/assets/image (2419).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2441).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **Register SAC Environment**. The following screen is displayed:
 
-<figure><img src="../../../.gitbook/assets/image (2420).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2442).png" alt=""><figcaption></figcaption></figure>
 
 3. **Fill in the required details:**
 
@@ -22,7 +22,7 @@ To register the SAC Environment, you must first register the SAC credential. Fol
 
 4. Click **Save** to register the environment.
 
-<figure><img src="../../../.gitbook/assets/image (2421).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2443).png" alt=""><figcaption></figcaption></figure>
 
 5. Similarly, register the target SAC environment as follows:
 6. The registered environments are displayed.
@@ -33,4 +33,4 @@ To register the SAC Environment, you must first register the SAC credential. Fol
 8. Click the **edit icon** to edit the registered SAC Environment.
 9. Click the **delete icon** to delete the required environment.
 
-<figure><img src="../../../.gitbook/assets/image (2423).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2440).png" alt=""><figcaption></figcaption></figure>

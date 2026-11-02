@@ -45,7 +45,7 @@ Use this tab to add SAP Datasphere artifacts to the User Story.
 
 3. A pop-up message will appear, where you can enable the **Force Deploy** option. Click **Save** to apply the changes.
 
-<figure><img src="../../.gitbook/assets/image (2258).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2439).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note :  Force Deploy** — lets you redeploy the packages/artifacts again even if it was already deployed.
