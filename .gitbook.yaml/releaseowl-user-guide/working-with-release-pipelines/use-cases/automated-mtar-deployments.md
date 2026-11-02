@@ -74,7 +74,7 @@ Before configuring these tasks, generate a GitLab access token with the required
 
 | Resource                                     | Permissions that MUST be enabled         | If NOT enabled                                                                                                                                                                                                                     |
 | -------------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Repository → **Code**                        | **Read**                                 | ReleaseOwl cannot read the source and target branches. PR creation fails immediately.                                                                                                                                              |
+| Repository → **Code**                        | **Push, Read**                           | ReleaseOwl cannot read the source and target branches. PR creation fails immediately.                                                                                                                                              |
 | Repository → **Commit**                      | **Create, Read, Update**                 | Story commits cannot be read and merge commits cannot be written. The Merge task fails even when the PR is approved.                                                                                                               |
 | Repository → **Merge Request**               | **Approve, Create, Merge, Read, Update** | The core of the feature. Without _Create_ the Pull Request task cannot open the PR; without _Read_ it cannot track review status; without _Merge_ the downstream Merge task cannot merge — the pipeline stalls at the merge stage. |
 | Repository → **Merge Request Approval Rule** | **Create, Read, Update**                 | Approval state of the PR cannot be evaluated. The Merge task cannot verify the PR is approved before merging.                                                                                                                      |
@@ -87,7 +87,7 @@ Before configuring these tasks, generate a GitLab access token with the required
 **Note:** All the above permissions are mandatory. If any permission is missing, the pipeline may fail at runtime. For example, the Pull Request may not be created, the approval status may not be read, or the Merge task may not be able to merge the pull request.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2175).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2460).png" alt=""><figcaption></figcaption></figure>
 
 #### GitLab Webhook Setup
 
