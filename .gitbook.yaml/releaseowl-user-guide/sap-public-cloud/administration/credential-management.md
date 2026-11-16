@@ -1,6 +1,6 @@
-# Credential Manager
+# Credential Management
 
-The **Credential Manager** allows you to securely store and manage login credentials required to connect to SAP S/4HANA Public Cloud instances. These credentials are necessary for synchronizing artifacts, executing deployments, and running validations.
+The **Credential Management** allows you to securely store and manage login credentials required to connect to SAP S/4HANA Public Cloud instances. These credentials are necessary for synchronizing artifacts, executing deployments, and running validations.
 
 ### **Steps to Register a Credential:**
 

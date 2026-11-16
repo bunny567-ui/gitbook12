@@ -112,7 +112,7 @@
     * [KVM Configuration Parameters & APIM Deployment Behavior](releaseowl-user-guide/sap-api-management/kvm-configuration-parameters-and-apim-deployment-behavior.md)
   * [SAP Public Cloud](releaseowl-user-guide/sap-public-cloud/README.md)
     * [Administration](releaseowl-user-guide/sap-public-cloud/administration/README.md)
-      * [Credential Manager](releaseowl-user-guide/sap-public-cloud/administration/credential-manager.md)
+      * [Credential Management](releaseowl-user-guide/sap-public-cloud/administration/credential-management.md)
       * [Public Cloud Environment Registration](releaseowl-user-guide/sap-public-cloud/administration/cloud-environment-registration.md)
     * [Public Cloud Transport Management](releaseowl-user-guide/sap-public-cloud/public-cloud-transport-management.md)
     * [Validation Report](releaseowl-user-guide/sap-public-cloud/validation-report.md)
