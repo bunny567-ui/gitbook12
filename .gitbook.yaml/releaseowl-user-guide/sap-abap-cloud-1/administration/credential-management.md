@@ -15,12 +15,13 @@ This section describes the process of registering system credentials in ReleaseO
 * **Credential Name**: Enter a name as per your naming convention.
 * **Credential Type**: Select **SAP Cloud Environment**.
 * **Scope**: Select the appropriate scope based on your project or environment configuration.
-* **User Name**: Enter the **BTP credential user name**.
-* **Password**: Enter the **password associated with the BTP credentials**.
+* **Authentication Type**: Select **Basic**.
+* **User Name**: Enter your **SAP BTP user name.**
+* **Password**: Enter the **password** for that SAP BTP user.
 
 5. Click **Save** to register the credential.
 
-<figure><img src="../../../.gitbook/assets/image (2290).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2462).png" alt=""><figcaption></figcaption></figure>
 
 ### Register ABAP Cloud Credential in ReleaseOwl
 
