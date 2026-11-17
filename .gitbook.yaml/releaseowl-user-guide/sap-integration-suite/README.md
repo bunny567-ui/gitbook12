@@ -27,3 +27,26 @@ ReleaseOwl seamlessly integrates with **SAP Cloud Integration (CPI)** to enable 
   * **Admin** – for full administrative access
   * **User** – for standard operational access
 
+ReleaseOwl uses the SAP Integration Suite public APIs for most CPI operations. Some artifact types use browser-based APIs instead, so **Web Authentication** must be configured on the CPI environment to sync, create, update or deploy them.
+
+**Supported Operations by Artifact Type**
+
+| **Artifact Type**    | **Sync** | **Create** | **Update** | **Deploy** |
+| -------------------- | -------- | ---------- | ---------- | ---------- |
+| IFLOW                | Public   | Public     | Public     | Public     |
+| IFLOW\_CONFIG\_REF   | NA       | NA         | NA         | Public     |
+| VALUE\_MAPPING       | Public   | Public     | Web-auth   | Public     |
+| MESSAGE\_MAPPING     | Public   | Public     | Public     | Public     |
+| SCRIPT\_COLLECTION   | Public   | Public     | Public     | Public     |
+| DATA\_TYPE           | Public   | Public     | Public     | NA         |
+| MESSAGE\_TYPE        | Public   | Public     | Public     | NA         |
+| FAULT\_MESSAGE\_TYPE | Public   | Public     | Public     | NA         |
+| SERVICE\_INTERFACE   | Public   | Public     | Public     | NA         |
+| INTEGRATION\_ADAPTER | Web-auth | Public     | Web-auth   | Public     |
+| RESTAPIPROVIDER      | Web-auth | Web-auth   | Web-auth   | Web-auth   |
+| SOAPAPIPROVIDER      | Web-auth | Web-auth   | Web-auth   | Web-auth   |
+| ODATAAPIPROVIDER     | Web-auth | Web-auth   | Web-auth   | Web-auth   |
+| FUNCTION\_LIBRARIES  | Web-auth | Web-auth   | Web-auth   | Web-auth   |
+| IMPORTED\_ARCHIVES   | Web-auth | Web-auth   | Web-auth   | Web-auth   |
+| PACKAGE              | Public   | Public     | Public     | NA         |
+
