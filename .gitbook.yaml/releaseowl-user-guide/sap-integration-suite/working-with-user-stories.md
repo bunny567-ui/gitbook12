@@ -153,7 +153,7 @@ The **Attachments** section allows you to add supporting files or external links
 1. Click the **three-dot (More Actions)** menu.
 2. Select **Import Settings**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Agreements:** A pop-up window appears where you can enable the **Force Deploy** option and configure the **Import Options** according to the target environment. Click **Save** to apply the configured settings.
 

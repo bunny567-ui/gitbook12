@@ -7,7 +7,7 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 1. Navigate to the **BTP Applications** section.
 2. Click **New BTP Application**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Application Details
 

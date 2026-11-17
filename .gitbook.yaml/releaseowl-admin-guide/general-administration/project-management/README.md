@@ -74,7 +74,7 @@ The **Delete** option allows users to permanently remove a project from the appl
 
 The **Project Settings** option allows users to configure and manage project-specific settings. Users can update project configurations, manage ALM integrations, maintain environment details, and modify project-related parameters based on the project requirements.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Project Settings Configuration
 

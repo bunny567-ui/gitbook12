@@ -2,7 +2,7 @@
 
 A Callout task is used to invoke a third-party REST API from within ReleaseOwl. The callout itself must first be registered under **Administration → Callouts** (see [_Registering a Callout_](https://releaseowl.gitbook.io/releaseowl-docs/releaseowl-admin-guide/general-administration/callout-feature)); the task then references it inside the Release Pipeline. Upon selecting this task type, the following configuration screen is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (47).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details:
 

@@ -5,45 +5,65 @@
 1. Navigate to **Build → SAP CPI Management**.
 2. Click **Add Packages** to synchronize packages from the registered **SAP Integration Suite** environment.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-3. The system displays the list of available packages for selection.
+3. The **CPI Packages** window displays the packages available in the environment. Use **Search** to find a package by name.
 4. Select the required packages and click **Add**.
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-5. After the packages are added, the following details are displayed:
+5. A **Package(s) sync started** message is displayed. Click **OK**.
+6.  After the sync is complete, the package is listed with the following details:
 
-* **Version**
-* **Synced On**
-* **Synced By**
-* **Modified By**
-* **Modified On**
+    | **Column**      | **Description**                                                                           |
+    | --------------- | ----------------------------------------------------------------------------------------- |
+    | **Name**        | The name of the package.                                                                  |
+    | **Version**     | The version of the package.                                                               |
+    | **Mode**        | Shows whether the package is **Editable** or **Configure-only** in SAP Integration Suite. |
+    | **User Story**  | The user story linked to the package, if any.                                             |
+    | **Modified By** | The user who last modified the package.                                                   |
+    | **Modified On** | The date and time the package was last modified.                                          |
+    | **Actions**     | Opens the package actions, such as **Sync Artifacts** and **Remove From Project**.        |
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+&#x20;**Note:** If the package does not appear right away, click **Refresh**, or check the status in **Sync History**.
+{% endhint %}
 
 #### Metadata Behavior
 
-6. For supported artifact types, ReleaseOwl retrieves the **Modified By** and **Modified On** details directly from **SAP Integration Suite**. Supported artifact types include:
+7. For supported artifact types, ReleaseOwl retrieves the **Modified By** and **Modified On** details directly from **SAP Integration Suite**. Supported artifact types include:
 
 * **IFLOW**
 * **ODATAAPIPROVIDER**
 * **SOAPAPIPROVIDER**
 * **RESTAPIPROVIDER**
 
-7. For the following artifact types, **SAP Integration Suite** does not expose metadata details through its public APIs:
+8. For the following artifact types, **SAP Integration Suite** does not expose metadata details through its public APIs:
 
 * **SCRIPT\_COLLECTION**
 * **MESSAGE\_MAPPING**
 * **VALUE\_MAPPING**
 
-8. For these artifact types, ReleaseOwl generates the **Modified By** and **Modified On** details based on internal processing activity, indicating when the artifact was last processed or updated within the platform
+9. For these artifact types, ReleaseOwl generates the **Modified By** and **Modified On** details based on internal processing activity, indicating when the artifact was last processed or updated within the platform
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sync History**
 
-Click **Sync History** to view the history of all synchronization activities performed for the **SAP CPI** packages, including previously synced packages and their corresponding sync details.
+Click **Sync History** to view all synchronization activities for the **SAP CPI** packages in the project. The following details are displayed:
+
+| **Column**          | **Description**                                                  |
+| ------------------- | ---------------------------------------------------------------- |
+| **Package Name**    | The name of the synchronized package.                            |
+| **Action**          | The type of sync activity, for example **Added**.                |
+| **Artifact Name**   | The artifact that was synchronized.                              |
+| **Artifact Status** | The status of the artifact sync, for example **COMPLETED**.      |
+| **Config Status**   | The status of the configuration sync, for example **COMPLETED**. |
+| **Synced By**       | The user who started the sync.                                   |
+| **Synced On**       | The date and time of the sync.                                   |
+| **Error**           | The error message, if the sync failed.                           |
 
 <div><figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1944).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -60,6 +80,35 @@ Click **Sync History** to view the history of all synchronization activities per
 This option is used to remove a package from the project in **ReleaseOwl**. When you select this action, the package is automatically removed from the project and will no longer be available within the project scope.
 
 <div><figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+
+#### View Package Artifacts <a href="#user-content-view-package-artifacts" id="user-content-view-package-artifacts"></a>
+
+Click the **arrow (>)** at the end of a package row to open the package and view its artifacts.
+
+<figure><img src="../../../.gitbook/assets/image (2468).png" alt=""><figcaption></figcaption></figure>
+
+The package page shows:
+
+* **Add Artifacts**: Adds more artifacts from this package in the SAP Integration Suite environment. Only the artifact types selected in **Select Artifact Types for Synchronization** during environment registration are displayed.
+
+<figure><img src="../../../.gitbook/assets/image (2469).png" alt=""><figcaption></figcaption></figure>
+
+* **Sync History**: Shows the sync activities for this package.
+* **Refresh**: Reloads the artifact list.
+
+The **Artifacts** table displays the following details:
+
+| **Column**      | **Description**                                                                                                                        |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**        | The name of the artifact.                                                                                                              |
+| **Version**     | The version of the artifact, for example **1.0.0**.                                                                                    |
+| **Type**        | The artifact type, for example **Integration Flow**, **Message Mapping** or **Script Collection**.                                     |
+| **User Story**  | The user story assigned to the artifact, if any.                                                                                       |
+| **Modified By** | The user who last modified the artifact.                                                                                               |
+| **Modified On** | The date and time the artifact was last modified.                                                                                      |
+| **Actions**     | Opens the artifact actions, such as **Synchronize**, **Configure**, **Versions**, **Download** and **Comment**. See **Actions** below. |
+
+<figure><img src="../../../.gitbook/assets/image (2470).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sort**
 

@@ -37,7 +37,7 @@ Authorized URL:https://<region>.releaseowl.com/rateloginserver/api/oauth/accesst
 
 6. Open the **Client Secret** tab. Use the copy icons to copy the **Client ID** and **Client Secret**. You will need these credentials when configuring the OAuth connection in ReleaseOwl.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Set Up OAuth Authentication in ReleaseOwl
 

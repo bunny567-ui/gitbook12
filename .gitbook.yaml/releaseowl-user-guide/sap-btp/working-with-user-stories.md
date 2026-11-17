@@ -13,7 +13,7 @@ To associate MTAR applications with a User Story:
 
 2. Enter the required details and click **Create**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Actions**, and then click **Edit**.
 4. In the User Story section, the **Change Type** field displays two options:
