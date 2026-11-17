@@ -155,7 +155,7 @@ It is used to retrieve and update the latest artifacts from the connected SAP In
 
 You can maintain configuration parameters for IFlows for each environment separately in ReleaseOwl. These will be updated accordingly during the deployment.
 
-#### **To configure an artifact:**
+#### **To configure an artifact**
 
 1\. Go to the required artifact, click **Actions** and choose **Configure**.
 
@@ -186,7 +186,7 @@ The **Compare Environments** option is used to compare an iFlow between two diff
 * **Source Environment**: Contains the source version of the iFlow
 * **Destination Environment**: Contains the active version of the iFlow
 
-#### Steps:
+#### Steps
 
 1. Click **Compare Environments**
 2. Select the **Source Environment**
