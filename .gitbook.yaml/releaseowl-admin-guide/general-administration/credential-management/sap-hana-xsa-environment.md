@@ -9,7 +9,7 @@ ReleaseOwl supports multiple credential types for registration. To register a SA
 2.  Fill in the details:
 
     * **Credential Name:** Any identifiable name for the credential.
-    * **Credential Type:** Select **SAP Cloud Environment**.
+    * **Credential Type:** Select **SAP HANA XSA Environment**.
     * **Scope** – Select the scope of the credential:
       * **Global** – Visible to all users.
       * **Private** – Visible only to the user who created it.
