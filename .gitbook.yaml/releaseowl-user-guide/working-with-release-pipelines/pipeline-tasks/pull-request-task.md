@@ -23,13 +23,21 @@ Before configuring these tasks, generate a GitLab access token with the required
 | Repository → **Branch**                      | **Create, Read**                         | Feature branches cannot be created (Feature Branch model), and environment branches cannot be resolved as PR source/target.                                                                        |
 | Search → **Global Search**                   | **Use**                                  | Repository and merge request lookup via the search API fails.                                                                                                                                      |
 
-
-
 {% hint style="info" %}
 **Note :** All the above permissions are mandatory. If any permission is missing, the pipeline may fail at runtime. For example, the Pull Request may not be created, the approval status may not be read, or the Merge task may not be able to merge the pull request.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (2471).png" alt=""><figcaption></figcaption></figure>
+
+**GitLab: Disable Automatic Source Branch Deletion**
+
+1. Go to **Settings → Merge Requests → Merge Options**.
+2. Clear the **Enable 'Delete source branch' option by default** checkbox.
+3. Click **Save changes**.
+
+This prevents the **Delete source branch** option from being enabled by default when creating merge requests, allowing source branches to be retained after merging.
+
+<figure><img src="../../../.gitbook/assets/image (2472).png" alt=""><figcaption></figcaption></figure>
 
 #### GitLab Webhook Setup
 
