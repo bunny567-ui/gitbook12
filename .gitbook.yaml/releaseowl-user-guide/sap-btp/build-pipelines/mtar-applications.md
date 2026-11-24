@@ -1,13 +1,13 @@
-# BTP Applications
+# MTAR Applications
 
-The **BTP Applications** module is used to manage SAP BTP applications, including support for multiple **MTA Extension (MTAEXT) files** and build tasks within Release Pipelines.
+The **MTAR Applications** module is used to manage SAP BTP applications, including support for multiple **MTA Extension (MTAEXT) files** and build tasks within Release Pipelines.
 
 #### Create a BTP Application
 
-1. Navigate to the **BTP Applications** section.
-2. Click **New BTP Application**.
+1. Navigate to the **MTAR Applications** section.
+2. Click **New MTAR Application**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2473).png" alt=""><figcaption></figcaption></figure>
 
 #### Application Details
 
@@ -22,7 +22,9 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 | Create Feature Branch From Branch   | Text          | The default base branch from which feature/hotfix branches are created as part of the branching strategy. This value pre-fills (and can be overridden) when a branch is created for a user story. |
 | Build Pipeline for Dynamic Branches | Picker + info | The build pipeline used to build dynamic branches — e.g. hotfix branches and staging branches — that are created on the fly and do not have a fixed per-environment pipeline.                     |
 
-* After entering all the required details, click **Create** to create the BTP Application.
+
+
+* After entering all the required details, click **Create** to create the MTAR Application.
 
 <figure><img src="../../../.gitbook/assets/image (2121).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +37,7 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 1. Click the **Actions** button corresponding to the BTP Application.
 2. Select **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2474).png" alt=""><figcaption></figcaption></figure>
 
 3. **Landscape Configuration**: The Landscape Configuration defines, for each SAP Cloud environment, which Git branch it maps to, which Build Pipeline builds it, and which MTA extension files apply. Add one row per environment (Development, QA, Production,...).
 4. Click the **+ Add** button.
@@ -51,6 +53,8 @@ The **BTP Applications** module is used to manage SAP BTP applications, includin
 | Branch                       | Text     | The Git branch mapped to this environment (e.g. dev, qa, main).                                                                                                               |
 | Development Branch           | Checkbox | Marks this environment’s branch as the development branch. In the Cherry-Pick model, this is the branch from which commits are populated when adding changes to a user story. |
 | MTA Extension File (.mtaext) | Upload   | Environment-specific MTA extension file(s). Use Browse… then Upload File; uploaded files appear in the list below and are applied at deployment time for this environment.    |
+
+
 
 <figure><img src="../../../.gitbook/assets/image (2124).png" alt=""><figcaption></figcaption></figure>
 

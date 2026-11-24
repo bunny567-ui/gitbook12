@@ -75,7 +75,7 @@
       * [Download Artifact](releaseowl-user-guide/sap-btp/build-pipelines/download-artifact.md)
       * [Build Changes](releaseowl-user-guide/sap-btp/build-pipelines/build-changes.md)
       * [SonarQube Report](releaseowl-user-guide/sap-btp/build-pipelines/sonarqube-report.md)
-      * [BTP Applications](releaseowl-user-guide/sap-btp/build-pipelines/btp-applications.md)
+      * [MTAR Applications](releaseowl-user-guide/sap-btp/build-pipelines/mtar-applications.md)
       * [Labels](releaseowl-user-guide/sap-btp/build-pipelines/labels.md)
     * [GIT Ops](releaseowl-user-guide/sap-btp/git-ops.md)
     * [Working with User Stories](releaseowl-user-guide/sap-btp/working-with-user-stories.md)
