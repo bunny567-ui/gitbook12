@@ -1,6 +1,6 @@
 # Pull Request Task
 
-This task creates a pull request from a source branch to a target branch and delivers a review task to the assigned reviewer.
+The CAP Pull Request task creates a pull request from a source branch to a target branch and sends a review task to the assigned reviewer.
 
 **Prerequisite — GitLab Token**
 
@@ -227,3 +227,98 @@ If a reviewer merges the pull request directly in Git instead of only approving,
 
 <img src="https://releaseowl.gitbook.io/releaseowl-docs/~gitbook/image?url=https%3A%2F%2F1890383800-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FDWyxe6hm5vqosFaByVgs%252Fuploads%252F8C5h6h660qPdkZ1DJ4mS%252Fimage.png%3Falt%3Dmedia%26token%3Dc1946eb1-ef54-4248-bad5-60a8c7ad20bf&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=4c8e4da&#x26;sv=2" alt="" height="871" width="1918">
 
+
+
+### Pull Request Task: Approval and Rejection Behavior <a href="#user-content-pull-request-task-approval-and-rejection-behavior" id="user-content-pull-request-task-approval-and-rejection-behavior"></a>
+
+&#x20;When the pipeline reaches this task, the review task appears under **My Tasks**. The reviewer can open the task and choose **Approve** or **Reject**.
+
+Before completing the task or performing any operation on the pull request, ReleaseOwl checks its current status in the connected Git repository. This ensures that the workflow proceeds based on the actual pull request status.
+
+{% hint style="info" %}
+**Note:** GitLab calls a pull request a **Merge Request (MR)**. The approval and rejection workflow applies across supported Git tools. However, automatic closure when there are no commits is an existing ReleaseOwl behavior specific to the GitLab integration.
+{% endhint %}
+
+### Approve
+
+When the reviewer clicks **Approve**, ReleaseOwl checks the current status of the pull request before completing the human task.
+
+The task is completed, and the pipeline moves to the next step only if the pull request has one of the following statuses:
+
+* **Approved** – The pull request has been approved in the connected Git repository.
+* **Merged** – The pull request has been successfully merged into the target branch.
+* **No Commits** – There are no commits between the source and target branches, so there are no changes to review or merge.
+
+If the pull request has any other status, such as **Open**, ReleaseOwl does not complete the task. The task remains pending under **My Tasks** until the pull request reaches one of the acceptable statuses. The reviewer can then click **Approve** again.
+
+If the task contains multiple pull requests, all pull requests must have an **Approved**, **Merged**, or **No Commits** status before ReleaseOwl completes the task and allows the pipeline to proceed.
+
+#### When Does the Task Complete?
+
+ReleaseOwl completes the CAP Pull Request human task and moves the pipeline to the next step only when all associated pull requests satisfy at least one of the three acceptable conditions:
+
+1. The pull request is **Approved**.
+2. The pull request is **Merged**.
+3. The pull request has **No Commits** between the source and target branches.
+
+If even one pull request has a status other than these three, ReleaseOwl does not complete the task. The task remains pending under **My Tasks** until the required conditions are satisfied.
+
+#### Approval Validation Message
+
+When the task cannot be completed because one or more pull requests do not meet the required conditions, ReleaseOwl displays the following message:
+
+```
+The following pull requests are not approved or merged:
+```
+
+ReleaseOwl also displays the details of each pull request that is preventing task completion:
+
+```
+The application '<application>' has a pull request from source branch '<source>' to target branch '<target>' with status '<status>'.
+```
+
+This helps the reviewer identify which pull requests require further action before approving the task.
+
+### Reject
+
+When the reviewer clicks **Reject**, ReleaseOwl checks the current pull request status before performing any operation.
+
+* **Open** – ReleaseOwl closes the pull request and follows the rejection flow.
+* **Approved** – ReleaseOwl does not modify the pull request and follows the rejection flow.
+* **Merged** – ReleaseOwl does not modify the pull request and follows the rejection flow.
+* **Closed** – ReleaseOwl does not perform any further operation on the pull request and follows the rejection flow.
+
+{% hint style="info" %}
+&#x20;**Important:** Rejecting a task does not close a pull request that has already been approved or merged. ReleaseOwl closes only pull requests that are currently Open.
+{% endhint %}
+
+### No Commits Between the Branches
+
+When an end user creates a Merge Request (MR) with an incorrect source or target branch selection, there may be no commits between the two branches. This means there are no actual changes to merge.
+
+In the GitLab integration, ReleaseOwl automatically closes the Merge Request when it detects that there are no commits between the source and target branches. The end user does not need to close the Merge Request manually.
+
+When the reviewer clicks **Approve** on the CAP Pull Request human task, ReleaseOwl considers **No Commits** an acceptable status and completes the task, allowing the pipeline to proceed.
+
+{% hint style="info" %}
+**Note:** This is an existing ReleaseOwl behavior specific to the GitLab integration.
+{% endhint %}
+
+### Behavior by Pull Request Status
+
+The following table summarizes the expected behavior for each reviewer action and pull request status.
+
+| User Action | Pull Request Status | Expected Result                                            |
+| ----------- | ------------------- | ---------------------------------------------------------- |
+| Approve     | Approved            | Complete the task and proceed to the next pipeline step.   |
+| Approve     | Merged              | Complete the task and proceed to the next pipeline step.   |
+| Approve     | No Commits          | Complete the task and proceed to the next pipeline step.   |
+| Approve     | Any other status    | Do not complete the task. Keep it pending under My Tasks.  |
+| Reject      | Open                | Close the pull request and follow the rejection flow.      |
+| Reject      | Approved            | Do not modify the pull request. Follow the rejection flow. |
+| Reject      | Merged              | Do not modify the pull request. Follow the rejection flow. |
+| Reject      | Closed              | Do not modify the pull request. Follow the rejection flow. |
+
+{% hint style="info" %}
+**Important:** ReleaseOwl validates the current pull request status before completing the human task or performing any pull request operation. For approval, all associated pull requests must satisfy the required conditions. For rejection, only Open pull requests are closed; all other statuses remain unchanged.
+{% endhint %}
