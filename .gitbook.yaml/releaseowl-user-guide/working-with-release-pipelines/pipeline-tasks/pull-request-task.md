@@ -1,6 +1,6 @@
 # Pull Request Task
 
-The CAP Pull Request task creates a pull request from a source branch to a target branch and sends a review task to the assigned reviewer.
+The Pull Request task creates a pull request from a source branch to a target branch and sends a review task to the assigned reviewer.
 
 **Prerequisite — GitLab Token**
 
