@@ -127,15 +127,51 @@ The **Tool Integrations** step allows you to configure additional validation and
 
 #### **1. Static Code Analysis**
 
-Use **Static Code Analysis** tools, such as SonarQube, to perform code quality analysis during the build process.
+Before enabling **Static Code Analysis (SonarQube)** in a build pipeline, complete the prerequisites described below. The configuration requirements depend on the type of project you want to scan.
 
-To configure Static Code Analysis:
+**a. Configure SonarQube Credentials in ReleaseOwl**
 
-1. Select the **Static Code Analysis** checkbox.
-2.  From the **Credentials** drop-down list, select the appropriate SonarQube credential.
+* Store your SonarQube token as a credential in ReleaseOwl.
+* When configuring **Static Code Analysis (SonarQube)** in the pipeline, select the credential containing your SonarQube token.
 
-    The available credentials are those previously configured in the **Credentials** section of ReleaseOwl.
-3. The available credentials are those previously configured in the **Credentials** section of ReleaseOwl.
+**b. UI5, Fiori, or Node.js Projects (Without Java Code)**
+
+* No additional configuration is required for UI5, Fiori, or Node.js projects that do not contain Java code.
+* ReleaseOwl scans the entire repository and automatically excludes the following folders from the analysis:
+* `node_modules`
+* `dist`
+* `gen`
+* `reports`
+* `piper`
+
+**c. CAP Java Projects or MTA Projects with a Java Module**
+
+* For CAP Java projects or MTA projects that contain a Java module (for example, a project with `srv/pom.xml`), SonarQube requires the location of the compiled Java classes.
+* If the compiled Java classes are not specified, the SonarQube scan fails with the following error:
+
+```
+Your project contains .java files, please provide compiled classes with sonar.java.binaries property
+```
+
+**Required:** Add a `sonar-project.properties` file to the root directory of your Git repository, at the same level as the `mta.yaml` file.
+
+For a CAP Java project, add the following properties:
+
+```
+sonar.sources=app,db,srv/src/main/java
+sonar.java.binaries=srv/target/classes
+```
+
+The properties are described below:
+
+| **Property**          | **Description**                                                                                                                               |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sonar.sources`       | Specifies the source code directories to include in the analysis. In this example, the directories are `app`, `db`, and `srv/src/main/java`.  |
+| `sonar.java.binaries` | Specifies the directory containing the compiled Java class files. For a Maven-based CAP Java project, this is typically `srv/target/classes`. |
+
+{% hint style="info" %}
+**Note:** Ensure that the Java module is compiled and the specified directory contains the compiled `.class` files before running the SonarQube analysis.
+{% endhint %}
 
 **ESLint**
 
