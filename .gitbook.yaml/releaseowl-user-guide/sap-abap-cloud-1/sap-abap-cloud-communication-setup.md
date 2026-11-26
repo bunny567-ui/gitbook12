@@ -41,7 +41,7 @@ Follow the steps below:
 
 #### Service Key for Software Component Integration (SAP\_COM\_0510)
 
-Use the following JSON configuration:
+Create the service key for **Software Component Integration** using the following JSON configuration:
 
 ```
 {"scenario_id": "SAP_COM_0510", "type": "basic"}
@@ -51,13 +51,29 @@ Use the following JSON configuration:
 
 #### Service Key for ABAP Unit Test Integration (SAP\_COM\_0735)
 
-Similarly, create the service key for **ABAP Unit Test Integration** using the following JSON configuration:
+Create the service key for **ABAP Unit Test Integration** using the following JSON configuration:
 
 ```
 {"scenario_id": "SAP_COM_0735","type": "basic"}
 ```
 
 <figure><img src="../../.gitbook/assets/image (1701).png" alt=""><figcaption></figcaption></figure>
+
+#### Service Key for Software Component Management Integration (SAP\_COM\_0948)
+
+Create the service key for **Software Component Management Integration** using the following JSON configuration:&#x20;
+
+```
+{"scenario_id": "SAP_COM_0948","type": "basic"} 
+```
+
+#### Service Key for ATC Run Integration(SAP\_COM\_0901)&#x20;
+
+Similarly, create the service key for **ABAP Test Cockpit (ATC)** Run Integration using the following JSON configuration:&#x20;
+
+```
+{"scenario_id": "SAP_COM_0901","type": "basic"}
+```
 
 ### 2. Manage Software Components
 

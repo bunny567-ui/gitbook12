@@ -137,12 +137,6 @@ Before enabling **Static Code Analysis (SonarQube)** in a build pipeline, comple
 **b. UI5, Fiori, or Node.js Projects (Without Java Code)**
 
 * No additional configuration is required for UI5, Fiori, or Node.js projects that do not contain Java code.
-* ReleaseOwl scans the entire repository and automatically excludes the following folders from the analysis:
-* `node_modules`
-* `dist`
-* `gen`
-* `reports`
-* `piper`
 
 **c. CAP Java Projects or MTA Projects with a Java Module**
 
